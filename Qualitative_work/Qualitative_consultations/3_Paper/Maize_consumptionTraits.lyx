@@ -102,33 +102,65 @@ Maize consumption-related traits and consumer preferences in Uganda: A qualitati
 ve assessment and insights for variety promotion
 \end_layout
 
+\begin_layout Abstract
+This paper...
+\end_layout
+
 \begin_layout Section
 Introduction
 \end_layout
 
+\begin_layout Standard
+A
+\end_layout
+
 \begin_layout Section
-Related Literature
+Related literature
+\end_layout
+
+\begin_layout Standard
+A
 \end_layout
 
 \begin_layout Section
 Methods
 \end_layout
 
+\begin_layout Standard
+A
+\end_layout
+
 \begin_layout Subsection
 Data collection
+\end_layout
+
+\begin_layout Standard
+A
 \end_layout
 
 \begin_layout Subsection
 Data analysis
 \end_layout
 
+\begin_layout Standard
+A
+\end_layout
+
 \begin_layout Section
 Results and discussion
 \end_layout
 
+\begin_layout Standard
+A
+\end_layout
+
 \begin_layout Subsection
-What varietal traits (production and/or consumption related) do maize farmers
- consider when choosing a maize variety to grow? 
+What varietal traits (production and consumption related) do farmers consider
+ when choosing a (new) maize variety to grow?
+\end_layout
+
+\begin_layout Standard
+A
 \end_layout
 
 \begin_layout Standard
@@ -138,14 +170,10 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Traits that farmers consider when choosing a (new) variety to grow
+Traits that farmers consider when chooising a (new) maize variety to grow
 \end_layout
 
 \end_inset
@@ -154,887 +182,291 @@ Traits that farmers consider when choosing a (new) variety to grow
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Tabular
-<lyxtabular version="3" rows="21" columns="2">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Trait
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
+\backslash
+begin{center}
+\end_layout
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Proportion (%) of responses
-\end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
+\backslash
+begin{tabular}{rccc}
+\end_layout
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Consumption-related trait
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
+\backslash
+hline
+\backslash
+hline
+\end_layout
 
 \begin_layout Plain Layout
 
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
+\begin_layout Plain Layout
+
+	Maize varietal trait	&	Percent of responses	
+\backslash
+
+\backslash
+ 
+\end_layout
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Grain size/weight
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
+\backslash
+hline
+\end_layout
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-11.54
-\end_layout
+{
+\backslash
+textit{Production-related traits}} 
+\backslash
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
+\backslash
+
+\end_layout
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Milling out-turn
-\end_layout
+Yield	&	14.10	
+\backslash
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
+\backslash
+ 
+\end_layout
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-10.26
-\end_layout
+Drought tolerace	&	10.90	
+\backslash
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
+\backslash
+ 
+\end_layout
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Palatability (sweet & smooth taste)
-\end_layout
+Pest and disease tolerance	&	8.33	
+\backslash
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
+\backslash
+ 
+\end_layout
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-7.69
-\end_layout
+Reqires less inputs	&	5.13	
+\backslash
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
+\backslash
+ 
+\end_layout
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Quality of flour (color & texture)
-\end_layout
+Cost of seed	&	4.49	
+\backslash
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
+\backslash
+ 
+\end_layout
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-4.49
-\end_layout
+Recycling potential	&	1.28	
+\backslash
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
+\backslash
+
+\end_layout
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Shelf life
-\end_layout
+Total	&	44.23	
+\backslash
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
+\backslash
+
+\end_layout
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-3.85
-\end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
+\backslash
+
+\backslash
+
+\end_layout
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Maturity time
-\end_layout
+{
+\backslash
+textit{Consumption-related traits}} 
+\backslash
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
+\backslash
+ 
+\end_layout
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-2.56
-\end_layout
+Grain size/weight	&	11.54	
+\backslash
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
+\backslash
+ 
+\end_layout
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Flour expansion after cooking
-\end_layout
+Milling out-turn	&	10.26	
+\backslash
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
+\backslash
+ 
+\end_layout
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-1.28
-\end_layout
+Palatability (sweet and smooth taste)	&	7.69	
+\backslash
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
+\backslash
+ 
+\end_layout
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Nutrition/protein
-\end_layout
+Quality of flour (color and texture)	&	4.49	
+\backslash
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
+\backslash
+ 
+\end_layout
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-1.28
-\end_layout
+Shelf life	&	3.85	
+\backslash
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
+\backslash
+ 
+\end_layout
 
 \begin_layout Plain Layout
 
-\end_layout
+Maturity time	&	2.56	
+\backslash
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
+\backslash
+ 
+\end_layout
 
 \begin_layout Plain Layout
 
-\end_layout
+Flour expansion after cooking	&	1.28	
+\backslash
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
+\backslash
+ 
+\end_layout
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Production-related trait
-\end_layout
+Nutrition/protein	&	1.28	
+\backslash
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
+\backslash
+ 
+\end_layout
 
 \begin_layout Plain Layout
 
-\end_layout
+Total	&	42.95	
+\backslash
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
+\backslash
+
+\end_layout
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Yield
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
+\backslash
+
+\backslash
+
+\end_layout
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-14.10
-\end_layout
+{
+\backslash
+textit{Both production and consumption related traits}} 
+\backslash
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
+\backslash
+ 
+\end_layout
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Drought tolerace
-\end_layout
+Maturity time	&	12.82	
+\backslash
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
+\backslash
+ 
+\end_layout
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-10.90
-\end_layout
+Total	&	12.82	
+\backslash
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
+\backslash
+ 
+\end_layout
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Pest & disease tolerance
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
+\backslash
+hline
+\backslash
+hline
+\end_layout
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-8.33
-\end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
+\backslash
+end{tabular}
+\end_layout
 
 \begin_layout Plain Layout
 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Reqires less inputs
+
+\backslash
+end{center}
 \end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-5.13
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Cost of seed
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-4.49
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Recycling potential
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-1.28
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Both production & consumption
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-Maturity time
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-12.82
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
 
 \end_inset
 
@@ -1051,20 +483,20 @@ Most eaten dishes of maize?
 \end_layout
 
 \begin_layout Standard
+A
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Most eaten dishes from maize
+Maize dishes commonly eaten by households
 \end_layout
 
 \end_inset
@@ -1073,6 +505,11 @@ Most eaten dishes from maize
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/maize_dishes.png
+
+\end_inset
+
 
 \end_layout
 
@@ -1087,10 +524,14 @@ How do maize consumers identify and differentiate between maize varieties
 \end_layout
 
 \begin_layout Standard
+A
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1100,7 +541,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Ways in which maize consumers identify and differentiate between varieties
+Ways in which consumers identify and differentiate between maize varieties
  
 \end_layout
 
@@ -1110,6 +551,11 @@ Ways in which maize consumers identify and differentiate between varieties
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/how_to_differentiate_varieties.png
+
+\end_inset
+
 
 \end_layout
 
@@ -1123,10 +569,14 @@ What is considered as the most important maize consumption trait, and why?
 \end_layout
 
 \begin_layout Standard
+A
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1146,6 +596,184 @@ What consumers consider as the most important maize consumption-related
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tabular}{rccc}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	Consumption trait	&	Percent of responses	&	why is the trait considered
+ important	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+Palatability (sweet and smooth taste)	&	29.57	&	Good taste gives appetite;
+ Good taste keeps you satisfied longer; Sweet for the mouth	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Grain size/weight	&	14.78	&	Gives more flour	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Flour expansion after cooking	&	13.91	&	Feeds more people; More food to feed
+ many people; You need less flour to make a big meal	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Color (whiter grain/flour)	&	11.30	&	-	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Cooking time	&	6.09	&	Takes a short time; Takes less firewood/charcoal	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Ease of cooking	&	5.22	&	Takes less firewood; Takes less water to prepare	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Fine flour texture	&	5.22	&	-	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Milling out-turn	&	5.22	&	-	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Grain coating	&	5.22	&	Big grain coat is good for roasted baize, but produces
+ a low milling out-turn	
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Aroma	&	1.74	&	Aroma provides appetite	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Nutrition/protein	&	1.74	&	provides energy	
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -1160,14 +788,14 @@ What maize varieties are particularly suitable in terms of the identified
 \end_layout
 
 \begin_layout Standard
+A
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1182,10 +810,11 @@ Maize varieties are particularly suitable in terms of the identified traits
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename traits_variety_connection.png
 
-\end_layout
+\end_inset
 
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -1199,10 +828,14 @@ What do maize consumers consider as a good variety for consumption?
 \end_layout
 
 \begin_layout Standard
+A
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1221,6 +854,11 @@ What consumers consider as a good maize variety
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/a_good_consumption_variety.png
+
+\end_inset
+
 
 \end_layout
 
@@ -1231,6 +869,10 @@ What consumers consider as a good maize variety
 
 \begin_layout Section
 Conclusion
+\end_layout
+
+\begin_layout Standard
+A
 \end_layout
 
 \end_body
