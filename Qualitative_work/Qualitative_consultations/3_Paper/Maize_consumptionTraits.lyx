@@ -98,12 +98,45 @@ thanks{Development Strategy and Governance Division, International Food
 \end_layout
 
 \begin_layout Title
-Maize consumption-related traits and consumer preferences in Uganda: A qualitati
-ve assessment and insights for variety promotion
+Consumption-related traits and consumer preferences for improved maize in
+ Uganda: A qualitative exploration and insights for variety promotion
 \end_layout
 
 \begin_layout Abstract
-This paper...
+As part of a larger study on producer and consumer-side interventions for
+ increasing adoption of improved crop varieties, we conducted a qualitative
+ inquiry to learn about the consumption-related traits and consumer preferences
+ for improved maize varieties in Uganda.
+ This is an area with far less empirical work so far, since most studies
+ evaluating strategies to promote agricultural technology adoption focus
+ on traits and constraints on the producer side.
+ Throguh a co-learning workshop and gender disaggregated focus group discussions
+, we consulted thirty six maize consumers in Eastern Uganda on: (i) whether
+ and how consumers can identify differences between maize varieties when
+ they consume maize in different forms; (ii) what consumers consider as
+ the most important maize consumption-related traists, and why these traits
+ are important; (iii) the maize varieties in their communities that are
+ most suitable in terms of the stated traits; and (iv) whether consumption-relat
+ed traits influence farmers' choice of the maize variety to grow.
+ We learned that maize is mainly consumed in the forms of posho meal, porridge,
+ and whole maize (boiled or roasted), and that consumers can identify difference
+s between varieties mainly through taste, color of the grain/flour, and
+ size/weight of the grain.
+ Maize consumption-related traits that are most important to consumers are
+ palatability (sweet and smooth taste), grain size/weight (bigger/heavier
+ grains produce more flour and also weigh more during selling), and flour
+ productivity (ability of the flour to expand and produce more posho to
+ feed more people).
+ Using social network analysis, Bazooka maize variety emerged as the improved
+ variety most suitable for these traits, followed by Longe 10H and Longe
+ 5.
+ Finally, we find that farmers also consider consumption-related traits
+ (mainly grain size/weight, milling-out-turn, and taste) when choosing a
+ (new) maize variety to grow, although this is after ascertaining the yield
+ potential.
+ Maturity time of a variety is also important but mainly considered as a
+ consumption-related trait because this ensures timely availability of maize
+ for both food and income.
 \end_layout
 
 \begin_layout Section
@@ -111,7 +144,13 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-A
+Maize is an important crop in Uganda, prioritized by the Government as a
+ key contributor to household/national food and income security.
+ Unfortunately, current maize farm yields are far below (more than 60%)
+ what is achievable.
+ This is largely attributed to farmers' slow uptake of high yielding crop
+ varieties, despite a diversity of such varieties on the market.
+ 
 \end_layout
 
 \begin_layout Section
@@ -131,36 +170,77 @@ A
 \end_layout
 
 \begin_layout Subsection
-Data collection
+Research questions, data source, and analysis
 \end_layout
 
 \begin_layout Standard
-A
+The qualitative inquiry focused on answering four broad questions, namely:
 \end_layout
 
-\begin_layout Subsection
-Data analysis
+\begin_layout Enumerate
+whether and how consumers can identify differences between white maize varieties
+ when they consume maize in different forms; 
+\end_layout
+
+\begin_layout Enumerate
+what consumers consider as the most important maize consumption-related
+ traists, and why these traits are important; 
+\end_layout
+
+\begin_layout Enumerate
+the maize varieties in their communities that are most suitable in terms
+ of the stated traits; and 
+\end_layout
+
+\begin_layout Enumerate
+whether consumption-related traits influence farmers' choice of the maize
+ variety to grow.
+ 
 \end_layout
 
 \begin_layout Standard
-A
-\end_layout
+To answer these question, we consulted thirty six maize consumers (Table
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Category-and-sex"
+plural "false"
+caps "false"
+noprefix "false"
 
-\begin_layout Section
-Results and discussion
+\end_inset
+
+), in Eastern Uganda, through a one-day co-learning workshop and gender
+ disaggregated focus group discussions (FGDs).
+ The consumers we consulted were purposively selected; to represent individuals
+ that are aware of and/or knowledgeable about maize consumption traits through
+ consuming maize, but also based on their different roles/experieces in
+ the maize value chain as maize breeders/reesearch, extension staff (district
+ technical staff), maize seed distributors, maize farmers, maize traders,
+ and maize processors/millers.
+ For instance, maize millers, besides being consumers, may be more knowledgeable
+ about the maize varieties that produce more/best flour when milled.
+ Likewise, farmers may be more knowledgeable about the varieties that have
+ a longer shelf life or mature faster than other maize consumers.
+ Fifty three percent of the consumers we consulted are women.
+ 
 \end_layout
 
 \begin_layout Standard
-A
-\end_layout
-
-\begin_layout Subsection
-What varietal traits (production and consumption related) do farmers consider
- when choosing a (new) maize variety to grow?
-\end_layout
-
-\begin_layout Standard
-A
+The workshop had nineteen maize consumer participants, and was held prior
+ to the FGDs.
+ We conducted four FGDs in the communities, to follow-up on the key feedback
+ from the workshop.
+ Two of the FGDs consisted of men and women, interviewed separately.
+ The third and fourth FGDs were mixed (both men and women), of which, one
+ consisted only a couple (husband and wife).
+ The number of FGD participants ranged between two (couple) to six.
+ A gender focus during the FGD discussion was important, especially after
+ learning from the workshop that men and women are aware of, and seemingly
+ prefer different maize consumption-related traits.
+ We also learnt from the workshop that men and women are involved in different
+ activities of the maize consumption process— for instance, women do more
+ of the cooking, while men are more responsible for taking maize for milling.
 \end_layout
 
 \begin_layout Standard
@@ -173,7 +253,14 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Traits that farmers consider when chooising a (new) maize variety to grow
+Category and sex of maize consumers consulted 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Category-and-sex"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -182,6 +269,718 @@ Traits that farmers consider when chooising a (new) maize variety to grow
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tabular}{rrc}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	Category of maize consumer	&	Sex	&	Number 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& & consulted	
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+Maize seed dealers	&	Men	&	3	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Maize farmers	&	Women	&	14	
+\backslash
+
+\backslash
+ 	
+\end_layout
+
+\begin_layout Plain Layout
+
+&	Men	&	7	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Maize Millers and processors	&	Men	&	3	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+District technical and research staff	&	Women	&	1	
+\backslash
+
+\backslash
+ 	
+\end_layout
+
+\begin_layout Plain Layout
+
+&	Men	&	4	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Maize traders	&	Women	&	1	
+\backslash
+
+\backslash
+ 	
+\end_layout
+
+\begin_layout Plain Layout
+
+&	Men	&	3	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Grand Total	&	-	&	36	
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+&& 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Percentage of men consulted	&	-	&	47	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Percentage of women consulted	&	-	&	53	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In both the workshop and the FGDs, the participants were first provided
+ with information about the study (objectives, research questions, study
+ sites, the implementing organization, and the study design) under which
+ the consultations were taking place.
+ For the workshop, the study information was followed by a group work session
+ where the participants split into identical groups to answer a set of nine
+ maize consumption-related questions.
+ Before the groups answered the questions, the workshop faciltator went
+ through all questions to ensure that all the participants had a common
+ understanding.
+ After the questions were answered, each group's answers were presented
+ and jointly discussed.
+ The FGD were more specific, focusing mainly on the key elements from the
+ workshp.
+\end_layout
+
+\begin_layout Standard
+Data analysis to answer research questions 1, 2, and 4 was conducted in
+ excel to generate bar charts and tables showing percentage of responses.
+ The responses were weighted based on the number of participants in each
+ workshop group or FGD group.
+ For research question 3, data were analyzed using the network analysis
+ approach in the R 4.2.2.
+ statistical tool.
+\end_layout
+
+\begin_layout Section
+Results and discussion
+\end_layout
+
+\begin_layout Subsection
+How do maize consumers identify and differentiate between maize varieties
+ during consumption?
+\end_layout
+
+\begin_layout Standard
+To gain insights into whether and how consumers differentiate between maize
+ varieties, we first asked the respondents about the most common forms in
+ which they and similar households in their communities consume maize.
+ We learnt that maize is mainly consumed in the forms of maize meal (or
+ posho as it is commonly known in Uganda), followed by porridge, and whole
+ maize (either boiled or roasted).
+ Maize flour is the main ingregient used to prepare both posho and porridge,
+ hence maize is an important crop.
+ While there are slight variations in the preparation of posho (depending
+ on whether one prefers it relatively hard or soft), the most common method
+ involves cooking water to a boiling point, then adding flour in portions
+ while mingling it to a dough-like consistency when ready.
+ The preparation of porridge follows a similar process but involves mixing
+ the flour with cold water before adding to the boiling water, and stirring
+ until ready.
+ Feedback from the consultations indicate that maize porridge is mainly
+ consumed by children and babies, and as such, women prefer to make porridge
+ using the less refined maize flour that is more tasty and considered more
+ nutritious.
+ However, for posho, the less refined maize flour is not preferred because
+ the resulting posho meal bears a rough-sore taste, and this type of flour
+ has a short shelf life.
+ Maize meal and porridge are also the most consumed foods in public institutions
+ like schools and prisons.
+ Whole maize (either boiled or roasted) is increasingly becoming a common
+ road-side snack prepared and sold to workers returning from office in the
+ evening.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Maize dishes commonly eaten by households
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/maize_dishes.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+After learnig about the different forms in which white maize is consumed,
+ 
+\end_layout
+
+\begin_layout Standard
+A
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ways in which consumers identify and differentiate between maize varieties
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/how_to_differentiate_varieties.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+What is considered as the most important maize consumption trait, and why?
+\end_layout
+
+\begin_layout Standard
+A
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways true
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+What consumers consider as the most important maize consumption-related
+ trait, and why?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tabular}{rccc}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	Consumption trait	&	Percent of responses	&	why is the trait considered
+ important	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+Palatability (sweet and smooth taste)	&	29.57	&	Good taste gives appetite.	
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	&		&	Good taste keeps you satisfied longer.	
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	&		&	Sweet for the mouth.	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Grain size/weight	&	14.78	&	Gives more flour.	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Flour expansion after cooking	&	13.91	&	Feeds more people.	
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	&		&	More food to feed many people.	
+\backslash
+
+\backslash
+ 	
+\end_layout
+
+\begin_layout Plain Layout
+
+&		&	You need less flour to make a big meal.	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Color (whiter grain/flour)	&	11.30	&	-	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Cooking time	&	6.09	&	Takes a short time; Takes less firewood/charcoal.	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Ease of cooking	&	5.22	&	Takes less firewood.	
+\backslash
+
+\backslash
+ 	
+\end_layout
+
+\begin_layout Plain Layout
+
+&		&	Takes less water to prepare.	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Fine flour texture	&	5.22	&	-	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Milling out-turn	&	5.22	&	-	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Grain coating	&	5.22	&	Big grain coat is good for roasted maize,
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& &  but produces a low milling out-turn.	
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Aroma	&	1.74	&	Aroma provides appetite.	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Nutrition/protein	&	1.74	&	provides energy.	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+What maize varieties are particularly suitable in terms of the identified
+ traits?
+\end_layout
+
+\begin_layout Standard
+A
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Maize varieties are particularly suitable in terms of the identified traits
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/LNabwire/OneDrive - CGIAR/Desktop/Capture.PNG
+	rotateOrigin leftTop
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+What do maize consumers consider as a good variety for consumption?
+\end_layout
+
+\begin_layout Standard
+A
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+What consumers consider as a good maize variety
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figures/a_good_consumption_variety.png
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Do consumption-related traits influence farmers' choice of the (new) variety
+ to grow?
+\end_layout
+
+\begin_layout Standard
+A
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Traits that farmers consider when chooising a (new) maize variety to grow
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -467,395 +1266,6 @@ end{tabular}
 \backslash
 end{center}
 \end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Most eaten dishes of maize?
-\end_layout
-
-\begin_layout Standard
-A
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Maize dishes commonly eaten by households
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/maize_dishes.png
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-How do maize consumers identify and differentiate between maize varieties
- during consumption?
-\end_layout
-
-\begin_layout Standard
-A
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Ways in which consumers identify and differentiate between maize varieties
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/how_to_differentiate_varieties.png
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-What is considered as the most important maize consumption trait, and why?
-\end_layout
-
-\begin_layout Standard
-A
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float table
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-What consumers consider as the most important maize consumption-related
- trait, and why?
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tabular}{rccc}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-	Consumption trait	&	Percent of responses	&	why is the trait considered
- important	
-\backslash
-
-\backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-Palatability (sweet and smooth taste)	&	29.57	&	Good taste gives appetite;
- Good taste keeps you satisfied longer; Sweet for the mouth	
-\backslash
-
-\backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-Grain size/weight	&	14.78	&	Gives more flour	
-\backslash
-
-\backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-Flour expansion after cooking	&	13.91	&	Feeds more people; More food to feed
- many people; You need less flour to make a big meal	
-\backslash
-
-\backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-Color (whiter grain/flour)	&	11.30	&	-	
-\backslash
-
-\backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-Cooking time	&	6.09	&	Takes a short time; Takes less firewood/charcoal	
-\backslash
-
-\backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-Ease of cooking	&	5.22	&	Takes less firewood; Takes less water to prepare	
-\backslash
-
-\backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-Fine flour texture	&	5.22	&	-	
-\backslash
-
-\backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-Milling out-turn	&	5.22	&	-	
-\backslash
-
-\backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-Grain coating	&	5.22	&	Big grain coat is good for roasted baize, but produces
- a low milling out-turn	
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Aroma	&	1.74	&	Aroma provides appetite	
-\backslash
-
-\backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-Nutrition/protein	&	1.74	&	provides energy	
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{tabular}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{center}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-What maize varieties are particularly suitable in terms of the identified
- traits?
-\end_layout
-
-\begin_layout Standard
-A
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Maize varieties are particularly suitable in terms of the identified traits
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename traits_variety_connection.png
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-What do maize consumers consider as a good variety for consumption?
-\end_layout
-
-\begin_layout Standard
-A
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-What consumers consider as a good maize variety
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figures/a_good_consumption_variety.png
 
 \end_inset
 
