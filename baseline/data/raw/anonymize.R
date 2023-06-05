@@ -4,64 +4,6 @@ path <- strsplit(path, "/raw")[[1]]
 
 ## we have 40 duplicates
 sum(duplicated(dta$farmer_ID))
-### what is the best way to deal with these duplicates?
-
-
-#These are the inital (random) prices offered:
-#dta$P1_pric
-
-#These are the prices offered by the enumerator
-#dta$Check2.check.maize.paid.P3_pric_2 -10
-
-#answers to offers
-#dta$Check2.check.maize.paid.start_neg 
-
-#these are the price bids by the farmers
-##dta$Check2.check.maize.paid.P2_pric
-
-##determine last ask price
-
-##determine maximum bid price
-dta$bid <- ifelse(!is.na(as.numeric(dta$Check2.check.maize.paid.P2_pric_11)),as.numeric(dta$Check2.check.maize.paid.P2_pric_11),
-   ifelse(!is.na(as.numeric(dta$Check2.check.maize.paid.P2_pric_10)),as.numeric(dta$Check2.check.maize.paid.P2_pric_10),
-          ifelse(!is.na(as.numeric(dta$Check2.check.maize.paid.P2_pric_9)),as.numeric(dta$Check2.check.maize.paid.P2_pric_9),
-                 ifelse(!is.na(as.numeric(dta$Check2.check.maize.paid.P2_pric_8)),as.numeric(dta$Check2.check.maize.paid.P2_pric_8),
-                        ifelse(!is.na(as.numeric(dta$Check2.check.maize.paid.P2_pric_7)),as.numeric(dta$Check2.check.maize.paid.P2_pric_7),
-                               ifelse(!is.na(as.numeric(dta$Check2.check.maize.paid.P2_pric_6)),as.numeric(dta$Check2.check.maize.paid.P2_pric_6),
-                                      ifelse(!is.na(as.numeric(dta$Check2.check.maize.paid.P2_pric_5)),as.numeric(dta$Check2.check.maize.paid.P2_pric_5),
-                                             ifelse(!is.na(as.numeric(dta$Check2.check.maize.paid.P2_pric_4)),as.numeric(dta$Check2.check.maize.paid.P2_pric_4),
-                                                    ifelse(!is.na(as.numeric(dta$Check2.check.maize.paid.P2_pric_3)),as.numeric(dta$Check2.check.maize.paid.P2_pric_3),
-                                                           ifelse(!is.na(as.numeric(dta$Check2.check.maize.paid.P2_pric_2)),as.numeric(dta$Check2.check.maize.paid.P2_pric_2),
-                                                                  as.numeric(dta$Check2.check.maize.paid.P2_pric)
-   ))))))))))
-
-##determine minimum ask price
-dta$ask <-      ifelse(!is.na(as.numeric(dta$Check2.check.maize.paid.P3_pric_10)),as.numeric(dta$Check2.check.maize.paid.P3_pric_10),
-                         ifelse(!is.na(as.numeric(dta$Check2.check.maize.paid.P3_pric_9)),as.numeric(dta$Check2.check.maize.paid.P3_pric_9),
-                                ifelse(!is.na(as.numeric(dta$Check2.check.maize.paid.P3_pric_8)),as.numeric(dta$Check2.check.maize.paid.P3_pric_8),
-                                       ifelse(!is.na(as.numeric(dta$Check2.check.maize.paid.P3_pric_7)),as.numeric(dta$Check2.check.maize.paid.P3_pric_7),
-                                              ifelse(!is.na(as.numeric(dta$Check2.check.maize.paid.P3_pric_6)),as.numeric(dta$Check2.check.maize.paid.P3_pric_6),
-                                                     ifelse(!is.na(as.numeric(dta$Check2.check.maize.paid.P3_pric_5)),as.numeric(dta$Check2.check.maize.paid.P3_pric_5),
-                                                            ifelse(!is.na(as.numeric(dta$Check2.check.maize.paid.P3_pric_4)),as.numeric(dta$Check2.check.maize.paid.P3_pric_4),
-                                                                   ifelse(!is.na(as.numeric(dta$Check2.check.maize.paid.P3_pric_3)),as.numeric(dta$Check2.check.maize.paid.P3_pric_3),
-                                                                          ifelse(!is.na(as.numeric(dta$Check2.check.maize.paid.P3_pric_2)),as.numeric(dta$Check2.check.maize.paid.P3_pric_2),
-                                                                                 ifelse(!is.na(as.numeric(dta$Check2.check.maize.paid.P3_pric)),as.numeric(dta$Check2.check.maize.paid.P3_pric),
-                                                                                 as.numeric(dta$P1_pric)
-                                                                          ))))))))))
-
-###number of rounds after which farmer agrees
-dta$rounds <- NA
-dta$rounds[dta$Check2.check.maize.paid.start_neg=="Yes"]  <- 1
-dta$rounds[dta$Check2.check.maize.paid.start_neg_2=="Yes"] <- 2
-dta$rounds[dta$Check2.check.maize.paid.start_neg_3=="Yes"] <- 3
-dta$rounds[dta$Check2.check.maize.paid.start_neg_4=="Yes"] <- 4
-dta$rounds[dta$Check2.check.maize.paid.start_neg_5=="Yes"] <- 5
-dta$rounds[dta$Check2.check.maize.paid.start_neg_6=="Yes"] <- 6
-dta$rounds[dta$Check2.check.maize.paid.start_neg_7=="Yes"] <- 7
-dta$rounds[dta$Check2.check.maize.paid.start_neg_8=="Yes"] <- 8
-dta$rounds[dta$Check2.check.maize.paid.start_neg_9=="Yes"] <- 9
-dta$rounds[dta$Check2.check.maize.paid.start_neg_10=="Yes"] <- 10
-dta$rounds[dta$Check2.check.maize.paid.start_neg_11=="Yes"] <- 11
 
 ### enumerator gender:
 # create named vector of enumerator genders
