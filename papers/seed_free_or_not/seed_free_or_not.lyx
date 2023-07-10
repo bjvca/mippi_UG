@@ -6,6 +6,9 @@
 \origin unavailable
 \textclass article
 \use_default_options true
+\begin_modules
+knitr
+\end_modules
 \maintain_unincluded_children false
 \language english
 \language_package default
@@ -100,23 +103,21 @@ status open
 \backslash
 author{Bjorn Van Campenhout
 \backslash
-thanks{Development Strategy and Governance Division, International Food
- Policy Research Institute, Leuven, Belgium}, Leocardia Nabwire
+thanks{Innovation Policy and Scaling Unit, International Food Policy Research
+ Institute, Leuven, Belgium}, Leocardia Nabwire
 \backslash
-thanks{Development Strategy and Governance Division, International Food
- Policy Research Institute, Kampala, Uganda}, Berber Kramer
-\backslash
-thanks{Markets Trade and Institutions Division, International Food Policy
- Research Institute, Nairobi, Kenya}, 
+thanks{Innovation Policy and Scaling Unit, International Food Policy Research
+ Institute, Kampala, Uganda},
 \backslash
 
 \backslash
- Carly Trachtman
+ Gashaw Tadesse Abate
 \backslash
-thanks{Markets Trade and Institutions Division, International Food Policy
- Research Institute, Washington DC, USA}, Gashaw Tadesse Abate
+thanks{Markets, Trade and Institutions Unit, International Food Policy Research
+ Institute, Kampala, Uganda}, Liesbeth Colen
 \backslash
-footnotemark[4]}
+thanks{Department of Agricultural Economics and Rural Development, Georg-August-
+University of Göttingen, Germany}}
 \end_layout
 
 \end_inset
@@ -126,35 +127,21 @@ footnotemark[4]}
 
 \end_inset
 
-Increasing Adoption and Varietal Turnover of Seed—A Pre-Analysis Plan for
- Consumer and Producer Side Interventions
+Does cost-sharing increase learning? Experimental evidence from seed trail
+ packs in Uganda
 \end_layout
 
 \begin_layout Abstract
-To increase adoption of new agricultural technologies, both push (supply
- side) and pull (demand side) factors are important.
- A popular supply side intervention to increase adoption of a particular
+A popular supply side intervention to increase adoption of a particular
  technology is some level of subsidy.
  However, it is often argued that if something was subsidized (or even provided
  for free), it may not be used for the intended purpose.
- In this paper, we test if farmers that receive a sample of a new improved
- seed variety are more likely to adopt it in the future than a control group
- of farmers who did not get a free sample.
- Furthermore we test whether farmers learn differently from seed that was
- obtained for free than if they had to pay a (small) price for it.
- The latter is investigated by providing farmers the opportunity to buy
- seed, and then giving a discount to a random subset of these farmers.
- Such two-stage pricing designs allows us to disentangle the selection effect,
- whereby farmers that are prepared to pay a price are likely to be more
- motivated to learn from it for subsequent adoption decisions, from the
- sunk cost effect, where a product that has a price attached to it is valued
- more.
- In addition to the supply side intervention, we also test the relative
- effectiveness of a demand sided intervention to increase adoption of improved
- seed varieties.
- In particular, we cross-randomize an intervention where households are
- demonstrated how to prepare the new seed variety and get the ability to
- taste it.
+ We test whether farmers learn differently from seed that was obtained for
+ free than if they had to pay a (small) price for it.
+ Furthermore, we use a two-stage pricing design that allows us to disentangle
+ the selection effect, whereby farmers that are prepared to pay a price
+ are likely to be more motivated to learn from it, from the sunk cost effect,
+ where a product that has a price attached to it is valued more.
 \end_layout
 
 \begin_layout Abstract
@@ -168,19 +155,6 @@ JEL: Q16, H24, O33, D91
 
 \begin_layout Section
 Motivation
-\end_layout
-
-\begin_layout Standard
-In development economics, long run change often requires both push and pull
- factors simultaneously creating to a new equilibrium.
- For example, value chain upgrading often involves some kind of acceleration
- in the demand of the underlying commodity downstream (for instance after
- opening up of a new export market) and a matched supply side disruption
- upstream (such as a technological innovation that increases productivity).
- Similar arguments may hold for the adoption of a new technology, where
- farmers may change behavior in response to both the supply of the new technolog
-y and an increase in demand for the commodity that emanates from the new
- technology.
 \end_layout
 
 \begin_layout Standard
@@ -262,13 +236,6 @@ signal for quality
 \end_layout
 
 \begin_layout Standard
-In general, studies on subsidized inputs in the health sector focus most
- on intended use as the primary outcome.
- In our case, intended use is considered an intermediary outcome; we are
- most interested in the learning that emanates from the (subsidized) seed
- pack as evidenced by subsequent adoption of the seed in the next year when
- the seed is not subsidized anymore.
- 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "kremer2019behavioral"
@@ -291,42 +258,10 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-Studies on adoption often focus solely on the supply side, and it is assumed
- that supply related attributes such as high yield or drought resistance
- are also the traits that farmers seek.
- As such, in information dissemination and marketing of new seeds, these
- attributes are singled out.
- However, previous exploratory data analysis suggests that both ease of
- cooking and taste are also important characteristics that determine the
- choice of what varieties to adopt.
-\end_layout
-
-\begin_layout Standard
-In this research, we evaluate the relative effectiveness of two interventions
- designed to increase varietal turnover of maize seed in Uganda.
- A first intervention targets the supply side and consists of providing
- farmer with the technology at a subsidized (up to 100 percent) price.
- A second intervention targets the demand side.
- Here we create demand for maize by cooking demonstrations where farmers
- can familiarize themselves with maize derived from the improved seed varieties
- and taste 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "10.1093/jn/137.5.1320"
-literal "false"
-
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
 The above also suggests that the size of the subsidy and the relative magnitude
  of screening and sunk cost effects are important unknowns when evaluating
  supply interventions to promote seed varietal turnover.
- As such, the intervention that targets the supply side has four treatment
- arms.
+ As such, the intervention has three treatment arms.
  In one treatment arm, a seed trial pack is provided for free.
  In a second treatment arm, we offer farmers the opportunity to buy seed
  through a sequential bargaining game.
@@ -336,14 +271,20 @@ The above also suggests that the size of the subsidy and the relative magnitude
 \end_layout
 
 \begin_layout Standard
-This document serves as a pre-analysis plan for the study that will be registere
-d in a public repository.
- It provides background information, outlines hypotheses which will be tested,
- tools that will be used in the field, power calculations and sample size
- projections on which sampling is based, outcome variables that will be
- used to assess impact, and specification that will be estimated.
- As such, it will provide a useful reference in evaluating the final results
- of the study 
+This document was started as a dynamic report prior to data endline data
+ collection.
+ It combines latex with R code using the Knitr engine and is tracked under
+ revision control on github.
+ As such, this 
+\begin_inset Quotes eld
+\end_inset
+
+mock report
+\begin_inset Quotes erd
+\end_inset
+
+ will provide a useful reference in evaluating the final results of the
+ study 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "humphreys_sanchezdelasierra_vanderwindt_2013,651546"
@@ -469,24 +410,6 @@ The relationship between effectiveness and the size of the subsidy, and
  such as the adoption of insecticide treated bednets.
  To our knowledge, we are the first to address this question in the context
  of agricultural technology adoption.
-\end_layout
-
-\begin_layout Standard
-There seem to be even less studies that look at demand side interventions
- to spur technology adoption.
- In general, demand side interventions such as cooking demonstrations are
- primarily concerned about nutrition education 
-\begin_inset CommandInset citation
-LatexCommand citep
-before "eg."
-key "REICKS2014259"
-literal "false"
-
-\end_inset
-
-.
- Experiential interventions like tasting rarely go all the way back to decisions
- on what to plant.
 \end_layout
 
 \begin_layout Section
@@ -763,180 +686,17 @@ During testing, we found that information about the opportunity to bargain
 \end_layout
 
 \begin_layout Section
-Power calculations
-\end_layout
-
-\begin_layout Standard
-We use simulations to determine sample size.
- Simulation is a far more flexible, and far more intuitive way to think
- about power analysis.
- Even the smallest tweaks to an experimental design are difficult to capture
- in a formula (adding a second treatment group, for example), but are relatively
- straightforward to include in a simulation.
- In our case, we generate data with a simulated treatment effect of a given
- size 
-\emph on
-n
-\emph default
- times (for the number of simulations), and then count how often (
-\emph on
-z
-\emph default
-) we can find a significant effect (p<0.05).
- We do this for different sample sizes (eg 100, 200, 300, ...
- 1000) and pick the sample size where 
-\emph on
-z/n
-\emph default
- is about .80.
- As we have a clustered design, we perform a grid search over 2 dimensions:
- number of villages and number of households per village.
- 
-\end_layout
-
-\begin_layout Standard
-We use the following assumptions for the power calculations.
- The primary outcome we use is a binary indicator for use of improved seed
- at the farmer level.
- Using data previously collected as part of a different project from 3450
- smallholder maize farmers located in 345 villages, we find that about 64
- percent of farmers indicate that they are already using improved seed.
- However, this is likely to be an overestimate as these farmers were sample
- from clients of agro-input dealers, and the question asked was if the farmer
- had ever used improved seed.
- We thus use a baseline seed use rate of 32 percent, which is closer to
- mean of 34 percent reported in the same area in 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "https://doi.org/10.1002/ajae.12089"
-literal "false"
-
-\end_inset
-
-.
- Inter cluster (within village) correlation for this outcome has been estimated
- to be 0.15.
- We assume similar treatment effects for both the seed trail treatment and
- the consumption (a 13.5 percentage point increase).
- For the interaction effect, we assume a 23.5 percentage point increase.
- We use HC3 standard errors clustered at the village level for the power
- calculations.
- R code can be found 
-\begin_inset CommandInset href
-LatexCommand href
-name "here"
-target "https://github.com/bjvca/mippi_UG/blob/master/study_design/power_analysis.R"
-literal "false"
-
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-After running a series of power simulations, we converged to a sample consisting
- of 148 villages with 10 households in each village.
- In this design, 74 villages or 740 households will receive a free trial
- pack and 74 villages or 740 households will be exposed to the consumption
- side treatment.
- Half of these will overlap, that is, about 37 villages or 370 households
- will receive both treatments.
- With this setting, we are not powered to detect the three effects simultaneousl
-y.
- In only 68 percent of cases we are able to estimate a positive effect at
- the five percent significance level for both treatments and their interaction.
- However, if we consider the treatments separately, we hit conventional
- power levels for both treatments, and get up to 0.97 for the interaction
- effect.
- We are certain to identify at least one of the three parameters of interest
- (seed packs, consumer intervention, or the interaction).
- The design, with sample sizes, is illustrated in Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Design"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Design"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename design_pic.png
-	scale 40
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Design
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Design"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-We did not run formal power calculations for the research question related
- to the screening and sunk cost effects; we just take the sample size for
- a treatment cell in the factorial design and add an extra columns to the
- design.
- To account for potential attrition etc, we will collect information on
- 2320 households in 232 villages instead of 2220 households in 222 villages.
-\end_layout
-
-\begin_layout Section
 Estimation and inference
 \end_layout
 
 \begin_layout Standard
-We will use ANCOVA models to assess impact.
- As randomization happened at the village level, we estimate a similar equation:
+We will estimate the following equation
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-Y_{1ij}=\alpha+\beta_{S}T_{i}^{S}+\beta_{D}T_{i}^{D}+\beta_{I}T_{i}^{S}T_{i}^{D}+\delta Y_{0ij}+\varepsilon_{ij}\label{eq:one}
+Y_{ij}=\alpha+\beta_{P}T_{ij}^{P}+\beta_{D}T_{ij}^{D}+\varepsilon_{ij}\label{eq:one}
 \end{equation}
 
 \end_inset
@@ -946,95 +706,20 @@ Y_{1ij}=\alpha+\beta_{S}T_{i}^{S}+\beta_{D}T_{i}^{D}+\beta_{I}T_{i}^{S}T_{i}^{D}
 
 \begin_layout Standard
 where 
-\begin_inset Formula $T_{i}^{S}$
-\end_inset
-
- is a dummy for the supply side intervention treatment status of village
- 
-\emph on
-i
-\emph default
- and 
-\begin_inset Formula $T_{i}^{D}$
-\end_inset
-
- is a dummy for the demand side intervention treatment status of village
- 
-\emph on
-i
-\emph default
-.
- We also allow for an interaction effect between the two treatments and
- control for baseline outcomes to improve precision.
-\end_layout
-
-\begin_layout Standard
-Factorial designs have recently been criticized for the proliferation of
- underpowered studies and replication failure 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "muralidharan2019factorial"
-literal "false"
-
-\end_inset
-
-.
- While in the previous section we ran power calculations based on models
- with a complete set of interactions (as on equation 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:one"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-), we may still want to try boosting power by pooling observations across
- the orthogonal treatment in the event that we find a treatment effect that
- appears smaller than the minimal detectable effect size that we assumed
- during power calculations.
- To do so, we will consider the orthogonal treatment as a co-variate we
- adjust for, and interact the treatment variable with the demeaned orthogonal
- treatment.
- This give a more robust version of the treatment estimate that corresponds
- to the coefficient estimate of the treatment of interest after dropping
- the interaction with orthogonal the treatment
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-see: https://blogs.worldbank.org/impactevaluations/what-should-you-do-experiments-
-factorial-designs
-\end_layout
-
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-Y_{1ij}=\alpha+\beta_{M}T_{i}^{M}+\beta_{O}\left(T_{i}^{O}-\bar{T^{O}}\right)+\beta_{I}T_{i}^{M}\left(T_{i}^{O}-\bar{T^{O}}\right)+\delta Y_{0ij}+\varepsilon_{ij}
-\end{equation}
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
 Where now 
-\begin_inset Formula $T_{i}^{M}$
+\begin_inset Formula $T_{ij}^{P}$
 \end_inset
 
- is a dummy for the main treatment and 
-\begin_inset Formula $T_{i}^{O}$
+ is an indicator that takes the value of one if the farmer paid a price
+ for the seed (through the bargaining) and 
+\begin_inset Formula $T_{ij}^{D}$
 \end_inset
 
- is a dummy for the orthogonal treatment (which enters in deviations from
- its means).
+ indicator that takes the value of one if the farmer paid a price for the
+ seed (through the bargaining) and also received a 100 percent discount.
 \end_layout
 
 \begin_layout Standard
@@ -1079,93 +764,64 @@ literal "false"
 \end_layout
 
 \begin_layout Section
-Timeline
+Results
 \end_layout
 
 \begin_layout Standard
-There are two maize growing seasons in the area we are planning to work.
- One is running from march/april to june/July, the other from August/Sept
- to November/December.
-\end_layout
-
-\begin_layout Standard
-Ideally we would distribute trail packs together with baseline data collection
- about one month before planting.
- As such, the best time would be around February 2023.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename timeline.png
-	scale 35
 
-\end_inset
+<<code,  echo=FALSE, warning = FALSE, message=FALSE>>=
+\end_layout
 
+\begin_layout Plain Layout
 
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption Standard
+
+path <- getwd()
+\end_layout
 
 \begin_layout Plain Layout
-Timeline
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+load(paste(path,"res_tab.Rdata", sep="/"))
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
 
 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Context
-\end_layout
-
-\begin_layout Standard
-The study will be implemented in Eastern Uganda in an area known as the
- Busoga Kingdom.
- We will sample from 4 districts that have relatively low adoption (compared
- to neighboring villages) but a good network of agro-input dealers.
- Using data that was previously collected as part of a different study,
- we found that the districts of Kamuli, Mayuge, Bugweri, and Bugiri fit
- these conditions.
- 
-\end_layout
-
-\begin_layout Standard
-The study population consists of smallholder maize farmers.
- To get a random sample of the population, villages will be randomly selected
- with probability proportionate the the number of households living in the
- village.
- In each sampled village, 10 households will be randomly selected to participate
- in the study.
-\end_layout
-
-\begin_layout Section
-Variables
-\end_layout
-
-\begin_layout Standard
-In this section, we register the variables that will be used in the study.
- We differentiate between outcomes at midline and outcomes at endline.
- At midline, we are primarily interested in the use of the trial seed pack,
- at endline we focus on adoption in subsequent years.
- 
 \end_layout
 
 \begin_layout Subsection
-Baseline variables for balance
+Baseline balance
 \end_layout
 
 \begin_layout Standard
@@ -1236,6 +892,971 @@ We plan to do a midline survey in August 2023.
  will be asked the questions below.
  However, all households will be revisited, as at this time the consumption
  side treatment will be implemented.
+\end_layout
+
+\begin_layout Standard
+At the most basic level, farmers that receive something for free may not
+ even remember this.
+ A first outcome we will thus use is simply the question if farmers remember
+ that they bought or received a seed trial pack from use in February of
+ March 2023 from us?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Effects on Use of trial seed
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnotesize
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tabular}{rccc}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& mean & selection & sunk cost 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+remembers buying/receiving trial pack
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab[1,1,1]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab[1,2,1]}$^{
+\backslash
+Sexpr{ifelse(res_tab[3,2,1]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab[3,2,1]<.05,"*",ifelse(res_tab[3,2,1]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab[1,3,1]}$^{
+\backslash
+Sexpr{ifelse(res_tab[3,3,1]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab[3,3,1]<.05,"*",ifelse(res_tab[3,3,1]<.1,"+","")))}}$
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab[2,2,1]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab[2,2,1]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab[2,3,1]})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+used trail pack as seed
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab[1,1,2]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab[1,2,2]}$^{
+\backslash
+Sexpr{ifelse(res_tab[3,2,2]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab[3,2,2]<.05,"*",ifelse(res_tab[3,2,2]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab[1,3,2]}$^{
+\backslash
+Sexpr{ifelse(res_tab[3,3,2]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab[3,3,2]<.05,"*",ifelse(res_tab[3,3,2]<.1,"+","")))}}$
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab[2,2,2]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab[2,2,2]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab[2,3,2]})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+did not mix seed with other seed
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab[1,1,3]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab[1,2,3]}$^{
+\backslash
+Sexpr{ifelse(res_tab[3,2,3]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab[3,2,3]<.05,"*",ifelse(res_tab[3,2,3]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab[1,3,3]}$^{
+\backslash
+Sexpr{ifelse(res_tab[3,3,3]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab[3,3,3]<.05,"*",ifelse(res_tab[3,3,3]<.1,"+","")))}}$
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab[2,2,3]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab[2,2,3]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab[2,3,3]})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+field layout improved next to local seed
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Index
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+scriptsize
+\end_layout
+
+\begin_layout Plain Layout
+
+Note: 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Effects on Inputs and Agronomic practices
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnotesize
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tabular}{rccc}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& mean & selection & sunk cost 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Used fertilizer
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab[1,1,4]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab[1,2,4]}$^{
+\backslash
+Sexpr{ifelse(res_tab[3,2,4]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab[3,2,4]<.05,"*",ifelse(res_tab[3,2,4]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab[1,3,4]}$^{
+\backslash
+Sexpr{ifelse(res_tab[3,3,4]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab[3,3,4]<.05,"*",ifelse(res_tab[3,3,4]<.1,"+","")))}}$
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab[2,2,4]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab[2,2,4]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab[2,3,4]})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+scriptsize
+\end_layout
+
+\begin_layout Plain Layout
+
+Note: 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Effects on assessment of characteristics
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnotesize
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tabular}{rccc}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& mean & selection & sunk cost 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+In general, were you happy or disappointed with the performance of the seed?
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Did the seed have higher yields that what you had expected at the time you
+ got the seed? 
+\end_layout
+
+\begin_layout Plain Layout
+
+Was the seed more or less drought tolerant than you expected? 
+\end_layout
+
+\begin_layout Plain Layout
+
+Was the seed more or less pest/disease resistant than you expected? 
+\end_layout
+
+\begin_layout Plain Layout
+
+Were you happy with the seed maturing period of the seed? 
+\end_layout
+
+\begin_layout Plain Layout
+
+Were you happy with the germination rates of the seed? 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Index
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+scriptsize
+\end_layout
+
+\begin_layout Plain Layout
+
+Note: 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Effects on yield and expectations
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnotesize
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tabular}{rccc}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& mean & selection & sunk cost 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Are you happy with the performance of the seed?
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab[1,1,4]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab[1,2,4]}$^{
+\backslash
+Sexpr{ifelse(res_tab[3,2,4]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab[3,2,4]<.05,"*",ifelse(res_tab[3,2,4]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab[1,3,4]}$^{
+\backslash
+Sexpr{ifelse(res_tab[3,3,4]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab[3,3,4]<.05,"*",ifelse(res_tab[3,3,4]<.1,"+","")))}}$
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab[2,2,4]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab[2,2,4]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab[2,3,4]})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+scriptsize
+\end_layout
+
+\begin_layout Plain Layout
+
+Note: 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -1320,241 +1941,6 @@ Were you happy with the bazooka?
 What seed are you planning to use in next season?
 \end_layout
 
-\begin_layout Subsection
-Outcomes at endline
-\end_layout
-
-\begin_layout Subsubsection
-Primary outcomes
-\end_layout
-
-\begin_layout Standard
-The main aim of the project is to find ways to increase varietal turnover.
- Most primary outcomes are therefore related to seed use in years subsequent
- to the intervention.
- We define 10 primary outcomes that will also be combined in a summary index
- test following 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "doi:10.1198/016214508000000841"
-literal "false"
-
-\end_inset
-
-.
- Therefore, all primary outcomes have an unambiguous expected effect.
-\end_layout
-
-\begin_layout Enumerate
-has used quality maize seed (hybrid/OPV obtained from credible source and
- not recycled too often) on any plot in last season - 1 is yes (q25a)
-\end_layout
-
-\begin_layout Enumerate
-has used Bazooka on any plot in last season in last season - 1 is yes (q25aa)
-\end_layout
-
-\begin_layout Enumerate
-has used improved seed (hybrid/OPV obtained from credible source and not
- recycled too often) on a randomly chosen plot in the last season - 1 is
- yes (q31)
-\end_layout
-
-\begin_layout Enumerate
-has used the promoted seed (bazooka) on a randomly chosen plot in the last
- season - 1 is yes (q31)
-\end_layout
-
-\begin_layout Enumerate
-extensive margin improved seed use on random plot (kg improved seed (OPV
- or hybrid)) (q38) - more is better
-\end_layout
-
-\begin_layout Enumerate
-intensive margin improved seed use on random plot (kg improved seed (OPV
- or hybrid)/area planted) (q38/q29) - more is better
-\end_layout
-
-\begin_layout Enumerate
-How often was the seed that was used on the randomly selected plot recycled?
- (q34) - less is better
-\end_layout
-
-\begin_layout Enumerate
-Where did you obtain the seed from for the maize planted on the randomly
- selected plot in the previous season? (q32) - more formal (eg agro-input
- dealer, operation wealth create) is better
-\end_layout
-
-\begin_layout Enumerate
-Would you use this seed that was used on the randomly selected plot in the
- previous season again in the future? - 1 is yes (q37)
-\end_layout
-
-\begin_layout Enumerate
-maize yields on a randomly chosen plot in last season - production/size
- of plot (q29, q50, q51) - more is better
-\end_layout
-
-\begin_layout Subsubsection
-Secondary outcome
-\end_layout
-
-\begin_layout Standard
-We define a range of secondary outcomes.
- These are outcomes to explore impact pathways.
- There are also some outcomes for which effects are not a-priori known.
- 
-\end_layout
-
-\begin_layout Enumerate
-rating of taste of seed variety used on randomly selected field - 1 is good
- (4) or very good (5) taste of variety - producer intervention impact pathway)
- (q35g)
-\end_layout
-
-\begin_layout Enumerate
-Seed variety that was planted on the randomly selected crop in the previous
- season (to test if farmers has experience - consumption intervention impact
- pathway)?
-\end_layout
-
-\begin_layout Enumerate
-was it intercropped? (q30) - if yes, ask for secondary crop (q30a) and percentag
-e allocations (q30b)
-\end_layout
-
-\begin_layout Enumerate
-crop residue use (cr_use_grp)
-\end_layout
-
-\begin_layout Enumerate
-cost of the seed (q39)
-\end_layout
-
-\begin_layout Enumerate
-where was the seed obtained from? (q32)
-\end_layout
-
-\begin_layout Enumerate
-Was the female co-head involved in the decision to use a particular type
- of seed on the randomly selected plot? (q34a)
-\end_layout
-
-\begin_layout Enumerate
-Was the female co-head involved in the decision on what happened to the
- crops harvested on the randomly selected plot? (q34aa)
-\end_layout
-
-\begin_layout Enumerate
-How much maize from the randomly selected plot was kept for own consumption?
- (q55a)
-\end_layout
-
-\begin_layout Enumerate
-How much was kept for seed in the next agricultural season? (q56)
-\end_layout
-
-\begin_layout Enumerate
-What seed/plant spacing was used on random plot? (q40)
-\end_layout
-
-\begin_layout Enumerate
-Number of seeds per hill used on random plot? (q41)
-\end_layout
-
-\begin_layout Enumerate
-Did you apply organic manure to the soil on random plot? (q42)
-\end_layout
-
-\begin_layout Enumerate
-Did you apply DAP **(black in color)** or NPK (brown in color) on random
- plot? (q43)
-\end_layout
-
-\begin_layout Enumerate
-Did you apply Urea **(white in color)** on random plot? (q44)
-\end_layout
-
-\begin_layout Enumerate
-How many times did you weed on random plot? (q45)
-\end_layout
-
-\begin_layout Enumerate
-How many days after planting did you do first weeding on random plot? (q46)
-\end_layout
-
-\begin_layout Enumerate
-Did you use any pesticides, herbicides or fungicides on random plot? (q47)
-\end_layout
-
-\begin_layout Enumerate
-When did you plant the seed on random plot? (q48)
-\end_layout
-
-\begin_layout Enumerate
-Did you re-sow where seeds did not germinate on random plot? (q49)
-\end_layout
-
-\begin_layout Enumerate
-Indicate time use (total man days per season) for male co-head, female co-head,
- other HH members, hired in for:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Field preparation 
-\end_layout
-
-\begin_layout Itemize
-Planting 
-\end_layout
-
-\begin_layout Itemize
-Weeding
-\end_layout
-
-\begin_layout Itemize
-Spraying 
-\end_layout
-
-\begin_layout Itemize
-Harvesting 
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-maize yields on a randomly chosen plot in last season - production/size
- of plot (q29, q50, q51)
-\end_layout
-
-\begin_layout Enumerate
-Did you sell any maize that you harvested from this randomly selected plot?
- (q53)
-\end_layout
-
-\begin_layout Enumerate
-How many bags of maize did you sell from this randomly selected plot? (q54)
-\end_layout
-
-\begin_layout Enumerate
-Q24.
- Are you a member of a farmer group, association or cooperative that is
- involved in maize production? (q24)
-\end_layout
-
-\begin_layout Enumerate
-Wealth - consumption of most commonly consumed items
-\end_layout
-
-\begin_layout Enumerate
-Food security (R111 and R112)
-\end_layout
-
-\begin_layout Enumerate
-Subjective well-being, relative to others (R409) and over time (R110)
-\end_layout
-
 \begin_layout Section*
 Ethical clearance
 \end_layout
@@ -1600,38 +1986,11 @@ mock report: After baseline data is collected, a pre-registered report will
  further reducing the opportunity of specification search.
 \end_layout
 
-\begin_layout Section*
-Funding
-\end_layout
-
-\begin_layout Standard
-This research is part of the 
-\begin_inset CommandInset href
-LatexCommand href
-name "OneCG Market Intelligence Initiative"
-target "https://www.cgiar.org/initiative/market-intelligence/"
-literal "false"
-
-\end_inset
-
- which is funded by a 
-\begin_inset CommandInset href
-LatexCommand href
-name "consortium of donors"
-target "https://www.cgiar.org/funders/"
-literal "false"
-
-\end_inset
-
-.
- 
-\end_layout
-
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 btprint "btPrintCited"
-bibfiles "MIPPI_PAP"
+bibfiles "seed_free_or_not"
 options "IFPRI_Style"
 
 \end_inset

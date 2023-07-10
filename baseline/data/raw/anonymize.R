@@ -47,7 +47,7 @@ dta$farmer_ID[dta$X_uuid == "3dec7153-1c6a-41c5-83d4-7774075de126"] <- "F_2109"
 
 
 dta <- subset(dta, X_uuid != "4d3bfaad-06a5-4cd7-b9a9-2a4b82a5024f")
-
+write.csv(dta, file = paste(path,"raw/baseline_fixed_dups.csv", sep="/"), row.names = FALSE)
 ### enumerator gender:
 # create named vector of enumerator genders
 enumerator_genders <- c(Arnold = "Male", 
