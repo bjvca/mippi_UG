@@ -31,7 +31,11 @@ dta <- merge(dta, base, by.x=c("cooking.district", "cooking.sub", "cooking.villa
 sum(dta$before_cook.taste1.taste1_impr[dta$x==1])/sum(dta$total_votes_before[dta$x==1])*100
 sum(dta$before_cook.taste1.taste1_impr[dta$x==0])/sum(dta$total_votes_before[dta$x==0])*100
 
-dta <- dta[,-c(12:914)]
+library(dplyr) 
+dta <- dta %>% select(-contains("sp_name"))
+dta <- dta %>% select(-contains("rep_name"))
+dta <- dta %>% select(-contains("..c2"))
+
 to_drop <- c("cooking.district"  ,                 "cooking.sub"       ,                 "cooking.village" ,
 "start"           ,                   "end"   ,                            
  "deviceid"    ,                       "simserial"            ,              "phonenumber"       ,                
