@@ -64,5 +64,6 @@ to_drop <- c("cooking.district"  ,                 "cooking.sub"       ,        
 
 
 dta <- dta[ , !(names(dta) %in% to_drop)]
+dta <- dta[,-c(2:781)]
 
 write.csv(dta,file=paste(path,"public/cons_intervention.csv",sep="/"), row.names=FALSE)

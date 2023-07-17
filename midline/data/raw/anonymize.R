@@ -38,10 +38,11 @@ dta$vil_ID <- as.numeric(dta$vil_ID)
 to_drop <- c("district","sub","village")
 dta <- dta[ , !(names(dta) %in% to_drop)]
 ###remove metadata
-to_drop <- c("confirmation.check3.maize.gps", "confirmation.check3.maize._gps_latitude", "confirmation.check3.maize._gps_longitude", "confirmation.check3.maize._gps_altitude",              
- "confirmation.check3.maize._gps_precision","meta.instanceID","X_id","X_submission_time","X_tags","X_version","X_duration",
+to_drop <- c("confirmation.Spo_name","confirmation.check3.gps", "confirmation.check3._gps_latitude", "confirmation.check3._gps_longitude", "confirmation.check3._gps_altitude",              
+ "confirmation.check3._gps_precision","meta.instanceID","X_id","X_submission_time","X_tags","X_version","X_duration",
  "X_submitted_by","X_total_media","X_media_count","X_media_all_received","X_xform_id", "X_uuid","X_date_modified", "X_notes")
 dta <- dta[ , !(names(dta) %in% to_drop)]
+
 
 names(dta) <- sub("confirmation.check3.maize.", "",names(dta))
 names(dta) <- sub("confirmation.check3.", "",names(dta))

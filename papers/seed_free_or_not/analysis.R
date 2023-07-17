@@ -74,10 +74,10 @@ dta$happy <- dta$happy == 1
 ### HERE simulate data - remove if real data comes in 
 dta <- sample_n(dta, size=1170,replace = TRUE)
 
-dta$sim_treat <- c(rep("trial",390),rep("paid",390),rep("discount",390))
-dta$paid_pac <- dta$sim_treat=="paid" 
-dta$discounted <- dta$sim_treat=="discount"
-dta$trial_P <-  dta$sim_treat=="trial"
+#dta$sim_treat <- c(rep("trial",390),rep("paid",390),rep("discount",390))
+#dta$paid_pac <- dta$sim_treat=="paid"
+#dta$discounted <- dta$sim_treat=="discount"
+#dta$trial_P <-  dta$sim_treat=="trial"
 #### remove this part ^^^^
 
 
@@ -87,7 +87,7 @@ dta$layout <- dta$layout == 3
 
 ###table 1 - impact on use
 #iterate over outcomes
-outcomes <- c("remembers","used_TP","TP_separate","layout","sep_post_harvest" )
+outcomes <- c("used_TP","TP_separate","layout","sep_post_harvest" )
 
 index_use <- icwIndex(xmat=dta[outcomes],sgroup = dta$trial_P) #x
 dta <- data.frame(dta,index_use)
@@ -157,7 +157,6 @@ for (i in 1:length(outcomes)) {
   
 }
 res_tab_pract <- round(res_tab,digits=3)
-#res_tab <- round(res_tab,digits=3)
 save(res_tab_pract, file=paste(path,"papers/seed_free_or_not/res_tab_pract.Rdata",sep="/"))
 
 #table 3: impact on characteristics
@@ -197,7 +196,6 @@ for (i in 1:length(outcomes)) {
   
 }
 res_tab_char <- round(res_tab,digits=3)
-#res_tab <- round(res_tab,digits=3)
 save(res_tab_char, file=paste(path,"papers/seed_free_or_not/res_tab_char.Rdata",sep="/"))
 
 #table 4: impact on yield
@@ -219,6 +217,7 @@ dta$bag_size_trial <- as.numeric(as.character(dta$bag_size))
 
 dta$prod_kg_trial <- dta$bag_size_trial*dta$bags_trial
 dta$yield_trial <- dta$prod_kg_trial/dta$area_trial
+dta$yield_trial[dta$yield_trial>5000] <- NA
 
 #iterate over outcomes
 outcomes <- c("area_tot",
@@ -258,11 +257,106 @@ for (i in 1:length(outcomes)) {
   
 }
 res_tab_yield <- round(res_tab,digits=3)
-#res_tab <- round(res_tab,digits=3)
 save(res_tab_yield, file=paste(path,"papers/seed_free_or_not/res_tab_yield.Rdata",sep="/"))
+
+#table 4: intentions
+dta$plan_imp <- (dta$seed_nxt == 1 |  dta$seed_nxt == 2) 
+dta$plan_bazooka <- dta$imp_var.Bazooka == "True"
+dta$plan_bought <- dta$buy_plan=="Yes"
+dta$plan_area <-  as.numeric(as.character(dta$area_plan))
+
+#iterate over outcomes
+outcomes <- c("plan_imp",
+              "plan_bazooka",
+              "plan_area",
+              "plan_bought")
+
+index_use <- icwIndex(xmat=dta[outcomes],sgroup = dta$trial_P) #x
+dta <- data.frame(dta,index_use)
+
+names(dta)[names(dta) == 'index'] <- 'index_plan'
+
+outcomes <- c(outcomes,"index_plan" )
+
+#matrix to store results
+res_tab <-  array(NA,dim=c(3,3,length(outcomes)))
+
+res_tab[1,1,1:length(outcomes)] <- colMeans(dta[dta$trial_P==TRUE,outcomes], na.rm=T)
+res_tab[2,1,1:length(outcomes)] <- apply(dta[dta$trial_P==TRUE,outcomes], 2, sd, na.rm=T)
+
+for (i in 1:length(outcomes)) {
+  ### pooled regression (for marginal effects)
+  ols <- lm(as.formula( paste(outcomes[i],"paid_pac+discounted",sep="~")), data=dta)
+  
+  
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR3")
+  
+  res_tab[1,2,i]  <- coef_test(ols, vcov_cluster)$beta[2]
+  res_tab[2,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
+  res_tab[3,2,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
+  
+  res_tab[1,3,i]  <- coef_test(ols, vcov_cluster)$beta[3]
+  res_tab[2,3,i] <- coef_test(ols, vcov_cluster)$SE[3]
+  res_tab[3,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[3]
+  
+  
+}
+res_tab_plan <- round(res_tab,digits=3)
+save(res_tab_plan, file=paste(path,"papers/seed_free_or_not/res_tab_plan.Rdata",sep="/"))
+
+
+dta$remembers_seed <- dta$rem_sdType == "Yes"
+dta$remembers_comp <- dta$rem_comp == "Yes"
+dta$value_shop <- as.numeric(as.character(dta$value))
+dta$value_paid <- as.numeric(as.character(dta$price_paid))
+
+#iterate over outcomes
+outcomes <- c("remembers_seed",
+              "remembers_comp",
+              "value_shop")
+
+index_use <- icwIndex(xmat=dta[outcomes],sgroup = dta$trial_P) #x
+dta <- data.frame(dta,index_use)
+
+names(dta)[names(dta) == 'index'] <- 'index_plan'
+
+outcomes <- c(outcomes,"value_paid", "index_plan" )
+
+#matrix to store results
+res_tab <-  array(NA,dim=c(3,3,length(outcomes)))
+
+res_tab[1,1,1:length(outcomes)] <- colMeans(dta[dta$trial_P==TRUE,outcomes], na.rm=T)
+res_tab[2,1,1:length(outcomes)] <- apply(dta[dta$trial_P==TRUE,outcomes], 2, sd, na.rm=T)
+
+for (i in 1:length(outcomes)) {
+  ### pooled regression (for marginal effects)
+  ols <- lm(as.formula( paste(outcomes[i],"paid_pac+discounted",sep="~")), data=dta)
+  
+  
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR3")
+  
+  res_tab[1,2,i]  <- coef_test(ols, vcov_cluster)$beta[2]
+  res_tab[2,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
+  res_tab[3,2,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
+  
+  res_tab[1,3,i]  <- coef_test(ols, vcov_cluster)$beta[3]
+  res_tab[2,3,i] <- coef_test(ols, vcov_cluster)$SE[3]
+  res_tab[3,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[3]
+  
+  
+}
+## for subset of those that bought
+res_tab[1,1, 4] <- mean(dta$value_paid[dta$paid_pac==TRUE & dta$discounted==FALSE], na.rm=TRUE)
+res_tab[2,1, 4] <- sd(dta$value_paid[dta$paid_pac==TRUE & dta$discounted==FALSE], na.rm=TRUE)
+
+res_tab_path <- round(res_tab,digits=3)
+save(res_tab_path, file=paste(path,"papers/seed_free_or_not/res_tab_path.Rdata",sep="/"))
+
+
 
 ### additional analysis - on subset
 ### does farmer remember price paid better if no discount?
 ### pull price paid from baseline data
 ### calculate difference between price paid and recall
 ### compare between paid and paid+discount
+

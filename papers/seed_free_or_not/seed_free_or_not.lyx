@@ -131,17 +131,26 @@ Does cost-sharing increase learning? Experimental evidence from seed trail
  packs in Uganda
 \end_layout
 
+\begin_layout Standard
+\align center
+
+\series bold
+!mock report - data in tables is simulated!
+\end_layout
+
 \begin_layout Abstract
 A popular supply side intervention to increase adoption of a particular
  technology is some level of subsidy.
  However, it is often argued that if something was subsidized (or even provided
- for free), it may not be used for the intended purpose.
- We test whether farmers learn differently from seed that was obtained for
- free than if they had to pay a (small) price for it.
+ for free), it is not valued as much may is more likely to be used for the
+ intended purpose.
+ We test whether farmers use seed that was obtained for free differently
+ than if they had to pay a (small) price for it.
  Furthermore, we use a two-stage pricing design that allows us to disentangle
  the selection effect, whereby farmers that are prepared to pay a price
  are likely to be more motivated to learn from it, from the sunk cost effect,
  where a product that has a price attached to it is valued more.
+ This document is a mock report created to pre-register outcomes and analysis.
 \end_layout
 
 \begin_layout Abstract
@@ -165,8 +174,8 @@ A popular supply side intervention to introduce a new agricultural technology
  new product.
  Public actors may think commercial seed are out of reach of poor households
  and want to kick-start large scale adoption by providing the initial investment.
- The case for free (or subsidized) inputs also stems from potential externalitie
-s: it is well established that one of the most effective ways to increase
+ The case for free (or subsidized) inputs also stems from positive externalities
+: it is well established that one of the most effective ways to increase
  technology adoption is through peer learning, and both private and public
  partners may attempt to leverage social learning 
 \begin_inset CommandInset citation
@@ -196,11 +205,13 @@ literal "false"
 
 \begin_layout Standard
 At the same time, it is often argued that providing goods or services for
- free distorts the utility people attach to it.
+ free (or with a significant subsidy) distorts the utility people attach
+ to it.
  As a result, the good or service remains unused, is resold, or otherwise
  used in unintended ways.
- Examples include the use of free bed-nets for fishing or the use of subsidized
- chlorine for cleaning (instead of drinking water treatment) 
+ High profile examples include the use of free bed-nets for fishing or the
+ use of subsidized chlorine for cleaning (instead of drinking water treatment)
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "10.1162/qjec.2010.125.1.1,10.1257/aer.100.5.2383"
@@ -209,7 +220,6 @@ literal "false"
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Standard
@@ -261,7 +271,7 @@ literal "false"
 The above also suggests that the size of the subsidy and the relative magnitude
  of screening and sunk cost effects are important unknowns when evaluating
  supply interventions to promote seed varietal turnover.
- As such, the intervention has three treatment arms.
+ In this study, we use an intervention that has three treatment arms.
  In one treatment arm, a seed trial pack is provided for free.
  In a second treatment arm, we offer farmers the opportunity to buy seed
  through a sequential bargaining game.
@@ -296,149 +306,7 @@ literal "false"
 \end_layout
 
 \begin_layout Section
-Relation to the literature
-\end_layout
-
-\begin_layout Standard
-As the use of seed trial packs touches on many constraints, our study touches
- on various strands of the literature.
- For instance, providing free or subsidized seed directly to farmers removes
- access related constraints, such as situations where agro-input dealers
- would not have sufficient stocks of seed at the right moment 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "shiferaw2008technology"
-literal "false"
-
-\end_inset
-
-.
- Seed trial packs are often distributed to enable farmers to overcome aversion
- to risk, ambiguity, or other forms of uncertainty 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "https://doi.org/10.1002/aepp.13003,boucher2021bundling"
-literal "false"
-
-\end_inset
-
-.
- The amount of subsidy also removes financial constraints 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "ABATE2016235"
-literal "false"
-
-\end_inset
-
-.
- The opportunity to learn from trial packs may also be a substitute for
- information provided by agricultural advisory services 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "https://doi.org/10.1111/agec.12175,https://doi.org/10.1002/ajae.12089"
-literal "false"
-
-\end_inset
-
-.
- As mentioned above, new technologies are also sometimes subsidized by governmen
-ts in the hope that model farmers set up demonstration plots to encourage
- peer learning 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "10.1257/aer.100.1.35"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-That said, there are surprisingly few studies that directly evaluate the
- effectiveness of seed trial packs to accelerate technology adoption.
- 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "biedny2020demonstration"
-literal "false"
-
-\end_inset
-
- find that in Tanzania, adding trial packs to demonstration plots in the
- context of village based agricultural advisors does not significantly affect
- input sales, orders received, or learning.
- In many studies, the impact of seed packs itself are not the subject of
- research, but rather some attribute of the seed (like the risk reduction
- potential, 
-\begin_inset CommandInset citation
-LatexCommand citealp
-before "eg."
-key "boucher2021bundling"
-literal "false"
-
-\end_inset
-
-).
-\end_layout
-
-\begin_layout Standard
-Also related is 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "MORGAN2020101955"
-literal "false"
-
-\end_inset
-
-, who compare different extension approaches, one of which involves the
- use of trial packs.
- Their outcome is not subsequent adoption of the new technology, but the
- willingness to pay, which is elicited using a Becker-DeGroot-Marschak (BDM)
- auction.
- As such, their interest is more in explaining dis-adoption once new technologie
-s are sold through traditional market channels.
- They find that, in the southern highlands of Tanzania, bean farmers' willingnes
-s to pay is not affected by seed trial packs.
-\end_layout
-
-\begin_layout Standard
-The relationship between effectiveness and the size of the subsidy, and
- in particular the hypothesis that free good may be less effective than
- paid for goods, has been studied in the context of public health interventions,
- such as the adoption of insecticide treated bednets.
- To our knowledge, we are the first to address this question in the context
- of agricultural technology adoption.
-\end_layout
-
-\begin_layout Section
 Methods and experimental design
-\end_layout
-
-\begin_layout Standard
-We use a standard field experiment to test the effectiveness of free trial
- packs and the consumer side interventions.
- To do so, we will use a cluster randomize control trial that takes the
- form of a 2x2 factorial design.
- Each factor has a control and a treatment level and the clusters will be
- villages, in which a fixed number of households will be selected.
- 
-\end_layout
-
-\begin_layout Standard
-The first factor corresponds to the supply side treatment.
- In the treatment level of this factor, farmers in treatment villages receive
- a free sample of a new improved seed variety (bazooka).
- In the control level of this factor, farmers do not receive a free sample
- pack (but they do get something of similar value (a so-called token of
- appreciation) to account for potential income effects).
- The second factor corresponds to the demand side intervention.
- In the treatment level of this factor, farmers in treatment villages will
- be exposed to a cooking demonstration where farmers are provided with the
- opportunity to taste food prepared using the promoted variety.
- In the control level of this factor, we will not organize these kind of
- events.
 \end_layout
 
 \begin_layout Standard
@@ -454,15 +322,15 @@ literal "false"
 \end_inset
 
 .
- In such designs, subjects are offered a service or good for a particular
- price in a first stage.
+ In the original designs, subjects are offered a service or good for a particula
+r price in a first stage.
  In a second stage, a discount is applied to that price.
  Regressing outcomes (such as whether the product is used for the intended
  purpose) on the price while controlling for the discount gives an estimate
  of the screening effect of the price; regressing outcomes on the discount
  while controlling for the price gives an estimate of the sunk cost effect.
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Is Zero a Special Price? Evidence from Child Health Care (#13) Toshiaki
@@ -471,7 +339,9 @@ Is Zero a Special Price? Evidence from Child Health Care (#13) Toshiaki
 
 \end_inset
 
-
+ We will use a slightly different design with three treatment arms, where
+ one group gets seed for free, a second group gets to pay for the seed pack,
+ and a third group gets to pay but gets a 100 percent surprise discount.
 \end_layout
 
 \begin_layout Standard
@@ -505,16 +375,14 @@ A computer algorithm then determines a counter-offer that the enumerator
  difference between the bid and ask price is smaller than 500 ugandan shilling,
  in which case the computer instructs the enumerator sell at the last price
  the farmer bids.
-\end_layout
-
-\begin_layout Standard
-To make the bargaining also incentive compatible for the enumerators, we
+ To make the bargaining also incentive compatible for the enumerators, we
  tell them in advance that the money that is collected from farmers during
  this first stage will be divided and distributed equally among all the
  enumerators.
-\end_layout
+\begin_inset Foot
+status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 A popular alternative way to measure willingness to pay is a Becker-DeGroot-Mars
 chak (BDM) auction.
  In it simplest version, the subject formulates a bid and this bid is compared
@@ -526,6 +394,11 @@ chak (BDM) auction.
  However, after testing in the field, we found that too many farmers had
  problems comprehending the procedure, struggling especially with the fact
  that they could not bargain over the price.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -544,145 +417,12 @@ The second stage of the design involves providing an unexpected discount
  farmers that get the free seed trial pack.
 \end_layout
 
-\begin_layout Section
-Treatments
-\end_layout
-
-\begin_layout Standard
-For the first factor, the treatment level will consist of a seed trail pack
- that the household receives.
- This trial pack will be an improved seed variety (hybrid seed) that is
- available in the market but at the same time not yet widely adopted by
- farmers.
- The control level for this factor will simply be the absence of a seed
- trial pack, that is, these household will not receive a seed trial pack.
- However, in both treatment and control groups, we will inform farmers about
- the existence of the improved seed variety and the benefits of using them,
- to be able to isolate the effect of the trail pack from merely knowledge
- effects.
-\end_layout
-
-\begin_layout Standard
-For the second factor, the treatment level consists of a cooking demonstration
- and tasting event.
- Here, participating farmers the treatment villages are invited to a central
- place (the village chairperson's residence) for a facilitated meeting.
- The meeting starts by asking the group to mention the most commonly grown
- varieties by farmers in the village.
- These varieties are then groups into 
-\begin_inset Quotes eld
-\end_inset
-
-improved seed varieties
-\begin_inset Quotes erd
-\end_inset
-
- and 
-\begin_inset Quotes eld
-\end_inset
-
-local seed varieties
-\begin_inset Quotes erd
-\end_inset
-
- (Omusoga).
- Farmers are then asked to rate the two categories on various consumption
- attribute by show of hands.
- To guide the discussion, templates are developed that already indicate
- the five most common consumption traits: taste, texture, colour, aroma
- and the degree to which the flour expands while cooking.
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-These consumption traits were based on focus group discussions.
- The expansion property, whereby the increased starchiness results in 
-\begin_inset Quotes eld
-\end_inset
-
-more food from less flour
-\begin_inset Quotes erd
-\end_inset
-
- was mentioned especially by women.
- When starch is heated with water, the starch granules swell and burst,
- causing them to break down and release the glucose molecules into the water.
- 
-\end_layout
-
-\end_inset
-
- Farmers can add as many traits as they see fit.
-\end_layout
-
-\begin_layout Standard
-After the rating, we proceed with blinded tasting.
- We ask a volunteer from the farmers to prepare 
-\begin_inset Quotes eld
-\end_inset
-
-posho
-\begin_inset Quotes erd
-\end_inset
-
- twice, once using flour obtained from local seed and once using flour from
- Bazooka (the hybrid seed variety that was also used for the seed trial
- pack).
- The cook did not know which flour was from which maize type.
- The resulting dishes are then displayed on a table and farmers are invited
- to taste the two varieties (indicated as the variety on the left and the
- variety on the right).
- The two varieties are rated on the various consumption attributes and farmers
- are again asked to indicate which of the two samples are superior on each
- attribute by show of hands.
-\end_layout
-
-\begin_layout Standard
-Finally, results are discussed within the group.
- Farmers are told that one of the two samples was made from flour obtained
- from local maize, while the other was from an improved maize type called
- Bazooka.
- We then asked farmers to guess which of the two samples was based on flour
- from the local variety and which was from the improved variety and then
- reveal the truth.
- 
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-During testing in the field, we always found that a large majority of farmers
- indicated before tasting that local seed excels in almost all dimensions
- (sweeter taste, whiter, better aroma,...).
- During tasting, almost all farmers consistently ranked the sample based
- on Bazooka as superior.
- After the tasting, most farmers indicated that the superior sample was
- from the local variety, which in reality it was maize obtained from Bazooka
- maize.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Standard
 Treatment assignment will be at the village level, as we want to avoid that
  a control farmer (that gets a bar of soap as a token of gratitude) lives
  right next to a treatment farmer that gets a bag of maize seed for free.
  We will work with 10 farmers per village, which is the maximum our field
  teams can handle.
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-During testing, we found that information about the opportunity to bargain
- over the price of seed in one of the treatment groups traveled very quickly,
- prompted us to reduce the number of households per village by half.
-\end_layout
-
-\end_inset
-
- 
 \end_layout
 
 \begin_layout Section
@@ -706,16 +446,20 @@ Y_{ij}=\alpha+\beta_{P}T_{ij}^{P}+\beta_{D}T_{ij}^{D}+\varepsilon_{ij}\label{eq:
 
 \begin_layout Standard
 where 
-\end_layout
+\begin_inset Formula $Y_{i}$
+\end_inset
 
-\begin_layout Standard
-Where now 
-\begin_inset Formula $T_{ij}^{P}$
+is an outcome of interest for farmer 
+\emph on
+i,
+\emph default
+ 
+\begin_inset Formula $T_{i}^{P}$
 \end_inset
 
  is an indicator that takes the value of one if the farmer paid a price
  for the seed (through the bargaining) and 
-\begin_inset Formula $T_{ij}^{D}$
+\begin_inset Formula $T_{i}^{D}$
 \end_inset
 
  indicator that takes the value of one if the farmer paid a price for the
@@ -810,6 +554,21 @@ load(paste(path,"res_tab_char.Rdata", sep="/"))
 
 \begin_layout Plain Layout
 
+load(paste(path,"res_tab_yield.Rdata", sep="/"))
+\end_layout
+
+\begin_layout Plain Layout
+
+load(paste(path,"res_tab_plan.Rdata", sep="/"))
+\end_layout
+
+\begin_layout Plain Layout
+
+load(paste(path,"res_tab_path.Rdata", sep="/"))
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -891,32 +650,26 @@ Maize yields on a randomly chosen plot in last season - production/size
 \end_layout
 
 \begin_layout Subsection
-Outcomes at midline
+Outcomes
 \end_layout
 
 \begin_layout Standard
-We plan to do a midline survey in August 2023.
- As mentioned above, at midline, we are particularly interested in the use
- of trial packs and whether something was learned from it.
- As such, only households that received a trial pack (either free or subsidized)
- will be asked the questions below.
- However, all households will be revisited, as at this time the consumption
- side treatment will be implemented.
-\end_layout
-
-\begin_layout Standard
-At the most basic level, farmers that receive something for free may not
- even remember this.
- A first outcome we will thus use is simply the question if farmers remember
- that they bought or received a seed trial pack from use in February of
- March 2023 from us?
+In this section, we provide tables for main outcome families that were pre-regis
+tered on simulated data.
+ Outcomes are organized in 6 families.
+ We look at effects on the use of the trial seed, on agronomic input use
+ and recommended practices, on characteristics of the trail seed, on yields
+ (overall and on the trial plot), and on adoption intentions for the next
+ season.
+ We also have a table that looks at some on two potential ways in which
+ paying for seed may affect learning: attention and valuation.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -999,7 +752,7 @@ cline{2-4}
 
 \begin_layout Plain Layout
 
-remembers buying/receiving trial pack
+used trail pack as seed
 \end_layout
 
 \begin_layout Plain Layout
@@ -1077,7 +830,7 @@ Sexpr{res_tab[2,3,1]})
 
 \begin_layout Plain Layout
 
-used trail pack as seed
+did not mix seed with other seed
 \end_layout
 
 \begin_layout Plain Layout
@@ -1155,7 +908,7 @@ Sexpr{res_tab[2,3,2]})
 
 \begin_layout Plain Layout
 
-did not mix seed with other seed
+field layout improved next to local seed
 \end_layout
 
 \begin_layout Plain Layout
@@ -1233,7 +986,7 @@ Sexpr{res_tab[2,3,3]})
 
 \begin_layout Plain Layout
 
-field layout improved next to local seed
+kept produce from improved separate from local during and post harvest
 \end_layout
 
 \begin_layout Plain Layout
@@ -1311,7 +1064,7 @@ Sexpr{res_tab[2,3,4]})
 
 \begin_layout Plain Layout
 
-kept produce from improved separate from local during and post harvest
+Index
 \end_layout
 
 \begin_layout Plain Layout
@@ -1372,80 +1125,6 @@ Sexpr{res_tab[2,2,5]})
 & (
 \backslash
 Sexpr{res_tab[2,3,5]})
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Index
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab[1,1,6]}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab[1,2,6]}$^{
-\backslash
-Sexpr{ifelse(res_tab[3,2,6]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab[3,2,6]<.05,"*",ifelse(res_tab[3,2,6]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab[1,3,6]}$^{
-\backslash
-Sexpr{ifelse(res_tab[3,3,6]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab[3,3,6]<.05,"*",ifelse(res_tab[3,3,6]<.1,"+","")))}}$
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab[2,1,6]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab[2,2,6]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab[2,3,6]})
 \end_layout
 
 \begin_layout Plain Layout
@@ -1586,6 +1265,9 @@ hline
 
 \begin_layout Plain Layout
 
+
+\backslash
+cline{2-4}
 \end_layout
 
 \begin_layout Plain Layout
@@ -2328,6 +2010,13 @@ hline
 
 \begin_layout Plain Layout
 
+
+\backslash
+cline{2-4}
+\end_layout
+
+\begin_layout Plain Layout
+
 Seed had higher yields that expected 
 \end_layout
 
@@ -2402,7 +2091,7 @@ Sexpr{res_tab_char[2,3,1]})
 
 \begin_layout Plain Layout
 
-Seed was moren drought tolerant than expected 
+Seed was more drought tolerant than expected 
 \end_layout
 
 \begin_layout Plain Layout
@@ -2895,19 +2584,156 @@ hline
 
 \begin_layout Plain Layout
 
+
+\backslash
+cline{2-4}
+\end_layout
+
+\begin_layout Plain Layout
+
 overall area
 \end_layout
 
 \begin_layout Plain Layout
 
+& 
+\backslash
+Sexpr{res_tab_yield[1,1,1]}
 \end_layout
 
 \begin_layout Plain Layout
 
-ovarall production
+& 
+\backslash
+Sexpr{res_tab_yield[1,2,1]}$^{
+\backslash
+Sexpr{ifelse(res_tab_yield[3,2,1]<.01,"**"
 \end_layout
 
 \begin_layout Plain Layout
+
+	,ifelse(res_tab_yield[3,2,1]<.05,"*",ifelse(res_tab_yield[3,2,1]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_yield[1,3,1]}$^{
+\backslash
+Sexpr{ifelse(res_tab_yield[3,3,1]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_yield[3,3,1]<.05,"*",ifelse(res_tab_yield[3,3,1]<.1,"+","")))}}$
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_yield[2,1,1]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_yield[2,2,1]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_yield[2,3,1]})
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+overall production
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_yield[1,1,2]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_yield[1,2,2]}$^{
+\backslash
+Sexpr{ifelse(res_tab_yield[3,2,2]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_yield[3,2,2]<.05,"*",ifelse(res_tab_yield[3,2,2]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_yield[1,3,2]}$^{
+\backslash
+Sexpr{ifelse(res_tab_yield[3,3,2]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_yield[3,3,2]<.05,"*",ifelse(res_tab_yield[3,3,2]<.1,"+","")))}}$
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_yield[2,1,2]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_yield[2,2,2]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_yield[2,3,2]})
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
 
 \end_layout
 
@@ -2918,6 +2744,71 @@ overall yield
 
 \begin_layout Plain Layout
 
+& 
+\backslash
+Sexpr{res_tab_yield[1,1,3]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_yield[1,2,3]}$^{
+\backslash
+Sexpr{ifelse(res_tab_yield[3,2,3]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_yield[3,2,3]<.05,"*",ifelse(res_tab_yield[3,2,3]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_yield[1,3,3]}$^{
+\backslash
+Sexpr{ifelse(res_tab_yield[3,3,3]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_yield[3,3,3]<.05,"*",ifelse(res_tab_yield[3,3,3]<.1,"+","")))}}$
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_yield[2,1,3]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_yield[2,2,3]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_yield[2,3,3]})
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -2926,6 +2817,71 @@ trial plot area
 \end_layout
 
 \begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_yield[1,1,4]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_yield[1,2,4]}$^{
+\backslash
+Sexpr{ifelse(res_tab_yield[3,2,4]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_yield[3,2,4]<.05,"*",ifelse(res_tab_yield[3,2,4]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_yield[1,3,4]}$^{
+\backslash
+Sexpr{ifelse(res_tab_yield[3,3,4]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_yield[3,3,4]<.05,"*",ifelse(res_tab_yield[3,3,4]<.1,"+","")))}}$
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_yield[2,1,4]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_yield[2,2,4]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_yield[2,3,4]})
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
 
 \end_layout
 
@@ -2936,6 +2892,71 @@ trial plot production
 
 \begin_layout Plain Layout
 
+& 
+\backslash
+Sexpr{res_tab_yield[1,1,5]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_yield[1,2,5]}$^{
+\backslash
+Sexpr{ifelse(res_tab_yield[3,2,5]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_yield[3,2,5]<.05,"*",ifelse(res_tab_yield[3,2,5]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_yield[1,3,5]}$^{
+\backslash
+Sexpr{ifelse(res_tab_yield[3,3,5]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_yield[3,3,5]<.05,"*",ifelse(res_tab_yield[3,3,5]<.1,"+","")))}}$
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_yield[2,1,5]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_yield[2,2,5]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_yield[2,3,5]})
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -2944,6 +2965,145 @@ trial plot yield
 \end_layout
 
 \begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_yield[1,1,6]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_yield[1,2,6]}$^{
+\backslash
+Sexpr{ifelse(res_tab_yield[3,2,6]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_yield[3,2,6]<.05,"*",ifelse(res_tab_yield[3,2,6]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_yield[1,3,6]}$^{
+\backslash
+Sexpr{ifelse(res_tab_yield[3,3,6]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_yield[3,3,6]<.05,"*",ifelse(res_tab_yield[3,3,6]<.1,"+","")))}}$
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_yield[2,1,6]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_yield[2,2,6]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_yield[2,3,6]})
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+index
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_yield[1,1,7]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_yield[1,2,7]}$^{
+\backslash
+Sexpr{ifelse(res_tab_yield[3,2,7]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_yield[3,2,7]<.05,"*",ifelse(res_tab_yield[3,2,7]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_yield[1,3,7]}$^{
+\backslash
+Sexpr{ifelse(res_tab_yield[3,3,7]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_yield[3,3,7]<.05,"*",ifelse(res_tab_yield[3,3,7]<.1,"+","")))}}$
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_yield[2,1,7]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_yield[2,2,7]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_yield[2,3,7]})
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
 
 \end_layout
 
@@ -3000,7 +3160,7 @@ Note:
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -3072,10 +3232,82 @@ hline
 
 \begin_layout Plain Layout
 
+
+\backslash
+cline{2-4}
+\end_layout
+
+\begin_layout Plain Layout
+
 planning to use improved seed?
 \end_layout
 
 \begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_plan[1,1,1]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_plan[1,2,1]}$^{
+\backslash
+Sexpr{ifelse(res_tab_plan[3,2,1]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_plan[3,2,1]<.05,"*",ifelse(res_tab_plan[3,2,1]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_plan[1,3,1]}$^{
+\backslash
+Sexpr{ifelse(res_tab_plan[3,3,1]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_plan[3,3,1]<.05,"*",ifelse(res_tab_plan[3,3,1]<.1,"+","")))}}$
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_plan[2,1,1]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_plan[2,2,1]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_plan[2,3,1]})
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
 
 \end_layout
 
@@ -3086,6 +3318,71 @@ planning to use bazooka?
 
 \begin_layout Plain Layout
 
+& 
+\backslash
+Sexpr{res_tab_plan[1,1,2]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_plan[1,2,2]}$^{
+\backslash
+Sexpr{ifelse(res_tab_plan[3,2,2]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_plan[3,2,2]<.05,"*",ifelse(res_tab_plan[3,2,2]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_plan[1,3,2]}$^{
+\backslash
+Sexpr{ifelse(res_tab_plan[3,3,2]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_plan[3,3,2]<.05,"*",ifelse(res_tab_plan[3,3,2]<.1,"+","")))}}$
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_plan[2,1,2]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_plan[2,2,2]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_plan[2,3,2]})
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -3095,6 +3392,71 @@ acre planned under new seed (acre)?
 
 \begin_layout Plain Layout
 
+& 
+\backslash
+Sexpr{res_tab_plan[1,1,3]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_plan[1,2,3]}$^{
+\backslash
+Sexpr{ifelse(res_tab_plan[3,2,3]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_plan[3,2,3]<.05,"*",ifelse(res_tab_plan[3,2,3]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_plan[1,3,3]}$^{
+\backslash
+Sexpr{ifelse(res_tab_plan[3,3,3]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_plan[3,3,3]<.05,"*",ifelse(res_tab_plan[3,3,3]<.1,"+","")))}}$
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_plan[2,1,3]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_plan[2,2,3]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_plan[2,3,3]})
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -3103,6 +3465,145 @@ already bought improved seed for next season?
 \end_layout
 
 \begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_plan[1,1,4]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_plan[1,2,4]}$^{
+\backslash
+Sexpr{ifelse(res_tab_plan[3,2,4]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_plan[3,2,4]<.05,"*",ifelse(res_tab_plan[3,2,4]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_plan[1,3,4]}$^{
+\backslash
+Sexpr{ifelse(res_tab_plan[3,3,4]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_plan[3,3,4]<.05,"*",ifelse(res_tab_plan[3,3,4]<.1,"+","")))}}$
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_plan[2,1,4]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_plan[2,2,4]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_plan[2,3,4]})
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+index
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_plan[1,1,5]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_plan[1,2,5]}$^{
+\backslash
+Sexpr{ifelse(res_tab_plan[3,2,5]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_plan[3,2,5]<.05,"*",ifelse(res_tab_plan[3,2,5]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_plan[1,3,5]}$^{
+\backslash
+Sexpr{ifelse(res_tab_plan[3,3,5]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_plan[3,3,5]<.05,"*",ifelse(res_tab_plan[3,3,5]<.1,"+","")))}}$
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_plan[2,1,5]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_plan[2,2,5]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_plan[2,3,5]})
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
 
 \end_layout
 
@@ -3235,10 +3736,82 @@ hline
 
 \begin_layout Plain Layout
 
+
+\backslash
+cline{2-4}
+\end_layout
+
+\begin_layout Plain Layout
+
 Attention: remembers seed type correctly
 \end_layout
 
 \begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path[1,1,1]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path[1,2,1]}$^{
+\backslash
+Sexpr{ifelse(res_tab_path[3,2,1]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_path[3,2,1]<.05,"*",ifelse(res_tab_path[3,2,1]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path[1,3,1]}$^{
+\backslash
+Sexpr{ifelse(res_tab_path[3,3,1]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_path[3,3,1]<.05,"*",ifelse(res_tab_path[3,3,1]<.1,"+","")))}}$
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path[2,1,1]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path[2,2,1]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path[2,3,1]})
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
 
 \end_layout
 
@@ -3249,6 +3822,71 @@ Attention: remembers producer
 
 \begin_layout Plain Layout
 
+& 
+\backslash
+Sexpr{res_tab_path[1,1,2]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path[1,2,2]}$^{
+\backslash
+Sexpr{ifelse(res_tab_path[3,2,2]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_path[3,2,2]<.05,"*",ifelse(res_tab_path[3,2,2]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path[1,3,2]}$^{
+\backslash
+Sexpr{ifelse(res_tab_path[3,3,2]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_path[3,3,2]<.05,"*",ifelse(res_tab_path[3,3,2]<.1,"+","")))}}$
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path[2,1,2]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path[2,2,2]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path[2,3,2]})
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -3258,11 +3896,208 @@ Valuation: price in shop
 
 \begin_layout Plain Layout
 
+& 
+\backslash
+Sexpr{res_tab_path[1,1,3]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path[1,2,3]}$^{
+\backslash
+Sexpr{ifelse(res_tab_path[3,2,3]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_path[3,2,3]<.05,"*",ifelse(res_tab_path[3,2,3]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path[1,3,3]}$^{
+\backslash
+Sexpr{ifelse(res_tab_path[3,3,3]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_path[3,3,3]<.05,"*",ifelse(res_tab_path[3,3,3]<.1,"+","")))}}$
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path[2,1,3]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path[2,2,3]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path[2,3,3]})
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
 \end_layout
 
 \begin_layout Plain Layout
 
 Valuation: price bought
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path[1,1,4]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path[1,2,4]}$^{
+\backslash
+Sexpr{ifelse(res_tab_path[3,2,4]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_path[3,2,4]<.05,"*",ifelse(res_tab_path[3,2,4]<.1,"+","")))}}$
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path[2,1,4]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path[2,2,4]})
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Index
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path[1,1,5]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path[1,2,5]}$^{
+\backslash
+Sexpr{ifelse(res_tab_path[3,2,5]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_path[3,2,5]<.05,"*",ifelse(res_tab_path[3,2,5]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path[1,3,5]}$^{
+\backslash
+Sexpr{ifelse(res_tab_path[3,3,5]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_path[3,3,5]<.05,"*",ifelse(res_tab_path[3,3,5]<.1,"+","")))}}$
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path[2,1,5]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path[2,2,5]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path[2,3,5]})
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -3305,7 +4140,8 @@ scriptsize
 
 \begin_layout Plain Layout
 
-Note: 
+Note: price bought only on subset of farmers that paid positive price -
+ not included in index.
 \end_layout
 
 \end_inset
@@ -3318,89 +4154,7 @@ Note:
 
 \end_layout
 
-\begin_layout Enumerate
-Was trial pack used as seed on the farm? (as opposed to sold, eaten,...)
-\end_layout
-
-\begin_layout Enumerate
-How was the seed trial package was used? (pure on separate plot, mixed with
- landraces, mixed with bazooka from other source, mixed with other improved
- seed,...) 
-\end_layout
-
-\begin_layout Enumerate
-Was it intercroped? 
-\end_layout
-
-\begin_layout Enumerate
-What seed/plant spacing was used for the trail pack? 
-\end_layout
-
-\begin_layout Enumerate
-Number of seeds per hill used for the trail pack? 
-\end_layout
-
-\begin_layout Enumerate
-Did you apply organic manure to the soil for the trail pack? 
-\end_layout
-
-\begin_layout Enumerate
-Did you apply DAP **(black in color)** or NPK (brown in color) for the trail
- pack? 
-\end_layout
-
-\begin_layout Enumerate
-Did you apply Urea **(white in color)** for the trail pack? 
-\end_layout
-
-\begin_layout Enumerate
-How many times did you weed the trial pack maize plot? 
-\end_layout
-
-\begin_layout Enumerate
-How many days after planting did you do first weeding on the trail pack
- plot? 
-\end_layout
-
-\begin_layout Enumerate
-Did you use any pesticides, herbicides or fungicides on the trail pack plot?
- 
-\end_layout
-
-\begin_layout Enumerate
-When did you plant the trail pack seed? 
-\end_layout
-
-\begin_layout Enumerate
-Did you re-sow where seeds did not germinate on the trial seed plot? If
- so, what seed variety did you used of gap filling
-\end_layout
-
-\begin_layout Enumerate
-area planted with trial pack?
-\end_layout
-
-\begin_layout Enumerate
-production from trial pack?
-\end_layout
-
-\begin_layout Enumerate
-yields from trial pack plot?
-\end_layout
-
-\begin_layout Enumerate
-perceptions related to the quality of the trial pack seed (bazooka).
-\end_layout
-
-\begin_layout Enumerate
-Were you happy with the bazooka?
-\end_layout
-
-\begin_layout Enumerate
-What seed are you planning to use in next season?
-\end_layout
-
-\begin_layout Section*
+\begin_layout Section
 Ethical clearance
 \end_layout
 
@@ -3412,7 +4166,7 @@ This research received clearance form Makerere's School of Social Sciences
  Science and Technology (SS1657ES).
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 Transparency and replicability
 \end_layout
 
@@ -3422,11 +4176,12 @@ To maximize transparency and allow for replicabiliy, we use the following
 \end_layout
 
 \begin_layout Itemize
-pre-analysis plan: the current document provides an ex-ante step-by-step
- plan setting out the hypothesis we will test, the intervention we will
- implement to test these hypotheses, the data that will be collected and
- specifications we will run to bring the hypotheses to the data.
- This pre-analysis plan will be pre-registered at the AEA RCT registry.
+pre-analysis plan: in the past, a document was prepared that provides an
+ ex-ante step-by-step plan setting out the hypothesis we will test, the
+ intervention we will implement to test these hypotheses, the data that
+ will be collected and specifications we will run to bring the hypotheses
+ to the data.
+ This pre-analysis plan was pre-registered at the AEA RCT registry.
 \end_layout
 
 \begin_layout Itemize
@@ -3436,13 +4191,14 @@ revision control: the entire project will be under revision control (that
 \end_layout
 
 \begin_layout Itemize
-mock report: After baseline data is collected, a pre-registered report will
- be produced and added to the AEA RCT registry and GitHub.
- This report will differ from the pre-analyisis plan in that it already
- has the tables filled with simulated data (drawn from the baseline).
+mock report: This document provides a pre-registered report that was added
+ to the AEA RCT registry and GitHub.
+ This report differs from the pre-analyisis plan in that it already has
+ the tables filled with simulated data.
  The idea is that after the endline, only minimal changes are necessary
  (basically connecting a different dataset) to obtain the final result,
  further reducing the opportunity of specification search.
+ In the near future as data comes in, this report will be updated on github.
 \end_layout
 
 \begin_layout Standard
