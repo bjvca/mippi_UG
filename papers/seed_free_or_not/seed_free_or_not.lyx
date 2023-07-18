@@ -610,8 +610,8 @@ Standard orthogonality tables will be included in the final paper.
 \begin_layout Standard
 \begin_inset Float table
 wide false
-sideways false
-status open
+sideways true
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -652,7 +652,7 @@ begin{center}
 
 
 \backslash
-begin{tabular}{rccc}
+begin{tabular}{rcccc}
 \end_layout
 
 \begin_layout Plain Layout
@@ -674,7 +674,7 @@ hline
 
 \begin_layout Plain Layout
 
-& mean & selection & sunk cost 
+& mean & selection & sunk cost & nobs 
 \backslash
 
 \backslash
@@ -685,7 +685,7 @@ hline
 
 
 \backslash
-cline{2-4}
+cline{2-5}
 \end_layout
 
 \begin_layout Plain Layout
@@ -730,6 +730,9 @@ Sexpr{ifelse(base_balance[3,3,1]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(base_balance[3,3,1]<.05,"*",ifelse(base_balance[3,3,1]<.1,"+","")))}}$
+  & 
+\backslash
+Sexpr{base_balance[1,4,1]} 
 \backslash
 
 \backslash
@@ -808,6 +811,9 @@ Sexpr{ifelse(base_balance[3,3,2]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(base_balance[3,3,2]<.05,"*",ifelse(base_balance[3,3,2]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{base_balance[1,4,2]} 
 \backslash
 
 \backslash
@@ -886,6 +892,9 @@ Sexpr{ifelse(base_balance[3,3,3]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(base_balance[3,3,3]<.05,"*",ifelse(base_balance[3,3,3]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{base_balance[1,4,3]} 
 \backslash
 
 \backslash
@@ -964,6 +973,9 @@ Sexpr{ifelse(base_balance[3,3,4]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(base_balance[3,3,4]<.05,"*",ifelse(base_balance[3,3,4]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{base_balance[1,4,4]} 
 \backslash
 
 \backslash
@@ -1042,6 +1054,9 @@ Sexpr{ifelse(base_balance[3,3,5]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(base_balance[3,3,5]<.05,"*",ifelse(base_balance[3,3,5]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{base_balance[1,4,5]} 
 \backslash
 
 \backslash
@@ -1116,6 +1131,9 @@ Sexpr{ifelse(base_balance[3,3,6]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(base_balance[3,3,6]<.05,"*",ifelse(base_balance[3,3,6]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{base_balance[1,4,6]} 
 \backslash
 
 \backslash
@@ -1191,6 +1209,9 @@ Sexpr{ifelse(base_balance[3,3,7]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(base_balance[3,3,7]<.05,"*",ifelse(base_balance[3,3,7]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{base_balance[1,4,7]} 
 \backslash
 
 \backslash
@@ -1269,6 +1290,9 @@ Sexpr{ifelse(base_balance[3,3,8]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(base_balance[3,3,8]<.05,"*",ifelse(base_balance[3,3,8]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{base_balance[1,4,8]} 
 \backslash
 
 \backslash
@@ -1344,6 +1368,9 @@ Sexpr{ifelse(base_balance[3,3,9]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(base_balance[3,3,9]<.05,"*",ifelse(base_balance[3,3,9]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{base_balance[1,4,9]} 
 \backslash
 
 \backslash
@@ -1418,6 +1445,9 @@ Sexpr{ifelse(base_balance[3,3,10]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(base_balance[3,3,10]<.05,"*",ifelse(base_balance[3,3,10]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{base_balance[1,4,10]} 
 \backslash
 
 \backslash
@@ -1527,7 +1557,7 @@ tered on simulated data.
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1568,7 +1598,7 @@ begin{center}
 
 
 \backslash
-begin{tabular}{rccc}
+begin{tabular}{rcccc}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1590,7 +1620,7 @@ hline
 
 \begin_layout Plain Layout
 
-& mean & selection & sunk cost 
+& mean & selection & sunk cost & nobs 
 \backslash
 
 \backslash
@@ -1601,7 +1631,7 @@ hline
 
 
 \backslash
-cline{2-4}
+cline{2-5}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1645,7 +1675,9 @@ Sexpr{ifelse(res_tab[3,3,1]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab[3,3,1]<.05,"*",ifelse(res_tab[3,3,1]<.1,"+","")))}}$
+	,ifelse(res_tab[3,3,1]<.05,"*",ifelse(res_tab[3,3,1]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{res_tab[1,4,1]} 
 \backslash
 
 \backslash
@@ -1723,7 +1755,9 @@ Sexpr{ifelse(res_tab[3,3,2]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab[3,3,2]<.05,"*",ifelse(res_tab[3,3,2]<.1,"+","")))}}$
+	,ifelse(res_tab[3,3,2]<.05,"*",ifelse(res_tab[3,3,2]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{res_tab[1,4,2]} 
 \backslash
 
 \backslash
@@ -1801,7 +1835,9 @@ Sexpr{ifelse(res_tab[3,3,3]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab[3,3,3]<.05,"*",ifelse(res_tab[3,3,3]<.1,"+","")))}}$
+	,ifelse(res_tab[3,3,3]<.05,"*",ifelse(res_tab[3,3,3]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{res_tab[1,4,3]} 
 \backslash
 
 \backslash
@@ -1879,7 +1915,9 @@ Sexpr{ifelse(res_tab[3,3,4]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab[3,3,4]<.05,"*",ifelse(res_tab[3,3,4]<.1,"+","")))}}$
+	,ifelse(res_tab[3,3,4]<.05,"*",ifelse(res_tab[3,3,4]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{res_tab[1,4,4]} 
 \backslash
 
 \backslash
@@ -1957,7 +1995,9 @@ Sexpr{ifelse(res_tab[3,3,5]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab[3,3,5]<.05,"*",ifelse(res_tab[3,3,5]<.1,"+","")))}}$
+	,ifelse(res_tab[3,3,5]<.05,"*",ifelse(res_tab[3,3,5]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{res_tab[1,4,5]} 
 \backslash
 
 \backslash
@@ -2051,7 +2091,7 @@ Note:
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -2092,7 +2132,7 @@ begin{center}
 
 
 \backslash
-begin{tabular}{rccc}
+begin{tabular}{rcccc}
 \end_layout
 
 \begin_layout Plain Layout
@@ -2114,7 +2154,7 @@ hline
 
 \begin_layout Plain Layout
 
-& mean & selection & sunk cost 
+& mean & selection & sunk cost $ nobs
 \backslash
 
 \backslash
@@ -2125,7 +2165,7 @@ hline
 
 
 \backslash
-cline{2-4}
+cline{2-5}
 \end_layout
 
 \begin_layout Plain Layout
@@ -2166,6 +2206,9 @@ Sexpr{ifelse(res_tab_pract[3,3,1]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(res_tab_pract[3,3,1]<.05,"*",ifelse(res_tab_pract[3,3,1]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{res_tab_pract[1,4,1]} 
 \backslash
 
 \backslash
@@ -2239,6 +2282,9 @@ Sexpr{ifelse(res_tab_pract[3,3,2]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(res_tab_pract[3,3,2]<.05,"*",ifelse(res_tab_pract[3,3,2]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{res_tab_pract[1,4,2]} 
 \backslash
 
 \backslash
@@ -2321,6 +2367,9 @@ Sexpr{ifelse(res_tab_pract[3,3,3]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(res_tab_pract[3,3,3]<.05,"*",ifelse(res_tab_pract[3,3,3]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{res_tab_pract[1,4,3]} 
 \backslash
 
 \backslash
@@ -2399,6 +2448,9 @@ Sexpr{ifelse(res_tab_pract[3,3,4]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(res_tab_pract[3,3,4]<.05,"*",ifelse(res_tab_pract[3,3,4]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{res_tab_pract[1,4,4]} 
 \backslash
 
 \backslash
@@ -2477,6 +2529,9 @@ Sexpr{ifelse(res_tab_pract[3,3,5]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(res_tab_pract[3,3,5]<.05,"*",ifelse(res_tab_pract[3,3,5]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{res_tab_pract[1,4,5]} 
 \backslash
 
 \backslash
@@ -2555,6 +2610,9 @@ Sexpr{ifelse(res_tab_pract[3,3,6]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(res_tab_pract[3,3,6]<.05,"*",ifelse(res_tab_pract[3,3,6]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{res_tab_pract[1,4,6]} 
 \backslash
 
 \backslash
@@ -2629,6 +2687,9 @@ Sexpr{ifelse(res_tab_pract[3,3,7]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(res_tab_pract[3,3,7]<.05,"*",ifelse(res_tab_pract[3,3,7]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{res_tab_pract[1,4,7]} 
 \backslash
 
 \backslash
@@ -2703,6 +2764,9 @@ Sexpr{ifelse(res_tab_pract[3,3,8]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(res_tab_pract[3,3,8]<.05,"*",ifelse(res_tab_pract[3,3,8]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{res_tab_pract[1,4,8]} 
 \backslash
 
 \backslash
@@ -2796,7 +2860,7 @@ Note:
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -2837,7 +2901,7 @@ begin{center}
 
 
 \backslash
-begin{tabular}{rccc}
+begin{tabular}{rcccc}
 \end_layout
 
 \begin_layout Plain Layout
@@ -2859,7 +2923,7 @@ hline
 
 \begin_layout Plain Layout
 
-& mean & selection & sunk cost 
+& mean & selection & sunk cost & nobs 
 \backslash
 
 \backslash
@@ -2870,7 +2934,7 @@ hline
 
 
 \backslash
-cline{2-4}
+cline{2-5}
 \end_layout
 
 \begin_layout Plain Layout
@@ -2911,6 +2975,9 @@ Sexpr{ifelse(res_tab_char[3,3,1]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(res_tab_char[3,3,1]<.05,"*",ifelse(res_tab_char[3,3,1]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{res_tab_char[1,4,1]} 
 \backslash
 
 \backslash
@@ -2985,6 +3052,9 @@ Sexpr{ifelse(res_tab_char[3,3,2]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(res_tab_char[3,3,2]<.05,"*",ifelse(res_tab_char[3,3,2]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{res_tab_char[1,4,2]} 
 \backslash
 
 \backslash
@@ -3059,6 +3129,9 @@ Sexpr{ifelse(res_tab_char[3,3,3]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(res_tab_char[3,3,3]<.05,"*",ifelse(res_tab_char[3,3,3]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{res_tab_char[1,4,3]} 
 \backslash
 
 \backslash
@@ -3133,6 +3206,9 @@ Sexpr{ifelse(res_tab_char[3,3,4]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(res_tab_char[3,3,4]<.05,"*",ifelse(res_tab_char[3,3,4]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{res_tab_char[1,4,4]} 
 \backslash
 
 \backslash
@@ -3207,6 +3283,9 @@ Sexpr{ifelse(res_tab_char[3,3,5]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(res_tab_char[3,3,5]<.05,"*",ifelse(res_tab_char[3,3,5]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{res_tab_char[1,4,5]} 
 \backslash
 
 \backslash
@@ -3281,6 +3360,9 @@ Sexpr{ifelse(res_tab_char[3,3,6]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(res_tab_char[3,3,6]<.05,"*",ifelse(res_tab_char[3,3,6]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{res_tab_char[1,4,6]} 
 \backslash
 
 \backslash
@@ -3370,7 +3452,7 @@ Note:
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -3411,7 +3493,7 @@ begin{center}
 
 
 \backslash
-begin{tabular}{rccc}
+begin{tabular}{rcccc}
 \end_layout
 
 \begin_layout Plain Layout
@@ -3433,7 +3515,7 @@ hline
 
 \begin_layout Plain Layout
 
-& mean & selection & sunk cost 
+& mean & selection & sunk cost & nobs 
 \backslash
 
 \backslash
@@ -3444,7 +3526,7 @@ hline
 
 
 \backslash
-cline{2-4}
+cline{2-5}
 \end_layout
 
 \begin_layout Plain Layout
@@ -3485,6 +3567,9 @@ Sexpr{ifelse(res_tab_yield[3,3,1]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(res_tab_yield[3,3,1]<.05,"*",ifelse(res_tab_yield[3,3,1]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{res_tab_yield[1,4,1]} 
 \backslash
 
 \backslash
@@ -3559,6 +3644,9 @@ Sexpr{ifelse(res_tab_yield[3,3,2]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(res_tab_yield[3,3,2]<.05,"*",ifelse(res_tab_yield[3,3,2]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{res_tab_yield[1,4,2]} 
 \backslash
 
 \backslash
@@ -3633,6 +3721,9 @@ Sexpr{ifelse(res_tab_yield[3,3,3]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(res_tab_yield[3,3,3]<.05,"*",ifelse(res_tab_yield[3,3,3]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{res_tab_yield[1,4,3]} 
 \backslash
 
 \backslash
@@ -3707,6 +3798,9 @@ Sexpr{ifelse(res_tab_yield[3,3,4]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(res_tab_yield[3,3,4]<.05,"*",ifelse(res_tab_yield[3,3,4]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{res_tab_yield[1,4,4]} 
 \backslash
 
 \backslash
@@ -3781,6 +3875,9 @@ Sexpr{ifelse(res_tab_yield[3,3,5]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(res_tab_yield[3,3,5]<.05,"*",ifelse(res_tab_yield[3,3,5]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{res_tab_yield[1,4,5]} 
 \backslash
 
 \backslash
@@ -3855,6 +3952,9 @@ Sexpr{ifelse(res_tab_yield[3,3,6]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(res_tab_yield[3,3,6]<.05,"*",ifelse(res_tab_yield[3,3,6]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{res_tab_yield[1,4,6]} 
 \backslash
 
 \backslash
@@ -3929,6 +4029,9 @@ Sexpr{ifelse(res_tab_yield[3,3,7]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(res_tab_yield[3,3,7]<.05,"*",ifelse(res_tab_yield[3,3,7]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{res_tab_yield[1,4,7]} 
 \backslash
 
 \backslash
@@ -4059,7 +4162,7 @@ begin{center}
 
 
 \backslash
-begin{tabular}{rccc}
+begin{tabular}{rcccc}
 \end_layout
 
 \begin_layout Plain Layout
@@ -4081,7 +4184,7 @@ hline
 
 \begin_layout Plain Layout
 
-& mean & selection & sunk cost 
+& mean & selection & sunk cost & nobs 
 \backslash
 
 \backslash
@@ -4092,7 +4195,7 @@ hline
 
 
 \backslash
-cline{2-4}
+cline{2-5}
 \end_layout
 
 \begin_layout Plain Layout
@@ -4133,6 +4236,9 @@ Sexpr{ifelse(res_tab_plan[3,3,1]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(res_tab_plan[3,3,1]<.05,"*",ifelse(res_tab_plan[3,3,1]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{res_tab_plan[1,4,1]} 
 \backslash
 
 \backslash
@@ -4207,6 +4313,9 @@ Sexpr{ifelse(res_tab_plan[3,3,2]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(res_tab_plan[3,3,2]<.05,"*",ifelse(res_tab_plan[3,3,2]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{res_tab_plan[1,4,2]} 
 \backslash
 
 \backslash
@@ -4281,6 +4390,9 @@ Sexpr{ifelse(res_tab_plan[3,3,3]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(res_tab_plan[3,3,3]<.05,"*",ifelse(res_tab_plan[3,3,3]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{res_tab_plan[1,4,3]} 
 \backslash
 
 \backslash
@@ -4355,6 +4467,9 @@ Sexpr{ifelse(res_tab_plan[3,3,4]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(res_tab_plan[3,3,4]<.05,"*",ifelse(res_tab_plan[3,3,4]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{res_tab_plan[1,4,4]} 
 \backslash
 
 \backslash
@@ -4429,6 +4544,9 @@ Sexpr{ifelse(res_tab_plan[3,3,5]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(res_tab_plan[3,3,5]<.05,"*",ifelse(res_tab_plan[3,3,5]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{res_tab_plan[1,4,5]} 
 \backslash
 
 \backslash
@@ -4563,7 +4681,7 @@ begin{center}
 
 
 \backslash
-begin{tabular}{rccc}
+begin{tabular}{rcccc}
 \end_layout
 
 \begin_layout Plain Layout
@@ -4585,7 +4703,7 @@ hline
 
 \begin_layout Plain Layout
 
-& mean & selection & sunk cost 
+& mean & selection & sunk cost & nobs
 \backslash
 
 \backslash
@@ -4596,7 +4714,7 @@ hline
 
 
 \backslash
-cline{2-4}
+cline{2-5}
 \end_layout
 
 \begin_layout Plain Layout
@@ -4637,6 +4755,9 @@ Sexpr{ifelse(res_tab_path[3,3,1]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(res_tab_path[3,3,1]<.05,"*",ifelse(res_tab_path[3,3,1]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{res_tab_path[1,4,1]} 
 \backslash
 
 \backslash
@@ -4711,6 +4832,9 @@ Sexpr{ifelse(res_tab_path[3,3,2]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(res_tab_path[3,3,2]<.05,"*",ifelse(res_tab_path[3,3,2]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{res_tab_path[1,4,2]} 
 \backslash
 
 \backslash
@@ -4785,6 +4909,9 @@ Sexpr{ifelse(res_tab_path[3,3,3]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(res_tab_path[3,3,3]<.05,"*",ifelse(res_tab_path[3,3,3]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{res_tab_path[1,4,3]} 
 \backslash
 
 \backslash
@@ -4850,6 +4977,9 @@ Sexpr{ifelse(res_tab_path[3,2,4]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(res_tab_path[3,2,4]<.05,"*",ifelse(res_tab_path[3,2,4]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{res_tab_path[1,4,4]} 
 \backslash
 
 \backslash
@@ -4922,6 +5052,9 @@ Sexpr{ifelse(res_tab_path[3,3,5]<.01,"**"
 \begin_layout Plain Layout
 
 	,ifelse(res_tab_path[3,3,5]<.05,"*",ifelse(res_tab_path[3,3,5]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{res_tab_path[1,4,5]} 
 \backslash
 
 \backslash

@@ -82,7 +82,7 @@ outcomes <- c("age_head","prim_head","male_head","hh_size","dist_ag","quality_us
 
 
 #matrix to store results
-res_tab <-  array(NA,dim=c(3,3,length(outcomes)))
+res_tab <-  array(NA,dim=c(3,4,length(outcomes)))
 
 res_tab[1,1,1:length(outcomes)] <- colMeans(bse[bse$trial_P==TRUE,outcomes], na.rm=T)
 res_tab[2,1,1:length(outcomes)] <- apply(bse[bse$trial_P==TRUE,outcomes], 2, sd, na.rm=T)
@@ -101,7 +101,7 @@ for (i in 1:length(outcomes)) {
   res_tab[1,3,i]  <- coef_test(ols, vcov_cluster)$beta[3]
   res_tab[2,3,i] <- coef_test(ols, vcov_cluster)$SE[3]
   res_tab[3,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[3]
-  
+  res_tab[1,4,i] <- nobs(ols)
   
 }
 base_balance <- round(res_tab,digits=3)
@@ -163,7 +163,7 @@ names(dta)[names(dta) == 'index'] <- 'index_use'
 outcomes <- c(outcomes,"index_use" )
 
 #matrix to store results
-res_tab <-  array(NA,dim=c(3,3,length(outcomes)))
+res_tab <-  array(NA,dim=c(3,4,length(outcomes)))
 
 res_tab[1,1,1:length(outcomes)] <- colMeans(dta[dta$trial_P==TRUE,outcomes], na.rm=T)
 res_tab[2,1,1:length(outcomes)] <- apply(dta[dta$trial_P==TRUE,outcomes], 2, sd, na.rm=T)
@@ -182,7 +182,7 @@ for (i in 1:length(outcomes)) {
   res_tab[1,3,i]  <- coef_test(ols, vcov_cluster)$beta[3]
   res_tab[2,3,i] <- coef_test(ols, vcov_cluster)$SE[3]
   res_tab[3,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[3]
-  
+  res_tab[1,4,i] <- nobs(ols)
   
 }
 res_tab <- round(res_tab,digits=3)
@@ -201,7 +201,7 @@ names(dta)[names(dta) == 'index'] <- 'index_pract'
 outcomes <- c(outcomes,"index_pract" )
 
 #matrix to store results
-res_tab <-  array(NA,dim=c(3,3,length(outcomes)))
+res_tab <-  array(NA,dim=c(3,4,length(outcomes)))
 
 res_tab[1,1,1:length(outcomes)] <- colMeans(dta[dta$trial_P==TRUE,outcomes], na.rm=T)
 res_tab[2,1,1:length(outcomes)] <- apply(dta[dta$trial_P==TRUE,outcomes], 2, sd, na.rm=T)
@@ -220,7 +220,7 @@ for (i in 1:length(outcomes)) {
   res_tab[1,3,i]  <- coef_test(ols, vcov_cluster)$beta[3]
   res_tab[2,3,i] <- coef_test(ols, vcov_cluster)$SE[3]
   res_tab[3,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[3]
-  
+  res_tab[1,4,i] <- nobs(ols)
   
 }
 res_tab_pract <- round(res_tab,digits=3)
@@ -240,7 +240,7 @@ names(dta)[names(dta) == 'index'] <- 'index_char'
 outcomes <- c(outcomes,"index_char" )
 
 #matrix to store results
-res_tab <-  array(NA,dim=c(3,3,length(outcomes)))
+res_tab <-  array(NA,dim=c(3,4,length(outcomes)))
 
 res_tab[1,1,1:length(outcomes)] <- colMeans(dta[dta$trial_P==TRUE,outcomes], na.rm=T)
 res_tab[2,1,1:length(outcomes)] <- apply(dta[dta$trial_P==TRUE,outcomes], 2, sd, na.rm=T)
@@ -259,7 +259,7 @@ for (i in 1:length(outcomes)) {
   res_tab[1,3,i]  <- coef_test(ols, vcov_cluster)$beta[3]
   res_tab[2,3,i] <- coef_test(ols, vcov_cluster)$SE[3]
   res_tab[3,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[3]
-  
+  res_tab[1,4,i] <- nobs(ols)
   
 }
 res_tab_char <- round(res_tab,digits=3)
@@ -297,10 +297,10 @@ dta$prod_kg_trial_ihs  <- ihs(dta$prod_kg_trial)
 
 #iterate over outcomes
 outcomes <- c("area_tot",
-              "prod_kg_tot",
-              "yield_tot","area_trial",
-              "prod_kg_trial",
-              "yield_trial")
+              "prod_kg_tot_ihs",
+              "yield_tot_ihs","area_trial",
+              "prod_kg_trial_ihs",
+              "yield_trial_ihs")
 
 index_use <- icwIndex(xmat=dta[outcomes],sgroup = dta$trial_P) #x
 dta <- data.frame(dta,index_use)
@@ -310,7 +310,7 @@ names(dta)[names(dta) == 'index'] <- 'index_yield'
 outcomes <- c(outcomes,"index_yield" )
 
 #matrix to store results
-res_tab <-  array(NA,dim=c(3,3,length(outcomes)))
+res_tab <-  array(NA,dim=c(3,4,length(outcomes)))
 
 res_tab[1,1,1:length(outcomes)] <- colMeans(dta[dta$trial_P==TRUE,outcomes], na.rm=T)
 res_tab[2,1,1:length(outcomes)] <- apply(dta[dta$trial_P==TRUE,outcomes], 2, sd, na.rm=T)
@@ -329,7 +329,7 @@ for (i in 1:length(outcomes)) {
   res_tab[1,3,i]  <- coef_test(ols, vcov_cluster)$beta[3]
   res_tab[2,3,i] <- coef_test(ols, vcov_cluster)$SE[3]
   res_tab[3,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[3]
-  
+  res_tab[1,4,i] <- nobs(ols)
   
 }
 res_tab_yield <- round(res_tab,digits=3)
@@ -355,7 +355,7 @@ names(dta)[names(dta) == 'index'] <- 'index_plan'
 outcomes <- c(outcomes,"index_plan" )
 
 #matrix to store results
-res_tab <-  array(NA,dim=c(3,3,length(outcomes)))
+res_tab <-  array(NA,dim=c(3,4,length(outcomes)))
 
 res_tab[1,1,1:length(outcomes)] <- colMeans(dta[dta$trial_P==TRUE,outcomes], na.rm=T)
 res_tab[2,1,1:length(outcomes)] <- apply(dta[dta$trial_P==TRUE,outcomes], 2, sd, na.rm=T)
@@ -374,7 +374,7 @@ for (i in 1:length(outcomes)) {
   res_tab[1,3,i]  <- coef_test(ols, vcov_cluster)$beta[3]
   res_tab[2,3,i] <- coef_test(ols, vcov_cluster)$SE[3]
   res_tab[3,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[3]
-  
+  res_tab[1,4,i] <- nobs(ols)
   
 }
 res_tab_plan <- round(res_tab,digits=3)
@@ -399,7 +399,7 @@ names(dta)[names(dta) == 'index'] <- 'index_plan'
 outcomes <- c(outcomes,"value_paid", "index_plan" )
 
 #matrix to store results
-res_tab <-  array(NA,dim=c(3,3,length(outcomes)))
+res_tab <-  array(NA,dim=c(3,4,length(outcomes)))
 
 res_tab[1,1,1:length(outcomes)] <- colMeans(dta[dta$trial_P==TRUE,outcomes], na.rm=T)
 res_tab[2,1,1:length(outcomes)] <- apply(dta[dta$trial_P==TRUE,outcomes], 2, sd, na.rm=T)
@@ -418,7 +418,7 @@ for (i in 1:length(outcomes)) {
   res_tab[1,3,i]  <- coef_test(ols, vcov_cluster)$beta[3]
   res_tab[2,3,i] <- coef_test(ols, vcov_cluster)$SE[3]
   res_tab[3,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[3]
-  
+  res_tab[1,4,i] <- nobs(ols)
   
 }
 ## for subset of those that bought

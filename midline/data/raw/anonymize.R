@@ -39,6 +39,12 @@ dta$vil_ID <- as.numeric(dta$vil_ID)
 
 to_drop <- c("district","sub","village")
 dta <- dta[ , !(names(dta) %in% to_drop)]
+
+##issue with farmer with same name
+dta$ID[dta$X_uuid=="f22a726f-8370-4168-8656-4885339a62af"] <- "F_1330"
+dta$trial_P[dta$X_uuid=="f22a726f-8370-4168-8656-4885339a62af"] <- TRUE
+dta$discounted[dta$X_uuid=="f22a726f-8370-4168-8656-4885339a62af"] <- FALSE
+
 ###remove metadata
 to_drop <- c("confirmation.Spo_name","confirmation.check3.gps", "confirmation.check3._gps_latitude", "confirmation.check3._gps_longitude", "confirmation.check3._gps_altitude",              
  "confirmation.check3._gps_precision","meta.instanceID","X_id","X_submission_time","X_tags","X_version","X_duration",
