@@ -535,6 +535,11 @@ path <- getwd()
 
 \begin_layout Plain Layout
 
+load(paste(path,"base_balance.Rdata", sep="/"))
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -602,51 +607,904 @@ Standard orthogonality tables will be included in the final paper.
  The following variables will be compared at baseline:
 \end_layout
 
-\begin_layout Enumerate
-Age of household head - years (q14)
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Baseline Balance
 \end_layout
 
-\begin_layout Enumerate
-Household head has finished primary education - 1 is yes (q17)
+\end_inset
+
+
 \end_layout
 
-\begin_layout Enumerate
-Gender of household head - 1 is male (q15)
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnotesize
 \end_layout
 
-\begin_layout Enumerate
-Household size - number of people in household/that eats in house on a regular
- basis (including interviewee) (q18)
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
 \end_layout
 
-\begin_layout Enumerate
-Distance of homestead to nearest agro-input shop selling maize seed - km
- (q10)
+\begin_layout Plain Layout
+
+ 
 \end_layout
 
-\begin_layout Enumerate
-Has used quality maize seed on any plot in last season - 1 is yes (q25a)
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tabular}{rccc}
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& mean & selection & sunk cost 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+cline{2-4}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Age of household head - years
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{base_balance[1,1,1]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{base_balance[1,2,1]}$^{
+\backslash
+Sexpr{ifelse(base_balance[3,2,1]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(base_balance[3,2,1]<.05,"*",ifelse(base_balance[3,2,1]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{base_balance[1,3,1]}$^{
+\backslash
+Sexpr{ifelse(base_balance[3,3,1]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(base_balance[3,3,1]<.05,"*",ifelse(base_balance[3,3,1]<.1,"+","")))}}$
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{base_balance[2,1,1]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{base_balance[2,2,1]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{base_balance[2,3,1]})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Household head has finished primary education - 1 is yes
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{base_balance[1,1,2]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{base_balance[1,2,2]}$^{
+\backslash
+Sexpr{ifelse(base_balance[3,2,2]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(base_balance[3,2,2]<.05,"*",ifelse(base_balance[3,2,2]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{base_balance[1,3,2]}$^{
+\backslash
+Sexpr{ifelse(base_balance[3,3,2]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(base_balance[3,3,2]<.05,"*",ifelse(base_balance[3,3,2]<.1,"+","")))}}$
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{base_balance[2,1,2]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{base_balance[2,2,2]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{base_balance[2,3,2]})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Gender of household head - 1 is male
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{base_balance[1,1,3]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{base_balance[1,2,3]}$^{
+\backslash
+Sexpr{ifelse(base_balance[3,2,3]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(base_balance[3,2,3]<.05,"*",ifelse(base_balance[3,2,3]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{base_balance[1,3,3]}$^{
+\backslash
+Sexpr{ifelse(base_balance[3,3,3]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(base_balance[3,3,3]<.05,"*",ifelse(base_balance[3,3,3]<.1,"+","")))}}$
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{base_balance[2,1,3]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{base_balance[2,2,3]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{base_balance[2,3,3]})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Household size
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{base_balance[1,1,4]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{base_balance[1,2,4]}$^{
+\backslash
+Sexpr{ifelse(base_balance[3,2,4]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(base_balance[3,2,4]<.05,"*",ifelse(base_balance[3,2,4]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{base_balance[1,3,4]}$^{
+\backslash
+Sexpr{ifelse(base_balance[3,3,4]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(base_balance[3,3,4]<.05,"*",ifelse(base_balance[3,3,4]<.1,"+","")))}}$
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{base_balance[2,1,4]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{base_balance[2,2,4]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{base_balance[2,3,4]})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Distance of homestead to nearest agro-input shop
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{base_balance[1,1,5]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{base_balance[1,2,5]}$^{
+\backslash
+Sexpr{ifelse(base_balance[3,2,5]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(base_balance[3,2,5]<.05,"*",ifelse(base_balance[3,2,5]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{base_balance[1,3,5]}$^{
+\backslash
+Sexpr{ifelse(base_balance[3,3,5]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(base_balance[3,3,5]<.05,"*",ifelse(base_balance[3,3,5]<.1,"+","")))}}$
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{base_balance[2,1,5]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{base_balance[2,2,5]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{base_balance[2,3,5]})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Has used quality maize seed on any plot in last season
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{base_balance[1,1,6]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{base_balance[1,2,6]}$^{
+\backslash
+Sexpr{ifelse(base_balance[3,2,6]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(base_balance[3,2,6]<.05,"*",ifelse(base_balance[3,2,6]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{base_balance[1,3,6]}$^{
+\backslash
+Sexpr{ifelse(base_balance[3,3,6]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(base_balance[3,3,6]<.05,"*",ifelse(base_balance[3,3,6]<.1,"+","")))}}$
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{base_balance[2,1,6]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{base_balance[2,2,6]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{base_balance[2,3,6]})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
 Has used the promoted seed (bazooka) on a randomly chosen plot in the last
- season (q31)
+ season
 \end_layout
 
-\begin_layout Enumerate
-Where did you obtain the seed from for the maize planted on the randomly
- selected plot in the previous season? (q32) - more formal (eg agro-input
- dealer, operation wealth create) is better
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{base_balance[1,1,7]}
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{base_balance[1,2,7]}$^{
+\backslash
+Sexpr{ifelse(base_balance[3,2,7]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(base_balance[3,2,7]<.05,"*",ifelse(base_balance[3,2,7]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{base_balance[1,3,7]}$^{
+\backslash
+Sexpr{ifelse(base_balance[3,3,7]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(base_balance[3,3,7]<.05,"*",ifelse(base_balance[3,3,7]<.1,"+","")))}}$
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{base_balance[2,1,7]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{base_balance[2,2,7]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{base_balance[2,3,7]})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Formal seed source 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{base_balance[1,1,8]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{base_balance[1,2,8]}$^{
+\backslash
+Sexpr{ifelse(base_balance[3,2,8]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(base_balance[3,2,8]<.05,"*",ifelse(base_balance[3,2,8]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{base_balance[1,3,8]}$^{
+\backslash
+Sexpr{ifelse(base_balance[3,3,8]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(base_balance[3,3,8]<.05,"*",ifelse(base_balance[3,3,8]<.1,"+","")))}}$
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{base_balance[2,1,8]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{base_balance[2,2,8]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{base_balance[2,3,8]})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
 How often was the seed that was used on the randomly selected plot recycled?
- (q34)
+ 
 \end_layout
 
-\begin_layout Enumerate
-Maize yields on a randomly chosen plot in last season - production/size
- of plot (q29, q50, q51) 
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{base_balance[1,1,9]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{base_balance[1,2,9]}$^{
+\backslash
+Sexpr{ifelse(base_balance[3,2,9]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(base_balance[3,2,9]<.05,"*",ifelse(base_balance[3,2,9]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{base_balance[1,3,9]}$^{
+\backslash
+Sexpr{ifelse(base_balance[3,3,9]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(base_balance[3,3,9]<.05,"*",ifelse(base_balance[3,3,9]<.1,"+","")))}}$
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{base_balance[2,1,9]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{base_balance[2,2,9]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{base_balance[2,3,9]})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Maize yields on a randomly chosen plot in last season
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{base_balance[1,1,10]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{base_balance[1,2,10]}$^{
+\backslash
+Sexpr{ifelse(base_balance[3,2,10]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(base_balance[3,2,10]<.05,"*",ifelse(base_balance[3,2,10]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{base_balance[1,3,10]}$^{
+\backslash
+Sexpr{ifelse(base_balance[3,3,10]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(base_balance[3,3,10]<.05,"*",ifelse(base_balance[3,3,10]<.1,"+","")))}}$
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{base_balance[2,1,10]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{base_balance[2,2,10]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{base_balance[2,3,10]})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+scriptsize
+\end_layout
+
+\begin_layout Plain Layout
+
+Note: 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection

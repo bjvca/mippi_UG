@@ -13,6 +13,8 @@ dta$dist_ID <- NULL
 dta$sub_ID <- NULL
 dta$vil_ID <- NULL
 
+
+### we should just drop these and use the IDs from baseline (merge with farmer_IDs)
 for (dist in names(table(dta$district))) {
   print(dist)
   i_sub <- 1

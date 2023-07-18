@@ -1,3 +1,4 @@
+rm(list=ls())
 path <- getwd()
 library(dplyr)
 
@@ -41,8 +42,74 @@ icwIndex <- function(	xmat,
   return(list(weights = weights, index = index))
 }
 
+trim <- function(var,dataset,trim_perc=.02){
+  dataset[var][dataset[var]<quantile(dataset[var],c(trim_perc/2,1-(trim_perc/2)),na.rm=T)[1]|dataset[var]>quantile(dataset[var],c(trim_perc/2,1-(trim_perc/2)),na.rm=T)[2]] <- NA
+  return(dataset)}
+
+ihs <- function(x) {
+  y <- log(x + sqrt(x ^ 2 + 1))
+  return(y)}
 
 path <- strsplit(path,"papers/seed_free_or_not")[[1]]
+
+bse <- read.csv(paste(path,"baseline/data/public/baseline.csv",sep="/"))
+bse$cluster_ID <- as.factor(paste(paste(bse$distID,bse$subID, sep="_"), bse$vilID, sep="_"))
+
+## for this paper, keep only the 1000 or so obs that received seed for free (and are not allocated to crossed treatment), paid for seed or paid and got discount
+
+bse <- subset(bse, (trial_P==TRUE | paid_pac==TRUE | discounted == TRUE) & cont == FALSE)
+
+bse$age_head <- as.numeric(as.character(bse$age))
+bse$prim_head <-bse$edu %in% c("c","d","e","f")
+bse$male_head <- bse$gender == "Male"
+bse$hh_size <- as.numeric(as.character(bse$hh_size))
+bse$dist_ag <- as.numeric(as.character(bse$dist_ag))
+bse$quality_use <- bse$quality_use=="Yes"
+bse$bazooka_use_rand <- bse$maize_var=="Bazooka"
+bse$source_rand <- bse$source %in%  letters[seq( from = 4, to = 9 )]
+bse$often_rand <-  bse$often %in%  letters[seq( from = 1, to = 5 )]
+bse$bag_harv[bse$bag_harv == "999"] <- NA
+bse$prod_rand <-  as.numeric(as.character(bse$bag_harv))* as.numeric(as.character(bse$bag_kg))
+bse$acre_rand <- as.numeric(as.character(bse$plot_size))
+bse$yield_rand <- bse$prod_rand/bse$acre_rand
+bse <- trim("yield_rand",bse,trim_perc=.01)
+bse$yield_rand_ihs <- ihs(bse$yield_rand )
+
+
+###balance table
+#iterate over outcomes
+outcomes <- c("age_head","prim_head","male_head","hh_size","dist_ag","quality_use","bazooka_use_rand","source_rand","often_rand","yield_rand_ihs" )
+
+
+#matrix to store results
+res_tab <-  array(NA,dim=c(3,3,length(outcomes)))
+
+res_tab[1,1,1:length(outcomes)] <- colMeans(bse[bse$trial_P==TRUE,outcomes], na.rm=T)
+res_tab[2,1,1:length(outcomes)] <- apply(bse[bse$trial_P==TRUE,outcomes], 2, sd, na.rm=T)
+
+for (i in 1:length(outcomes)) {
+  ### pooled regression (for marginal effects)
+  ols <- lm(as.formula( paste(outcomes[i],"paid_pac+discounted",sep="~")), data=bse)
+  
+  
+  vcov_cluster <- vcovCR(ols,cluster=bse$cluster_ID,type="CR3")
+  
+  res_tab[1,2,i]  <- coef_test(ols, vcov_cluster)$beta[2]
+  res_tab[2,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
+  res_tab[3,2,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
+  
+  res_tab[1,3,i]  <- coef_test(ols, vcov_cluster)$beta[3]
+  res_tab[2,3,i] <- coef_test(ols, vcov_cluster)$SE[3]
+  res_tab[3,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[3]
+  
+  
+}
+base_balance <- round(res_tab,digits=3)
+#res_tab <- round(res_tab,digits=3)
+save(base_balance, file=paste(path,"papers/seed_free_or_not/base_balance.Rdata",sep="/"))
+
+### here analysis of midline data starts
+
 dta <- read.csv(paste(path,"midline/data/public/midline.csv",sep="/"))
 
 ##create unique village level identifier for clustering of standard errors
@@ -72,7 +139,7 @@ dta$happy <- dta$happy == 1
 
 
 ### HERE simulate data - remove if real data comes in 
-dta <- sample_n(dta, size=1170,replace = TRUE)
+#dta <- sample_n(dta, size=1170,replace = TRUE)
 
 #dta$sim_treat <- c(rep("trial",390),rep("paid",390),rep("discount",390))
 #dta$paid_pac <- dta$sim_treat=="paid"
@@ -209,7 +276,13 @@ dta$bag_size_tot <- as.numeric(as.character(dta$bag_size_all))
 dta$bag_size_tot[is.na(dta$bag_size_tot)] <- as.numeric(as.character(dta$bag_size_all_no_rem[is.na(dta$bag_size_tot)]))
 
 dta$prod_kg_tot <- dta$bag_size_tot*dta$bags_tot
+
 dta$yield_tot <- dta$prod_kg_tot/dta$area_tot
+#
+dta <- trim("prod_kg_tot",dta,trim_perc=.01)
+dta <- trim("yield_tot",dta,trim_perc=.01)
+dta$yield_tot_ihs <- ihs(dta$yield_tot)
+dta$prod_kg_tot_ihs  <- ihs(dta$prod_kg_tot)
 
 dta$area_trial <- as.numeric(as.character(dta$plot_size))
 dta$bags_trial <- as.numeric(as.character(dta$bags))
@@ -217,7 +290,10 @@ dta$bag_size_trial <- as.numeric(as.character(dta$bag_size))
 
 dta$prod_kg_trial <- dta$bag_size_trial*dta$bags_trial
 dta$yield_trial <- dta$prod_kg_trial/dta$area_trial
-dta$yield_trial[dta$yield_trial>5000] <- NA
+dta <- trim("prod_kg_trial",dta,trim_perc=.01)
+dta <- trim("yield_trial",dta,trim_perc=.01)
+dta$yield_trial_ihs <- ihs(dta$yield_trial)
+dta$prod_kg_trial_ihs  <- ihs(dta$prod_kg_trial)
 
 #iterate over outcomes
 outcomes <- c("area_tot",
