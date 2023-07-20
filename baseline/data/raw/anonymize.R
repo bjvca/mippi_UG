@@ -46,7 +46,8 @@ dta$farmer_ID[dta$X_uuid == "e2b74aa2-f27b-4940-bda3-c55265c486e7"] <- "F_1470"
 dta$farmer_ID[dta$X_uuid == "3dec7153-1c6a-41c5-83d4-7774075de126"] <- "F_2109"
 
 
-dta <- subset(dta, X_uuid != "4d3bfaad-06a5-4cd7-b9a9-2a4b82a5024f")
+### this farmer got the wrong treatment (was registered in wrong village)
+dta <- subset(dta, X_uuid != "0dea9eae-444e-4b40-af9b-51618cdac700")
 write.csv(dta, file = paste(path,"raw/baseline_fixed_dups.csv", sep="/"), row.names = FALSE)
 ### enumerator gender:
 # create named vector of enumerator genders
