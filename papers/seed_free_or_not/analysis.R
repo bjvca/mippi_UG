@@ -340,7 +340,7 @@ dta$plan_imp <- (dta$seed_nxt == 1 |  dta$seed_nxt == 2)
 dta$plan_bazooka <- dta$imp_var.Bazooka == "True"
 dta$plan_bought <- dta$buy_plan=="Yes"
 dta$plan_area <-  as.numeric(as.character(dta$area_plan))
-
+dta$plan_area[dta$plan_area > 50] <- NA
 #iterate over outcomes
 outcomes <- c("plan_imp",
               "plan_bazooka",
