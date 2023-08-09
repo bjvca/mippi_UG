@@ -259,7 +259,94 @@ rename x trial_pack
 
 ***************************************************************************************************************
 
-********* SUMMARY STATISTICS
+
+******* SUMMARY STATISTCS ***************
+
+// summary statistics about the participants and cooking demo clusters
+asdoc sum attended women men women_prop moreWomen women2, stat(sum mean sd min max N) label dec(2) dec(2) tzok title(Summary statistics for participants) save(Tables) replace
+
+// ttest difference of number of women between women and non-women dominated groups
+asdoc ttest women, by(moreWomen) stat(obs mean dif p) label dec(2) tzok title(ttest mean difference in number of women in non-women dominated groups)
+
+
+// Before cooking and tasting demonstration--- Proportion of votes that indicate that improved maize/posho: 
+asdoc sum color_imp_prior aroma_imp_prior ease_imp_prior cooktime_imp_prior exp_imp_prior taste_imp_prior texture_imp_prior, stat(mean sd) label dec(2) tzok title(Before cooking and tasting demonstration--- Proportion of votes that indicate that improved maize/posho)
+
+**** Before cooking and tasting demonstration: ttests for differences in votes for improved varieties by gender
+gen colorPriorIMP = color_imp_prior
+gen aromaPriorIMP = aroma_imp_prior
+gen easePriorIMP = ease_imp_prior
+gen cooktimePriorIMP = cooktime_imp_prior
+gen expansionPriorIMP = exp_imp_prior
+gen tastePriorIMP = taste_imp_prior
+gen texturePriorIMP = texture_imp_prior
+
+asdoc ttest colorPrior, by(moreWomen) stat(obs mean p) label dec(2) tzok title(Before cooking and tasting demonstration: ttest mean differences in votes for improved maize/posho by gender)
+
+asdoc ttest aromaPrior, by(moreWomen) stat(obs mean p) label dec(2) tzok title(Before cooking and tasting demonstration: ttests mean differences in votes for improved maize/posho by gender) rowappend
+
+asdoc ttest easePrior, by(moreWomen) stat(obs mean p) label dec(2) tzok title(Before cooking and tasting demonstration: ttests mean differences in votes for improved maize/posho by gender) rowappend
+
+asdoc ttest cooktimePrior, by(moreWomen) stat(obs mean p) label dec(2) tzok title(Before cooking and tasting demonstration: ttests mean differences in votes for improved maize/posho by gender) rowappend
+
+asdoc ttest expansionPrior, by(moreWomen) stat(obs mean p) label dec(2) tzok title(Before cooking and tasting demonstration: ttests mean differences in votes for improved maize/posho by gender) rowappend
+
+asdoc ttest tastePrior, by(moreWomen) stat(obs mean p) label dec(2) tzok title(Before cooking and tasting demonstration: ttests mean differences in votes for improved maize/posho by gender) rowappend
+
+asdoc ttest texturePrior, by(moreWomen) stat(obs mean p) label dec(2) tzok title(Before cooking and tasting demonstration: ttests mean differences in votes for improved maize/posho by gender) rowappend
+
+
+*** CHANGE IN VOTES AFTER COOKING AND TASTING---- overall
+gen colorDiff = color_imp_post - color_imp_prior
+la var colorDiff "color_change in percent points"
+
+gen aromaDiff = aroma_imp_post - aroma_imp_prior
+la var aromaDiff "aroma_change in percent points"
+
+gen easeDiff = ease_imp_post - ease_imp_prior
+la var easeDiff "easycook_change in percent points"
+
+gen cooktimeDiff = cooktime_imp_post - cooktime_imp_prior
+la var cooktimeDiff "cooktime_change in percent points"
+
+gen expDiff = exp_imp_post - exp_imp_prior
+la var expDiff "expands_change in percent points"
+
+gen tasteDiff = taste_imp_post - taste_imp_prior
+la var tasteDiff "taste_change in percent points"
+
+gen textureDiff = texture_imp_post - texture_imp_prior
+la var textureDiff "texture_change in percent points"
+
+asdoc ttest colorDiff==0, stat(obs mean p) label dec(2) tzok title(After cooking and tasting demonstration: ttest mean change in votes after cooking and tasting)
+
+asdoc ttest aromaDiff==0, stat(obs mean p) label dec(2) tzok title(After cooking and tasting demonstration: ttest mean change in votes after cooking and tasting) rowappend
+
+asdoc ttest easeDiff==0, stat(obs mean p) label dec(2) tzok title(After cooking and tasting demonstration: ttest mean change in votes after cooking and tasting) rowappend
+
+asdoc ttest cooktimeDiff==0, stat(obs mean p) label dec(2) tzok title(After cooking and tasting demonstration: ttest mean change in votes after cooking and tasting) rowappend
+
+asdoc ttest expDiff==0, stat(obs mean p) label dec(2) tzok title(After cooking and tasting demonstration: ttest mean change in votes after cooking and tasting) rowappend
+
+asdoc ttest tasteDiff==0, stat(obs mean p) label dec(2) tzok title(After cooking and tasting demonstration: ttest mean change in votes after cooking and tasting) rowappend
+
+asdoc ttest textureDiff==0, stat(obs mean p) label dec(2) tzok title(After cooking and tasting demonstration: ttest mean change in votes after cooking and tasting) rowappend
+
+
+*** CHANGE IN VOTES AFTER COOKING AND TASTING---- between women and non-women dominated groups
+asdoc ttest colorDiff, by(moreWomen) stat(obs mean dif p) label dec(2) tzok title(After cooking and tasting demonstration: ttest mean change in votes among non-women dominated groups)
+
+asdoc ttest aromaDiff, by(moreWomen) stat(obs mean dif p) label dec(2) tzok title(After cooking and tasting demonstration: ttest mean change in votes among non-women dominated groups) rowappend
+
+asdoc ttest easeDiff, by(moreWomen) stat(obs mean dif p) label dec(2) tzok title(After cooking and tasting demonstration: ttest mean change in votes among non-women dominated groups) rowappend
+
+asdoc ttest cooktimeDiff, by(moreWomen) stat(obs mean dif p) label dec(2) tzok title(After cooking and tasting demonstration: ttest mean change in votes among non-women dominated groups) rowappend
+
+asdoc ttest expDiff, by(moreWomen) stat(obs mean dif p) label dec(2) tzok title(After cooking and tasting demonstration: ttest mean change in votes among non-women dominated groups) rowappend
+
+asdoc ttest tasteDiff, by(moreWomen) stat(obs mean dif p) label dec(2) tzok title(After cooking and tasting demonstration: ttest mean change in votes among non-women dominated groups) rowappend
+
+asdoc ttest textureDiff, by(moreWomen) stat(obs mean dif p) label dec(2) tzok title(After cooking and tasting demonstration: ttest mean change in votes among non-women dominated groups) rowappend
 
 
  
