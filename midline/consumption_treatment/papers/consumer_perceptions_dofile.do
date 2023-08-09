@@ -262,6 +262,8 @@ rename x trial_pack
 
 ******* SUMMARY STATISTCS ***************
 
+cd "C:\Users\LNabwire\OneDrive - CGIAR\L.Nabwire\git\Maize_Uganda\mippi_UG\midline\consumption_treatment\papers"
+
 // summary statistics about the participants and cooking demo clusters
 asdoc sum attended women men women_prop moreWomen women2, stat(sum mean sd min max N) label dec(2) dec(2) tzok title(Summary statistics for participants) save(Tables) replace
 
