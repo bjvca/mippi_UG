@@ -109,15 +109,16 @@ egen men = rowtotal(grdetails1respondent_gender - grdetails10gender2)
 ********** binary variable for gender, where 1= a demo was attended by more women (women/men>1), 0 otherwise
 gen moreWomen = .
 replace moreWomen = 1 if women/men > 1
-replace moreWomen = 0 if moreWomen == .
-recode moreWomen (1=1) (0=0)
-label define sex3 1 "Women dominated groups" 0 "Non-women dominated groups"
-label values moreWomen sex3
+replace moreWomen = 2 if moreWomen == .
+recode moreWomen (1=1) (2=2)
+label define sex 1 "Women dominated demos" 2 "Non-women dominated demos"
+label values moreWomen sex
 tab moreWomen
 
+
 gen women2 = .
-replace women2 = women if moreWomen == 1 // number of women in women dominated grps
-la var women2 "No. of women in women dominated grps"
+replace women2 = women if moreWomen == 2 // number of women in non-women dominated demos
+la var women2 "No. of women in non-women dominated demos"
 
 // total number of people that attended the cooking demos (men+women)
 gen attended = women + men
@@ -239,12 +240,14 @@ sum texture_loc_post texture_imp_post texture_same_post
 
 order grow_imp_prior color_loc_post- texture_same_post, after (texture_same_prior)
 
+rename x trial_pack
+
 la var attended "Number of participants"
 la var women "Number of women participants"
 la var men "Number of men participants"
 la var women_prop "Prop. of women participants"
 la var men_prop "Prop. of men participants"
-la var moreWomen "Prop. of women dominated groups"
+la var moreWomen "Prop. of women dominated demos"
 
 la var color_imp_prior "Has a better color"
 la var aroma_imp_prior "Has better aroma"
@@ -254,7 +257,13 @@ la var exp_imp_prior "Expands more when cooked"
 la var taste_imp_prior "Tastes better"
 la var texture_imp_prior "Has better texture"
 
-rename x trial_pack
+la var color_loc_prior "Has a better color"
+la var aroma_loc_prior "Has better aroma"
+la var ease_loc_prior "Is easier to cook"
+la var cooktime_loc_prior "Cooks faster"
+la var exp_loc_prior "Expands more when cooked"
+la var taste_loc_prior "Tastes better"
+la var texture_loc_prior "Has better texture"
 
 
 ***************************************************************************************************************
@@ -264,91 +273,218 @@ rename x trial_pack
 
 cd "C:\Users\LNabwire\OneDrive - CGIAR\L.Nabwire\git\Maize_Uganda\mippi_UG\midline\consumption_treatment\papers"
 
+gen moreWomen2 = moreWomen
+recode moreWomen2 (1=1) (2=0)
+tab moreWomen2
+label define sex2 0 "Non-women dominated demos" 1 "Women dominated demos"
+la var moreWomen2 "Prop. of women dominated demos"
+
+
 // summary statistics about the participants and cooking demo clusters
-asdoc sum attended women men women_prop moreWomen women2, stat(sum mean sd min max N) label dec(2) dec(2) tzok title(Summary statistics for participants) save(Tables) replace
+asdoc sum attended women men women_prop moreWomen2 women2, stat(sum mean sd min max N) label dec(2) dec(2) tzok title(Summary statistics for participants) save(Results_Tables) replace
 
-// ttest difference of number of women between women and non-women dominated groups
-asdoc ttest women, by(moreWomen) stat(obs mean dif p) label dec(2) tzok title(ttest mean difference in number of women in non-women dominated groups)
+// ttest difference of number of women between women and non-women dominated demos
+asdoc ttest women, by(moreWomen) stat(obs mean dif p) label dec(2) tzok title(ttest mean difference in number of women in non-women dominated demos)
 
 
-// Before cooking and tasting demonstration--- Proportion of votes that indicate that improved maize/posho: 
-asdoc sum color_imp_prior aroma_imp_prior ease_imp_prior cooktime_imp_prior exp_imp_prior taste_imp_prior texture_imp_prior, stat(mean sd) label dec(2) tzok title(Before cooking and tasting demonstration--- Proportion of votes that indicate that improved maize/posho)
+****** PERCEPTIONS before cooking and tasting demonstration--- Proportion of votes
 
-**** Before cooking and tasting demonstration: ttests for differences in votes for improved varieties by gender
+// overall votes
+egen priorTotLOC = rowmean( color_loc_prior aroma_loc_prior ease_loc_prior cooktime_loc_prior exp_loc_prior taste_loc_prior texture_loc_prior)
+egen priorTotIMP = rowmean( color_imp_prior aroma_imp_prior ease_imp_prior cooktime_imp_prior exp_imp_prior taste_imp_prior texture_imp_prior)
+
+// perceptions for specific attributes
+gen colorPriorLOC = color_loc_prior
+gen aromPriorLOC = aroma_loc_prior
+gen easePriorLOC = ease_loc_prior
+gen timePriorLOC = cooktime_loc_prior
+gen expPriorLOC = exp_loc_prior
+gen tastePriorLOC = taste_loc_prior
+gen textPriorLOC = texture_loc_prior
+
 gen colorPriorIMP = color_imp_prior
-gen aromaPriorIMP = aroma_imp_prior
+gen aromPriorIMP = aroma_imp_prior
 gen easePriorIMP = ease_imp_prior
-gen cooktimePriorIMP = cooktime_imp_prior
-gen expansionPriorIMP = exp_imp_prior
+gen timePriorIMP = cooktime_imp_prior
+gen expPriorIMP = exp_imp_prior
 gen tastePriorIMP = taste_imp_prior
-gen texturePriorIMP = texture_imp_prior
-
-asdoc ttest colorPrior, by(moreWomen) stat(obs mean p) label dec(2) tzok title(Before cooking and tasting demonstration: ttest mean differences in votes for improved maize/posho by gender)
-
-asdoc ttest aromaPrior, by(moreWomen) stat(obs mean p) label dec(2) tzok title(Before cooking and tasting demonstration: ttests mean differences in votes for improved maize/posho by gender) rowappend
-
-asdoc ttest easePrior, by(moreWomen) stat(obs mean p) label dec(2) tzok title(Before cooking and tasting demonstration: ttests mean differences in votes for improved maize/posho by gender) rowappend
-
-asdoc ttest cooktimePrior, by(moreWomen) stat(obs mean p) label dec(2) tzok title(Before cooking and tasting demonstration: ttests mean differences in votes for improved maize/posho by gender) rowappend
-
-asdoc ttest expansionPrior, by(moreWomen) stat(obs mean p) label dec(2) tzok title(Before cooking and tasting demonstration: ttests mean differences in votes for improved maize/posho by gender) rowappend
-
-asdoc ttest tastePrior, by(moreWomen) stat(obs mean p) label dec(2) tzok title(Before cooking and tasting demonstration: ttests mean differences in votes for improved maize/posho by gender) rowappend
-
-asdoc ttest texturePrior, by(moreWomen) stat(obs mean p) label dec(2) tzok title(Before cooking and tasting demonstration: ttests mean differences in votes for improved maize/posho by gender) rowappend
+gen textPriorIMP = texture_imp_prior
 
 
-*** CHANGE IN VOTES AFTER COOKING AND TASTING---- overall
-gen colorDiff = color_imp_post - color_imp_prior
-la var colorDiff "color_change in percent points"
+// Before cooking and tasting--- ttest mean differences in votes for local and improved varieties
+asdoc ttest priorTotLOC==priorTotIMP, label dec(3) tzok title(Before cooking and tasting demonstration: ttests mean differences in votes for improved maize and local varieties) // overall voting--- all traits
 
-gen aromaDiff = aroma_imp_post - aroma_imp_prior
-la var aromaDiff "aroma_change in percent points"
+asdoc ttest priorTotLOC==priorTotIMP if moreWomen == 1, label dec(3) tzok title(Before cooking and tasting demonstration: ttests mean differences in votes for improved maize and local varieties) rowappend // overall voting--- all traits--- in women-dominated demos
 
-gen easeDiff = ease_imp_post - ease_imp_prior
-la var easeDiff "easycook_change in percent points"
+asdoc ttest priorTotLOC==priorTotIMP if moreWomen == 2, label dec(3) tzok title(Before cooking and tasting demonstration: ttests mean differences in votes for improved maize and local varieties) rowappend // overall voting--- all traits--- in non-women-dominated demos
 
-gen cooktimeDiff = cooktime_imp_post - cooktime_imp_prior
-la var cooktimeDiff "cooktime_change in percent points"
+asdoc ttest colorPriorLOC==colorPriorIMP, label dec(3) tzok title(Before cooking and tasting demonstration: ttests mean differences in votes for improved maize and local varieties) rowappend
 
-gen expDiff = exp_imp_post - exp_imp_prior
-la var expDiff "expands_change in percent points"
+asdoc ttest aromPriorLOC==aromPriorIMP, label dec(3) tzok title(Before cooking and tasting demonstration: ttests mean differences in votes for improved maize and local varieties) rowappend
 
-gen tasteDiff = taste_imp_post - taste_imp_prior
-la var tasteDiff "taste_change in percent points"
+asdoc ttest easePriorLOC==easePriorIMP, label dec(3) tzok title(Before cooking and tasting demonstration: ttests mean differences in votes for improved maize and local varieties) rowappend
 
-gen textureDiff = texture_imp_post - texture_imp_prior
-la var textureDiff "texture_change in percent points"
+asdoc ttest timePriorLOC==timePriorIMP, label dec(3) tzok title(Before cooking and tasting demonstration: ttests mean differences in votes for improved maize and local varieties) rowappend
 
-asdoc ttest colorDiff==0, stat(obs mean p) label dec(2) tzok title(After cooking and tasting demonstration: ttest mean change in votes after cooking and tasting)
+asdoc ttest expPriorLOC==expPriorIMP, label dec(3) tzok title(Before cooking and tasting demonstration: ttests mean differences in votes for improved maize and local varieties) rowappend
 
-asdoc ttest aromaDiff==0, stat(obs mean p) label dec(2) tzok title(After cooking and tasting demonstration: ttest mean change in votes after cooking and tasting) rowappend
+asdoc ttest tastePriorLOC==tastePriorIMP, label dec(3) tzok title(Before cooking and tasting demonstration: ttests mean differences in votes for improved maize and local varieties) rowappend
 
-asdoc ttest easeDiff==0, stat(obs mean p) label dec(2) tzok title(After cooking and tasting demonstration: ttest mean change in votes after cooking and tasting) rowappend
-
-asdoc ttest cooktimeDiff==0, stat(obs mean p) label dec(2) tzok title(After cooking and tasting demonstration: ttest mean change in votes after cooking and tasting) rowappend
-
-asdoc ttest expDiff==0, stat(obs mean p) label dec(2) tzok title(After cooking and tasting demonstration: ttest mean change in votes after cooking and tasting) rowappend
-
-asdoc ttest tasteDiff==0, stat(obs mean p) label dec(2) tzok title(After cooking and tasting demonstration: ttest mean change in votes after cooking and tasting) rowappend
-
-asdoc ttest textureDiff==0, stat(obs mean p) label dec(2) tzok title(After cooking and tasting demonstration: ttest mean change in votes after cooking and tasting) rowappend
+asdoc ttest textPriorLOC==textPriorIMP, label dec(3) tzok title(Before cooking and tasting demonstration: ttests mean differences in votes for improved maize and local varieties) rowappend
 
 
-*** CHANGE IN VOTES AFTER COOKING AND TASTING---- between women and non-women dominated groups
-asdoc ttest colorDiff, by(moreWomen) stat(obs mean dif p) label dec(2) tzok title(After cooking and tasting demonstration: ttest mean change in votes among non-women dominated groups)
+// Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for local maize varieties
 
-asdoc ttest aromaDiff, by(moreWomen) stat(obs mean dif p) label dec(2) tzok title(After cooking and tasting demonstration: ttest mean change in votes among non-women dominated groups) rowappend
+asdoc ttest priorTotLOC, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for local maize varieties)
 
-asdoc ttest easeDiff, by(moreWomen) stat(obs mean dif p) label dec(2) tzok title(After cooking and tasting demonstration: ttest mean change in votes among non-women dominated groups) rowappend
+asdoc ttest colorPriorLOC, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for local maize varieties) rowappend
 
-asdoc ttest cooktimeDiff, by(moreWomen) stat(obs mean dif p) label dec(2) tzok title(After cooking and tasting demonstration: ttest mean change in votes among non-women dominated groups) rowappend
+asdoc ttest aromPriorLOC, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for local maize varieties) rowappend
 
-asdoc ttest expDiff, by(moreWomen) stat(obs mean dif p) label dec(2) tzok title(After cooking and tasting demonstration: ttest mean change in votes among non-women dominated groups) rowappend
+asdoc ttest easePriorLOC, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for local maize varieties) rowappend
 
-asdoc ttest tasteDiff, by(moreWomen) stat(obs mean dif p) label dec(2) tzok title(After cooking and tasting demonstration: ttest mean change in votes among non-women dominated groups) rowappend
+asdoc ttest timePriorLOC, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for local maize varieties) rowappend
 
-asdoc ttest textureDiff, by(moreWomen) stat(obs mean dif p) label dec(2) tzok title(After cooking and tasting demonstration: ttest mean change in votes among non-women dominated groups) rowappend
+asdoc ttest expPriorLOC, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for local maize varieties) rowappend
+
+asdoc ttest tastePriorLOC, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for local maize varieties) rowappend
+
+asdoc ttest textPriorLOC, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for local maize varieties) rowappend
 
 
- 
+// Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for improved maize varieties
+
+asdoc ttest priorTotIMP, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for improved maize varieties)
+
+asdoc ttest colorPriorIMP, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for improved maize varieties) rowappend
+
+asdoc ttest aromPriorIMP, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for improved maize varieties) rowappend
+
+asdoc ttest easePriorIMP, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for improved maize varieties) rowappend
+
+asdoc ttest timePriorIMP, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for improved maize varieties) rowappend
+
+asdoc ttest expPriorIMP, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for improved maize varieties) rowappend
+
+asdoc ttest tastePriorIMP, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for improved maize varieties) rowappend
+
+asdoc ttest textPriorIMP, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for improved maize varieties) rowappend
+
+
+
+*** CHANGE IN PERCEPTIONS (percentage points in VOTES) AFTER COOKING AND TASTING---- overall
+egen postTotLOC = rowmean(color_loc_post aroma_loc_post ease_loc_post cooktime_loc_post exp_loc_post taste_loc_post texture_loc_post)
+egen postTotIMP = rowmean(color_imp_post aroma_imp_post ease_imp_post cooktime_imp_post exp_imp_post taste_imp_post texture_imp_post)
+
+gen totalDiffLOC = (postTotLOC - priorTotLOC)*100
+la var totalDiffLOC "total_change in percent points"
+
+gen totalDiffIMP = (postTotIMP - priorTotIMP)*100
+la var totalDiffIMP "total_change in percent points"
+
+
+*** CHANGE IN PERCEPTIONS (percentage points in VOTES) AFTER COOKING AND TASTING---- for specific variables
+gen colorDiffLOC = (color_loc_post - color_loc_prior)*100
+la var colorDiffLOC "color_change in percent points"
+
+gen aromDiffLOC = (aroma_loc_post - aroma_loc_prior)*100
+la var aromDiffLOC "aroma_change in percent points"
+
+gen easeDiffLOC = (ease_loc_post - ease_loc_prior)*100
+la var easeDiffLOC "easycook_change in percent points"
+
+gen timeDiffLOC = (cooktime_loc_post - cooktime_loc_prior)*100
+la var timeDiffLOC "cooktime_change in percent points"
+
+gen expDiffLOC = (exp_loc_post - exp_loc_prior)*100
+la var expDiffLOC "expands_change in percent points"
+
+gen tasteDiffLOC = (taste_loc_post - taste_loc_prior)*100
+la var tasteDiffLOC "taste_change in percent points"
+
+gen textDiffLOC = (texture_loc_post - texture_loc_prior)*100
+la var textDiffLOC "texture_change in percent points"
+
+
+
+gen colorDiffIMP = (color_imp_post - color_imp_prior)*100
+la var colorDiffIMP "color_change in percent points"
+
+gen aromDiffIMP = (aroma_imp_post - aroma_imp_prior)*100
+la var aromDiffIMP "aroma_change in percent points"
+
+gen easeDiffIMP = (ease_imp_post - ease_imp_prior)*100
+la var easeDiffIMP "easycook_change in percent points"
+
+gen timeDiffIMP = (cooktime_imp_post - cooktime_imp_prior)*100
+la var timeDiffIMP "cooktime_change in percent points"
+
+gen expDiffIMP = (exp_imp_post - exp_imp_prior)*100
+la var expDiffIMP "expands_change in percent points"
+
+gen tasteDiffIMP = (taste_imp_post - taste_imp_prior)*100
+la var tasteDiffIMP "taste_change in percent points"
+
+gen textDiffIMP = (texture_imp_post - texture_imp_prior)*100
+la var textDiffIMP "texture_change in percent points"
+
+
+*** After cooking and tasting: ttest mean differences in change of perceptions (percentage point changes in votes) between local and improved varieties
+
+asdoc ttest totalDiffLOC==totalDiffIMP, label dec(3) tzok title(After cooking and testing: ttest mean differences in change of perceptions, measured by change in percentage points of votes) // change in overall votes
+
+asdoc ttest totalDiffLOC==totalDiffIMP if moreWomen==1, label dec(3) tzok title(After cooking and testing: ttest mean differences in change of perceptions, measured by change in percentage points of votes) rowappend // change in overall votes in women-dominated demos
+
+asdoc ttest totalDiffLOC==totalDiffIMP if moreWomen==2, label dec(3) tzok title(After cooking and testing: ttest mean differences in change of perceptions, measured by change in percentage points of votes) rowappend // change in overall votes in non-women-dominated demos
+
+asdoc ttest colorDiffLOC==colorDiffIMP, label dec(3) tzok title(After cooking and testing: ttest mean differences in change of perceptions, measured by change in percentage points of votes) rowappend
+
+asdoc ttest aromDiffLOC==aromDiffIMP, label dec(3) tzok title(After cooking and testing: ttest mean differences in change of perceptions, measured by change in percentage points of votes) rowappend
+
+asdoc ttest easeDiffLOC==easeDiffIMP, label dec(3) tzok title(After cooking and testing: ttest mean differences in change of perceptions, measured by change in percentage points of votes) rowappend
+
+asdoc ttest timeDiffLOC==timeDiffIMP, label dec(3) tzok title(After cooking and testing: ttest mean differences in change of perceptions, measured by change in percentage points of votes) rowappend
+
+asdoc ttest expDiffLOC==expDiffIMP, label dec(3) tzok title(After cooking and testing: ttest mean differences in change of perceptions, measured by change in percentage points of votes) rowappend
+
+asdoc ttest tasteDiffLOC==tasteDiffIMP, label dec(3) tzok title(After cooking and testing: ttest mean differences in change of perceptions, measured by change in percentage points of votes) rowappend
+
+asdoc ttest textDiffLOC==textDiffIMP, label dec(3) tzok title(After cooking and testing: ttest mean differences in change of perceptions, measured by change in percentage points of votes) rowappend
+
+
+// After cooking and tasting: Gender disaggregated ttest mean differences in change of perceptions (percentage point changes in votes) for LOCAL 
+asdoc ttest totalDiffLOC, by(moreWomen) stat(obs mean p) label dec(3) tzok title(After cooking and tasting: ttest mean differences for change/percent point in perceptions/votes by sex_ratio, for local varieties) 
+
+asdoc ttest colorDiffLOC, by(moreWomen) stat(obs mean p) label dec(3) tzok title(After cooking and tasting: ttest mean differences for change/percent point in perceptions/votes by sex_ratio, for local varieties) rowappend
+
+asdoc ttest aromDiffLOC, by(moreWomen) stat(obs mean p) label dec(3) tzok title(After cooking and tasting: ttest mean differences for change/percent point in perceptions/votes by sex_ratio, for local varieties) rowappend
+
+asdoc ttest easeDiffLOC, by(moreWomen) stat(obs mean p) label dec(3) tzok title(After cooking and tasting: ttest mean differences for change/percent point in perceptions/votes by sex_ratio, for local varieties) rowappend
+
+asdoc ttest timeDiffLOC, by(moreWomen) stat(obs mean p) label dec(3) tzok title(After cooking and tasting: ttest mean differences for change/percent point in perceptions/votes by sex_ratio, for local varieties) rowappend
+
+asdoc ttest expDiffLOC, by(moreWomen) stat(obs mean p) label dec(3) tzok title(After cooking and tasting: ttest mean differences for change/percent point in perceptions/votes by sex_ratio, for local varieties) rowappend
+
+asdoc ttest tasteDiffLOC, by(moreWomen) stat(obs mean p) label dec(3) tzok title(After cooking and tasting: ttest mean differences for change/percent point in perceptions/votes by sex_ratio, for local varieties) rowappend
+
+asdoc ttest textDiffLOC, by(moreWomen) stat(obs mean p) label dec(3) tzok title(After cooking and tasting: ttest mean differences for change/percent point in perceptions/votes by sex_ratio, for local varieties) rowappend
+
+
+// // After cooking and tasting: Gender disaggregated ttest mean differences in change of perceptions (percentage point changes in votes) for IMPROVED 
+
+asdoc ttest totalDiffIMP, by(moreWomen) stat(obs mean p) label dec(3) tzok title(After cooking and tasting: ttest mean differences for change/percent point in perceptions/votes by sex_ratio, for improved varieties)
+
+asdoc ttest colorDiffIMP, by(moreWomen) stat(obs mean p) label dec(3) tzok title(After cooking and tasting: ttest mean differences for change/percent point in perceptions/votes by sex_ratio, for improved varieties) rowappend
+
+asdoc ttest aromDiffIMP, by(moreWomen) stat(obs mean p) label dec(3) tzok title(AAfter cooking and tasting: ttest mean differences for change/percent point in perceptions/votes by sex_ratio, for improved varieties) rowappend
+
+asdoc ttest easeDiffIMP, by(moreWomen) stat(obs mean p) label dec(3) tzok title(After cooking and tasting: ttest mean differences for change/percent point in perceptions/votes by sex_ratio, for improved varieties) rowappend
+
+asdoc ttest timeDiffIMP, by(moreWomen) stat(obs mean p) label dec(3) tzok title(After cooking and tasting: ttest mean differences for change/percent point in perceptions/votes by sex_ratio, for improved varieties) rowappend
+
+asdoc ttest expDiffIMP, by(moreWomen) stat(obs mean p) label dec(3) tzok title(After cooking and tasting: ttest mean differences for change/percent point in perceptions/votes by sex_ratio, for improved varieties) rowappend
+
+asdoc ttest tasteDiffIMP, by(moreWomen) stat(obs mean p) label dec(3) tzok title(After cooking and tasting: ttest mean differences for change/percent point in perceptions/votes by sex_ratio, for improved varieties) rowappend
+
+asdoc ttest textDiffIMP, by(moreWomen) stat(obs mean p) label dec(3) tzok title(After cooking and tasting: ttest mean differences for change/percent point in perceptions/votes by sex_ratio, for improved varieties) rowappend
+
