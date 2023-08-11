@@ -1,0 +1,1167 @@
+{\rtf1\ansi\deff0 {\fonttbl{\f0\fnil Garamond;}}
+{\info {\author .}{\company .}{\title .}}
+\deflang1033\plain\fs20
+{\footer\pard\qc\plain\f0\fs20\chpgn\par}
+{
+{\fs20\b\qc\line Summary statistics for participants }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4510
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5542
+\fs20\pard\intbl\qr {{ Sum}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6573
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7605
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx8637
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx9668
+\fs20\pard\intbl\qr {{ Max}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx10700
+\fs20\pard\intbl\qr {{ N}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx4510
+\fs20\pard\intbl\ql {{ Number of participants}}\cell
+\cellx5542
+\qr {{1118.00}}\cell
+\cellx6573
+\qr {{14.33}}\cell
+\cellx7605
+\qr {{3.05}}\cell
+\cellx8637
+\qr {{8.00}}\cell
+\cellx9668
+\qr {{20.00}}\cell
+\cellx10700
+\qr {{78.00}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx4510
+\fs20\pard\intbl\ql {{ Number of women participants}}\cell
+\cellx5542
+\qr {{574.00}}\cell
+\cellx6573
+\qr {{7.36}}\cell
+\cellx7605
+\qr {{2.27}}\cell
+\cellx8637
+\qr {{2.00}}\cell
+\cellx9668
+\qr {{13.00}}\cell
+\cellx10700
+\qr {{78.00}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx4510
+\fs20\pard\intbl\ql {{ Number of men participants}}\cell
+\cellx5542
+\qr {{544.00}}\cell
+\cellx6573
+\qr {{6.97}}\cell
+\cellx7605
+\qr {{2.61}}\cell
+\cellx8637
+\qr {{1.00}}\cell
+\cellx9668
+\qr {{14.00}}\cell
+\cellx10700
+\qr {{78.00}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx4510
+\fs20\pard\intbl\ql {{ Prop. of women participants}}\cell
+\cellx5542
+\qr {{40.44}}\cell
+\cellx6573
+\qr {{0.52}}\cell
+\cellx7605
+\qr {{0.15}}\cell
+\cellx8637
+\qr {{0.15}}\cell
+\cellx9668
+\qr {{0.90}}\cell
+\cellx10700
+\qr {{78.00}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx4510
+\fs20\pard\intbl\ql {{ Prop. of women dominated demos}}\cell
+\cellx5542
+\qr {{35.00}}\cell
+\cellx6573
+\qr {{0.45}}\cell
+\cellx7605
+\qr {{0.50}}\cell
+\cellx8637
+\qr {{0.00}}\cell
+\cellx9668
+\qr {{1.00}}\cell
+\cellx10700
+\qr {{78.00}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx4510
+\fs20\pard\intbl\ql {{ No. of women in non-women dominated}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5542
+\qr {{267.00}}\cell
+\clbrdrb\brdrw15\brdrs\cellx6573
+\qr {{6.21}}\cell
+\clbrdrb\brdrw15\brdrs\cellx7605
+\qr {{1.99}}\cell
+\clbrdrb\brdrw15\brdrs\cellx8637
+\qr {{2.00}}\cell
+\clbrdrb\brdrw15\brdrs\cellx9668
+\qr {{9.00}}\cell
+\clbrdrb\brdrw15\brdrs\cellx10700
+\qr {{43.00}}\cell
+\row}
+
+
+{\fs20\b\qc\line ttest mean difference in number of women in non-women dominated demos }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2530
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3685
+\fs20\pard\intbl\qr {{ obs1}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4840
+\fs20\pard\intbl\qr {{ obs2}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5995
+\fs20\pard\intbl\qr {{ Mean1}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7150
+\fs20\pard\intbl\qr {{ Mean2}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx8305
+\fs20\pard\intbl\qr {{ dif}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx9460
+\fs20\pard\intbl\qr {{ p value}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2530
+\fs20\pard\intbl\ql {{ women by moreWomen: 1 2}}\cell
+\cellx3685
+\qr {{35.00}}\cell
+\cellx4840
+\qr {{43.00}}\cell
+\cellx5995
+\qr {{8.77}}\cell
+\cellx7150
+\qr {{6.21}}\cell
+\cellx8305
+\qr {{2.56}}\cell
+\cellx9460
+\qr {{0.00}}\cell
+\row}
+
+
+{\fs20\b\qc\line Before cooking and tasting demonstration: ttests mean differences in votes for improved maize and local varieties }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2750
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3886
+\fs20\pard\intbl\qr {{ obs}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5021
+\fs20\pard\intbl\qr {{ Mean1}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6157
+\fs20\pard\intbl\qr {{ Mean2}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7293
+\fs20\pard\intbl\qr {{ dif}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx8429
+\fs20\pard\intbl\qr {{ St Err}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx9564
+\fs20\pard\intbl\qr {{ t value}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx10700
+\fs20\pard\intbl\qr {{ p value}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2750
+\fs20\pard\intbl\ql {{ priorTotLOC - priorTotIMP}}\cell
+\cellx3886
+\qr {{78.00}}\cell
+\cellx5021
+\qr {{0.35}}\cell
+\cellx6157
+\qr {{0.54}}\cell
+\cellx7293
+\qr {{-0.19}}\cell
+\cellx8429
+\qr {{0.05}}\cell
+\cellx9564
+\qr {{-3.80}}\cell
+\cellx10700
+\qr {{0.00}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx2750
+\fs20\pard\intbl\ql {{ priorTotLOC - priorTotIMP}}\cell
+\cellx3886
+\qr {{35.00}}\cell
+\cellx5021
+\qr {{0.36}}\cell
+\cellx6157
+\qr {{0.53}}\cell
+\cellx7293
+\qr {{-0.18}}\cell
+\cellx8429
+\qr {{0.07}}\cell
+\cellx9564
+\qr {{-2.50}}\cell
+\cellx10700
+\qr {{0.02}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx2750
+\fs20\pard\intbl\ql {{ priorTotLOC - priorTotIMP}}\cell
+\cellx3886
+\qr {{43.00}}\cell
+\cellx5021
+\qr {{0.35}}\cell
+\cellx6157
+\qr {{0.55}}\cell
+\cellx7293
+\qr {{-0.20}}\cell
+\cellx8429
+\qr {{0.07}}\cell
+\cellx9564
+\qr {{-2.85}}\cell
+\cellx10700
+\qr {{0.01}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx2750
+\fs20\pard\intbl\ql {{ colorPriorLOC - colorPriorIMP}}\cell
+\cellx3886
+\qr {{78.00}}\cell
+\cellx5021
+\qr {{0.13}}\cell
+\cellx6157
+\qr {{0.80}}\cell
+\cellx7293
+\qr {{-0.67}}\cell
+\cellx8429
+\qr {{0.06}}\cell
+\cellx9564
+\qr {{-11.40}}\cell
+\cellx10700
+\qr {{0.00}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx2750
+\fs20\pard\intbl\ql {{ aromPriorLOC - aromPriorIMP}}\cell
+\cellx3886
+\qr {{78.00}}\cell
+\cellx5021
+\qr {{0.67}}\cell
+\cellx6157
+\qr {{0.26}}\cell
+\cellx7293
+\qr {{0.41}}\cell
+\cellx8429
+\qr {{0.07}}\cell
+\cellx9564
+\qr {{5.95}}\cell
+\cellx10700
+\qr {{0.00}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx2750
+\fs20\pard\intbl\ql {{ easePriorLOC - easePriorIMP}}\cell
+\cellx3886
+\qr {{78.00}}\cell
+\cellx5021
+\qr {{0.28}}\cell
+\cellx6157
+\qr {{0.58}}\cell
+\cellx7293
+\qr {{-0.30}}\cell
+\cellx8429
+\qr {{0.08}}\cell
+\cellx9564
+\qr {{-3.85}}\cell
+\cellx10700
+\qr {{0.00}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx2750
+\fs20\pard\intbl\ql {{ timePriorLOC - timePriorIMP}}\cell
+\cellx3886
+\qr {{78.00}}\cell
+\cellx5021
+\qr {{0.21}}\cell
+\cellx6157
+\qr {{0.61}}\cell
+\cellx7293
+\qr {{-0.40}}\cell
+\cellx8429
+\qr {{0.07}}\cell
+\cellx9564
+\qr {{-5.95}}\cell
+\cellx10700
+\qr {{0.00}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx2750
+\fs20\pard\intbl\ql {{ expPriorLOC - expPriorIMP}}\cell
+\cellx3886
+\qr {{78.00}}\cell
+\cellx5021
+\qr {{0.37}}\cell
+\cellx6157
+\qr {{0.52}}\cell
+\cellx7293
+\qr {{-0.15}}\cell
+\cellx8429
+\qr {{0.09}}\cell
+\cellx9564
+\qr {{-1.75}}\cell
+\cellx10700
+\qr {{0.08}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx2750
+\fs20\pard\intbl\ql {{ tastePriorLOC - tastePriorIMP}}\cell
+\cellx3886
+\qr {{78.00}}\cell
+\cellx5021
+\qr {{0.62}}\cell
+\cellx6157
+\qr {{0.32}}\cell
+\cellx7293
+\qr {{0.30}}\cell
+\cellx8429
+\qr {{0.08}}\cell
+\cellx9564
+\qr {{3.85}}\cell
+\cellx10700
+\qr {{0.00}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx2750
+\fs20\pard\intbl\ql {{ textPriorLOC - textPriorIMP}}\cell
+\cellx3886
+\qr {{78.00}}\cell
+\cellx5021
+\qr {{0.19}}\cell
+\cellx6157
+\qr {{0.71}}\cell
+\cellx7293
+\qr {{-0.52}}\cell
+\cellx8429
+\qr {{0.07}}\cell
+\cellx9564
+\qr {{-8.05}}\cell
+\cellx10700
+\qr {{0.00}}\cell
+\row}
+
+
+{\fs20\b\qc\line Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for local maize varieties }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3190
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4410
+\fs20\pard\intbl\qr {{ obs1}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5630
+\fs20\pard\intbl\qr {{ obs2}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6850
+\fs20\pard\intbl\qr {{ Mean1}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx8070
+\fs20\pard\intbl\qr {{ Mean2}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx9290
+\fs20\pard\intbl\qr {{ p value}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx3190
+\fs20\pard\intbl\ql {{ priorTotLOC by moreWomen: 1 2}}\cell
+\cellx4410
+\qr {{35.00}}\cell
+\cellx5630
+\qr {{43.00}}\cell
+\cellx6850
+\qr {{0.36}}\cell
+\cellx8070
+\qr {{0.35}}\cell
+\cellx9290
+\qr {{0.86}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx3190
+\fs20\pard\intbl\ql {{ colorPriorLOC by moreWomen: 1 2}}\cell
+\cellx4410
+\qr {{35.00}}\cell
+\cellx5630
+\qr {{43.00}}\cell
+\cellx6850
+\qr {{0.12}}\cell
+\cellx8070
+\qr {{0.14}}\cell
+\cellx9290
+\qr {{0.72}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx3190
+\fs20\pard\intbl\ql {{ aromPriorLOC by moreWomen: 1 2}}\cell
+\cellx4410
+\qr {{35.00}}\cell
+\cellx5630
+\qr {{43.00}}\cell
+\cellx6850
+\qr {{0.69}}\cell
+\cellx8070
+\qr {{0.64}}\cell
+\cellx9290
+\qr {{0.49}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx3190
+\fs20\pard\intbl\ql {{ easePriorLOC by moreWomen: 1 2}}\cell
+\cellx4410
+\qr {{35.00}}\cell
+\cellx5630
+\qr {{43.00}}\cell
+\cellx6850
+\qr {{0.24}}\cell
+\cellx8070
+\qr {{0.32}}\cell
+\cellx9290
+\qr {{0.31}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx3190
+\fs20\pard\intbl\ql {{ timePriorLOC by moreWomen: 1 2}}\cell
+\cellx4410
+\qr {{35.00}}\cell
+\cellx5630
+\qr {{43.00}}\cell
+\cellx6850
+\qr {{0.19}}\cell
+\cellx8070
+\qr {{0.22}}\cell
+\cellx9290
+\qr {{0.68}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx3190
+\fs20\pard\intbl\ql {{ expPriorLOC by moreWomen: 1 2}}\cell
+\cellx4410
+\qr {{35.00}}\cell
+\cellx5630
+\qr {{43.00}}\cell
+\cellx6850
+\qr {{0.43}}\cell
+\cellx8070
+\qr {{0.32}}\cell
+\cellx9290
+\qr {{0.24}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx3190
+\fs20\pard\intbl\ql {{ tastePriorLOC by moreWomen: 1 2}}\cell
+\cellx4410
+\qr {{35.00}}\cell
+\cellx5630
+\qr {{43.00}}\cell
+\cellx6850
+\qr {{0.64}}\cell
+\cellx8070
+\qr {{0.60}}\cell
+\cellx9290
+\qr {{0.60}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx3190
+\fs20\pard\intbl\ql {{ textPriorLOC by moreWomen: 1 2}}\cell
+\cellx4410
+\qr {{35.00}}\cell
+\cellx5630
+\qr {{43.00}}\cell
+\cellx6850
+\qr {{0.19}}\cell
+\cellx8070
+\qr {{0.19}}\cell
+\cellx9290
+\qr {{0.98}}\cell
+\row}
+
+
+{\fs20\b\qc\line Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for improved maize varieties }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3190
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4410
+\fs20\pard\intbl\qr {{ obs1}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5630
+\fs20\pard\intbl\qr {{ obs2}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6850
+\fs20\pard\intbl\qr {{ Mean1}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx8070
+\fs20\pard\intbl\qr {{ Mean2}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx9290
+\fs20\pard\intbl\qr {{ p value}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx3190
+\fs20\pard\intbl\ql {{ priorTotIMP by moreWomen: 1 2}}\cell
+\cellx4410
+\qr {{35.00}}\cell
+\cellx5630
+\qr {{43.00}}\cell
+\cellx6850
+\qr {{0.53}}\cell
+\cellx8070
+\qr {{0.55}}\cell
+\cellx9290
+\qr {{0.71}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx3190
+\fs20\pard\intbl\ql {{ colorPriorIMP by moreWomen: 1 2}}\cell
+\cellx4410
+\qr {{35.00}}\cell
+\cellx5630
+\qr {{43.00}}\cell
+\cellx6850
+\qr {{0.81}}\cell
+\cellx8070
+\qr {{0.80}}\cell
+\cellx9290
+\qr {{0.83}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx3190
+\fs20\pard\intbl\ql {{ aromPriorIMP by moreWomen: 1 2}}\cell
+\cellx4410
+\qr {{35.00}}\cell
+\cellx5630
+\qr {{43.00}}\cell
+\cellx6850
+\qr {{0.23}}\cell
+\cellx8070
+\qr {{0.28}}\cell
+\cellx9290
+\qr {{0.42}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx3190
+\fs20\pard\intbl\ql {{ easePriorIMP by moreWomen: 1 2}}\cell
+\cellx4410
+\qr {{35.00}}\cell
+\cellx5630
+\qr {{43.00}}\cell
+\cellx6850
+\qr {{0.63}}\cell
+\cellx8070
+\qr {{0.54}}\cell
+\cellx9290
+\qr {{0.29}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx3190
+\fs20\pard\intbl\ql {{ timePriorIMP by moreWomen: 1 2}}\cell
+\cellx4410
+\qr {{35.00}}\cell
+\cellx5630
+\qr {{43.00}}\cell
+\cellx6850
+\qr {{0.62}}\cell
+\cellx8070
+\qr {{0.61}}\cell
+\cellx9290
+\qr {{0.89}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx3190
+\fs20\pard\intbl\ql {{ expPriorIMP by moreWomen: 1 2}}\cell
+\cellx4410
+\qr {{35.00}}\cell
+\cellx5630
+\qr {{43.00}}\cell
+\cellx6850
+\qr {{0.44}}\cell
+\cellx8070
+\qr {{0.59}}\cell
+\cellx9290
+\qr {{0.10}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx3190
+\fs20\pard\intbl\ql {{ tastePriorIMP by moreWomen: 1 2}}\cell
+\cellx4410
+\qr {{35.00}}\cell
+\cellx5630
+\qr {{43.00}}\cell
+\cellx6850
+\qr {{0.29}}\cell
+\cellx8070
+\qr {{0.34}}\cell
+\cellx9290
+\qr {{0.52}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx3190
+\fs20\pard\intbl\ql {{ textPriorIMP by moreWomen: 1 2}}\cell
+\cellx4410
+\qr {{35.00}}\cell
+\cellx5630
+\qr {{43.00}}\cell
+\cellx6850
+\qr {{0.71}}\cell
+\cellx8070
+\qr {{0.72}}\cell
+\cellx9290
+\qr {{0.92}}\cell
+\row}
+
+
+{\fs20\b\qc\line After cooking and testing: ttest mean differences in change of perceptions, measured by change in percentage points of votes }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2970
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4074
+\fs20\pard\intbl\qr {{ obs}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5179
+\fs20\pard\intbl\qr {{ Mean1}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6283
+\fs20\pard\intbl\qr {{ Mean2}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7387
+\fs20\pard\intbl\qr {{ dif}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx8491
+\fs20\pard\intbl\qr {{ St Err}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx9596
+\fs20\pard\intbl\qr {{ t value}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx10700
+\fs20\pard\intbl\qr {{ p value}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2970
+\fs20\pard\intbl\ql {{ totalDiffLOC - totalDiffIMP}}\cell
+\cellx4074
+\qr {{78.00}}\cell
+\cellx5179
+\qr {{-8.44}}\cell
+\cellx6283
+\qr {{17.32}}\cell
+\cellx7387
+\qr {{-25.76}}\cell
+\cellx8491
+\qr {{5.51}}\cell
+\cellx9596
+\qr {{-4.70}}\cell
+\cellx10700
+\qr {{0.00}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx2970
+\fs20\pard\intbl\ql {{ totalDiffLOC - totalDiffIMP}}\cell
+\cellx4074
+\qr {{35.00}}\cell
+\cellx5179
+\qr {{-7.92}}\cell
+\cellx6283
+\qr {{17.43}}\cell
+\cellx7387
+\qr {{-25.35}}\cell
+\cellx8491
+\qr {{8.08}}\cell
+\cellx9596
+\qr {{-3.15}}\cell
+\cellx10700
+\qr {{0.00}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx2970
+\fs20\pard\intbl\ql {{ totalDiffLOC - totalDiffIMP}}\cell
+\cellx4074
+\qr {{43.00}}\cell
+\cellx5179
+\qr {{-8.87}}\cell
+\cellx6283
+\qr {{17.23}}\cell
+\cellx7387
+\qr {{-26.10}}\cell
+\cellx8491
+\qr {{7.61}}\cell
+\cellx9596
+\qr {{-3.45}}\cell
+\cellx10700
+\qr {{0.00}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx2970
+\fs20\pard\intbl\ql {{ colorDiffLOC - colorDiffIMP}}\cell
+\cellx4074
+\qr {{78.00}}\cell
+\cellx5179
+\qr {{-7.95}}\cell
+\cellx6283
+\qr {{14.35}}\cell
+\cellx7387
+\qr {{-22.30}}\cell
+\cellx8491
+\qr {{6.03}}\cell
+\cellx9596
+\qr {{-3.70}}\cell
+\cellx10700
+\qr {{0.00}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx2970
+\fs20\pard\intbl\ql {{ aromDiffLOC - aromDiffIMP}}\cell
+\cellx4074
+\qr {{78.00}}\cell
+\cellx5179
+\qr {{-22.41}}\cell
+\cellx6283
+\qr {{26.83}}\cell
+\cellx7387
+\qr {{-49.25}}\cell
+\cellx8491
+\qr {{8.62}}\cell
+\cellx9596
+\qr {{-5.70}}\cell
+\cellx10700
+\qr {{0.00}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx2970
+\fs20\pard\intbl\ql {{ easeDiffLOC - easeDiffIMP}}\cell
+\cellx4074
+\qr {{77.00}}\cell
+\cellx5179
+\qr {{-4.77}}\cell
+\cellx6283
+\qr {{16.04}}\cell
+\cellx7387
+\qr {{-20.81}}\cell
+\cellx8491
+\qr {{9.26}}\cell
+\cellx9596
+\qr {{-2.25}}\cell
+\cellx10700
+\qr {{0.03}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx2970
+\fs20\pard\intbl\ql {{ timeDiffLOC - timeDiffIMP}}\cell
+\cellx4074
+\qr {{78.00}}\cell
+\cellx5179
+\qr {{10.43}}\cell
+\cellx6283
+\qr {{6.87}}\cell
+\cellx7387
+\qr {{3.56}}\cell
+\cellx8491
+\qr {{12.07}}\cell
+\cellx9596
+\qr {{0.30}}\cell
+\cellx10700
+\qr {{0.77}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx2970
+\fs20\pard\intbl\ql {{ expDiffLOC - expDiffIMP}}\cell
+\cellx4074
+\qr {{78.00}}\cell
+\cellx5179
+\qr {{-3.34}}\cell
+\cellx6283
+\qr {{12.10}}\cell
+\cellx7387
+\qr {{-15.44}}\cell
+\cellx8491
+\qr {{11.97}}\cell
+\cellx9596
+\qr {{-1.30}}\cell
+\cellx10700
+\qr {{0.20}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx2970
+\fs20\pard\intbl\ql {{ tasteDiffLOC - tasteDiffIMP}}\cell
+\cellx4074
+\qr {{78.00}}\cell
+\cellx5179
+\qr {{-31.91}}\cell
+\cellx6283
+\qr {{37.17}}\cell
+\cellx7387
+\qr {{-69.07}}\cell
+\cellx8491
+\qr {{9.80}}\cell
+\cellx9596
+\qr {{-7.05}}\cell
+\cellx10700
+\qr {{0.00}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx2970
+\fs20\pard\intbl\ql {{ textDiffLOC - textDiffIMP}}\cell
+\cellx4074
+\qr {{78.00}}\cell
+\cellx5179
+\qr {{0.69}}\cell
+\cellx6283
+\qr {{8.23}}\cell
+\cellx7387
+\qr {{-7.54}}\cell
+\cellx8491
+\qr {{9.18}}\cell
+\cellx9596
+\qr {{-0.80}}\cell
+\cellx10700
+\qr {{0.41}}\cell
+\row}
+
+
+{\fs20\b\qc\line After cooking and tasting: ttest mean differences for change/percent point in perceptions/votes by sex_ratio, for local varieties }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3300
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4520
+\fs20\pard\intbl\qr {{ obs1}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5740
+\fs20\pard\intbl\qr {{ obs2}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6960
+\fs20\pard\intbl\qr {{ Mean1}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx8180
+\fs20\pard\intbl\qr {{ Mean2}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx9400
+\fs20\pard\intbl\qr {{ p value}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx3300
+\fs20\pard\intbl\ql {{ totalDiffLOC by moreWomen: 1 2}}\cell
+\cellx4520
+\qr {{35.00}}\cell
+\cellx5740
+\qr {{43.00}}\cell
+\cellx6960
+\qr {{-7.92}}\cell
+\cellx8180
+\qr {{-8.87}}\cell
+\cellx9400
+\qr {{0.86}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx3300
+\fs20\pard\intbl\ql {{ colorDiffLOC by moreWomen: 1 2}}\cell
+\cellx4520
+\qr {{35.00}}\cell
+\cellx5740
+\qr {{43.00}}\cell
+\cellx6960
+\qr {{-3.25}}\cell
+\cellx8180
+\qr {{-11.78}}\cell
+\cellx9400
+\qr {{0.20}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx3300
+\fs20\pard\intbl\ql {{ aromDiffLOC by moreWomen: 1 2}}\cell
+\cellx4520
+\qr {{35.00}}\cell
+\cellx5740
+\qr {{43.00}}\cell
+\cellx6960
+\qr {{-23.43}}\cell
+\cellx8180
+\qr {{-21.59}}\cell
+\cellx9400
+\qr {{0.84}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx3300
+\fs20\pard\intbl\ql {{ easeDiffLOC by moreWomen: 1 2}}\cell
+\cellx4520
+\qr {{34.00}}\cell
+\cellx5740
+\qr {{43.00}}\cell
+\cellx6960
+\qr {{-2.79}}\cell
+\cellx8180
+\qr {{-6.34}}\cell
+\cellx9400
+\qr {{0.70}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx3300
+\fs20\pard\intbl\ql {{ timeDiffLOC by moreWomen: 1 2}}\cell
+\cellx4520
+\qr {{35.00}}\cell
+\cellx5740
+\qr {{43.00}}\cell
+\cellx6960
+\qr {{16.93}}\cell
+\cellx8180
+\qr {{5.13}}\cell
+\cellx9400
+\qr {{0.32}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx3300
+\fs20\pard\intbl\ql {{ expDiffLOC by moreWomen: 1 2}}\cell
+\cellx4520
+\qr {{35.00}}\cell
+\cellx5740
+\qr {{43.00}}\cell
+\cellx6960
+\qr {{-9.12}}\cell
+\cellx8180
+\qr {{1.36}}\cell
+\cellx9400
+\qr {{0.41}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx3300
+\fs20\pard\intbl\ql {{ tasteDiffLOC by moreWomen: 1 2}}\cell
+\cellx4520
+\qr {{35.00}}\cell
+\cellx5740
+\qr {{43.00}}\cell
+\cellx6960
+\qr {{-29.87}}\cell
+\cellx8180
+\qr {{-33.57}}\cell
+\cellx9400
+\qr {{0.71}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx3300
+\fs20\pard\intbl\ql {{ textDiffLOC by moreWomen: 1 2}}\cell
+\cellx4520
+\qr {{35.00}}\cell
+\cellx5740
+\qr {{43.00}}\cell
+\cellx6960
+\qr {{-4.26}}\cell
+\cellx8180
+\qr {{4.72}}\cell
+\cellx9400
+\qr {{0.35}}\cell
+\row}
+
+
+{\fs20\b\qc\line After cooking and tasting: ttest mean differences for change/percent point in perceptions/votes by sex_ratio, for improved varieties }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3300
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4520
+\fs20\pard\intbl\qr {{ obs1}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5740
+\fs20\pard\intbl\qr {{ obs2}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6960
+\fs20\pard\intbl\qr {{ Mean1}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx8180
+\fs20\pard\intbl\qr {{ Mean2}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx9400
+\fs20\pard\intbl\qr {{ p value}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx3300
+\fs20\pard\intbl\ql {{ totalDiffIMP by moreWomen: 1 2}}\cell
+\cellx4520
+\qr {{35.00}}\cell
+\cellx5740
+\qr {{43.00}}\cell
+\cellx6960
+\qr {{17.43}}\cell
+\cellx8180
+\qr {{17.23}}\cell
+\cellx9400
+\qr {{0.97}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx3300
+\fs20\pard\intbl\ql {{ colorDiffIMP by moreWomen: 1 2}}\cell
+\cellx4520
+\qr {{35.00}}\cell
+\cellx5740
+\qr {{43.00}}\cell
+\cellx6960
+\qr {{9.98}}\cell
+\cellx8180
+\qr {{17.90}}\cell
+\cellx9400
+\qr {{0.19}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx3300
+\fs20\pard\intbl\ql {{ aromDiffIMP by moreWomen: 1 2}}\cell
+\cellx4520
+\qr {{35.00}}\cell
+\cellx5740
+\qr {{43.00}}\cell
+\cellx6960
+\qr {{28.21}}\cell
+\cellx8180
+\qr {{25.71}}\cell
+\cellx9400
+\qr {{0.78}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx3300
+\fs20\pard\intbl\ql {{ easeDiffIMP by moreWomen: 1 2}}\cell
+\cellx4520
+\qr {{34.00}}\cell
+\cellx5740
+\qr {{43.00}}\cell
+\cellx6960
+\qr {{14.11}}\cell
+\cellx8180
+\qr {{17.56}}\cell
+\cellx9400
+\qr {{0.74}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx3300
+\fs20\pard\intbl\ql {{ timeDiffIMP by moreWomen: 1 2}}\cell
+\cellx4520
+\qr {{35.00}}\cell
+\cellx5740
+\qr {{43.00}}\cell
+\cellx6960
+\qr {{1.24}}\cell
+\cellx8180
+\qr {{11.45}}\cell
+\cellx9400
+\qr {{0.44}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx3300
+\fs20\pard\intbl\ql {{ expDiffIMP by moreWomen: 1 2}}\cell
+\cellx4520
+\qr {{35.00}}\cell
+\cellx5740
+\qr {{43.00}}\cell
+\cellx6960
+\qr {{19.32}}\cell
+\cellx8180
+\qr {{6.23}}\cell
+\cellx9400
+\qr {{0.28}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx3300
+\fs20\pard\intbl\ql {{ tasteDiffIMP by moreWomen: 1 2}}\cell
+\cellx4520
+\qr {{35.00}}\cell
+\cellx5740
+\qr {{43.00}}\cell
+\cellx6960
+\qr {{35.66}}\cell
+\cellx8180
+\qr {{38.39}}\cell
+\cellx9400
+\qr {{0.79}}\cell
+\row}
+
+
+{\trowd\trgaph108\trleft-108
+\cellx3300
+\fs20\pard\intbl\ql {{ textDiffIMP by moreWomen: 1 2}}\cell
+\cellx4520
+\qr {{35.00}}\cell
+\cellx5740
+\qr {{43.00}}\cell
+\cellx6960
+\qr {{14.17}}\cell
+\cellx8180
+\qr {{3.40}}\cell
+\cellx9400
+\qr {{0.27}}\cell
+\row}
+
+
+\writepositionforappend
+}}
