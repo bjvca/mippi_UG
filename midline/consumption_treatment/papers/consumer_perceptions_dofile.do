@@ -100,11 +100,17 @@ order grdetails_count, after (today)
 ***** total of women participants that attended the cooking and tasting demos
 egen women = rowtotal(grdetails1respondent_gender - grdetails10gender2)
 
+***** total of men participants that attended the cooking and tasting demos
 recode grdetails1respondent_gender - grdetails10gender2 (1=2) (0=1)
 recode grdetails1respondent_gender - grdetails10gender2 (2=0) (1=1)
-
-***** total of men participants that attended the cooking and tasting demos
 egen men = rowtotal(grdetails1respondent_gender - grdetails10gender2)
+
+// total number of people that attended the cooking demos (men+women)
+gen attended = women + men
+
+gen men_prop = men/attended // percentage of men participants in all the demos
+gen women_prop = women/attended // mean proportion of women participants in all the demos
+
 
 ********** binary variable for gender, where 1= a demo was attended by more women (women/men>1), 0 otherwise
 gen moreWomen = .
@@ -115,86 +121,75 @@ label define sex 1 "Women dominated demos" 2 "Non-women dominated demos"
 label values moreWomen sex
 tab moreWomen
 
-
+// number of women in non-women dominated demos
 gen women2 = .
 replace women2 = women if moreWomen == 2 // number of women in non-women dominated demos
 la var women2 "No. of women in non-women dominated demos"
 
-// total number of people that attended the cooking demos (men+women)
-gen attended = women + men
-mean attended, over (moreWomen) // mean number of participants in demos that had majority of women vs demos with women that were less or equal to men
 
-gen men_prop = men/attended // mean proportion of men participants in all the demos
-gen women_prop = women/attended // mean proportion of women participants in all the demos
+********** dummy variable for gender, where 1= more women (women/men>1) attended, 2= more men attended, and 3 = same no. of men and women attended
+gen sexCAT = .
+replace sexCAT = 1 if women/men > 1
+replace sexCAT = 2 if women/men < 1
+replace sexCAT = 3 if women/men == 1
+tab sexCAT
+recode sexCAT (1=1) (2=2) (3=3)
+label define sexCAT 1 "More women attended" 2 "More men attended" 3 "Equal men and women"
+label values sexCAT sexCAT
+tab sexCAT
 
-order women men moreWomen women2 attended men_prop women_prop, before ( before_cookgrow)
+
+order women men attended men_prop women_prop moreWomen women2 sexCAT, before ( before_cookgrow)
 
 
 
-**** GENERATING PROPOTION OF VOTES (as a share of total votes) FOR DIFFERENT ATTRIBUTES BEFORE COOKING AND TASTING ***
+**** GENERATING PERCENTAGE OF VOTES (as a share of total votes for local and improved varieties) FOR DIFFERENT ATTRIBUTES BEFORE COOKING AND TASTING ***
 
 // Number of participants that indicated that the grow improved maize for consumption as a share of total votes
 gen grow_imp_prior = before_cookgrow/( before_cookgrow + plant) 
 
 // Proportion of votes for color before cooking and tasting
-gen color_loc_prior = before_cookcolor1color1_loc/( before_cookcolor1color1_loc+ before_cookcolor1color1_lmpr+ before_cookcolor1same_cl1)
-gen color_imp_prior = before_cookcolor1color1_lmpr /( before_cookcolor1color1_loc+ before_cookcolor1color1_lmpr+ before_cookcolor1same_cl1)
-gen color_same_prior = before_cookcolor1same_cl1 /( before_cookcolor1color1_loc+ before_cookcolor1color1_lmpr+ before_cookcolor1same_cl1)
-sum color_loc_prior color_imp_prior color_same_prior
+gen color_loc_prior = (before_cookcolor1color1_loc/( before_cookcolor1color1_loc+ before_cookcolor1color1_lmpr))*100
+gen color_imp_prior = (before_cookcolor1color1_lmpr /( before_cookcolor1color1_loc+ before_cookcolor1color1_lmpr))*100
 
 // Proportion of votes for aroma of the posho before cooking and tasting
 gen before_aroma1_loc = (before_cookaromayaroma1_loc_c + before_cookaromaxaroma1_loc_e)/2
 gen before_aroma1_imp = ( before_cookaromayaroma1_lmpr_c + before_cookaromaxaroma1_lmpr_e )/2
-gen before_aroma1_same = ( before_cookaromaysame_ar1 + before_cookaromaxsame_exp1 )/2
-order before_aroma1_loc before_aroma1_imp before_aroma1_same, before ( before_cookaromayaroma1_loc_c )
+order before_aroma1_loc before_aroma1_imp, before ( before_cookaromayaroma1_loc_c )
 
-gen aroma_loc_prior = before_aroma1_loc/( before_aroma1_loc+ before_aroma1_imp+ before_aroma1_same)
-gen aroma_imp_prior = before_aroma1_imp/( before_aroma1_loc+ before_aroma1_imp+ before_aroma1_same)
-gen aroma_same_prior = before_aroma1_same/( before_aroma1_loc+ before_aroma1_imp+ before_aroma1_same)
-sum aroma_loc_prior aroma_imp_prior aroma_same_prior
+gen aroma_loc_prior = (before_aroma1_loc/( before_aroma1_loc+ before_aroma1_imp))*100
+gen aroma_imp_prior = (before_aroma1_imp/( before_aroma1_loc+ before_aroma1_imp))*100
 
 // Proportion of votes for ease of cooking before cooking and tasting
-gen ease_loc_prior = before_cookeas1eas1_loc/( before_cookeas1eas1_loc+ before_cookeas1eas1_lmpr+ before_cookeas1same_eas1)
-gen ease_imp_prior = before_cookeas1eas1_lmpr /( before_cookeas1eas1_loc+ before_cookeas1eas1_lmpr+ before_cookeas1same_eas1)
-gen ease_same_prior = before_cookeas1same_eas1 /( before_cookeas1eas1_loc+ before_cookeas1eas1_lmpr+ before_cookeas1same_eas1)
-sum ease_loc_prior ease_imp_prior ease_same_prior
+gen ease_loc_prior = (before_cookeas1eas1_loc/( before_cookeas1eas1_loc+ before_cookeas1eas1_lmpr))*100
+gen ease_imp_prior = (before_cookeas1eas1_lmpr /( before_cookeas1eas1_loc+ before_cookeas1eas1_lmpr))*100
 
 // Proportion of votes for cooking time before cooking and tasting
-gen cooktime_loc_prior = before_cooktime1time1_loc/(before_cooktime1time1_loc + before_cooktime1time1_impr + before_cooktime1same_tm1)
-gen cooktime_imp_prior = before_cooktime1time1_impr /(before_cooktime1time1_loc + before_cooktime1time1_impr + before_cooktime1same_tm1)
-gen cooktime_same_prior = before_cooktime1same_tm1 /(before_cooktime1time1_loc + before_cooktime1time1_impr + before_cooktime1same_tm1)
-sum cooktime_loc_prior cooktime_imp_prior cooktime_same_prior
+gen cooktime_loc_prior = (before_cooktime1time1_loc/(before_cooktime1time1_loc + before_cooktime1time1_impr))*100
+gen cooktime_imp_prior = (before_cooktime1time1_impr /(before_cooktime1time1_loc + before_cooktime1time1_impr))*100
 
 // Proportion of votes for flour expansion before cooking and tasting
-gen exp_loc_prior = before_cookexp1exp1_loc/(before_cookexp1exp1_loc + before_cookexp1exp1_lmpr + before_cookexp1same_exp1)
-gen exp_imp_prior = before_cookexp1exp1_lmpr /(before_cookexp1exp1_loc + before_cookexp1exp1_lmpr + before_cookexp1same_exp1)
-gen exp_same_prior = before_cookexp1same_exp1 /(before_cookexp1exp1_loc + before_cookexp1exp1_lmpr + before_cookexp1same_exp1)
-sum exp_loc_prior exp_imp_prior exp_same_prior
+gen exp_loc_prior = (before_cookexp1exp1_loc/(before_cookexp1exp1_loc + before_cookexp1exp1_lmpr))*100
+gen exp_imp_prior = (before_cookexp1exp1_lmpr /(before_cookexp1exp1_loc + before_cookexp1exp1_lmpr))*100
 
 // Proportion of votes for cooking time before cooking and tasting
-gen taste_loc_prior = before_cooktaste1taste1_loc/(before_cooktaste1taste1_loc + before_cooktaste1taste1_impr + before_cooktaste1same_tast1)
-gen taste_imp_prior = before_cooktaste1taste1_impr /(before_cooktaste1taste1_loc + before_cooktaste1taste1_impr + before_cooktaste1same_tast1)
-gen taste_same_prior = before_cooktaste1same_tast1 /(before_cooktaste1taste1_loc + before_cooktaste1taste1_impr + before_cooktaste1same_tast1)
-sum taste_loc_prior taste_imp_prior taste_same_prior
+gen taste_loc_prior = (before_cooktaste1taste1_loc/(before_cooktaste1taste1_loc + before_cooktaste1taste1_impr))*100
+gen taste_imp_prior = (before_cooktaste1taste1_impr /(before_cooktaste1taste1_loc + before_cooktaste1taste1_impr))*100
 
 // Proportion of votes for texture of posho before cooking and tasting
-gen texture_loc_prior = before_cooktext1text1_loc/( before_cooktext1text1_loc + before_cooktext1text1_lmpr + before_cooktext1same_txt1)
-gen texture_imp_prior = before_cooktext1text1_lmpr /( before_cooktext1text1_loc + before_cooktext1text1_lmpr + before_cooktext1same_txt1)
-gen texture_same_prior = before_cooktext1same_txt1 /( before_cooktext1text1_loc + before_cooktext1text1_lmpr + before_cooktext1same_txt1)
-sum texture_loc_prior texture_imp_prior texture_same_prior
+gen texture_loc_prior = (before_cooktext1text1_loc/( before_cooktext1text1_loc + before_cooktext1text1_lmpr))*100
+gen texture_imp_prior = (before_cooktext1text1_lmpr /( before_cooktext1text1_loc + before_cooktext1text1_lmpr))*100
 
-order x grow_imp_prior color_loc_prior- texture_same_prior, after ( before_cookgrow )
+order x grow_imp_prior color_loc_prior- texture_imp_prior, after ( before_cookgrow )
 
 **** PROPOTION OF VOTES FOR DIFFERENT ATTRIBUTES AFTER COOKING AND TASTING ***
 
 // proportion of votes for participants planning to grow improved maize
-gen grow_imp_post = plant/( before_cookgrow + plant)
+gen grow_imp_post = (plant/( before_cookgrow + plant))*100
 
 // Proportion of votes for color after cooking and tasting
-gen color_loc_post = after_cookingcolor2color2_loc/(after_cookingcolor2color2_loc + after_cookingcolor2color2_lmpr + after_cookingcolor2same_cl2)
-gen color_imp_post = after_cookingcolor2color2_lmpr /(after_cookingcolor2color2_loc + after_cookingcolor2color2_lmpr + after_cookingcolor2same_cl2)
-gen color_same_post = after_cookingcolor2same_cl2 /(after_cookingcolor2color2_loc + after_cookingcolor2color2_lmpr + after_cookingcolor2same_cl2)
-sum color_loc_post color_imp_post color_same_post
+gen color_loc_post = (after_cookingcolor2color2_loc/(after_cookingcolor2color2_loc + after_cookingcolor2color2_lmpr))*100
+gen color_imp_post = (after_cookingcolor2color2_lmpr /(after_cookingcolor2color2_loc + after_cookingcolor2color2_lmpr))*100
 
 // Proportion of votes for aroma of the posho after cooking and tasting
 gen after_aroma1_loc = ( after_cookingaromamaroma2_loc_c+ after_cookingaroma2aroma2_loc_e)/2
@@ -203,42 +198,30 @@ gen after_aroma1_same = ( after_cookingaromamsame_ar2 + after_cookingaroma2same_
 
 order after_aroma1_loc after_aroma1_imp after_aroma1_same, before (after_cookingaromamaroma2_loc_c)
 
-gen aroma_loc_post = after_aroma1_loc/( after_aroma1_loc+ after_aroma1_imp + after_aroma1_same)
-gen aroma_imp_post = after_aroma1_imp/( after_aroma1_loc+ after_aroma1_imp + after_aroma1_same)
-gen aroma_same_post = after_aroma1_same/( after_aroma1_loc+ after_aroma1_imp + after_aroma1_same)
-sum aroma_loc_post aroma_imp_post aroma_same_post
+gen aroma_loc_post = (after_aroma1_loc/( after_aroma1_loc+ after_aroma1_imp))*100
+gen aroma_imp_post = (after_aroma1_imp/( after_aroma1_loc+ after_aroma1_imp))*100
 
 // Proportion of votes for ease of cooking after cooking and tasting
-gen ease_loc_post = after_cookingeas2eas2_loc/(after_cookingeas2eas2_loc + after_cookingeas2eas2_lmpr + after_cookingeas2same_eas2)
-gen ease_imp_post = after_cookingeas2eas2_lmpr /(after_cookingeas2eas2_loc + after_cookingeas2eas2_lmpr + after_cookingeas2same_eas2)
-gen ease_same_post = after_cookingeas2same_eas2 /(after_cookingeas2eas2_loc + after_cookingeas2eas2_lmpr + after_cookingeas2same_eas2)
-sum ease_loc_post ease_imp_post ease_same_post
+gen ease_loc_post = (after_cookingeas2eas2_loc/(after_cookingeas2eas2_loc + after_cookingeas2eas2_lmpr))*100
+gen ease_imp_post = (after_cookingeas2eas2_lmpr/(after_cookingeas2eas2_loc + after_cookingeas2eas2_lmpr))*100
 
 // Proportion of votes for cooking time after cooking and tasting
-gen cooktime_loc_post = after_cookingtime2time2_loc/(after_cookingtime2time2_loc + after_cookingtime2time2_impr + after_cookingtime2same_tm2)
-gen cooktime_imp_post = after_cookingtime2time2_impr/(after_cookingtime2time2_loc + after_cookingtime2time2_impr + after_cookingtime2same_tm2)
-gen cooktime_same_post = after_cookingtime2same_tm2/(after_cookingtime2time2_loc + after_cookingtime2time2_impr + after_cookingtime2same_tm2)
-sum cooktime_loc_post cooktime_imp_post cooktime_same_post
+gen cooktime_loc_post = (after_cookingtime2time2_loc/(after_cookingtime2time2_loc + after_cookingtime2time2_impr))*100
+gen cooktime_imp_post = (after_cookingtime2time2_impr/(after_cookingtime2time2_loc + after_cookingtime2time2_impr))*100
 
 // Proportion of votes for flour expansion after cooking and tasting
-gen exp_loc_post = after_cookingexp2exp2_loc/(after_cookingexp2exp2_loc + after_cookingexp2exp2_lmpr + after_cookingexp2same_exp2)
-gen exp_imp_post = after_cookingexp2exp2_lmpr/(after_cookingexp2exp2_loc + after_cookingexp2exp2_lmpr + after_cookingexp2same_exp2)
-gen exp_same_post = after_cookingexp2same_exp2/(after_cookingexp2exp2_loc + after_cookingexp2exp2_lmpr + after_cookingexp2same_exp2)
-sum exp_loc_post exp_imp_post exp_same_post
+gen exp_loc_post = (after_cookingexp2exp2_loc/(after_cookingexp2exp2_loc + after_cookingexp2exp2_lmpr))*100
+gen exp_imp_post = (after_cookingexp2exp2_lmpr/(after_cookingexp2exp2_loc + after_cookingexp2exp2_lmpr))*100
 
 // Proportion of votes for cooking time after cooking and tasting
-gen taste_loc_post = after_cookingtaste2taste2_loc/(after_cookingtaste2taste2_loc + after_cookingtaste2taste2_impr + after_cookingtaste2same_tast2)
-gen taste_imp_post = after_cookingtaste2taste2_impr/(after_cookingtaste2taste2_loc + after_cookingtaste2taste2_impr + after_cookingtaste2same_tast2)
-gen taste_same_post = after_cookingtaste2same_tast2/(after_cookingtaste2taste2_loc + after_cookingtaste2taste2_impr + after_cookingtaste2same_tast2)
-sum taste_loc_post taste_imp_post taste_same_post
+gen taste_loc_post = (after_cookingtaste2taste2_loc/(after_cookingtaste2taste2_loc + after_cookingtaste2taste2_impr))*100
+gen taste_imp_post = (after_cookingtaste2taste2_impr/(after_cookingtaste2taste2_loc + after_cookingtaste2taste2_impr))*100
 
 // Proportion of votes for texture of posho after cooking and tasting
-gen texture_loc_post = after_cookingtext2text2_loc/(after_cookingtext2text2_loc + after_cookingtext2text2_lmpr + after_cookingtext2same_txt2)
-gen texture_imp_post = after_cookingtext2text2_lmpr/(after_cookingtext2text2_loc + after_cookingtext2text2_lmpr + after_cookingtext2same_txt2)
-gen texture_same_post = after_cookingtext2same_txt2/(after_cookingtext2text2_loc + after_cookingtext2text2_lmpr + after_cookingtext2same_txt2)
-sum texture_loc_post texture_imp_post texture_same_post
+gen texture_loc_post = (after_cookingtext2text2_loc/(after_cookingtext2text2_loc + after_cookingtext2text2_lmpr))*100
+gen texture_imp_post = (after_cookingtext2text2_lmpr/(after_cookingtext2text2_loc + after_cookingtext2text2_lmpr))*100
 
-order grow_imp_prior color_loc_post- texture_same_post, after (texture_same_prior)
+order grow_imp_prior color_loc_post- texture_imp_post, after (texture_imp_prior)
 
 rename x trial_pack
 
@@ -248,6 +231,7 @@ la var men "Number of men participants"
 la var women_prop "Prop. of women participants"
 la var men_prop "Prop. of men participants"
 la var moreWomen "Prop. of women dominated demos"
+la var sexCAT "Dummy for sex ratios"
 
 la var color_imp_prior "Has a better color"
 la var aroma_imp_prior "Has better aroma"
@@ -283,17 +267,17 @@ la var moreWomen2 "Prop. of women dominated demos"
 // summary statistics about the participants and cooking demo clusters
 asdoc sum attended women men women_prop moreWomen2 women2, stat(sum mean sd min max N) label dec(2) dec(2) tzok title(Summary statistics for participants) save(Results_Tables) replace
 
-// ttest difference of number of women between women and non-women dominated demos
+// ttest difference of number of women in women and non-women dominated demos
 asdoc ttest women, by(moreWomen) stat(obs mean dif p) label dec(2) tzok title(ttest mean difference in number of women in non-women dominated demos)
 
 
 ****** PERCEPTIONS before cooking and tasting demonstration--- Proportion of votes
 
-// overall votes
+// overall votes for local and improved maize varieties
 egen priorTotLOC = rowmean( color_loc_prior aroma_loc_prior ease_loc_prior cooktime_loc_prior exp_loc_prior taste_loc_prior texture_loc_prior)
 egen priorTotIMP = rowmean( color_imp_prior aroma_imp_prior ease_imp_prior cooktime_imp_prior exp_imp_prior taste_imp_prior texture_imp_prior)
 
-// perceptions for specific attributes
+// Votes for specific attributes
 gen colorPriorLOC = color_loc_prior
 gen aromPriorLOC = aroma_loc_prior
 gen easePriorLOC = ease_loc_prior
@@ -311,145 +295,147 @@ gen tastePriorIMP = taste_imp_prior
 gen textPriorIMP = texture_imp_prior
 
 
-// Before cooking and tasting--- ttest mean differences in votes for local and improved varieties
-asdoc ttest priorTotLOC==priorTotIMP, label dec(3) tzok title(Before cooking and tasting demonstration: ttests mean differences in votes for improved maize and local varieties) // overall voting--- all traits
+// Before cooking and tasting--- ttest mean differences in percentage of votes for local and improved varieties
+asdoc ttest priorTotIMP==priorTotLOC, label dec(3) tzok title(Before cooking and tasting demonstration: ttests mean differences in votes for improved maize and local varieties) // overall voting--- all traits
 
-asdoc ttest priorTotLOC==priorTotIMP if moreWomen == 1, label dec(3) tzok title(Before cooking and tasting demonstration: ttests mean differences in votes for improved maize and local varieties) rowappend // overall voting--- all traits--- in women-dominated demos
+asdoc ttest priorTotIMP==priorTotLOC if moreWomen == 1, label dec(3) tzok title(Before cooking and tasting demonstration: ttests mean differences in % of votes for improved maize and local varieties) rowappend // overall voting--- all traits--- in women-dominated demos
 
-asdoc ttest priorTotLOC==priorTotIMP if moreWomen == 2, label dec(3) tzok title(Before cooking and tasting demonstration: ttests mean differences in votes for improved maize and local varieties) rowappend // overall voting--- all traits--- in non-women-dominated demos
+asdoc ttest priorTotIMP==priorTotLOC if moreWomen == 2, label dec(3) tzok title(Before cooking and tasting demonstration: ttests mean differences in % of votes for improved maize and local varieties) rowappend // overall voting--- all traits--- in non-women-dominated demos
 
-asdoc ttest colorPriorLOC==colorPriorIMP, label dec(3) tzok title(Before cooking and tasting demonstration: ttests mean differences in votes for improved maize and local varieties) rowappend
+asdoc ttest colorPriorIMP==colorPriorLOC, label dec(3) tzok title(Before cooking and tasting demonstration: ttests mean differences in % of votes for improved maize and local varieties) rowappend
 
-asdoc ttest aromPriorLOC==aromPriorIMP, label dec(3) tzok title(Before cooking and tasting demonstration: ttests mean differences in votes for improved maize and local varieties) rowappend
+asdoc ttest aromPriorIMP==aromPriorLOC, label dec(3) tzok title(Before cooking and tasting demonstration: ttests mean differences in % of votes for improved maize and local varieties) rowappend
 
-asdoc ttest easePriorLOC==easePriorIMP, label dec(3) tzok title(Before cooking and tasting demonstration: ttests mean differences in votes for improved maize and local varieties) rowappend
+asdoc ttest easePriorIMP==easePriorLOC, label dec(3) tzok title(Before cooking and tasting demonstration: ttests mean differences in % of votes for improved maize and local varieties) rowappend
 
-asdoc ttest timePriorLOC==timePriorIMP, label dec(3) tzok title(Before cooking and tasting demonstration: ttests mean differences in votes for improved maize and local varieties) rowappend
+asdoc ttest timePriorIMP==timePriorLOC, label dec(3) tzok title(Before cooking and tasting demonstration: ttests mean differences in % of votes for improved maize and local varieties) rowappend
 
-asdoc ttest expPriorLOC==expPriorIMP, label dec(3) tzok title(Before cooking and tasting demonstration: ttests mean differences in votes for improved maize and local varieties) rowappend
+asdoc ttest expPriorIMP==expPriorLOC, label dec(3) tzok title(Before cooking and tasting demonstration: ttests mean differences in % of votes for improved maize and local varieties) rowappend
 
-asdoc ttest tastePriorLOC==tastePriorIMP, label dec(3) tzok title(Before cooking and tasting demonstration: ttests mean differences in votes for improved maize and local varieties) rowappend
+asdoc ttest tastePriorIMP==tastePriorLOC, label dec(3) tzok title(Before cooking and tasting demonstration: ttests mean differences in % of votes for improved maize and local varieties) rowappend
 
-asdoc ttest textPriorLOC==textPriorIMP, label dec(3) tzok title(Before cooking and tasting demonstration: ttests mean differences in votes for improved maize and local varieties) rowappend
+asdoc ttest textPriorIMP==textPriorLOC, label dec(3) tzok title(Before cooking and tasting demonstration: ttests mean differences in % of votes for improved maize and local varieties) rowappend
 
 
-// Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for local maize varieties
 
-asdoc ttest priorTotLOC, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for local maize varieties)
+// Before cooking and tasting: Gender disaggregated ttest mean differences in % of votes for local maize varieties
 
-asdoc ttest colorPriorLOC, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for local maize varieties) rowappend
+asdoc ttest priorTotLOC, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in % of votes for local maize varieties)
 
-asdoc ttest aromPriorLOC, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for local maize varieties) rowappend
+asdoc ttest colorPriorLOC, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in % of votes for local maize varieties) rowappend
 
-asdoc ttest easePriorLOC, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for local maize varieties) rowappend
+asdoc ttest aromPriorLOC, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in % of votes for local maize varieties) rowappend
 
-asdoc ttest timePriorLOC, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for local maize varieties) rowappend
+asdoc ttest easePriorLOC, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in % of votes for local maize varieties) rowappend
 
-asdoc ttest expPriorLOC, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for local maize varieties) rowappend
+asdoc ttest timePriorLOC, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in % of votes for local maize varieties) rowappend
 
-asdoc ttest tastePriorLOC, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for local maize varieties) rowappend
+asdoc ttest expPriorLOC, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in % of votes for local maize varieties) rowappend
 
-asdoc ttest textPriorLOC, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for local maize varieties) rowappend
+asdoc ttest tastePriorLOC, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in % of votes for local maize varieties) rowappend
+
+asdoc ttest textPriorLOC, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in % of votes for local maize varieties) rowappend
 
 
 // Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for improved maize varieties
 
-asdoc ttest priorTotIMP, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for improved maize varieties)
+asdoc ttest priorTotIMP, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in % of votes for improved maize varieties)
 
-asdoc ttest colorPriorIMP, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for improved maize varieties) rowappend
+asdoc ttest colorPriorIMP, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in % of votes for improved maize varieties) rowappend
 
-asdoc ttest aromPriorIMP, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for improved maize varieties) rowappend
+asdoc ttest aromPriorIMP, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in % of votes for improved maize varieties) rowappend
 
-asdoc ttest easePriorIMP, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for improved maize varieties) rowappend
+asdoc ttest easePriorIMP, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in % of votes for improved maize varieties) rowappend
 
-asdoc ttest timePriorIMP, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for improved maize varieties) rowappend
+asdoc ttest timePriorIMP, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in % of votes for improved maize varieties) rowappend
 
-asdoc ttest expPriorIMP, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for improved maize varieties) rowappend
+asdoc ttest expPriorIMP, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in % of votes for improved maize varieties) rowappend
 
-asdoc ttest tastePriorIMP, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for improved maize varieties) rowappend
+asdoc ttest tastePriorIMP, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in % of votes for improved maize varieties) rowappend
 
-asdoc ttest textPriorIMP, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in perceptions/votes for improved maize varieties) rowappend
+asdoc ttest textPriorIMP, by(moreWomen) stat(obs mean p) label dec(3) tzok title(Before cooking and tasting: Gender disaggregated ttest mean differences in % of votes for improved maize varieties) rowappend
 
 
 
-*** CHANGE IN PERCEPTIONS (percentage points in VOTES) AFTER COOKING AND TASTING---- overall
+*** CHANGE IN PERCEPTIONS (percentage point changes in votes) AFTER COOKING AND TASTING---- overall
 egen postTotLOC = rowmean(color_loc_post aroma_loc_post ease_loc_post cooktime_loc_post exp_loc_post taste_loc_post texture_loc_post)
 egen postTotIMP = rowmean(color_imp_post aroma_imp_post ease_imp_post cooktime_imp_post exp_imp_post taste_imp_post texture_imp_post)
 
-gen totalDiffLOC = (postTotLOC - priorTotLOC)*100
+gen totalDiffLOC = postTotLOC - priorTotLOC
 la var totalDiffLOC "total_change in percent points"
 
-gen totalDiffIMP = (postTotIMP - priorTotIMP)*100
+gen totalDiffIMP = postTotIMP - priorTotIMP
 la var totalDiffIMP "total_change in percent points"
 
 
 *** CHANGE IN PERCEPTIONS (percentage points in VOTES) AFTER COOKING AND TASTING---- for specific variables
-gen colorDiffLOC = (color_loc_post - color_loc_prior)*100
+
+gen colorDiffLOC = color_loc_post - color_loc_prior
 la var colorDiffLOC "color_change in percent points"
 
-gen aromDiffLOC = (aroma_loc_post - aroma_loc_prior)*100
+gen aromDiffLOC = aroma_loc_post - aroma_loc_prior
 la var aromDiffLOC "aroma_change in percent points"
 
-gen easeDiffLOC = (ease_loc_post - ease_loc_prior)*100
+gen easeDiffLOC = ease_loc_post - ease_loc_prior
 la var easeDiffLOC "easycook_change in percent points"
 
-gen timeDiffLOC = (cooktime_loc_post - cooktime_loc_prior)*100
+gen timeDiffLOC = cooktime_loc_post - cooktime_loc_prior
 la var timeDiffLOC "cooktime_change in percent points"
 
-gen expDiffLOC = (exp_loc_post - exp_loc_prior)*100
+gen expDiffLOC = exp_loc_post - exp_loc_prior
 la var expDiffLOC "expands_change in percent points"
 
-gen tasteDiffLOC = (taste_loc_post - taste_loc_prior)*100
+gen tasteDiffLOC = taste_loc_post - taste_loc_prior
 la var tasteDiffLOC "taste_change in percent points"
 
-gen textDiffLOC = (texture_loc_post - texture_loc_prior)*100
+gen textDiffLOC = texture_loc_post - texture_loc_prior
 la var textDiffLOC "texture_change in percent points"
 
 
 
-gen colorDiffIMP = (color_imp_post - color_imp_prior)*100
+gen colorDiffIMP = color_imp_post - color_imp_prior
 la var colorDiffIMP "color_change in percent points"
 
-gen aromDiffIMP = (aroma_imp_post - aroma_imp_prior)*100
+gen aromDiffIMP = aroma_imp_post - aroma_imp_prior
 la var aromDiffIMP "aroma_change in percent points"
 
-gen easeDiffIMP = (ease_imp_post - ease_imp_prior)*100
+gen easeDiffIMP = ease_imp_post - ease_imp_prior
 la var easeDiffIMP "easycook_change in percent points"
 
-gen timeDiffIMP = (cooktime_imp_post - cooktime_imp_prior)*100
+gen timeDiffIMP = cooktime_imp_post - cooktime_imp_prior
 la var timeDiffIMP "cooktime_change in percent points"
 
-gen expDiffIMP = (exp_imp_post - exp_imp_prior)*100
+gen expDiffIMP = exp_imp_post - exp_imp_prior
 la var expDiffIMP "expands_change in percent points"
 
-gen tasteDiffIMP = (taste_imp_post - taste_imp_prior)*100
+gen tasteDiffIMP = taste_imp_post - taste_imp_prior
 la var tasteDiffIMP "taste_change in percent points"
 
-gen textDiffIMP = (texture_imp_post - texture_imp_prior)*100
+gen textDiffIMP = texture_imp_post - texture_imp_prior
 la var textDiffIMP "texture_change in percent points"
 
 
 *** After cooking and tasting: ttest mean differences in change of perceptions (percentage point changes in votes) between local and improved varieties
 
-asdoc ttest totalDiffLOC==totalDiffIMP, label dec(3) tzok title(After cooking and testing: ttest mean differences in change of perceptions, measured by change in percentage points of votes) // change in overall votes
+asdoc ttest totalDiffIMP==totalDiffLOC, label dec(3) tzok title(After cooking and testing: ttest mean differences in change of perceptions, measured by change in percentage points of votes) // change in overall votes
 
-asdoc ttest totalDiffLOC==totalDiffIMP if moreWomen==1, label dec(3) tzok title(After cooking and testing: ttest mean differences in change of perceptions, measured by change in percentage points of votes) rowappend // change in overall votes in women-dominated demos
+asdoc ttest totalDiffIMP==totalDiffLOC if moreWomen==1, label dec(3) tzok title(After cooking and testing: ttest mean differences in change of perceptions, measured by change in percentage points of votes) rowappend // change in overall votes in women-dominated demos
 
-asdoc ttest totalDiffLOC==totalDiffIMP if moreWomen==2, label dec(3) tzok title(After cooking and testing: ttest mean differences in change of perceptions, measured by change in percentage points of votes) rowappend // change in overall votes in non-women-dominated demos
+asdoc ttest totalDiffIMP==totalDiffLOC if moreWomen==2, label dec(3) tzok title(After cooking and testing: ttest mean differences in change of perceptions, measured by change in percentage points of votes) rowappend // change in overall votes in non-women-dominated demos
 
-asdoc ttest colorDiffLOC==colorDiffIMP, label dec(3) tzok title(After cooking and testing: ttest mean differences in change of perceptions, measured by change in percentage points of votes) rowappend
+asdoc ttest colorDiffIMP==colorDiffLOC, label dec(3) tzok title(After cooking and testing: ttest mean differences in change of perceptions, measured by change in percentage points of votes) rowappend
 
-asdoc ttest aromDiffLOC==aromDiffIMP, label dec(3) tzok title(After cooking and testing: ttest mean differences in change of perceptions, measured by change in percentage points of votes) rowappend
+asdoc ttest aromDiffIMP==aromDiffLOC, label dec(3) tzok title(After cooking and testing: ttest mean differences in change of perceptions, measured by change in percentage points of votes) rowappend
 
-asdoc ttest easeDiffLOC==easeDiffIMP, label dec(3) tzok title(After cooking and testing: ttest mean differences in change of perceptions, measured by change in percentage points of votes) rowappend
+asdoc ttest easeDiffIMP==easeDiffLOC, label dec(3) tzok title(After cooking and testing: ttest mean differences in change of perceptions, measured by change in percentage points of votes) rowappend
 
-asdoc ttest timeDiffLOC==timeDiffIMP, label dec(3) tzok title(After cooking and testing: ttest mean differences in change of perceptions, measured by change in percentage points of votes) rowappend
+asdoc ttest timeDiffIMP==timeDiffLOC, label dec(3) tzok title(After cooking and testing: ttest mean differences in change of perceptions, measured by change in percentage points of votes) rowappend
 
-asdoc ttest expDiffLOC==expDiffIMP, label dec(3) tzok title(After cooking and testing: ttest mean differences in change of perceptions, measured by change in percentage points of votes) rowappend
+asdoc ttest expDiffIMP==expDiffLOC, label dec(3) tzok title(After cooking and testing: ttest mean differences in change of perceptions, measured by change in percentage points of votes) rowappend
 
-asdoc ttest tasteDiffLOC==tasteDiffIMP, label dec(3) tzok title(After cooking and testing: ttest mean differences in change of perceptions, measured by change in percentage points of votes) rowappend
+asdoc ttest tasteDiffIMP==tasteDiffLOC, label dec(3) tzok title(After cooking and testing: ttest mean differences in change of perceptions, measured by change in percentage points of votes) rowappend
 
-asdoc ttest textDiffLOC==textDiffIMP, label dec(3) tzok title(After cooking and testing: ttest mean differences in change of perceptions, measured by change in percentage points of votes) rowappend
+asdoc ttest textDiffIMP==textDiffLOC, label dec(3) tzok title(After cooking and testing: ttest mean differences in change of perceptions, measured by change in percentage points of votes) rowappend
 
 
 // After cooking and tasting: Gender disaggregated ttest mean differences in change of perceptions (percentage point changes in votes) for LOCAL 
