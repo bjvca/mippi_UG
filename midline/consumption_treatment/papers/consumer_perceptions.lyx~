@@ -101,9 +101,8 @@ thanks{Development Strategy and Governance Division, International Food
 \end_layout
 
 \begin_layout Title
-Do perceptions about local and improved crop consumption traits align with
- reality? A gendered analysis from cooking and tasting demonstrations in
- Uganda
+Do consumer perceptions about improved crop varieties align with reality?
+ A gendered analysis from cooking and tasting demonstrations in Uganda
 \end_layout
 
 \begin_layout Abstract
@@ -123,25 +122,21 @@ Study hypothesis
 \end_layout
 
 \begin_layout Enumerate
-Local crop varieties are generally perceived to possess better consumption
- related-traits compared to improved varieties (conduct ttests on votes
- before the cooking and tasting demos)
+Improved maize varieties are perceived to possess less favorable consumption
+ related-traits compared to local varieties (conduct ttests on votes before
+ the cooking and tasting demos)
 \end_layout
 
 \begin_layout Enumerate
-There is no differences and disagreement in the way men and women perceive
- the consumption-related traits of local and improved maize varieties (use
- ttests and intra-class correlations)
+In reality, improved crop varieties may possess the same or even better
+ consumption related traits as local varieties (conduct ttests on votes
+ after the cooking and tasting demos)
 \end_layout
 
 \begin_layout Enumerate
-In reality, improved crop varieties possess the same or even better consumption
- related traits (conduct ttests on votes after the cooking and tasting demos)
-\end_layout
-
-\begin_layout Enumerate
-Gender of the consumer has no influence on the perceptions about the consuption
- traits of local and improved varieties (econometrict regression)
+There is no difference in the way men and women perceive the consumption-related
+ traits of improved maize varieties (use ttests, and regressions— conditional
+ means and psmatch)
 \end_layout
 
 \begin_layout Section
@@ -1180,8 +1175,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Perceptions before cooking and tasting (ttest mean differences between local
- and improved varieties)
+Percentage (mean) of votes for local and improved varieties before cooking
+ and tasting
 \end_layout
 
 \end_inset
@@ -1255,7 +1250,7 @@ cline{2-6}
 
 \begin_layout Plain Layout
 
-Overall votes (all traits)	&	78	&	0.35	&	0.54	&	-0.19	&	0.00	
+Overall votes (all traits)	&	78	&	39.47	&	60.53	&	-21.07	&	0.00	
 \backslash
 
 \backslash
@@ -1264,7 +1259,7 @@ Overall votes (all traits)	&	78	&	0.35	&	0.54	&	-0.19	&	0.00
 
 \begin_layout Plain Layout
 
-Overall votes (all traits) in	&	35	&	0.36	&	0.53	&	-0.18	&	0.02	
+Overall votes in women-dominated demos	&	35	&	40.92	&	59.08	&	-18.16	&	0.02	
 \backslash
 
 \backslash
@@ -1273,16 +1268,7 @@ Overall votes (all traits) in	&	35	&	0.36	&	0.53	&	-0.18	&	0.02
 
 \begin_layout Plain Layout
 
-women-dominated demos & & & & & 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Overall votes (all traits) in	&	43	&	0.35	&	0.55	&	-0.2	&	0.01	
+Overall votes in non-women-dominated demos	&	43	&	38.28	&	61.72	&	-23.43	&	0.01	
 \backslash
 
 \backslash
@@ -1291,16 +1277,7 @@ Overall votes (all traits) in	&	43	&	0.35	&	0.55	&	-0.2	&	0.01
 
 \begin_layout Plain Layout
 
-non-women-dominated demos & & & & & 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Variety has a better color- votes	&	78	&	0.13	&	0.80	&	-0.67	&	0.00	
+Variety has a better color- votes	&	78	&	14.82	&	85.18	&	-70.35	&	0.00	
 \backslash
 
 \backslash
@@ -1309,7 +1286,7 @@ Variety has a better color- votes	&	78	&	0.13	&	0.80	&	-0.67	&	0.00
 
 \begin_layout Plain Layout
 
-Variety has a better aroma- votes	&	78	&	0.67	&	0.26	&	0.41	&	0.00	
+Variety has a better aroma- votes	&	78	&	71.94	&	28.06	&	43.88	&	0.00	
 \backslash
 
 \backslash
@@ -1318,7 +1295,7 @@ Variety has a better aroma- votes	&	78	&	0.67	&	0.26	&	0.41	&	0.00
 
 \begin_layout Plain Layout
 
-Variety is easier to cook- votes	&	78	&	0.28	&	0.58	&	-0.30	&	0.00	
+Variety is easier to cook- votes	&	78	&	31.72	&	68.28	&	-36.56	&	0.00	
 \backslash
 
 \backslash
@@ -1327,7 +1304,7 @@ Variety is easier to cook- votes	&	78	&	0.28	&	0.58	&	-0.30	&	0.00
 
 \begin_layout Plain Layout
 
-Variety cooks faster- votes	&	78	&	0.21	&	0.61	&	-0.40	&	0.00	
+Variety cooks faster- votes	&	78	&	25.13	&	74.87	&	-49.74	&	0.00	
 \backslash
 
 \backslash
@@ -1336,7 +1313,7 @@ Variety cooks faster- votes	&	78	&	0.21	&	0.61	&	-0.40	&	0.00
 
 \begin_layout Plain Layout
 
-Variety expands more- votes	&	78	&	0.37	&	0.52	&	-0.15	&	0.08	
+Variety expands more- votes	&	78	&	41.29	&	58.71	&	-17.42	&	0.08	
 \backslash
 
 \backslash
@@ -1345,7 +1322,7 @@ Variety expands more- votes	&	78	&	0.37	&	0.52	&	-0.15	&	0.08
 
 \begin_layout Plain Layout
 
-Variety tastes better- votes	&	78	&	0.62	&	0.32	&	0.30	&	0.00	
+Variety tastes better- votes	&	78	&	65.59	&	34.41	&	31.18	&	0.00	
 \backslash
 
 \backslash
@@ -1354,11 +1331,11 @@ Variety tastes better- votes	&	78	&	0.62	&	0.32	&	0.30	&	0.00
 
 \begin_layout Plain Layout
 
-Variety has a better texture-votes	&	78	&	0.19	&	0.71	&	-0.52	&	0.00	
+Variety has a better texture-votes	&	78	&	20.75	&	79.25	&	-58.49	&	0.00	
 \backslash
 
 \backslash
- 
+  
 \end_layout
 
 \begin_layout Plain Layout
@@ -1413,8 +1390,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Gender perceptions before cooking and tasting (ttest mean differences for
- local and improved varieties)
+Gendered perceptions before cooking and tasting (ttest mean differences
+ for local and improved varieties)
 \end_layout
 
 \end_inset
@@ -1631,15 +1608,11 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Change in percpetions after cooking and tasting (percentage point changes
- in votes)
+ttest mean differences in change of perceptions (percentage point changes
+ in votes) after cooking and tasting 
 \end_layout
 
 \end_inset
@@ -1805,6 +1778,227 @@ Variety tastes better	&	78	&	-31.91	&	37.17	&	0.00
 \begin_layout Plain Layout
 
 Variety has a better texture	&	78	&	0.69	&	8.23	&	0.41	
+\backslash
+
+\backslash
+   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gender disaggregated ttest mean differences in change of perceptions (percentage
+ point changes in votes) after cooking and tasting 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tabular}{lllllll}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+multicolumn{3}{l}{
+\backslash
+textit{Local maize varieties}} & 
+\backslash
+multicolumn{3}{l}{
+\backslash
+textit{Improved maize varieties}} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+cline{5-7}
+\end_layout
+
+\begin_layout Plain Layout
+
+ 	&	Women	&	Non-women	&	p-value	&	Women	&	Non-women	&	p-value	
+\backslash
+
+\backslash
+ 	&	dominated	&	dominated	&		&	dominated	&	dominated	&		
+\backslash
+
+\backslash
+ 	&	demos	&	demos	&		&	demos	&	demos	&		
+\backslash
+
+\backslash
+   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+cline{2-7}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Overall change (all traits)	&	-7.92	&	-8.87	&	0.86	&	17.43	&	17.23	&	0.97	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Variety has a better color	&	-3.25	&	-11.78	&	0.2	&	9.98	&	17.9	&	0.19	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Variety has a better aroma	&	-23.43	&	-21.59	&	0.84	&	28.21	&	25.71	&	0.78	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Variety is easier to cook	&	-2.79	&	-6.34	&	0.7	&	14.11	&	17.56	&	0.74	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Variety cooks faster	&	16.93	&	5.13	&	0.32	&	1.24	&	11.45	&	0.44	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Variety expands more	&	-9.12	&	1.36	&	0.41	&	19.32	&	6.23	&	0.28	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Variety tastes better	&	-29.87	&	-33.57	&	0.71	&	35.66	&	38.39	&	0.79	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Variety has a better texture	&	-4.26	&	4.72	&	0.35	&	14.17	&	3.4	&	0.27	
 \backslash
 
 \backslash
