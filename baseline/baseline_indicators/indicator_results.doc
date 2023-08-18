@@ -1990,189 +1990,189 @@
 \row}
 
 
-{\fs20\b\qc\line Living space/percapita rooms in the household }{\par}
+{\fs20\b\qc\line Average household weekly expendtire }{\par}
 {\trowd\trgaph108\trleft-108
-\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1650
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
 \fs20\pard\intbl\qr { }\cell
-\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2870
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
 \fs20\pard\intbl\qr {{ N}}\cell
-\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4090
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
 \fs20\pard\intbl\qr {{ Mean}}\cell
-\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5310
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
 \fs20\pard\intbl\qr {{ SD}}\cell
-\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6530
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
 \fs20\pard\intbl\qr {{ Min}}\cell
-\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7750
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
 \fs20\pard\intbl\qr {{ Max}}\cell
 \row}
 {\trowd\trgaph108\trleft-108
-\cellx1650
-\fs20\pard\intbl\ql {{ percapita rooms}}\cell
-\cellx2870
+\cellx1100
+\fs20\pard\intbl\ql {{ av exp usd}}\cell
+\cellx2320
 \qr {{2319.000}}\cell
-\cellx4090
-\qr {{0.493}}\cell
-\cellx5310
-\qr {{0.325}}\cell
-\cellx6530
-\qr {{0.040}}\cell
-\cellx7750
-\qr {{4.000}}\cell
+\cellx3540
+\qr {{3.819}}\cell
+\cellx4760
+\qr {{2.432}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{57.703}}\cell
 \row}
 
 
-{\fs20\b\qc\line Living space/percapita rooms in the household in control group }{\par}
+{\fs20\b\qc\line Average household weekly expendtire in control group }{\par}
 {\trowd\trgaph108\trleft-108
-\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1650
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
 \fs20\pard\intbl\qr { }\cell
-\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2870
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
 \fs20\pard\intbl\qr {{ N}}\cell
-\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4090
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
 \fs20\pard\intbl\qr {{ Mean}}\cell
-\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5310
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
 \fs20\pard\intbl\qr {{ SD}}\cell
-\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6530
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
 \fs20\pard\intbl\qr {{ Min}}\cell
-\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7750
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
 \fs20\pard\intbl\qr {{ Max}}\cell
 \row}
 {\trowd\trgaph108\trleft-108
-\cellx1650
-\fs20\pard\intbl\ql {{ percapita rooms}}\cell
-\cellx2870
+\cellx1100
+\fs20\pard\intbl\ql {{ av exp usd}}\cell
+\cellx2320
 \qr {{390.000}}\cell
-\cellx4090
-\qr {{0.473}}\cell
-\cellx5310
-\qr {{0.267}}\cell
-\cellx6530
-\qr {{0.059}}\cell
-\cellx7750
-\qr {{2.000}}\cell
+\cellx3540
+\qr {{3.674}}\cell
+\cellx4760
+\qr {{2.093}}\cell
+\cellx5980
+\qr {{0.790}}\cell
+\cellx7200
+\qr {{21.394}}\cell
 \row}
 
 
-{\fs20\b\qc\line Living space/percapita rooms in the household in trial pack group }{\par}
+{\fs20\b\qc\line Average household weekly expendtire in trial pack group }{\par}
 {\trowd\trgaph108\trleft-108
-\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1650
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
 \fs20\pard\intbl\qr { }\cell
-\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2870
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
 \fs20\pard\intbl\qr {{ N}}\cell
-\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4090
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
 \fs20\pard\intbl\qr {{ Mean}}\cell
-\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5310
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
 \fs20\pard\intbl\qr {{ SD}}\cell
-\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6530
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
 \fs20\pard\intbl\qr {{ Min}}\cell
-\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7750
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
 \fs20\pard\intbl\qr {{ Max}}\cell
 \row}
 {\trowd\trgaph108\trleft-108
-\cellx1650
-\fs20\pard\intbl\ql {{ percapita rooms}}\cell
-\cellx2870
+\cellx1100
+\fs20\pard\intbl\ql {{ av exp usd}}\cell
+\cellx2320
 \qr {{1539.000}}\cell
-\cellx4090
-\qr {{0.505}}\cell
-\cellx5310
-\qr {{0.345}}\cell
-\cellx6530
-\qr {{0.040}}\cell
-\cellx7750
-\qr {{4.000}}\cell
+\cellx3540
+\qr {{3.847}}\cell
+\cellx4760
+\qr {{2.562}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{57.703}}\cell
 \row}
 
 
-{\fs20\b\qc\line Living space/percapita rooms in the household in consumption group }{\par}
+{\fs20\b\qc\line Average household weekly expendtire in consumption group }{\par}
 {\trowd\trgaph108\trleft-108
-\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1650
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
 \fs20\pard\intbl\qr { }\cell
-\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2870
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
 \fs20\pard\intbl\qr {{ N}}\cell
-\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4090
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
 \fs20\pard\intbl\qr {{ Mean}}\cell
-\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5310
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
 \fs20\pard\intbl\qr {{ SD}}\cell
-\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6530
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
 \fs20\pard\intbl\qr {{ Min}}\cell
-\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7750
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
 \fs20\pard\intbl\qr {{ Max}}\cell
 \row}
 {\trowd\trgaph108\trleft-108
-\cellx1650
-\fs20\pard\intbl\ql {{ percapita rooms}}\cell
-\cellx2870
+\cellx1100
+\fs20\pard\intbl\ql {{ av exp usd}}\cell
+\cellx2320
 \qr {{780.000}}\cell
-\cellx4090
-\qr {{0.481}}\cell
-\cellx5310
-\qr {{0.325}}\cell
-\cellx6530
-\qr {{0.040}}\cell
-\cellx7750
-\qr {{4.000}}\cell
+\cellx3540
+\qr {{3.748}}\cell
+\cellx4760
+\qr {{2.109}}\cell
+\cellx5980
+\qr {{0.555}}\cell
+\cellx7200
+\qr {{16.764}}\cell
 \row}
 
 
-{\fs20\b\qc\line Living space/percapita rooms in the household in male headed hhs }{\par}
+{\fs20\b\qc\line Average household weekly expendtire in male headed hhs }{\par}
 {\trowd\trgaph108\trleft-108
-\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1650
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
 \fs20\pard\intbl\qr { }\cell
-\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2870
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
 \fs20\pard\intbl\qr {{ N}}\cell
-\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4090
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
 \fs20\pard\intbl\qr {{ Mean}}\cell
-\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5310
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
 \fs20\pard\intbl\qr {{ SD}}\cell
-\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6530
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
 \fs20\pard\intbl\qr {{ Min}}\cell
-\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7750
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
 \fs20\pard\intbl\qr {{ Max}}\cell
 \row}
 {\trowd\trgaph108\trleft-108
-\cellx1650
-\fs20\pard\intbl\ql {{ percapita rooms}}\cell
-\cellx2870
+\cellx1100
+\fs20\pard\intbl\ql {{ av exp usd}}\cell
+\cellx2320
 \qr {{1844.000}}\cell
-\cellx4090
-\qr {{0.472}}\cell
-\cellx5310
-\qr {{0.304}}\cell
-\cellx6530
-\qr {{0.040}}\cell
-\cellx7750
-\qr {{4.000}}\cell
+\cellx3540
+\qr {{3.871}}\cell
+\cellx4760
+\qr {{2.545}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{57.703}}\cell
 \row}
 
 
-{\fs20\b\qc\line Living space/percapita rooms in the household in female headed hhs }{\par}
+{\fs20\b\qc\line Average household weekly expendtire in female headed hhs }{\par}
 {\trowd\trgaph108\trleft-108
-\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1650
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
 \fs20\pard\intbl\qr { }\cell
-\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2870
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
 \fs20\pard\intbl\qr {{ N}}\cell
-\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4090
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
 \fs20\pard\intbl\qr {{ Mean}}\cell
-\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5310
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
 \fs20\pard\intbl\qr {{ SD}}\cell
-\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6530
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
 \fs20\pard\intbl\qr {{ Min}}\cell
-\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7750
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
 \fs20\pard\intbl\qr {{ Max}}\cell
 \row}
 {\trowd\trgaph108\trleft-108
-\cellx1650
-\fs20\pard\intbl\ql {{ percapita rooms}}\cell
-\cellx2870
+\cellx1100
+\fs20\pard\intbl\ql {{ av exp usd}}\cell
+\cellx2320
 \qr {{475.000}}\cell
-\cellx4090
-\qr {{0.575}}\cell
-\cellx5310
-\qr {{0.384}}\cell
-\cellx6530
-\qr {{0.111}}\cell
-\cellx7750
-\qr {{3.000}}\cell
+\cellx3540
+\qr {{3.619}}\cell
+\cellx4760
+\qr {{1.920}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{12.336}}\cell
 \row}
 
 

@@ -217,23 +217,26 @@ asdoc sum hh_size if gender == 0, stat(N mean sd min max) dec(3) tzok title(Hous
 asdoc sum hh_size if gender == 1, stat(N mean sd min max) dec(3) tzok title(Household size in female headed hhs) save(indicator_results)
 
 
-// Average Income (/other welfare indicator)
-* Living space (percapita rooms) in the household
-sum rooms hh_size
-gen percapita_rooms = rooms/hh_size
-sum percapita_rooms
+// Average household wekly expenditure (on food, fruits, vegetables, salt, soap, & airtime) 
+sum valuemaize_value_sp- valueairtime_value_sp
+egen exp = rowtotal( valuemaize_value_sp- valueairtime_value_sp)
+sum exp
+gen av_exp = exp/hh_size
+sum av_exp // average hh expenditure is 14210.29 Uganda shilling
+gen av_exp_usd = av_exp/3720.75 // converting average expenditure to usd
+sum av_exp_usd
 
-asdoc sum percapita_rooms, stat(N mean sd min max) dec(3) tzok title(Living space/percapita rooms in the household) save(indicator_results)
+asdoc sum av_exp_usd, stat(N mean sd min max) dec(3) tzok title(Average household weekly expendture in USD) save(indicator_results)
 
-asdoc sum percapita_rooms if cont == 1, stat(N mean sd min max) dec(3) tzok title(Living space/percapita rooms in the household in control group) save(indicator_results)
+asdoc sum av_exp_usd if cont == 1, stat(N mean sd min max) dec(3) tzok title(Average household weekly expendture in USD in control group) save(indicator_results)
 
-asdoc sum percapita_rooms if trial_pack == 1, stat(N mean sd min max) dec(3) tzok title(Living space/percapita rooms in the household in trial pack group) save(indicator_results)
+asdoc sum av_exp_usd if trial_pack == 1, stat(N mean sd min max) dec(3) tzok title(Average household weekly expendture in USD in trial pack group) save(indicator_results)
 
-asdoc sum percapita_rooms if cons == 1, stat(N mean sd min max) dec(3) tzok title(Living space/percapita rooms in the household in consumption group) save(indicator_results)
+asdoc sum av_exp_usd if cons == 1, stat(N mean sd min max) dec(3) tzok title(Average household weekly expendture in USD in consumption group) save(indicator_results)
 
-asdoc sum percapita_rooms if gender == 0, stat(N mean sd min max) dec(3) tzok title(Living space/percapita rooms in the household in male headed hhs) save(indicator_results)
+asdoc sum av_exp_usd if gender == 0, stat(N mean sd min max) dec(3) tzok title(Average household weekly expendture in USD in male headed hhs) save(indicator_results)
 
-asdoc sum percapita_rooms if gender == 1, stat(N mean sd min max) dec(3) tzok title(Living space/percapita rooms in the household in female headed hhs) save(indicator_results)
+asdoc sum av_exp_usd if gender == 1, stat(N mean sd min max) dec(3) tzok title(Average household weekly expendture in USD in female headed hhs) save(indicator_results)
 
 
 // Distance to Nearest Market (/other remoteness measure) nearest agro-input shop selling maize seed
