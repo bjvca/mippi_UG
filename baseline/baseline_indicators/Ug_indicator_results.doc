@@ -1,0 +1,6758 @@
+{\rtf1\ansi\deff0 {\fonttbl{\f0\fnil Garamond;}}
+{\info {\author .}{\company .}{\title .}}
+\deflang1033\plain\fs20
+{\footer\pard\qc\plain\f0\fs20\chpgn\par}
+{
+{\fs20\b\qc\line Treatment assignment proportions }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ cont}}\cell
+\cellx2320
+\qr {{2319.000}}\cell
+\cellx3540
+\qr {{0.168}}\cell
+\cellx4760
+\qr {{0.374}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ trial pack}}\cell
+\cellx2320
+\qr {{2319.000}}\cell
+\cellx3540
+\qr {{0.664}}\cell
+\cellx4760
+\qr {{0.473}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ cons}}\cell
+\cellx2320
+\qr {{2319.000}}\cell
+\cellx3540
+\qr {{0.336}}\cell
+\cellx4760
+\qr {{0.473}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ paid pac}}\cell
+\cellx2320
+\qr {{2319.000}}\cell
+\cellx3540
+\qr {{0.164}}\cell
+\cellx4760
+\qr {{0.370}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1100
+\fs20\pard\intbl\ql {{ discounted}}\cell
+\clbrdrb\brdrw15\brdrs\cellx2320
+\qr {{2319.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3540
+\qr {{0.163}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4760
+\qr {{0.370}}\cell
+\row}
+
+
+{\fs20\b\qc\line Household head is female }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ gender}}\cell
+\cellx2320
+\qr {{2319.000}}\cell
+\cellx3540
+\qr {{0.205}}\cell
+\cellx4760
+\qr {{0.404}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Household head is female in control }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ gender}}\cell
+\cellx2320
+\qr {{390.000}}\cell
+\cellx3540
+\qr {{0.164}}\cell
+\cellx4760
+\qr {{0.371}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Household head is female in trial pack treatment }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ gender}}\cell
+\cellx2320
+\qr {{1539.000}}\cell
+\cellx3540
+\qr {{0.215}}\cell
+\cellx4760
+\qr {{0.411}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Household head is female in consumption treatment }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ gender}}\cell
+\cellx2320
+\qr {{780.000}}\cell
+\cellx3540
+\qr {{0.221}}\cell
+\cellx4760
+\qr {{0.415}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Treatment assignment proportions in male headed households }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ cont}}\cell
+\cellx2320
+\qr {{1844.000}}\cell
+\cellx3540
+\qr {{0.177}}\cell
+\cellx4760
+\qr {{0.382}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ trial pack}}\cell
+\cellx2320
+\qr {{1844.000}}\cell
+\cellx3540
+\qr {{0.655}}\cell
+\cellx4760
+\qr {{0.475}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ cons}}\cell
+\cellx2320
+\qr {{1844.000}}\cell
+\cellx3540
+\qr {{0.330}}\cell
+\cellx4760
+\qr {{0.470}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ paid pac}}\cell
+\cellx2320
+\qr {{1844.000}}\cell
+\cellx3540
+\qr {{0.169}}\cell
+\cellx4760
+\qr {{0.375}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1100
+\fs20\pard\intbl\ql {{ discounted}}\cell
+\clbrdrb\brdrw15\brdrs\cellx2320
+\qr {{1844.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3540
+\qr {{0.154}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4760
+\qr {{0.361}}\cell
+\row}
+
+
+{\fs20\b\qc\line Treatment assignment proportions in female headed households }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ cont}}\cell
+\cellx2320
+\qr {{475.000}}\cell
+\cellx3540
+\qr {{0.135}}\cell
+\cellx4760
+\qr {{0.342}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ trial pack}}\cell
+\cellx2320
+\qr {{475.000}}\cell
+\cellx3540
+\qr {{0.697}}\cell
+\cellx4760
+\qr {{0.460}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ cons}}\cell
+\cellx2320
+\qr {{475.000}}\cell
+\cellx3540
+\qr {{0.362}}\cell
+\cellx4760
+\qr {{0.481}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ paid pac}}\cell
+\cellx2320
+\qr {{475.000}}\cell
+\cellx3540
+\qr {{0.145}}\cell
+\cellx4760
+\qr {{0.353}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1100
+\fs20\pard\intbl\ql {{ discounted}}\cell
+\clbrdrb\brdrw15\brdrs\cellx2320
+\qr {{475.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3540
+\qr {{0.200}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4760
+\qr {{0.400}}\cell
+\row}
+
+
+{\fs20\b\qc\line Respondent is female }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1210
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2430
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3650
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4870
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6090
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7310
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1210
+\fs20\pard\intbl\ql {{ resp female}}\cell
+\cellx2430
+\qr {{2319.000}}\cell
+\cellx3650
+\qr {{0.440}}\cell
+\cellx4870
+\qr {{0.496}}\cell
+\cellx6090
+\qr {{0.000}}\cell
+\cellx7310
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Respondent is female in control }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1210
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2430
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3650
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4870
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6090
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7310
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1210
+\fs20\pard\intbl\ql {{ resp female}}\cell
+\cellx2430
+\qr {{390.000}}\cell
+\cellx3650
+\qr {{0.454}}\cell
+\cellx4870
+\qr {{0.499}}\cell
+\cellx6090
+\qr {{0.000}}\cell
+\cellx7310
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Respondent is female in trial pack treatment }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1210
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2430
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3650
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4870
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6090
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7310
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1210
+\fs20\pard\intbl\ql {{ resp female}}\cell
+\cellx2430
+\qr {{1539.000}}\cell
+\cellx3650
+\qr {{0.435}}\cell
+\cellx4870
+\qr {{0.496}}\cell
+\cellx6090
+\qr {{0.000}}\cell
+\cellx7310
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Respondent is female in consumption treatment }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1210
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2430
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3650
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4870
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6090
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7310
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1210
+\fs20\pard\intbl\ql {{ resp female}}\cell
+\cellx2430
+\qr {{780.000}}\cell
+\cellx3650
+\qr {{0.460}}\cell
+\cellx4870
+\qr {{0.499}}\cell
+\cellx6090
+\qr {{0.000}}\cell
+\cellx7310
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Respondent is female in male headed households }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1210
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2430
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3650
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4870
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6090
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7310
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1210
+\fs20\pard\intbl\ql {{ resp female}}\cell
+\cellx2430
+\qr {{1844.000}}\cell
+\cellx3650
+\qr {{0.303}}\cell
+\cellx4870
+\qr {{0.460}}\cell
+\cellx6090
+\qr {{0.000}}\cell
+\cellx7310
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Respondent is female in female headed households }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1210
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2430
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3650
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4870
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6090
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7310
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1210
+\fs20\pard\intbl\ql {{ resp female}}\cell
+\cellx2430
+\qr {{475.000}}\cell
+\cellx3650
+\qr {{0.973}}\cell
+\cellx4870
+\qr {{0.163}}\cell
+\cellx6090
+\qr {{0.000}}\cell
+\cellx7310
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Respondent is household head }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ check2q1}}\cell
+\cellx2320
+\qr {{2319.000}}\cell
+\cellx3540
+\qr {{0.689}}\cell
+\cellx4760
+\qr {{0.463}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Respondent is household head in control }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ check2q1}}\cell
+\cellx2320
+\qr {{390.000}}\cell
+\cellx3540
+\qr {{0.654}}\cell
+\cellx4760
+\qr {{0.476}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Respondent is household head in trial pack treatment }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ check2q1}}\cell
+\cellx2320
+\qr {{1539.000}}\cell
+\cellx3540
+\qr {{0.699}}\cell
+\cellx4760
+\qr {{0.459}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Respondent is household head in consumption treatment }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ check2q1}}\cell
+\cellx2320
+\qr {{780.000}}\cell
+\cellx3540
+\qr {{0.676}}\cell
+\cellx4760
+\qr {{0.468}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Respondent is household head in male headed households }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ check2q1}}\cell
+\cellx2320
+\qr {{1539.000}}\cell
+\cellx3540
+\qr {{0.696}}\cell
+\cellx4760
+\qr {{0.460}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Respondent is household head in female headed households }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ check2q1}}\cell
+\cellx2320
+\qr {{780.000}}\cell
+\cellx3540
+\qr {{0.676}}\cell
+\cellx4760
+\qr {{0.468}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Respondent's Age/years }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ age}}\cell
+\cellx2320
+\qr {{1591.000}}\cell
+\cellx3540
+\qr {{49.478}}\cell
+\cellx4760
+\qr {{13.550}}\cell
+\cellx5980
+\qr {{19.000}}\cell
+\cellx7200
+\qr {{93.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Respondent's Age/years in control group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ age}}\cell
+\cellx2320
+\qr {{254.000}}\cell
+\cellx3540
+\qr {{50.965}}\cell
+\cellx4760
+\qr {{13.068}}\cell
+\cellx5980
+\qr {{22.000}}\cell
+\cellx7200
+\qr {{84.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Respondent's Age/years in trial pack group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ age}}\cell
+\cellx2320
+\qr {{1071.000}}\cell
+\cellx3540
+\qr {{49.260}}\cell
+\cellx4760
+\qr {{13.418}}\cell
+\cellx5980
+\qr {{19.000}}\cell
+\cellx7200
+\qr {{90.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Respondent's Age/years in consumption group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ age}}\cell
+\cellx2320
+\qr {{525.000}}\cell
+\cellx3540
+\qr {{49.604}}\cell
+\cellx4760
+\qr {{13.692}}\cell
+\cellx5980
+\qr {{19.000}}\cell
+\cellx7200
+\qr {{93.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Respondent's Age/years in male headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ age}}\cell
+\cellx2320
+\qr {{1247.000}}\cell
+\cellx3540
+\qr {{48.325}}\cell
+\cellx4760
+\qr {{13.563}}\cell
+\cellx5980
+\qr {{19.000}}\cell
+\cellx7200
+\qr {{93.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Respondent's Age/years in female headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ age}}\cell
+\cellx2320
+\qr {{344.000}}\cell
+\cellx3540
+\qr {{53.660}}\cell
+\cellx4760
+\qr {{12.670}}\cell
+\cellx5980
+\qr {{20.000}}\cell
+\cellx7200
+\qr {{89.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Household head's Age/years }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ age}}\cell
+\cellx2320
+\qr {{2291.000}}\cell
+\cellx3540
+\qr {{48.666}}\cell
+\cellx4760
+\qr {{13.563}}\cell
+\cellx5980
+\qr {{18.000}}\cell
+\cellx7200
+\qr {{94.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Household head's Age/years in control group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ age}}\cell
+\cellx2320
+\qr {{388.000}}\cell
+\cellx3540
+\qr {{49.709}}\cell
+\cellx4760
+\qr {{13.291}}\cell
+\cellx5980
+\qr {{21.000}}\cell
+\cellx7200
+\qr {{84.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Household head's Age/years in trial pack group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ age}}\cell
+\cellx2320
+\qr {{1518.000}}\cell
+\cellx3540
+\qr {{48.609}}\cell
+\cellx4760
+\qr {{13.449}}\cell
+\cellx5980
+\qr {{18.000}}\cell
+\cellx7200
+\qr {{94.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Household head's Age/years in consumption group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ age}}\cell
+\cellx2320
+\qr {{772.000}}\cell
+\cellx3540
+\qr {{48.297}}\cell
+\cellx4760
+\qr {{13.596}}\cell
+\cellx5980
+\qr {{18.000}}\cell
+\cellx7200
+\qr {{93.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Household head's Age/years in male headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ age}}\cell
+\cellx2320
+\qr {{1816.000}}\cell
+\cellx3540
+\qr {{47.992}}\cell
+\cellx4760
+\qr {{13.464}}\cell
+\cellx5980
+\qr {{18.000}}\cell
+\cellx7200
+\qr {{94.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Household head's Age/years in female headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ age}}\cell
+\cellx2320
+\qr {{475.000}}\cell
+\cellx3540
+\qr {{51.242}}\cell
+\cellx4760
+\qr {{13.644}}\cell
+\cellx5980
+\qr {{18.000}}\cell
+\cellx7200
+\qr {{89.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Respondent's Average years of Education }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ sch yrs}}\cell
+\cellx2320
+\qr {{1407.000}}\cell
+\cellx3540
+\qr {{7.535}}\cell
+\cellx4760
+\qr {{3.424}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{25.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Respondent's Average years of Education in control group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ sch yrs}}\cell
+\cellx2320
+\qr {{221.000}}\cell
+\cellx3540
+\qr {{7.697}}\cell
+\cellx4760
+\qr {{3.446}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{19.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Respondent's Average years of Education in trial pack group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ sch yrs}}\cell
+\cellx2320
+\qr {{955.000}}\cell
+\cellx3540
+\qr {{7.597}}\cell
+\cellx4760
+\qr {{3.484}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{25.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Respondent's Average years of Education in consumption group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ sch yrs}}\cell
+\cellx2320
+\qr {{461.000}}\cell
+\cellx3540
+\qr {{7.280}}\cell
+\cellx4760
+\qr {{3.261}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{20.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Respondent's Average years of Education in male headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ sch yrs}}\cell
+\cellx2320
+\qr {{1159.000}}\cell
+\cellx3540
+\qr {{7.890}}\cell
+\cellx4760
+\qr {{3.416}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{25.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Respondent's Average years of Education in female headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ sch yrs}}\cell
+\cellx2320
+\qr {{248.000}}\cell
+\cellx3540
+\qr {{5.879}}\cell
+\cellx4760
+\qr {{2.951}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{15.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Household head's Average years of Education }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ sch yrs}}\cell
+\cellx2320
+\qr {{2041.000}}\cell
+\cellx3540
+\qr {{7.562}}\cell
+\cellx4760
+\qr {{3.420}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{25.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Household head's Average years of Education in control group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ sch yrs}}\cell
+\cellx2320
+\qr {{336.000}}\cell
+\cellx3540
+\qr {{7.658}}\cell
+\cellx4760
+\qr {{3.442}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{19.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Household head's Average years of Education in trial pack group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ sch yrs}}\cell
+\cellx2320
+\qr {{1364.000}}\cell
+\cellx3540
+\qr {{7.647}}\cell
+\cellx4760
+\qr {{3.472}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{25.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Household head's Average years of Education in consumption group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ sch yrs}}\cell
+\cellx2320
+\qr {{684.000}}\cell
+\cellx3540
+\qr {{7.241}}\cell
+\cellx4760
+\qr {{3.189}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{20.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Household head's Average years of Education in male headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ sch yrs}}\cell
+\cellx2320
+\qr {{1688.000}}\cell
+\cellx3540
+\qr {{7.837}}\cell
+\cellx4760
+\qr {{3.444}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{25.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Household head's Average years of Education in female headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ sch yrs}}\cell
+\cellx2320
+\qr {{353.000}}\cell
+\cellx3540
+\qr {{6.249}}\cell
+\cellx4760
+\qr {{2.975}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{15.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Respondent completed primary education }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ edu}}\cell
+\cellx2320
+\qr {{1598.000}}\cell
+\cellx3540
+\qr {{0.513}}\cell
+\cellx4760
+\qr {{0.500}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Respondent completed primary education in control group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ edu}}\cell
+\cellx2320
+\qr {{255.000}}\cell
+\cellx3540
+\qr {{0.522}}\cell
+\cellx4760
+\qr {{0.501}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Respondent completed primary education in trial pack group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ edu}}\cell
+\cellx2320
+\qr {{1076.000}}\cell
+\cellx3540
+\qr {{0.520}}\cell
+\cellx4760
+\qr {{0.500}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Respondent completed primary education in consumption group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ edu}}\cell
+\cellx2320
+\qr {{527.000}}\cell
+\cellx3540
+\qr {{0.491}}\cell
+\cellx4760
+\qr {{0.500}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Respondent completed primary education in male headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ edu}}\cell
+\cellx2320
+\qr {{1254.000}}\cell
+\cellx3540
+\qr {{0.573}}\cell
+\cellx4760
+\qr {{0.495}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Respondent completed primary education in female headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ edu}}\cell
+\cellx2320
+\qr {{344.000}}\cell
+\cellx3540
+\qr {{0.291}}\cell
+\cellx4760
+\qr {{0.455}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Household head completed primary education }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ edu}}\cell
+\cellx2320
+\qr {{2319.000}}\cell
+\cellx3540
+\qr {{0.518}}\cell
+\cellx4760
+\qr {{0.500}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Household head completed primary education in control group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ edu}}\cell
+\cellx2320
+\qr {{390.000}}\cell
+\cellx3540
+\qr {{0.521}}\cell
+\cellx4760
+\qr {{0.500}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Household head completed primary education in trial pack group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ edu}}\cell
+\cellx2320
+\qr {{1539.000}}\cell
+\cellx3540
+\qr {{0.524}}\cell
+\cellx4760
+\qr {{0.500}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Household head completed primary education in consumption group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ edu}}\cell
+\cellx2320
+\qr {{780.000}}\cell
+\cellx3540
+\qr {{0.512}}\cell
+\cellx4760
+\qr {{0.500}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Household head completed primary education in male headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ edu}}\cell
+\cellx2320
+\qr {{1844.000}}\cell
+\cellx3540
+\qr {{0.562}}\cell
+\cellx4760
+\qr {{0.496}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Household head completed primary education in female headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ edu}}\cell
+\cellx2320
+\qr {{475.000}}\cell
+\cellx3540
+\qr {{0.345}}\cell
+\cellx4760
+\qr {{0.476}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Household size }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ hh size}}\cell
+\cellx2320
+\qr {{2319.000}}\cell
+\cellx3540
+\qr {{8.213}}\cell
+\cellx4760
+\qr {{3.879}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{25.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Household size in control group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ hh size}}\cell
+\cellx2320
+\qr {{390.000}}\cell
+\cellx3540
+\qr {{8.431}}\cell
+\cellx4760
+\qr {{3.826}}\cell
+\cellx5980
+\qr {{2.000}}\cell
+\cellx7200
+\qr {{23.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Household size in trial pack group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ hh size}}\cell
+\cellx2320
+\qr {{1539.000}}\cell
+\cellx3540
+\qr {{8.182}}\cell
+\cellx4760
+\qr {{3.887}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{25.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Household size in consumption group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ hh size}}\cell
+\cellx2320
+\qr {{780.000}}\cell
+\cellx3540
+\qr {{8.219}}\cell
+\cellx4760
+\qr {{3.999}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{25.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Household size in male headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ hh size}}\cell
+\cellx2320
+\qr {{1844.000}}\cell
+\cellx3540
+\qr {{8.488}}\cell
+\cellx4760
+\qr {{3.865}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{25.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Household size in female headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ hh size}}\cell
+\cellx2320
+\qr {{475.000}}\cell
+\cellx3540
+\qr {{7.147}}\cell
+\cellx4760
+\qr {{3.750}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{25.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Average household weekly expendture in USD }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ av exp usd}}\cell
+\cellx2320
+\qr {{2319.000}}\cell
+\cellx3540
+\qr {{3.819}}\cell
+\cellx4760
+\qr {{2.432}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{57.703}}\cell
+\row}
+
+
+{\fs20\b\qc\line Average household weekly expendture in USD in control group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ av exp usd}}\cell
+\cellx2320
+\qr {{390.000}}\cell
+\cellx3540
+\qr {{3.674}}\cell
+\cellx4760
+\qr {{2.093}}\cell
+\cellx5980
+\qr {{0.790}}\cell
+\cellx7200
+\qr {{21.394}}\cell
+\row}
+
+
+{\fs20\b\qc\line Average household weekly expendture in USD in trial pack group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ av exp usd}}\cell
+\cellx2320
+\qr {{1539.000}}\cell
+\cellx3540
+\qr {{3.847}}\cell
+\cellx4760
+\qr {{2.562}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{57.703}}\cell
+\row}
+
+
+{\fs20\b\qc\line Average household weekly expendture in USD in consumption group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ av exp usd}}\cell
+\cellx2320
+\qr {{780.000}}\cell
+\cellx3540
+\qr {{3.748}}\cell
+\cellx4760
+\qr {{2.109}}\cell
+\cellx5980
+\qr {{0.555}}\cell
+\cellx7200
+\qr {{16.764}}\cell
+\row}
+
+
+{\fs20\b\qc\line Average household weekly expendture in USD in male headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ av exp usd}}\cell
+\cellx2320
+\qr {{1844.000}}\cell
+\cellx3540
+\qr {{3.871}}\cell
+\cellx4760
+\qr {{2.545}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{57.703}}\cell
+\row}
+
+
+{\fs20\b\qc\line Average household weekly expendture in USD in female headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ av exp usd}}\cell
+\cellx2320
+\qr {{475.000}}\cell
+\cellx3540
+\qr {{3.619}}\cell
+\cellx4760
+\qr {{1.920}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{12.336}}\cell
+\row}
+
+
+{\fs20\b\qc\line Kms to nearest agro-input shop selling maize seed }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ dist ag}}\cell
+\cellx2320
+\qr {{2200.000}}\cell
+\cellx3540
+\qr {{4.196}}\cell
+\cellx4760
+\qr {{4.606}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{64.400}}\cell
+\row}
+
+
+{\fs20\b\qc\line Kms to nearest agro-input shop selling maize seed in control group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ dist ag}}\cell
+\cellx2320
+\qr {{371.000}}\cell
+\cellx3540
+\qr {{4.233}}\cell
+\cellx4760
+\qr {{4.256}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{35.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Kms to nearest agro-input shop selling maize seed in trial pack group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ dist ag}}\cell
+\cellx2320
+\qr {{1465.000}}\cell
+\cellx3540
+\qr {{4.030}}\cell
+\cellx4760
+\qr {{4.337}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{64.400}}\cell
+\row}
+
+
+{\fs20\b\qc\line Kms to nearest agro-input shop selling maize seed in consumption group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ dist ag}}\cell
+\cellx2320
+\qr {{725.000}}\cell
+\cellx3540
+\qr {{4.581}}\cell
+\cellx4760
+\qr {{5.554}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{64.400}}\cell
+\row}
+
+
+{\fs20\b\qc\line Kms to nearest agro-input shop selling maize seed in male headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ dist ag}}\cell
+\cellx2320
+\qr {{1760.000}}\cell
+\cellx3540
+\qr {{4.229}}\cell
+\cellx4760
+\qr {{4.798}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{64.400}}\cell
+\row}
+
+
+{\fs20\b\qc\line Kms to nearest agro-input shop selling maize seed in female headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ dist ag}}\cell
+\cellx2320
+\qr {{440.000}}\cell
+\cellx3540
+\qr {{4.066}}\cell
+\cellx4760
+\qr {{3.741}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{40.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Total Land/ha available for crop production }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1210
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2430
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3650
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4870
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6090
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7310
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1210
+\fs20\pard\intbl\ql {{ ttl land ha}}\cell
+\cellx2430
+\qr {{2311.000}}\cell
+\cellx3650
+\qr {{1.172}}\cell
+\cellx4870
+\qr {{1.311}}\cell
+\cellx6090
+\qr {{0.056}}\cell
+\cellx7310
+\qr {{20.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Total Land/ha available for crop production in control group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1210
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2430
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3650
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4870
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6090
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7310
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1210
+\fs20\pard\intbl\ql {{ ttl land ha}}\cell
+\cellx2430
+\qr {{387.000}}\cell
+\cellx3650
+\qr {{1.234}}\cell
+\cellx4870
+\qr {{1.170}}\cell
+\cellx6090
+\qr {{0.056}}\cell
+\cellx7310
+\qr {{8.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Total Land/ha available for crop production in trial pack group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1210
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2430
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3650
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4870
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6090
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7310
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1210
+\fs20\pard\intbl\ql {{ ttl land ha}}\cell
+\cellx2430
+\qr {{1534.000}}\cell
+\cellx3650
+\qr {{1.174}}\cell
+\cellx4870
+\qr {{1.259}}\cell
+\cellx6090
+\qr {{0.080}}\cell
+\cellx7310
+\qr {{16.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Total Land/ha available for crop production in consumption group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1210
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2430
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3650
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4870
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6090
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7310
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1210
+\fs20\pard\intbl\ql {{ ttl land ha}}\cell
+\cellx2430
+\qr {{780.000}}\cell
+\cellx3650
+\qr {{1.167}}\cell
+\cellx4870
+\qr {{1.537}}\cell
+\cellx6090
+\qr {{0.080}}\cell
+\cellx7310
+\qr {{20.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Total Land/ha available for crop production in male headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1210
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2430
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3650
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4870
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6090
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7310
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1210
+\fs20\pard\intbl\ql {{ ttl land ha}}\cell
+\cellx2430
+\qr {{1838.000}}\cell
+\cellx3650
+\qr {{1.214}}\cell
+\cellx4870
+\qr {{1.341}}\cell
+\cellx6090
+\qr {{0.100}}\cell
+\cellx7310
+\qr {{20.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Total Land/ha available for crop production in female headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1210
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2430
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3650
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4870
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6090
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7310
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1210
+\fs20\pard\intbl\ql {{ ttl land ha}}\cell
+\cellx2430
+\qr {{473.000}}\cell
+\cellx3650
+\qr {{1.006}}\cell
+\cellx4870
+\qr {{1.173}}\cell
+\cellx6090
+\qr {{0.056}}\cell
+\cellx7310
+\qr {{16.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Average size/ha of randomly selected maize plot }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1320
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2540
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3760
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4980
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6200
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7420
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1320
+\fs20\pard\intbl\ql {{ plot size ha}}\cell
+\cellx2540
+\qr {{2318.000}}\cell
+\cellx3760
+\qr {{0.456}}\cell
+\cellx4980
+\qr {{0.342}}\cell
+\cellx6200
+\qr {{0.000}}\cell
+\cellx7420
+\qr {{4.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Average size/ha of randomly selected maize plot in control group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1320
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2540
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3760
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4980
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6200
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7420
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1320
+\fs20\pard\intbl\ql {{ plot size ha}}\cell
+\cellx2540
+\qr {{390.000}}\cell
+\cellx3760
+\qr {{0.480}}\cell
+\cellx4980
+\qr {{0.367}}\cell
+\cellx6200
+\qr {{0.000}}\cell
+\cellx7420
+\qr {{4.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Average size/ha of randomly selected maize plot in trial pack group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1320
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2540
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3760
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4980
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6200
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7420
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1320
+\fs20\pard\intbl\ql {{ plot size ha}}\cell
+\cellx2540
+\qr {{1538.000}}\cell
+\cellx3760
+\qr {{0.456}}\cell
+\cellx4980
+\qr {{0.351}}\cell
+\cellx6200
+\qr {{0.036}}\cell
+\cellx7420
+\qr {{4.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Average size/ha of randomly selected maize plot in consumption group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1320
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2540
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3760
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4980
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6200
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7420
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1320
+\fs20\pard\intbl\ql {{ plot size ha}}\cell
+\cellx2540
+\qr {{780.000}}\cell
+\cellx3760
+\qr {{0.454}}\cell
+\cellx4980
+\qr {{0.332}}\cell
+\cellx6200
+\qr {{0.020}}\cell
+\cellx7420
+\qr {{4.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Average size/ha of randomly selected maize plot in male headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1320
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2540
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3760
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4980
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6200
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7420
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1320
+\fs20\pard\intbl\ql {{ plot size ha}}\cell
+\cellx2540
+\qr {{1843.000}}\cell
+\cellx3760
+\qr {{0.469}}\cell
+\cellx4980
+\qr {{0.354}}\cell
+\cellx6200
+\qr {{0.000}}\cell
+\cellx7420
+\qr {{4.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Average size/ha of randomly selected maize plot in female headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1320
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2540
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3760
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4980
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6200
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7420
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1320
+\fs20\pard\intbl\ql {{ plot size ha}}\cell
+\cellx2540
+\qr {{475.000}}\cell
+\cellx3760
+\qr {{0.405}}\cell
+\cellx4980
+\qr {{0.286}}\cell
+\cellx6200
+\qr {{0.036}}\cell
+\cellx7420
+\qr {{1.600}}\cell
+\row}
+
+
+{\fs20\b\qc\line Value to total harvest, % amount consumed & % amount sold }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1870
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3090
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4310
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5530
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6750
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7970
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1870
+\fs20\pard\intbl\ql {{ tt harv value usd}}\cell
+\cellx3090
+\qr {{2310.000}}\cell
+\cellx4310
+\qr {{124.710}}\cell
+\cellx5530
+\qr {{178.701}}\cell
+\cellx6750
+\qr {{0.000}}\cell
+\cellx7970
+\qr {{2782.040}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1870
+\fs20\pard\intbl\ql {{ consumed percent}}\cell
+\cellx3090
+\qr {{2291.000}}\cell
+\cellx4310
+\qr {{66.984}}\cell
+\cellx5530
+\qr {{34.699}}\cell
+\cellx6750
+\qr {{0.000}}\cell
+\cellx7970
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1870
+\fs20\pard\intbl\ql {{ sold percent}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3090
+\qr {{2291.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4310
+\qr {{24.912}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5530
+\qr {{31.786}}\cell
+\clbrdrb\brdrw15\brdrs\cellx6750
+\qr {{0.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx7970
+\qr {{100.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Value to total harvest, % amount consumed & % amount sold in control group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1870
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3090
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4310
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5530
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6750
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7970
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1870
+\fs20\pard\intbl\ql {{ tt harv value usd}}\cell
+\cellx3090
+\qr {{387.000}}\cell
+\cellx4310
+\qr {{126.851}}\cell
+\cellx5530
+\qr {{155.249}}\cell
+\cellx6750
+\qr {{0.000}}\cell
+\cellx7970
+\qr {{1391.020}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1870
+\fs20\pard\intbl\ql {{ consumed percent}}\cell
+\cellx3090
+\qr {{385.000}}\cell
+\cellx4310
+\qr {{64.882}}\cell
+\cellx5530
+\qr {{34.572}}\cell
+\cellx6750
+\qr {{0.000}}\cell
+\cellx7970
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1870
+\fs20\pard\intbl\ql {{ sold percent}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3090
+\qr {{385.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4310
+\qr {{25.818}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5530
+\qr {{31.182}}\cell
+\clbrdrb\brdrw15\brdrs\cellx6750
+\qr {{0.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx7970
+\qr {{100.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Value to total harvest, % amount consumed & % amount sold in trial pack group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1870
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3090
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4310
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5530
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6750
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7970
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1870
+\fs20\pard\intbl\ql {{ tt harv value usd}}\cell
+\cellx3090
+\qr {{1534.000}}\cell
+\cellx4310
+\qr {{122.493}}\cell
+\cellx5530
+\qr {{176.115}}\cell
+\cellx6750
+\qr {{0.000}}\cell
+\cellx7970
+\qr {{2782.040}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1870
+\fs20\pard\intbl\ql {{ consumed percent}}\cell
+\cellx3090
+\qr {{1522.000}}\cell
+\cellx4310
+\qr {{68.022}}\cell
+\cellx5530
+\qr {{34.561}}\cell
+\cellx6750
+\qr {{0.000}}\cell
+\cellx7970
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1870
+\fs20\pard\intbl\ql {{ sold percent}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3090
+\qr {{1522.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4310
+\qr {{24.035}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5530
+\qr {{31.738}}\cell
+\clbrdrb\brdrw15\brdrs\cellx6750
+\qr {{0.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx7970
+\qr {{100.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Value to total harvest, % amount consumed & % amount sold in consumption group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1870
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3090
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4310
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5530
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6750
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7970
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1870
+\fs20\pard\intbl\ql {{ tt harv value usd}}\cell
+\cellx3090
+\qr {{779.000}}\cell
+\cellx4310
+\qr {{128.548}}\cell
+\cellx5530
+\qr {{203.651}}\cell
+\cellx6750
+\qr {{0.000}}\cell
+\cellx7970
+\qr {{2782.040}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1870
+\fs20\pard\intbl\ql {{ consumed percent}}\cell
+\cellx3090
+\qr {{771.000}}\cell
+\cellx4310
+\qr {{67.283}}\cell
+\cellx5530
+\qr {{34.397}}\cell
+\cellx6750
+\qr {{0.000}}\cell
+\cellx7970
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1870
+\fs20\pard\intbl\ql {{ sold percent}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3090
+\qr {{771.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4310
+\qr {{25.329}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5530
+\qr {{32.054}}\cell
+\clbrdrb\brdrw15\brdrs\cellx6750
+\qr {{0.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx7970
+\qr {{100.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Value to total harvest, % amount consumed & % amount sold in male headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1870
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3090
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4310
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5530
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6750
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7970
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1870
+\fs20\pard\intbl\ql {{ tt harv value usd}}\cell
+\cellx3090
+\qr {{1838.000}}\cell
+\cellx4310
+\qr {{134.093}}\cell
+\cellx5530
+\qr {{192.756}}\cell
+\cellx6750
+\qr {{0.000}}\cell
+\cellx7970
+\qr {{2782.040}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1870
+\fs20\pard\intbl\ql {{ consumed percent}}\cell
+\cellx3090
+\qr {{1831.000}}\cell
+\cellx4310
+\qr {{65.641}}\cell
+\cellx5530
+\qr {{34.812}}\cell
+\cellx6750
+\qr {{0.000}}\cell
+\cellx7970
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1870
+\fs20\pard\intbl\ql {{ sold percent}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3090
+\qr {{1831.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4310
+\qr {{26.635}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5530
+\qr {{32.311}}\cell
+\clbrdrb\brdrw15\brdrs\cellx6750
+\qr {{0.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx7970
+\qr {{100.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Value to total harvest, % amount consumed & % amount sold in female headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1870
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3090
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4310
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5530
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6750
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7970
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1870
+\fs20\pard\intbl\ql {{ tt harv value usd}}\cell
+\cellx3090
+\qr {{472.000}}\cell
+\cellx4310
+\qr {{88.174}}\cell
+\cellx5530
+\qr {{99.789}}\cell
+\cellx6750
+\qr {{0.000}}\cell
+\cellx7970
+\qr {{834.612}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1870
+\fs20\pard\intbl\ql {{ consumed percent}}\cell
+\cellx3090
+\qr {{460.000}}\cell
+\cellx4310
+\qr {{72.330}}\cell
+\cellx5530
+\qr {{33.758}}\cell
+\cellx6750
+\qr {{0.000}}\cell
+\cellx7970
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1870
+\fs20\pard\intbl\ql {{ sold percent}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3090
+\qr {{460.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4310
+\qr {{18.055}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5530
+\qr {{28.626}}\cell
+\clbrdrb\brdrw15\brdrs\cellx6750
+\qr {{0.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx7970
+\qr {{100.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Fraction that uses Any Improved Seeds }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1430
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2650
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3870
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5090
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6310
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7530
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ uses improved}}\cell
+\cellx2650
+\qr {{2306.000}}\cell
+\cellx3870
+\qr {{0.405}}\cell
+\cellx5090
+\qr {{0.491}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Fraction that uses Any Improved Seeds in control group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1430
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2650
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3870
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5090
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6310
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7530
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ uses improved}}\cell
+\cellx2650
+\qr {{389.000}}\cell
+\cellx3870
+\qr {{0.422}}\cell
+\cellx5090
+\qr {{0.494}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Fraction that uses Any Improved Seeds in trial pack group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1430
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2650
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3870
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5090
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6310
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7530
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ uses improved}}\cell
+\cellx2650
+\qr {{1529.000}}\cell
+\cellx3870
+\qr {{0.399}}\cell
+\cellx5090
+\qr {{0.490}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Fraction that uses Any Improved Seeds in consumption group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1430
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2650
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3870
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5090
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6310
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7530
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ uses improved}}\cell
+\cellx2650
+\qr {{774.000}}\cell
+\cellx3870
+\qr {{0.390}}\cell
+\cellx5090
+\qr {{0.488}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Fraction that uses Any Improved Seeds in male headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1430
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2650
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3870
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5090
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6310
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7530
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ uses improved}}\cell
+\cellx2650
+\qr {{1837.000}}\cell
+\cellx3870
+\qr {{0.441}}\cell
+\cellx5090
+\qr {{0.497}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Fraction that uses Any Improved Seeds in female headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1430
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2650
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3870
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5090
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6310
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7530
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ uses improved}}\cell
+\cellx2650
+\qr {{469.000}}\cell
+\cellx3870
+\qr {{0.264}}\cell
+\cellx5090
+\qr {{0.441}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Fraction that used Bazooka maize variety }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ uses bazo}}\cell
+\cellx2320
+\qr {{927.000}}\cell
+\cellx3540
+\qr {{0.237}}\cell
+\cellx4760
+\qr {{0.426}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Fraction that used Bazooka maize variety in control group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ uses bazo}}\cell
+\cellx2320
+\qr {{159.000}}\cell
+\cellx3540
+\qr {{0.195}}\cell
+\cellx4760
+\qr {{0.397}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Fraction that used Bazooka maize variety in trial pack group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ uses bazo}}\cell
+\cellx2320
+\qr {{608.000}}\cell
+\cellx3540
+\qr {{0.240}}\cell
+\cellx4760
+\qr {{0.428}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Fraction that used Bazooka maize variety in consumption group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ uses bazo}}\cell
+\cellx2320
+\qr {{300.000}}\cell
+\cellx3540
+\qr {{0.247}}\cell
+\cellx4760
+\qr {{0.432}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Fraction that used Bazooka maize variety in male headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ uses bazo}}\cell
+\cellx2320
+\qr {{803.000}}\cell
+\cellx3540
+\qr {{0.238}}\cell
+\cellx4760
+\qr {{0.426}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Fraction that used Bazooka maize variety in female headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ uses bazo}}\cell
+\cellx2320
+\qr {{124.000}}\cell
+\cellx3540
+\qr {{0.234}}\cell
+\cellx4760
+\qr {{0.425}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Number of times the planted seed was recycled }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ often}}\cell
+\cellx2320
+\qr {{1428.000}}\cell
+\cellx3540
+\qr {{5.084}}\cell
+\cellx4760
+\qr {{1.516}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{6.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Number of times the planted seed was recycled in control group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ often}}\cell
+\cellx2320
+\qr {{239.000}}\cell
+\cellx3540
+\qr {{4.967}}\cell
+\cellx4760
+\qr {{1.542}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{6.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Number of times the planted seed was recycled in trial pack group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ often}}\cell
+\cellx2320
+\qr {{955.000}}\cell
+\cellx3540
+\qr {{5.052}}\cell
+\cellx4760
+\qr {{1.549}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{6.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Number of times the planted seed was recycled in consumption group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ often}}\cell
+\cellx2320
+\qr {{492.000}}\cell
+\cellx3540
+\qr {{5.268}}\cell
+\cellx4760
+\qr {{1.397}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{6.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Number of times the planted seed was recycled in male headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ often}}\cell
+\cellx2320
+\qr {{1081.000}}\cell
+\cellx3540
+\qr {{5.017}}\cell
+\cellx4760
+\qr {{1.538}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{6.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Number of times the planted seed was recycled in female headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ often}}\cell
+\cellx2320
+\qr {{347.000}}\cell
+\cellx3540
+\qr {{5.294}}\cell
+\cellx4760
+\qr {{1.424}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{6.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Top 3 sources of seed }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1980
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3200
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4420
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5640
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6860
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx8080
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1980
+\fs20\pard\intbl\ql {{ saved seed farmer}}\cell
+\cellx3200
+\qr {{2238.000}}\cell
+\cellx4420
+\qr {{0.605}}\cell
+\cellx5640
+\qr {{0.489}}\cell
+\cellx6860
+\qr {{0.000}}\cell
+\cellx8080
+\qr {{1.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1980
+\fs20\pard\intbl\ql {{ agro input shop}}\cell
+\cellx3200
+\qr {{2238.000}}\cell
+\cellx4420
+\qr {{0.286}}\cell
+\cellx5640
+\qr {{0.452}}\cell
+\cellx6860
+\qr {{0.000}}\cell
+\cellx8080
+\qr {{1.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1980
+\fs20\pard\intbl\ql {{ other farmer saved}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3200
+\qr {{2238.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4420
+\qr {{0.075}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5640
+\qr {{0.263}}\cell
+\clbrdrb\brdrw15\brdrs\cellx6860
+\qr {{0.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx8080
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Top 3 sources of seed in control group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1980
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3200
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4420
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5640
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6860
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx8080
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1980
+\fs20\pard\intbl\ql {{ saved seed farmer}}\cell
+\cellx3200
+\qr {{378.000}}\cell
+\cellx4420
+\qr {{0.590}}\cell
+\cellx5640
+\qr {{0.492}}\cell
+\cellx6860
+\qr {{0.000}}\cell
+\cellx8080
+\qr {{1.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1980
+\fs20\pard\intbl\ql {{ agro input shop}}\cell
+\cellx3200
+\qr {{378.000}}\cell
+\cellx4420
+\qr {{0.265}}\cell
+\cellx5640
+\qr {{0.442}}\cell
+\cellx6860
+\qr {{0.000}}\cell
+\cellx8080
+\qr {{1.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1980
+\fs20\pard\intbl\ql {{ other farmer saved}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3200
+\qr {{378.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4420
+\qr {{0.106}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5640
+\qr {{0.308}}\cell
+\clbrdrb\brdrw15\brdrs\cellx6860
+\qr {{0.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx8080
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Top 3 sources of seed in trial pack group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1980
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3200
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4420
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5640
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6860
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx8080
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1980
+\fs20\pard\intbl\ql {{ saved seed farmer}}\cell
+\cellx3200
+\qr {{1483.000}}\cell
+\cellx4420
+\qr {{0.621}}\cell
+\cellx5640
+\qr {{0.485}}\cell
+\cellx6860
+\qr {{0.000}}\cell
+\cellx8080
+\qr {{1.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1980
+\fs20\pard\intbl\ql {{ agro input shop}}\cell
+\cellx3200
+\qr {{1483.000}}\cell
+\cellx4420
+\qr {{0.285}}\cell
+\cellx5640
+\qr {{0.451}}\cell
+\cellx6860
+\qr {{0.000}}\cell
+\cellx8080
+\qr {{1.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1980
+\fs20\pard\intbl\ql {{ other farmer saved}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3200
+\qr {{1483.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4420
+\qr {{0.060}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5640
+\qr {{0.238}}\cell
+\clbrdrb\brdrw15\brdrs\cellx6860
+\qr {{0.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx8080
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Top 3 sources of seed in consumption group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1980
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3200
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4420
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5640
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6860
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx8080
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1980
+\fs20\pard\intbl\ql {{ saved seed farmer}}\cell
+\cellx3200
+\qr {{754.000}}\cell
+\cellx4420
+\qr {{0.609}}\cell
+\cellx5640
+\qr {{0.488}}\cell
+\cellx6860
+\qr {{0.000}}\cell
+\cellx8080
+\qr {{1.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1980
+\fs20\pard\intbl\ql {{ agro input shop}}\cell
+\cellx3200
+\qr {{754.000}}\cell
+\cellx4420
+\qr {{0.279}}\cell
+\cellx5640
+\qr {{0.449}}\cell
+\cellx6860
+\qr {{0.000}}\cell
+\cellx8080
+\qr {{1.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1980
+\fs20\pard\intbl\ql {{ other farmer saved}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3200
+\qr {{754.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4420
+\qr {{0.084}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5640
+\qr {{0.277}}\cell
+\clbrdrb\brdrw15\brdrs\cellx6860
+\qr {{0.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx8080
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Top 3 sources of seed in male headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1980
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3200
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4420
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5640
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6860
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx8080
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1980
+\fs20\pard\intbl\ql {{ saved seed farmer}}\cell
+\cellx3200
+\qr {{1780.000}}\cell
+\cellx4420
+\qr {{0.578}}\cell
+\cellx5640
+\qr {{0.494}}\cell
+\cellx6860
+\qr {{0.000}}\cell
+\cellx8080
+\qr {{1.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1980
+\fs20\pard\intbl\ql {{ agro input shop}}\cell
+\cellx3200
+\qr {{1780.000}}\cell
+\cellx4420
+\qr {{0.316}}\cell
+\cellx5640
+\qr {{0.465}}\cell
+\cellx6860
+\qr {{0.000}}\cell
+\cellx8080
+\qr {{1.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1980
+\fs20\pard\intbl\ql {{ other farmer saved}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3200
+\qr {{1780.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4420
+\qr {{0.069}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5640
+\qr {{0.254}}\cell
+\clbrdrb\brdrw15\brdrs\cellx6860
+\qr {{0.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx8080
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Top 3 sources of seed in female headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1980
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3200
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4420
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5640
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6860
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx8080
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1980
+\fs20\pard\intbl\ql {{ saved seed farmer}}\cell
+\cellx3200
+\qr {{458.000}}\cell
+\cellx4420
+\qr {{0.710}}\cell
+\cellx5640
+\qr {{0.454}}\cell
+\cellx6860
+\qr {{0.000}}\cell
+\cellx8080
+\qr {{1.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1980
+\fs20\pard\intbl\ql {{ agro input shop}}\cell
+\cellx3200
+\qr {{458.000}}\cell
+\cellx4420
+\qr {{0.168}}\cell
+\cellx5640
+\qr {{0.374}}\cell
+\cellx6860
+\qr {{0.000}}\cell
+\cellx8080
+\qr {{1.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1980
+\fs20\pard\intbl\ql {{ other farmer saved}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3200
+\qr {{458.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4420
+\qr {{0.096}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5640
+\qr {{0.295}}\cell
+\clbrdrb\brdrw15\brdrs\cellx6860
+\qr {{0.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx8080
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Number of years the variety has been grown }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ long var}}\cell
+\cellx2320
+\qr {{2270.000}}\cell
+\cellx3540
+\qr {{8.870}}\cell
+\cellx4760
+\qr {{9.686}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{67.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Number of years the variety has been grown in control group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ long var}}\cell
+\cellx2320
+\qr {{384.000}}\cell
+\cellx3540
+\qr {{8.438}}\cell
+\cellx4760
+\qr {{9.613}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{58.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Number of years the variety has been grown in trial pack group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ long var}}\cell
+\cellx2320
+\qr {{1500.000}}\cell
+\cellx3540
+\qr {{8.764}}\cell
+\cellx4760
+\qr {{9.537}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{67.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Number of years the variety has been grown in consumption group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ long var}}\cell
+\cellx2320
+\qr {{759.000}}\cell
+\cellx3540
+\qr {{9.435}}\cell
+\cellx4760
+\qr {{9.859}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{48.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Number of years the variety has been grown in male headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ long var}}\cell
+\cellx2320
+\qr {{1809.000}}\cell
+\cellx3540
+\qr {{8.247}}\cell
+\cellx4760
+\qr {{9.134}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{58.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Number of years the variety has been grown in female headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ long var}}\cell
+\cellx2320
+\qr {{461.000}}\cell
+\cellx3540
+\qr {{11.317}}\cell
+\cellx4760
+\qr {{11.287}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{67.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Varietal Age for maize varieties grown by farmers }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ var age}}\cell
+\cellx2320
+\qr {{2106.000}}\cell
+\cellx3540
+\qr {{45.752}}\cell
+\cellx4760
+\qr {{24.833}}\cell
+\cellx5980
+\qr {{7.000}}\cell
+\cellx7200
+\qr {{67.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Varietal Age for maize varieties grown by farmers in control group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ var age}}\cell
+\cellx2320
+\qr {{356.000}}\cell
+\cellx3540
+\qr {{44.860}}\cell
+\cellx4760
+\qr {{24.786}}\cell
+\cellx5980
+\qr {{10.000}}\cell
+\cellx7200
+\qr {{67.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Varietal Age for maize varieties grown by farmers in trial pack group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ var age}}\cell
+\cellx2320
+\qr {{1396.000}}\cell
+\cellx3540
+\qr {{46.205}}\cell
+\cellx4760
+\qr {{24.824}}\cell
+\cellx5980
+\qr {{7.000}}\cell
+\cellx7200
+\qr {{67.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Varietal Age for maize varieties grown by farmers in consumption group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ var age}}\cell
+\cellx2320
+\qr {{706.000}}\cell
+\cellx3540
+\qr {{46.551}}\cell
+\cellx4760
+\qr {{24.664}}\cell
+\cellx5980
+\qr {{7.000}}\cell
+\cellx7200
+\qr {{67.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Varietal Age for maize varieties grown by farmers in male headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ var age}}\cell
+\cellx2320
+\qr {{1696.000}}\cell
+\cellx3540
+\qr {{44.080}}\cell
+\cellx4760
+\qr {{25.091}}\cell
+\cellx5980
+\qr {{9.000}}\cell
+\cellx7200
+\qr {{67.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Varietal Age for maize varieties grown by farmers in female headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ var age}}\cell
+\cellx2320
+\qr {{410.000}}\cell
+\cellx3540
+\qr {{52.668}}\cell
+\cellx4760
+\qr {{22.479}}\cell
+\cellx5980
+\qr {{7.000}}\cell
+\cellx7200
+\qr {{67.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Grown variety rating/1 to 5/ for the top 3 preferred production triats }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ yield rate}}\cell
+\cellx2320
+\qr {{2317.000}}\cell
+\cellx3540
+\qr {{3.069}}\cell
+\cellx4760
+\qr {{0.999}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{5.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ erly mat}}\cell
+\cellx2320
+\qr {{2302.000}}\cell
+\cellx3540
+\qr {{3.111}}\cell
+\cellx4760
+\qr {{1.035}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{5.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1100
+\fs20\pard\intbl\ql {{ drt tol}}\cell
+\clbrdrb\brdrw15\brdrs\cellx2320
+\qr {{2306.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3540
+\qr {{2.770}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4760
+\qr {{0.990}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5980
+\qr {{1.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx7200
+\qr {{5.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Grown variety rating/1 to 5/ for the top 3 preferred production triats in control group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ yield rate}}\cell
+\cellx2320
+\qr {{389.000}}\cell
+\cellx3540
+\qr {{3.008}}\cell
+\cellx4760
+\qr {{0.980}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{5.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ erly mat}}\cell
+\cellx2320
+\qr {{390.000}}\cell
+\cellx3540
+\qr {{3.141}}\cell
+\cellx4760
+\qr {{0.987}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{5.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1100
+\fs20\pard\intbl\ql {{ drt tol}}\cell
+\clbrdrb\brdrw15\brdrs\cellx2320
+\qr {{389.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3540
+\qr {{2.776}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4760
+\qr {{0.919}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5980
+\qr {{1.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx7200
+\qr {{5.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Grown variety rating/1 to 5/ for the top 3 preferred production triats in trial pack group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ yield rate}}\cell
+\cellx2320
+\qr {{1539.000}}\cell
+\cellx3540
+\qr {{3.063}}\cell
+\cellx4760
+\qr {{0.994}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{5.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ erly mat}}\cell
+\cellx2320
+\qr {{1526.000}}\cell
+\cellx3540
+\qr {{3.113}}\cell
+\cellx4760
+\qr {{1.042}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{5.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1100
+\fs20\pard\intbl\ql {{ drt tol}}\cell
+\clbrdrb\brdrw15\brdrs\cellx2320
+\qr {{1527.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3540
+\qr {{2.734}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4760
+\qr {{0.999}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5980
+\qr {{1.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx7200
+\qr {{5.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Grown variety rating/1 to 5/ for the top 3 preferred production triats in consumption group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ yield rate}}\cell
+\cellx2320
+\qr {{779.000}}\cell
+\cellx3540
+\qr {{3.099}}\cell
+\cellx4760
+\qr {{0.998}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{5.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ erly mat}}\cell
+\cellx2320
+\qr {{774.000}}\cell
+\cellx3540
+\qr {{3.078}}\cell
+\cellx4760
+\qr {{1.063}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{5.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1100
+\fs20\pard\intbl\ql {{ drt tol}}\cell
+\clbrdrb\brdrw15\brdrs\cellx2320
+\qr {{777.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3540
+\qr {{2.813}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4760
+\qr {{1.014}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5980
+\qr {{1.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx7200
+\qr {{5.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Grown variety rating/1 to 5/ for the top 3 preferred production triats in male headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ yield rate}}\cell
+\cellx2320
+\qr {{1842.000}}\cell
+\cellx3540
+\qr {{3.110}}\cell
+\cellx4760
+\qr {{1.007}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{5.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ erly mat}}\cell
+\cellx2320
+\qr {{1834.000}}\cell
+\cellx3540
+\qr {{3.167}}\cell
+\cellx4760
+\qr {{1.026}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{5.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1100
+\fs20\pard\intbl\ql {{ drt tol}}\cell
+\clbrdrb\brdrw15\brdrs\cellx2320
+\qr {{1833.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3540
+\qr {{2.771}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4760
+\qr {{0.983}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5980
+\qr {{1.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx7200
+\qr {{5.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Grown variety rating/1 to 5/ for the top 3 preferred production triats in female headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ yield rate}}\cell
+\cellx2320
+\qr {{475.000}}\cell
+\cellx3540
+\qr {{2.912}}\cell
+\cellx4760
+\qr {{0.955}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{5.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ erly mat}}\cell
+\cellx2320
+\qr {{468.000}}\cell
+\cellx3540
+\qr {{2.891}}\cell
+\cellx4760
+\qr {{1.042}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{5.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1100
+\fs20\pard\intbl\ql {{ drt tol}}\cell
+\clbrdrb\brdrw15\brdrs\cellx2320
+\qr {{473.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3540
+\qr {{2.763}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4760
+\qr {{1.018}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5980
+\qr {{1.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx7200
+\qr {{5.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Grown variety rating/1 to 5/ for its taste }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ taste}}\cell
+\cellx2320
+\qr {{2311.000}}\cell
+\cellx3540
+\qr {{4.023}}\cell
+\cellx4760
+\qr {{0.805}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{5.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Grown variety rating/1 to 5/ for its taste in control group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ taste}}\cell
+\cellx2320
+\qr {{390.000}}\cell
+\cellx3540
+\qr {{3.995}}\cell
+\cellx4760
+\qr {{0.814}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{5.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Grown variety rating/1 to 5/ for its taste in trial pack group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ taste}}\cell
+\cellx2320
+\qr {{1532.000}}\cell
+\cellx3540
+\qr {{4.023}}\cell
+\cellx4760
+\qr {{0.805}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{5.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Grown variety rating/1 to 5/ for its taste in consumption group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ taste}}\cell
+\cellx2320
+\qr {{779.000}}\cell
+\cellx3540
+\qr {{4.065}}\cell
+\cellx4760
+\qr {{0.793}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{5.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Grown variety rating/1 to 5/ for its taste in male headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ taste}}\cell
+\cellx2320
+\qr {{1838.000}}\cell
+\cellx3540
+\qr {{4.018}}\cell
+\cellx4760
+\qr {{0.808}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{5.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Grown variety rating/1 to 5/ for its taste in female headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ taste}}\cell
+\cellx2320
+\qr {{473.000}}\cell
+\cellx3540
+\qr {{4.042}}\cell
+\cellx4760
+\qr {{0.791}}\cell
+\cellx5980
+\qr {{1.000}}\cell
+\cellx7200
+\qr {{5.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line use of crop residue }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2420
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3640
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4860
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6080
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7300
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx8520
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2420
+\fs20\pard\intbl\ql {{ feed own animals}}\cell
+\cellx3640
+\qr {{2319.000}}\cell
+\cellx4860
+\qr {{4.587}}\cell
+\cellx6080
+\qr {{14.815}}\cell
+\cellx7300
+\qr {{0.000}}\cell
+\cellx8520
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2420
+\fs20\pard\intbl\ql {{ sold}}\cell
+\cellx3640
+\qr {{2319.000}}\cell
+\cellx4860
+\qr {{0.612}}\cell
+\cellx6080
+\qr {{5.885}}\cell
+\cellx7300
+\qr {{0.000}}\cell
+\cellx8520
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2420
+\fs20\pard\intbl\ql {{ left field for ani~s}}\cell
+\cellx3640
+\qr {{2319.000}}\cell
+\cellx4860
+\qr {{2.436}}\cell
+\cellx6080
+\qr {{11.518}}\cell
+\cellx7300
+\qr {{0.000}}\cell
+\cellx8520
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2420
+\fs20\pard\intbl\ql {{ mulch}}\cell
+\cellx3640
+\qr {{2319.000}}\cell
+\cellx4860
+\qr {{46.106}}\cell
+\cellx6080
+\qr {{42.414}}\cell
+\cellx7300
+\qr {{0.000}}\cell
+\cellx8520
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx2420
+\fs20\pard\intbl\ql {{ burnt in field}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3640
+\qr {{2319.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4860
+\qr {{16.878}}\cell
+\clbrdrb\brdrw15\brdrs\cellx6080
+\qr {{33.663}}\cell
+\clbrdrb\brdrw15\brdrs\cellx7300
+\qr {{0.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx8520
+\qr {{100.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line share/% of residues fed the livestock }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1650
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2870
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4090
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5310
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6530
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7750
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1650
+\fs20\pard\intbl\ql {{ fed to cattle}}\cell
+\cellx2870
+\qr {{283.000}}\cell
+\cellx4090
+\qr {{60.795}}\cell
+\cellx5310
+\qr {{40.476}}\cell
+\cellx6530
+\qr {{0.000}}\cell
+\cellx7750
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1650
+\fs20\pard\intbl\ql {{ fed to sheep}}\cell
+\cellx2870
+\qr {{283.000}}\cell
+\cellx4090
+\qr {{0.247}}\cell
+\cellx5310
+\qr {{2.293}}\cell
+\cellx6530
+\qr {{0.000}}\cell
+\cellx7750
+\qr {{30.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1650
+\fs20\pard\intbl\ql {{ fed to goats}}\cell
+\cellx2870
+\qr {{283.000}}\cell
+\cellx4090
+\qr {{23.675}}\cell
+\cellx5310
+\qr {{32.905}}\cell
+\cellx6530
+\qr {{0.000}}\cell
+\cellx7750
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1650
+\fs20\pard\intbl\ql {{ fed to pigs}}\cell
+\cellx2870
+\qr {{283.000}}\cell
+\cellx4090
+\qr {{10.618}}\cell
+\cellx5310
+\qr {{26.599}}\cell
+\cellx6530
+\qr {{0.000}}\cell
+\cellx7750
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1650
+\fs20\pard\intbl\ql {{ fed to otherlvs}}\cell
+\clbrdrb\brdrw15\brdrs\cellx2870
+\qr {{283.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4090
+\qr {{4.664}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5310
+\qr {{17.452}}\cell
+\clbrdrb\brdrw15\brdrs\cellx6530
+\qr {{0.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx7750
+\qr {{100.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line A woman individually owns or manages a maize plot }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ woman own}}\cell
+\cellx2320
+\qr {{2319.000}}\cell
+\cellx3540
+\qr {{0.254}}\cell
+\cellx4760
+\qr {{0.436}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{1.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1100
+\fs20\pard\intbl\ql {{ woman man}}\cell
+\clbrdrb\brdrw15\brdrs\cellx2320
+\qr {{2319.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3540
+\qr {{0.279}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4760
+\qr {{0.448}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5980
+\qr {{0.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx7200
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line A woman individually owns or manages a maize plot in control group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ woman own}}\cell
+\cellx2320
+\qr {{390.000}}\cell
+\cellx3540
+\qr {{0.226}}\cell
+\cellx4760
+\qr {{0.419}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{1.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1100
+\fs20\pard\intbl\ql {{ woman man}}\cell
+\clbrdrb\brdrw15\brdrs\cellx2320
+\qr {{390.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3540
+\qr {{0.238}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4760
+\qr {{0.427}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5980
+\qr {{0.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx7200
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line A woman individually owns or manages a maize plot in trial pack group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ woman own}}\cell
+\cellx2320
+\qr {{1539.000}}\cell
+\cellx3540
+\qr {{0.267}}\cell
+\cellx4760
+\qr {{0.443}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{1.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1100
+\fs20\pard\intbl\ql {{ woman man}}\cell
+\clbrdrb\brdrw15\brdrs\cellx2320
+\qr {{1539.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3540
+\qr {{0.288}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4760
+\qr {{0.453}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5980
+\qr {{0.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx7200
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line A woman individually owns or manages a maize plot in consumption group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ woman own}}\cell
+\cellx2320
+\qr {{780.000}}\cell
+\cellx3540
+\qr {{0.260}}\cell
+\cellx4760
+\qr {{0.439}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{1.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1100
+\fs20\pard\intbl\ql {{ woman man}}\cell
+\clbrdrb\brdrw15\brdrs\cellx2320
+\qr {{780.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3540
+\qr {{0.295}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4760
+\qr {{0.456}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5980
+\qr {{0.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx7200
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line A woman individually owns or manages a maize plot in male headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ woman own}}\cell
+\cellx2320
+\qr {{1844.000}}\cell
+\cellx3540
+\qr {{0.139}}\cell
+\cellx4760
+\qr {{0.346}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{1.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1100
+\fs20\pard\intbl\ql {{ woman man}}\cell
+\clbrdrb\brdrw15\brdrs\cellx2320
+\qr {{1844.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3540
+\qr {{0.159}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4760
+\qr {{0.366}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5980
+\qr {{0.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx7200
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line A woman individually owns or manages a maize plot in female headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1100
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2320
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3540
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4760
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5980
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7200
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1100
+\fs20\pard\intbl\ql {{ woman own}}\cell
+\cellx2320
+\qr {{475.000}}\cell
+\cellx3540
+\qr {{0.703}}\cell
+\cellx4760
+\qr {{0.457}}\cell
+\cellx5980
+\qr {{0.000}}\cell
+\cellx7200
+\qr {{1.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1100
+\fs20\pard\intbl\ql {{ woman man}}\cell
+\clbrdrb\brdrw15\brdrs\cellx2320
+\qr {{475.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3540
+\qr {{0.741}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4760
+\qr {{0.439}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5980
+\qr {{0.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx7200
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Size of maize plot individually owned or managed by a woman }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2090
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3310
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4530
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5750
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6970
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx8190
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2090
+\fs20\pard\intbl\ql {{ plot size woman own}}\cell
+\cellx3310
+\qr {{590.000}}\cell
+\cellx4530
+\qr {{0.372}}\cell
+\cellx5750
+\qr {{0.263}}\cell
+\cellx6970
+\qr {{0.020}}\cell
+\cellx8190
+\qr {{2.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx2090
+\fs20\pard\intbl\ql {{ plot size woman man}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3310
+\qr {{646.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4530
+\qr {{0.373}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5750
+\qr {{0.270}}\cell
+\clbrdrb\brdrw15\brdrs\cellx6970
+\qr {{0.020}}\cell
+\clbrdrb\brdrw15\brdrs\cellx8190
+\qr {{2.800}}\cell
+\row}
+
+
+{\fs20\b\qc\line Size of maize plot individually owned or managed by a woman in control group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2090
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3310
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4530
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5750
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6970
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx8190
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2090
+\fs20\pard\intbl\ql {{ plot size woman own}}\cell
+\cellx3310
+\qr {{88.000}}\cell
+\cellx4530
+\qr {{0.400}}\cell
+\cellx5750
+\qr {{0.307}}\cell
+\cellx6970
+\qr {{0.036}}\cell
+\cellx8190
+\qr {{1.600}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx2090
+\fs20\pard\intbl\ql {{ plot size woman man}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3310
+\qr {{93.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4530
+\qr {{0.379}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5750
+\qr {{0.294}}\cell
+\clbrdrb\brdrw15\brdrs\cellx6970
+\qr {{0.036}}\cell
+\clbrdrb\brdrw15\brdrs\cellx8190
+\qr {{1.600}}\cell
+\row}
+
+
+{\fs20\b\qc\line Size of maize plot individually owned or managed by a woman in trial pack group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2090
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3310
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4530
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5750
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6970
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx8190
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2090
+\fs20\pard\intbl\ql {{ plot size woman own}}\cell
+\cellx3310
+\qr {{411.000}}\cell
+\cellx4530
+\qr {{0.368}}\cell
+\cellx5750
+\qr {{0.254}}\cell
+\cellx6970
+\qr {{0.036}}\cell
+\cellx8190
+\qr {{2.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx2090
+\fs20\pard\intbl\ql {{ plot size woman man}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3310
+\qr {{444.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4530
+\qr {{0.371}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5750
+\qr {{0.270}}\cell
+\clbrdrb\brdrw15\brdrs\cellx6970
+\qr {{0.036}}\cell
+\clbrdrb\brdrw15\brdrs\cellx8190
+\qr {{2.800}}\cell
+\row}
+
+
+{\fs20\b\qc\line Size of maize plot individually owned or managed by a woman in consumption group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2090
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3310
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4530
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5750
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6970
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx8190
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2090
+\fs20\pard\intbl\ql {{ plot size woman own}}\cell
+\cellx3310
+\qr {{203.000}}\cell
+\cellx4530
+\qr {{0.376}}\cell
+\cellx5750
+\qr {{0.265}}\cell
+\cellx6970
+\qr {{0.020}}\cell
+\cellx8190
+\qr {{2.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx2090
+\fs20\pard\intbl\ql {{ plot size woman man}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3310
+\qr {{230.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4530
+\qr {{0.385}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5750
+\qr {{0.259}}\cell
+\clbrdrb\brdrw15\brdrs\cellx6970
+\qr {{0.020}}\cell
+\clbrdrb\brdrw15\brdrs\cellx8190
+\qr {{2.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line Size of maize plot individually owned or managed by a woman in male headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2090
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3310
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4530
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5750
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6970
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx8190
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2090
+\fs20\pard\intbl\ql {{ plot size woman own}}\cell
+\cellx3310
+\qr {{256.000}}\cell
+\cellx4530
+\qr {{0.378}}\cell
+\cellx5750
+\qr {{0.257}}\cell
+\cellx6970
+\qr {{0.020}}\cell
+\cellx8190
+\qr {{2.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx2090
+\fs20\pard\intbl\ql {{ plot size woman man}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3310
+\qr {{294.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4530
+\qr {{0.382}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5750
+\qr {{0.282}}\cell
+\clbrdrb\brdrw15\brdrs\cellx6970
+\qr {{0.020}}\cell
+\clbrdrb\brdrw15\brdrs\cellx8190
+\qr {{2.800}}\cell
+\row}
+
+
+{\fs20\b\qc\line Size of maize plot individually owned or managed by a woman in female headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2090
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3310
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4530
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5750
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6970
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx8190
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx2090
+\fs20\pard\intbl\ql {{ plot size woman own}}\cell
+\cellx3310
+\qr {{334.000}}\cell
+\cellx4530
+\qr {{0.366}}\cell
+\cellx5750
+\qr {{0.267}}\cell
+\cellx6970
+\qr {{0.036}}\cell
+\cellx8190
+\qr {{1.600}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx2090
+\fs20\pard\intbl\ql {{ plot size woman man}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3310
+\qr {{352.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4530
+\qr {{0.365}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5750
+\qr {{0.260}}\cell
+\clbrdrb\brdrw15\brdrs\cellx6970
+\qr {{0.036}}\cell
+\clbrdrb\brdrw15\brdrs\cellx8190
+\qr {{1.600}}\cell
+\row}
+
+
+{\fs20\b\qc\line A female co-head individually decides on variety and harvest }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1980
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3200
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4420
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5640
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6860
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx8080
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1980
+\fs20\pard\intbl\ql {{ woman decides Var}}\cell
+\cellx3200
+\qr {{2319.000}}\cell
+\cellx4420
+\qr {{0.238}}\cell
+\cellx5640
+\qr {{0.426}}\cell
+\cellx6860
+\qr {{0.000}}\cell
+\cellx8080
+\qr {{1.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1980
+\fs20\pard\intbl\ql {{ woman decides harv}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3200
+\qr {{2319.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4420
+\qr {{0.235}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5640
+\qr {{0.424}}\cell
+\clbrdrb\brdrw15\brdrs\cellx6860
+\qr {{0.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx8080
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line A female co-head individually decides on variety and harvest in control group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1980
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3200
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4420
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5640
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6860
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx8080
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1980
+\fs20\pard\intbl\ql {{ woman decides Var}}\cell
+\cellx3200
+\qr {{390.000}}\cell
+\cellx4420
+\qr {{0.208}}\cell
+\cellx5640
+\qr {{0.406}}\cell
+\cellx6860
+\qr {{0.000}}\cell
+\cellx8080
+\qr {{1.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1980
+\fs20\pard\intbl\ql {{ woman decides harv}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3200
+\qr {{390.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4420
+\qr {{0.223}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5640
+\qr {{0.417}}\cell
+\clbrdrb\brdrw15\brdrs\cellx6860
+\qr {{0.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx8080
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line A female co-head individually decides on variety and harvest in trial pack group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1980
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3200
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4420
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5640
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6860
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx8080
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1980
+\fs20\pard\intbl\ql {{ woman decides Var}}\cell
+\cellx3200
+\qr {{1539.000}}\cell
+\cellx4420
+\qr {{0.243}}\cell
+\cellx5640
+\qr {{0.429}}\cell
+\cellx6860
+\qr {{0.000}}\cell
+\cellx8080
+\qr {{1.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1980
+\fs20\pard\intbl\ql {{ woman decides harv}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3200
+\qr {{1539.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4420
+\qr {{0.237}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5640
+\qr {{0.425}}\cell
+\clbrdrb\brdrw15\brdrs\cellx6860
+\qr {{0.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx8080
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line A female co-head individually decides on variety and harvest in consumption group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1980
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3200
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4420
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5640
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6860
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx8080
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1980
+\fs20\pard\intbl\ql {{ woman decides Var}}\cell
+\cellx3200
+\qr {{780.000}}\cell
+\cellx4420
+\qr {{0.253}}\cell
+\cellx5640
+\qr {{0.435}}\cell
+\cellx6860
+\qr {{0.000}}\cell
+\cellx8080
+\qr {{1.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1980
+\fs20\pard\intbl\ql {{ woman decides harv}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3200
+\qr {{780.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4420
+\qr {{0.250}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5640
+\qr {{0.433}}\cell
+\clbrdrb\brdrw15\brdrs\cellx6860
+\qr {{0.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx8080
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line A female co-head individually decides on variety and harvest in male headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1980
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3200
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4420
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5640
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6860
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx8080
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1980
+\fs20\pard\intbl\ql {{ woman decides Var}}\cell
+\cellx3200
+\qr {{1844.000}}\cell
+\cellx4420
+\qr {{0.125}}\cell
+\cellx5640
+\qr {{0.331}}\cell
+\cellx6860
+\qr {{0.000}}\cell
+\cellx8080
+\qr {{1.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1980
+\fs20\pard\intbl\ql {{ woman decides harv}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3200
+\qr {{1844.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4420
+\qr {{0.119}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5640
+\qr {{0.324}}\cell
+\clbrdrb\brdrw15\brdrs\cellx6860
+\qr {{0.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx8080
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line A female co-head individually decides on variety and harvest in female headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1980
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3200
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx4420
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5640
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6860
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx8080
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1980
+\fs20\pard\intbl\ql {{ woman decides Var}}\cell
+\cellx3200
+\qr {{475.000}}\cell
+\cellx4420
+\qr {{0.676}}\cell
+\cellx5640
+\qr {{0.469}}\cell
+\cellx6860
+\qr {{0.000}}\cell
+\cellx8080
+\qr {{1.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1980
+\fs20\pard\intbl\ql {{ woman decides harv}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3200
+\qr {{475.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx4420
+\qr {{0.688}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5640
+\qr {{0.464}}\cell
+\clbrdrb\brdrw15\brdrs\cellx6860
+\qr {{0.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx8080
+\qr {{1.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line % of woman days as a share of total activity days }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1430
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2650
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3870
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5090
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6310
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7530
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days f}}\cell
+\cellx2650
+\qr {{2313.000}}\cell
+\cellx3870
+\qr {{79.104}}\cell
+\cellx5090
+\qr {{38.161}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days p}}\cell
+\cellx2650
+\qr {{2318.000}}\cell
+\cellx3870
+\qr {{90.558}}\cell
+\cellx5090
+\qr {{28.455}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days w}}\cell
+\cellx2650
+\qr {{2313.000}}\cell
+\cellx3870
+\qr {{85.478}}\cell
+\cellx5090
+\qr {{32.875}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days ft}}\cell
+\cellx2650
+\qr {{684.000}}\cell
+\cellx3870
+\qr {{84.199}}\cell
+\cellx5090
+\qr {{35.618}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days s}}\cell
+\cellx2650
+\qr {{723.000}}\cell
+\cellx3870
+\qr {{43.729}}\cell
+\cellx5090
+\qr {{49.493}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days h}}\cell
+\cellx2650
+\qr {{2296.000}}\cell
+\cellx3870
+\qr {{88.944}}\cell
+\cellx5090
+\qr {{30.654}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days d}}\cell
+\cellx2650
+\qr {{2194.000}}\cell
+\cellx3870
+\qr {{88.543}}\cell
+\cellx5090
+\qr {{30.256}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days th}}\cell
+\cellx2650
+\qr {{2271.000}}\cell
+\cellx3870
+\qr {{74.609}}\cell
+\cellx5090
+\qr {{43.159}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1430
+\fs20\pard\intbl\ql {{ woman days m}}\cell
+\clbrdrb\brdrw15\brdrs\cellx2650
+\qr {{959.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3870
+\qr {{50.709}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5090
+\qr {{49.795}}\cell
+\clbrdrb\brdrw15\brdrs\cellx6310
+\qr {{0.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx7530
+\qr {{100.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line % of woman days as a share of total activity days in control group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1430
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2650
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3870
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5090
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6310
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7530
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days f}}\cell
+\cellx2650
+\qr {{388.000}}\cell
+\cellx3870
+\qr {{82.032}}\cell
+\cellx5090
+\qr {{35.031}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days p}}\cell
+\cellx2650
+\qr {{389.000}}\cell
+\cellx3870
+\qr {{90.596}}\cell
+\cellx5090
+\qr {{27.396}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days w}}\cell
+\cellx2650
+\qr {{389.000}}\cell
+\cellx3870
+\qr {{87.368}}\cell
+\cellx5090
+\qr {{29.598}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days ft}}\cell
+\cellx2650
+\qr {{102.000}}\cell
+\cellx3870
+\qr {{83.515}}\cell
+\cellx5090
+\qr {{34.411}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days s}}\cell
+\cellx2650
+\qr {{129.000}}\cell
+\cellx3870
+\qr {{34.109}}\cell
+\cellx5090
+\qr {{47.180}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days h}}\cell
+\cellx2650
+\qr {{387.000}}\cell
+\cellx3870
+\qr {{90.627}}\cell
+\cellx5090
+\qr {{27.670}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days d}}\cell
+\cellx2650
+\qr {{368.000}}\cell
+\cellx3870
+\qr {{88.493}}\cell
+\cellx5090
+\qr {{28.724}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days th}}\cell
+\cellx2650
+\qr {{384.000}}\cell
+\cellx3870
+\qr {{76.661}}\cell
+\cellx5090
+\qr {{41.735}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1430
+\fs20\pard\intbl\ql {{ woman days m}}\cell
+\clbrdrb\brdrw15\brdrs\cellx2650
+\qr {{165.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3870
+\qr {{52.323}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5090
+\qr {{49.349}}\cell
+\clbrdrb\brdrw15\brdrs\cellx6310
+\qr {{0.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx7530
+\qr {{100.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line % of woman days as a share of total activity days in trial pack group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1430
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2650
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3870
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5090
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6310
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7530
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days f}}\cell
+\cellx2650
+\qr {{1536.000}}\cell
+\cellx3870
+\qr {{78.702}}\cell
+\cellx5090
+\qr {{38.561}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days p}}\cell
+\cellx2650
+\qr {{1539.000}}\cell
+\cellx3870
+\qr {{90.040}}\cell
+\cellx5090
+\qr {{29.290}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days w}}\cell
+\cellx2650
+\qr {{1535.000}}\cell
+\cellx3870
+\qr {{84.783}}\cell
+\cellx5090
+\qr {{33.819}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days ft}}\cell
+\cellx2650
+\qr {{471.000}}\cell
+\cellx3870
+\qr {{84.161}}\cell
+\cellx5090
+\qr {{36.035}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days s}}\cell
+\cellx2650
+\qr {{471.000}}\cell
+\cellx3870
+\qr {{45.596}}\cell
+\cellx5090
+\qr {{49.794}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days h}}\cell
+\cellx2650
+\qr {{1526.000}}\cell
+\cellx3870
+\qr {{88.080}}\cell
+\cellx5090
+\qr {{31.824}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days d}}\cell
+\cellx2650
+\qr {{1457.000}}\cell
+\cellx3870
+\qr {{88.307}}\cell
+\cellx5090
+\qr {{30.875}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days th}}\cell
+\cellx2650
+\qr {{1510.000}}\cell
+\cellx3870
+\qr {{74.465}}\cell
+\cellx5090
+\qr {{43.282}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1430
+\fs20\pard\intbl\ql {{ woman days m}}\cell
+\clbrdrb\brdrw15\brdrs\cellx2650
+\qr {{625.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3870
+\qr {{49.813}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5090
+\qr {{49.933}}\cell
+\clbrdrb\brdrw15\brdrs\cellx6310
+\qr {{0.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx7530
+\qr {{100.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line % of woman days as a share of total activity days in consumption group }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1430
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2650
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3870
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5090
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6310
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7530
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days f}}\cell
+\cellx2650
+\qr {{779.000}}\cell
+\cellx3870
+\qr {{80.143}}\cell
+\cellx5090
+\qr {{37.550}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days p}}\cell
+\cellx2650
+\qr {{780.000}}\cell
+\cellx3870
+\qr {{93.565}}\cell
+\cellx5090
+\qr {{24.102}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days w}}\cell
+\cellx2650
+\qr {{779.000}}\cell
+\cellx3870
+\qr {{86.812}}\cell
+\cellx5090
+\qr {{31.456}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days ft}}\cell
+\cellx2650
+\qr {{227.000}}\cell
+\cellx3870
+\qr {{86.852}}\cell
+\cellx5090
+\qr {{33.096}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days s}}\cell
+\cellx2650
+\qr {{234.000}}\cell
+\cellx3870
+\qr {{44.615}}\cell
+\cellx5090
+\qr {{49.712}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days h}}\cell
+\cellx2650
+\qr {{770.000}}\cell
+\cellx3870
+\qr {{91.719}}\cell
+\cellx5090
+\qr {{27.005}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days d}}\cell
+\cellx2650
+\qr {{748.000}}\cell
+\cellx3870
+\qr {{91.283}}\cell
+\cellx5090
+\qr {{26.765}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days th}}\cell
+\cellx2650
+\qr {{757.000}}\cell
+\cellx3870
+\qr {{77.507}}\cell
+\cellx5090
+\qr {{41.553}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1430
+\fs20\pard\intbl\ql {{ woman days m}}\cell
+\clbrdrb\brdrw15\brdrs\cellx2650
+\qr {{315.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3870
+\qr {{54.169}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5090
+\qr {{49.818}}\cell
+\clbrdrb\brdrw15\brdrs\cellx6310
+\qr {{0.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx7530
+\qr {{100.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line % of woman days as a share of total activity days in male headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1430
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2650
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3870
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5090
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6310
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7530
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days f}}\cell
+\cellx2650
+\qr {{1840.000}}\cell
+\cellx3870
+\qr {{76.732}}\cell
+\cellx5090
+\qr {{39.704}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days p}}\cell
+\cellx2650
+\qr {{1843.000}}\cell
+\cellx3870
+\qr {{89.265}}\cell
+\cellx5090
+\qr {{30.149}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days w}}\cell
+\cellx2650
+\qr {{1838.000}}\cell
+\cellx3870
+\qr {{84.074}}\cell
+\cellx5090
+\qr {{34.225}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days ft}}\cell
+\cellx2650
+\qr {{587.000}}\cell
+\cellx3870
+\qr {{83.036}}\cell
+\cellx5090
+\qr {{36.619}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days s}}\cell
+\cellx2650
+\qr {{649.000}}\cell
+\cellx3870
+\qr {{42.089}}\cell
+\cellx5090
+\qr {{49.245}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days h}}\cell
+\cellx2650
+\qr {{1833.000}}\cell
+\cellx3870
+\qr {{87.870}}\cell
+\cellx5090
+\qr {{31.939}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days d}}\cell
+\cellx2650
+\qr {{1749.000}}\cell
+\cellx3870
+\qr {{87.301}}\cell
+\cellx5090
+\qr {{31.701}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days th}}\cell
+\cellx2650
+\qr {{1810.000}}\cell
+\cellx3870
+\qr {{72.182}}\cell
+\cellx5090
+\qr {{44.451}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1430
+\fs20\pard\intbl\ql {{ woman days m}}\cell
+\clbrdrb\brdrw15\brdrs\cellx2650
+\qr {{808.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3870
+\qr {{46.621}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5090
+\qr {{49.678}}\cell
+\clbrdrb\brdrw15\brdrs\cellx6310
+\qr {{0.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx7530
+\qr {{100.000}}\cell
+\row}
+
+
+{\fs20\b\qc\line % of woman days as a share of total activity days in female headed hhs }{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx1430
+\fs20\pard\intbl\qr { }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx2650
+\fs20\pard\intbl\qr {{ N}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx3870
+\fs20\pard\intbl\qr {{ Mean}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx5090
+\fs20\pard\intbl\qr {{ SD}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx6310
+\fs20\pard\intbl\qr {{ Min}}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs  \cellx7530
+\fs20\pard\intbl\qr {{ Max}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days f}}\cell
+\cellx2650
+\qr {{473.000}}\cell
+\cellx3870
+\qr {{88.328}}\cell
+\cellx5090
+\qr {{29.734}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days p}}\cell
+\cellx2650
+\qr {{475.000}}\cell
+\cellx3870
+\qr {{95.573}}\cell
+\cellx5090
+\qr {{19.846}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days w}}\cell
+\cellx2650
+\qr {{475.000}}\cell
+\cellx3870
+\qr {{90.911}}\cell
+\cellx5090
+\qr {{26.359}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days ft}}\cell
+\cellx2650
+\qr {{97.000}}\cell
+\cellx3870
+\qr {{91.237}}\cell
+\cellx5090
+\qr {{27.960}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days s}}\cell
+\cellx2650
+\qr {{74.000}}\cell
+\cellx3870
+\qr {{58.108}}\cell
+\cellx5090
+\qr {{49.675}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days h}}\cell
+\cellx2650
+\qr {{463.000}}\cell
+\cellx3870
+\qr {{93.197}}\cell
+\cellx5090
+\qr {{24.494}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days d}}\cell
+\cellx2650
+\qr {{445.000}}\cell
+\cellx3870
+\qr {{93.427}}\cell
+\cellx5090
+\qr {{23.131}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1430
+\fs20\pard\intbl\ql {{ woman days th}}\cell
+\cellx2650
+\qr {{461.000}}\cell
+\cellx3870
+\qr {{84.134}}\cell
+\cellx5090
+\qr {{36.159}}\cell
+\cellx6310
+\qr {{0.000}}\cell
+\cellx7530
+\qr {{100.000}}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx1430
+\fs20\pard\intbl\ql {{ woman days m}}\cell
+\clbrdrb\brdrw15\brdrs\cellx2650
+\qr {{151.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx3870
+\qr {{72.583}}\cell
+\clbrdrb\brdrw15\brdrs\cellx5090
+\qr {{44.579}}\cell
+\clbrdrb\brdrw15\brdrs\cellx6310
+\qr {{0.000}}\cell
+\clbrdrb\brdrw15\brdrs\cellx7530
+\qr {{100.000}}\cell
+\row}
+
+
+\writepositionforappend
+}}
