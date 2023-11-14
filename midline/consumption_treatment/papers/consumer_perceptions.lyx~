@@ -101,8 +101,8 @@ thanks{Development Strategy and Governance Division, International Food
 \end_layout
 
 \begin_layout Title
-Do consumer perceptions about improved crop varieties align with reality?
- A gendered analysis from cooking and tasting demonstrations in Uganda
+Do consumer perceptions about local and improved crop varieties align with
+ reality? Evidence from maize cooking and tasting events in Uganda
 \end_layout
 
 \begin_layout Abstract
@@ -443,324 +443,6 @@ end{center}
 
 \begin_layout Subsubsection
 Quantitative data from the cooking and tasting demonstrations
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float table
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Summary statistics from the cooking and tasting demonstrations, and the
- participants
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tabular}{rlllll}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-  	&	Total	&	  Mean	&	  SD	&	  Min	&	  Max	
-\backslash
-
-\backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-cline{2-6}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-multicolumn{1}{r}{
-\backslash
-textit{Cooking and tasting demonstrations (demos)}} 
-\backslash
-
-\backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-Number of cooking and tasting demonstrations	&	78	&	-	&	-	&	-	&	-	
-\backslash
-
-\backslash
-  
-\end_layout
-
-\begin_layout Plain Layout
-
-Number of participants in the demos	&	1118	&	14.33	&	3.05	&	8	&	20	
-\backslash
-
-\backslash
-  
-\end_layout
-
-\begin_layout Plain Layout
-
-Number of women participants	&	574	&	7.36	&	2.27	&	2	&	13	
-\backslash
-
-\backslash
-  
-\end_layout
-
-\begin_layout Plain Layout
-
-Number of men participants	&	544	&	6.97	&	2.61	&	1	&	14	
-\backslash
-
-\backslash
-  
-\end_layout
-
-\begin_layout Plain Layout
-
-Proportion of women participants	&	-	&	0.52	&	0.15	&	0.15	&	0.9	
-\backslash
-
-\backslash
-  
-\end_layout
-
-\begin_layout Plain Layout
-
-Proportion of women dominated demos	&	35	&	0.45	&	0.5	&	0	&	1	
-\backslash
-
-\backslash
-  
-\end_layout
-
-\begin_layout Plain Layout
-
-Number of women in non-women dominated demos	&	267	&	6.21	&	1.99	&	2	&	9	
-\backslash
-
-\backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-Mean difference (ttest) of women in 	&	78	&	2.56***	&	-	&	-	&	-	
-\backslash
-
-\backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-non-women and women-dominated demos	&		&		&		&		&		
-\backslash
-
-\backslash
-   
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-multicolumn{1}{r}{
-\backslash
-textit{Household characteristics (clustered at demo level)}} 
-\backslash
-
-\backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-Age (years) of household heads 	&	0	&	0	&	0	&	0	&	0	
-\backslash
-
-\backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-Household head is married	&	0	&	0	&	0	&	0	&	0	
-\backslash
-
-\backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-Number of years of formal schooling	&	0	&	0	&	0	&	0	&	0	
-\backslash
-
-\backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-Household head is female	&	0	&	0	&	0	&	0	&	0	
-\backslash
-
-\backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-Amount of land available for crop production	&	0	&	0	&	0	&	0	&	0	
-\backslash
-
-\backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-Distance (km) of homestead to nearest tarmac road 	&	0	&	0	&	0	&	0	&	0	
-\backslash
-
-\backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-Distance (km) of homestead to nearest 	&	0	&	0	&	0	&	0	&	0	
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-agro-input shop selling maize seed & & & & & 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Share of maize produce used for consumption	&	0	&	0	&	0	&	0	&	0	
-\backslash
-
-\backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{tabular}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{center}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
@@ -1158,11 +840,7 @@ end{center}
 \end_layout
 
 \begin_layout Subsection
-Consumer perceptions before cooking and tasting demo
-\end_layout
-
-\begin_layout Standard
-To be written here
+Summary statistics about the cooking demonstrations and participants
 \end_layout
 
 \begin_layout Standard
@@ -1175,8 +853,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Percentage (mean) of votes for local and improved varieties before cooking
- and tasting
+Summary statistics of the participants in the cooking and tasting demonstrations
+ (N=78 demos)
 \end_layout
 
 \end_inset
@@ -1199,7 +877,7 @@ begin{center}
 
 
 \backslash
-begin{tabular}{rlllll}
+begin{tabular}{rccccc}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1213,23 +891,11 @@ hline
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
-
-  		&	N	&	Mean:	&	Mean:	&	Mean	&	  p-value	
+	&	Sum	&	Mean	&	SD	&	Min	&	Max	
 \backslash
 
 \backslash
-   	&		&	Local	&	Improved	&	Difference	&		
-\backslash
-
-\backslash
- 	&		&	varieties	&	varieties	&		&		
-\backslash
-
-\backslash
- 
+    
 \end_layout
 
 \begin_layout Plain Layout
@@ -1250,88 +916,20 @@ cline{2-6}
 
 \begin_layout Plain Layout
 
-Overall votes (all traits)	&	78	&	39.47	&	60.53	&	-21.07	&	0.00	
+
+\backslash
+multicolumn{6}{c}{
+\backslash
+textit{About the household participants at the demos }} 
 \backslash
 
 \backslash
- 
+
 \end_layout
 
 \begin_layout Plain Layout
 
-Overall votes in women-dominated demos	&	35	&	40.92	&	59.08	&	-18.16	&	0.02	
-\backslash
-
-\backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-Overall votes in non-women-dominated demos	&	43	&	38.28	&	61.72	&	-23.43	&	0.01	
-\backslash
-
-\backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-Variety has a better color- votes	&	78	&	14.82	&	85.18	&	-70.35	&	0.00	
-\backslash
-
-\backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-Variety has a better aroma- votes	&	78	&	71.94	&	28.06	&	43.88	&	0.00	
-\backslash
-
-\backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-Variety is easier to cook- votes	&	78	&	31.72	&	68.28	&	-36.56	&	0.00	
-\backslash
-
-\backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-Variety cooks faster- votes	&	78	&	25.13	&	74.87	&	-49.74	&	0.00	
-\backslash
-
-\backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-Variety expands more- votes	&	78	&	41.29	&	58.71	&	-17.42	&	0.08	
-\backslash
-
-\backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-Variety tastes better- votes	&	78	&	65.59	&	34.41	&	31.18	&	0.00	
-\backslash
-
-\backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-Variety has a better texture-votes	&	78	&	20.75	&	79.25	&	-58.49	&	0.00	
+ Total number of participants	&	1118	&	14.33	&	3.05	&	8.00	&	20.00	
 \backslash
 
 \backslash
@@ -1340,127 +938,7 @@ Variety has a better texture-votes	&	78	&	20.75	&	79.25	&	-58.49	&	0.00
 
 \begin_layout Plain Layout
 
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{tabular}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{center}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float table
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Gendered perceptions before cooking and tasting (ttest mean differences
- for local and improved varieties)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tabular}{lllllll}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-multicolumn{3}{l}{
-\backslash
-textit{Local maize varieties}} & 
-\backslash
-multicolumn{3}{l}{
-\backslash
-textit{Improved maize varieties}} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-cline{5-7}
-\end_layout
-
-\begin_layout Plain Layout
-
- 	&	Women	&	Non-women	&	p-value	& 	Women	&	Non-women	&	p-value	
-\backslash
-
-\backslash
- 	&	dominated	&	dominated	&		&	dominated	&	dominated	&		
-\backslash
-
-\backslash
- 	&	demos	&	demos	&		&	demos	&	demos	&		
+Proportion of women demo participants	&	-	&	0.52	&	0.15	&	0.15	&	0.90	
 \backslash
 
 \backslash
@@ -1469,23 +947,43 @@ cline{5-7}
 
 \begin_layout Plain Layout
 
+Number of women per demo	&	574	&	7.36	&	2.27	&	2.00	&	13.00	
+\backslash
 
 \backslash
-cline{2-7}
+  
 \end_layout
 
 \begin_layout Plain Layout
 
-
+Number of men per demo	&	544	&	6.97	&	2.61	&	1.00	&	14.00	
 \backslash
 
 \backslash
-
+  
 \end_layout
 
 \begin_layout Plain Layout
 
-Overall votes (all traits)	&	0.36	&	0.35	&	0.86	&	0.53	&	0.55	&	0.71	
+Percent of women dominated demos	&	35	&	44.87	&	50.06	&	0.00	&	100.00	
+\backslash
+
+\backslash
+  
+\end_layout
+
+\begin_layout Plain Layout
+
+Demo cluster received trial pack	&	39	&	0.50	&	0.50	&	0.00	&	1.00	
+\backslash
+
+\backslash
+  
+\end_layout
+
+\begin_layout Plain Layout
+
+Percent growing improved	&	-	&	37.74	&	12.13	&	0.00	&	69.57	
 \backslash
 
 \backslash
@@ -1494,7 +992,7 @@ Overall votes (all traits)	&	0.36	&	0.35	&	0.86	&	0.53	&	0.55	&	0.71
 
 \begin_layout Plain Layout
 
-Variety has a better color	&	0.12	&	0.14	&	0.72	&	0.81	&	0.8	&	0.83	
+maize for consumption	&		&		&		&		&		
 \backslash
 
 \backslash
@@ -1503,7 +1001,29 @@ Variety has a better color	&	0.12	&	0.14	&	0.72	&	0.81	&	0.8	&	0.83
 
 \begin_layout Plain Layout
 
-Variety has a better aroma	&	0.69	&	0.64	&	0.49	&	0.23	&	0.28	&	0.42	
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+multicolumn{6}{c}{
+\backslash
+textit{Household characteristics clustered at village level}} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Household has ever grown improved maize (1=yes)	&	0.00	&	0.00	&	0.00	&	0.00	&	0.00	
 \backslash
 
 \backslash
@@ -1512,7 +1032,7 @@ Variety has a better aroma	&	0.69	&	0.64	&	0.49	&	0.23	&	0.28	&	0.42
 
 \begin_layout Plain Layout
 
-Variety is easier to cook	&	0.24	&	0.32	&	0.31	&	0.63	&	0.54	&	0.29	
+Average age (years) of household heads 	&	0.00	&	0.00	&	0.00	&	0.00	&	0.00	
 \backslash
 
 \backslash
@@ -1521,7 +1041,7 @@ Variety is easier to cook	&	0.24	&	0.32	&	0.31	&	0.63	&	0.54	&	0.29
 
 \begin_layout Plain Layout
 
-Variety cooks faster	&	0.19	&	0.22	&	0.68	&	0.62	&	0.61	&	0.89	
+Household head is married (1=yes)	&	0.00	&	0.00	&	0.00	&	0.00	&	0.00	
 \backslash
 
 \backslash
@@ -1530,7 +1050,7 @@ Variety cooks faster	&	0.19	&	0.22	&	0.68	&	0.62	&	0.61	&	0.89
 
 \begin_layout Plain Layout
 
-Variety expands more	&	0.43	&	0.32	&	0.24	&	0.44	&	0.59	&	0.10	
+Average number of years of formal schooling 	&	0.00	&	0.00	&	0.00	&	0.00	&	0.00	
 \backslash
 
 \backslash
@@ -1539,7 +1059,7 @@ Variety expands more	&	0.43	&	0.32	&	0.24	&	0.44	&	0.59	&	0.10
 
 \begin_layout Plain Layout
 
-Variety tastes better	&	0.64	&	0.60	&	0.60	&	0.29	&	0.34	&	0.52	
+Household head is female (1=yes)	&	0.00	&	0.00	&	0.00	&	0.00	&	0.00	
 \backslash
 
 \backslash
@@ -1548,7 +1068,61 @@ Variety tastes better	&	0.64	&	0.60	&	0.60	&	0.29	&	0.34	&	0.52
 
 \begin_layout Plain Layout
 
-Variety has a better texture	&	0.19	&	0.19	&	0.98	&	0.71	&	0.72	&	0.92	
+Amount of land available for 	&	0.00	&	0.00	&	0.00	&	0.00	&	0.00	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+crop production	&		&		&		&		&		
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Distance (km) of homestead to  	&	0.00	&	0.00	&	0.00	&	0.00	&	0.00	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+nearest tarmac road	&		&		&		&		&		
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Distance (km) of homestead to nearest 	&	0.00	&	0.00	&	0.00	&	0.00	&	0.00	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+agro-input shop selling maize seed 	&		&		&		&		&		
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Share of maize produce used for consumption 	&	0.00	&	0.00	&	0.00	&	0.00	&	0.00	
 \backslash
 
 \backslash
@@ -1598,7 +1172,200 @@ end{center}
 \end_layout
 
 \begin_layout Subsection
-Perceptions after the cooking and tasting demonstrations
+Consumer perceptions before and after the cooking and tasting events
+\end_layout
+
+\begin_layout Standard
+To be written here
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Percentage of votes (mean) for local and improved maize varieties before
+ cooking and tasting
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tabular}{rlll}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+	&	(A)	&	(B)	&	P-value	
+\backslash
+
+\backslash
+     
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+cline{2-4}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Overall votes (all traits)	&	35.22	&	19.17	&	0.001	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Variety has a better white color	&	13.08	&	67.08	&	0.000	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Variety has a better aroma	&	66.67	&	-40.77	&	0.000	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Variety is easier to cook	&	28.04	&	30.11	&	0.001	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Variety cooks faster	&	20.71	&	40.46	&	0.000	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Variety expands more when cooked	&	37.12	&	14.86	&	0.085	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Variety tastes better	&	62.02	&	-29.86	&	0.001	
+\backslash
+
+\backslash
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+Variety has a better texture	&	18.86	&	52.31	&	0.000	
+\backslash
+
+\backslash
+      
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Perceptions after the cooking and tasting events
 \end_layout
 
 \begin_layout Standard
@@ -1635,7 +1402,7 @@ begin{center}
 
 
 \backslash
-begin{tabular}{rlllll}
+begin{tabular}{rlll}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1649,40 +1416,27 @@ hline
 
 \begin_layout Plain Layout
 
+	&	Local	&	Improved	&	P-value	
+\backslash
+
+\backslash
+ 	&	
 \end_layout
 
 \begin_layout Plain Layout
 
- 	&	N	&	Mean change:	&	Mean change:	&	  p-value	
+Varieties	&	varieties	&		
 \backslash
 
 \backslash
-   	
-\end_layout
-
-\begin_layout Plain Layout
-
-&		&	Local	&	Improved	&		
-\backslash
-
-\backslash
- 	
-\end_layout
-
-\begin_layout Plain Layout
-
-&		&	varieties	&	varieties	&		
-\backslash
-
-\backslash
-    
+       
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-cline{2-5}
+cline{2-4}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1696,7 +1450,7 @@ cline{2-5}
 
 \begin_layout Plain Layout
 
-Overall change (all traits)	&	78	&	-8.44	&	17.32	&	0.00	
+Overall votes (all traits)	&	-8.44	&	17.32	&	0.000	
 \backslash
 
 \backslash
@@ -1705,7 +1459,7 @@ Overall change (all traits)	&	78	&	-8.44	&	17.32	&	0.00
 
 \begin_layout Plain Layout
 
-Overall change in women-dominated demos	&	35	&	-7.92	&	17.43	&	0.00	
+Variety has a better white color	&	-7.95	&	14.35	&	0.001	
 \backslash
 
 \backslash
@@ -1714,7 +1468,7 @@ Overall change in women-dominated demos	&	35	&	-7.92	&	17.43	&	0.00
 
 \begin_layout Plain Layout
 
-Overall change in non-women-dominated demos	&	43	&	-8.87	&	17.23	&	0.00	
+Variety has a better aroma	&	-22.41	&	26.83	&	0.000	
 \backslash
 
 \backslash
@@ -1723,7 +1477,7 @@ Overall change in non-women-dominated demos	&	43	&	-8.87	&	17.23	&	0.00
 
 \begin_layout Plain Layout
 
-Variety has a better color	&	78	&	-7.95	&	14.35	&	0.00	
+Variety is easier to cook	&	-4.77	&	16.04	&	0.028	
 \backslash
 
 \backslash
@@ -1732,7 +1486,7 @@ Variety has a better color	&	78	&	-7.95	&	14.35	&	0.00
 
 \begin_layout Plain Layout
 
-Variety has a better aroma	&	78	&	-22.41	&	26.83	&	0.00	
+Variety cooks faster	&	10.43	&	6.87	&	0.769	
 \backslash
 
 \backslash
@@ -1741,7 +1495,7 @@ Variety has a better aroma	&	78	&	-22.41	&	26.83	&	0.00
 
 \begin_layout Plain Layout
 
-Variety is easier to cook	&	78	&	-4.77	&	16.04	&	0.03	
+Variety expands more when cooked	&	-3.34	&	12.10	&	0.201	
 \backslash
 
 \backslash
@@ -1750,7 +1504,7 @@ Variety is easier to cook	&	78	&	-4.77	&	16.04	&	0.03
 
 \begin_layout Plain Layout
 
-Variety cooks faster	&	78	&	10.43	&	6.87	&	0.77	
+Variety tastes better	&	-31.91	&	37.17	&	0.000	
 \backslash
 
 \backslash
@@ -1759,29 +1513,11 @@ Variety cooks faster	&	78	&	10.43	&	6.87	&	0.77
 
 \begin_layout Plain Layout
 
-Variety expands more	&	78	&	-3.34	&	12.10	&	0.20	
+Variety has a better texture	&	0.69	&	8.23	&	0.414	
 \backslash
 
 \backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-Variety tastes better	&	78	&	-31.91	&	37.17	&	0.00	
-\backslash
-
-\backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-Variety has a better texture	&	78	&	0.69	&	8.23	&	0.41	
-\backslash
-
-\backslash
-   
+       
 \end_layout
 
 \begin_layout Plain Layout
@@ -1826,10 +1562,14 @@ end{center}
 
 \end_layout
 
+\begin_layout Subsection
+Factors influencing the perceptions—- Probit regression
+\end_layout
+
 \begin_layout Standard
 \begin_inset Float table
 wide false
-sideways false
+sideways true
 status open
 
 \begin_layout Plain Layout
@@ -1840,8 +1580,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Gender disaggregated ttest mean differences in change of perceptions (percentage
- point changes in votes) after cooking and tasting 
+Marginal effects for factors influencing the perceptions (standard erros
+ in parentheses 
 \end_layout
 
 \end_inset
@@ -1864,7 +1604,7 @@ begin{center}
 
 
 \backslash
-begin{tabular}{lllllll}
+begin{tabular}{rlllllll}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1878,50 +1618,26 @@ hline
 
 \begin_layout Plain Layout
 
-& 
-\backslash
-multicolumn{3}{l}{
-\backslash
-textit{Local maize varieties}} & 
-\backslash
-multicolumn{3}{l}{
-\backslash
-textit{Improved maize varieties}} 
+	&	Has a 	&	Has a 	&	Easier	&	Cooks	&	Expands	&	Tastes 	&	Has	
 \backslash
 
 \backslash
+ 	&	better	&	better	&	to cook	&	faster	&	more	&	better	&	better	
+\backslash
 
+\backslash
+ 	&	color	&	aroma	&		&		&		&		&	texture	
+\backslash
+
+\backslash
+        
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-cline{5-7}
-\end_layout
-
-\begin_layout Plain Layout
-
- 	&	Women	&	Non-women	&	p-value	&	Women	&	Non-women	&	p-value	
-\backslash
-
-\backslash
- 	&	dominated	&	dominated	&		&	dominated	&	dominated	&		
-\backslash
-
-\backslash
- 	&	demos	&	demos	&		&	demos	&	demos	&		
-\backslash
-
-\backslash
-   
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-cline{2-7}
+cline{2-8}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1935,74 +1651,34 @@ cline{2-7}
 
 \begin_layout Plain Layout
 
-Overall change (all traits)	&	-7.92	&	-8.87	&	0.86	&	17.43	&	17.23	&	0.97	
+Women dominated treatment cluster (1=yes)	&	0.012	&	-0.066	&	0.091	&	0.001	&	-0.182*	
+&	-0.108	&	-0.073	
 \backslash
 
 \backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-Variety has a better color	&	-3.25	&	-11.78	&	0.2	&	9.98	&	17.9	&	0.19	
+ 	&	(0.074)	&	(0.094)	&	(0.102)	&	(0.093)	&	(0.101)	&	(0.101)	&	(0.081)	
 \backslash
 
 \backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-Variety has a better aroma	&	-23.43	&	-21.59	&	0.84	&	28.21	&	25.71	&	0.78	
+ Treatment cluster previously received trial pack	&	0.134*	&	0.248**	&	0.163	&	0.072
+	&	0.281**	&	0.158	&	0.026	
 \backslash
 
 \backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-Variety is easier to cook	&	-2.79	&	-6.34	&	0.7	&	14.11	&	17.56	&	0.74	
+ 	&	(0.079)	&	(0.093)	&	(0.101)	&	(0.093)	&	(0.096)	&	(0.105)	&	(0.085)	
 \backslash
 
 \backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-Variety cooks faster	&	16.93	&	5.13	&	0.32	&	1.24	&	11.45	&	0.44	
+ Number that grows improved maize for consumption	&	-0.005	&	-0.004	&	-0.006	&	-0.00
+8	&	-0.004	&	-0.008*	&	0.005	
 \backslash
 
 \backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-Variety expands more	&	-9.12	&	1.36	&	0.41	&	19.32	&	6.23	&	0.28	
+ 	&	(-0.003)	&	(0.004)	&	(0.004)	&	(0.004)	&	(0.005)	&	(0.005)	&	(0.003)	
 \backslash
 
 \backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-Variety tastes better	&	-29.87	&	-33.57	&	0.71	&	35.66	&	38.39	&	0.79	
-\backslash
-
-\backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-Variety has a better texture	&	-4.26	&	4.72	&	0.35	&	14.17	&	3.4	&	0.27	
-\backslash
-
-\backslash
-   
+         
 \end_layout
 
 \begin_layout Plain Layout
@@ -2039,6 +1715,10 @@ end{center}
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
