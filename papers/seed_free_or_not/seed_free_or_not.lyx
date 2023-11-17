@@ -5192,6 +5192,23 @@ mock report: This document provides a pre-registered report that was added
  In the near future as data comes in, this report will be updated on github.
 \end_layout
 
+\begin_layout Section
+Acknowledgments
+\end_layout
+
+\begin_layout Standard
+We acknowledge support from the University of Göttingen, Department of Agricultu
+ral Economics and Rural Development.
+ Additional support was provided by the CGIAR Research Program on Policies,
+ Institutions, and Markets (PIM), the CGIAR Seed Equal Research Initiative,
+ and the CGIAR Market Intelligence Research Initiative which are funded
+ by contributors to the CGIAR Fund (https://www.cgiar.org/funders/).
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex

@@ -117,7 +117,7 @@ dta$distID <- as.numeric(dta$distID)
 dta$subID <- as.numeric(dta$subID)
 dta$vilID <- as.numeric(dta$vilID)
 
-
+write.csv(dta, file = paste(path,"raw/baseline_IDS.csv", sep="/"), row.names = FALSE)
 
 ## drop location and metadata
 to_drop <- c("Check2.check.maize.pic",
