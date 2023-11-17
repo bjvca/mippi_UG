@@ -1,33 +1,34 @@
 Respondent group,Consumption_trait,variety
-Agro-input dealers,Color (whiter grain/flour),Bazooka
-Agro-input dealers,Grain size/weight,Bazooka
-Agro-input dealers,Palatability (sweet and smooth taste),Bazooka
-Farmers,Palatability (sweet and smooth taste),Bazooka
-Farmers,Cooking time,Bazooka
-Farmers,Ease of cooking,Bazooka
-Millers,Milling out-turn,Bazooka
-Couple,Palatability (sweet and smooth taste),Bazooka
-Couple,Nutrition/protein,Bazooka
 Couple,Aroma,Bazooka
-Couple,Ease of cooking,Bazooka
-Women FGD,Palatability (sweet and smooth taste),Bazooka
-Women FGD,Flour expansion after cooking,Bazooka
 Women FGD,Big grain coat ,Bazooka
-Mixed FGD,Palatability (sweet and smooth taste),Bazooka
-Mixed FGD,White flour,Bazooka
-Mixed FGD,Grain size/weight,Bazooka
-Mixed FGD,Flour expansion after cooking,Bazooka
-Mixed FGD,Fine flour texture,Bazooka
-Men FGD,Palatability (sweet and smooth taste),Bazooka
-Men FGD,Milling out-turn,Bazooka
-Traders,Color (whiter grain/flour),Longe 10H
-Farmers,Palatability (sweet and smooth taste),Longe 10H
+Agro-input dealers,White color,Bazooka
+Traders,White color,Longe 10H
+Traders,White color,Longe 5
+Farmers,Cooking time,Bazooka
 Farmers,Cooking time,Longe 10H
-Farmers,Ease of cooking,Longe 10H
 Millers,Cooking time,Longe 10H
-Millers,Palatability (sweet and smooth taste),Longe 10H
+Farmers,Ease of cooking,Bazooka
+Couple,Ease of cooking,Bazooka
+Farmers,Ease of cooking,Longe 10H
+Mixed FGD,Fine flour texture,Bazooka
+Women FGD,Flour expansion,Bazooka
+Mixed FGD,Flour expansion,Bazooka
+Agro-input dealers,Grain size/weight,Bazooka
+Mixed FGD,Grain size/weight,Bazooka
 Mixed FGD,Grain size/weight,Longe 10H
-Agro-input dealers,Palatability (sweet and smooth taste),Longe 5
-Traders,Color (whiter grain/flour),Longe 5
-DAO/NARO,Palatability (sweet and smooth taste),Longe 5
+Millers,Milling out-turn,Bazooka
+Men FGD,Milling out-turn,Bazooka
+Couple,Nutrition/protein,Bazooka
+Agro-input dealers,Good taste,Bazooka
+Farmers,Good taste,Bazooka
+Couple,Good taste,Bazooka
+Women FGD,Good taste,Bazooka
+Mixed FGD,Good taste,Bazooka
+Men FGD,Good taste,Bazooka
+Farmers,Good taste,Longe 10H
+Millers,Good taste,Longe 10H
+Agro-input dealers,Good taste,Longe 5
+DAO/NARO,Good taste,Longe 5
+DAO/NARO,Good taste,Landraces
 Couple,Small grain coating,Longe 5
+Mixed FGD,White color,Bazooka
