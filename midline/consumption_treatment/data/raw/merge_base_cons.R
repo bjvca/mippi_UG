@@ -1535,3 +1535,36 @@ names(dta10) <- c("today",
 dta <- rbind(dta1,dta2,dta3,dta4,dta5,dta6,dta7,dta8,dta9,dta10)
 base <- read.csv("/home/bjvca/data/projects/OneCG/MIPP/baseline/data/raw/baseline_IDS.csv")
 dta <- merge(dta,base[c( "district","sub","village","Check2.check.maize.name_resp","farmer_ID", "vilID","subID","distID")], by.x=c("cooking.district", "cooking.sub","cooking.village", "grDetails.c2"),by.y=c("district","sub","village","Check2.check.maize.name_resp"), all.x=TRUE)
+
+
+
+to_drop <- c("cooking.district"  ,                 "cooking.sub"       ,                 "cooking.village" ,
+             "start"           ,                   "end"   ,                            
+             "deviceid"    ,                       "simserial"            ,              "phonenumber"       ,                
+             "subscriberid"    ,                   "enumerator"     ,                
+             "gps"            ,                                            
+             "X_gps_latitude"     ,                                        
+             "X_gps_longitude"   ,                                         
+             "X_gps_altitude"   ,                                          
+             "X_gps_precision"  ,                                          
+             "meta.instanceID"  ,                                          
+             "X_id"     ,                                                  
+             "X_uuid"    ,                                                 
+             "X_submission_time"    ,                                      
+             "X_date_modified"  ,                                          
+             "X_tags"         ,                                            
+             "X_notes"       ,                                             
+             "X_version"      ,                                            
+             "X_duration"      ,                                           
+             "X_submitted_by"    ,                                         
+             "X_total_media"   ,                                           
+             "X_media_count"  ,                                            
+             "X_media_all_received"  ,                                     
+             "X_xform_id"     ,                                            
+             "total_votes_before"  ,                                       
+             "total_votes_after","cooking.ID", "cooking.c1","grDetails.c2",   "grDetails.sp_name",  "grDetails.rep_name")
+
+
+dta <- dta[ , !(names(dta) %in% to_drop)]
+
+write.csv(dta,file=paste(path,"public/cons_intervention_merged.csv",sep="/"), row.names=FALSE)

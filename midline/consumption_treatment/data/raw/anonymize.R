@@ -26,9 +26,9 @@ sum(dta$after_cooking.taste2.taste2_loc)/sum(dta$total_votes_after)*100
 
 base <- read.csv("/home/bjvca/data/projects/OneCG/MIPP/baseline/data/raw/baseline_fixed_dups.csv")
 ### keep only clusters allocated to consumption intervention
-base <- base[c("district","sub",  "village", "cont")]
+base <- base[c("district","sub",  "village", "trial_P")]
 
-base <- aggregate(base$cont,list(base$district,base$sub,base$village), mean)
+base <- aggregate(base$trail_P,list(base$district,base$sub,base$village), mean)
 
 dta <- merge(dta, base, by.x=c("cooking.district", "cooking.sub", "cooking.village"), by.y=c("Group.1","Group.2","Group.3" ))
 sum(dta$before_cook.taste1.taste1_impr[dta$x==1])/sum(dta$total_votes_before[dta$x==1])*100
