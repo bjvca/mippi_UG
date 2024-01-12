@@ -146,7 +146,7 @@ dta <- dta[ , !(names(dta) %in% to_drop)]
 
 
 ## drop location, names and contact details
-to_drop <- c("start","end","deviceid","simserial","phonenumber", "subscriberid", "enumerator","district","sub","village",  "Check2.check.maize.plot_no",
+to_drop <- c("start","end","deviceid","simserial","phonenumber", "subscriberid", "enumerator","district","sub","village",
              "Check2.check.maize.plot_count",
              "Check2.check.maize.plot.1..plot_num",
              "Check2.check.maize.plot.1..plot_name",

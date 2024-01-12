@@ -1,0 +1,2535 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\begin_modules
+knitr
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "linkcolor=black, urlcolor=blue, citecolor=blue, pdfstartview={FitH}, hyperfootnotes=false, unicode=true"
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+\begin_inset Preview
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+author{Bjorn Van Campenhout
+\backslash
+thanks{Development Strategy and Governance Division, International Food
+ Policy Research Institute, Leuven, Belgium}, Leocardia Nabwire
+\backslash
+thanks{Development Strategy and Governance Division, International Food
+ Policy Research Institute, Kampala, Uganda}, Berber Kramer
+\backslash
+thanks{Markets Trade and Institutions Division, International Food Policy
+ Research Institute, Nairobi, Kenya}, 
+\backslash
+
+\backslash
+ Carly Trachtman
+\backslash
+thanks{Markets Trade and Institutions Division, International Food Policy
+ Research Institute, Washington DC, USA}, Gashaw Tadesse Abate
+\backslash
+footnotemark[4]}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Increasing Adoption and Varietal Turnover of Seed—A Pre-Analysis Plan for
+ Consumer and Producer Side Interventions
+\end_layout
+
+\begin_layout Abstract
+To increase adoption of new agricultural technologies, both push (supply
+ side) and pull (demand side) factors are important.
+ A popular supply side intervention to increase adoption of a particular
+ technology is some level of subsidy.
+ In a first intervention, we thus provide seed trial packs to a random subset
+ of Ugandan maize farmers.
+ In addition to the supply side intervention, we also test the relative
+ effectiveness of a demand sided intervention to increase adoption of improved
+ seed varieties.
+ In particular, we cross-randomize an intervention where households are
+ demonstrated how to prepare the new seed variety and get the ability to
+ taste it.
+\end_layout
+
+\begin_layout Abstract
+Keywords: technology adoption, subsidies, demonstration.
+\end_layout
+
+\begin_layout Abstract
+JEL: Q16, H24, O33, D91
+\end_layout
+
+\begin_layout Section
+Motivation
+\end_layout
+
+\begin_layout Standard
+In development economics, long run change often requires both push and pull
+ factors simultaneously creating to a new equilibrium.
+ For example, value chain upgrading often involves some kind of acceleration
+ in the demand of the underlying commodity downstream (for instance after
+ opening up of a new export market) and a matched supply side disruption
+ upstream (such as a technological innovation that increases productivity).
+ Similar arguments may hold for the adoption of a new technology, where
+ farmers may change behavior in response to both the supply of the new technolog
+y and an increase in demand for the commodity that emanates from the new
+ technology.
+\end_layout
+
+\begin_layout Standard
+A popular supply side intervention to introduce a new agricultural technology
+ is some level of subsidy.
+ Private sector actors such as seed companies or agro-input dealers often
+ use trail packs, as they realize farmers may be reluctant to try out a
+ new product.
+ Public actors may think commercial seed are out of reach of poor households
+ and want to kick-start large scale adoption by providing the initial investment.
+ The case for free (or subsidized) inputs also stems from potential externalitie
+s: it is well established that one of the most effective ways to increase
+ technology adoption is through peer learning, and both private and public
+ partners may attempt to leverage social learning 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "10.1257/aer.100.1.35,https://doi.org/10.1111/j.1468-0297.2006.01115.x"
+literal "false"
+
+\end_inset
+
+.
+ Furthermore, informal seed systems used by farmers often suffer from decades
+ of seed degeneration due to recycling of seed introduced during colonial
+ times 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mcguire2016seed"
+literal "false"
+
+\end_inset
+
+.
+ Injecting new seed varieties can be an important strategy to improve the
+ overall seed stock in the informal sector.
+ For instance, public research organizations often invest in open pollinating
+ varieties (OPVs) that can be recycled to some extent without losing vigor.
+\end_layout
+
+\begin_layout Standard
+Studies on adoption often focus solely on the supply side, and it is assumed
+ that supply related attributes such as high yield or drought resistance
+ are also the traits that farmers seek.
+ As such, in information dissemination and marketing of new seeds, these
+ attributes are singled out.
+ However, previous exploratory data analysis suggests that both ease of
+ cooking and taste are also important characteristics that determine the
+ choice of what varieties to adopt.
+ We thus also evaluate the effectiveness a second intervention that targets
+ the demand side — cooking demonstrations where farmers can familiarize
+ themselves with maize derived from the improved seed varieties 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "10.1093/jn/137.5.1320"
+literal "false"
+
+\end_inset
+
+.
+ The cooking demonstrations are designed to overcome some of the potential
+ biases farmers may have with respect to consumption related traits of varieties
+ that are considered 
+\begin_inset Quotes eld
+\end_inset
+
+foreign
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+This document serves as a pre-registered report plan for the study.
+ It integrates R code to run the entire analysis based on simulated data
+ into a dynamic Latex document using the Knir engine.
+ As such, once the endline data is collected, one only has to change the
+ dataset and results will appear.
+ This will make compiling the endline report quicker and provide a useful
+ reference in evaluating the final results of the study 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "humphreys_sanchezdelasierra_vanderwindt_2013,651546"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Relation to the literature
+\end_layout
+
+\begin_layout Standard
+As the use of seed trial packs touches on many constraints, our study touches
+ on various strands of the literature.
+ For instance, providing free or subsidized seed directly to farmers removes
+ access related constraints, such as situations where agro-input dealers
+ would not have sufficient stocks of seed at the right moment 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "shiferaw2008technology"
+literal "false"
+
+\end_inset
+
+.
+ Seed trial packs are often distributed to enable farmers to overcome aversion
+ to risk, ambiguity, or other forms of uncertainty 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "https://doi.org/10.1002/aepp.13003,boucher2021bundling"
+literal "false"
+
+\end_inset
+
+.
+ The amount of subsidy also removes financial constraints 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ABATE2016235"
+literal "false"
+
+\end_inset
+
+.
+ The opportunity to learn from trial packs may also be a substitute for
+ information provided by agricultural advisory services 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "https://doi.org/10.1111/agec.12175,https://doi.org/10.1002/ajae.12089"
+literal "false"
+
+\end_inset
+
+.
+ As mentioned above, new technologies are also sometimes subsidized by governmen
+ts in the hope that model farmers set up demonstration plots to encourage
+ peer learning 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "10.1257/aer.100.1.35"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+That said, there are surprisingly few studies that directly evaluate the
+ effectiveness of seed trial packs to accelerate technology adoption.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "biedny2020demonstration"
+literal "false"
+
+\end_inset
+
+ find that in Tanzania, adding trial packs to demonstration plots in the
+ context of village based agricultural advisors does not significantly affect
+ input sales, orders received, or learning.
+ In many studies, the impact of seed packs itself are not the subject of
+ research, but rather some attribute of the seed (like the risk reduction
+ potential, 
+\begin_inset CommandInset citation
+LatexCommand citealp
+before "eg."
+key "boucher2021bundling"
+literal "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Also related is 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "MORGAN2020101955"
+literal "false"
+
+\end_inset
+
+, who compare different extension approaches, one of which involves the
+ use of trial packs.
+ Their outcome is not subsequent adoption of the new technology, but the
+ willingness to pay, which is elicited using a Becker-DeGroot-Marschak (BDM)
+ auction.
+ As such, their interest is more in explaining dis-adoption once new technologie
+s are sold through traditional market channels.
+ They find that, in the southern highlands of Tanzania, bean farmers' willingnes
+s to pay is not affected by seed trial packs.
+\end_layout
+
+\begin_layout Standard
+There seem to be even less studies that look at demand side interventions
+ to spur technology adoption.
+ In general, demand side interventions such as cooking demonstrations are
+ primarily concerned about nutrition education 
+\begin_inset CommandInset citation
+LatexCommand citep
+before "eg."
+key "REICKS2014259"
+literal "false"
+
+\end_inset
+
+.
+ Experiential interventions like tasting rarely go all the way back to decisions
+ on what to plant.
+\end_layout
+
+\begin_layout Section
+Methods and experimental design
+\end_layout
+
+\begin_layout Standard
+We use a field experiment to test the effectiveness of free trial packs
+ and the consumer side interventions.
+ To do so, we use a cluster randomize control trial that takes the form
+ of a 2x2 factorial design.
+ Each factor has a control and a treatment level and the interventions are
+ clustered at the village level.
+ In each village a fixed number of households is be selected.
+ 
+\end_layout
+
+\begin_layout Standard
+The first factor corresponds to the supply side treatment.
+ In the treatment level of this factor, farmers in treatment villages receive
+ a free sample of a new improved seed variety (bazooka).
+ In the control level of this factor, farmers do not receive a free sample
+ pack (but they do get something of similar value—a so-called token of appreciat
+ion—to account for potential income effects).
+ The second factor corresponds to the demand side intervention.
+ In the treatment level of this factor, farmers in treatment villages will
+ be exposed to a cooking demonstration where farmers are provided with the
+ opportunity to taste food prepared using the promoted variety, and directly
+ compare this to food that was prepared using the local variety.
+ In the control level of this factor, we did not organize these kind of
+ events.
+\end_layout
+
+\begin_layout Section
+Treatments
+\end_layout
+
+\begin_layout Standard
+For the first factor, the treatment level consists of a seed trail pack
+ that the household receives.
+ This trial pack is of an improved seed variety (hybrid seed) that is available
+ in the market but at the same time not yet widely adopted by farmers.
+ The control level for this factor is simply be the absence of a seed trial
+ pack, that is, these household do not receive a seed trial pack.
+ However, in both treatment and control groups, we inform farmers about
+ the existence of the improved seed variety and the benefits of using them,
+ to be able to isolate the effect of the trail pack from merely knowledge
+ effects.
+\end_layout
+
+\begin_layout Standard
+For the second factor, the treatment level consists of a cooking demonstration
+ and tasting event.
+ Here, participating farmers of the treatment villages are invited to a
+ central place (the village chairperson's residence) for a facilitated meeting.
+ The meeting starts by asking the group to mention the most commonly grown
+ varieties by farmers in the village.
+ These varieties are then grouped into 
+\begin_inset Quotes eld
+\end_inset
+
+improved seed varieties
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+local seed varieties
+\begin_inset Quotes erd
+\end_inset
+
+ (Omusoga) on a flip-chart.
+ Farmers are then asked to rate the two categories on various consumption
+ attribute by show of hands.
+ To guide the discussion, the flip-charts already indicate the five most
+ common consumption traits: taste, texture, colour, aroma and the degree
+ to which the flour expands while cooking.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+These consumption traits were based on focus group discussions.
+ The expansion property, whereby the increased starchiness results in 
+\begin_inset Quotes eld
+\end_inset
+
+more food from less flour
+\begin_inset Quotes erd
+\end_inset
+
+ was mentioned especially by women.
+ When starch is heated with water, the starch granules swell and burst,
+ causing them to break down and release the glucose molecules into the water.
+ 
+\end_layout
+
+\end_inset
+
+ Farmers can add as many traits as they see fit.
+\end_layout
+
+\begin_layout Standard
+After the rating, we proceed with blind tasting.
+ We ask a volunteer from the farmers to prepare 
+\begin_inset Quotes eld
+\end_inset
+
+posho
+\begin_inset Quotes erd
+\end_inset
+
+ twice, once using flour obtained from local seed and once using flour from
+ Bazooka (the hybrid seed variety that was also used for the seed trial
+ pack).
+ The cook did not know which flour was from which maize type.
+ The resulting dishes are then displayed on a table and farmers are invited
+ to taste the two varieties (indicated as the variety on the left and the
+ variety on the right).
+ The two varieties that were tasted are rated on the various consumption
+ attributes and farmers are again asked to indicate which of the two samples
+ are superior on each attribute by show of hands.
+\end_layout
+
+\begin_layout Standard
+Finally, results are discussed within the group.
+ Farmers are told that one of the two samples was made from flour obtained
+ from local maize, while the other was from an improved maize type called
+ Bazooka.
+ We then asked farmers to guess which of the two samples was based on flour
+ from the local variety and which was from the improved variety and then
+ reveal the truth.
+ 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+During testing in the field, we always found that a large majority of farmers
+ indicated before tasting that local seed excels in almost all dimensions
+ (sweeter taste, whiter, better aroma,...).
+ During tasting, almost all farmers consistently ranked the sample based
+ on Bazooka as superior.
+ After the tasting, most farmers indicated that the superior sample was
+ from the local variety, which in reality it was maize obtained from Bazooka
+ maize.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Treatment assignment is at the village level, as we want to avoid that a
+ control farmer (that gets a bar of soap as a token of gratitude) lives
+ right next to a treatment farmer that gets a bag of maize seed for free.
+ Furthermore, it will also reduce potential concerns about spillover effects
+ from the treatments.
+ 
+\end_layout
+
+\begin_layout Section
+Estimation and inference
+\end_layout
+
+\begin_layout Standard
+We will use ANCOVA models to assess impact.
+ As randomization happened at the village level, we estimate a similar equation:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Y_{1ij}=\alpha+\beta_{S}T_{i}^{S}+\beta_{D}T_{i}^{D}+\beta_{I}T_{i}^{S}T_{i}^{D}+\delta Y_{0ij}+\varepsilon_{ij}\label{eq:one}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $T_{i}^{S}$
+\end_inset
+
+ is a dummy for the supply side intervention treatment status of village
+ 
+\emph on
+i
+\emph default
+ and 
+\begin_inset Formula $T_{i}^{D}$
+\end_inset
+
+ is a dummy for the demand side intervention treatment status of village
+ 
+\emph on
+i
+\emph default
+.
+ We also allow for an interaction effect between the two treatments and
+ control for baseline outcomes to improve precision.
+ We use HC3 standard errors clustered at the village level.
+ 
+\end_layout
+
+\begin_layout Standard
+Factorial designs have recently been criticized for the proliferation of
+ underpowered studies and replication failure 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "muralidharan2019factorial"
+literal "false"
+
+\end_inset
+
+.
+ While in the previous section we ran power calculations based on models
+ with a complete set of interactions (as on equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:one"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), we may still want to try boosting power by pooling observations across
+ the orthogonal treatment in the event that we find a treatment effect that
+ appears smaller than the minimal detectable effect size that we assumed
+ during power calculations.
+ To do so, we will consider the orthogonal treatment as a co-variate we
+ adjust for, and interact the treatment variable with the demeaned orthogonal
+ treatment.
+ This give a more robust version of the treatment estimate that corresponds
+ to the coefficient estimate of the treatment of interest after dropping
+ the interaction with orthogonal the treatment
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+see: https://blogs.worldbank.org/impactevaluations/what-should-you-do-experiments-
+factorial-designs
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Y_{1ij}=\alpha+\beta_{M}T_{i}^{M}+\beta_{O}\left(T_{i}^{O}-\bar{T^{O}}\right)+\beta_{I}T_{i}^{M}\left(T_{i}^{O}-\bar{T^{O}}\right)+\delta Y_{0ij}+\varepsilon_{ij}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where now 
+\begin_inset Formula $T_{i}^{M}$
+\end_inset
+
+ is a dummy for the main treatment and 
+\begin_inset Formula $T_{i}^{O}$
+\end_inset
+
+ is a dummy for the orthogonal treatment (which enters in deviations from
+ its means).
+\end_layout
+
+\begin_layout Standard
+Because we will test for treatment effects on a range of outcome measures,
+ we will deal with multiple outcomes and multiple hypotheses testing by
+ means of two approaches.
+ Firstly, we follow a method proposed by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "anderson2008multiple"
+literal "false"
+
+\end_inset
+
+ and aggregate different outcome measures within each domain into single
+ summary indices.
+ Each index is computed as a weighted mean of the standardized values of
+ the outcome variables.
+ The weights of this efficient generalized least squares estimator are calculate
+d to maximize the amount of information captured in the index by giving
+ less weight to outcomes that are highly correlated with each other.
+ Combining outcomes in indices is a common strategy to guard against over-reject
+ion of the null hypothesis due to multiple inference.
+ However, it may also be interesting to see the effect of the intervention
+ on individual outcomes.
+ An alternative strategy to deal with the multiple comparisons problem is
+ to adjust the significance levels to control the Family Wise Error Rates
+ (FWER).
+ The simplest such method is the Bonferroni method.
+ However, the Bonferroni adjustment assumes outcomes are independent, and
+ so can be too conservative when outcomes are correlated.
+ We therefore use a Bonferroni adjustment which adjusts for correlation
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "sankoh1997some,aker2016payment"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Timeline
+\end_layout
+
+\begin_layout Standard
+There are two maize growing seasons in the area we are planning to work.
+ One is running from march/april to june/July, the other from August/Sept
+ to November/December.
+\end_layout
+
+\begin_layout Standard
+Ideally we would distribute trail packs together with baseline data collection
+ about one month before planting.
+ As such, the best time would be around February 2023.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../study_design/timeline.png
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Timeline
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Sample
+\end_layout
+
+\begin_layout Standard
+Sample size was determined through a series of power simulations that can
+ be found in the pre-registered pre-analysis plan.
+ The primary outcome we use is a binary indicator for use of improved seed
+ at the farmer level.
+ We use the following assumptions for the power calculations.
+ The primary outcome we use is a binary indicator for use of improved seed
+ at the farmer level.
+ Using data previously collected as part of a different project from 3450
+ smallholder maize farmers located in 345 villages, we find that about 64
+ percent of farmers indicate that they are already using improved seed.
+ However, this is likely to be an overestimate as these farmers were sample
+ from clients of agro-input dealers, and the question asked was if the farmer
+ had ever used improved seed.
+ We thus use a baseline seed use rate of 32 percent, which is closer to
+ mean of 34 percent reported in the same area in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "https://doi.org/10.1002/ajae.12089"
+literal "false"
+
+\end_inset
+
+.
+ Inter cluster (within village) correlation for this outcome has been estimated
+ to be 0.15.
+ We assume similar treatment effects for both the seed trail treatment and
+ the consumption (a 13.5 percentage point increase).
+ For the interaction effect, we assume a 23.5 percentage point increase.
+ We use HC3 standard errors clustered at the village level for the power
+ calculations.
+ R code can be found 
+\begin_inset CommandInset href
+LatexCommand href
+name "here"
+target "https://github.com/bjvca/mippi_UG/blob/master/study_design/power_analysis.R"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+After running a series of power simulations, we converged to a sample consisting
+ of 148 villages with 10 households in each village.
+ In this design, 74 villages or 740 households will receive a free trial
+ pack and 74 villages or 740 households will be exposed to the consumption
+ side treatment.
+ Half of these will overlap, that is, about 37 villages or 370 households
+ will receive both treatments.
+ With this setting, we are not powered to detect the three effects simultaneousl
+y.
+ In only 68 percent of cases we are able to estimate a positive effect at
+ the five percent significance level for both treatments and their interaction.
+ However, if we consider the treatments separately, we hit conventional
+ power levels for both treatments, and get up to 0.97 for the interaction
+ effect.
+ We are certain to identify at least one of the three parameters of interest
+ (seed packs, consumer intervention, or the interaction).
+ 
+\end_layout
+
+\begin_layout Standard
+The study will be implemented in Eastern Uganda in an area known as the
+ Busoga Kingdom.
+ We will sample from 4 districts that have relatively low adoption (compared
+ to neighboring villages) but a good network of agro-input dealers.
+ Using data that was previously collected as part of a different study,
+ we found that the districts of Kamuli, Mayuge, Bugweri, and Bugiri fit
+ these conditions.
+ 
+\end_layout
+
+\begin_layout Standard
+The study population consists of smallholder maize farmers.
+ To get a random sample of the population, villages will be randomly selected
+ with probability proportionate the the number of households living in the
+ village.
+ In each sampled village, 10 households will be randomly selected to participate
+ in the study.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<standard_beginning, echo=T, warning=T, message=T>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+pathA <- getwd()
+\end_layout
+
+\begin_layout Plain Layout
+
+print(pathA)
+\end_layout
+
+\begin_layout Plain Layout
+
+setwd(pathA)
+\end_layout
+
+\begin_layout Plain Layout
+
+source(paste(pathA,
+\begin_inset Quotes eld
+\end_inset
+
+analysis/balance.R
+\begin_inset Quotes erd
+\end_inset
+
+,sep=
+\begin_inset Quotes erd
+\end_inset
+
+/
+\begin_inset Quotes erd
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+pathB <- getwd()
+\end_layout
+
+\begin_layout Plain Layout
+
+pathB <- strsplit(pathB,"/analysis")[[1]]
+\end_layout
+
+\begin_layout Plain Layout
+
+load(paste(pathB,
+\begin_inset Quotes erd
+\end_inset
+
+results/df_means.Rdata
+\begin_inset Quotes erd
+\end_inset
+
+, sep=
+\begin_inset Quotes erd
+\end_inset
+
+/
+\begin_inset Quotes erd
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Balance test
+\end_layout
+
+\begin_layout Standard
+We pre-registered 10 variables that will be used to demonstrate balance
+ in our design.
+ Half of these are characteristics that are unlikely to be affected by the
+ intervention, while the other 5 are picked from the primary and secondary
+ endline outcomes.
+ Here is the balance table:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways true
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Descriptive statistics and orthogonality tests - Agro-dealer
+\begin_inset CommandInset label
+LatexCommand label
+name "balance_dealer"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnotesize
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tabular}{rcccccc}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& mean & trial & cons & trial & cons & interact 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Age of HH in years
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means[1,1],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance_pool[1,1,1],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance_pool[1,3,1]<.01,"**",ifelse(df_balance_pool[1,3,1]<.05,"*"
+,ifelse(df_balance_pool[1,3,1]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance_pool[2,1,1],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance_pool[2,3,1]<.01,"**",ifelse(df_balance_pool[2,3,1]<.05,"*"
+,ifelse(df_balance_pool[2,3,1]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance[1,1,1],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance[1,3,1]<.01,"**",ifelse(df_balance[1,3,1]<.05,"*",ifelse(df
+_balance[1,3,1]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance[2,1,1],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance[2,3,1]<.01,"**",ifelse(df_balance[2,3,1]<.05,"*",ifelse(df
+_balance[2,3,1]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance[3,1,1],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance[3,3,1]<.01,"**",ifelse(df_balance[3,3,1]<.05,"*",ifelse(df
+_balance[3,3,1]<.1,"+","")))}}$ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means[2,1],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_balance_pool[1,2,1],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_balance_pool[2,2,1],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_balance[1,2,1],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_balance[2,2,1],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_balance[3,2,1],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+HH has finished primary education
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means[1,2],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance_pool[1,1,2],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance_pool[1,3,2]<.01,"**",ifelse(df_balance_pool[1,3,2]<.05,"*"
+,ifelse(df_balance_pool[1,3,2]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance_pool[2,1,2],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance_pool[2,3,2]<.01,"**",ifelse(df_balance_pool[2,3,2]<.05,"*"
+,ifelse(df_balance_pool[2,3,2]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance[1,1,2],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance[1,3,2]<.01,"**",ifelse(df_balance[1,3,2]<.05,"*",ifelse(df
+_balance[1,3,2]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance[2,1,2],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance[2,3,2]<.01,"**",ifelse(df_balance[2,3,2]<.05,"*",ifelse(df
+_balance[2,3,2]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance[3,1,2],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance[3,3,2]<.01,"**",ifelse(df_balance[3,3,2]<.05,"*",ifelse(df
+_balance[3,3,2]<.1,"+","")))}}$ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means[2,2],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_balance_pool[1,2,2],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_balance_pool[2,2,2],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_balance[1,2,2],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_balance[2,2,2],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_balance[3,2,2],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Gender of household head
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means[1,3],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance_pool[1,1,3],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance_pool[1,3,3]<.01,"**",ifelse(df_balance_pool[1,3,3]<.05,"*"
+,ifelse(df_balance_pool[1,3,3]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance_pool[2,1,3],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance_pool[2,3,3]<.01,"**",ifelse(df_balance_pool[2,3,3]<.05,"*"
+,ifelse(df_balance_pool[2,3,3]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance[1,1,3],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance[1,3,3]<.01,"**",ifelse(df_balance[1,3,3]<.05,"*",ifelse(df
+_balance[1,3,3]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance[2,1,3],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance[2,3,3]<.01,"**",ifelse(df_balance[2,3,3]<.05,"*",ifelse(df
+_balance[2,3,3]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance[3,1,3],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance[3,3,3]<.01,"**",ifelse(df_balance[3,3,3]<.05,"*",ifelse(df
+_balance[3,3,3]<.1,"+","")))}}$ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means[2,3],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_balance_pool[1,2,3],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_balance_pool[2,2,3],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_balance[1,2,3],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_balance[2,2,3],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_balance[3,2,3],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Household size
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means[1,4],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance_pool[1,1,4],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance_pool[1,3,4]<.01,"**",ifelse(df_balance_pool[1,3,4]<.05,"*"
+,ifelse(df_balance_pool[1,3,4]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance_pool[2,1,4],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance_pool[2,3,4]<.01,"**",ifelse(df_balance_pool[2,3,4]<.05,"*"
+,ifelse(df_balance_pool[2,3,4]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance[1,1,4],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance[1,3,4]<.01,"**",ifelse(df_balance[1,3,4]<.05,"*",ifelse(df
+_balance[1,3,4]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance[2,1,4],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance[2,3,4]<.01,"**",ifelse(df_balance[2,3,4]<.05,"*",ifelse(df
+_balance[2,3,4]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance[3,1,4],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance[3,3,4]<.01,"**",ifelse(df_balance[3,3,4]<.05,"*",ifelse(df
+_balance[3,3,4]<.1,"+","")))}}$ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means[2,4],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_balance_pool[1,2,4],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_balance_pool[2,2,4],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_balance[1,2,4],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_balance[2,2,4],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_balance[3,2,4],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Distance of homestead to nearest agro-input shop
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means[1,5],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance_pool[1,1,5],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance_pool[1,3,5]<.01,"**",ifelse(df_balance_pool[1,3,5]<.05,"*"
+,ifelse(df_balance_pool[1,3,5]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance_pool[2,1,5],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance_pool[2,3,5]<.01,"**",ifelse(df_balance_pool[2,3,5]<.05,"*"
+,ifelse(df_balance_pool[2,3,5]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance[1,1,5],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance[1,3,5]<.01,"**",ifelse(df_balance[1,3,5]<.05,"*",ifelse(df
+_balance[1,3,5]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance[2,1,5],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance[2,3,5]<.01,"**",ifelse(df_balance[2,3,5]<.05,"*",ifelse(df
+_balance[2,3,5]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance[3,1,5],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance[3,3,5]<.01,"**",ifelse(df_balance[3,3,5]<.05,"*",ifelse(df
+_balance[3,3,5]<.1,"+","")))}}$ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means[2,5],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_balance_pool[1,2,5],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_balance_pool[2,2,5],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_balance[1,2,5],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_balance[2,2,5],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_balance[3,2,5],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Has used quality maize seed on any plot in last season
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means[1,6],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance_pool[1,1,6],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance_pool[1,3,6]<.01,"**",ifelse(df_balance_pool[1,3,6]<.05,"*"
+,ifelse(df_balance_pool[1,3,6]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance_pool[2,1,6],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance_pool[2,3,6]<.01,"**",ifelse(df_balance_pool[2,3,6]<.05,"*"
+,ifelse(df_balance_pool[2,3,6]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance[1,1,6],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance[1,3,6]<.01,"**",ifelse(df_balance[1,3,6]<.05,"*",ifelse(df
+_balance[1,3,6]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance[2,1,6],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance[2,3,6]<.01,"**",ifelse(df_balance[2,3,6]<.05,"*",ifelse(df
+_balance[2,3,6]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance[3,1,6],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance[3,3,6]<.01,"**",ifelse(df_balance[3,3,6]<.05,"*",ifelse(df
+_balance[3,3,6]<.1,"+","")))}}$ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means[2,6],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_balance_pool[1,2,6],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_balance_pool[2,2,6],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_balance[1,2,6],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_balance[2,2,6],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_balance[3,2,6],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Has used the promoted seed (bazooka) on a randomly chosen plot in the last
+ season 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means[1,7],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance_pool[1,1,7],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance_pool[1,3,7]<.01,"**",ifelse(df_balance_pool[1,3,7]<.05,"*"
+,ifelse(df_balance_pool[1,3,7]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance_pool[2,1,7],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance_pool[2,3,7]<.01,"**",ifelse(df_balance_pool[2,3,7]<.05,"*"
+,ifelse(df_balance_pool[2,3,7]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance[1,1,7],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance[1,3,7]<.01,"**",ifelse(df_balance[1,3,7]<.05,"*",ifelse(df
+_balance[1,3,7]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance[2,1,7],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance[2,3,7]<.01,"**",ifelse(df_balance[2,3,7]<.05,"*",ifelse(df
+_balance[2,3,7]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance[3,1,7],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance[3,3,7]<.01,"**",ifelse(df_balance[3,3,7]<.05,"*",ifelse(df
+_balance[3,3,7]<.1,"+","")))}}$ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means[2,7],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_balance_pool[1,2,7],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_balance_pool[2,2,7],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_balance[1,2,7],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_balance[2,2,7],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_balance[3,2,7],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Where did you obtain the seed from for the maize planted on the randomly
+ selected plot in the previous season? 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means[1,8],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance_pool[1,1,8],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance_pool[1,3,8]<.01,"**",ifelse(df_balance_pool[1,3,8]<.05,"*"
+,ifelse(df_balance_pool[1,3,8]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance_pool[2,1,8],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance_pool[2,3,8]<.01,"**",ifelse(df_balance_pool[2,3,8]<.05,"*"
+,ifelse(df_balance_pool[2,3,8]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance[1,1,8],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance[1,3,8]<.01,"**",ifelse(df_balance[1,3,8]<.05,"*",ifelse(df
+_balance[1,3,8]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance[2,1,8],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance[2,3,8]<.01,"**",ifelse(df_balance[2,3,8]<.05,"*",ifelse(df
+_balance[2,3,8]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance[3,1,8],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance[3,3,8]<.01,"**",ifelse(df_balance[3,3,8]<.05,"*",ifelse(df
+_balance[3,3,8]<.1,"+","")))}}$ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means[2,8],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_balance_pool[1,2,8],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_balance_pool[2,2,8],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_balance[1,2,8],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_balance[2,2,8],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_balance[3,2,8],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Used seed that is recycled more than 5 seasons on randomly selected plot
+ recycled?
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means[1,9],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance_pool[1,1,9],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance_pool[1,3,9]<.01,"**",ifelse(df_balance_pool[1,3,9]<.05,"*"
+,ifelse(df_balance_pool[1,3,9]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance_pool[2,1,9],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance_pool[2,3,9]<.01,"**",ifelse(df_balance_pool[2,3,9]<.05,"*"
+,ifelse(df_balance_pool[2,3,9]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance[1,1,9],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance[1,3,9]<.01,"**",ifelse(df_balance[1,3,9]<.05,"*",ifelse(df
+_balance[1,3,9]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance[2,1,9],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance[2,3,9]<.01,"**",ifelse(df_balance[2,3,9]<.05,"*",ifelse(df
+_balance[2,3,9]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance[3,1,9],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance[3,3,9]<.01,"**",ifelse(df_balance[3,3,9]<.05,"*",ifelse(df
+_balance[3,3,9]<.1,"+","")))}}$ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means[2,9],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_balance_pool[1,2,9],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_balance_pool[2,2,9],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_balance[1,2,9],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_balance[2,2,9],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_balance[3,2,9],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Maize yields on a randomly chosen plot in last season - production/size
+ of plot 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means[1,10],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance_pool[1,1,10],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance_pool[1,3,10]<.01,"**",ifelse(df_balance_pool[1,3,10]<.05,"
+*",ifelse(df_balance_pool[1,3,10]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance_pool[2,1,10],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance_pool[2,3,10]<.01,"**",ifelse(df_balance_pool[2,3,10]<.05,"
+*",ifelse(df_balance_pool[2,3,10]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance[1,1,10],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance[1,3,10]<.01,"**",ifelse(df_balance[1,3,10]<.05,"*",ifelse(
+df_balance[1,3,10]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance[2,1,10],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance[2,3,10]<.01,"**",ifelse(df_balance[2,3,10]<.05,"*",ifelse(
+df_balance[2,3,10]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_balance[3,1,10],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_balance[3,3,10]<.01,"**",ifelse(df_balance[3,3,10]<.05,"*",ifelse(
+df_balance[3,3,10]<.1,"+","")))}}$ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means[2,10],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_balance_pool[1,2,10],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_balance_pool[2,2,10],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_balance[1,2,10],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_balance[2,2,10],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_balance[3,2,10],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+scriptsize
+\end_layout
+
+\begin_layout Plain Layout
+
+Note: Column (1) reports sample means at baseline and standard deviations
+ below;  columns (2)-(3) report differences between treatment and control
+ groups and standard errors below; they are clustered at the level of randomizat
+ion; **, *, and + denote significance at the 1, 5 and 10
+\backslash
+% levels.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Age of household head - years (q14)
+\end_layout
+
+\begin_layout Enumerate
+Household head has finished primary education - 1 is yes (q17)
+\end_layout
+
+\begin_layout Enumerate
+Gender of household head - 1 is male (q15)
+\end_layout
+
+\begin_layout Enumerate
+Household size - number of people in household/that eats in house on a regular
+ basis (including interviewee) (q18)
+\end_layout
+
+\begin_layout Enumerate
+Distance of homestead to nearest agro-input shop selling maize seed - km
+ (q10)
+\end_layout
+
+\begin_layout Enumerate
+Has used quality maize seed on any plot in last season - 1 is yes (q25a)
+\end_layout
+
+\begin_layout Enumerate
+Has used the promoted seed (bazooka) on a randomly chosen plot in the last
+ season (q31)
+\end_layout
+
+\begin_layout Enumerate
+Where did you obtain the seed from for the maize planted on the randomly
+ selected plot in the previous season? (q32) - more formal (eg agro-input
+ dealer, operation wealth create) is better
+\end_layout
+
+\begin_layout Enumerate
+Used seed that is recycled more than 5 seasons on randomly selected plot
+ recycled? (q34)
+\end_layout
+
+\begin_layout Enumerate
+Maize yields on a randomly chosen plot in last season - production/size
+ of plot (q29, q50, q51) 
+\end_layout
+
+\begin_layout Subsection
+Outcomes at midline
+\end_layout
+
+\begin_layout Standard
+We plan to do a midline survey in August 2023.
+ As mentioned above, at midline, we are particularly interested in the use
+ of trial packs and whether something was learned from it.
+ As such, only households that received a trial pack (either free or subsidized)
+ will be asked the questions below.
+ However, all households will be revisited, as at this time the consumption
+ side treatment will be implemented.
+\end_layout
+
+\begin_layout Enumerate
+Was trial pack used as seed on the farm? (as opposed to sold, eaten,...)
+\end_layout
+
+\begin_layout Enumerate
+How was the seed trial package was used? (pure on separate plot, mixed with
+ landraces, mixed with bazooka from other source, mixed with other improved
+ seed,...) 
+\end_layout
+
+\begin_layout Enumerate
+Was it intercroped? 
+\end_layout
+
+\begin_layout Enumerate
+What seed/plant spacing was used for the trail pack? 
+\end_layout
+
+\begin_layout Enumerate
+Number of seeds per hill used for the trail pack? 
+\end_layout
+
+\begin_layout Enumerate
+Did you apply organic manure to the soil for the trail pack? 
+\end_layout
+
+\begin_layout Enumerate
+Did you apply DAP **(black in color)** or NPK (brown in color) for the trail
+ pack? 
+\end_layout
+
+\begin_layout Enumerate
+Did you apply Urea **(white in color)** for the trail pack? 
+\end_layout
+
+\begin_layout Enumerate
+How many times did you weed the trial pack maize plot? 
+\end_layout
+
+\begin_layout Enumerate
+How many days after planting did you do first weeding on the trail pack
+ plot? 
+\end_layout
+
+\begin_layout Enumerate
+Did you use any pesticides, herbicides or fungicides on the trail pack plot?
+ 
+\end_layout
+
+\begin_layout Enumerate
+When did you plant the trail pack seed? 
+\end_layout
+
+\begin_layout Enumerate
+Did you re-sow where seeds did not germinate on the trial seed plot? If
+ so, what seed variety did you used of gap filling
+\end_layout
+
+\begin_layout Enumerate
+area planted with trial pack?
+\end_layout
+
+\begin_layout Enumerate
+production from trial pack?
+\end_layout
+
+\begin_layout Enumerate
+yields from trial pack plot?
+\end_layout
+
+\begin_layout Enumerate
+perceptions related to the quality of the trial pack seed (bazooka).
+\end_layout
+
+\begin_layout Enumerate
+Were you happy with the bazooka?
+\end_layout
+
+\begin_layout Enumerate
+What seed are you planning to use in next season?
+\end_layout
+
+\begin_layout Subsection
+Outcomes at endline
+\end_layout
+
+\begin_layout Subsubsection
+Primary outcomes
+\end_layout
+
+\begin_layout Standard
+The main aim of the project is to find ways to increase varietal turnover.
+ Most primary outcomes are therefore related to seed use in years subsequent
+ to the intervention.
+ We define 10 primary outcomes that will also be combined in a summary index
+ test following 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "doi:10.1198/016214508000000841"
+literal "false"
+
+\end_inset
+
+.
+ Therefore, all primary outcomes have an unambiguous expected effect.
+\end_layout
+
+\begin_layout Enumerate
+has used quality maize seed (hybrid/OPV obtained from credible source and
+ not recycled too often) on any plot in last season - 1 is yes (q25a)
+\end_layout
+
+\begin_layout Enumerate
+has used Bazooka on any plot in last season in last season - 1 is yes (q25aa)
+\end_layout
+
+\begin_layout Enumerate
+has used improved seed (hybrid/OPV obtained from credible source and not
+ recycled too often) on a randomly chosen plot in the last season - 1 is
+ yes (q31)
+\end_layout
+
+\begin_layout Enumerate
+has used the promoted seed (bazooka) on a randomly chosen plot in the last
+ season - 1 is yes (q31)
+\end_layout
+
+\begin_layout Enumerate
+extensive margin improved seed use on random plot (kg improved seed (OPV
+ or hybrid)) (q38) - more is better
+\end_layout
+
+\begin_layout Enumerate
+intensive margin improved seed use on random plot (kg improved seed (OPV
+ or hybrid)/area planted) (q38/q29) - more is better
+\end_layout
+
+\begin_layout Enumerate
+How often was the seed that was used on the randomly selected plot recycled?
+ (q34) - less is better
+\end_layout
+
+\begin_layout Enumerate
+Where did you obtain the seed from for the maize planted on the randomly
+ selected plot in the previous season? (q32) - more formal (eg agro-input
+ dealer, operation wealth create) is better
+\end_layout
+
+\begin_layout Enumerate
+Would you use this seed that was used on the randomly selected plot in the
+ previous season again in the future? - 1 is yes (q37)
+\end_layout
+
+\begin_layout Enumerate
+maize yields on a randomly chosen plot in last season - production/size
+ of plot (q29, q50, q51) - more is better
+\end_layout
+
+\begin_layout Subsubsection
+Secondary outcome
+\end_layout
+
+\begin_layout Standard
+We define a range of secondary outcomes.
+ These are outcomes to explore impact pathways.
+ There are also some outcomes for which effects are not a-priori known.
+ 
+\end_layout
+
+\begin_layout Enumerate
+rating of taste of seed variety used on randomly selected field - 1 is good
+ (4) or very good (5) taste of variety - producer intervention impact pathway)
+ (q35g)
+\end_layout
+
+\begin_layout Enumerate
+Seed variety that was planted on the randomly selected crop in the previous
+ season (to test if farmers has experience - consumption intervention impact
+ pathway)?
+\end_layout
+
+\begin_layout Enumerate
+was it intercropped? (q30) - if yes, ask for secondary crop (q30a) and percentag
+e allocations (q30b)
+\end_layout
+
+\begin_layout Enumerate
+crop residue use (cr_use_grp)
+\end_layout
+
+\begin_layout Enumerate
+cost of the seed (q39)
+\end_layout
+
+\begin_layout Enumerate
+where was the seed obtained from? (q32)
+\end_layout
+
+\begin_layout Enumerate
+Was the female co-head involved in the decision to use a particular type
+ of seed on the randomly selected plot? (q34a)
+\end_layout
+
+\begin_layout Enumerate
+Was the female co-head involved in the decision on what happened to the
+ crops harvested on the randomly selected plot? (q34aa)
+\end_layout
+
+\begin_layout Enumerate
+How much maize from the randomly selected plot was kept for own consumption?
+ (q55a)
+\end_layout
+
+\begin_layout Enumerate
+How much was kept for seed in the next agricultural season? (q56)
+\end_layout
+
+\begin_layout Enumerate
+What seed/plant spacing was used on random plot? (q40)
+\end_layout
+
+\begin_layout Enumerate
+Number of seeds per hill used on random plot? (q41)
+\end_layout
+
+\begin_layout Enumerate
+Did you apply organic manure to the soil on random plot? (q42)
+\end_layout
+
+\begin_layout Enumerate
+Did you apply DAP **(black in color)** or NPK (brown in color) on random
+ plot? (q43)
+\end_layout
+
+\begin_layout Enumerate
+Did you apply Urea **(white in color)** on random plot? (q44)
+\end_layout
+
+\begin_layout Enumerate
+How many times did you weed on random plot? (q45)
+\end_layout
+
+\begin_layout Enumerate
+How many days after planting did you do first weeding on random plot? (q46)
+\end_layout
+
+\begin_layout Enumerate
+Did you use any pesticides, herbicides or fungicides on random plot? (q47)
+\end_layout
+
+\begin_layout Enumerate
+When did you plant the seed on random plot? (q48)
+\end_layout
+
+\begin_layout Enumerate
+Did you re-sow where seeds did not germinate on random plot? (q49)
+\end_layout
+
+\begin_layout Enumerate
+Indicate time use (total man days per season) for male co-head, female co-head,
+ other HH members, hired in for:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Field preparation 
+\end_layout
+
+\begin_layout Itemize
+Planting 
+\end_layout
+
+\begin_layout Itemize
+Weeding
+\end_layout
+
+\begin_layout Itemize
+Spraying 
+\end_layout
+
+\begin_layout Itemize
+Harvesting 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+maize yields on a randomly chosen plot in last season - production/size
+ of plot (q29, q50, q51)
+\end_layout
+
+\begin_layout Enumerate
+Did you sell any maize that you harvested from this randomly selected plot?
+ (q53)
+\end_layout
+
+\begin_layout Enumerate
+How many bags of maize did you sell from this randomly selected plot? (q54)
+\end_layout
+
+\begin_layout Enumerate
+Q24.
+ Are you a member of a farmer group, association or cooperative that is
+ involved in maize production? (q24)
+\end_layout
+
+\begin_layout Enumerate
+Wealth - consumption of most commonly consumed items
+\end_layout
+
+\begin_layout Enumerate
+Food security (R111 and R112)
+\end_layout
+
+\begin_layout Enumerate
+Subjective well-being, relative to others (R409) and over time (R110)
+\end_layout
+
+\begin_layout Section*
+Ethical clearance
+\end_layout
+
+\begin_layout Standard
+This research received clearance form Makerere's School of Social Sciences
+ Research Ethics Committee (MAKSSREC 01.23.627/PR1) as well as from IFPRI
+ IRB (DSGD-23-0108).
+ The research was also registered at the Ugandan National Commission for
+ Science and Technology (SS1657ES).
+\end_layout
+
+\begin_layout Section*
+Transparency and replicability
+\end_layout
+
+\begin_layout Standard
+To maximize transparency and allow for replicabiliy, we use the following
+ strategies:
+\end_layout
+
+\begin_layout Itemize
+pre-analysis plan: the current document provides an ex-ante step-by-step
+ plan setting out the hypothesis we will test, the intervention we will
+ implement to test these hypotheses, the data that will be collected and
+ specifications we will run to bring the hypotheses to the data.
+ This pre-analysis plan will be pre-registered at the AEA RCT registry.
+\end_layout
+
+\begin_layout Itemize
+revision control: the entire project will be under revision control (that
+ is time stamped track changes) and committed regularly to a public repository
+ (github).
+\end_layout
+
+\begin_layout Itemize
+mock report: After baseline data is collected, a pre-registered report will
+ be produced and added to the AEA RCT registry and GitHub.
+ This report will differ from the pre-analyisis plan in that it already
+ has the tables filled with simulated data (drawn from the baseline).
+ The idea is that after the endline, only minimal changes are necessary
+ (basically connecting a different dataset) to obtain the final result,
+ further reducing the opportunity of specification search.
+\end_layout
+
+\begin_layout Section*
+Funding
+\end_layout
+
+\begin_layout Standard
+This research is part of the 
+\begin_inset CommandInset href
+LatexCommand href
+name "OneCG Market Intelligence Initiative"
+target "https://www.cgiar.org/initiative/market-intelligence/"
+literal "false"
+
+\end_inset
+
+ which is funded by a 
+\begin_inset CommandInset href
+LatexCommand href
+name "consortium of donors"
+target "https://www.cgiar.org/funders/"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "../../study_design/MIPPI_PAP"
+options "../../study_design/IFPRI_Style"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

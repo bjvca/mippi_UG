@@ -78,6 +78,12 @@ sample_individual$Sub_County<- trimws(sample_individual$Sub_County)
 sample_individual$Parish<- trimws(sample_individual$Parish)
 sample_individual$Village<- trimws(sample_individual$Village)
 
+dta$age[dta$age == 999] <- NA
+
+t.test(as.numeric(gender=="Male")~enumerator_gender,data=dta)
+t.test(age~enumerator_gender,data=dta)
+
+
 write.csv(sample_individual,file="/home/bjvca/data/projects/OneCG/MIPP/baseline/sampling/sample_individual.csv",row.names=FALSE)
 write.csv(sample_village,file="/home/bjvca/data/projects/OneCG/MIPP/baseline/sampling/sample_village.csv",row.names=FALSE)
 
