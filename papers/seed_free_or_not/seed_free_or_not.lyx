@@ -436,7 +436,29 @@ We will estimate the following equation
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-Y_{ij}=\alpha+\beta_{P}T_{ij}^{P}+\beta_{D}T_{ij}^{D}+\varepsilon_{ij}\label{eq:one}
+Y_{ij}=\alpha+\beta_{D}T_{ij}^{D}+\varepsilon_{ij}\label{eq:one}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Y_{ij}=\alpha+\beta_{P}P_{ij}+\beta_{D}T_{ij}^{D}+\varepsilon_{ij}\label{eq:one-1-1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Y_{ij}=\alpha+\beta_{P}P_{ij}+\beta_{D}P_{ij}*T_{ij}^{D}+\varepsilon_{ij}\label{eq:one-1}
 \end{equation}
 
 \end_inset
@@ -2154,7 +2176,7 @@ hline
 
 \begin_layout Plain Layout
 
-& mean & selection & sunk cost $ nobs
+& mean & selection & sunk cost & nobs
 \backslash
 
 \backslash

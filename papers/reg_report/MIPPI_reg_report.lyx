@@ -427,6 +427,8 @@ For the first factor, the treatment level consists of a seed trail pack
  that the household receives.
  This trial pack is of an improved seed variety (hybrid seed) that is available
  in the market but at the same time not yet widely adopted by farmers.
+ In particular, we used 1 kg bags of bazooka, which is sufficient to plant
+ about 1/8 of an acre.
  The control level for this factor is simply be the absence of a seed trial
  pack, that is, these household do not receive a seed trial pack.
  However, in both treatment and control groups, we inform farmers about
@@ -465,7 +467,7 @@ local seed varieties
  common consumption traits: taste, texture, colour, aroma and the degree
  to which the flour expands while cooking.
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 These consumption traits were based on focus group discussions.
@@ -559,7 +561,7 @@ We will use ANCOVA models to assess impact.
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-Y_{1ij}=\alpha+\beta_{S}T_{i}^{S}+\beta_{D}T_{i}^{D}+\beta_{I}T_{i}^{S}T_{i}^{D}+\delta Y_{0ij}+\varepsilon_{ij}\label{eq:one}
+Y_{ij}=\alpha+\beta_{S}T_{i}^{S}+\beta_{D}T_{i}^{D}+\beta_{I}T_{i}^{S}T_{i}^{D}+\delta Y_{ij}^{B}+\varepsilon_{ij}\label{eq:one}
 \end{equation}
 
 \end_inset
@@ -641,7 +643,7 @@ factorial-designs
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-Y_{1ij}=\alpha+\beta_{M}T_{i}^{M}+\beta_{O}\left(T_{i}^{O}-\bar{T^{O}}\right)+\beta_{I}T_{i}^{M}\left(T_{i}^{O}-\bar{T^{O}}\right)+\delta Y_{0ij}+\varepsilon_{ij}
+Y_{ij}=\alpha+\beta_{M}T_{i}^{M}+\beta_{O}\left(T_{i}^{O}-\bar{T^{O}}\right)+\beta_{I}T_{i}^{M}\left(T_{i}^{O}-\bar{T^{O}}\right)+\delta Y_{0ij}^{B}+\varepsilon_{ij}
 \end{equation}
 
 \end_inset
@@ -709,26 +711,28 @@ Timeline
 
 \begin_layout Standard
 There are two maize growing seasons in the area we are planning to work.
- One is running from march/april to june/July, the other from August/Sept
- to November/December.
+ One (locally know as Entoigo) is running from march/april to june/July,
+ the other (Nsambya) from August/Sept to November/December.
 \end_layout
 
 \begin_layout Standard
-Ideally we would distribute trail packs together with baseline data collection
- about one month before planting.
- As such, the best time would be around February 2023.
+We distributed trail packs together with baseline data collection about
+ a few months before planting.
+ After the first season, we then implemented the cooking demonstration and
+ tasting session in time for the second season of 2023.
+ Endline data was collected in February 2024.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../study_design/timeline.png
+	filename timeline.png
 	scale 35
 
 \end_inset
@@ -958,7 +962,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Descriptive statistics and orthogonality tests - Agro-dealer
+Baseline balance
 \begin_inset CommandInset label
 LatexCommand label
 name "balance_dealer"
@@ -1008,6 +1012,19 @@ hline
 \end_layout
 
 \begin_layout Plain Layout
+
+& & 
+\backslash
+multicolumn{2}{c}{
+\backslash
+textit{Pooled model}} & 
+\backslash
+multicolumn{3}{c}{
+\backslash
+textit{Interacted model}} 
+\backslash
+
+\backslash
 
 \end_layout
 
@@ -1722,8 +1739,7 @@ Sexpr{format(round(df_balance[3,2,7],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Where did you obtain the seed from for the maize planted on the randomly
- selected plot in the previous season? 
+Formal seed source? 
 \end_layout
 
 \begin_layout Plain Layout
@@ -2069,149 +2085,6 @@ ion; **, *, and + denote significance at the 1, 5 and 10
 
 \end_layout
 
-\begin_layout Enumerate
-Age of household head - years (q14)
-\end_layout
-
-\begin_layout Enumerate
-Household head has finished primary education - 1 is yes (q17)
-\end_layout
-
-\begin_layout Enumerate
-Gender of household head - 1 is male (q15)
-\end_layout
-
-\begin_layout Enumerate
-Household size - number of people in household/that eats in house on a regular
- basis (including interviewee) (q18)
-\end_layout
-
-\begin_layout Enumerate
-Distance of homestead to nearest agro-input shop selling maize seed - km
- (q10)
-\end_layout
-
-\begin_layout Enumerate
-Has used quality maize seed on any plot in last season - 1 is yes (q25a)
-\end_layout
-
-\begin_layout Enumerate
-Has used the promoted seed (bazooka) on a randomly chosen plot in the last
- season (q31)
-\end_layout
-
-\begin_layout Enumerate
-Where did you obtain the seed from for the maize planted on the randomly
- selected plot in the previous season? (q32) - more formal (eg agro-input
- dealer, operation wealth create) is better
-\end_layout
-
-\begin_layout Enumerate
-Used seed that is recycled more than 5 seasons on randomly selected plot
- recycled? (q34)
-\end_layout
-
-\begin_layout Enumerate
-Maize yields on a randomly chosen plot in last season - production/size
- of plot (q29, q50, q51) 
-\end_layout
-
-\begin_layout Subsection
-Outcomes at midline
-\end_layout
-
-\begin_layout Standard
-We plan to do a midline survey in August 2023.
- As mentioned above, at midline, we are particularly interested in the use
- of trial packs and whether something was learned from it.
- As such, only households that received a trial pack (either free or subsidized)
- will be asked the questions below.
- However, all households will be revisited, as at this time the consumption
- side treatment will be implemented.
-\end_layout
-
-\begin_layout Enumerate
-Was trial pack used as seed on the farm? (as opposed to sold, eaten,...)
-\end_layout
-
-\begin_layout Enumerate
-How was the seed trial package was used? (pure on separate plot, mixed with
- landraces, mixed with bazooka from other source, mixed with other improved
- seed,...) 
-\end_layout
-
-\begin_layout Enumerate
-Was it intercroped? 
-\end_layout
-
-\begin_layout Enumerate
-What seed/plant spacing was used for the trail pack? 
-\end_layout
-
-\begin_layout Enumerate
-Number of seeds per hill used for the trail pack? 
-\end_layout
-
-\begin_layout Enumerate
-Did you apply organic manure to the soil for the trail pack? 
-\end_layout
-
-\begin_layout Enumerate
-Did you apply DAP **(black in color)** or NPK (brown in color) for the trail
- pack? 
-\end_layout
-
-\begin_layout Enumerate
-Did you apply Urea **(white in color)** for the trail pack? 
-\end_layout
-
-\begin_layout Enumerate
-How many times did you weed the trial pack maize plot? 
-\end_layout
-
-\begin_layout Enumerate
-How many days after planting did you do first weeding on the trail pack
- plot? 
-\end_layout
-
-\begin_layout Enumerate
-Did you use any pesticides, herbicides or fungicides on the trail pack plot?
- 
-\end_layout
-
-\begin_layout Enumerate
-When did you plant the trail pack seed? 
-\end_layout
-
-\begin_layout Enumerate
-Did you re-sow where seeds did not germinate on the trial seed plot? If
- so, what seed variety did you used of gap filling
-\end_layout
-
-\begin_layout Enumerate
-area planted with trial pack?
-\end_layout
-
-\begin_layout Enumerate
-production from trial pack?
-\end_layout
-
-\begin_layout Enumerate
-yields from trial pack plot?
-\end_layout
-
-\begin_layout Enumerate
-perceptions related to the quality of the trial pack seed (bazooka).
-\end_layout
-
-\begin_layout Enumerate
-Were you happy with the bazooka?
-\end_layout
-
-\begin_layout Enumerate
-What seed are you planning to use in next season?
-\end_layout
-
 \begin_layout Subsection
 Outcomes at endline
 \end_layout
@@ -2239,53 +2112,68 @@ literal "false"
 
 \begin_layout Enumerate
 has used quality maize seed (hybrid/OPV obtained from credible source and
- not recycled too often) on any plot in last season - 1 is yes (q25a)
+ not recycled too often) on any plot in last season - 1 is yes (constructed
+ using plot_use_imp, plot_times_rec, source)
 \end_layout
 
 \begin_layout Enumerate
-has used Bazooka on any plot in last season in last season - 1 is yes (q25aa)
+has used Bazooka on any plot in last season in last season - 1 is yes (plot_imp_
+type)
 \end_layout
 
 \begin_layout Enumerate
 has used improved seed (hybrid/OPV obtained from credible source and not
  recycled too often) on a randomly chosen plot in the last season - 1 is
- yes (q31)
+ yes (plot_select_name, plot_use_imp, plot_times_rec, source)
 \end_layout
 
 \begin_layout Enumerate
 has used the promoted seed (bazooka) on a randomly chosen plot in the last
- season - 1 is yes (q31)
+ season - 1 is yes (plot_select_name, plot_imp_type)
 \end_layout
 
 \begin_layout Enumerate
 extensive margin improved seed use on random plot (kg improved seed (OPV
- or hybrid)) (q38) - more is better
+ or hybrid)) (seed_qty) - more is better
+\end_layout
+
+\begin_layout Enumerate
+intensive margin improved seed use (1.
+ nr of plots with improved seed as share of all plots, 2.
+ area planted with improved seed as share of total area; constructed using
+ plot_size plot_use_imp, plot_times_rec, source)
 \end_layout
 
 \begin_layout Enumerate
 intensive margin improved seed use on random plot (kg improved seed (OPV
- or hybrid)/area planted) (q38/q29) - more is better
+ or hybrid)/area planted) (seed_qty/plot_size, crop_inter, crop_type, crop_perc)
+ - more is better
 \end_layout
 
 \begin_layout Enumerate
 How often was the seed that was used on the randomly selected plot recycled?
- (q34) - less is better
+ (plot_select_name, plot_times_rec) - less is better
 \end_layout
 
 \begin_layout Enumerate
 Where did you obtain the seed from for the maize planted on the randomly
- selected plot in the previous season? (q32) - more formal (eg agro-input
- dealer, operation wealth create) is better
+ selected plot in the previous season? (plot_select_name, source) - more
+ formal (eg agro-input dealer, operation wealth create) is better
 \end_layout
 
 \begin_layout Enumerate
 Would you use this seed that was used on the randomly selected plot in the
- previous season again in the future? - 1 is yes (q37)
+ previous season again in the future? - 1 is yes (seed_use_again)
+\end_layout
+
+\begin_layout Enumerate
+maize production on a a randomly chosen plot in last season (bag_harv, bag_kg)
 \end_layout
 
 \begin_layout Enumerate
 maize yields on a randomly chosen plot in last season - production/size
- of plot (q29, q50, q51) - more is better
+ of plot (crop_inter, crop_type, crop_perc, bag_harv, bag_kg, plot_size,
+ plot_select_name) - more is better
 \end_layout
 
 \begin_layout Subsubsection
@@ -2300,92 +2188,60 @@ We define a range of secondary outcomes.
 \end_layout
 
 \begin_layout Enumerate
-rating of taste of seed variety used on randomly selected field - 1 is good
- (4) or very good (5) taste of variety - producer intervention impact pathway)
- (q35g)
-\end_layout
-
-\begin_layout Enumerate
 Seed variety that was planted on the randomly selected crop in the previous
- season (to test if farmers has experience - consumption intervention impact
- pathway)?
+ season; how long has farmer been using the variety (to test if farmers
+ has experience - consumption intervention impact pathway)? (seed_prev,
+ long_var)
 \end_layout
 
 \begin_layout Enumerate
-was it intercropped? (q30) - if yes, ask for secondary crop (q30a) and percentag
-e allocations (q30b)
+was it intercropped? - if yes, ask for secondary crop and percentage allocations
+ (crop_inter, crop_type, crop_perc)
 \end_layout
 
 \begin_layout Enumerate
-crop residue use (cr_use_grp)
-\end_layout
-
-\begin_layout Enumerate
-cost of the seed (q39)
-\end_layout
-
-\begin_layout Enumerate
-where was the seed obtained from? (q32)
+cost of the seed (seed_cst)
 \end_layout
 
 \begin_layout Enumerate
 Was the female co-head involved in the decision to use a particular type
- of seed on the randomly selected plot? (q34a)
+ of seed on the randomly selected plot? (who1)
 \end_layout
 
 \begin_layout Enumerate
 Was the female co-head involved in the decision on what happened to the
- crops harvested on the randomly selected plot? (q34aa)
+ crops harvested on the randomly selected plot? (who2)
 \end_layout
 
 \begin_layout Enumerate
 How much maize from the randomly selected plot was kept for own consumption?
- (q55a)
+ (bag_keep)
 \end_layout
 
 \begin_layout Enumerate
-How much was kept for seed in the next agricultural season? (q56)
+How much was kept for seed in the next agricultural season? (seed_keep)
 \end_layout
 
 \begin_layout Enumerate
-What seed/plant spacing was used on random plot? (q40)
-\end_layout
-
-\begin_layout Enumerate
-Number of seeds per hill used on random plot? (q41)
-\end_layout
-
-\begin_layout Enumerate
-Did you apply organic manure to the soil on random plot? (q42)
+Did you apply organic manure to the soil on random plot? (org_ap)
 \end_layout
 
 \begin_layout Enumerate
 Did you apply DAP **(black in color)** or NPK (brown in color) on random
- plot? (q43)
+ plot? (dap_ap)
 \end_layout
 
 \begin_layout Enumerate
-Did you apply Urea **(white in color)** on random plot? (q44)
+Did you apply Urea **(white in color)** on random plot? (ur_ap)
 \end_layout
 
 \begin_layout Enumerate
-How many times did you weed on random plot? (q45)
+Did you use any pesticides, herbicides or fungicides on random plot? (pest_ap)
 \end_layout
 
 \begin_layout Enumerate
-How many days after planting did you do first weeding on random plot? (q46)
-\end_layout
-
-\begin_layout Enumerate
-Did you use any pesticides, herbicides or fungicides on random plot? (q47)
-\end_layout
-
-\begin_layout Enumerate
-When did you plant the seed on random plot? (q48)
-\end_layout
-
-\begin_layout Enumerate
-Did you re-sow where seeds did not germinate on random plot? (q49)
+Would you use this seed that was used on random plot in the second season
+ (Nsambya) of 2023 again in the future? (seed_use_again) - 1 is yes
 \end_layout
 
 \begin_layout Enumerate
@@ -2416,35 +2272,113 @@ Harvesting
 
 \end_deeper
 \begin_layout Enumerate
-maize yields on a randomly chosen plot in last season - production/size
- of plot (q29, q50, q51)
-\end_layout
-
-\begin_layout Enumerate
 Did you sell any maize that you harvested from this randomly selected plot?
- (q53)
+ (maize_sell)
 \end_layout
 
 \begin_layout Enumerate
-How many bags of maize did you sell from this randomly selected plot? (q54)
+How many bags of maize did you sell from this randomly selected plot? (bag_sell)
 \end_layout
 
 \begin_layout Enumerate
-Q24.
- Are you a member of a farmer group, association or cooperative that is
- involved in maize production? (q24)
+Wealth - consumption of most commonly consumed items (maize_value_sp-airtime_val
+ue_sp)
 \end_layout
 
 \begin_layout Enumerate
-Wealth - consumption of most commonly consumed items
+Food security (fd_pref and fd_less)
 \end_layout
 
 \begin_layout Enumerate
-Food security (R111 and R112)
+Subjective well-being, relative to others (in_com) and over time (in_six)
 \end_layout
 
 \begin_layout Enumerate
-Subjective well-being, relative to others (R409) and over time (R110)
+perceptions on 6 producer traits: yield, abiotic stress tolerance, biotic
+ stress tolerance, time to mature, price, germination rate (yield_rate,
+ drt_tol, dies_tol, erly_mat, price, germ_rate)
+\end_layout
+
+\begin_layout Enumerate
+perceptions of 6 consumer traits: taste/texture, appearance, nutritional
+ value, ease of cooking, filling, expands when cooking (cons_taste, cons_nut,
+ cons_appear, cons_cook, cons_cal, expand_cook)
+\end_layout
+
+\begin_layout Enumerate
+Please indicate most, second and thrid most when deciding on what seed to
+ plant: yield, taste, ease of cooking, price, availability, nutritional
+ benefit
+\end_layout
+
+\begin_layout Subsection
+Seed trial pack use
+\end_layout
+
+\begin_layout Standard
+We plan to do a midline survey in August 2023.
+ As mentioned above, at midline, we are particularly interested in the use
+ of trial packs and whether something was learned from it.
+ As such, only households that received a trial pack (either free or subsidized)
+ will be asked the questions below.
+ However, all households will be revisited, as at this time the consumption
+ side treatment will be implemented.
+\end_layout
+
+\begin_layout Enumerate
+Was trial pack used as seed on the farm? (as opposed to sold, eaten,...) (used_TP)
+\end_layout
+
+\begin_layout Enumerate
+How was the seed trial package was used? (pure on separate plot, mixed with
+ landraces, mixed with bazooka from other source, mixed with other improved
+ seed,...) (TP_seperate, TP_usage)
+\end_layout
+
+\begin_layout Enumerate
+Was it intercroped? (TP_inter)
+\end_layout
+
+\begin_layout Enumerate
+Did you apply organic manure to the soil for the trail pack? (TP_org_app)
+\end_layout
+
+\begin_layout Enumerate
+Did you apply DAP **(black in color)** or NPK (brown in color) for the trail
+ pack? (TP_dap_app)
+\end_layout
+
+\begin_layout Enumerate
+Did you apply Urea **(white in color)** for the trail pack? (TP_ure_app)
+\end_layout
+
+\begin_layout Enumerate
+Did you use any pesticides, herbicides or fungicides on the trail pack plot?
+ (TP_cide_use)
+\end_layout
+
+\begin_layout Enumerate
+area planted with trial pack? (TP_plot_size)
+\end_layout
+
+\begin_layout Enumerate
+production from trial pack? (TP_bags * TP_bag_size)
+\end_layout
+
+\begin_layout Enumerate
+yields from trial pack plot? (TP_bags * TP_bag_size/TP_plot_size)
+\end_layout
+
+\begin_layout Enumerate
+farmer recalls specifics on seed pack (type of seed and name of seed company)
+\end_layout
+
+\begin_layout Enumerate
+perceptions related to the quality of the trial pack seed (bazooka).
+\end_layout
+
+\begin_layout Enumerate
+Were you happy with the bazooka?
 \end_layout
 
 \begin_layout Section*
