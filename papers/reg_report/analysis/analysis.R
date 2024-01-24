@@ -67,23 +67,24 @@ dta <-merge(dta, bse[c("farmer_ID","cluster_ID")], by.x="ID", by.y="farmer_ID")
 ## uses improved seed on at least one plot
 
 
-dta$p_outcome_1 <- ((dta$plot.1..plot_imp_type %in% c("Longe_10H","Longe_7H","Longe_7R_Kayongo-go", "Bazooka","DK","Longe_6H") & (dta$plot.1..source %in% letters[4:9]) & (dta$plot.1..plot_times_rec == 1)) |
-  (dta$plot.1..plot_imp_type %in% c("Longe_5","Longe_4","Panner", "Wema","KH_series")  & (dta$plot.1..source %in% letters[4:9]) & (dta$plot.1..plot_times_rec %in% 1:3))) |
-((dta$plot.2..plot_imp_type %in% c("Longe_10H","Longe_7H","Longe_7R_Kayongo-go", "Bazooka","DK","Longe_6H") & (dta$plot.2..source %in% letters[4:9]) & (dta$plot.2..plot_times_rec == 1)) |
-    (dta$plot.2..plot_imp_type %in% c("Longe_5","Longe_4","Panner", "Wema","KH_series")  & (dta$plot.2..source %in% letters[4:9]) & (dta$plot.2..plot_times_rec %in% 1:3)))
+dta$p_outcome_1 <- ((dta$plot.1..plot_imp_type %in% c("Longe_10H","Longe_7H","Longe_7R_Kayongo-go", "Bazooka","DK","Longe_6H") & (dta$plot.1..source %in% letters[4:9]) ) |
+  (dta$plot.1..plot_imp_type %in% c("Longe_5","Longe_4","Panner", "Wema","KH_series")  & (dta$plot.1..source %in% letters[4:9]) )) |
+((dta$plot.2..plot_imp_type %in% c("Longe_10H","Longe_7H","Longe_7R_Kayongo-go", "Bazooka","DK","Longe_6H") & (dta$plot.2..source %in% letters[4:9]) ) |
+    (dta$plot.2..plot_imp_type %in% c("Longe_5","Longe_4","Panner", "Wema","KH_series")  & (dta$plot.2..source %in% letters[4:9]) ))
 dta$p_outcome_2 <- dta$plot.1..plot_imp_type=="Bazooka" | dta$plot.2..plot_imp_type=="Bazooka"
 
-dta$nr_improved <- ((dta$plot.1..plot_imp_type %in% c("Longe_10H","Longe_7H","Longe_7R_Kayongo-go", "Bazooka","DK","Longe_6H") & (dta$plot.1..source %in% letters[4:9]) & (dta$plot.1..plot_times_rec == 1)) |
-    (dta$plot.1..plot_imp_type %in% c("Longe_5","Longe_4","Panner", "Wema","KH_series")  & (dta$plot.1..source %in% letters[4:9]) & (dta$plot.1..plot_times_rec %in% 1:3))) +
-  ((dta$plot.2..plot_imp_type %in% c("Longe_10H","Longe_7H","Longe_7R_Kayongo-go", "Bazooka","DK","Longe_6H") & (dta$plot.2..source %in% letters[4:9]) & (dta$plot.2..plot_times_rec == 1)) |
-     (dta$plot.2..plot_imp_type %in% c("Longe_5","Longe_4","Panner", "Wema","KH_series")  & (dta$plot.2..source %in% letters[4:9]) & (dta$plot.2..plot_times_rec %in% 1:3)))
+dta$nr_improved <- ((dta$plot.1..plot_imp_type %in% c("Longe_10H","Longe_7H","Longe_7R_Kayongo-go", "Bazooka","DK","Longe_6H") & (dta$plot.1..source %in% letters[4:9]) ) |
+    (dta$plot.1..plot_imp_type %in% c("Longe_5","Longe_4","Panner", "Wema","KH_series")  & (dta$plot.1..source %in% letters[4:9]) )) +
+  ((dta$plot.2..plot_imp_type %in% c("Longe_10H","Longe_7H","Longe_7R_Kayongo-go", "Bazooka","DK","Longe_6H") & (dta$plot.2..source %in% letters[4:9])) |
+     (dta$plot.2..plot_imp_type %in% c("Longe_5","Longe_4","Panner", "Wema","KH_series")  & (dta$plot.2..source %in% letters[4:9]) ))
 
-dta$nr_improvedxsize <- ((dta$plot.1..plot_imp_type %in% c("Longe_10H","Longe_7H","Longe_7R_Kayongo-go", "Bazooka","DK","Longe_6H") & (dta$plot.1..source %in% letters[4:9]) & (dta$plot.1..plot_times_rec == 1)) |
-                      (dta$plot.1..plot_imp_type %in% c("Longe_5","Longe_4","Panner", "Wema","KH_series")  & (dta$plot.1..source %in% letters[4:9]) & (dta$plot.1..plot_times_rec %in% 1:3)))*dta$plot.1..plot_size +
-  ((dta$plot.2..plot_imp_type %in% c("Longe_10H","Longe_7H","Longe_7R_Kayongo-go", "Bazooka","DK","Longe_6H") & (dta$plot.2..source %in% letters[4:9]) & (dta$plot.2..plot_times_rec == 1)) |
-     (dta$plot.2..plot_imp_type %in% c("Longe_5","Longe_4","Panner", "Wema","KH_series")  & (dta$plot.2..source %in% letters[4:9]) & (dta$plot.2..plot_times_rec %in% 1:3)))*dta$plot.2..plot_size
+dta$nr_improvedxsize <- ((dta$plot.1..plot_imp_type %in% c("Longe_10H","Longe_7H","Longe_7R_Kayongo-go", "Bazooka","DK","Longe_6H") & (dta$plot.1..source %in% letters[4:9])) |
+                      (dta$plot.1..plot_imp_type %in% c("Longe_5","Longe_4","Panner", "Wema","KH_series")  & (dta$plot.1..source %in% letters[4:9]) ))*dta$plot.1..plot_size +
+  ((dta$plot.2..plot_imp_type %in% c("Longe_10H","Longe_7H","Longe_7R_Kayongo-go", "Bazooka","DK","Longe_6H") & (dta$plot.2..source %in% letters[4:9])) |
+     (dta$plot.2..plot_imp_type %in% c("Longe_5","Longe_4","Panner", "Wema","KH_series")  & (dta$plot.2..source %in% letters[4:9])))*dta$plot.2..plot_size
 
 dta$totsize <- dta$plot.1..plot_size +dta$plot.2..plot_size
+
 
 dta$share_plots_imp <-  dta$nr_improved/dta$plot_no
 dta$share_area_imp <-  dta$nr_improvedxsize/dta$totsize
@@ -132,4 +133,79 @@ for (i in 1:length(outcomes)){
 save(df_res_pool,file=paste(path,"/papers/reg_report/results/df_res_pool.Rdata",sep="/"))
 save(df_res,file=paste(path,"/papers/reg_report/results/df_res.Rdata",sep="/"))
 save(df_means_out,file=paste(path,"/papers/reg_report/results/df_means_out.Rdata",sep="/"))
+
+### on random plot (controling for baseline)
+
+dta$rnd_adopt <-  ((dta$rnd_imp_type %in% c("Longe_10H","Longe_7H","Longe_7R_Kayongo-go", "Bazooka","DK","Longe_6H") & (dta$rnd_source %in% letters[4:9])) |
+                     (dta$rnd_imp_type %in% c("Longe_5","Longe_4","Panner", "Wema","KH_series")  & (dta$rnd_source %in% letters[4:9])))
+
+## we assume here that seed from official sources has not been recycled
+bse$b_rnd_adopt <- (((bse$maize_var  %in% c("Longe_10H"," Longe_7H","Longe_7R_Kayongo-go", "Bazooka","DK","Longe_6H")) & (bse$source %in% letters[4:9]) )
+                  |
+                    ((bse$maize_var  %in% c("Longe_5","Longe_4"," Panner", "Wema","KH_series"))  & (bse$source %in% letters[4:9]) ))
+dta <- merge(dta, bse[c("farmer_ID","b_rnd_adopt")], by.x="ID", by.y="farmer_ID")
+
+dta$rnd_bazo <-  ((dta$rnd_imp_type == "Bazooka") & (dta$rnd_source %in% letters[4:9]))
+## we assume here that seed from official sources has not been recycled
+bse$b_rnd_bazo <- ((bse$maize_var == "Bazooka") & (bse$source %in% letters[4:9]) )
+                   
+dta <- merge(dta, bse[c("farmer_ID","b_rnd_bazo")], by.x="ID", by.y="farmer_ID")
+
+### seed quantity
+dta$imp_seed_qty_rnd <- dta$rnd_adopt*dta$seed_qty
+bse$b_imp_seed_qty_rnd <- bse$b_rnd_adopt*bse$seed_qty
+
+dta <- merge(dta, bse[c("farmer_ID","b_imp_seed_qty_rnd")], by.x="ID", by.y="farmer_ID")
+#iterate over outcomes
+outcomes <- c("rnd_adopt", "rnd_bazo", "imp_seed_qty_rnd" )
+b_outcomes <- c("b_rnd_adopt", "b_rnd_adopt","b_imp_seed_qty_rnd")
+
+## demean indicators
+dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)
+dta$trial_P_demeaned <-  dta$trial_P - mean(dta$trial_P,na.rm = T)
+df_means_out <- array(NA,c(2,length(outcomes )))
+df_res <- array(NA,c(3,3,length(outcomes )))
+df_res_pool  <- array(NA,c(2,3,length(outcomes )))
+for (i in 1:length(outcomes)){
+  ##means
+  
+  df_means_out[1,i] <- mean(unlist(dta[outcomes[i]]), na.rm=TRUE)
+  df_means_out[2,i] <- sd(unlist(dta[outcomes[i]]), na.rm=TRUE)
+  
+  formula1 <- as.formula(paste(paste(outcomes[i],paste("trial_P*cont"),sep="~"), b_outcomes[i],sep="+"))
+  ols <- lm(formula1, data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR3")
+  
+  df_res[1:3,1,i] <- coef_test(ols, vcov_cluster)$beta[2:4]
+  df_res[1:3,2,i] <- coef_test(ols, vcov_cluster)$SE[2:4]
+  df_res[1:3,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2:4]
+  
+  formula2 <- as.formula(paste(paste(outcomes[i],paste("trial_P*cont_demeaned"),sep="~"), b_outcomes[i],sep="+"))
+  ols <- lm(formula2, data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR3")
+  
+  df_res_pool[1,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
+  df_res_pool[1,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
+  df_res_pool[1,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
+  
+  formula3 <- as.formula(paste(paste(outcomes[i],paste("cont*trial_P_demeaned"),sep="~"), b_outcomes[i],sep="+"))
+  ols <- lm(formula3, data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR3")
+  
+  df_res_pool[2,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
+  df_res_pool[2,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
+  df_res_pool[2,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
+  
+}
+
+df_rnd_pool <- df_res_pool
+df_rnd <- df_res
+df_means_rnd <- df_means_out
+
+
+save(df_rnd_pool,file=paste(path,"/papers/reg_report/results/df_rnd_pool.Rdata",sep="/"))
+save(df_rnd,file=paste(path,"/papers/reg_report/results/df_rnd.Rdata",sep="/"))
+save(df_means_rnd,file=paste(path,"/papers/reg_report/results/df_means_rnd.Rdata",sep="/"))
+
+
   

@@ -1520,6 +1520,47 @@ perceptions related to the quality of the trial pack seed (bazooka).
 Were you happy with the bazooka?
 \end_layout
 
+\begin_layout Subsubsection*
+awareness impact pathway
+\end_layout
+
+\begin_layout Enumerate
+Please provide me with the names of as many improved seed varieties you
+ know (enumerator fill in the number of seed varieties the farmer knows)
+ (nr_vars)
+\end_layout
+
+\begin_layout Enumerate
+Do you know a maize seed variety called “Bazooka”? (knw_bazo)
+\end_layout
+
+\begin_layout Subsubsection*
+risk impact pathway
+\end_layout
+
+\begin_layout Enumerate
+How likely is it that you would end up with lower yield than with local
+ seed if you would use improved seed varieties? (risk_imp)
+\end_layout
+
+\begin_layout Enumerate
+How likely is it that you would end up with lower yield than with local
+ seed if you would use the promoted variety? (risk_bazo)
+\end_layout
+
+\begin_layout Subsubsection*
+Community Learning and Peer Influence
+\end_layout
+
+\begin_layout Enumerate
+How likely is it that you would recommend one of these improved seed varieties
+ to a friend? (share_imp)
+\end_layout
+
+\begin_layout Enumerate
+How likely is it that you would recommend bazooka to a friend? (share_bazo)
+\end_layout
+
 \begin_layout Section*
 Ethical clearance
 \end_layout
