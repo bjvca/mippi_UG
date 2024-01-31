@@ -26,19 +26,21 @@ sum(dta$after_cooking.taste2.taste2_loc)/sum(dta$total_votes_after)*100
 
 base <- read.csv("/home/bjvca/data/projects/OneCG/MIPP/baseline/data/raw/baseline_fixed_dups.csv")
 ### keep only clusters allocated to consumption intervention
-base <- base[c("district","sub",  "village", "trial_P")]
+base <- base[c("farmer_ID","district","sub",  "village", "trial_P")]
 
-base <- aggregate(base$trail_P,list(base$district,base$sub,base$village), mean)
+base_IDs <- read.csv("/home/bjvca/data/projects/OneCG/MIPP/baseline/data/public/baseline.csv")[c("farmer_ID","vilID", "subID", "distID")]
+
+base <- merge(base, base_IDs,by="farmer_ID")
+
+base <- aggregate(base[c("trial_P","vilID","subID","distID")],list(base$district,base$sub,base$village), mean)
 
 dta <- merge(dta, base, by.x=c("cooking.district", "cooking.sub", "cooking.village"), by.y=c("Group.1","Group.2","Group.3" ))
 sum(dta$before_cook.taste1.taste1_impr[dta$x==1])/sum(dta$total_votes_before[dta$x==1])*100
 sum(dta$before_cook.taste1.taste1_impr[dta$x==0])/sum(dta$total_votes_before[dta$x==0])*100
 #merge in gender of main respondent
-
 base <- read.csv("/home/bjvca/data/projects/OneCG/MIPP/baseline/data/raw/baseline_fixed_dups.csv")
 ## this has 9 duplicate names...
 sum(duplicated(base$Check2.check.maize.name_resp))
-
 ##determine gender of respondent
 base$resp_gender <- NA
 base$resp_gender[base$Check2.q1 == "Yes"] <- base$Check2.check.maize.gender[base$Check2.q1 == "Yes"]
@@ -64,6 +66,7 @@ dta <- merge(dta,base[c("Check2.check.maize.name_resp","village","resp_gender")]
 names(dta)[length(dta)] <- "grDetails.9..respondent_gender"
 dta <- merge(dta,base[c("Check2.check.maize.name_resp","village","resp_gender")], by.x=c("grDetails.10..c2","cooking.village"), by.y=c("Check2.check.maize.name_resp","village"), all.x=TRUE)
 names(dta)[length(dta)] <- "grDetails.10..respondent_gender"
+
 
 library(dplyr) 
 dta <- dta %>% select(-contains("sp_name"))
