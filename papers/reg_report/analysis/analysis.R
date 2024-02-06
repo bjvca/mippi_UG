@@ -52,46 +52,69 @@ ihs <- function(x) {
   return(y)}
 
 path <- strsplit(path,"papers/reg_report/analysis")[[1]]
-
+#read in baseline data
 bse <- read.csv(paste(path,"baseline/data/public/baseline.csv",sep="/"))
-bse$cluster_ID <- as.factor(paste(paste(bse$distID,bse$subID, sep="_"), bse$vilID, sep="_"))#read in data
+bse$cluster_ID <- as.factor(paste(paste(bse$distID,bse$subID, sep="_"), bse$vilID, sep="_"))
 
 ### read in test data - this needs to be replace when we get the real data
 
 dta <- read.csv(paste(path,"endline/data/dummy/dummy.csv", sep="/"))
 ## drop non-free trial packs and non-free + discount trial packs
 dta <- subset(dta, paid_pac == FALSE & discounted == FALSE)
-
+#merge to baseline data
 dta <-merge(dta, bse[c("farmer_ID","cluster_ID")], by.x="ID", by.y="farmer_ID")
 
-## uses improved seed on at least one plot
+## primary outcome 1: uses improved seed on at least one plot (fresh hybrid from formal source or OPV that is used 3 times max from formal source) - increase for max number of plots
+dta$p_outcome_1 <- (((dta$plot.1..plot_imp_type %in%  
+  c("Longe_10H", "Longe_10R", "Longe_7H", "Longe_7R_Kayongo-go", "Bazooka", "DK", "Longe_6H", "Panner", "UH5051", "Wema", "KH_series", "other_hybrid")) & (dta$plot.1..plot_times_rec %in% 1) & (dta$plot.1..source %in% letters[4:9])  ) |
+((dta$plot.1..plot_imp_type %in%  c("Longe_5", "Longe_5D", "Longe_4", "MM3")) & (dta$plot.1..plot_times_rec %in% 1:3) &  (dta$plot.1..source %in% letters[4:9]))) |
+(((dta$plot.2..plot_imp_type %in%  
+     c("Longe_10H", "Longe_10R", "Longe_7H", "Longe_7R_Kayongo-go", "Bazooka", "DK", "Longe_6H", "Panner", "UH5051", "Wema", "KH_series", "other_hybrid")) & (dta$plot.2..plot_times_rec %in% 1) & (dta$plot.2..source %in% letters[4:9])  ) |
+    ((dta$plot.2..plot_imp_type %in%  c("Longe_5", "Longe_5D", "Longe_4", "MM3")) & (dta$plot.2..plot_times_rec %in% 1:3) &  (dta$plot.2..source %in% letters[4:9])))
 
+## to control for this outcome at baseline, we use the question "Q20. Did you use any quality maize seed like **OPV or hybrid seed** in the previous season (Nsambya of 2022) on any of your plots?"
+bse$b_p_outcome_1 <- bse$quality_use=="Yes"
 
-dta$p_outcome_1 <- ((dta$plot.1..plot_imp_type %in% c("Longe_10H","Longe_7H","Longe_7R_Kayongo-go", "Bazooka","DK","Longe_6H") & (dta$plot.1..source %in% letters[4:9]) ) |
-  (dta$plot.1..plot_imp_type %in% c("Longe_5","Longe_4","Panner", "Wema","KH_series")  & (dta$plot.1..source %in% letters[4:9]) )) |
-((dta$plot.2..plot_imp_type %in% c("Longe_10H","Longe_7H","Longe_7R_Kayongo-go", "Bazooka","DK","Longe_6H") & (dta$plot.2..source %in% letters[4:9]) ) |
-    (dta$plot.2..plot_imp_type %in% c("Longe_5","Longe_4","Panner", "Wema","KH_series")  & (dta$plot.2..source %in% letters[4:9]) ))
-dta$p_outcome_2 <- dta$plot.1..plot_imp_type=="Bazooka" | dta$plot.2..plot_imp_type=="Bazooka"
+dta <- merge(dta, bse[c("farmer_ID","b_p_outcome_1")], by.x="ID", by.y="farmer_ID")
 
-dta$nr_improved <- ((dta$plot.1..plot_imp_type %in% c("Longe_10H","Longe_7H","Longe_7R_Kayongo-go", "Bazooka","DK","Longe_6H") & (dta$plot.1..source %in% letters[4:9]) ) |
-    (dta$plot.1..plot_imp_type %in% c("Longe_5","Longe_4","Panner", "Wema","KH_series")  & (dta$plot.1..source %in% letters[4:9]) )) +
-  ((dta$plot.2..plot_imp_type %in% c("Longe_10H","Longe_7H","Longe_7R_Kayongo-go", "Bazooka","DK","Longe_6H") & (dta$plot.2..source %in% letters[4:9])) |
-     (dta$plot.2..plot_imp_type %in% c("Longe_5","Longe_4","Panner", "Wema","KH_series")  & (dta$plot.2..source %in% letters[4:9]) ))
+## primary outcome 2: uses fresh bazooka on at least one plot
+dta$p_outcome_2 <- ((dta$plot.1..plot_imp_type=="Bazooka") & (dta$plot.1..plot_times_rec %in% 1) & (dta$plot.1..source %in% letters[4:9]))  |
+  ((dta$plot.2..plot_imp_type=="Bazooka") & (dta$plot.2..plot_times_rec %in% 1) & (dta$plot.2..source %in% letters[4:9])) 
+## to control for this outcome at baseline, we use the question "Q20. Did you use any quality maize seed like **OPV or hybrid seed** in the previous season (Nsambya of 2022) on any of your plots?"
+bse$b_p_outcome_2 <- bse$bazo_use=="Yes"
 
-dta$nr_improvedxsize <- ((dta$plot.1..plot_imp_type %in% c("Longe_10H","Longe_7H","Longe_7R_Kayongo-go", "Bazooka","DK","Longe_6H") & (dta$plot.1..source %in% letters[4:9])) |
-                      (dta$plot.1..plot_imp_type %in% c("Longe_5","Longe_4","Panner", "Wema","KH_series")  & (dta$plot.1..source %in% letters[4:9]) ))*dta$plot.1..plot_size +
-  ((dta$plot.2..plot_imp_type %in% c("Longe_10H","Longe_7H","Longe_7R_Kayongo-go", "Bazooka","DK","Longe_6H") & (dta$plot.2..source %in% letters[4:9])) |
-     (dta$plot.2..plot_imp_type %in% c("Longe_5","Longe_4","Panner", "Wema","KH_series")  & (dta$plot.2..source %in% letters[4:9])))*dta$plot.2..plot_size
+dta <- merge(dta, bse[c("farmer_ID","b_p_outcome_2")], by.x="ID", by.y="farmer_ID")
 
-dta$totsize <- dta$plot.1..plot_size +dta$plot.2..plot_size
+## number of plots under improved maize cultivation
+dta$nr_improved <- (((dta$plot.1..plot_imp_type %in%  
+                        c("Longe_10H", "Longe_10R", "Longe_7H", "Longe_7R_Kayongo-go", "Bazooka", "DK", "Longe_6H", "Panner", "UH5051", "Wema", "KH_series", "other_hybrid")) & (dta$plot.1..plot_times_rec %in% 1) & (dta$plot.1..source %in% letters[4:9])  ) |
+                      ((dta$plot.1..plot_imp_type %in%  c("Longe_5", "Longe_5D", "Longe_4", "MM3")) & (dta$plot.1..plot_times_rec %in% 1:3) &  (dta$plot.1..source %in% letters[4:9]))) +
+  (((dta$plot.2..plot_imp_type %in%  
+       c("Longe_10H", "Longe_10R", "Longe_7H", "Longe_7R_Kayongo-go", "Bazooka", "DK", "Longe_6H", "Panner", "UH5051", "Wema", "KH_series", "other_hybrid")) & (dta$plot.2..plot_times_rec %in% 1) & (dta$plot.2..source %in% letters[4:9])  ) |
+     ((dta$plot.2..plot_imp_type %in%  c("Longe_5", "Longe_5D", "Longe_4", "MM3")) & (dta$plot.2..plot_times_rec %in% 1:3) &  (dta$plot.2..source %in% letters[4:9])))
+##area under improved maize cultivation
+dta$nr_improvedxsize <- rowSums(cbind((((dta$plot.1..plot_imp_type %in%  
+                             c("Longe_10H", "Longe_10R", "Longe_7H", "Longe_7R_Kayongo-go", "Bazooka", "DK", "Longe_6H", "Panner", "UH5051", "Wema", "KH_series", "other_hybrid")) & (dta$plot.1..plot_times_rec %in% 1) & (dta$plot.1..source %in% letters[4:9])  ) |
+                           ((dta$plot.1..plot_imp_type %in%  c("Longe_5", "Longe_5D", "Longe_4", "MM3")) & (dta$plot.1..plot_times_rec %in% 1:3) &  (dta$plot.1..source %in% letters[4:9])))*dta$plot.1..plot_size ,
+  (((dta$plot.2..plot_imp_type %in%  
+       c("Longe_10H", "Longe_10R", "Longe_7H", "Longe_7R_Kayongo-go", "Bazooka", "DK", "Longe_6H", "Panner", "UH5051", "Wema", "KH_series", "other_hybrid")) & (dta$plot.2..plot_times_rec %in% 1) & (dta$plot.2..source %in% letters[4:9])  ) |
+     ((dta$plot.2..plot_imp_type %in%  c("Longe_5", "Longe_5D", "Longe_4", "MM3")) & (dta$plot.2..plot_times_rec %in% 1:3) &  (dta$plot.2..source %in% letters[4:9])))*dta$plot.2..plot_size),na.rm=TRUE)
 
+## total area under maize cultivation
+dta$totsize <- rowSums(dta[c("plot.1..plot_size" ,"plot.2..plot_size")], na.rm=TRUE)
 
+##share of plots under improved cultivation
 dta$share_plots_imp <-  dta$nr_improved/dta$plot_no
+## share of area under improved cultivation
 dta$share_area_imp <-  dta$nr_improvedxsize/dta$totsize
 
-#iterate over outcomes
-outcomes <- c("p_outcome_1","p_outcome_2", "share_plots_imp", "share_area_imp" )
 
+#iterate over outcomes
+outcomes <- c("p_outcome_1","p_outcome_2","nr_improved", "share_plots_imp", "nr_improvedxsize", "share_area_imp" )
+b_outcomes <- c("b_p_outcome_1", "b_p_outcome_2",NA,NA)
+
+dta$index <- icwIndex(xmat= as.matrix(dta[outcomes]))$index
+outcomes <- c(outcomes, "index")
 ## demean indicators
 dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)
 dta$trial_P_demeaned <-  dta$trial_P - mean(dta$trial_P,na.rm = T)
@@ -103,7 +126,7 @@ for (i in 1:length(outcomes)){
   
   df_means_out[1,i] <- mean(unlist(dta[outcomes[i]]), na.rm=TRUE)
   df_means_out[2,i] <- sd(unlist(dta[outcomes[i]]), na.rm=TRUE)
-  
+  if (i %in% 3:7) {
   formula1 <- as.formula(paste(outcomes[i],paste("trial_P*cont"),sep="~"))
   ols <- lm(formula1, data=dta)
   vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR3")
@@ -111,16 +134,32 @@ for (i in 1:length(outcomes)){
   df_res[1:3,1,i] <- coef_test(ols, vcov_cluster)$beta[2:4]
   df_res[1:3,2,i] <- coef_test(ols, vcov_cluster)$SE[2:4]
   df_res[1:3,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2:4]
+  } else {
+  formula1 <- as.formula(paste(paste(outcomes[i],paste("trial_P*cont"),sep="~"), b_outcomes[i],sep="+"))
+  ols <- lm(formula1, data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR3")
   
+  df_res[1:3,1,i] <- coef_test(ols, vcov_cluster)$beta[c(2:3,5)]
+  df_res[1:3,2,i] <- coef_test(ols, vcov_cluster)$SE[c(2:3,5)]
+  df_res[1:3,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[c(2:3,5)]
+  }  
+
+  if (i %in% 3:7) {  
   formula2 <- as.formula(paste(outcomes[i],paste("trial_P*cont_demeaned"),sep="~"))
+  } else {
+  formula2 <- as.formula(paste(paste(outcomes[i],paste("trial_P*cont_demeaned"),sep="~"), b_outcomes[i],sep="+"))   
+  }  
   ols <- lm(formula2, data=dta)
   vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR3")
   
   df_res_pool[1,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
   df_res_pool[1,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
   df_res_pool[1,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
-  
+  if (i %in% 3:7) {   
   formula3 <- as.formula(paste(outcomes[i],paste("cont*trial_P_demeaned"),sep="~"))
+  } else {
+  formula3 <- as.formula(paste(paste(outcomes[i],paste("cont*trial_P_demeaned"),sep="~"), b_outcomes[i],sep="+"))    
+  }  
   ols <- lm(formula3, data=dta)
   vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR3")
   
@@ -176,9 +215,9 @@ for (i in 1:length(outcomes)){
   ols <- lm(formula1, data=dta)
   vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR3")
   
-  df_res[1:3,1,i] <- coef_test(ols, vcov_cluster)$beta[2:4]
-  df_res[1:3,2,i] <- coef_test(ols, vcov_cluster)$SE[2:4]
-  df_res[1:3,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2:4]
+  df_res[1:3,1,i] <- coef_test(ols, vcov_cluster)$beta[c(2:3,5)]
+  df_res[1:3,2,i] <- coef_test(ols, vcov_cluster)$SE[c(2:3,5)]
+  df_res[1:3,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[c(2:3,5)]
   
   formula2 <- as.formula(paste(paste(outcomes[i],paste("trial_P*cont_demeaned"),sep="~"), b_outcomes[i],sep="+"))
   ols <- lm(formula2, data=dta)
