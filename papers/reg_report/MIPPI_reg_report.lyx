@@ -2269,6 +2269,11 @@ Outcomes at endline
 \end_layout
 
 \begin_layout Standard
+The first table looks at adoption in general.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways true
@@ -2315,7 +2320,7 @@ begin{center}
 
 
 \backslash
-begin{tabular}{rcccccc}
+begin{tabular}{rccccccc}
 \end_layout
 
 \begin_layout Plain Layout
@@ -2346,7 +2351,7 @@ textit{Interacted model}}
 
 \begin_layout Plain Layout
 
-& mean & trial & cons & trial & cons & interact 
+& mean & trial & cons & trial & cons & interact & nobs
 \backslash
 
 \backslash
@@ -2423,7 +2428,9 @@ Sexpr{ifelse(df_res[2,3,1]<.01,"**",ifelse(df_res[2,3,1]<.05,"*",ifelse(df_res[2
 Sexpr{format(round(df_res[3,1,1],digits=2),nsmall=2)}$^{
 \backslash
 Sexpr{ifelse(df_res[3,3,1]<.01,"**",ifelse(df_res[3,3,1]<.05,"*",ifelse(df_res[3,3
-,1]<.1,"+","")))}}$ 
+,1]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_res[1,4,1],digits=0),nsmall=0)} 
 \backslash
 
 \backslash
@@ -2523,7 +2530,9 @@ Sexpr{ifelse(df_res[2,3,2]<.01,"**",ifelse(df_res[2,3,2]<.05,"*",ifelse(df_res[2
 Sexpr{format(round(df_res[3,1,2],digits=2),nsmall=2)}$^{
 \backslash
 Sexpr{ifelse(df_res[3,3,2]<.01,"**",ifelse(df_res[3,3,2]<.05,"*",ifelse(df_res[3,3
-,2]<.1,"+","")))}}$ 
+,2]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_res[1,4,2],digits=0),nsmall=0)} 
 \backslash
 
 \backslash
@@ -2623,7 +2632,9 @@ Sexpr{ifelse(df_res[2,3,3]<.01,"**",ifelse(df_res[2,3,3]<.05,"*",ifelse(df_res[2
 Sexpr{format(round(df_res[3,1,3],digits=2),nsmall=2)}$^{
 \backslash
 Sexpr{ifelse(df_res[3,3,3]<.01,"**",ifelse(df_res[3,3,3]<.05,"*",ifelse(df_res[3,3
-,3]<.1,"+","")))}}$ 
+,3]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_res[1,4,3],digits=0),nsmall=0)} 
 \backslash
 
 \backslash
@@ -2723,7 +2734,9 @@ Sexpr{ifelse(df_res[2,3,4]<.01,"**",ifelse(df_res[2,3,4]<.05,"*",ifelse(df_res[2
 Sexpr{format(round(df_res[3,1,4],digits=2),nsmall=2)}$^{
 \backslash
 Sexpr{ifelse(df_res[3,3,4]<.01,"**",ifelse(df_res[3,3,4]<.05,"*",ifelse(df_res[3,3
-,4]<.1,"+","")))}}$ 
+,4]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_res[1,4,4],digits=0),nsmall=0)} 
 \backslash
 
 \backslash
@@ -2827,7 +2840,9 @@ Sexpr{ifelse(df_res[2,3,5]<.01,"**",ifelse(df_res[2,3,5]<.05,"*",ifelse(df_res[2
 Sexpr{format(round(df_res[3,1,5],digits=2),nsmall=2)}$^{
 \backslash
 Sexpr{ifelse(df_res[3,3,5]<.01,"**",ifelse(df_res[3,3,5]<.05,"*",ifelse(df_res[3,3
-,5]<.1,"+","")))}}$ 
+,5]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_res[1,4,5],digits=0),nsmall=0)} 
 \backslash
 
 \backslash
@@ -2927,7 +2942,9 @@ Sexpr{ifelse(df_res[2,3,6]<.01,"**",ifelse(df_res[2,3,6]<.05,"*",ifelse(df_res[2
 Sexpr{format(round(df_res[3,1,6],digits=2),nsmall=2)}$^{
 \backslash
 Sexpr{ifelse(df_res[3,3,6]<.01,"**",ifelse(df_res[3,3,6]<.05,"*",ifelse(df_res[3,3
-,6]<.1,"+","")))}}$ 
+,6]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_res[1,4,6],digits=0),nsmall=0)} 
 \backslash
 
 \backslash
@@ -3027,7 +3044,9 @@ Sexpr{ifelse(df_res[2,3,7]<.01,"**",ifelse(df_res[2,3,7]<.05,"*",ifelse(df_res[2
 Sexpr{format(round(df_res[3,1,7],digits=2),nsmall=2)}$^{
 \backslash
 Sexpr{ifelse(df_res[3,3,7]<.01,"**",ifelse(df_res[3,3,7]<.05,"*",ifelse(df_res[3,3
-,7]<.1,"+","")))}}$ 
+,7]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_res[1,4,7],digits=0),nsmall=0)} 
 \backslash
 
 \backslash
@@ -3132,10 +3151,14 @@ ion; **, *, and + denote significance at the 1, 5 and 10
 \end_layout
 
 \begin_layout Standard
+The second table asks more detailed questions on a randomly selected plot.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -3178,7 +3201,7 @@ begin{center}
 
 
 \backslash
-begin{tabular}{rcccccc}
+begin{tabular}{rccccccc}
 \end_layout
 
 \begin_layout Plain Layout
@@ -3209,7 +3232,7 @@ textit{Interacted model}}
 
 \begin_layout Plain Layout
 
-& mean & trial & cons & trial & cons & interact 
+& mean & trial & cons & trial & cons & interact & nobs 
 \backslash
 
 \backslash
@@ -3236,57 +3259,59 @@ Has used quality maize seed on randomly selected plot in last season (yes=1)
 
 & 
 \backslash
-Sexpr{format(round(df_means_rnd[1,2],digits=2),nsmall=2)}
+Sexpr{format(round(df_means_rnd[1,1],digits=2),nsmall=2)}
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{format(round(df_rnd_pool[1,1,2],digits=2),nsmall=2)}$^{
+Sexpr{format(round(df_rnd_pool[1,1,1],digits=2),nsmall=2)}$^{
 \backslash
-Sexpr{ifelse(df_rnd_pool[1,3,2]<.01,"**",ifelse(df_rnd_pool[1,3,2]<.05,"*",ifelse(
-df_rnd_pool[1,3,2]<.1,"+","")))}}$
+Sexpr{ifelse(df_rnd_pool[1,3,1]<.01,"**",ifelse(df_rnd_pool[1,3,1]<.05,"*",ifelse(
+df_rnd_pool[1,3,1]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{format(round(df_rnd_pool[2,1,2],digits=2),nsmall=2)}$^{
+Sexpr{format(round(df_rnd_pool[2,1,1],digits=2),nsmall=2)}$^{
 \backslash
-Sexpr{ifelse(df_rnd_pool[2,3,2]<.01,"**",ifelse(df_rnd_pool[2,3,2]<.05,"*",ifelse(
-df_rnd_pool[2,3,2]<.1,"+","")))}}$ 
+Sexpr{ifelse(df_rnd_pool[2,3,1]<.01,"**",ifelse(df_rnd_pool[2,3,1]<.05,"*",ifelse(
+df_rnd_pool[2,3,1]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{format(round(df_rnd[1,1,2],digits=2),nsmall=2)}$^{
+Sexpr{format(round(df_rnd[1,1,1],digits=2),nsmall=2)}$^{
 \backslash
-Sexpr{ifelse(df_rnd[1,3,2]<.01,"**",ifelse(df_rnd[1,3,2]<.05,"*",ifelse(df_rnd[1,3
-,2]<.1,"+","")))}}$ 
+Sexpr{ifelse(df_rnd[1,3,1]<.01,"**",ifelse(df_rnd[1,3,1]<.05,"*",ifelse(df_rnd[1,3
+,1]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{format(round(df_rnd[2,1,2],digits=2),nsmall=2)}$^{
+Sexpr{format(round(df_rnd[2,1,1],digits=2),nsmall=2)}$^{
 \backslash
-Sexpr{ifelse(df_rnd[2,3,2]<.01,"**",ifelse(df_rnd[2,3,2]<.05,"*",ifelse(df_rnd[2,3
-,2]<.1,"+","")))}}$
+Sexpr{ifelse(df_rnd[2,3,1]<.01,"**",ifelse(df_rnd[2,3,1]<.05,"*",ifelse(df_rnd[2,3
+,1]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{format(round(df_rnd[3,1,2],digits=2),nsmall=2)}$^{
+Sexpr{format(round(df_rnd[3,1,1],digits=2),nsmall=2)}$^{
 \backslash
-Sexpr{ifelse(df_rnd[3,3,2]<.01,"**",ifelse(df_rnd[3,3,2]<.05,"*",ifelse(df_rnd[3,3
-,2]<.1,"+","")))}}$ 
+Sexpr{ifelse(df_rnd[3,3,1]<.01,"**",ifelse(df_rnd[3,3,1]<.05,"*",ifelse(df_rnd[3,3
+,1]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_res[1,4,1],digits=0),nsmall=0)} 
 \backslash
 
 \backslash
@@ -3301,17 +3326,17 @@ Sexpr{ifelse(df_rnd[3,3,2]<.01,"**",ifelse(df_rnd[3,3,2]<.05,"*",ifelse(df_rnd[3
 
 & (
 \backslash
-Sexpr{format(round(df_means_rnd[2,2],digits=2),nsmall=2)}) & (
+Sexpr{format(round(df_means_rnd[2,1],digits=2),nsmall=2)}) & (
 \backslash
-Sexpr{format(round(df_rnd_pool[1,2,2],digits=2),nsmall=2)})  & (
+Sexpr{format(round(df_rnd_pool[1,2,1],digits=2),nsmall=2)})  & (
 \backslash
-Sexpr{format(round(df_rnd_pool[2,2,2],digits=2),nsmall=2)}) & (
+Sexpr{format(round(df_rnd_pool[2,2,1],digits=2),nsmall=2)}) & (
 \backslash
-Sexpr{format(round(df_rnd[1,2,2],digits=2),nsmall=2)})  & (
+Sexpr{format(round(df_rnd[1,2,1],digits=2),nsmall=2)})  & (
 \backslash
-Sexpr{format(round(df_rnd[2,2,2],digits=2),nsmall=2)})  & (
+Sexpr{format(round(df_rnd[2,2,1],digits=2),nsmall=2)})  & (
 \backslash
-Sexpr{format(round(df_rnd[3,2,2],digits=2),nsmall=2)})
+Sexpr{format(round(df_rnd[3,2,1],digits=2),nsmall=2)})
 \end_layout
 
 \begin_layout Plain Layout
@@ -3386,7 +3411,9 @@ Sexpr{ifelse(df_rnd[2,3,2]<.01,"**",ifelse(df_rnd[2,3,2]<.05,"*",ifelse(df_rnd[2
 Sexpr{format(round(df_rnd[3,1,2],digits=2),nsmall=2)}$^{
 \backslash
 Sexpr{ifelse(df_rnd[3,3,2]<.01,"**",ifelse(df_rnd[3,3,2]<.05,"*",ifelse(df_rnd[3,3
-,2]<.1,"+","")))}}$ 
+,2]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_res[1,4,2],digits=0),nsmall=0)} 
 \backslash
 
 \backslash
@@ -3429,7 +3456,7 @@ Sexpr{format(round(df_rnd[3,2,2],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Qantity of improved seed used on randomly selected plot (kg)
+Quantity of improved seed used on randomly selected plot (kg)
 \end_layout
 
 \begin_layout Plain Layout
@@ -3486,7 +3513,9 @@ Sexpr{ifelse(df_rnd[2,3,3]<.01,"**",ifelse(df_rnd[2,3,3]<.05,"*",ifelse(df_rnd[2
 Sexpr{format(round(df_rnd[3,1,3],digits=2),nsmall=2)}$^{
 \backslash
 Sexpr{ifelse(df_rnd[3,3,3]<.01,"**",ifelse(df_rnd[3,3,3]<.05,"*",ifelse(df_rnd[3,3
-,3]<.1,"+","")))}}$ 
+,3]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_res[1,4,3],digits=0),nsmall=0)} 
 \backslash
 
 \backslash
@@ -3512,6 +3541,410 @@ Sexpr{format(round(df_rnd[1,2,3],digits=2),nsmall=2)})  & (
 Sexpr{format(round(df_rnd[2,2,3],digits=2),nsmall=2)})  & (
 \backslash
 Sexpr{format(round(df_rnd[3,2,3],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Quantity of improved seed used on randomly selected plot (kg/acre)
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_rnd[1,4],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd_pool[1,1,4],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd_pool[1,3,4]<.01,"**",ifelse(df_rnd_pool[1,3,4]<.05,"*",ifelse(
+df_rnd_pool[1,3,4]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd_pool[2,1,4],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd_pool[2,3,4]<.01,"**",ifelse(df_rnd_pool[2,3,4]<.05,"*",ifelse(
+df_rnd_pool[2,3,4]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[1,1,4],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[1,3,4]<.01,"**",ifelse(df_rnd[1,3,4]<.05,"*",ifelse(df_rnd[1,3
+,4]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[2,1,4],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[2,3,4]<.01,"**",ifelse(df_rnd[2,3,4]<.05,"*",ifelse(df_rnd[2,3
+,4]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[3,1,4],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[3,3,4]<.01,"**",ifelse(df_rnd[3,3,4]<.05,"*",ifelse(df_rnd[3,3
+,4]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_res[1,4,4],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_rnd[2,4],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_rnd_pool[1,2,4],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_rnd_pool[2,2,4],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_rnd[1,2,4],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_rnd[2,2,4],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_rnd[3,2,4],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Maize production
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_rnd[1,5],digits=0),nsmall=0)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd_pool[1,1,5],digits=0),nsmall=0)}$^{
+\backslash
+Sexpr{ifelse(df_rnd_pool[1,3,5]<.01,"**",ifelse(df_rnd_pool[1,3,5]<.05,"*",ifelse(
+df_rnd_pool[1,3,5]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd_pool[2,1,5],digits=0),nsmall=0)}$^{
+\backslash
+Sexpr{ifelse(df_rnd_pool[2,3,5]<.01,"**",ifelse(df_rnd_pool[2,3,5]<.05,"*",ifelse(
+df_rnd_pool[2,3,5]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[1,1,5],digits=0),nsmall=0)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[1,3,5]<.01,"**",ifelse(df_rnd[1,3,5]<.05,"*",ifelse(df_rnd[1,3
+,5]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[2,1,5],digits=0),nsmall=0)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[2,3,5]<.01,"**",ifelse(df_rnd[2,3,5]<.05,"*",ifelse(df_rnd[2,3
+,5]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[3,1,5],digits=0),nsmall=0)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[3,3,5]<.01,"**",ifelse(df_rnd[3,3,5]<.05,"*",ifelse(df_rnd[3,3
+,5]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_res[1,4,5],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_rnd[2,5],digits=0),nsmall=0)}) & (
+\backslash
+Sexpr{format(round(df_rnd_pool[1,2,5],digits=0),nsmall=0)})  & (
+\backslash
+Sexpr{format(round(df_rnd_pool[2,2,5],digits=0),nsmall=0)}) & (
+\backslash
+Sexpr{format(round(df_rnd[1,2,5],digits=0),nsmall=0)})  & (
+\backslash
+Sexpr{format(round(df_rnd[2,2,5],digits=0),nsmall=0)})  & (
+\backslash
+Sexpr{format(round(df_rnd[3,2,5],digits=0),nsmall=0)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Maize productivity
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_rnd[1,6],digits=0),nsmall=0)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd_pool[1,1,6],digits=0),nsmall=0)}$^{
+\backslash
+Sexpr{ifelse(df_rnd_pool[1,3,6]<.01,"**",ifelse(df_rnd_pool[1,3,6]<.05,"*",ifelse(
+df_rnd_pool[1,3,6]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd_pool[2,1,6],digits=0),nsmall=0)}$^{
+\backslash
+Sexpr{ifelse(df_rnd_pool[2,3,6]<.01,"**",ifelse(df_rnd_pool[2,3,6]<.05,"*",ifelse(
+df_rnd_pool[2,3,6]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[1,1,6],digits=0),nsmall=0)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[1,3,6]<.01,"**",ifelse(df_rnd[1,3,6]<.05,"*",ifelse(df_rnd[1,3
+,6]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[2,1,6],digits=0),nsmall=0)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[2,3,6]<.01,"**",ifelse(df_rnd[2,3,6]<.05,"*",ifelse(df_rnd[2,3
+,6]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[3,1,6],digits=0),nsmall=0)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[3,3,6]<.01,"**",ifelse(df_rnd[3,3,6]<.05,"*",ifelse(df_rnd[3,3
+,6]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_res[1,4,6],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_rnd[2,6],digits=0),nsmall=0)}) & (
+\backslash
+Sexpr{format(round(df_rnd_pool[1,2,6],digits=0),nsmall=0)})  & (
+\backslash
+Sexpr{format(round(df_rnd_pool[2,2,6],digits=0),nsmall=0)}) & (
+\backslash
+Sexpr{format(round(df_rnd[1,2,6],digits=0),nsmall=0)})  & (
+\backslash
+Sexpr{format(round(df_rnd[2,2,6],digits=0),nsmall=0)})  & (
+\backslash
+Sexpr{format(round(df_rnd[3,2,6],digits=0),nsmall=0)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Index
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_rnd[1,7],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd_pool[1,1,7],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd_pool[1,3,7]<.01,"**",ifelse(df_rnd_pool[1,3,7]<.05,"*",ifelse(
+df_rnd_pool[1,3,7]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd_pool[2,1,7],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd_pool[2,3,7]<.01,"**",ifelse(df_rnd_pool[2,3,7]<.05,"*",ifelse(
+df_rnd_pool[2,3,7]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[1,1,7],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[1,3,7]<.01,"**",ifelse(df_rnd[1,3,7]<.05,"*",ifelse(df_rnd[1,3
+,7]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[2,1,7],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[2,3,7]<.01,"**",ifelse(df_rnd[2,3,7]<.05,"*",ifelse(df_rnd[2,3
+,7]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[3,1,7],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[3,3,7]<.01,"**",ifelse(df_rnd[3,3,7]<.05,"*",ifelse(df_rnd[3,3
+,7]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_res[1,4,7],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_rnd[2,7],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_rnd_pool[1,2,7],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_rnd_pool[2,2,7],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_rnd[1,2,7],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_rnd[2,2,7],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_rnd[3,2,7],digits=2),nsmall=2)})
 \end_layout
 
 \begin_layout Plain Layout
@@ -3600,72 +4033,6 @@ literal "false"
  Therefore, all primary outcomes have an unambiguous expected effect.
 \end_layout
 
-\begin_layout Enumerate
-Has used quality maize seed (hybrid/OPV obtained from credible source and
- not recycled too often) on any plot in last season - 1 is yes (constructed
- using plot_use_imp, plot_times_rec, source) OK
-\end_layout
-
-\begin_layout Enumerate
-has used Bazooka (fresh and from credible source ) on any plot in last season
- in last season - 1 is yes (plot_use_imp, plot_times_rec, source) OK
-\end_layout
-
-\begin_layout Enumerate
-has used improved seed (hybrid/OPV obtained from credible source and not
- recycled too often) on a randomly chosen plot in the last season - 1 is
- yes (plot_select_name, plot_use_imp, plot_times_rec, source)
-\end_layout
-
-\begin_layout Enumerate
-has used the promoted seed (bazooka) on a randomly chosen plot in the last
- season - 1 is yes (plot_select_name, plot_imp_type)
-\end_layout
-
-\begin_layout Enumerate
-extensive margin improved seed use on random plot (kg improved seed (OPV
- or hybrid)) (seed_qty) - more is better
-\end_layout
-
-\begin_layout Enumerate
-intensive margin improved seed use (1.
- nr of plots with improved seed as share of all plots, 2.
- area planted with improved seed as share of total area; constructed using
- plot_size plot_use_imp, plot_times_rec, source) OK
-\end_layout
-
-\begin_layout Enumerate
-intensive margin improved seed use on random plot (kg improved seed (OPV
- or hybrid)/area planted) (seed_qty/plot_size, crop_inter, crop_type, crop_perc)
- - more is better
-\end_layout
-
-\begin_layout Enumerate
-How often was the seed that was used on the randomly selected plot recycled?
- (plot_select_name, plot_times_rec) - less is better
-\end_layout
-
-\begin_layout Enumerate
-Where did you obtain the seed from for the maize planted on the randomly
- selected plot in the previous season? (plot_select_name, source) - more
- formal (eg agro-input dealer, operation wealth create) is better
-\end_layout
-
-\begin_layout Enumerate
-Would you use this seed that was used on the randomly selected plot in the
- previous season again in the future? - 1 is yes (seed_use_again)
-\end_layout
-
-\begin_layout Enumerate
-maize production on a a randomly chosen plot in last season (bag_harv, bag_kg)
-\end_layout
-
-\begin_layout Enumerate
-maize yields on a randomly chosen plot in last season - production/size
- of plot (crop_inter, crop_type, crop_perc, bag_harv, bag_kg, plot_size,
- plot_select_name) - more is better
-\end_layout
-
 \begin_layout Subsubsection
 Secondary outcome
 \end_layout
@@ -3682,6 +4049,11 @@ Seed variety that was planted on the randomly selected crop in the previous
  season; how long has farmer been using the variety (to test if farmers
  has experience - consumption intervention impact pathway)? (seed_prev,
  long_var)
+\end_layout
+
+\begin_layout Enumerate
+Would you use this seed that was used on the randomly selected plot in the
+ previous season again in the future? - 1 is yes (seed_use_again)
 \end_layout
 
 \begin_layout Enumerate
