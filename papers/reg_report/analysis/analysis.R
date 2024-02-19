@@ -38,15 +38,17 @@ icwIndex <- function(	xmat,
   #use = "all.obs" produces an error.
   #use = "complete.obs" and use = "na.or.complete": works, NAs are handled by casewise deletion.
   #use = "pairwise.complete.obs": works, covariance between each pair of variables is computed using all complete pairs of observations on those variables
-  weights <- solve(t(i.vec)%*%solve(Sx)%*%i.vec)%*%t(i.vec)%*%solve(Sx)
-  index <- t(solve(t(i.vec)%*%solve(Sx)%*%i.vec)%*%t(i.vec)%*%solve(Sx)%*%t(X))
+  weights <- solve(t(i.vec)%*%solve(Sx, tol = 1e-30)%*%i.vec, tol = 1e-30)%*%t(i.vec)%*%solve(Sx, tol = 1e-30)
+  index <- t(solve(t(i.vec)%*%solve(Sx, tol = 1e-30)%*%i.vec, tol = 1e-30)%*%t(i.vec)%*%solve(Sx, tol = 1e-30)%*%t(X))
   return(list(weights = weights, index = index))
 }
 
+### function definition for trimming contineous variables (default 1 percent on each end)
 trim <- function(var,dataset,trim_perc=.02){
   dataset[var][dataset[var]<quantile(dataset[var],c(trim_perc/2,1-(trim_perc/2)),na.rm=T)[1]|dataset[var]>quantile(dataset[var],c(trim_perc/2,1-(trim_perc/2)),na.rm=T)[2]] <- NA
   return(dataset)}
 
+### function definition for inverse hyperbolic sine transform
 ihs <- function(x) {
   y <- log(x + sqrt(x ^ 2 + 1))
   return(y)}
@@ -54,11 +56,16 @@ ihs <- function(x) {
 path <- strsplit(path,"papers/reg_report/analysis")[[1]]
 #read in baseline data
 bse <- read.csv(paste(path,"baseline/data/public/baseline.csv",sep="/"))
+
+### create unique ID at level of randomization for clustering standard errors 
 bse$cluster_ID <- as.factor(paste(paste(bse$distID,bse$subID, sep="_"), bse$vilID, sep="_"))
 
 ### read in test data - this needs to be replace when we get the real data
 
 dta <- read.csv(paste(path,"endline/data/dummy/dummy.csv", sep="/"))
+### remove "checkx." from variable names
+names(dta) <- sub("checkx.", "",names(dta))
+
 ## drop non-free trial packs and non-free + discount trial packs
 dta <- subset(dta, paid_pac == FALSE & discounted == FALSE)
 ## create an indicator for pure control to standardize the indices (sgroup in icsIndex)
@@ -66,13 +73,22 @@ dta$s_ind <- (!dta$cont & !dta$trial_P)
 #merge to baseline data
 dta <-merge(dta, bse[c("farmer_ID","cluster_ID")], by.x="ID", by.y="farmer_ID")
 
-## primary outcome 1: uses improved seed on at least one plot (fresh hybrid from formal source or OPV that is used 3 times max from formal source) - increase for max number of plots
-dta$p_outcome_1 <- (((dta$plot.1..plot_imp_type %in%  
-  c("Longe_10H", "Longe_10R", "Longe_7H", "Longe_7R_Kayongo-go", "Bazooka", "DK", "Longe_6H", "Panner", "UH5051", "Wema", "KH_series", "other_hybrid")) & (dta$plot.1..plot_times_rec %in% 1) & (dta$plot.1..source %in% letters[4:9])  ) |
-((dta$plot.1..plot_imp_type %in%  c("Longe_5", "Longe_5D", "Longe_4", "MM3")) & (dta$plot.1..plot_times_rec %in% 1:3) &  (dta$plot.1..source %in% letters[4:9]))) |
-(((dta$plot.2..plot_imp_type %in%  
-     c("Longe_10H", "Longe_10R", "Longe_7H", "Longe_7R_Kayongo-go", "Bazooka", "DK", "Longe_6H", "Panner", "UH5051", "Wema", "KH_series", "other_hybrid")) & (dta$plot.2..plot_times_rec %in% 1) & (dta$plot.2..source %in% letters[4:9])  ) |
-    ((dta$plot.2..plot_imp_type %in%  c("Longe_5", "Longe_5D", "Longe_4", "MM3")) & (dta$plot.2..plot_times_rec %in% 1:3) &  (dta$plot.2..source %in% letters[4:9])))
+
+## primary outcome 1: uses improved seed on at least one plot
+num_plots <- max(dta$plot_count)
+logical_result <- logical(nrow(dta))
+
+for (i in 1:num_plots) {
+### definition of improved seed: fresh hybrid from trusted source or OPV recycled max 3 times from trusted source
+ condition <- (((dta[[paste0("plot.", i, "..plot_imp_type")]] %in%  
+       c("Longe_10H", "Longe_10R", "Longe_7H", "Longe_7R_Kayongo-go", "Bazooka", "DK", "Longe_6H", "Panner", "UH5051", "Wema", "KH_series", "other_hybrid")) & (dta[[paste0("plot.", i, "..plot_times_rec")]] %in% 1) & (dta[[paste0("plot.", i, "..single_source")]]%in% letters[4:9])  ) |
+      ((dta[[paste0("plot.", i, "..plot_imp_type")]] %in%  c("Longe_5", "Longe_5D", "Longe_4", "MM3")) & (dta[[paste0("plot.", i, "..plot_times_rec")]] %in% 1:4) &  ((dta[[paste0("plot.", i, "..recycle_source_rest")]] %in% letters[4:9]) | (dta[[paste0("plot.", i, "..single_source")]]%in% letters[4:9])))) 
+ # Combine the condition with the logical OR operator
+ logical_result <- logical_result | condition
+}
+
+# Assign the result to the new column p_outcome_1
+dta$p_outcome_1 <- logical_result
 
 ## to control for this outcome at baseline, we use the question "Q20. Did you use any quality maize seed like **OPV or hybrid seed** in the previous season (Nsambya of 2022) on any of your plots?"
 bse$b_p_outcome_1 <- bse$quality_use=="Yes"
@@ -80,30 +96,55 @@ bse$b_p_outcome_1 <- bse$quality_use=="Yes"
 dta <- merge(dta, bse[c("farmer_ID","b_p_outcome_1")], by.x="ID", by.y="farmer_ID")
 
 ## primary outcome 2: uses fresh bazooka on at least one plot
-dta$p_outcome_2 <- ((dta$plot.1..plot_imp_type=="Bazooka") & (dta$plot.1..plot_times_rec %in% 1) & (dta$plot.1..source %in% letters[4:9]))  |
-  ((dta$plot.2..plot_imp_type=="Bazooka") & (dta$plot.2..plot_times_rec %in% 1) & (dta$plot.2..source %in% letters[4:9])) 
-## to control for this outcome at baseline, we use the question "Q20. Did you use any quality maize seed like **OPV or hybrid seed** in the previous season (Nsambya of 2022) on any of your plots?"
+num_plots <- max(dta$plot_count)
+logical_result <- logical(nrow(dta))
+
+for (i in 1:num_plots) {
+  condition <- (((dta[[paste0("plot.", i, "..plot_imp_type")]] %in%  
+                    c("Bazooka")) & (dta[[paste0("plot.", i, "..plot_times_rec")]] %in% 1) & (dta[[paste0("plot.", i, "..single_source")]]%in% letters[4:9])  )) 
+  # Combine the condition with the logical OR operator
+  logical_result <- logical_result | condition
+}
+
+# Assign the result to the new column p_outcome_1
+dta$p_outcome_2 <- logical_result
+
+
 bse$b_p_outcome_2 <- bse$bazo_use=="Yes"
 
 dta <- merge(dta, bse[c("farmer_ID","b_p_outcome_2")], by.x="ID", by.y="farmer_ID")
 
-## number of plots under improved maize cultivation
-dta$nr_improved <- (((dta$plot.1..plot_imp_type %in%  
-                        c("Longe_10H", "Longe_10R", "Longe_7H", "Longe_7R_Kayongo-go", "Bazooka", "DK", "Longe_6H", "Panner", "UH5051", "Wema", "KH_series", "other_hybrid")) & (dta$plot.1..plot_times_rec %in% 1) & (dta$plot.1..source %in% letters[4:9])  ) |
-                      ((dta$plot.1..plot_imp_type %in%  c("Longe_5", "Longe_5D", "Longe_4", "MM3")) & (dta$plot.1..plot_times_rec %in% 1:3) &  (dta$plot.1..source %in% letters[4:9]))) +
-  (((dta$plot.2..plot_imp_type %in%  
-       c("Longe_10H", "Longe_10R", "Longe_7H", "Longe_7R_Kayongo-go", "Bazooka", "DK", "Longe_6H", "Panner", "UH5051", "Wema", "KH_series", "other_hybrid")) & (dta$plot.2..plot_times_rec %in% 1) & (dta$plot.2..source %in% letters[4:9])  ) |
-     ((dta$plot.2..plot_imp_type %in%  c("Longe_5", "Longe_5D", "Longe_4", "MM3")) & (dta$plot.2..plot_times_rec %in% 1:3) &  (dta$plot.2..source %in% letters[4:9])))
-##area under improved maize cultivation
-dta$nr_improvedxsize <- rowSums(cbind((((dta$plot.1..plot_imp_type %in%  
-                             c("Longe_10H", "Longe_10R", "Longe_7H", "Longe_7R_Kayongo-go", "Bazooka", "DK", "Longe_6H", "Panner", "UH5051", "Wema", "KH_series", "other_hybrid")) & (dta$plot.1..plot_times_rec %in% 1) & (dta$plot.1..source %in% letters[4:9])  ) |
-                           ((dta$plot.1..plot_imp_type %in%  c("Longe_5", "Longe_5D", "Longe_4", "MM3")) & (dta$plot.1..plot_times_rec %in% 1:3) &  (dta$plot.1..source %in% letters[4:9])))*dta$plot.1..plot_size ,
-  (((dta$plot.2..plot_imp_type %in%  
-       c("Longe_10H", "Longe_10R", "Longe_7H", "Longe_7R_Kayongo-go", "Bazooka", "DK", "Longe_6H", "Panner", "UH5051", "Wema", "KH_series", "other_hybrid")) & (dta$plot.2..plot_times_rec %in% 1) & (dta$plot.2..source %in% letters[4:9])  ) |
-     ((dta$plot.2..plot_imp_type %in%  c("Longe_5", "Longe_5D", "Longe_4", "MM3")) & (dta$plot.2..plot_times_rec %in% 1:3) &  (dta$plot.2..source %in% letters[4:9])))*dta$plot.2..plot_size),na.rm=TRUE)
+## third primary outcome <- number of plots under improved maize cultivation
+num_plots <- max(dta$plot_count)
+logical_result <- logical(nrow(dta))
 
-## total area under maize cultivation
-dta$totsize <- rowSums(dta[c("plot.1..plot_size" ,"plot.2..plot_size")], na.rm=TRUE)
+for (i in 1:num_plots) {
+  ### definition of improved seed: fresh hybrid from trusted source or OPV recycled max 3 times from trusted source
+  condition <- (((dta[[paste0("plot.", i, "..plot_imp_type")]] %in%  
+                    c("Longe_10H", "Longe_10R", "Longe_7H", "Longe_7R_Kayongo-go", "Bazooka", "DK", "Longe_6H", "Panner", "UH5051", "Wema", "KH_series", "other_hybrid")) & (dta[[paste0("plot.", i, "..plot_times_rec")]] %in% 1) & (dta[[paste0("plot.", i, "..single_source")]]%in% letters[4:9])  ) |
+                  ((dta[[paste0("plot.", i, "..plot_imp_type")]] %in%  c("Longe_5", "Longe_5D", "Longe_4", "MM3")) & (dta[[paste0("plot.", i, "..plot_times_rec")]] %in% 1:4) &  ((dta[[paste0("plot.", i, "..recycle_source_rest")]] %in% letters[4:9]) | (dta[[paste0("plot.", i, "..single_source")]]%in% letters[4:9])))) 
+  # Combine the condition with the logical OR operator
+  logical_result <- logical_result + condition
+}
+
+# Assign the result to the new column p_outcome_1
+dta$nr_improved <- logical_result
+
+##area under improved maize cultivation
+num_plots <- max(dta$plot_count)
+areas <- matrix(NA,nrow(dta),num_plots)
+tot_area <- matrix(NA,nrow(dta),num_plots)
+
+for (i in 1:num_plots) {
+#create a matrix if size of plots with adoption
+  areas[,i] <- (((dta[[paste0("plot.", i, "..plot_imp_type")]] %in%  
+                    c("Longe_10H", "Longe_10R", "Longe_7H", "Longe_7R_Kayongo-go", "Bazooka", "DK", "Longe_6H", "Panner", "UH5051", "Wema", "KH_series", "other_hybrid")) & (dta[[paste0("plot.", i, "..plot_times_rec")]] %in% 1) & (dta[[paste0("plot.", i, "..single_source")]]%in% letters[4:9])  ) |
+                  ((dta[[paste0("plot.", i, "..plot_imp_type")]] %in%  c("Longe_5", "Longe_5D", "Longe_4", "MM3")) & (dta[[paste0("plot.", i, "..plot_times_rec")]] %in% 1:4) &  ((dta[[paste0("plot.", i, "..recycle_source_rest")]] %in% letters[4:9]) | (dta[[paste0("plot.", i, "..single_source")]]%in% letters[4:9]))))*as.numeric(as.character(dta[[paste0("plot.", i, "..plot_size")]] ))
+  tot_area[,i] <- as.numeric(as.character(dta[[paste0("plot.", i, "..plot_size")]] ))
+}
+
+dta$nr_improvedxsize <- rowSums( areas, na.rm=TRUE)
+dta$totsize <- rowSums( tot_area, na.rm=TRUE)
 
 ##share of plots under improved cultivation
 dta$share_plots_imp <-  dta$nr_improved/dta$plot_no

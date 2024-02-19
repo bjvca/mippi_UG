@@ -3131,13 +3131,12 @@ scriptsize
 
 \begin_layout Plain Layout
 
-Note: Column (1) reports sample means at baseline and standard deviations
- below;  columns (2)-(3) report differences between treatment and control
- groups and standard errors below; they are clustered at the level of randomizat
-ion; **, *, and + denote significance at the 1, 5 and 10
+Note: Column (1) reports sample means, standard deviations below;  columns
+ (2)-(3) report differences between treatment and control groups and standard
+ errors below; they are clustered at the level of randomization; **, *,
+ and + denote significance at the 1, 5 and 10
 \backslash
 % levels.
- quality seed is defined as hybrid/OPV obtained from credible source.
 \end_layout
 
 \end_inset
@@ -3158,7 +3157,7 @@ The second table asks more detailed questions on a randomly selected plot.
 \begin_inset Float table
 wide false
 sideways true
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
