@@ -968,6 +968,27 @@ results/df_means_rnd.Rdata
 
 \begin_layout Plain Layout
 
+load(paste(pathB,
+\begin_inset Quotes erd
+\end_inset
+
+results/df_means_path.Rdata
+\begin_inset Quotes erd
+\end_inset
+
+, sep=
+\begin_inset Quotes erd
+\end_inset
+
+/
+\begin_inset Quotes erd
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -1082,6 +1103,48 @@ load(paste(pathB,
 \end_inset
 
 results/df_rnd_pool.Rdata
+\begin_inset Quotes erd
+\end_inset
+
+, sep=
+\begin_inset Quotes erd
+\end_inset
+
+/
+\begin_inset Quotes erd
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+load(paste(pathB,
+\begin_inset Quotes erd
+\end_inset
+
+results/df_path.Rdata
+\begin_inset Quotes erd
+\end_inset
+
+, sep=
+\begin_inset Quotes erd
+\end_inset
+
+/
+\begin_inset Quotes erd
+\end_inset
+
+))
+\end_layout
+
+\begin_layout Plain Layout
+
+load(paste(pathB,
+\begin_inset Quotes erd
+\end_inset
+
+results/df_path_pool.Rdata
 \begin_inset Quotes erd
 \end_inset
 
@@ -2277,7 +2340,7 @@ The first table looks at adoption in general.
 \begin_inset Float table
 wide false
 sideways true
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -4173,73 +4236,1073 @@ Please indicate most, second and thrid most when deciding on what seed to
 \end_layout
 
 \begin_layout Subsection
-Seed trial pack use
+Pathways
 \end_layout
 
 \begin_layout Standard
-We plan to do a midline survey in August 2023.
- As mentioned above, at midline, we are particularly interested in the use
- of trial packs and whether something was learned from it.
- As such, only households that received a trial pack (either free or subsidized)
- will be asked the questions below.
- However, all households will be revisited, as at this time the consumption
- side treatment will be implemented.
+\begin_inset Float table
+wide false
+sideways true
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Adoption on random plot
+\begin_inset CommandInset label
+LatexCommand label
+name "adoptiom-1-1"
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Enumerate
-Was trial pack used as seed on the farm? (as opposed to sold, eaten,...) (used_TP)
+\end_inset
+
+
 \end_layout
 
-\begin_layout Enumerate
-How was the seed trial package was used? (pure on separate plot, mixed with
- landraces, mixed with bazooka from other source, mixed with other improved
- seed,...) (TP_seperate, TP_usage)
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnotesize
 \end_layout
 
-\begin_layout Enumerate
-Was it intercroped? (TP_inter)
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
 \end_layout
 
-\begin_layout Enumerate
-Did you apply organic manure to the soil for the trail pack? (TP_org_app)
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tabular}{rccccccc}
 \end_layout
 
-\begin_layout Enumerate
-Did you apply DAP **(black in color)** or NPK (brown in color) for the trail
- pack? (TP_dap_app)
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
 \end_layout
 
-\begin_layout Enumerate
-Did you apply Urea **(white in color)** for the trail pack? (TP_ure_app)
+\begin_layout Plain Layout
+
+& & 
+\backslash
+multicolumn{2}{c}{
+\backslash
+textit{Pooled model}} & 
+\backslash
+multicolumn{3}{c}{
+\backslash
+textit{Interacted model}} 
+\backslash
+
+\backslash
+
 \end_layout
 
-\begin_layout Enumerate
-Did you use any pesticides, herbicides or fungicides on the trail pack plot?
- (TP_cide_use)
+\begin_layout Plain Layout
+
+& mean & trial & cons & trial & cons & interact & nobs 
+\backslash
+
+\backslash
+
 \end_layout
 
-\begin_layout Enumerate
-area planted with trial pack? (TP_plot_size)
+\begin_layout Plain Layout
+
+
+\backslash
+hline
 \end_layout
 
-\begin_layout Enumerate
-production from trial pack? (TP_bags * TP_bag_size)
+\begin_layout Plain Layout
+
 \end_layout
 
-\begin_layout Enumerate
-yields from trial pack plot? (TP_bags * TP_bag_size/TP_plot_size)
+\begin_layout Plain Layout
+
+Knows bazooka (yes=1)
 \end_layout
 
-\begin_layout Enumerate
-farmer recalls specifics on seed pack (type of seed and name of seed company)
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_path[1,1],digits=2),nsmall=2)}
 \end_layout
 
-\begin_layout Enumerate
-perceptions related to the quality of the trial pack seed (bazooka).
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path_pool[1,1,1],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path_pool[1,3,1]<.01,"**",ifelse(df_path_pool[1,3,1]<.05,"*",ifels
+e(df_path_pool[1,3,1]<.1,"+","")))}}$
 \end_layout
 
-\begin_layout Enumerate
-Were you happy with the bazooka?
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path_pool[2,1,1],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path_pool[2,3,1]<.01,"**",ifelse(df_path_pool[2,3,1]<.05,"*",ifels
+e(df_path_pool[2,3,1]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path[1,1,1],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path[1,3,1]<.01,"**",ifelse(df_path[1,3,1]<.05,"*",ifelse(df_path[
+1,3,1]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path[2,1,1],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path[2,3,1]<.01,"**",ifelse(df_path[2,3,1]<.05,"*",ifelse(df_path[
+2,3,1]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path[3,1,1],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path[3,3,1]<.01,"**",ifelse(df_path[3,3,1]<.05,"*",ifelse(df_path[
+3,3,1]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_path[1,4,1],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_path[2,1],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_path_pool[1,2,1],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_path_pool[2,2,1],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_path[1,2,1],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_path[2,2,1],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_path[3,2,1],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Number of improved seed farmer knows
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_path[1,2],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path_pool[1,1,2],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path_pool[1,3,2]<.01,"**",ifelse(df_path_pool[1,3,2]<.05,"*",ifels
+e(df_path_pool[1,3,2]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path_pool[2,1,2],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path_pool[2,3,2]<.01,"**",ifelse(df_path_pool[2,3,2]<.05,"*",ifels
+e(df_path_pool[2,3,2]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path[1,1,2],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path[1,3,2]<.01,"**",ifelse(df_path[1,3,2]<.05,"*",ifelse(df_path[
+1,3,2]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path[2,1,2],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path[2,3,2]<.01,"**",ifelse(df_path[2,3,2]<.05,"*",ifelse(df_path[
+2,3,2]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path[3,1,2],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path[3,3,2]<.01,"**",ifelse(df_path[3,3,2]<.05,"*",ifelse(df_path[
+3,3,2]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_path[1,4,2],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_path[2,2],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_path_pool[1,2,2],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_path_pool[2,2,2],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_path[1,2,2],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_path[2,2,2],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_path[3,2,2],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Thinks improved seed is risky
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_path[1,3],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path_pool[1,1,3],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path_pool[1,3,3]<.01,"**",ifelse(df_path_pool[1,3,3]<.05,"*",ifels
+e(df_path_pool[1,3,3]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path_pool[2,1,3],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path_pool[2,3,3]<.01,"**",ifelse(df_path_pool[2,3,3]<.05,"*",ifels
+e(df_path_pool[2,3,3]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path[1,1,3],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path[1,3,3]<.01,"**",ifelse(df_path[1,3,3]<.05,"*",ifelse(df_path[
+1,3,3]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path[2,1,3],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path[2,3,3]<.01,"**",ifelse(df_path[2,3,3]<.05,"*",ifelse(df_path[
+2,3,3]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path[3,1,3],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path[3,3,3]<.01,"**",ifelse(df_path[3,3,3]<.05,"*",ifelse(df_path[
+3,3,3]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_path[1,4,3],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_path[2,3],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_path_pool[1,2,3],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_path_pool[2,2,3],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_path[1,2,3],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_path[2,2,3],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_path[3,2,3],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Thinks bazooka is risky
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_path[1,4],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path_pool[1,1,4],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path_pool[1,3,4]<.01,"**",ifelse(df_path_pool[1,3,4]<.05,"*",ifels
+e(df_path_pool[1,3,4]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path_pool[2,1,4],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path_pool[2,3,4]<.01,"**",ifelse(df_path_pool[2,3,4]<.05,"*",ifels
+e(df_path_pool[2,3,4]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path[1,1,4],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path[1,3,4]<.01,"**",ifelse(df_path[1,3,4]<.05,"*",ifelse(df_path[
+1,3,4]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path[2,1,4],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path[2,3,4]<.01,"**",ifelse(df_path[2,3,4]<.05,"*",ifelse(df_path[
+2,3,4]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path[3,1,4],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path[3,3,4]<.01,"**",ifelse(df_path[3,3,4]<.05,"*",ifelse(df_path[
+3,3,4]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_path[1,4,4],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_path[2,4],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_path_pool[1,2,4],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_path_pool[2,2,4],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_path[1,2,4],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_path[2,2,4],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_path[3,2,4],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Recommended improved seed to others
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_path[1,5],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path_pool[1,1,5],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path_pool[1,3,5]<.01,"**",ifelse(df_path_pool[1,3,5]<.05,"*",ifels
+e(df_path_pool[1,3,5]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path_pool[2,1,5],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path_pool[2,3,5]<.01,"**",ifelse(df_path_pool[2,3,5]<.05,"*",ifels
+e(df_path_pool[2,3,5]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path[1,1,5],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path[1,3,5]<.01,"**",ifelse(df_path[1,3,5]<.05,"*",ifelse(df_path[
+1,3,5]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path[2,1,5],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path[2,3,5]<.01,"**",ifelse(df_path[2,3,5]<.05,"*",ifelse(df_path[
+2,3,5]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path[3,1,5],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path[3,3,5]<.01,"**",ifelse(df_path[3,3,5]<.05,"*",ifelse(df_path[
+3,3,5]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_path[1,4,5],digits=2),nsmall=2)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_path[2,5],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_path_pool[1,2,5],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_path_pool[2,2,5],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_path[1,2,5],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_path[2,2,5],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_path[3,2,5],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Recommended bazooka to other
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_path[1,6],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path_pool[1,1,6],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path_pool[1,3,6]<.01,"**",ifelse(df_path_pool[1,3,6]<.05,"*",ifels
+e(df_path_pool[1,3,6]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path_pool[2,1,6],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path_pool[2,3,6]<.01,"**",ifelse(df_path_pool[2,3,6]<.05,"*",ifels
+e(df_path_pool[2,3,6]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path[1,1,6],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path[1,3,6]<.01,"**",ifelse(df_path[1,3,6]<.05,"*",ifelse(df_path[
+1,3,6]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path[2,1,6],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path[2,3,6]<.01,"**",ifelse(df_path[2,3,6]<.05,"*",ifelse(df_path[
+2,3,6]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path[3,1,6],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path[3,3,6]<.01,"**",ifelse(df_path[3,3,6]<.05,"*",ifelse(df_path[
+3,3,6]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_path[1,4,6],digits=2),nsmall=2)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_path[2,6],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_path_pool[1,2,6],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_path_pool[2,2,6],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_path[1,2,6],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_path[2,2,6],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_path[3,2,6],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Will use improved seed in the future
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_path[1,7],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path_pool[1,1,7],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path_pool[1,3,7]<.01,"**",ifelse(df_path_pool[1,3,7]<.05,"*",ifels
+e(df_path_pool[1,3,7]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path_pool[2,1,7],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path_pool[2,3,7]<.01,"**",ifelse(df_path_pool[2,3,7]<.05,"*",ifels
+e(df_path_pool[2,3,7]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path[1,1,7],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path[1,3,7]<.01,"**",ifelse(df_path[1,3,7]<.05,"*",ifelse(df_path[
+1,3,7]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path[2,1,7],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path[2,3,7]<.01,"**",ifelse(df_path[2,3,7]<.05,"*",ifelse(df_path[
+2,3,7]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path[3,1,7],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path[3,3,7]<.01,"**",ifelse(df_path[3,3,7]<.05,"*",ifelse(df_path[
+3,3,7]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_path[1,4,7],digits=2),nsmall=2)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_path[2,7],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_path_pool[1,2,7],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_path_pool[2,2,7],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_path[1,2,7],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_path[2,2,7],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_path[3,2,7],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Will use bazooka in the future
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_path[1,8],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path_pool[1,1,8],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path_pool[1,3,8]<.01,"**",ifelse(df_path_pool[1,3,8]<.05,"*",ifels
+e(df_path_pool[1,3,8]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path_pool[2,1,8],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path_pool[2,3,8]<.01,"**",ifelse(df_path_pool[2,3,8]<.05,"*",ifels
+e(df_path_pool[2,3,8]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path[1,1,8],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path[1,3,8]<.01,"**",ifelse(df_path[1,3,8]<.05,"*",ifelse(df_path[
+1,3,8]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path[2,1,8],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path[2,3,8]<.01,"**",ifelse(df_path[2,3,8]<.05,"*",ifelse(df_path[
+2,3,8]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path[3,1,8],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path[3,3,8]<.01,"**",ifelse(df_path[3,3,8]<.05,"*",ifelse(df_path[
+3,3,8]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_path[1,4,8],digits=2),nsmall=2)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_path[2,8],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_path_pool[1,2,8],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_path_pool[2,2,8],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_path[1,2,8],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_path[2,2,8],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_path[3,2,8],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Index
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_path[1,9],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path_pool[1,1,9],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path_pool[1,3,9]<.01,"**",ifelse(df_path_pool[1,3,9]<.05,"*",ifels
+e(df_path_pool[1,3,9]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path_pool[2,1,9],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path_pool[2,3,9]<.01,"**",ifelse(df_path_pool[2,3,9]<.05,"*",ifels
+e(df_path_pool[2,3,9]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path[1,1,9],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path[1,3,9]<.01,"**",ifelse(df_path[1,3,9]<.05,"*",ifelse(df_path[
+1,3,9]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path[2,1,9],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path[2,3,9]<.01,"**",ifelse(df_path[2,3,9]<.05,"*",ifelse(df_path[
+2,3,9]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path[3,1,9],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path[3,3,9]<.01,"**",ifelse(df_path[3,3,9]<.05,"*",ifelse(df_path[
+3,3,9]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_path[1,4,9],digits=2),nsmall=2)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_path[2,9],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_path_pool[1,2,9],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_path_pool[2,2,9],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_path[1,2,9],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_path[2,2,9],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_path[3,2,9],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+scriptsize
+\end_layout
+
+\begin_layout Plain Layout
+
+Note: Column (1) reports sample means at baseline and standard deviations
+ below;  columns (2)-(3) report differences between treatment and control
+ groups and standard errors below; they are clustered at the level of randomizat
+ion; **, *, and + denote significance at the 1, 5 and 10
+\backslash
+% levels.
+ quality seed is defined as hybrid/OPV obtained from credible source; regression
+s includ control for baseline outcome.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection*

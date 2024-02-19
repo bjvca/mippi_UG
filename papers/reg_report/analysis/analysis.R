@@ -331,5 +331,94 @@ save(df_rnd_pool,file=paste(path,"/papers/reg_report/results/df_rnd_pool.Rdata",
 save(df_rnd,file=paste(path,"/papers/reg_report/results/df_rnd.Rdata",sep="/"))
 save(df_means_rnd,file=paste(path,"/papers/reg_report/results/df_means_rnd.Rdata",sep="/"))
 
+### some interesting impact pathways
+## knowledge
+dta$nr_vars <- as.numeric(as.character(dta$nr_vars))
+
+dta$knw_bazo <- dta$knw_bazo =="Yes"
+bse$b_knw_bazo <- bse$knw_bazo == "Yes"
+dta <- merge(dta, bse[c("farmer_ID","b_knw_bazo")], by.x="ID", by.y="farmer_ID")
+
+dta$downside_risk_imp <- dta$risk_imp %in% c("1","2")
+dta$downside_risk_bazo <- dta$risk_bazo  %in% c("1","2")
+
+dta$share_imp  <- dta$share_imp == "Yes"
+dta$future_imp <- dta$future_imp %in% c("1","2")
+
+
+dta$share_bazo <- dta$share_bazo == "Yes"
+dta$future_bazo <- dta$future_bazo %in% c("1","2")
+
+
+#iterate over outcomes
+outcomes <- c("knw_bazo","nr_vars" , "downside_risk_imp", "downside_risk_bazo","share_imp","share_bazo","future_imp", "future_bazo")
+b_outcomes <- c("b_knw_bazo",rep(NA, times=7))
+
+dta$index <- icwIndex(xmat= as.matrix(dta[outcomes]),sgroup=dta$s_ind)$index
+outcomes <- c(outcomes, "index")
+## demean indicators
+dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)
+dta$trial_P_demeaned <-  dta$trial_P - mean(dta$trial_P,na.rm = T)
+df_means_out <- array(NA,c(2,length(outcomes )))
+df_res <- array(NA,c(3,4,length(outcomes )))
+df_res_pool  <- array(NA,c(2,3,length(outcomes )))
+for (i in 1:length(outcomes)){
+  ##means
+  
+  df_means_out[1,i] <- mean(unlist(dta[outcomes[i]]), na.rm=TRUE)
+  df_means_out[2,i] <- sd(unlist(dta[outcomes[i]]), na.rm=TRUE)
+  if (i %in% 2:8) {
+    formula1 <- as.formula(paste(outcomes[i],paste("trial_P*cont"),sep="~"))
+    ols <- lm(formula1, data=dta)
+    vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR3")
+    
+    df_res[1:3,1,i] <- coef_test(ols, vcov_cluster)$beta[2:4]
+    df_res[1:3,2,i] <- coef_test(ols, vcov_cluster)$SE[2:4]
+    df_res[1:3,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2:4]
+    df_res[1,4,i] <- nobs(ols) 
+  } else {
+    formula1 <- as.formula(paste(paste(outcomes[i],paste("trial_P*cont"),sep="~"), b_outcomes[i],sep="+"))
+    ols <- lm(formula1, data=dta)
+    vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR3")
+    
+    df_res[1:3,1,i] <- coef_test(ols, vcov_cluster)$beta[c(2:3,5)]
+    df_res[1:3,2,i] <- coef_test(ols, vcov_cluster)$SE[c(2:3,5)]
+    df_res[1:3,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[c(2:3,5)]
+    df_res[1,4,i] <- nobs(ols) 
+  }  
+  
+  if (i %in% 2:8) {  
+    formula2 <- as.formula(paste(outcomes[i],paste("trial_P*cont_demeaned"),sep="~"))
+  } else {
+    formula2 <- as.formula(paste(paste(outcomes[i],paste("trial_P*cont_demeaned"),sep="~"), b_outcomes[i],sep="+"))   
+  }  
+  ols <- lm(formula2, data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR3")
+  
+  df_res_pool[1,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
+  df_res_pool[1,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
+  df_res_pool[1,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
+  if (i %in% 2:8) {   
+    formula3 <- as.formula(paste(outcomes[i],paste("cont*trial_P_demeaned"),sep="~"))
+  } else {
+    formula3 <- as.formula(paste(paste(outcomes[i],paste("cont*trial_P_demeaned"),sep="~"), b_outcomes[i],sep="+"))    
+  }  
+  ols <- lm(formula3, data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR3")
+  
+  df_res_pool[2,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
+  df_res_pool[2,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
+  df_res_pool[2,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
+  
+}
+
+df_path_pool <- df_res_pool
+df_path <- df_res
+df_means_path <- df_means_out
+
+
+save(df_path_pool,file=paste(path,"/papers/reg_report/results/df_path_pool.Rdata",sep="/"))
+save(df_path,file=paste(path,"/papers/reg_report/results/df_path.Rdata",sep="/"))
+save(df_means_path,file=paste(path,"/papers/reg_report/results/df_means_path.Rdata",sep="/"))
 
   
