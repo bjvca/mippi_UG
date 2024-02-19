@@ -218,11 +218,32 @@ save(df_res_pool,file=paste(path,"/papers/reg_report/results/df_res_pool.Rdata",
 save(df_res,file=paste(path,"/papers/reg_report/results/df_res.Rdata",sep="/"))
 save(df_means_out,file=paste(path,"/papers/reg_report/results/df_means_out.Rdata",sep="/"))
 
-### on random plot (controling for baseline)
+### on random plot (controlling for baseline)
+
+dta$rnd_num <- as.numeric(ifelse(dta$plot_select != "n/a", dta$plot_select, 1))
+library(dplyr)
+## maize_var_selected is in the data
+## this gets corresponding times recycled
+dta <- dta %>%
+  rowwise() %>%
+  mutate(times_recycled_selected = get(paste0("plot.", rnd_num, "..plot_times_rec")))  %>%
+  as.data.frame()
+## this gets corresponding..recycle_source_rest ..single_source
+dta <- dta %>%
+  rowwise() %>%
+  mutate(single_source_selected = get(paste0("plot.", rnd_num, "..single_source")))  %>%
+  as.data.frame()
+## this gets corresponding..recycle_source_rest ..single_source
+dta <- dta %>%
+  rowwise() %>%
+  mutate(recycled_source_selected = get(paste0("plot.", rnd_num, "..recycle_source_rest")))  %>%
+  as.data.frame()
+
+
 
 dta$rnd_adopt <-   (((dta$maize_var_selected %in%  
-                        c("Longe_10H", "Longe_10R", "Longe_7H", "Longe_7R_Kayongo-go", "Bazooka", "DK", "Longe_6H", "Panner", "UH5051", "Wema", "KH_series", "other_hybrid")) & (dta$times_rec_selected %in% 1) & (dta$source_selected %in% letters[4:9])  ) |
-                      ((dta$maize_var_selected  %in%  c("Longe_5", "Longe_5D", "Longe_4", "MM3")) & (dta$times_rec_selected %in% 1:3) &  (dta$source_selected %in% letters[4:9])))
+                        c("Longe_10H", "Longe_10R", "Longe_7H", "Longe_7R_Kayongo-go", "Bazooka", "DK", "Longe_6H", "Panner", "UH5051", "Wema", "KH_series", "other_hybrid")) & (dta$times_recycled_selected %in% 1) & (dta$single_source_selected %in% letters[4:9])  ) |
+                      ((dta$maize_var_selected  %in%  c("Longe_5", "Longe_5D", "Longe_4", "MM3")) & (dta$times_recycled_selected %in% 1:4) &  (((dta$single_source_selected %in% letters[4:9])) | (dta$recycled_source_selected %in% letters[4:9]))))
 
 ## we assume here that seed from official sources has not been recycled
 bse$b_rnd_adopt <- (((bse$maize_var  %in% c("Longe_10H"," Longe_7H","Longe_7R_Kayongo-go", "Bazooka","DK","Longe_6H")) & (bse$source %in% letters[4:9]) )
@@ -230,14 +251,14 @@ bse$b_rnd_adopt <- (((bse$maize_var  %in% c("Longe_10H"," Longe_7H","Longe_7R_Ka
                     ((bse$maize_var  %in% c("Longe_5","Longe_4"," Panner", "Wema","KH_series"))  & (bse$source %in% letters[4:9]) ))
 dta <- merge(dta, bse[c("farmer_ID","b_rnd_adopt")], by.x="ID", by.y="farmer_ID")
 
-dta$rnd_bazo <-  ((dta$maize_var_selected == "Bazooka") & (dta$source_selected %in% letters[4:9]  & (dta$times_rec_selected %in% 1)))
+dta$rnd_bazo <-  ((dta$maize_var_selected == "Bazooka") & (dta$single_source_selected %in% letters[4:9]  & (dta$times_recycled_selected %in% 1)))
 ## we assume here that seed from official sources has not been recycled
 bse$b_rnd_bazo <- ((bse$maize_var == "Bazooka") & (bse$source %in% letters[4:9]) )
                    
 dta <- merge(dta, bse[c("farmer_ID","b_rnd_bazo")], by.x="ID", by.y="farmer_ID")
 
 ### seed quantity
-dta$imp_seed_qty_rnd <- dta$rnd_adopt*dta$seed_qty
+dta$imp_seed_qty_rnd <- dta$rnd_adopt*as.numeric(as.character(dta$seed_qty))
 dta$imp_seed_qty_rnd[is.na(dta$imp_seed_qty_rnd)] <- 0
 bse$b_imp_seed_qty_rnd <- bse$b_rnd_adopt*bse$seed_qty
 bse$b_imp_seed_qty_rnd[is.na(bse$b_imp_seed_qty_rnd)] <- 0
@@ -247,12 +268,12 @@ dta$imp_seed_qty_rnd_acre <- dta$imp_seed_qty_rnd/dta$size_selected
 bse$b_imp_seed_qty_rnd_acre <- bse$b_imp_seed_qty_rnd/bse$plot_size
 dta <- merge(dta, bse[c("farmer_ID","b_imp_seed_qty_rnd_acre")], by.x="ID", by.y="farmer_ID")
 ###production
-dta$production <- dta$bag_harv*dta$bag_kg
+dta$production <- as.numeric(as.character(dta$bag_harv))*as.numeric(as.character(dta$bag_kg))
 bse$b_production <- bse$bag_harv*bse$bag_kg
 dta <- merge(dta, bse[c("farmer_ID","b_production")], by.x="ID", by.y="farmer_ID")
 ## productivity
 dta$productivity <- dta$production/dta$size_selected 
-bse$b_productivity <-bse$b_production/bse$plot_size
+bse$b_productivity <- bse$b_production/bse$plot_size
 dta <- merge(dta, bse[c("farmer_ID","b_productivity")], by.x="ID", by.y="farmer_ID")
 #iterate over outcomes
 outcomes <- c("rnd_adopt", "rnd_bazo", "imp_seed_qty_rnd", "imp_seed_qty_rnd_acre","production", "productivity" )
