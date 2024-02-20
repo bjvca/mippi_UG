@@ -155,8 +155,8 @@ dta$share_area_imp <-  dta$nr_improvedxsize/dta$totsize
 #iterate over outcomes
 outcomes <- c("p_outcome_1","p_outcome_2","nr_improved", "share_plots_imp", "nr_improvedxsize", "share_area_imp" )
 b_outcomes <- c("b_p_outcome_1", "b_p_outcome_2",NA,NA)
-
-dta$index <- icwIndex(xmat= as.matrix(dta[outcomes]), sgroup=dta$s_ind)$index
+### do not include outcome 2 (adoption of bazooka) as this results in singularity
+dta$index <- icwIndex(xmat= as.matrix(dta[ setdiff(outcomes,"p_outcome_2")]), sgroup=dta$s_ind)$index
 outcomes <- c(outcomes, "index")
 ## demean indicators
 dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)
@@ -172,7 +172,7 @@ for (i in 1:length(outcomes)){
   if (i %in% 3:7) {
   formula1 <- as.formula(paste(outcomes[i],paste("trial_P*cont"),sep="~"))
   ols <- lm(formula1, data=dta)
-  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR3")
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
   
   df_res[1:3,1,i] <- coef_test(ols, vcov_cluster)$beta[2:4]
   df_res[1:3,2,i] <- coef_test(ols, vcov_cluster)$SE[2:4]
@@ -181,7 +181,7 @@ for (i in 1:length(outcomes)){
   } else {
   formula1 <- as.formula(paste(paste(outcomes[i],paste("trial_P*cont"),sep="~"), b_outcomes[i],sep="+"))
   ols <- lm(formula1, data=dta)
-  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR3")
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
   
   df_res[1:3,1,i] <- coef_test(ols, vcov_cluster)$beta[c(2:3,5)]
   df_res[1:3,2,i] <- coef_test(ols, vcov_cluster)$SE[c(2:3,5)]
@@ -195,7 +195,7 @@ for (i in 1:length(outcomes)){
   formula2 <- as.formula(paste(paste(outcomes[i],paste("trial_P*cont_demeaned"),sep="~"), b_outcomes[i],sep="+"))   
   }  
   ols <- lm(formula2, data=dta)
-  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR3")
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
   
   df_res_pool[1,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
   df_res_pool[1,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
@@ -206,7 +206,7 @@ for (i in 1:length(outcomes)){
   formula3 <- as.formula(paste(paste(outcomes[i],paste("cont*trial_P_demeaned"),sep="~"), b_outcomes[i],sep="+"))    
   }  
   ols <- lm(formula3, data=dta)
-  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR3")
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
   
   df_res_pool[2,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
   df_res_pool[2,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
@@ -263,6 +263,8 @@ dta$imp_seed_qty_rnd[is.na(dta$imp_seed_qty_rnd)] <- 0
 bse$b_imp_seed_qty_rnd <- bse$b_rnd_adopt*bse$seed_qty
 bse$b_imp_seed_qty_rnd[is.na(bse$b_imp_seed_qty_rnd)] <- 0
 dta <- merge(dta, bse[c("farmer_ID","b_imp_seed_qty_rnd")], by.x="ID", by.y="farmer_ID")
+
+dta$size_selected <- as.numeric(as.character(dta$size_selected)) 
 ### seed quantity per area
 dta$imp_seed_qty_rnd_acre <- dta$imp_seed_qty_rnd/dta$size_selected  
 bse$b_imp_seed_qty_rnd_acre <- bse$b_imp_seed_qty_rnd/bse$plot_size
@@ -272,15 +274,15 @@ dta$production <- as.numeric(as.character(dta$bag_harv))*as.numeric(as.character
 bse$b_production <- bse$bag_harv*bse$bag_kg
 dta <- merge(dta, bse[c("farmer_ID","b_production")], by.x="ID", by.y="farmer_ID")
 ## productivity
-dta$productivity <- dta$production/dta$size_selected 
+dta$productivity <- dta$production/dta$size_selected
 bse$b_productivity <- bse$b_production/bse$plot_size
 dta <- merge(dta, bse[c("farmer_ID","b_productivity")], by.x="ID", by.y="farmer_ID")
 #iterate over outcomes
 outcomes <- c("rnd_adopt", "rnd_bazo", "imp_seed_qty_rnd", "imp_seed_qty_rnd_acre","production", "productivity" )
 b_outcomes <- c("b_rnd_adopt", "b_rnd_bazo","b_imp_seed_qty_rnd","b_imp_seed_qty_rnd_acre", "b_production", "b_productivity")
 
-dta$index <- icwIndex(xmat= as.matrix(dta[outcomes]),sgroup=dta$s_ind)$index
-dta$b_index <- icwIndex(xmat= as.matrix(dta[b_outcomes]),sgroup=dta$s_ind)$index
+dta$index <- icwIndex(xmat= as.matrix(dta[setdiff(outcomes,c("rnd_bazo"))]),sgroup=dta$s_ind)$index
+dta$b_index <- icwIndex(xmat= as.matrix(dta[setdiff(b_outcomes,"b_rnd_bazo")]),sgroup=dta$s_ind)$index
 outcomes <- c(outcomes, "index")
 b_outcomes <- c(b_outcomes, "b_index")
 ## demean indicators
@@ -297,7 +299,7 @@ for (i in 1:length(outcomes)){
   
   formula1 <- as.formula(paste(paste(outcomes[i],paste("trial_P*cont"),sep="~"), b_outcomes[i],sep="+"))
   ols <- lm(formula1, data=dta)
-  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR3")
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
   
   df_res[1:3,1,i] <- coef_test(ols, vcov_cluster)$beta[c(2:3,5)]
   df_res[1:3,2,i] <- coef_test(ols, vcov_cluster)$SE[c(2:3,5)]
@@ -306,7 +308,7 @@ for (i in 1:length(outcomes)){
   
   formula2 <- as.formula(paste(paste(outcomes[i],paste("trial_P*cont_demeaned"),sep="~"), b_outcomes[i],sep="+"))
   ols <- lm(formula2, data=dta)
-  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR3")
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
   
   df_res_pool[1,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
   df_res_pool[1,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
@@ -314,7 +316,7 @@ for (i in 1:length(outcomes)){
   
   formula3 <- as.formula(paste(paste(outcomes[i],paste("cont*trial_P_demeaned"),sep="~"), b_outcomes[i],sep="+"))
   ols <- lm(formula3, data=dta)
-  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR3")
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
   
   df_res_pool[2,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
   df_res_pool[2,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
@@ -354,7 +356,7 @@ dta$future_bazo <- dta$future_bazo %in% c("1","2")
 outcomes <- c("knw_bazo","nr_vars" , "downside_risk_imp", "downside_risk_bazo","share_imp","share_bazo","future_imp", "future_bazo")
 b_outcomes <- c("b_knw_bazo",rep(NA, times=7))
 
-dta$index <- icwIndex(xmat= as.matrix(dta[outcomes]),sgroup=dta$s_ind)$index
+dta$index <- icwIndex(xmat= as.matrix(dta[setdiff(outcomes,c("downside_risk_bazo","share_bazo","future_bazo"))]),sgroup=dta$s_ind)$index
 outcomes <- c(outcomes, "index")
 ## demean indicators
 dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)
@@ -370,7 +372,7 @@ for (i in 1:length(outcomes)){
   if (i %in% 2:8) {
     formula1 <- as.formula(paste(outcomes[i],paste("trial_P*cont"),sep="~"))
     ols <- lm(formula1, data=dta)
-    vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR3")
+    vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
     
     df_res[1:3,1,i] <- coef_test(ols, vcov_cluster)$beta[2:4]
     df_res[1:3,2,i] <- coef_test(ols, vcov_cluster)$SE[2:4]
@@ -379,7 +381,7 @@ for (i in 1:length(outcomes)){
   } else {
     formula1 <- as.formula(paste(paste(outcomes[i],paste("trial_P*cont"),sep="~"), b_outcomes[i],sep="+"))
     ols <- lm(formula1, data=dta)
-    vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR3")
+    vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
     
     df_res[1:3,1,i] <- coef_test(ols, vcov_cluster)$beta[c(2:3,5)]
     df_res[1:3,2,i] <- coef_test(ols, vcov_cluster)$SE[c(2:3,5)]
@@ -393,7 +395,7 @@ for (i in 1:length(outcomes)){
     formula2 <- as.formula(paste(paste(outcomes[i],paste("trial_P*cont_demeaned"),sep="~"), b_outcomes[i],sep="+"))   
   }  
   ols <- lm(formula2, data=dta)
-  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR3")
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
   
   df_res_pool[1,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
   df_res_pool[1,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
@@ -404,7 +406,7 @@ for (i in 1:length(outcomes)){
     formula3 <- as.formula(paste(paste(outcomes[i],paste("cont*trial_P_demeaned"),sep="~"), b_outcomes[i],sep="+"))    
   }  
   ols <- lm(formula3, data=dta)
-  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR3")
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
   
   df_res_pool[2,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
   df_res_pool[2,2,i] <- coef_test(ols, vcov_cluster)$SE[2]

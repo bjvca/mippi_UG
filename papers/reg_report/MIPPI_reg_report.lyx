@@ -4230,13 +4230,75 @@ perceptions of 6 consumer traits: taste/texture, appearance, nutritional
 \end_layout
 
 \begin_layout Enumerate
-Please indicate most, second and thrid most when deciding on what seed to
+Please indicate most, second and third most when deciding on what seed to
  plant: yield, taste, ease of cooking, price, availability, nutritional
  benefit
 \end_layout
 
 \begin_layout Subsection
 Pathways
+\end_layout
+
+\begin_layout Standard
+We asked some question to explore impact pathways.
+ First, both intervention may raise awareness of improved seed, and bazooka
+ in particular.
+ Therefore we asked farmers to provide use with the names of as many improved
+ maize seed varieties they know and enumerator record this number (nr_vars).
+ Second, we also simply ask if the farmer knows a maize seed variety called
+ “Bazooka” (knw_bazo).
+\end_layout
+
+\begin_layout Standard
+The interventions, and the producer side intervention in particular, may
+ affect risk perceptions from farmers now that they were able to try the
+ seed.
+ To get a sense of perceived risk, we ask farmers to indicate how likely
+ is it that they would end up with lower yields than when they would use
+ local seed if you would use improved seed varieties (risk_imp).
+ Responses are recorded on a 5 point likert scale ranging from 
+\begin_inset Quotes eld
+\end_inset
+
+very likely (improved seed will give lower yield than local)
+\begin_inset Quotes erd
+\end_inset
+
+ to 
+\begin_inset Quotes eld
+\end_inset
+
+very unlikely (improved seed will give more yield than local)
+\begin_inset Quotes erd
+\end_inset
+
+.
+ The same question is repeated for the specific seed type we used in the
+ study (albeit only for farmers who indicated that they know the seed (kwo_bazo)
+): How likely is it that you would end up with lower yield than with local
+ seed if you would use the promoted variety? (risk_bazo).
+\end_layout
+
+\begin_layout Standard
+As indicated in the motivation, one important justification for subsidizing
+ seed or flour (eg in the form of trial pack) is to leverage spillover effects
+ to increase adoption.
+ We include a few questions to see if our interventions affect social learning.
+ In particular, we ask how likely is it that a farmer would recommend one
+ of the improved seed varieties they know to a friend? (share_imp).
+ And a similar question is asked for the particular seed that we used for
+ the seed trial pack (share_bazo).
+ Results are in table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pathways"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -4249,10 +4311,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Adoption on random plot
+Impact Pathways
 \begin_inset CommandInset label
 LatexCommand label
-name "adoptiom-1-1"
+name "pathways"
 
 \end_inset
 
@@ -4804,7 +4866,7 @@ Sexpr{format(round(df_path[3,1,5],digits=2),nsmall=2)}$^{
 Sexpr{ifelse(df_path[3,3,5]<.01,"**",ifelse(df_path[3,3,5]<.05,"*",ifelse(df_path[
 3,3,5]<.1,"+","")))}}$ & 
 \backslash
-Sexpr{format(round(df_path[1,4,5],digits=2),nsmall=2)} 
+Sexpr{format(round(df_path[1,4,5],digits=0),nsmall=0)} 
 \backslash
 
 \backslash
@@ -4906,7 +4968,7 @@ Sexpr{format(round(df_path[3,1,6],digits=2),nsmall=2)}$^{
 Sexpr{ifelse(df_path[3,3,6]<.01,"**",ifelse(df_path[3,3,6]<.05,"*",ifelse(df_path[
 3,3,6]<.1,"+","")))}}$ & 
 \backslash
-Sexpr{format(round(df_path[1,4,6],digits=2),nsmall=2)} 
+Sexpr{format(round(df_path[1,4,6],digits=0),nsmall=0)} 
 \backslash
 
 \backslash
@@ -5008,7 +5070,7 @@ Sexpr{format(round(df_path[3,1,7],digits=2),nsmall=2)}$^{
 Sexpr{ifelse(df_path[3,3,7]<.01,"**",ifelse(df_path[3,3,7]<.05,"*",ifelse(df_path[
 3,3,7]<.1,"+","")))}}$ & 
 \backslash
-Sexpr{format(round(df_path[1,4,7],digits=2),nsmall=2)} 
+Sexpr{format(round(df_path[1,4,7],digits=0),nsmall=0)} 
 \backslash
 
 \backslash
@@ -5110,7 +5172,7 @@ Sexpr{format(round(df_path[3,1,8],digits=2),nsmall=2)}$^{
 Sexpr{ifelse(df_path[3,3,8]<.01,"**",ifelse(df_path[3,3,8]<.05,"*",ifelse(df_path[
 3,3,8]<.1,"+","")))}}$ & 
 \backslash
-Sexpr{format(round(df_path[1,4,8],digits=2),nsmall=2)} 
+Sexpr{format(round(df_path[1,4,8],digits=0),nsmall=0)} 
 \backslash
 
 \backslash
@@ -5212,7 +5274,7 @@ Sexpr{format(round(df_path[3,1,9],digits=2),nsmall=2)}$^{
 Sexpr{ifelse(df_path[3,3,9]<.01,"**",ifelse(df_path[3,3,9]<.05,"*",ifelse(df_path[
 3,3,9]<.1,"+","")))}}$ & 
 \backslash
-Sexpr{format(round(df_path[1,4,9],digits=2),nsmall=2)} 
+Sexpr{format(round(df_path[1,4,9],digits=0),nsmall=0)} 
 \backslash
 
 \backslash
@@ -5305,47 +5367,6 @@ s includ control for baseline outcome.
 
 \end_layout
 
-\begin_layout Subsubsection*
-Awareness impact pathway
-\end_layout
-
-\begin_layout Enumerate
-Please provide me with the names of as many improved seed varieties you
- know (enumerator fill in the number of seed varieties the farmer knows)
- (nr_vars)
-\end_layout
-
-\begin_layout Enumerate
-Do you know a maize seed variety called “Bazooka”? (knw_bazo)
-\end_layout
-
-\begin_layout Subsubsection*
-Risk impact pathway
-\end_layout
-
-\begin_layout Enumerate
-How likely is it that you would end up with lower yield than with local
- seed if you would use improved seed varieties? (risk_imp)
-\end_layout
-
-\begin_layout Enumerate
-How likely is it that you would end up with lower yield than with local
- seed if you would use the promoted variety? (risk_bazo)
-\end_layout
-
-\begin_layout Subsubsection*
-Community Learning and Peer Influence
-\end_layout
-
-\begin_layout Enumerate
-How likely is it that you would recommend one of these improved seed varieties
- to a friend? (share_imp)
-\end_layout
-
-\begin_layout Enumerate
-How likely is it that you would recommend bazooka to a friend? (share_bazo)
-\end_layout
-
 \begin_layout Section*
 Ethical clearance
 \end_layout
@@ -5385,10 +5406,11 @@ revision control: the entire project will be under revision control (that
 mock report: After baseline data is collected, a pre-registered report will
  be produced and added to the AEA RCT registry and GitHub.
  This report will differ from the pre-analyisis plan in that it already
- has the tables filled with simulated data (drawn from the baseline).
+ has the tables filled with simulated data.
  The idea is that after the endline, only minimal changes are necessary
  (basically connecting a different dataset) to obtain the final result,
  further reducing the opportunity of specification search.
+ This document is the mock report.
 \end_layout
 
 \begin_layout Section*
