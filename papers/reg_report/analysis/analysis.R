@@ -62,9 +62,12 @@ bse$cluster_ID <- as.factor(paste(paste(bse$distID,bse$subID, sep="_"), bse$vilI
 
 ### read in test data - this needs to be replace when we get the real data
 
-dta <- read.csv(paste(path,"endline/data/dummy/dummy.csv", sep="/"))
-### remove "checkx." from variable names
+dta <- read.csv(paste(path,"endline/data/dummy/dummy2.csv", sep="/"))
+
+### remove "checkx." from variable names - this should to be in ananymized script
 names(dta) <- sub("checkx.", "",names(dta))
+names(dta) <- sub("group4.", "",names(dta))
+names(dta) <- sub("value.", "",names(dta))
 
 ## drop non-free trial packs and non-free + discount trial packs
 dta <- subset(dta, paid_pac == FALSE & discounted == FALSE)
@@ -341,15 +344,25 @@ dta$knw_bazo <- dta$knw_bazo =="Yes"
 bse$b_knw_bazo <- bse$knw_bazo == "Yes"
 dta <- merge(dta, bse[c("farmer_ID","b_knw_bazo")], by.x="ID", by.y="farmer_ID")
 
-dta$downside_risk_imp <- dta$risk_imp %in% c("1","2")
-dta$downside_risk_bazo <- dta$risk_bazo  %in% c("1","2")
+
+dta$risk_imp[dta$risk_imp =="98"] <- NA
+dta$downside_risk_imp <- dta$risk_imp == "1" | dta$risk_imp=="2"
+
+
+dta$risk_bazo[dta$risk_bazo == "98"] <- NA
+dta$downside_risk_bazo <- dta$risk_bazo == "1" | dta$risk_bazo == "2"
+
 
 dta$share_imp  <- dta$share_imp == "Yes"
-dta$future_imp <- dta$future_imp %in% c("1","2")
+dta$future_imp[dta$future_imp == "98"] <- NA
+dta$future_imp <- dta$future_imp == "1" | dta$future_imp == "2"
+
 
 
 dta$share_bazo <- dta$share_bazo == "Yes"
-dta$future_bazo <- dta$future_bazo %in% c("1","2")
+dta$future_bazo[dta$future_bazo == "98"] <- NA
+dta$future_bazo <- dta$future_bazo == "1" | dta$future_bazo == "2"
+
 
 
 #iterate over outcomes
@@ -369,7 +382,7 @@ for (i in 1:length(outcomes)){
   
   df_means_out[1,i] <- mean(unlist(dta[outcomes[i]]), na.rm=TRUE)
   df_means_out[2,i] <- sd(unlist(dta[outcomes[i]]), na.rm=TRUE)
-  if (i %in% 2:8) {
+  if (i %in% 2:9) {
     formula1 <- as.formula(paste(outcomes[i],paste("trial_P*cont"),sep="~"))
     ols <- lm(formula1, data=dta)
     vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
@@ -383,13 +396,13 @@ for (i in 1:length(outcomes)){
     ols <- lm(formula1, data=dta)
     vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
     
-    df_res[1:3,1,i] <- coef_test(ols, vcov_cluster)$beta[c(2:3,5)]
-    df_res[1:3,2,i] <- coef_test(ols, vcov_cluster)$SE[c(2:3,5)]
-    df_res[1:3,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[c(2:3,5)]
+    df_res[1:3,1,i] <- coef_test(ols, vcov_cluster)$beta[2:4]
+    df_res[1:3,2,i] <- coef_test(ols, vcov_cluster)$SE[2:4]
+    df_res[1:3,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2:4]
     df_res[1,4,i] <- nobs(ols) 
   }  
   
-  if (i %in% 2:8) {  
+  if (i %in% 2:9) {  
     formula2 <- as.formula(paste(outcomes[i],paste("trial_P*cont_demeaned"),sep="~"))
   } else {
     formula2 <- as.formula(paste(paste(outcomes[i],paste("trial_P*cont_demeaned"),sep="~"), b_outcomes[i],sep="+"))   
@@ -400,7 +413,7 @@ for (i in 1:length(outcomes)){
   df_res_pool[1,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
   df_res_pool[1,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
   df_res_pool[1,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
-  if (i %in% 2:8) {   
+  if (i %in% 2:9) {   
     formula3 <- as.formula(paste(outcomes[i],paste("cont*trial_P_demeaned"),sep="~"))
   } else {
     formula3 <- as.formula(paste(paste(outcomes[i],paste("cont*trial_P_demeaned"),sep="~"), b_outcomes[i],sep="+"))    
@@ -423,4 +436,635 @@ save(df_path_pool,file=paste(path,"/papers/reg_report/results/df_path_pool.Rdata
 save(df_path,file=paste(path,"/papers/reg_report/results/df_path.Rdata",sep="/"))
 save(df_means_path,file=paste(path,"/papers/reg_report/results/df_means_path.Rdata",sep="/"))
 
+#### table with impact on consumer traits of seed used
+##taste was better
+
+dta$used_cons_taste[dta$used_cons_taste == "98"] <- NA
+dta$used_cons_taste_better <- dta$used_cons_taste == "1" | dta$used_cons_taste == "2"
+
+
+dta$used_portions[dta$used_portions == "98"] <- NA
+dta$used_portions_larger <- dta$used_portions == "1" | dta$used_portions == "2"
+
+
+dta$used_cons_appear[dta$used_cons_appear == "98"] <- NA
+dta$used_cons_appear_better <- dta$used_cons_appear == "1" | dta$used_cons_appear == "2"
+
+
+dta$used_cons_cook[dta$used_cons_cook == "98"] <- NA
+dta$used_cons_cook_easier <- dta$used_cons_cook == "1" | dta$used_cons_cook == "2"
+
+
+#iterate over outcomes
+outcomes <- c("used_cons_taste_better", "used_portions_larger",  "used_cons_appear_better", "used_cons_cook_easier")
+
+
+dta$index <- icwIndex(xmat= as.matrix(dta[outcomes]),sgroup=dta$s_ind)$index
+outcomes <- c(outcomes, "index")
+## demean indicators
+dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)
+dta$trial_P_demeaned <-  dta$trial_P - mean(dta$trial_P,na.rm = T)
+df_means_out <- array(NA,c(2,length(outcomes )))
+df_res <- array(NA,c(3,4,length(outcomes )))
+df_res_pool  <- array(NA,c(2,3,length(outcomes )))
+for (i in 1:length(outcomes)){
+  ##means
   
+  df_means_out[1,i] <- mean(unlist(dta[outcomes[i]]), na.rm=TRUE)
+  df_means_out[2,i] <- sd(unlist(dta[outcomes[i]]), na.rm=TRUE)
+  
+  formula1 <- as.formula(paste(outcomes[i],paste("trial_P*cont"),sep="~"))
+  ols <- lm(formula1, data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+  
+  df_res[1:3,1,i] <- coef_test(ols, vcov_cluster)$beta[2:4]
+  df_res[1:3,2,i] <- coef_test(ols, vcov_cluster)$SE[2:4]
+  df_res[1:3,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2:4]
+  df_res[1,4,i] <- nobs(ols) 
+  
+  formula2 <- as.formula(paste(outcomes[i],paste("trial_P*cont_demeaned"),sep="~"))
+  ols <- lm(formula2, data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+  
+  df_res_pool[1,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
+  df_res_pool[1,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
+  df_res_pool[1,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
+  
+  formula3 <- as.formula(paste(outcomes[i],paste("cont*trial_P_demeaned"),sep="~"))
+  ols <- lm(formula3, data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+  
+  df_res_pool[2,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
+  df_res_pool[2,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
+  df_res_pool[2,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
+  
+}
+
+df_cons_traits_seed_pool <- df_res_pool
+df_cons_traits_seed <- df_res
+df_means_cons_traits_seed <- df_means_out
+
+
+save(df_cons_traits_seed_pool,file=paste(path,"/papers/reg_report/results/df_cons_traits_seed_pool.Rdata",sep="/"))
+save(df_cons_traits_seed,file=paste(path,"/papers/reg_report/results/df_cons_traits_seed.Rdata",sep="/"))
+save(df_means_cons_traits_seed,file=paste(path,"/papers/reg_report/results/df_means_cons_traits_seed.Rdata",sep="/"))
+
+#### table with impact of producer traits of seed used
+
+dta$used_yield_rate[dta$used_yield_rate == "98"] <- NA
+dta$used_yield_rate_higher <- dta$used_yield_rate == "1" | dta$used_yield_rate == "2"
+
+
+dta$used_drt_tol[dta$used_drt_tol == "98"] <- NA
+dta$used_drt_tol_better <- dta$used_drt_tol == "1" | dta$used_drt_tol == "2"
+
+
+dta$used_dies_tol[dta$used_dies_tol == "98"] <- NA
+dta$used_dies_tol_better <- dta$used_dies_tol == "1" | dta$used_dies_tol == "2"
+
+
+dta$used_erly_mat[dta$used_erly_mat == "98"] <- NA
+dta$used_erly_mat_shorter <- dta$used_erly_mat == "1" | dta$used_erly_mat == "2"
+
+
+dta$used_germ_rate[dta$used_germ_rate == "98"] <- NA
+dta$used_germ_rate_higher <- dta$used_germ_rate == "1" | dta$used_germ_rate == "2"
+
+
+#iterate over outcomes
+outcomes <- c("used_yield_rate_higher","used_drt_tol_better","used_dies_tol_better","used_erly_mat_shorter","used_germ_rate_higher")
+
+
+dta$index <- icwIndex(xmat= as.matrix(dta[outcomes]),sgroup=dta$s_ind)$index
+outcomes <- c(outcomes, "index")
+## demean indicators
+dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)
+dta$trial_P_demeaned <-  dta$trial_P - mean(dta$trial_P,na.rm = T)
+df_means_out <- array(NA,c(2,length(outcomes )))
+df_res <- array(NA,c(3,4,length(outcomes )))
+df_res_pool  <- array(NA,c(2,3,length(outcomes )))
+for (i in 1:length(outcomes)){
+  ##means
+  
+  df_means_out[1,i] <- mean(unlist(dta[outcomes[i]]), na.rm=TRUE)
+  df_means_out[2,i] <- sd(unlist(dta[outcomes[i]]), na.rm=TRUE)
+  
+  formula1 <- as.formula(paste(outcomes[i],paste("trial_P*cont"),sep="~"))
+  ols <- lm(formula1, data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+  
+  df_res[1:3,1,i] <- coef_test(ols, vcov_cluster)$beta[2:4]
+  df_res[1:3,2,i] <- coef_test(ols, vcov_cluster)$SE[2:4]
+  df_res[1:3,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2:4]
+  df_res[1,4,i] <- nobs(ols) 
+  
+  formula2 <- as.formula(paste(outcomes[i],paste("trial_P*cont_demeaned"),sep="~"))
+  ols <- lm(formula2, data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+  
+  df_res_pool[1,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
+  df_res_pool[1,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
+  df_res_pool[1,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
+  
+  formula3 <- as.formula(paste(outcomes[i],paste("cont*trial_P_demeaned"),sep="~"))
+  ols <- lm(formula3, data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+  
+  df_res_pool[2,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
+  df_res_pool[2,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
+  df_res_pool[2,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]  
+  
+}
+
+df_prod_traits_seed_pool <- df_res_pool
+df_prod_traits_seed <- df_res
+df_means_prod_traits_seed <- df_means_out
+
+
+save(df_prod_traits_seed_pool,file=paste(path,"/papers/reg_report/results/df_prod_traits_seed_pool.Rdata",sep="/"))
+save(df_prod_traits_seed,file=paste(path,"/papers/reg_report/results/df_prod_traits_seed.Rdata",sep="/"))
+save(df_means_prod_traits_seed,file=paste(path,"/papers/reg_report/results/df_means_prod_traits_seed.Rdata",sep="/"))
+
+#### table with impact on consumer traits (comparing improved and local seed)
+##taste was better
+
+dta$compare_cons_taste[dta$compare_cons_taste == "98"] <- NA
+dta$compare_cons_taste_better <- dta$compare_cons_taste == "1" | dta$compare_cons_taste == "2"
+
+
+dta$compare_portions[dta$compare_portions == "98"] <- NA
+dta$compare_portions_larger <- dta$compare_portions == "1" | dta$compare_portions == "2"
+
+
+dta$compare_cons_appear[dta$compare_cons_appear == "98"] <- NA
+dta$compare_cons_appear_better <- dta$compare_cons_appear == "1" | dta$compare_cons_appear == "2"
+
+
+dta$compare_cons_cook[dta$compare_cons_cook == "98"] <- NA
+dta$compare_cons_cook_easier <- dta$compare_cons_cook == "1" | dta$compare_cons_cook == "2"
+
+
+#iterate over outcomes
+outcomes <- c("compare_cons_taste_better", "compare_portions_larger",  "compare_cons_appear_better", "compare_cons_cook_easier")
+
+
+dta$index <- icwIndex(xmat= as.matrix(dta[outcomes]),sgroup=dta$s_ind)$index
+outcomes <- c(outcomes, "index")
+## demean indicators
+dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)
+dta$trial_P_demeaned <-  dta$trial_P - mean(dta$trial_P,na.rm = T)
+df_means_out <- array(NA,c(2,length(outcomes )))
+df_res <- array(NA,c(3,4,length(outcomes )))
+df_res_pool  <- array(NA,c(2,3,length(outcomes )))
+for (i in 1:length(outcomes)){
+  ##means
+  
+  df_means_out[1,i] <- mean(unlist(dta[outcomes[i]]), na.rm=TRUE)
+  df_means_out[2,i] <- sd(unlist(dta[outcomes[i]]), na.rm=TRUE)
+  
+  formula1 <- as.formula(paste(outcomes[i],paste("trial_P*cont"),sep="~"))
+  ols <- lm(formula1, data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+  
+  df_res[1:3,1,i] <- coef_test(ols, vcov_cluster)$beta[2:4]
+  df_res[1:3,2,i] <- coef_test(ols, vcov_cluster)$SE[2:4]
+  df_res[1:3,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2:4]
+  df_res[1,4,i] <- nobs(ols) 
+  
+  formula2 <- as.formula(paste(outcomes[i],paste("trial_P*cont_demeaned"),sep="~"))
+  ols <- lm(formula2, data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+  
+  df_res_pool[1,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
+  df_res_pool[1,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
+  df_res_pool[1,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
+  
+  formula3 <- as.formula(paste(outcomes[i],paste("cont*trial_P_demeaned"),sep="~"))
+  ols <- lm(formula3, data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+  
+  df_res_pool[2,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
+  df_res_pool[2,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
+  df_res_pool[2,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
+}
+
+df_compare_cons_traits_seed_pool <- df_res_pool
+df_compare_cons_traits_seed <- df_res
+df_means_compare_cons_traits_seed <- df_means_out
+
+
+save(df_compare_cons_traits_seed_pool,file=paste(path,"/papers/reg_report/results/df_compare_cons_traits_seed_pool.Rdata",sep="/"))
+save(df_compare_cons_traits_seed,file=paste(path,"/papers/reg_report/results/df_compare_cons_traits_seed.Rdata",sep="/"))
+save(df_means_compare_cons_traits_seed,file=paste(path,"/papers/reg_report/results/df_means_compare_cons_traits_seed.Rdata",sep="/"))
+
+
+#### table with impact of producer traits of seed used (comparing improved and local seed)
+
+dta$compare_yield_rate[dta$compare_yield_rate == "98"] <- NA
+dta$compare_yield_rate_higher <- dta$compare_yield_rate =="1" | dta$compare_yield_rate=="2"
+
+
+dta$compare_drt_tol[dta$compare_drt_tol == "98"] <- NA
+dta$compare_drt_tol_better <- dta$compare_drt_tol =="1" | dta$compare_drt_tol=="2"
+
+
+dta$compare_dies_tol[dta$compare_dies_tol == "98"] <- NA
+dta$compare_dies_tol_better <- dta$compare_dies_tol =="1" | dta$compare_dies_tol=="2"
+
+
+dta$compare_erly_mat[dta$compare_erly_mat == "98"] <- NA
+dta$compare_erly_mat_shorter <- dta$compare_erly_mat =="1" | dta$compare_erly_mat=="2"
+
+
+dta$compare_germ_rate[dta$compare_germ_rate == "98"] <- NA
+dta$compare_germ_rate_higher <- dta$compare_germ_rate =="1" | dta$compare_germ_rate=="2"
+
+
+
+#iterate over outcomes
+outcomes <- c("compare_yield_rate_higher","compare_drt_tol_better","compare_dies_tol_better","compare_erly_mat_shorter", "compare_germ_rate_higher")
+
+
+dta$index <- icwIndex(xmat= as.matrix(dta[outcomes]),sgroup=dta$s_ind)$index
+outcomes <- c(outcomes, "index")
+## demean indicators
+dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)
+dta$trial_P_demeaned <-  dta$trial_P - mean(dta$trial_P,na.rm = T)
+df_means_out <- array(NA,c(2,length(outcomes )))
+df_res <- array(NA,c(3,4,length(outcomes )))
+df_res_pool  <- array(NA,c(2,3,length(outcomes )))
+for (i in 1:length(outcomes)){
+  ##means
+  
+  df_means_out[1,i] <- mean(unlist(dta[outcomes[i]]), na.rm=TRUE)
+  df_means_out[2,i] <- sd(unlist(dta[outcomes[i]]), na.rm=TRUE)
+  
+  formula1 <- as.formula(paste(outcomes[i],paste("trial_P*cont"),sep="~"))
+  ols <- lm(formula1, data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+  
+  df_res[1:3,1,i] <- coef_test(ols, vcov_cluster)$beta[2:4]
+  df_res[1:3,2,i] <- coef_test(ols, vcov_cluster)$SE[2:4]
+  df_res[1:3,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2:4]
+  df_res[1,4,i] <- nobs(ols) 
+  
+  formula2 <- as.formula(paste(outcomes[i],paste("trial_P*cont_demeaned"),sep="~"))
+  ols <- lm(formula2, data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+  
+  df_res_pool[1,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
+  df_res_pool[1,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
+  df_res_pool[1,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
+  
+  formula3 <- as.formula(paste(outcomes[i],paste("cont*trial_P_demeaned"),sep="~"))
+  ols <- lm(formula3, data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+  
+  df_res_pool[2,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
+  df_res_pool[2,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
+  df_res_pool[2,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
+}
+
+df_compare_prod_traits_seed_pool <- df_res_pool
+df_compare_prod_traits_seed <- df_res
+df_means_compare_prod_traits_seed <- df_means_out
+
+
+save(df_compare_prod_traits_seed_pool,file=paste(path,"/papers/reg_report/results/df_compare_prod_traits_seed_pool.Rdata",sep="/"))
+save(df_compare_prod_traits_seed,file=paste(path,"/papers/reg_report/results/df_compare_prod_traits_seed.Rdata",sep="/"))
+save(df_means_compare_prod_traits_seed,file=paste(path,"/papers/reg_report/results/df_means_compare_prod_traits_seed.Rdata",sep="/"))
+  
+
+
+
+#### table with impact of post harves traits of seed used
+dta$used_mrkt_dem[dta$used_mrkt_dem == "98"] <- NA
+dta$used_mrkt_dem_higher <- (dta$used_mrkt_dem =="1" | dta$used_mrkt_dem =="2")
+
+
+dta$used_biomass[dta$used_biomass=="98"] <- NA
+dta$used_biomass_higher <- ( dta$used_biomass =="1" |  dta$used_biomass=="2")
+
+dta$used_process[dta$used_process=="98"] <- NA
+dta$used_process_higher <- ( dta$used_process =="1" |  dta$used_process=="2")
+
+
+#iterate over outcomes
+outcomes <- c("used_mrkt_dem_higher","used_biomass_higher","used_process_higher")
+
+
+dta$index <- icwIndex(xmat= as.matrix(dta[outcomes]),sgroup=dta$s_ind)$index
+outcomes <- c(outcomes, "index")
+## demean indicators
+dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)
+dta$trial_P_demeaned <-  dta$trial_P - mean(dta$trial_P,na.rm = T)
+df_means_out <- array(NA,c(2,length(outcomes )))
+df_res <- array(NA,c(3,4,length(outcomes )))
+df_res_pool  <- array(NA,c(2,3,length(outcomes )))
+for (i in 1:length(outcomes)){
+  ##means
+  
+  df_means_out[1,i] <- mean(unlist(dta[outcomes[i]]), na.rm=TRUE)
+  df_means_out[2,i] <- sd(unlist(dta[outcomes[i]]), na.rm=TRUE)
+  
+  formula1 <- as.formula(paste(outcomes[i],paste("trial_P*cont"),sep="~"))
+  ols <- lm(formula1, data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+  
+  df_res[1:3,1,i] <- coef_test(ols, vcov_cluster)$beta[2:4]
+  df_res[1:3,2,i] <- coef_test(ols, vcov_cluster)$SE[2:4]
+  df_res[1:3,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2:4]
+  df_res[1,4,i] <- nobs(ols) 
+  
+  formula2 <- as.formula(paste(outcomes[i],paste("trial_P*cont_demeaned"),sep="~"))
+  ols <- lm(formula2, data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+  
+  df_res_pool[1,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
+  df_res_pool[1,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
+  df_res_pool[1,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
+  
+  formula3 <- as.formula(paste(outcomes[i],paste("cont*trial_P_demeaned"),sep="~"))
+  ols <- lm(formula3, data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+  
+  df_res_pool[2,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
+  df_res_pool[2,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
+  df_res_pool[2,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
+}
+
+df_used_ph_pool <- df_res_pool
+df_used_ph <- df_res
+df_means_used_ph <- df_means_out
+
+
+save(df_used_ph_pool,file=paste(path,"/papers/reg_report/results/df_used_ph_pool.Rdata",sep="/"))
+save(df_used_ph,file=paste(path,"/papers/reg_report/results/df_used_ph.Rdata",sep="/"))
+save(df_means_used_ph,file=paste(path,"/papers/reg_report/results/df_means_used_ph.Rdata",sep="/"))
+
+#### table with impact of post harves traits of improved seed compared to local
+
+dta$compare_mrkt_dem[dta$compare_mrkt_dem == "98"] <- NA
+dta$compare_mrkt_dem_higher <- (dta$compare_mrkt_dem =="1" | dta$compare_mrkt_dem =="2")
+
+
+dta$compare_biomass[dta$compare_biomass=="98"] <- NA
+dta$compare_biomass_higher <- ( dta$compare_biomass =="1" |  dta$compare_biomass=="2")
+
+dta$compare_process[dta$compare_process=="98"] <- NA
+dta$compare_process_higher <- ( dta$compare_process =="1" |  dta$compare_process=="2")
+
+
+#iterate over outcomes
+outcomes <- c("compare_mrkt_dem_higher","compare_biomass_higher","compare_process_higher")
+
+
+dta$index <- icwIndex(xmat= as.matrix(dta[outcomes]),sgroup=dta$s_ind)$index
+outcomes <- c(outcomes, "index")
+## demean indicators
+dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)
+dta$trial_P_demeaned <-  dta$trial_P - mean(dta$trial_P,na.rm = T)
+df_means_out <- array(NA,c(2,length(outcomes )))
+df_res <- array(NA,c(3,4,length(outcomes )))
+df_res_pool  <- array(NA,c(2,3,length(outcomes )))
+for (i in 1:length(outcomes)){
+  ##means
+  
+  df_means_out[1,i] <- mean(unlist(dta[outcomes[i]]), na.rm=TRUE)
+  df_means_out[2,i] <- sd(unlist(dta[outcomes[i]]), na.rm=TRUE)
+  
+  formula1 <- as.formula(paste(outcomes[i],paste("trial_P*cont"),sep="~"))
+  ols <- lm(formula1, data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+  
+  df_res[1:3,1,i] <- coef_test(ols, vcov_cluster)$beta[2:4]
+  df_res[1:3,2,i] <- coef_test(ols, vcov_cluster)$SE[2:4]
+  df_res[1:3,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2:4]
+  df_res[1,4,i] <- nobs(ols) 
+  
+  formula2 <- as.formula(paste(outcomes[i],paste("trial_P*cont_demeaned"),sep="~"))
+  ols <- lm(formula2, data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+  
+  df_res_pool[1,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
+  df_res_pool[1,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
+  df_res_pool[1,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
+  
+  formula3 <- as.formula(paste(outcomes[i],paste("cont*trial_P_demeaned"),sep="~"))
+  ols <- lm(formula3, data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+  
+  df_res_pool[2,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
+  df_res_pool[2,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
+  df_res_pool[2,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
+}
+
+df_compare_ph_pool <- df_res_pool
+df_compare_ph <- df_res
+df_means_compare_ph <- df_means_out
+
+
+save(df_compare_ph_pool,file=paste(path,"/papers/reg_report/results/df_compare_ph_pool.Rdata",sep="/"))
+save(df_compare_ph,file=paste(path,"/papers/reg_report/results/df_compare_ph.Rdata",sep="/"))
+save(df_means_compare_ph,file=paste(path,"/papers/reg_report/results/df_means_compare_ph.Rdata",sep="/"))
+
+## table with impact on decision making
+
+dta$who1 <- dta$who1 != "2"
+dta$who2 <- dta$who2 != "2"
+
+
+#iterate over outcomes
+outcomes <- c("who1","who2")
+
+
+dta$index <- icwIndex(xmat= as.matrix(dta[outcomes]),sgroup=dta$s_ind)$index
+outcomes <- c(outcomes, "index")
+## demean indicators
+dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)
+dta$trial_P_demeaned <-  dta$trial_P - mean(dta$trial_P,na.rm = T)
+df_means_out <- array(NA,c(2,length(outcomes )))
+df_res <- array(NA,c(3,4,length(outcomes )))
+df_res_pool  <- array(NA,c(2,3,length(outcomes )))
+for (i in 1:length(outcomes)){
+  ##means
+  
+  df_means_out[1,i] <- mean(unlist(dta[outcomes[i]]), na.rm=TRUE)
+  df_means_out[2,i] <- sd(unlist(dta[outcomes[i]]), na.rm=TRUE)
+  
+  formula1 <- as.formula(paste(outcomes[i],paste("trial_P*cont"),sep="~"))
+  ols <- lm(formula1, data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+  
+  df_res[1:3,1,i] <- coef_test(ols, vcov_cluster)$beta[2:4]
+  df_res[1:3,2,i] <- coef_test(ols, vcov_cluster)$SE[2:4]
+  df_res[1:3,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2:4]
+  df_res[1,4,i] <- nobs(ols) 
+  
+  formula2 <- as.formula(paste(outcomes[i],paste("trial_P*cont_demeaned"),sep="~"))
+  ols <- lm(formula2, data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+  
+  df_res_pool[1,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
+  df_res_pool[1,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
+  df_res_pool[1,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
+  
+  formula3 <- as.formula(paste(outcomes[i],paste("cont*trial_P_demeaned"),sep="~"))
+  ols <- lm(formula3, data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+  
+  df_res_pool[2,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
+  df_res_pool[2,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
+  df_res_pool[2,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
+}
+
+df_decision_pool <- df_res_pool
+df_decision <- df_res
+df_means_decision <- df_means_out
+
+
+save(df_decision_pool,file=paste(path,"/papers/reg_report/results/df_decision_pool.Rdata",sep="/"))
+save(df_decision,file=paste(path,"/papers/reg_report/results/df_decision.Rdata",sep="/"))
+save(df_means_decision,file=paste(path,"/papers/reg_report/results/df_means_decision.Rdata",sep="/"))
+
+## table with impact on decision making
+
+dta$perc_cons <- dta$bag_keep/dta$bag_harv*100
+dta$perc_cons[dta$perc_cons>100] <- NA
+dta$perc_sell <- as.numeric(as.character(dta$bag_sell))/dta$bag_harv*100
+dta$perc_sell[is.na(dta$perc_sell)] <- 0
+dta$perc_sell[dta$perc_sell>100] <- NA
+dta$perc_seed <- as.numeric(as.character(dta$seed_keep))/dta$harv_kgs*100
+dta$perc_seed[dta$perc_seed>50] <- NA
+
+#iterate over outcomes
+outcomes <- c("perc_cons","perc_sell","perc_seed")
+
+
+dta$index <- icwIndex(xmat= as.matrix(dta[outcomes]),sgroup=dta$s_ind)$index
+outcomes <- c(outcomes, "index")
+## demean indicators
+dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)
+dta$trial_P_demeaned <-  dta$trial_P - mean(dta$trial_P,na.rm = T)
+df_means_out <- array(NA,c(2,length(outcomes )))
+df_res <- array(NA,c(3,4,length(outcomes )))
+df_res_pool  <- array(NA,c(2,3,length(outcomes )))
+for (i in 1:length(outcomes)){
+  ##means
+  
+  df_means_out[1,i] <- mean(unlist(dta[outcomes[i]]), na.rm=TRUE)
+  df_means_out[2,i] <- sd(unlist(dta[outcomes[i]]), na.rm=TRUE)
+  
+  formula1 <- as.formula(paste(outcomes[i],paste("trial_P*cont"),sep="~"))
+  ols <- lm(formula1, data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+  
+  df_res[1:3,1,i] <- coef_test(ols, vcov_cluster)$beta[2:4]
+  df_res[1:3,2,i] <- coef_test(ols, vcov_cluster)$SE[2:4]
+  df_res[1:3,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2:4]
+  df_res[1,4,i] <- nobs(ols) 
+  
+  formula2 <- as.formula(paste(outcomes[i],paste("trial_P*cont_demeaned"),sep="~"))
+  ols <- lm(formula2, data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+  
+  df_res_pool[1,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
+  df_res_pool[1,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
+  df_res_pool[1,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
+  
+  formula3 <- as.formula(paste(outcomes[i],paste("cont*trial_P_demeaned"),sep="~"))
+  ols <- lm(formula3, data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+  
+  df_res_pool[2,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
+  df_res_pool[2,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
+  df_res_pool[2,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
+}
+
+df_disposal_pool <- df_res_pool
+df_disposal <- df_res
+df_means_disposal <- df_means_out
+
+
+save(df_disposal_pool,file=paste(path,"/papers/reg_report/results/df_disposal_pool.Rdata",sep="/"))
+save(df_disposal,file=paste(path,"/papers/reg_report/results/df_disposal.Rdata",sep="/"))
+save(df_means_disposal,file=paste(path,"/papers/reg_report/results/df_means_disposal.Rdata",sep="/"))
+
+## table with wellfare and food security
+
+dta$in_com[dta$in_com == "98" ] <- NA
+dta$better_off_vil <- dta$in_com == "1"
+dta$in_six[dta$in_six == "98"] <- NA
+dta$better_off_six <- dta$in_six == "1"
+dta$food_secure_pref <- dta$fd_pref =="No"
+dta$food_secure_quant <-dta$fd_less =="No"
+
+
+dta$cons_exp <- rowSums(cbind(as.numeric(dta$maize_value_sp),
+as.numeric(dta$sorghum_value_sp),
+as.numeric(dta$millet_value_sp),
+as.numeric(dta$rice_value_sp),
+as.numeric(dta$cassava_value_sp),
+as.numeric(dta$sweetpotatoes_value_sp),
+as.numeric(dta$beans_value_sp),
+as.numeric(dta$gnuts_value_sp),
+as.numeric(dta$fruits_value_sp),
+as.numeric(dta$veg_value_sp),
+as.numeric(dta$sugar_value_sp),
+as.numeric(dta$cooking_oil_value_sp),
+as.numeric(dta$soap_value_sp),
+as.numeric(dta$airtime_value_sp)), na.rm=T)
+
+
+#iterate over outcomes
+outcomes <- c("better_off_vil","better_off_six","food_secure_pref","food_secure_quant","cons_exp")
+
+
+dta$index <- icwIndex(xmat= as.matrix(dta[outcomes]),sgroup=dta$s_ind)$index
+outcomes <- c(outcomes, "index")
+## demean indicators
+dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)
+dta$trial_P_demeaned <-  dta$trial_P - mean(dta$trial_P,na.rm = T)
+df_means_out <- array(NA,c(2,length(outcomes )))
+df_res <- array(NA,c(3,4,length(outcomes )))
+df_res_pool  <- array(NA,c(2,3,length(outcomes )))
+for (i in 1:length(outcomes)){
+  ##means
+  
+  df_means_out[1,i] <- mean(unlist(dta[outcomes[i]]), na.rm=TRUE)
+  df_means_out[2,i] <- sd(unlist(dta[outcomes[i]]), na.rm=TRUE)
+  
+  formula1 <- as.formula(paste(outcomes[i],paste("trial_P*cont"),sep="~"))
+  ols <- lm(formula1, data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+  
+  df_res[1:3,1,i] <- coef_test(ols, vcov_cluster)$beta[2:4]
+  df_res[1:3,2,i] <- coef_test(ols, vcov_cluster)$SE[2:4]
+  df_res[1:3,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2:4]
+  df_res[1,4,i] <- nobs(ols) 
+  
+  formula2 <- as.formula(paste(outcomes[i],paste("trial_P*cont_demeaned"),sep="~"))
+  ols <- lm(formula2, data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+  
+  df_res_pool[1,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
+  df_res_pool[1,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
+  df_res_pool[1,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
+  
+  formula3 <- as.formula(paste(outcomes[i],paste("cont*trial_P_demeaned"),sep="~"))
+  ols <- lm(formula3, data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+  
+  df_res_pool[2,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
+  df_res_pool[2,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
+  df_res_pool[2,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
+}
+
+df_welfare_pool <- df_res_pool
+df_welfare <- df_res
+df_means_welfare <- df_means_out
+
+
+save(df_welfare_pool,file=paste(path,"/papers/reg_report/results/df_welfare_pool.Rdata",sep="/"))
+save(df_welfare,file=paste(path,"/papers/reg_report/results/df_welfare.Rdata",sep="/"))
+save(df_means_welfare,file=paste(path,"/papers/reg_report/results/df_means_welfare.Rdata",sep="/"))
