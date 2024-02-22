@@ -60,14 +60,8 @@ bse <- read.csv(paste(path,"baseline/data/public/baseline.csv",sep="/"))
 ### create unique ID at level of randomization for clustering standard errors 
 bse$cluster_ID <- as.factor(paste(paste(bse$distID,bse$subID, sep="_"), bse$vilID, sep="_"))
 
-### read in test data - this needs to be replace when we get the real data
-
-dta <- read.csv(paste(path,"endline/data/dummy/dummy2.csv", sep="/"))
-
-### remove "checkx." from variable names - this should to be in ananymized script
-names(dta) <- sub("checkx.", "",names(dta))
-names(dta) <- sub("group4.", "",names(dta))
-names(dta) <- sub("value.", "",names(dta))
+### read in endline data (ananymized version)
+dta <- read.csv(paste(path,"endline/data/public/endline.csv", sep="/"))
 
 ## drop non-free trial packs and non-free + discount trial packs
 dta <- subset(dta, paid_pac == FALSE & discounted == FALSE)
@@ -78,7 +72,7 @@ dta <-merge(dta, bse[c("farmer_ID","cluster_ID")], by.x="ID", by.y="farmer_ID")
 
 
 ## primary outcome 1: uses improved seed on at least one plot
-num_plots <- max(dta$plot_count)
+num_plots <- max(as.numeric(dta$plot_count), na.rm=TRUE)
 logical_result <- logical(nrow(dta))
 
 for (i in 1:num_plots) {
@@ -99,7 +93,7 @@ bse$b_p_outcome_1 <- bse$quality_use=="Yes"
 dta <- merge(dta, bse[c("farmer_ID","b_p_outcome_1")], by.x="ID", by.y="farmer_ID")
 
 ## primary outcome 2: uses fresh bazooka on at least one plot
-num_plots <- max(dta$plot_count)
+num_plots <- max(as.numeric(dta$plot_count), na.rm=TRUE)
 logical_result <- logical(nrow(dta))
 
 for (i in 1:num_plots) {
@@ -118,7 +112,7 @@ bse$b_p_outcome_2 <- bse$bazo_use=="Yes"
 dta <- merge(dta, bse[c("farmer_ID","b_p_outcome_2")], by.x="ID", by.y="farmer_ID")
 
 ## third primary outcome <- number of plots under improved maize cultivation
-num_plots <- max(dta$plot_count)
+num_plots <- max(as.numeric(dta$plot_count), na.rm=TRUE)
 logical_result <- logical(nrow(dta))
 
 for (i in 1:num_plots) {
@@ -134,7 +128,7 @@ for (i in 1:num_plots) {
 dta$nr_improved <- logical_result
 
 ##area under improved maize cultivation
-num_plots <- max(dta$plot_count)
+num_plots <-  max(as.numeric(dta$plot_count), na.rm=TRUE)
 areas <- matrix(NA,nrow(dta),num_plots)
 tot_area <- matrix(NA,nrow(dta),num_plots)
 
@@ -150,6 +144,7 @@ dta$nr_improvedxsize <- rowSums( areas, na.rm=TRUE)
 dta$totsize <- rowSums( tot_area, na.rm=TRUE)
 
 ##share of plots under improved cultivation
+dta$plot_no <- as.numeric(dta$plot_no)
 dta$share_plots_imp <-  dta$nr_improved/dta$plot_no
 ## share of area under improved cultivation
 dta$share_area_imp <-  dta$nr_improvedxsize/dta$totsize
@@ -222,26 +217,29 @@ save(df_res,file=paste(path,"/papers/reg_report/results/df_res.Rdata",sep="/"))
 save(df_means_out,file=paste(path,"/papers/reg_report/results/df_means_out.Rdata",sep="/"))
 
 ### on random plot (controlling for baseline)
-
-dta$rnd_num <- as.numeric(ifelse(dta$plot_select != "n/a", dta$plot_select, 1))
+dta$rnd_num <- as.numeric(dta$plot_select)
+## some did not plant, work on subset
+dta_sub <- subset(dta,!is.na(rnd_num))
 library(dplyr)
 ## maize_var_selected is in the data
 ## this gets corresponding times recycled
-dta <- dta %>%
+dta_sub <- dta_sub %>%
   rowwise() %>%
   mutate(times_recycled_selected = get(paste0("plot.", rnd_num, "..plot_times_rec")))  %>%
   as.data.frame()
 ## this gets corresponding..recycle_source_rest ..single_source
-dta <- dta %>%
+dta_sub <- dta_sub %>%
   rowwise() %>%
   mutate(single_source_selected = get(paste0("plot.", rnd_num, "..single_source")))  %>%
   as.data.frame()
 ## this gets corresponding..recycle_source_rest ..single_source
-dta <- dta %>%
+dta_sub <- dta_sub %>%
   rowwise() %>%
   mutate(recycled_source_selected = get(paste0("plot.", rnd_num, "..recycle_source_rest")))  %>%
   as.data.frame()
 
+##merge this back into dta
+dta <- merge(dta, dta_sub[c("ID","times_recycled_selected","single_source_selected","recycled_source_selected")], by.x="ID", by.y="ID", all.x=TRUE)
 
 
 dta$rnd_adopt <-   (((dta$maize_var_selected %in%  
@@ -929,12 +927,12 @@ save(df_means_decision,file=paste(path,"/papers/reg_report/results/df_means_deci
 
 ## table with impact on decision making
 
-dta$perc_cons <- dta$bag_keep/dta$bag_harv*100
+dta$perc_cons <- as.numeric(dta$bag_keep)/as.numeric(dta$bag_harv)*100
 dta$perc_cons[dta$perc_cons>100] <- NA
-dta$perc_sell <- as.numeric(as.character(dta$bag_sell))/dta$bag_harv*100
+dta$perc_sell <- as.numeric(as.character(dta$bag_sell))/as.numeric(dta$bag_harv)*100
 dta$perc_sell[is.na(dta$perc_sell)] <- 0
 dta$perc_sell[dta$perc_sell>100] <- NA
-dta$perc_seed <- as.numeric(as.character(dta$seed_keep))/dta$harv_kgs*100
+dta$perc_seed <- as.numeric(as.character(dta$seed_keep))/as.numeric(dta$harv_kgs)*100
 dta$perc_seed[dta$perc_seed>50] <- NA
 
 #iterate over outcomes
