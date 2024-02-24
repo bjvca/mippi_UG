@@ -276,7 +276,9 @@ bse$b_production <- bse$bag_harv*bse$bag_kg
 dta <- merge(dta, bse[c("farmer_ID","b_production")], by.x="ID", by.y="farmer_ID")
 ## productivity
 dta$productivity <- dta$production/dta$size_selected
+dta <- trim("productivity", dta)
 bse$b_productivity <- bse$b_production/bse$plot_size
+bse <- trim("b_productivity", bse)
 dta <- merge(dta, bse[c("farmer_ID","b_productivity")], by.x="ID", by.y="farmer_ID")
 #iterate over outcomes
 outcomes <- c("rnd_adopt", "rnd_bazo", "imp_seed_qty_rnd", "imp_seed_qty_rnd_acre","production", "productivity" )
@@ -732,9 +734,6 @@ save(df_compare_prod_traits_seed_pool,file=paste(path,"/papers/reg_report/result
 save(df_compare_prod_traits_seed,file=paste(path,"/papers/reg_report/results/df_compare_prod_traits_seed.Rdata",sep="/"))
 save(df_means_compare_prod_traits_seed,file=paste(path,"/papers/reg_report/results/df_means_compare_prod_traits_seed.Rdata",sep="/"))
   
-
-
-
 #### table with impact of post harves traits of seed used
 dta$used_mrkt_dem[dta$used_mrkt_dem == "98"] <- NA
 dta$used_mrkt_dem_higher <- (dta$used_mrkt_dem =="1" | dta$used_mrkt_dem =="2")

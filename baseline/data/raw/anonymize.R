@@ -6,7 +6,6 @@ path <- strsplit(path, "/raw")[[1]]
 ### bargaining experiment, there are NaNs in the columns for the bargaining script, they should be NAs
 dta[dta$farmer_ID=="F_872",c(25:85)] <- "n/a"
 
-
 ##solving duplicates
 dta$farmer_ID[dta$X_uuid == "3d667012-96b2-4a4c-b265-626890f43e12"] <- "F_665"
 dta$farmer_ID[dta$X_uuid == "9dbc7781-ecf0-4f01-8ec8-a87e914ee21c"] <- "F_586"
