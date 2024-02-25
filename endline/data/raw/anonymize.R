@@ -41,8 +41,16 @@ dta$discounted[dta$X_uuid =="fc9f46e5-b62f-438e-b0cc-3dbf5fdb17cf"] <- FALSE
 dta$ID[dta$X_uuid =="1d28b574-2ace-4cd3-bc3b-8d7bcfd96546"] <- "F_1418"
 dta$discounted[dta$X_uuid =="1d28b574-2ace-4cd3-bc3b-8d7bcfd96546"] <- FALSE
 
+dta$ID[dta$X_uuid =="54b1221b-4ae2-4be8-88da-e4541a387127"] <- "F_1938"
+dta$paid_pack[dta$X_uuid =="54b1221b-4ae2-4be8-88da-e4541a387127"] <- FALSE
+dta$trial_P[dta$X_uuid =="54b1221b-4ae2-4be8-88da-e4541a387127"] <- FALSE
+
+dta$ID[dta$X_uuid =="a6637a25-3190-4bd8-99f7-13f5fd581531"] <- "F_1920"
+
+dta$ID[dta$X_uuid =="06fd8858-3c90-479f-960d-4fb0d6cd78bb"] <- "F_1895"
+
 dta$ID[duplicated(dta$ID)]
-dta[dta$ID=="F_1144",]
+
 
 ##these are the variables:
 garden_vector <- c("crop_inter", 
