@@ -87,6 +87,11 @@ for (i in 1:num_plots) {
 # Assign the result to the new column p_outcome_1
 dta$p_outcome_1 <- logical_result
 
+
+###not interviewed
+dta$p_outcome_1[is.na(dta$plot_no)] <- NA
+
+
 ## to control for this outcome at baseline, we use the question "Q20. Did you use any quality maize seed like **OPV or hybrid seed** in the previous season (Nsambya of 2022) on any of your plots?"
 bse$b_p_outcome_1 <- bse$quality_use=="Yes"
 
@@ -105,6 +110,8 @@ for (i in 1:num_plots) {
 
 # Assign the result to the new column p_outcome_1
 dta$p_outcome_2 <- logical_result
+
+dta$p_outcome_2[is.na(dta$plot_no)] <- NA
 
 
 bse$b_p_outcome_2 <- bse$bazo_use=="Yes"
@@ -126,6 +133,10 @@ for (i in 1:num_plots) {
 
 # Assign the result to the new column p_outcome_1
 dta$nr_improved <- logical_result
+
+
+dta$nr_improved[is.na(dta$plot_no)] <- NA
+
 
 ##area under improved maize cultivation
 num_plots <-  max(as.numeric(dta$plot_count), na.rm=TRUE)
@@ -272,7 +283,11 @@ bse$b_imp_seed_qty_rnd_acre <- bse$b_imp_seed_qty_rnd/bse$plot_size
 dta <- merge(dta, bse[c("farmer_ID","b_imp_seed_qty_rnd_acre")], by.x="ID", by.y="farmer_ID")
 ###production
 dta$production <- as.numeric(as.character(dta$bag_harv))*as.numeric(as.character(dta$bag_kg))
+dta <- trim("production", dta)
+
 bse$b_production <- bse$bag_harv*bse$bag_kg
+bse <- trim("b_production", bse)
+
 dta <- merge(dta, bse[c("farmer_ID","b_production")], by.x="ID", by.y="farmer_ID")
 ## productivity
 dta$productivity <- dta$production/dta$size_selected
@@ -339,6 +354,7 @@ save(df_means_rnd,file=paste(path,"/papers/reg_report/results/df_means_rnd.Rdata
 ### some interesting impact pathways
 ## knowledge
 dta$nr_vars <- as.numeric(as.character(dta$nr_vars))
+dta$nr_vars[dta$nr_vars == 999] <- NA
 
 dta$knw_bazo <- dta$knw_bazo =="Yes"
 bse$b_knw_bazo <- bse$knw_bazo == "Yes"
@@ -369,7 +385,7 @@ dta$future_bazo <- dta$future_bazo == "1" | dta$future_bazo == "2"
 outcomes <- c("knw_bazo","nr_vars" , "downside_risk_imp", "downside_risk_bazo","share_imp","share_bazo","future_imp", "future_bazo")
 b_outcomes <- c("b_knw_bazo",rep(NA, times=7))
 
-dta$index <- icwIndex(xmat= as.matrix(dta[setdiff(outcomes,c("downside_risk_bazo","share_bazo","future_bazo"))]),sgroup=dta$s_ind)$index
+dta$index <- icwIndex(xmat= as.matrix(dta[setdiff(outcomes,c("downside_risk_bazo","share_bazo","future_bazo"))]),sgroup=dta$s_ind, revcols = c(0,0,1,0,0))$index
 outcomes <- c(outcomes, "index")
 ## demean indicators
 dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)

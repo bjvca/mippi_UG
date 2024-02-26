@@ -49,8 +49,24 @@ dta$ID[dta$X_uuid =="a6637a25-3190-4bd8-99f7-13f5fd581531"] <- "F_1920"
 
 dta$ID[dta$X_uuid =="06fd8858-3c90-479f-960d-4fb0d6cd78bb"] <- "F_1895"
 
-dta$ID[duplicated(dta$ID)]
+dta$ID[dta$X_uuid =="734b02de-f9de-431e-9cff-42f2a03e5aa6"] <- "F_1886"
+dta$trial_P[dta$X_uuid =="734b02de-f9de-431e-9cff-42f2a03e5aa6"] <- TRUE
+dta$cont[dta$X_uuid =="734b02de-f9de-431e-9cff-42f2a03e5aa6"] <- TRUE
 
+dta$ID[dta$X_uuid =="c525024a-58cc-4e89-b225-43ccd9e5c63b"] <- "F_1202"
+dta$discounted[dta$X_uuid =="c525024a-58cc-4e89-b225-43ccd9e5c63b"] <- TRUE
+dta$cont[dta$X_uuid =="c525024a-58cc-4e89-b225-43ccd9e5c63b"] <- FALSE
+### this is the waiswa fred case...
+dta$ID[dta$X_uuid =="39524416-5097-41fc-ba8f-05c7c686e3f0"] <- "F_1210"
+
+dta$ID[dta$X_uuid =="6c1e8ea2-102a-45b3-b414-fd092ce99fca"] <- "F_2231"
+dta$paid_pack[dta$X_uuid =="6c1e8ea2-102a-45b3-b414-fd092ce99fca"] <- TRUE
+dta$discounted[dta$X_uuid =="6c1e8ea2-102a-45b3-b414-fd092ce99fca"] <- FALSE
+
+
+
+dta$ID[duplicated(dta$ID)]
+#dta[dta$ID=="F_2012",]
 
 ##these are the variables:
 garden_vector <- c("crop_inter", 
