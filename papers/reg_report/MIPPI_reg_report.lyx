@@ -3173,7 +3173,7 @@ Sexpr{format(round(df_res[3,2,1],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Has used Bazooka on any plot in last season in last season (yes=1)
+Has used fresh Bazooka on any plot in last season in last season (yes=1)
 \end_layout
 
 \begin_layout Plain Layout
@@ -3867,7 +3867,7 @@ noprefix "false"
 \begin_inset Float table
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -4063,7 +4063,7 @@ Sexpr{format(round(df_rnd[3,2,1],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Has used promoted seed on randomly selected plot in last season (yes=1)
+Has used fresh Bazooka on randomly selected plot in last season (yes=1)
 \end_layout
 
 \begin_layout Plain Layout
@@ -5784,7 +5784,7 @@ noprefix "false"
 \begin_inset Float table
 wide false
 sideways true
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard

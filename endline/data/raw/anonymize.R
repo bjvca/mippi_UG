@@ -14,59 +14,106 @@ dta_first <- read.csv("first_form.csv")
 names(dta_first) <- sub("checkx.", "",names(dta))
 
 dta_first$ID[dta_first$X_uuid =="63c1f5f7-a882-4937-93a9-22fbdab6d02a"] <- "F_685"
+## duplicate F_589
 dta$ID[dta$X_uuid =="63c1f5f7-a882-4937-93a9-22fbdab6d02a"] <- "F_685"
+dta$paid_pack[dta$X_uuid =="63c1f5f7-a882-4937-93a9-22fbdab6d02a"] <- FALSE
+dta$cont[dta$X_uuid =="63c1f5f7-a882-4937-93a9-22fbdab6d02a"] <- TRUE
+
+## duplicate F_1036
 dta$ID[dta$X_uuid =="b08a64a6-7e3d-4ca7-bcb0-b6ebd8b927a7"] <- "F_1781"
 dta$discounted[dta$X_uuid =="b08a64a6-7e3d-4ca7-bcb0-b6ebd8b927a7"] <- TRUE
 dta$paid_pack[dta$X_uuid =="b08a64a6-7e3d-4ca7-bcb0-b6ebd8b927a7"] <- FALSE
 dta$trial_P[dta$X_uuid =="b08a64a6-7e3d-4ca7-bcb0-b6ebd8b927a7"] <- FALSE
 dta$cont[dta$X_uuid =="b08a64a6-7e3d-4ca7-bcb0-b6ebd8b927a7"] <- FALSE
 
+## duplicat F_1835
 dta$ID[dta$X_uuid =="55092e2d-a208-4c45-8ecb-0583abb5bad3"] <- "F_1838"
+
+
+
+#duplicate F_555
 dta$ID[dta$X_uuid =="c525024a-58cc-4e89-b225-43ccd9e5c63b"] <- "F_1202"
 dta$discounted[dta$X_uuid =="c525024a-58cc-4e89-b225-43ccd9e5c63b"] <- TRUE
 dta$cont[dta$X_uuid =="c525024a-58cc-4e89-b225-43ccd9e5c63b"] <- FALSE
 
+#duplicate F_648
 dta$ID[dta$X_uuid =="7cc2e6f0-bac9-4dbc-9de1-efd56858961e"] <- "F_2269"
 dta$paid_pack[dta$X_uuid =="7cc2e6f0-bac9-4dbc-9de1-efd56858961e"] <- TRUE
 dta$discounted[dta$X_uuid =="7cc2e6f0-bac9-4dbc-9de1-efd56858961e"] <- FALSE
 
+
+#duplicate F_562
 dta$ID[dta$X_uuid =="d38614eb-e7c9-4b8b-8e7e-5b418c1bfab1"] <- "F_2098"
 dta$paid_pack[dta$X_uuid =="d38614eb-e7c9-4b8b-8e7e-5b418c1bfab1"] <- TRUE
 dta$trial_P[dta$X_uuid =="d38614eb-e7c9-4b8b-8e7e-5b418c1bfab1"] <- FALSE
 
+
+#duplicate F_1785
 dta$ID[dta$X_uuid =="fc9f46e5-b62f-438e-b0cc-3dbf5fdb17cf"] <- "F_2208"
 dta$paid_pack[dta$X_uuid =="fc9f46e5-b62f-438e-b0cc-3dbf5fdb17cf"] <- TRUE
 dta$discounted[dta$X_uuid =="fc9f46e5-b62f-438e-b0cc-3dbf5fdb17cf"] <- FALSE
 
+
+#duplicate F_1144
 dta$ID[dta$X_uuid =="1d28b574-2ace-4cd3-bc3b-8d7bcfd96546"] <- "F_1418"
 dta$discounted[dta$X_uuid =="1d28b574-2ace-4cd3-bc3b-8d7bcfd96546"] <- FALSE
 
+
+## duplicate F_1924
 dta$ID[dta$X_uuid =="54b1221b-4ae2-4be8-88da-e4541a387127"] <- "F_1938"
 dta$paid_pack[dta$X_uuid =="54b1221b-4ae2-4be8-88da-e4541a387127"] <- FALSE
 dta$trial_P[dta$X_uuid =="54b1221b-4ae2-4be8-88da-e4541a387127"] <- FALSE
 
+## duplicate F_1913
 dta$ID[dta$X_uuid =="a6637a25-3190-4bd8-99f7-13f5fd581531"] <- "F_1920"
 
+## duplicate F_1892
 dta$ID[dta$X_uuid =="06fd8858-3c90-479f-960d-4fb0d6cd78bb"] <- "F_1895"
 
+## duplicate F_540
 dta$ID[dta$X_uuid =="734b02de-f9de-431e-9cff-42f2a03e5aa6"] <- "F_1886"
 dta$trial_P[dta$X_uuid =="734b02de-f9de-431e-9cff-42f2a03e5aa6"] <- TRUE
 dta$cont[dta$X_uuid =="734b02de-f9de-431e-9cff-42f2a03e5aa6"] <- TRUE
 
+## duplicate F_1203
 dta$ID[dta$X_uuid =="c525024a-58cc-4e89-b225-43ccd9e5c63b"] <- "F_1202"
 dta$discounted[dta$X_uuid =="c525024a-58cc-4e89-b225-43ccd9e5c63b"] <- TRUE
 dta$cont[dta$X_uuid =="c525024a-58cc-4e89-b225-43ccd9e5c63b"] <- FALSE
+
 ### this is the waiswa fred case...
 dta$ID[dta$X_uuid =="39524416-5097-41fc-ba8f-05c7c686e3f0"] <- "F_1210"
 
+
+## duplicate F_2012
 dta$ID[dta$X_uuid =="6c1e8ea2-102a-45b3-b414-fd092ce99fca"] <- "F_2231"
 dta$paid_pack[dta$X_uuid =="6c1e8ea2-102a-45b3-b414-fd092ce99fca"] <- TRUE
 dta$discounted[dta$X_uuid =="6c1e8ea2-102a-45b3-b414-fd092ce99fca"] <- FALSE
 
 
+## duplicate F_749
+dta$ID[dta$X_uuid =="c24c76c4-f07b-458f-bde7-1cd60e92f9de"] <- "F_741"
+
+## duplicate F_894
+dta$ID[dta$X_uuid =="43b2a31d-db2d-4bd8-a748-2c33c2303553"] <- "F_893"
+
+## duplicate F_1060
+dta$ID[dta$X_uuid =="c5b59188-9444-4496-87e4-b7813509be88"] <- "F_1157"
+dta$cont[dta$X_uuid =="c5b59188-9444-4496-87e4-b7813509be88"] <- FALSE
+
+## duplicate F_329
+dta$ID[dta$X_uuid =="d67b552a-2ab1-47e9-b361-6e30cef6b0f7"] <- "F_321"
+
+## duplicate F_1211
+dta$ID[dta$X_uuid =="7708ed09-fec5-4084-b4a6-0068007b8b9a"] <- "F_1490"
+dta$trial_P[dta$X_uuid =="7708ed09-fec5-4084-b4a6-0068007b8b9a"] <- FALSE
+dta$discounted[dta$X_uuid =="7708ed09-fec5-4084-b4a6-0068007b8b9a"] <- TRUE
+dta$cont[dta$X_uuid =="7708ed09-fec5-4084-b4a6-0068007b8b9a"] <- FALSE
+
+## duplicate F_1260
+dta$ID[dta$X_uuid =="6c37d4cc-1988-4de8-b4e1-ddb5d4cf9c96"] <- "F_2017"
 
 dta$ID[duplicated(dta$ID)]
-#dta[dta$ID=="F_2012",]
+dta[dta$ID == "F_1260",]
 
 ##these are the variables:
 garden_vector <- c("crop_inter", 
@@ -143,6 +190,6 @@ for (var in vars_to_update) {
   dta[[var]][dta$maize_var_selected == "n/a"] <- NA
 }
 
-dta[dta$ID== "F_830",]
+
 
 write.csv(dta,file=paste(path,"public/endline.csv",sep="/"), row.names=FALSE)

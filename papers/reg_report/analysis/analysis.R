@@ -164,8 +164,9 @@ dta$share_area_imp <-  dta$nr_improvedxsize/dta$totsize
 #iterate over outcomes
 outcomes <- c("p_outcome_1","p_outcome_2","nr_improved", "share_plots_imp", "nr_improvedxsize", "share_area_imp" )
 b_outcomes <- c("b_p_outcome_1", "b_p_outcome_2",NA,NA)
-### do not include outcome 2 (adoption of bazooka) as this results in singularity
-dta$index <- icwIndex(xmat= as.matrix(dta[ setdiff(outcomes,"p_outcome_2")]), sgroup=dta$s_ind)$index
+### do not include outcome 2 (adoption of bazooka) as this results in singularity - on second thought, maybe p_outcome_2 should be a key outcome and included
+## in fact, the singularity disappeared in the real data
+dta$index <- icwIndex(xmat= as.matrix(dta[outcomes]), sgroup=dta$s_ind)$index
 outcomes <- c(outcomes, "index")
 ## demean indicators
 dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)
@@ -274,12 +275,21 @@ dta$imp_seed_qty_rnd <- dta$rnd_adopt*as.numeric(as.character(dta$seed_qty))
 dta$imp_seed_qty_rnd[is.na(dta$imp_seed_qty_rnd)] <- 0
 bse$b_imp_seed_qty_rnd <- bse$b_rnd_adopt*bse$seed_qty
 bse$b_imp_seed_qty_rnd[is.na(bse$b_imp_seed_qty_rnd)] <- 0
+
+
+dta <- trim("imp_seed_qty_rnd", dta)
+bse  <- trim("b_imp_seed_qty_rnd", bse)
+
 dta <- merge(dta, bse[c("farmer_ID","b_imp_seed_qty_rnd")], by.x="ID", by.y="farmer_ID")
 
 dta$size_selected <- as.numeric(as.character(dta$size_selected)) 
 ### seed quantity per area
 dta$imp_seed_qty_rnd_acre <- dta$imp_seed_qty_rnd/dta$size_selected  
 bse$b_imp_seed_qty_rnd_acre <- bse$b_imp_seed_qty_rnd/bse$plot_size
+
+dta <- trim("imp_seed_qty_rnd_acre", dta)
+bse  <- trim("b_imp_seed_qty_rnd_acre", bse)
+
 dta <- merge(dta, bse[c("farmer_ID","b_imp_seed_qty_rnd_acre")], by.x="ID", by.y="farmer_ID")
 ###production
 dta$production <- as.numeric(as.character(dta$bag_harv))*as.numeric(as.character(dta$bag_kg))
@@ -299,8 +309,9 @@ dta <- merge(dta, bse[c("farmer_ID","b_productivity")], by.x="ID", by.y="farmer_
 outcomes <- c("rnd_adopt", "rnd_bazo", "imp_seed_qty_rnd", "imp_seed_qty_rnd_acre","production", "productivity" )
 b_outcomes <- c("b_rnd_adopt", "b_rnd_bazo","b_imp_seed_qty_rnd","b_imp_seed_qty_rnd_acre", "b_production", "b_productivity")
 
-dta$index <- icwIndex(xmat= as.matrix(dta[setdiff(outcomes,c("rnd_bazo"))]),sgroup=dta$s_ind)$index
-dta$b_index <- icwIndex(xmat= as.matrix(dta[setdiff(b_outcomes,"b_rnd_bazo")]),sgroup=dta$s_ind)$index
+
+dta$index <- icwIndex(xmat= as.matrix(dta[outcomes]),sgroup=dta$s_ind)$index
+dta$b_index <- icwIndex(xmat= as.matrix(dta[b_outcomes]),sgroup=dta$s_ind)$index
 outcomes <- c(outcomes, "index")
 b_outcomes <- c(b_outcomes, "b_index")
 ## demean indicators
@@ -385,7 +396,7 @@ dta$future_bazo <- dta$future_bazo == "1" | dta$future_bazo == "2"
 outcomes <- c("knw_bazo","nr_vars" , "downside_risk_imp", "downside_risk_bazo","share_imp","share_bazo","future_imp", "future_bazo")
 b_outcomes <- c("b_knw_bazo",rep(NA, times=7))
 
-dta$index <- icwIndex(xmat= as.matrix(dta[setdiff(outcomes,c("downside_risk_bazo","share_bazo","future_bazo"))]),sgroup=dta$s_ind, revcols = c(0,0,1,0,0))$index
+dta$index <- icwIndex(xmat= as.matrix(dta[outcomes]),sgroup=dta$s_ind, revcols = c(3,4))$index
 outcomes <- c(outcomes, "index")
 ## demean indicators
 dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)
@@ -954,7 +965,7 @@ dta$perc_seed[dta$perc_seed>50] <- NA
 outcomes <- c("perc_cons","perc_sell","perc_seed")
 
 
-dta$index <- icwIndex(xmat= as.matrix(dta[outcomes]),sgroup=dta$s_ind)$index
+dta$index <- icwIndex(xmat= as.matrix(dta[outcomes]),revcols = c(3),sgroup=dta$s_ind)$index
 outcomes <- c(outcomes, "index")
 ## demean indicators
 dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)
