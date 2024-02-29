@@ -112,8 +112,14 @@ dta$cont[dta$X_uuid =="7708ed09-fec5-4084-b4a6-0068007b8b9a"] <- FALSE
 ## duplicate F_1260
 dta$ID[dta$X_uuid =="6c37d4cc-1988-4de8-b4e1-ddb5d4cf9c96"] <- "F_2017"
 
+## duplicate F_296
+dta$ID[dta$X_uuid =="3cf8f444-fe23-482b-a991-aa8aef70d8bd"] <- "F_1843"
+dta$trial_P[dta$X_uuid =="3cf8f444-fe23-482b-a991-aa8aef70d8bd"] <- TRUE
+dta$discounted[dta$X_uuid =="3cf8f444-fe23-482b-a991-aa8aef70d8bd"] <- FALSE
+dta$cont[dta$X_uuid =="3cf8f444-fe23-482b-a991-aa8aef70d8bd"] <- TRUE
+
 dta$ID[duplicated(dta$ID)]
-dta[dta$ID == "F_1260",]
+dta[dta$ID == "F_296",]
 
 ##these are the variables:
 garden_vector <- c("crop_inter", 
