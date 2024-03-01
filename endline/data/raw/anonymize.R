@@ -134,6 +134,13 @@ dta$cont[dta$X_uuid =="1cae2c9f-a124-40f4-a0e5-cb3381717e21"] <- TRUE
 
 dta$ID[duplicated(dta$ID)]
 
+## get baseline to create list of farmers that still needs to be done
+# bse <- read.csv("/home/bjvca/data/projects/OneCG/MIPP/baseline/data/raw/baseline_fixed_dups.csv")
+# 
+# write.csv(bse[!(bse$farmer_ID %in% dta$ID),c("district", "sub","village","farmer_ID", "Check2.check.maize.name_resp", "Check2.check.maize.nick", "Check2.check.maize.phone", "Check2.check.maize.phone2")], "remnants.csv", row.names = FALSE)
+# bse_col <- bse[!(bse$farmer_ID %in% dta$ID),c("district", "sub","village","farmer_ID")]
+# bse_col$count <- 1
+# aggregate(bse_col$count,list(c(bse_col$village)), sum)
 ##these are the variables:
 garden_vector <- c("crop_inter", 
                    "crop_type.1", 

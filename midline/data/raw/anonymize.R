@@ -3,7 +3,7 @@ dta <- read.csv("latest.csv")
 path <- strsplit(path,"raw")[[1]]
 
 ### remove identifiers
-to_drop <- c("start","end","deviceid","simserial","phonenumber","subscriberid","enumerator", "farmer_name", "phone1",	"phone2")
+to_drop <- c("start","end","deviceid","simserial","phonenumber","subscriberid","enumerator", "farmer_name","nick", "phone1",	"phone2")
 dta <- dta[ , !(names(dta) %in% to_drop)]    
 
 ## create IDs for district, subcounty and village (q1, q2, q3)
