@@ -118,8 +118,21 @@ dta$trial_P[dta$X_uuid =="3cf8f444-fe23-482b-a991-aa8aef70d8bd"] <- TRUE
 dta$discounted[dta$X_uuid =="3cf8f444-fe23-482b-a991-aa8aef70d8bd"] <- FALSE
 dta$cont[dta$X_uuid =="3cf8f444-fe23-482b-a991-aa8aef70d8bd"] <- TRUE
 
+dta$ID[dta$X_uuid =="71f367ce-5fa7-4ef1-ab6f-0a710ab419b7"] <- "F_112"
+
+##duplicat F_91
+dta$ID[dta$X_uuid =="1e88fe63-5596-4506-8c35-e4064b40031f"] <- "F_2102"
+dta$trail_P[dta$X_uuid =="1e88fe63-5596-4506-8c35-e4064b40031f"] <- FALSE
+## duplicate F_739
+
+dta$ID[dta$X_uuid =="3551fbb5-5a64-40d5-a103-baf320fce80c"] <- "F_1813"
+## duplicate F_1406
+
+dta$ID[dta$X_uuid =="1cae2c9f-a124-40f4-a0e5-cb3381717e21"] <- "F_1747"
+dta$discounted[dta$X_uuid =="1cae2c9f-a124-40f4-a0e5-cb3381717e21"] <- FALSE
+dta$cont[dta$X_uuid =="1cae2c9f-a124-40f4-a0e5-cb3381717e21"] <- TRUE
+
 dta$ID[duplicated(dta$ID)]
-dta[dta$ID == "F_296",]
 
 ##these are the variables:
 garden_vector <- c("crop_inter", 
