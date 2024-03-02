@@ -11,7 +11,11 @@ names(dta) <- sub("value.", "",names(dta))
 names(dta) <- sub("garden.", "",names(dta))
 ###  we started with a different form and as a result of variable name change, we need to retreive data from randomly selected plot from a dataset that was exported using a different from
 dta_first <- read.csv("first_form.csv")
-names(dta_first) <- sub("checkx.", "",names(dta))
+names(dta_first) <- sub("checkx.", "",names(dta_first))
+names(dta_first) <- sub("group4.", "",names(dta_first))
+names(dta_first) <- sub("value.", "",names(dta_first))
+names(dta_first) <- sub("garden.", "",names(dta_first))
+
 
 dta_first$ID[dta_first$X_uuid =="63c1f5f7-a882-4937-93a9-22fbdab6d02a"] <- "F_685"
 ## duplicate F_589
@@ -131,8 +135,29 @@ dta$ID[dta$X_uuid =="3551fbb5-5a64-40d5-a103-baf320fce80c"] <- "F_1813"
 dta$ID[dta$X_uuid =="1cae2c9f-a124-40f4-a0e5-cb3381717e21"] <- "F_1747"
 dta$discounted[dta$X_uuid =="1cae2c9f-a124-40f4-a0e5-cb3381717e21"] <- FALSE
 dta$cont[dta$X_uuid =="1cae2c9f-a124-40f4-a0e5-cb3381717e21"] <- TRUE
+#duplicate F_264
 
-dta$ID[duplicated(dta$ID)]
+dta$ID[dta$X_uuid =="565906a1-10c0-420c-bcae-50f78f50653f"] <- "F_1121"
+dta$paid_pac[dta$X_uuid =="1cae2c9f-a124-40f4-a0e5-cb3381717e21"] <- FALSE
+dta$cont[dta$X_uuid =="1cae2c9f-a124-40f4-a0e5-cb3381717e21"] <- TRUE
+
+#duplicate F_937
+dta$ID[dta$X_uuid =="a8cb4eac-3922-498b-a004-06c168d12fba"] <- "F_1545"
+
+#duplicate F_649
+dta$ID[dta$X_uuid =="e27a9ba0-5fe0-401c-9869-487ea378c73d"] <- "F_1330"
+dta$paid_pac[dta$X_uuid =="e27a9ba0-5fe0-401c-9869-487ea378c73d"] <- TRUE
+dta$discounted[dta$X_uuid =="e27a9ba0-5fe0-401c-9869-487ea378c73d"] <- FALSE
+#duplicate  F_895"
+dta$ID[dta$X_uuid =="0023fe7c-11ef-4db5-9ec8-4e95b882fcac"] <- "F_1329"
+dta$paid_pac[dta$X_uuid =="0023fe7c-11ef-4db5-9ec8-4e95b882fcac"] <- TRUE
+dta$discounted[dta$X_uuid =="0023fe7c-11ef-4db5-9ec8-4e95b882fcac"] <- FALSE
+
+#duplicate F_1214"
+dta$ID[dta$X_uuid =="01af9036-1299-4328-9721-7ed0a32d3d4c"] <- "F_1337"
+dta$cont[dta$X_uuid =="01af9036-1299-4328-9721-7ed0a32d3d4c"] <- FALSE
+
+dta$ID[duplicated(dta$ID)] 
 
 ## get baseline to create list of farmers that still needs to be done
 # bse <- read.csv("/home/bjvca/data/projects/OneCG/MIPP/baseline/data/raw/baseline_fixed_dups.csv")
