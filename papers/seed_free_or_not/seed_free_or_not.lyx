@@ -633,7 +633,7 @@ Standard orthogonality tables will be included in the final paper.
 \begin_inset Float table
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -674,7 +674,7 @@ begin{center}
 
 
 \backslash
-begin{tabular}{rcccc}
+begin{tabular}{rccccc}
 \end_layout
 
 \begin_layout Plain Layout
@@ -696,7 +696,7 @@ hline
 
 \begin_layout Plain Layout
 
-& mean & selection & sunk cost & nobs 
+& mean & selection & sunk cost & signaling & nobs 
 \backslash
 
 \backslash
