@@ -156,16 +156,32 @@ dta$discounted[dta$X_uuid =="0023fe7c-11ef-4db5-9ec8-4e95b882fcac"] <- FALSE
 #duplicate F_1214"
 dta$ID[dta$X_uuid =="01af9036-1299-4328-9721-7ed0a32d3d4c"] <- "F_1337"
 dta$cont[dta$X_uuid =="01af9036-1299-4328-9721-7ed0a32d3d4c"] <- FALSE
+#duplicate F_1587"
+dta$ID[dta$X_uuid =="323fd6b4-b17c-4386-9bc3-0e1dbf90fa3e"] <- "F_1634"
+dta$paid_pac[dta$X_uuid =="323fd6b4-b17c-4386-9bc3-0e1dbf90fa3e"] <- TRUE
+dta$trail_P[dta$X_uuid =="323fd6b4-b17c-4386-9bc3-0e1dbf90fa3e"] <- FALSE
+dta$cons[dta$X_uuid =="323fd6b4-b17c-4386-9bc3-0e1dbf90fa3e"] <- FALSE
+
+#duplicate F_605
+dta$ID[dta$X_uuid =="0b6cf64d-81f0-4cf8-a2b7-29826e03dc5d"] <- "F_637"
+dta$paid_pac[dta$X_uuid =="0b6cf64d-81f0-4cf8-a2b7-29826e03dc5d"] <- FALSE
+#duplicate F_460
+dta$ID[dta$X_uuid =="2cd06b77-4054-433f-add0-0ad5af119364"] <- "F_190"
+dta$trail_P[dta$X_uuid =="2cd06b77-4054-433f-add0-0ad5af119364"] <- TRUE
+
+## duplicate F_8 can not be reconciled - drop
+dta <- subset(dta, ID!="F_8")
 
 dta$ID[duplicated(dta$ID)] 
 
+
 ## get baseline to create list of farmers that still needs to be done
-# bse <- read.csv("/home/bjvca/data/projects/OneCG/MIPP/baseline/data/raw/baseline_fixed_dups.csv")
-# 
-# write.csv(bse[!(bse$farmer_ID %in% dta$ID),c("district", "sub","village","farmer_ID", "Check2.check.maize.name_resp", "Check2.check.maize.nick", "Check2.check.maize.phone", "Check2.check.maize.phone2")], "remnants.csv", row.names = FALSE)
-# bse_col <- bse[!(bse$farmer_ID %in% dta$ID),c("district", "sub","village","farmer_ID")]
-# bse_col$count <- 1
-# aggregate(bse_col$count,list(c(bse_col$village)), sum)
+bse <- read.csv("/home/bjvca/data/projects/OneCG/MIPP/baseline/data/raw/baseline_fixed_dups.csv")
+
+write.csv(bse[!(bse$farmer_ID %in% dta$ID),c("district", "sub","village","farmer_ID", "Check2.check.maize.name_resp", "Check2.check.maize.nick", "Check2.check.maize.phone", "Check2.check.maize.phone2")], "remnants.csv", row.names = FALSE)
+bse_col <- bse[!(bse$farmer_ID %in% dta$ID),c("district", "sub","village","farmer_ID")]
+bse_col$count <- 1
+aggregate(bse_col$count,list(c(bse_col$village)), sum)
 ##these are the variables:
 garden_vector <- c("crop_inter", 
                    "crop_type.1", 
