@@ -2944,6 +2944,37 @@ ion; **, *, and + denote significance at the 1, 5 and 10
 Results
 \end_layout
 
+\begin_layout Standard
+Attrition was minimal: we recontacted all but four of the 1,560 households
+ that were interviewed at baseline.
+ However, of these households, some could not, or refused to be interviewed,
+ reducing effective sample size at endline to 1,538.
+ 
+\end_layout
+
+\begin_layout Standard
+One of the first questions we asked was if farmers recalled the treatment,
+ and this was asked to all farmers irrespective of what treatment group
+ they were in.
+ For the trial pack treatment, 98 percent of farmers in the treatment group
+ indicated that they received a seed trial pack from us in March 2023.
+ 8.6 percent of farmers in the control group also indicated that they received
+ a seed pack from us (Type 2 error).
+ For the consumption treatment, 92 percent of farmers in the treatment group
+ recalls being invited to a cooking and tasting demonstration (leading to
+ a Type 1 error of 8 percent).
+ 96 percent of farmers in the control group indicated they did not recall
+ a cooking and tasting demonstration, leading to a Type 2 error of 4 percent.
+\end_layout
+
+\begin_layout Standard
+We do find that some farmers that grew maize at baseline do not grow maize
+ this season (2.8 %).
+ Looking at how this varies across treatments, we find that farmers in the
+ consumption intervention treatment group are slightly less likely to not
+ have grown maize in the second season of 2023.
+\end_layout
+
 \begin_layout Subsection
 Adoption
 \end_layout
@@ -2977,7 +3008,7 @@ literal "false"
 \begin_inset Float table
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -3867,7 +3898,7 @@ noprefix "false"
 \begin_inset Float table
 wide false
 sideways true
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -4020,7 +4051,7 @@ Sexpr{format(round(df_rnd[3,1,1],digits=2),nsmall=2)}$^{
 Sexpr{ifelse(df_rnd[3,3,1]<.01,"**",ifelse(df_rnd[3,3,1]<.05,"*",ifelse(df_rnd[3,3
 ,1]<.1,"+","")))}}$ & 
 \backslash
-Sexpr{format(round(df_res[1,4,1],digits=0),nsmall=0)} 
+Sexpr{format(round(df_rnd[1,4,1],digits=0),nsmall=0)} 
 \backslash
 
 \backslash
@@ -4122,7 +4153,7 @@ Sexpr{format(round(df_rnd[3,1,2],digits=2),nsmall=2)}$^{
 Sexpr{ifelse(df_rnd[3,3,2]<.01,"**",ifelse(df_rnd[3,3,2]<.05,"*",ifelse(df_rnd[3,3
 ,2]<.1,"+","")))}}$ & 
 \backslash
-Sexpr{format(round(df_res[1,4,2],digits=0),nsmall=0)} 
+Sexpr{format(round(df_rnd[1,4,2],digits=0),nsmall=0)} 
 \backslash
 
 \backslash
@@ -4224,7 +4255,7 @@ Sexpr{format(round(df_rnd[3,1,3],digits=2),nsmall=2)}$^{
 Sexpr{ifelse(df_rnd[3,3,3]<.01,"**",ifelse(df_rnd[3,3,3]<.05,"*",ifelse(df_rnd[3,3
 ,3]<.1,"+","")))}}$ & 
 \backslash
-Sexpr{format(round(df_res[1,4,3],digits=0),nsmall=0)} 
+Sexpr{format(round(df_rnd[1,4,3],digits=0),nsmall=0)} 
 \backslash
 
 \backslash
@@ -4326,7 +4357,7 @@ Sexpr{format(round(df_rnd[3,1,4],digits=2),nsmall=2)}$^{
 Sexpr{ifelse(df_rnd[3,3,4]<.01,"**",ifelse(df_rnd[3,3,4]<.05,"*",ifelse(df_rnd[3,3
 ,4]<.1,"+","")))}}$ & 
 \backslash
-Sexpr{format(round(df_res[1,4,4],digits=0),nsmall=0)} 
+Sexpr{format(round(df_rnd[1,4,4],digits=0),nsmall=0)} 
 \backslash
 
 \backslash
@@ -4428,7 +4459,7 @@ Sexpr{format(round(df_rnd[3,1,5],digits=0),nsmall=0)}$^{
 Sexpr{ifelse(df_rnd[3,3,5]<.01,"**",ifelse(df_rnd[3,3,5]<.05,"*",ifelse(df_rnd[3,3
 ,5]<.1,"+","")))}}$ & 
 \backslash
-Sexpr{format(round(df_res[1,4,5],digits=0),nsmall=0)} 
+Sexpr{format(round(df_rnd[1,4,5],digits=0),nsmall=0)} 
 \backslash
 
 \backslash
@@ -4530,7 +4561,7 @@ Sexpr{format(round(df_rnd[3,1,6],digits=0),nsmall=0)}$^{
 Sexpr{ifelse(df_rnd[3,3,6]<.01,"**",ifelse(df_rnd[3,3,6]<.05,"*",ifelse(df_rnd[3,3
 ,6]<.1,"+","")))}}$ & 
 \backslash
-Sexpr{format(round(df_res[1,4,6],digits=0),nsmall=0)} 
+Sexpr{format(round(df_rnd[1,4,6],digits=0),nsmall=0)} 
 \backslash
 
 \backslash
@@ -4628,7 +4659,7 @@ Sexpr{format(round(df_rnd[3,1,7],digits=2),nsmall=2)}$^{
 Sexpr{ifelse(df_rnd[3,3,7]<.01,"**",ifelse(df_rnd[3,3,7]<.05,"*",ifelse(df_rnd[3,3
 ,7]<.1,"+","")))}}$ & 
 \backslash
-Sexpr{format(round(df_res[1,4,7],digits=0),nsmall=0)} 
+Sexpr{format(round(df_rnd[1,4,7],digits=0),nsmall=0)} 
 \backslash
 
 \backslash
@@ -4743,7 +4774,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Impact on women co-head involvement
+Impact on women co-head involvement (random plot)
 \begin_inset CommandInset label
 LatexCommand label
 name "decision"
@@ -4890,7 +4921,7 @@ Sexpr{format(round(df_decision[3,1,1],digits=2),nsmall=2)}$^{
 Sexpr{ifelse(df_decision[3,3,1]<.01,"**",ifelse(df_decision[3,3,1]<.05,"*",ifelse(
 df_decision[3,3,1]<.1,"+","")))}}$ & 
 \backslash
-Sexpr{format(round(df_res[1,4,1],digits=0),nsmall=0)} 
+Sexpr{format(round(df_decision[1,4,1],digits=0),nsmall=0)} 
 \backslash
 
 \backslash
@@ -4992,7 +5023,7 @@ Sexpr{format(round(df_decision[3,1,2],digits=2),nsmall=2)}$^{
 Sexpr{ifelse(df_decision[3,3,2]<.01,"**",ifelse(df_decision[3,3,2]<.05,"*",ifelse(
 df_decision[3,3,2]<.1,"+","")))}}$ & 
 \backslash
-Sexpr{format(round(df_res[1,4,2],digits=0),nsmall=0)} 
+Sexpr{format(round(df_decision[1,4,2],digits=0),nsmall=0)} 
 \backslash
 
 \backslash
@@ -5094,7 +5125,7 @@ Sexpr{format(round(df_decision[3,1,3],digits=2),nsmall=2)}$^{
 Sexpr{ifelse(df_decision[3,3,3]<.01,"**",ifelse(df_decision[3,3,3]<.05,"*",ifelse(
 df_decision[3,3,3]<.1,"+","")))}}$ & 
 \backslash
-Sexpr{format(round(df_res[1,4,3],digits=0),nsmall=0)} 
+Sexpr{format(round(df_decision[1,4,3],digits=0),nsmall=0)} 
 \backslash
 
 \backslash
@@ -5208,13 +5239,13 @@ The interventions may also affect what happens with the maize obtained from
 \begin_inset Float table
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Disposal
+Disposal of harvest on random plot
 \begin_inset CommandInset label
 LatexCommand label
 name "disposal"
@@ -5506,7 +5537,7 @@ Sexpr{format(round(df_disposal[3,2,2],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Share kept as seed
+Maize kept as seed (kg)
 \end_layout
 
 \begin_layout Plain Layout
@@ -5937,7 +5968,7 @@ Sexpr{format(round(df_welfare[3,1,1],digits=2),nsmall=2)}$^{
 Sexpr{ifelse(df_welfare[3,3,1]<.01,"**",ifelse(df_welfare[3,3,1]<.05,"*",ifelse(df
 _welfare[3,3,1]<.1,"+","")))}}$ & 
 \backslash
-Sexpr{format(round(df_res[1,4,1],digits=0),nsmall=0)} 
+Sexpr{format(round(df_welfare[1,4,1],digits=0),nsmall=0)} 
 \backslash
 
 \backslash
@@ -6039,7 +6070,7 @@ Sexpr{format(round(df_welfare[3,1,2],digits=2),nsmall=2)}$^{
 Sexpr{ifelse(df_welfare[3,3,2]<.01,"**",ifelse(df_welfare[3,3,2]<.05,"*",ifelse(df
 _welfare[3,3,2]<.1,"+","")))}}$ & 
 \backslash
-Sexpr{format(round(df_res[1,4,2],digits=0),nsmall=0)} 
+Sexpr{format(round(df_welfare[1,4,2],digits=0),nsmall=0)} 
 \backslash
 
 \backslash
@@ -6141,7 +6172,7 @@ Sexpr{format(round(df_welfare[3,1,3],digits=2),nsmall=2)}$^{
 Sexpr{ifelse(df_welfare[3,3,3]<.01,"**",ifelse(df_welfare[3,3,3]<.05,"*",ifelse(df
 _welfare[3,3,3]<.1,"+","")))}}$ & 
 \backslash
-Sexpr{format(round(df_res[1,4,3],digits=0),nsmall=0)} 
+Sexpr{format(round(df_welfare[1,4,3],digits=0),nsmall=0)} 
 \backslash
 
 \backslash
@@ -6243,7 +6274,7 @@ Sexpr{format(round(df_welfare[3,1,4],digits=2),nsmall=2)}$^{
 Sexpr{ifelse(df_welfare[3,3,4]<.01,"**",ifelse(df_welfare[3,3,4]<.05,"*",ifelse(df
 _welfare[3,3,4]<.1,"+","")))}}$ & 
 \backslash
-Sexpr{format(round(df_res[1,4,4],digits=0),nsmall=0)} 
+Sexpr{format(round(df_welfare[1,4,4],digits=0),nsmall=0)} 
 \backslash
 
 \backslash
@@ -6345,7 +6376,7 @@ Sexpr{format(round(df_welfare[3,1,5],digits=0),nsmall=0)}$^{
 Sexpr{ifelse(df_welfare[3,3,5]<.01,"**",ifelse(df_welfare[3,3,5]<.05,"*",ifelse(df
 _welfare[3,3,5]<.1,"+","")))}}$ & 
 \backslash
-Sexpr{format(round(df_res[1,4,5],digits=0),nsmall=0)} 
+Sexpr{format(round(df_welfare[1,4,5],digits=0),nsmall=0)} 
 \backslash
 
 \backslash
@@ -6447,7 +6478,7 @@ Sexpr{format(round(df_welfare[3,1,6],digits=2),nsmall=2)}$^{
 Sexpr{ifelse(df_welfare[3,3,6]<.01,"**",ifelse(df_welfare[3,3,6]<.05,"*",ifelse(df
 _welfare[3,3,6]<.1,"+","")))}}$ & 
 \backslash
-Sexpr{format(round(df_res[1,4,6],digits=0),nsmall=0)} 
+Sexpr{format(round(df_welfare[1,4,6],digits=0),nsmall=0)} 
 \backslash
 
 \backslash

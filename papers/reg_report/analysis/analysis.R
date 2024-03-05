@@ -60,7 +60,9 @@ bse <- read.csv(paste(path,"baseline/data/public/baseline.csv",sep="/"))
 ### create unique ID at level of randomization for clustering standard errors 
 bse$cluster_ID <- as.factor(paste(paste(bse$distID,bse$subID, sep="_"), bse$vilID, sep="_"))
 
-### read in endline data (ananymized version)
+bse <- subset(bse, paid_pac == FALSE & discounted == FALSE)
+
+### read in endline data (anonymized version)
 dta <- read.csv(paste(path,"endline/data/public/endline.csv", sep="/"))
 
 ## drop non-free trial packs and non-free + discount trial packs
@@ -71,6 +73,47 @@ dta$s_ind <- (!dta$cont & !dta$trial_P)
 dta <-merge(dta, bse[c("farmer_ID","cluster_ID")], by.x="ID", by.y="farmer_ID")
 
 
+### look at attrition - we recontacted 100 procent of farmers but some were not interviewed or refused to be interviewed
+dim(bse)[1] - dim(dta)[1]  # we lost 4 observations
+### look at consent which is last point where enumerators are asked to abort
+table(dta$consent)
+##if we also consider the 4 that were lost, we get an attrition rate of 1.4 percent
+###drop these 18 that were not interviewed
+dta <- subset(dta, consent == "Yes")
+
+### do people recall the treatment (correctly)
+table(dta$check3.Rec_TP,dta$trial_P)
+table(dta$check3.cons_TP, dta$cont)
+
+
+## these give treatment coverage, excess coverage, failure to reach and control group coverage:
+## for trial pack treatment
+prop.table(table(dta$check3.Rec_TP, dta$trial_P),2)
+## for demo treatment
+prop.table(table(dta$check3.cons_TP, dta$cont),2)
+
+### some farmers do not cultivate in the second season of 2023
+
+sum(dta$plot_count == "0") ## 61 or just under 4 percent
+### while this is below the thresold of what we would deem acceptable for analysis we use this as a dependent variable to look at differential "attrition"
+dta$no_grow <- (dta$plot_count == "0")
+
+ols <- lm(no_grow~trial_P*cont,data= dta)
+vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+coef_test(ols, vcov_cluster)
+
+dta$cont_demeaned <- dta$cont - mean(dta$cont)
+ols <- lm(no_grow~trial_P*cont_demeaned,data= dta)
+vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+coef_test(ols, vcov_cluster)
+
+dta$trial_P_demeaned <- dta$trial_P - mean(dta$trial_P)
+ols <- lm(no_grow~cont*trial_P_demeaned,data= dta)
+vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+coef_test(ols, vcov_cluster)
+
+##ANALYSIS STARTS HERE
+
 ## primary outcome 1: uses improved seed on at least one plot
 num_plots <- max(as.numeric(dta$plot_count), na.rm=TRUE)
 logical_result <- logical(nrow(dta))
@@ -79,14 +122,15 @@ for (i in 1:num_plots) {
 ### definition of improved seed: fresh hybrid from trusted source or OPV recycled max 3 times from trusted source
  condition <- (((dta[[paste0("plot.", i, "..plot_imp_type")]] %in%  
        c("Longe_10H", "Longe_10R", "Longe_7H", "Longe_7R_Kayongo-go", "Bazooka", "DK", "Longe_6H", "Panner", "UH5051", "Wema", "KH_series", "other_hybrid")) & (dta[[paste0("plot.", i, "..plot_times_rec")]] %in% 1) & (dta[[paste0("plot.", i, "..single_source")]]%in% letters[4:9])  ) |
-      ((dta[[paste0("plot.", i, "..plot_imp_type")]] %in%  c("Longe_5", "Longe_5D", "Longe_4", "MM3")) & (dta[[paste0("plot.", i, "..plot_times_rec")]] %in% 1:4) &  ((dta[[paste0("plot.", i, "..recycle_source_rest")]] %in% letters[4:9]) | (dta[[paste0("plot.", i, "..single_source")]]%in% letters[4:9])))) 
+      ((dta[[paste0("plot.", i, "..plot_imp_type")]] %in%  c("Longe_5", "Longe_5D", "Longe_4", "MM3", "other_opv")) & (dta[[paste0("plot.", i, "..plot_times_rec")]] %in% 1:4) &  ((dta[[paste0("plot.", i, "..recycle_source_rest")]] %in% letters[4:9]) | (dta[[paste0("plot.", i, "..single_source")]]%in% letters[4:9])))) 
  # Combine the condition with the logical OR operator
  logical_result <- logical_result | condition
 }
 
 # Assign the result to the new column p_outcome_1
 dta$p_outcome_1 <- logical_result
-
+###only for those that 
+dta$p_outcome_1[dta$no_grow] <- NA
 
 ###not interviewed
 dta$p_outcome_1[is.na(dta$plot_no)] <- NA
@@ -111,7 +155,7 @@ for (i in 1:num_plots) {
 # Assign the result to the new column p_outcome_1
 dta$p_outcome_2 <- logical_result
 
-dta$p_outcome_2[is.na(dta$plot_no)] <- NA
+dta$p_outcome_2[dta$no_grow] <- NA
 
 
 bse$b_p_outcome_2 <- bse$bazo_use=="Yes"
@@ -126,7 +170,7 @@ for (i in 1:num_plots) {
   ### definition of improved seed: fresh hybrid from trusted source or OPV recycled max 3 times from trusted source
   condition <- (((dta[[paste0("plot.", i, "..plot_imp_type")]] %in%  
                     c("Longe_10H", "Longe_10R", "Longe_7H", "Longe_7R_Kayongo-go", "Bazooka", "DK", "Longe_6H", "Panner", "UH5051", "Wema", "KH_series", "other_hybrid")) & (dta[[paste0("plot.", i, "..plot_times_rec")]] %in% 1) & (dta[[paste0("plot.", i, "..single_source")]]%in% letters[4:9])  ) |
-                  ((dta[[paste0("plot.", i, "..plot_imp_type")]] %in%  c("Longe_5", "Longe_5D", "Longe_4", "MM3")) & (dta[[paste0("plot.", i, "..plot_times_rec")]] %in% 1:4) &  ((dta[[paste0("plot.", i, "..recycle_source_rest")]] %in% letters[4:9]) | (dta[[paste0("plot.", i, "..single_source")]]%in% letters[4:9])))) 
+                  ((dta[[paste0("plot.", i, "..plot_imp_type")]] %in%  c("Longe_5", "Longe_5D", "Longe_4", "MM3","other_opv")) & (dta[[paste0("plot.", i, "..plot_times_rec")]] %in% 1:4) &  ((dta[[paste0("plot.", i, "..recycle_source_rest")]] %in% letters[4:9]) | (dta[[paste0("plot.", i, "..single_source")]]%in% letters[4:9])))) 
   # Combine the condition with the logical OR operator
   logical_result <- logical_result + condition
 }
@@ -134,8 +178,8 @@ for (i in 1:num_plots) {
 # Assign the result to the new column p_outcome_1
 dta$nr_improved <- logical_result
 
+dta$nr_improved[dta$no_grow] <- NA
 
-dta$nr_improved[is.na(dta$plot_no)] <- NA
 
 
 ##area under improved maize cultivation
@@ -147,19 +191,22 @@ for (i in 1:num_plots) {
 #create a matrix if size of plots with adoption
   areas[,i] <- (((dta[[paste0("plot.", i, "..plot_imp_type")]] %in%  
                     c("Longe_10H", "Longe_10R", "Longe_7H", "Longe_7R_Kayongo-go", "Bazooka", "DK", "Longe_6H", "Panner", "UH5051", "Wema", "KH_series", "other_hybrid")) & (dta[[paste0("plot.", i, "..plot_times_rec")]] %in% 1) & (dta[[paste0("plot.", i, "..single_source")]]%in% letters[4:9])  ) |
-                  ((dta[[paste0("plot.", i, "..plot_imp_type")]] %in%  c("Longe_5", "Longe_5D", "Longe_4", "MM3")) & (dta[[paste0("plot.", i, "..plot_times_rec")]] %in% 1:4) &  ((dta[[paste0("plot.", i, "..recycle_source_rest")]] %in% letters[4:9]) | (dta[[paste0("plot.", i, "..single_source")]]%in% letters[4:9]))))*as.numeric(as.character(dta[[paste0("plot.", i, "..plot_size")]] ))
+                  ((dta[[paste0("plot.", i, "..plot_imp_type")]] %in%  c("Longe_5", "Longe_5D", "Longe_4", "MM3","other_opv")) & (dta[[paste0("plot.", i, "..plot_times_rec")]] %in% 1:4) &  ((dta[[paste0("plot.", i, "..recycle_source_rest")]] %in% letters[4:9]) | (dta[[paste0("plot.", i, "..single_source")]]%in% letters[4:9]))))*as.numeric(as.character(dta[[paste0("plot.", i, "..plot_size")]] ))
   tot_area[,i] <- as.numeric(as.character(dta[[paste0("plot.", i, "..plot_size")]] ))
 }
 
 dta$nr_improvedxsize <- rowSums( areas, na.rm=TRUE)
+dta$nr_improvedxsize[dta$no_grow] <- NA
 dta$totsize <- rowSums( tot_area, na.rm=TRUE)
+dta$totsize[dta$no_grow] <- NA
 
 ##share of plots under improved cultivation
 dta$plot_no <- as.numeric(dta$plot_no)
 dta$share_plots_imp <-  dta$nr_improved/dta$plot_no
+dta$share_plots_imp[dta$no_grow] <- NA
 ## share of area under improved cultivation
 dta$share_area_imp <-  dta$nr_improvedxsize/dta$totsize
-
+dta$share_area_imp[dta$no_grow] <- NA
 
 #iterate over outcomes
 outcomes <- c("p_outcome_1","p_outcome_2","nr_improved", "share_plots_imp", "nr_improvedxsize", "share_area_imp" )
@@ -256,8 +303,8 @@ dta <- merge(dta, dta_sub[c("ID","times_recycled_selected","single_source_select
 
 dta$rnd_adopt <-   (((dta$maize_var_selected %in%  
                         c("Longe_10H", "Longe_10R", "Longe_7H", "Longe_7R_Kayongo-go", "Bazooka", "DK", "Longe_6H", "Panner", "UH5051", "Wema", "KH_series", "other_hybrid")) & (dta$times_recycled_selected %in% 1) & (dta$single_source_selected %in% letters[4:9])  ) |
-                      ((dta$maize_var_selected  %in%  c("Longe_5", "Longe_5D", "Longe_4", "MM3")) & (dta$times_recycled_selected %in% 1:4) &  (((dta$single_source_selected %in% letters[4:9])) | (dta$recycled_source_selected %in% letters[4:9]))))
-
+                      ((dta$maize_var_selected  %in%  c("Longe_5", "Longe_5D", "Longe_4", "MM3","other_opv")) & (dta$times_recycled_selected %in% 1:4) &  (((dta$single_source_selected %in% letters[4:9])) | (dta$recycled_source_selected %in% letters[4:9]))))
+dta$rnd_adopt[dta$no_grow] <- NA 
 ## we assume here that seed from official sources has not been recycled
 bse$b_rnd_adopt <- (((bse$maize_var  %in% c("Longe_10H"," Longe_7H","Longe_7R_Kayongo-go", "Bazooka","DK","Longe_6H")) & (bse$source %in% letters[4:9]) )
                   |
@@ -265,16 +312,21 @@ bse$b_rnd_adopt <- (((bse$maize_var  %in% c("Longe_10H"," Longe_7H","Longe_7R_Ka
 dta <- merge(dta, bse[c("farmer_ID","b_rnd_adopt")], by.x="ID", by.y="farmer_ID")
 
 dta$rnd_bazo <-  ((dta$maize_var_selected == "Bazooka") & (dta$single_source_selected %in% letters[4:9]  & (dta$times_recycled_selected %in% 1)))
+dta$rnd_bazo[dta$no_grow] <- NA 
+
 ## we assume here that seed from official sources has not been recycled
 bse$b_rnd_bazo <- ((bse$maize_var == "Bazooka") & (bse$source %in% letters[4:9]) )
                    
 dta <- merge(dta, bse[c("farmer_ID","b_rnd_bazo")], by.x="ID", by.y="farmer_ID")
 
 ### seed quantity
-dta$imp_seed_qty_rnd <- dta$rnd_adopt*as.numeric(as.character(dta$seed_qty))
-dta$imp_seed_qty_rnd[is.na(dta$imp_seed_qty_rnd)] <- 0
+dta$seed_qty <- as.numeric(as.character(dta$seed_qty))
+dta$seed_qty[dta$seed_qty == 999] <- NA 
+
+dta$imp_seed_qty_rnd <- dta$rnd_adopt*dta$seed_qty
+#dta$imp_seed_qty_rnd[is.na(dta$imp_seed_qty_rnd)] <- 0
 bse$b_imp_seed_qty_rnd <- bse$b_rnd_adopt*bse$seed_qty
-bse$b_imp_seed_qty_rnd[is.na(bse$b_imp_seed_qty_rnd)] <- 0
+#bse$b_imp_seed_qty_rnd[is.na(bse$b_imp_seed_qty_rnd)] <- 0
 
 
 dta <- trim("imp_seed_qty_rnd", dta)
@@ -292,6 +344,7 @@ bse  <- trim("b_imp_seed_qty_rnd_acre", bse)
 
 dta <- merge(dta, bse[c("farmer_ID","b_imp_seed_qty_rnd_acre")], by.x="ID", by.y="farmer_ID")
 ###production
+dta$bag_harv[dta$bag_harv == "999"] <- NA
 dta$production <- as.numeric(as.character(dta$bag_harv))*as.numeric(as.character(dta$bag_kg))
 dta <- trim("production", dta)
 
@@ -893,9 +946,10 @@ save(df_compare_ph,file=paste(path,"/papers/reg_report/results/df_compare_ph.Rda
 save(df_means_compare_ph,file=paste(path,"/papers/reg_report/results/df_means_compare_ph.Rdata",sep="/"))
 
 ## table with impact on decision making
-
-dta$who1 <- dta$who1 != "2"
-dta$who2 <- dta$who2 != "2"
+dta$who1[dta$who1 == 'n/a'] <- NA
+dta$who1 <- dta$who1 == "1" | dta$who1 == "3"
+dta$who2[dta$who2 == 'n/a'] <- NA
+dta$who2 <- dta$who2 == "1" | dta$who2 == "3"
 
 
 #iterate over outcomes
@@ -955,17 +1009,20 @@ save(df_means_decision,file=paste(path,"/papers/reg_report/results/df_means_deci
 
 dta$perc_cons <- as.numeric(dta$bag_keep)/as.numeric(dta$bag_harv)*100
 dta$perc_cons[dta$perc_cons>100] <- NA
+dta$perc_cons[dta$no_grow] <- NA
 dta$perc_sell <- as.numeric(as.character(dta$bag_sell))/as.numeric(dta$bag_harv)*100
 dta$perc_sell[is.na(dta$perc_sell)] <- 0
 dta$perc_sell[dta$perc_sell>100] <- NA
-dta$perc_seed <- as.numeric(as.character(dta$seed_keep))/as.numeric(dta$harv_kgs)*100
-dta$perc_seed[dta$perc_seed>50] <- NA
+dta$perc_sell[dta$no_grow] <- NA
+dta$seed_keep[dta$seed_keep == "999"] <- NA
 
+dta$seed_keep[dta$no_grow] <- NA
+dta$seed_keep <- as.numeric(as.character(dta$seed_keep))
 #iterate over outcomes
-outcomes <- c("perc_cons","perc_sell","perc_seed")
+outcomes <- c("perc_cons","perc_sell","seed_keep")
 
 
-dta$index <- icwIndex(xmat= as.matrix(dta[outcomes]),revcols = c(3),sgroup=dta$s_ind)$index
+dta$index <- icwIndex(xmat= as.matrix(dta[outcomes]),revcols = c(2,3),sgroup=dta$s_ind)$index
 outcomes <- c(outcomes, "index")
 ## demean indicators
 dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)
@@ -1014,14 +1071,14 @@ save(df_disposal_pool,file=paste(path,"/papers/reg_report/results/df_disposal_po
 save(df_disposal,file=paste(path,"/papers/reg_report/results/df_disposal.Rdata",sep="/"))
 save(df_means_disposal,file=paste(path,"/papers/reg_report/results/df_means_disposal.Rdata",sep="/"))
 
-## table with wellfare and food security
+## table with welfare and food security
 
 dta$in_com[dta$in_com == "98" ] <- NA
 dta$better_off_vil <- dta$in_com == "1"
 dta$in_six[dta$in_six == "98"] <- NA
 dta$better_off_six <- dta$in_six == "1"
 dta$food_secure_pref <- dta$fd_pref =="No"
-dta$food_secure_quant <-dta$fd_less =="No"
+dta$food_secure_quant <- dta$fd_less =="No"
 
 
 dta$cons_exp <- rowSums(cbind(as.numeric(dta$maize_value_sp),
@@ -1039,6 +1096,7 @@ as.numeric(dta$cooking_oil_value_sp),
 as.numeric(dta$soap_value_sp),
 as.numeric(dta$airtime_value_sp)), na.rm=T)
 
+dta <- trim(dta, "cons_exp")
 
 #iterate over outcomes
 outcomes <- c("better_off_vil","better_off_six","food_secure_pref","food_secure_quant","cons_exp")

@@ -126,7 +126,7 @@ dta$ID[dta$X_uuid =="71f367ce-5fa7-4ef1-ab6f-0a710ab419b7"] <- "F_112"
 
 ##duplicat F_91
 dta$ID[dta$X_uuid =="1e88fe63-5596-4506-8c35-e4064b40031f"] <- "F_2102"
-dta$trail_P[dta$X_uuid =="1e88fe63-5596-4506-8c35-e4064b40031f"] <- FALSE
+dta$trial_P[dta$X_uuid =="1e88fe63-5596-4506-8c35-e4064b40031f"] <- FALSE
 ## duplicate F_739
 
 dta$ID[dta$X_uuid =="3551fbb5-5a64-40d5-a103-baf320fce80c"] <- "F_1813"
@@ -159,7 +159,7 @@ dta$cont[dta$X_uuid =="01af9036-1299-4328-9721-7ed0a32d3d4c"] <- FALSE
 #duplicate F_1587"
 dta$ID[dta$X_uuid =="323fd6b4-b17c-4386-9bc3-0e1dbf90fa3e"] <- "F_1634"
 dta$paid_pac[dta$X_uuid =="323fd6b4-b17c-4386-9bc3-0e1dbf90fa3e"] <- TRUE
-dta$trail_P[dta$X_uuid =="323fd6b4-b17c-4386-9bc3-0e1dbf90fa3e"] <- FALSE
+dta$trial_P[dta$X_uuid =="323fd6b4-b17c-4386-9bc3-0e1dbf90fa3e"] <- FALSE
 dta$cons[dta$X_uuid =="323fd6b4-b17c-4386-9bc3-0e1dbf90fa3e"] <- FALSE
 
 #duplicate F_605
@@ -167,7 +167,27 @@ dta$ID[dta$X_uuid =="0b6cf64d-81f0-4cf8-a2b7-29826e03dc5d"] <- "F_637"
 dta$paid_pac[dta$X_uuid =="0b6cf64d-81f0-4cf8-a2b7-29826e03dc5d"] <- FALSE
 #duplicate F_460
 dta$ID[dta$X_uuid =="2cd06b77-4054-433f-add0-0ad5af119364"] <- "F_190"
-dta$trail_P[dta$X_uuid =="2cd06b77-4054-433f-add0-0ad5af119364"] <- TRUE
+dta$trial_P[dta$X_uuid =="2cd06b77-4054-433f-add0-0ad5af119364"] <- TRUE
+## duplicate F_399
+dta$ID[dta$X_uuid =="37f7e115-ac2a-470d-aea0-830e2aaae574"] <- "F_1377"
+## duplicate F_1542
+dta$ID[dta$X_uuid =="4ef933a9-e37d-4cf3-9e3c-b881cc8a4f5d"] <- "F_2145"
+dta$trial_P[dta$X_uuid == "4ef933a9-e37d-4cf3-9e3c-b881cc8a4f5d"] <- FALSE
+dta$cont[dta$X_uuid == "4ef933a9-e37d-4cf3-9e3c-b881cc8a4f5d"] <- FALSE
+
+## duplicate F_1589
+dta$ID[dta$X_uuid =="ee119a6c-e0e8-4027-8499-4573695e93a7"] <- "F_1653"
+
+## duplicate F_151
+dta$ID[dta$X_uuid =="9048acd4-700b-4dcd-bcde-0774ec20cda8"] <- "F_371"
+dta$paid_pac[dta$X_uuid =="9048acd4-700b-4dcd-bcde-0774ec20cda8"] <- FALSE
+
+##duplicate F_224
+dta$ID[dta$X_uuid =="0711773a-8c9c-4cec-bfda-3c892993b80e"] <- "F_438"
+dta$trial_P[dta$X_uuid =="0711773a-8c9c-4cec-bfda-3c892993b80e"] <- FALSE
+
+#duplicate F_566
+dta <- subset(dta, X_uuid !="e24c5231-5d6c-4e5e-9221-2de860c1a766")
 
 ## duplicate F_8 can not be reconciled - drop
 dta <- subset(dta, ID!="F_8")
@@ -178,7 +198,18 @@ dta$ID[duplicated(dta$ID)]
 ## get baseline to create list of farmers that still needs to be done
 bse <- read.csv("/home/bjvca/data/projects/OneCG/MIPP/baseline/data/raw/baseline_fixed_dups.csv")
 
-write.csv(bse[!(bse$farmer_ID %in% dta$ID),c("district", "sub","village","farmer_ID", "Check2.check.maize.name_resp", "Check2.check.maize.nick", "Check2.check.maize.phone", "Check2.check.maize.phone2")], "remnants.csv", row.names = FALSE)
+write.csv(bse[!(bse$farmer_ID %in% dta$ID),c("district", "sub","village","farmer_ID", "Check2.check.maize.name_resp", "Check2.check.maize.nick", "Check2.check.maize.phone", "Check2.check.maize.phone2","Check2.check.maize._gps_latitude","Check2.check.maize._gps_longitude")], "remnants.csv", row.names = FALSE)
+library(leaflet)
+library(reshape2)
+library(htmlwidgets)
+gps <- bse[!(bse$farmer_ID %in% dta$ID),c("district", "sub","village","farmer_ID", "Check2.check.maize._gps_latitude","Check2.check.maize._gps_longitude")]
+names(gps) <- c("district", "sub","village","farmer_ID", "latitude","longitude")
+gps$latitude <- as.numeric(gps$latitude)
+gps$longitude <- as.numeric(gps$longitude)
+m <- leaflet() %>% setView(lat = mean(gps$latitude, na.rm=T), lng = mean(gps$longitude, na.rm=T), zoom=11)  %>%  addTiles(group="OSM") %>% addTiles(urlTemplate = "https://mts1.google.com/vt/lyrs=s&hl=en&src=app&x={x}&y={y}&z={z}&s=G",  group="Google", attribution = 'Google')  %>% addProviderTiles(providers$OpenTopoMap, group="Topography") %>% addCircleMarkers(data=gps, lng=~longitude, lat=~latitude,radius= 2, popup = ~as.character(village) )   %>%  addLayersControl(baseGroups=c('OSM','Google','Topography'))
+saveWidget(m, file="seed_trial_remnants.html") 
+
+
 bse_col <- bse[!(bse$farmer_ID %in% dta$ID),c("district", "sub","village","farmer_ID")]
 bse_col$count <- 1
 aggregate(bse_col$count,list(c(bse_col$village)), sum)
@@ -230,7 +261,7 @@ garden_vector <- c("crop_inter",
 dta[dta$ID  %in% dta_first$ID, garden_vector] <- dta_first[dta_first$ID %in% dta_first$ID,garden_vector]
 
 to_drop <- c("start", "end", "deviceid", "simserial", "phonenumber", "subscriberid", "enumerator", "district", "sub", "village", "farmer_name", 
-             "phone1", "phone2", "nick", "lat", "long", "plot.1..plot_name", "plot.2..plot_name", "plot.3..plot_name", "plot.4..plot_name", "plot_select_name",
+             "phone1", "phone2", "nick", "lat", "long", "plot.1..plot_name", "plot.2..plot_name", "plot.3..plot_name", "plot.4..plot_name", "plot.5..plot_name","plot_select_name",
               "location", "_location_latitude", "_location_longitude", "_location_altitude", "_location_precision", "meta.instanceID", 
              "X_id", "X_uuid", "X_submission_time", "X_date_modified", "X_tags", "X_notes", "X_version", "X_duration", "X_submitted_by", 
              "X_total_media", "X_media_count", "X_media_all_received", "X_xform_id")
