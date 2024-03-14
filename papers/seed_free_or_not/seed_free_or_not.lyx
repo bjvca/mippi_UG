@@ -154,7 +154,8 @@ A popular way to increase adoption of a new technology is by providing the
 \end_layout
 
 \begin_layout Abstract
-Keywords: technology adoption, screening effect, sunk cost effect, signaling.
+Keywords: technology adoption, income effect, screening effect, sunk cost
+ effect, signaling.
 \end_layout
 
 \begin_layout Abstract
@@ -686,6 +687,11 @@ load(paste(path,"res_tab_pract.Rdata", sep="/"))
 
 \begin_layout Plain Layout
 
+load(paste(path,"res_tab_pract_bin.Rdata", sep="/"))
+\end_layout
+
+\begin_layout Plain Layout
+
 load(paste(path,"res_tab_char.Rdata", sep="/"))
 \end_layout
 
@@ -706,6 +712,11 @@ load(paste(path,"res_tab_path.Rdata", sep="/"))
 
 \begin_layout Plain Layout
 
+load(paste(path,"res_tab_path_bin.Rdata", sep="/"))
+\end_layout
+
+\begin_layout Plain Layout
+
 load(paste(path,"res_tab_next_season.Rdata", sep="/"))
 \end_layout
 
@@ -720,6 +731,12 @@ load(paste(path,"res_tab_next_season_bin.Rdata", sep="/"))
 
 \begin_layout Plain Layout
 
+load(paste(path,"res_tab_path_next_season_bin.Rdata", sep="/"))
+\end_layout
+
+\begin_layout Plain Layout
+
+load(paste(path,"res_tab_path_next_season.Rdata", sep="/"))
 \end_layout
 
 \begin_layout Plain Layout
@@ -3184,6 +3201,25 @@ In this part, we simply compare the outcomes between three groups: 1) farmers
  anyway due to a 100 percent surprise discount; and 3) farmers that received
  the seed trial pack for free and did not participate in the bargaining
  experiment.
+ The first group will serve as the reference group.
+\end_layout
+
+\begin_layout Standard
+If signaling is important, we would expect that being enrolled in the bargaining
+ experiment (group 1 and group 2) will result in a positive impact.
+ If the sunk cost effect exists, we would expect a positive impact only
+ in the first group, as these are the only ones that paid a positive price.
+ If there is an income effect, we expect to have positive effects in the
+ groups that received the trial pack for free, either after bargaining (group
+ 2) or without bargaining (group 3).
+\end_layout
+
+\begin_layout Standard
+The binary analysis is not appropriate for identifying screening effects
+ as virtually all farmers that participated in the bargaining experiment
+ ended up buying.
+ To identify the screening effect, we need to control for the actual price
+ that was paid, which we do in the next section.
 \end_layout
 
 \begin_layout Subsubsection
@@ -4000,24 +4036,25 @@ In addition to adoption as a binary variable, we consider quantity of improved
  seed used on a randomly selected maize plot within the household.
  We see that this is about 1 kilograms in households that paid a positive
  price for the seed trial pack.
- For households that participated in the bargaining, this increases to about
- 1 kilogram.
- Differences with the first group are significant at the 10 percent level.
+ Difference are again largest with farmers that were not enrolled in the
+ bargaining treatment but just received the seed trial pack for free.
+ These farmers only used on average about 0.7 kg of seed.
  To look at the intensive margin, we also compare seed use per acre.
- Seed use per acre in the control group is about 3 quarters of a kilo.
- Especially in the group that participated in the bargaining experiment
- and was then provided with a discount, seed use per acre is significantly
- higher.
+ Seed use per acre in the reference group is about 1.2 kilo per acre.
+ Seed use per acre is somewhat lower in the group that did not negotiate
+ and was given the seed for free.
 \end_layout
 
 \begin_layout Standard
 Finally, we look at production (expressed in kilograms of maize) on the
  randomly selected plot and also scale by area of the selected plot.
- Farmers that received the seed trial pack for free produced about 280 kilograms
- on the randomly selected plot, corresponding to about 350 kg per acre.
- Production is significantly higher in the groups that participated in the
- bargaining.
- Productivity in the group that received the discount was particularly high.
+ Farmers that received the seed trial pack at a positive cost after negotiation
+ reported harvesting about 360 kilograms on the randomly selected plot,
+ corresponding to about 440 kg per acre.
+ Production is significantly lower among farmers that did not bargain and
+ received the seed for free.
+ Interestingly, in the group that negotiated and received full discount,
+ productivity is highest.
 \end_layout
 
 \begin_layout Standard
@@ -4875,8 +4912,8 @@ Note:
 \end_layout
 
 \begin_layout Standard
-Overall, we find higher adoption of improved seed varieties and as a result
- higher production, among farmers that participated in the bargaining.
+Overall, we find lower adoption of improved seed varieties and as a result
+ lower production among farmers that did not engage in bargaining.
  This suggests that for actual behavior change, it is important that farmers
  learn about the value of seed (eg through a signaling effect emanating
  from the initial offer price or some other psychological process whereby
@@ -4885,11 +4922,76 @@ Overall, we find higher adoption of improved seed varieties and as a result
 \end_layout
 
 \begin_layout Subsubsection
-Learning and attention
+Attention
 \end_layout
 
 \begin_layout Standard
-Remembers getting/buying seed at midline
+One of the main reasons why farmers that get the trial seed pack for free
+ have lower adoption and yield is that they may be paying less attention.
+ To test this hypothesis, we look at the proportion of farmers that correctly
+ remembered the type of seed that was used for the trial pack (reported
+ in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Attention"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ We find that in the group that paid a positive price, almost 77 percent
+ of farmers correctly recalled that we used a seed variety called 
+\begin_inset Quotes eld
+\end_inset
+
+Bazooka
+\begin_inset Quotes erd
+\end_inset
+
+.
+ This is about 6.5 percentage points lower in the group that got the seed
+ for free without negotiation, but the reduction is not significant.
+ The discount did not affect the proportion.
+\end_layout
+
+\begin_layout Standard
+Interestingly, despite the fact that the company name 
+\begin_inset Quotes eld
+\end_inset
+
+Naseco Seeds
+\begin_inset Quotes erd
+\end_inset
+
+ was clearly indicated on the seed pack, only about 5 percent of farmers
+ that paid for the seed correctly recalled the name.
+ This is again lower in the group that got the seed for free without bargaining,
+ and this time the difference is significant at the 5 percent level.
+\end_layout
+
+\begin_layout Standard
+For farmers that were enrolled in the bargaining experiment, we also test
+ if they remember the price at which agreement was reached.
+ During midline, about 95 percent of farmers that actually paid the price
+ indicated that they did, while at endline this share reduced to about 91
+ percent.
+ We find that this share was lower among farmers were offered a 100 percent
+ discount, especially at endline where the share is about 9 percentage points
+ lower.
+\end_layout
+
+\begin_layout Standard
+When farmers indicated that they remembered the price, we asked them what
+ the price they thought it was and compared it the the price recorded during
+ baseline.
+ We find that in the group that paid the full price, the absolute value
+ of the difference between the real price and the price farmers remember
+ is on average 722 UGX.
+ Recall error goes up to about 900 UGX at endline.
+ We find that farmers that received the discount are less accurate in recalling
+ the price they arrived at during negotiation.
 \end_layout
 
 \begin_layout Standard
@@ -4902,7 +5004,14 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Pathways
+Attention
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Attention"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4959,9 +5068,9 @@ hline
 
 \begin_layout Plain Layout
 
-& free & 100 
+& paid & 100 
 \backslash
-% discount & paid & discount = paid & nobs 
+% discount & free & discount = free & nobs 
 \backslash
 
 \backslash
@@ -4981,63 +5090,66 @@ cline{2-6}
 
 \begin_layout Plain Layout
 
-Attention: remembers seed type correctly
+Remember seed type correctly at midline
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{res_tab_path[1,1,1]}
+Sexpr{res_tab_path_bin[1,1,3]}
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{res_tab_path[1,2,1]}$^{
+Sexpr{res_tab_path_bin[1,2,3]}$^{
 \backslash
-Sexpr{ifelse(res_tab_path[3,2,1]<.01,"**"
+Sexpr{ifelse(res_tab_path_bin[3,2,3]<.01,"**"
 \end_layout
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_path[3,2,1]<.05,"*",ifelse(res_tab_path[3,2,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_path[1,3,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_path[3,3,1]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_path[3,3,1]<.05,"*",ifelse(res_tab_path[3,3,1]<.1,"+","")))}}$
+	,ifelse(res_tab_path_bin[3,2,3]<.05,"*",ifelse(res_tab_path_bin[3,2,3]<.1,"+","")
+))}}$
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{res_tab_path[1,4,1]}$^{
+Sexpr{res_tab_path_bin[1,3,3]}$^{
 \backslash
-Sexpr{ifelse(res_tab_path[3,4,1]<.01,"**"
+Sexpr{ifelse(res_tab_path_bin[3,3,3]<.01,"**"
 \end_layout
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_path[3,4,1]<.05,"*",ifelse(res_tab_path[3,4,1]<.1,"+","")))}}$
+	,ifelse(res_tab_path_bin[3,3,3]<.05,"*",ifelse(res_tab_path_bin[3,3,3]<.1,"+","")
+))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path_bin[1,4,3]}$^{
+\backslash
+Sexpr{ifelse(res_tab_path_bin[3,4,3]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_path_bin[3,4,3]<.05,"*",ifelse(res_tab_path_bin[3,4,3]<.1,"+","")
+))}}$
 \end_layout
 
 \begin_layout Plain Layout
 
  & 
 \backslash
-Sexpr{res_tab_path[1,5,1]} 
+Sexpr{res_tab_path_bin[1,5,3]} 
 \backslash
 
 \backslash
@@ -5048,28 +5160,25 @@ Sexpr{res_tab_path[1,5,1]}
 
 & (
 \backslash
-Sexpr{res_tab_path[2,1,1]})
+Sexpr{res_tab_path_bin[2,1,3]})
 \end_layout
 
 \begin_layout Plain Layout
 
 & (
 \backslash
-Sexpr{res_tab_path[2,2,1]})
+Sexpr{res_tab_path_bin[2,2,3]})
 \end_layout
 
 \begin_layout Plain Layout
 
 & (
 \backslash
-Sexpr{res_tab_path[2,3,1]})
+Sexpr{res_tab_path_bin[2,3,3]})
 \end_layout
 
 \begin_layout Plain Layout
 
-& (
-\backslash
-Sexpr{res_tab_path[2,4,1]})
 \end_layout
 
 \begin_layout Plain Layout
@@ -5087,63 +5196,70 @@ Sexpr{res_tab_path[2,4,1]})
 
 \begin_layout Plain Layout
 
-Attention: remembers producer
+\end_layout
+
+\begin_layout Plain Layout
+
+Remembers seed producer correctly at midline
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{res_tab_path[1,1,2]}
+Sexpr{res_tab_path_bin[1,1,4]}
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{res_tab_path[1,2,2]}$^{
+Sexpr{res_tab_path_bin[1,2,4]}$^{
 \backslash
-Sexpr{ifelse(res_tab_path[3,2,2]<.01,"**"
+Sexpr{ifelse(res_tab_path_bin[3,2,4]<.01,"**"
 \end_layout
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_path[3,2,2]<.05,"*",ifelse(res_tab_path[3,2,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_path[1,3,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_path[3,3,2]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_path[3,3,2]<.05,"*",ifelse(res_tab_path[3,3,2]<.1,"+","")))}}$
+	,ifelse(res_tab_path_bin[3,2,4]<.05,"*",ifelse(res_tab_path_bin[3,2,4]<.1,"+","")
+))}}$
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{res_tab_path[1,4,2]}$^{
+Sexpr{res_tab_path_bin[1,3,4]}$^{
 \backslash
-Sexpr{ifelse(res_tab_path[3,4,2]<.01,"**"
+Sexpr{ifelse(res_tab_path_bin[3,3,4]<.01,"**"
 \end_layout
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_path[3,4,2]<.05,"*",ifelse(res_tab_path[3,4,2]<.1,"+","")))}}$
+	,ifelse(res_tab_path_bin[3,3,4]<.05,"*",ifelse(res_tab_path_bin[3,3,4]<.1,"+","")
+))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path_bin[1,4,4]}$^{
+\backslash
+Sexpr{ifelse(res_tab_path_bin[3,4,4]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_path_bin[3,4,4]<.05,"*",ifelse(res_tab_path_bin[3,4,4]<.1,"+","")
+))}}$
 \end_layout
 
 \begin_layout Plain Layout
 
  & 
 \backslash
-Sexpr{res_tab_path[1,5,2]} 
+Sexpr{res_tab_path_bin[1,5,4]} 
 \backslash
 
 \backslash
@@ -5154,28 +5270,25 @@ Sexpr{res_tab_path[1,5,2]}
 
 & (
 \backslash
-Sexpr{res_tab_path[2,1,2]})
+Sexpr{res_tab_path_bin[2,1,4]})
 \end_layout
 
 \begin_layout Plain Layout
 
 & (
 \backslash
-Sexpr{res_tab_path[2,2,2]})
+Sexpr{res_tab_path_bin[2,2,4]})
 \end_layout
 
 \begin_layout Plain Layout
 
 & (
 \backslash
-Sexpr{res_tab_path[2,3,2]})
+Sexpr{res_tab_path_bin[2,3,4]})
 \end_layout
 
 \begin_layout Plain Layout
 
-& (
-\backslash
-Sexpr{res_tab_path[2,4,2]})
 \end_layout
 
 \begin_layout Plain Layout
@@ -5193,67 +5306,50 @@ Sexpr{res_tab_path[2,4,2]})
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
-
-Valuation: price in shop
+Remembers price of trail pack at midline
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{res_tab_path[1,1,3]}
+Sexpr{res_tab_path_bin[1,1,1]}
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{res_tab_path[1,2,3]}$^{
+Sexpr{res_tab_path_bin[1,2,1]}$^{
 \backslash
-Sexpr{ifelse(res_tab_path[3,2,3]<.01,"**"
+Sexpr{ifelse(res_tab_path_bin[3,2,1]<.01,"**"
 \end_layout
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_path[3,2,3]<.05,"*",ifelse(res_tab_path[3,2,3]<.1,"+","")))}}$
+	,ifelse(res_tab_path_bin[3,2,1]<.05,"*",ifelse(res_tab_path_bin[3,2,1]<.1,"+","")
+))}}$
 \end_layout
 
 \begin_layout Plain Layout
 
-& 
+&  
 \backslash
-Sexpr{res_tab_path[1,3,3]}$^{
-\backslash
-Sexpr{ifelse(res_tab_path[3,3,3]<.01,"**"
+textemdash
 \end_layout
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_path[3,3,3]<.05,"*",ifelse(res_tab_path[3,3,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
+&  
 \backslash
-Sexpr{res_tab_path[1,4,3]}$^{
-\backslash
-Sexpr{ifelse(res_tab_path[3,4,3]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_path[3,4,3]<.05,"*",ifelse(res_tab_path[3,4,3]<.1,"+","")))}}$
+textemdash
 \end_layout
 
 \begin_layout Plain Layout
 
  & 
 \backslash
-Sexpr{res_tab_path[1,5,3]} 
+Sexpr{res_tab_path_bin[1,5,1]} 
 \backslash
 
 \backslash
@@ -5264,28 +5360,25 @@ Sexpr{res_tab_path[1,5,3]}
 
 & (
 \backslash
-Sexpr{res_tab_path[2,1,3]})
+Sexpr{res_tab_path_bin[2,1,1]})
 \end_layout
 
 \begin_layout Plain Layout
 
 & (
 \backslash
-Sexpr{res_tab_path[2,2,3]})
+Sexpr{res_tab_path_bin[2,2,1]})
 \end_layout
 
 \begin_layout Plain Layout
 
-& (
+&  
 \backslash
-Sexpr{res_tab_path[2,3,3]})
+textemdash
 \end_layout
 
 \begin_layout Plain Layout
 
-& (
-\backslash
-Sexpr{res_tab_path[2,4,3]})
 \end_layout
 
 \begin_layout Plain Layout
@@ -5303,67 +5396,50 @@ Sexpr{res_tab_path[2,4,3]})
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
-
-Valuation: price bought
+difference between actually paid and what farmer remembers at midline
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{res_tab_path[1,1,4]}
+Sexpr{res_tab_path_bin[1,1,2]}
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{res_tab_path[1,2,4]}$^{
+Sexpr{res_tab_path_bin[1,2,2]}$^{
 \backslash
-Sexpr{ifelse(res_tab_path[3,2,4]<.01,"**"
+Sexpr{ifelse(res_tab_path_bin[3,2,2]<.01,"**"
 \end_layout
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_path[3,2,4]<.05,"*",ifelse(res_tab_path[3,2,4]<.1,"+","")))}}$
+	,ifelse(res_tab_path_bin[3,2,2]<.05,"*",ifelse(res_tab_path_bin[3,2,2]<.1,"+","")
+))}}$
 \end_layout
 
 \begin_layout Plain Layout
 
-& 
+&  
 \backslash
-Sexpr{res_tab_path[1,3,4]}$^{
-\backslash
-Sexpr{ifelse(res_tab_path[3,3,4]<.01,"**"
+textemdash
 \end_layout
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_path[3,3,4]<.05,"*",ifelse(res_tab_path[3,3,4]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
+&  
 \backslash
-Sexpr{res_tab_path[1,4,4]}$^{
-\backslash
-Sexpr{ifelse(res_tab_path[3,4,4]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_path[3,4,4]<.05,"*",ifelse(res_tab_path[3,4,4]<.1,"+","")))}}$
+textemdash
 \end_layout
 
 \begin_layout Plain Layout
 
  & 
 \backslash
-Sexpr{res_tab_path[1,5,4]} 
+Sexpr{res_tab_path_bin[1,5,2]} 
 \backslash
 
 \backslash
@@ -5374,102 +5450,82 @@ Sexpr{res_tab_path[1,5,4]}
 
 & (
 \backslash
-Sexpr{res_tab_path[2,1,4]})
+Sexpr{res_tab_path_bin[2,1,2]})
 \end_layout
 
 \begin_layout Plain Layout
 
 & (
 \backslash
-Sexpr{res_tab_path[2,2,4]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_path[2,3,4]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_path[2,4,4]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Index
+Sexpr{res_tab_path_bin[2,2,2]})
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{res_tab_path[1,1,5]}
+textemdash
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Remembers price of trial pack at endline
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{res_tab_path[1,2,5]}$^{
-\backslash
-Sexpr{ifelse(res_tab_path[3,2,5]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_path[3,2,5]<.05,"*",ifelse(res_tab_path[3,2,5]<.1,"+","")))}}$
+Sexpr{res_tab_path_next_season_bin[1,1,1]}
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{res_tab_path[1,3,5]}$^{
+Sexpr{res_tab_path_next_season_bin[1,2,1]}$^{
 \backslash
-Sexpr{ifelse(res_tab_path[3,3,5]<.01,"**"
+Sexpr{ifelse(res_tab_path_next_season_bin[3,2,1]<.01,"**"
 \end_layout
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_path[3,3,5]<.05,"*",ifelse(res_tab_path[3,3,5]<.1,"+","")))}}$
+	,ifelse(res_tab_path_next_season_bin[3,2,1]<.05,"*",ifelse(res_tab_path_next_sea
+son_bin[3,2,1]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
 
-& 
+&  
 \backslash
-Sexpr{res_tab_path[1,4,5]}$^{
-\backslash
-Sexpr{ifelse(res_tab_path[3,4,5]<.01,"**"
+textemdash
 \end_layout
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_path[3,4,5]<.05,"*",ifelse(res_tab_path[3,4,5]<.1,"+","")))}}$
+&  
+\backslash
+textemdash
 \end_layout
 
 \begin_layout Plain Layout
 
  & 
 \backslash
-Sexpr{res_tab_path[1,5,5]} 
+Sexpr{res_tab_path_next_season_bin[1,5,1]} 
 \backslash
 
 \backslash
@@ -5480,28 +5536,115 @@ Sexpr{res_tab_path[1,5,5]}
 
 & (
 \backslash
-Sexpr{res_tab_path[2,1,5]})
+Sexpr{res_tab_path_next_season_bin[2,1,1]})
 \end_layout
 
 \begin_layout Plain Layout
 
 & (
 \backslash
-Sexpr{res_tab_path[2,2,5]})
+Sexpr{res_tab_path_next_season_bin[2,2,1]})
+\end_layout
+
+\begin_layout Plain Layout
+
+&  
+\backslash
+textemdash
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+difference between actually paid and what farmer remembers at endline
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path_next_season_bin[1,1,2]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path_next_season_bin[1,2,2]}$^{
+\backslash
+Sexpr{ifelse(res_tab_path_next_season_bin[3,2,2]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_path_next_season_bin[3,2,2]<.05,"*",ifelse(res_tab_path_next_sea
+son_bin[3,2,2]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+&  
+\backslash
+textemdash
+\end_layout
+
+\begin_layout Plain Layout
+
+&  
+\backslash
+textemdash
+\end_layout
+
+\begin_layout Plain Layout
+
+ & 
+\backslash
+Sexpr{res_tab_path_next_season_bin[1,5,2]} 
+\backslash
+
+\backslash
+
 \end_layout
 
 \begin_layout Plain Layout
 
 & (
 \backslash
-Sexpr{res_tab_path[2,3,5]})
+Sexpr{res_tab_path_next_season_bin[2,1,2]})
 \end_layout
 
 \begin_layout Plain Layout
 
 & (
 \backslash
-Sexpr{res_tab_path[2,4,5]})
+Sexpr{res_tab_path_next_season_bin[2,2,2]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+textemdash
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -5510,6 +5653,18 @@ Sexpr{res_tab_path[2,4,5]})
 \backslash
 
 \backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -5557,8 +5712,1103 @@ scriptsize
 
 \begin_layout Plain Layout
 
-Note: price bought only on subset of farmers that paid positive price -
- not included in index.
+Note:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Complementary input use
+\end_layout
+
+\begin_layout Standard
+Performance of improved seed varieties also depends on the use of good agronomic
+ practices such as row planting and complementary inputs such as fertilizer.
+ Differential use of complementary inputs across the three groups may be
+ expected for several reasons.
+ For example, as some inputs such as fertilizer or pesticides are costly,
+ an income effect related to whether a price was paid or not may affect
+ complementary input use.
+ In such case, one would expect that input use is lower in the group that
+ was charged a positive price.
+ It may also be that farmers who paid a positive price value the seed higher
+ because of a sunk cost effect and this may crowd-in complementary inputs
+ and practices.
+ Farmers who participated in the bargaining experiment may likewise value
+ the seed higher due to signaling with similar crowding in of complementary
+ inputs and services 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "10.1162/rest_a_01285"
+literal "false"
+
+\end_inset
+
+.
+ At the same time, paying a positive price for improved seed may lead to
+ overly optimistic expectations, leading farmers to cut back on other inputs
+ or practices (for example since the seed is of a higher yielding variety
+ farmers expect that the seed would grow even without fertilizer or weeding)
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "miehe2023miracle"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Inputs-and-Agronomic"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we see that only about 25 percent of farmers in the first group used the
+ latest recommendations with respect to seed spacing and seed rate when
+ planting the seed from the trial pack.
+ We do not find differences in this probability across the groups.
+\end_layout
+
+\begin_layout Standard
+About 35 percent of farmers that paid a positive price have used organic
+ fertilizer on the field where the seed from the trial pack was planted.
+ This is higher among farmers that received a discount after negotiations,
+ albeit not significantly so.
+ It is lower among farmers that received the seed for free without bargaining,
+ but also here the difference is not significant.
+ When comparing the last two groups, we do find a significant difference,
+ suggesting the importance of prices to signal quality.
+\end_layout
+
+\begin_layout Standard
+About 20 percent of farmers in the reference group used inorganic fertilizer
+ on the trial plot.
+ While inorganic fertilizer use seems somewhat higher in the group that
+ received the seed for free, results do not point towards an important income
+ effect.
+ The same can be said for the use of chemicals, which is also a complementary
+ input that comes at a significant cost.
+\end_layout
+
+\begin_layout Standard
+Gap filling, whereby farmers replant seed that did not germinate after about
+ one week, requires both labour time and seed.
+ About 13 percent of farmers that paid a positive price for seed engaged
+ in gap filling.
+ This is higher in the groups where seed was provided for free, which suggests
+ an important income effect.
+\end_layout
+
+\begin_layout Standard
+Weeding is labour intensive.
+ We do not find that farmers allocate more or less labour to the trial plot
+ depending on what group the fall in.
+ Timely planting requires that labour is available at the right time.
+ If seed is valued less because it was provided for free, we would expect
+ to find that farmers in this group are less likely to prioritize the trial
+ seed plot.
+ This does not seem to be the case.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways true
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Inputs and Agronomic practices
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Inputs-and-Agronomic"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnotesize
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tabular}{rccccc}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& paid & 100 
+\backslash
+% discount & free & discount = free & nobs 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+cline{2-6}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Followed recommended seed spacing and seed rate 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,1,1]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,2,1]}$^{
+\backslash
+Sexpr{ifelse(res_tab_pract_bin[3,2,1]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_pract_bin[3,2,1]<.05,"*",ifelse(res_tab_pract_bin[3,2,1]<.1,"+","
+")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,3,1]}$^{
+\backslash
+Sexpr{ifelse(res_tab_pract_bin[3,3,1]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_pract_bin[3,3,1]<.05,"*",ifelse(res_tab_pract_bin[3,3,1]<.1,"+","
+")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,4,1]}$^{
+\backslash
+Sexpr{ifelse(res_tab_pract_bin[3,4,1]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_pract_bin[3,4,1]<.05,"*",ifelse(res_tab_pract_bin[3,4,1]<.1,"+","
+")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,5,1]} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_pract_bin[2,1,1]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_pract_bin[2,2,1]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_pract_bin[2,3,1]})
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Used organic fertilizer 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,1,2]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,2,2]}$^{
+\backslash
+Sexpr{ifelse(res_tab_pract_bin[3,2,2]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_pract_bin[3,2,2]<.05,"*",ifelse(res_tab_pract_bin[3,2,2]<.1,"+","
+")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,3,2]}$^{
+\backslash
+Sexpr{ifelse(res_tab_pract_bin[3,3,2]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_pract_bin[3,3,2]<.05,"*",ifelse(res_tab_pract_bin[3,3,2]<.1,"+","
+")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,4,2]}$^{
+\backslash
+Sexpr{ifelse(res_tab_pract_bin[3,4,2]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_pract_bin[3,4,2]<.05,"*",ifelse(res_tab_pract_bin[3,4,2]<.1,"+","
+")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,5,2]} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_pract_bin[2,1,2]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_pract_bin[2,2,2]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_pract_bin[2,3,2]})
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Used inorganic fertilizer (dap or urea)
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,1,3]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,2,3]}$^{
+\backslash
+Sexpr{ifelse(res_tab_pract_bin[3,2,3]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_pract_bin[3,2,3]<.05,"*",ifelse(res_tab_pract_bin[3,2,3]<.1,"+","
+")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,3,3]}$^{
+\backslash
+Sexpr{ifelse(res_tab_pract_bin[3,3,3]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_pract_bin[3,3,3]<.05,"*",ifelse(res_tab_pract_bin[3,3,3]<.1,"+","
+")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,4,3]}$^{
+\backslash
+Sexpr{ifelse(res_tab_pract_bin[3,4,3]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_pract_bin[3,4,3]<.05,"*",ifelse(res_tab_pract_bin[3,4,3]<.1,"+","
+")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,5,3]} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_pract_bin[2,1,3]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_pract_bin[2,2,3]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_pract_bin[2,3,3]})
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Used chemicals
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,1,4]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,2,4]}$^{
+\backslash
+Sexpr{ifelse(res_tab_pract_bin[3,2,4]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_pract_bin[3,2,4]<.05,"*",ifelse(res_tab_pract_bin[3,2,4]<.1,"+","
+")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,3,4]}$^{
+\backslash
+Sexpr{ifelse(res_tab_pract_bin[3,3,4]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_pract_bin[3,3,4]<.05,"*",ifelse(res_tab_pract_bin[3,3,4]<.1,"+","
+")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,4,4]}$^{
+\backslash
+Sexpr{ifelse(res_tab_pract_bin[3,4,4]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_pract_bin[3,4,4]<.05,"*",ifelse(res_tab_pract_bin[3,4,4]<.1,"+","
+")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,5,4]} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_pract_bin[2,1,4]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_pract_bin[2,2,4]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_pract_bin[2,3,4]})
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Gap filling
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,1,5]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,2,5]}$^{
+\backslash
+Sexpr{ifelse(res_tab_pract_bin[3,2,5]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_pract_bin[3,2,5]<.05,"*",ifelse(res_tab_pract_bin[3,2,5]<.1,"+","
+")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,3,5]}$^{
+\backslash
+Sexpr{ifelse(res_tab_pract_bin[3,3,5]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_pract_bin[3,3,5]<.05,"*",ifelse(res_tab_pract_bin[3,3,5]<.1,"+","
+")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,4,5]}$^{
+\backslash
+Sexpr{ifelse(res_tab_pract_bin[3,4,5]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_pract_bin[3,4,5]<.05,"*",ifelse(res_tab_pract_bin[3,4,5]<.1,"+","
+")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,5,5]} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_pract_bin[2,1,5]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_pract_bin[2,2,5]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_pract_bin[2,3,5]})
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Number of times weeding
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,1,6]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,2,6]}$^{
+\backslash
+Sexpr{ifelse(res_tab_pract_bin[3,2,6]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_pract_bin[3,2,6]<.05,"*",ifelse(res_tab_pract_bin[3,2,6]<.1,"+","
+")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,3,6]}$^{
+\backslash
+Sexpr{ifelse(res_tab_pract_bin[3,3,6]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_pract_bin[3,3,6]<.05,"*",ifelse(res_tab_pract_bin[3,3,6]<.1,"+","
+")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,4,6]}$^{
+\backslash
+Sexpr{ifelse(res_tab_pract_bin[3,4,6]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_pract_bin[3,4,6]<.05,"*",ifelse(res_tab_pract_bin[3,4,6]<.1,"+","
+")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,5,6]} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_pract_bin[2,1,6]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_pract_bin[2,2,6]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_pract_bin[2,3,6]})
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Timely planting
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,1,7]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,2,7]}$^{
+\backslash
+Sexpr{ifelse(res_tab_pract_bin[3,2,7]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_pract_bin[3,2,7]<.05,"*",ifelse(res_tab_pract_bin[3,2,7]<.1,"+","
+")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,3,7]}$^{
+\backslash
+Sexpr{ifelse(res_tab_pract_bin[3,3,7]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_pract_bin[3,3,7]<.05,"*",ifelse(res_tab_pract_bin[3,3,7]<.1,"+","
+")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,4,7]}$^{
+\backslash
+Sexpr{ifelse(res_tab_pract_bin[3,4,7]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_pract_bin[3,4,7]<.05,"*",ifelse(res_tab_pract_bin[3,4,7]<.1,"+","
+")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,5,7]} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_pract_bin[2,1,7]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_pract_bin[2,2,7]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_pract_bin[2,3,7]})
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Index
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,1,8]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,2,8]}$^{
+\backslash
+Sexpr{ifelse(res_tab_pract_bin[3,2,8]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_pract_bin[3,2,8]<.05,"*",ifelse(res_tab_pract_bin[3,2,8]<.1,"+","
+")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,3,8]}$^{
+\backslash
+Sexpr{ifelse(res_tab_pract_bin[3,3,8]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_pract_bin[3,3,8]<.05,"*",ifelse(res_tab_pract_bin[3,3,8]<.1,"+","
+")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,4,8]}$^{
+\backslash
+Sexpr{ifelse(res_tab_pract_bin[3,4,8]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_pract_bin[3,4,8]<.05,"*",ifelse(res_tab_pract_bin[3,4,8]<.1,"+","
+")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_pract_bin[1,5,8]} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_pract_bin[2,1,8]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_pract_bin[2,2,8]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_pract_bin[2,3,8]})
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+scriptsize
+\end_layout
+
+\begin_layout Plain Layout
+
+Note: 
 \end_layout
 
 \end_inset
@@ -5572,39 +6822,130 @@ Note: price bought only on subset of farmers that paid positive price -
 \end_layout
 
 \begin_layout Standard
-Remembers price at midline (yes/no)
+Overall, looking at the index, we find increased use of complementary inputs
+ and good agronomic practices in the group that was exposed to the bargaining
+ experiment but then received a surprise discount.
+ This is consistent with prices acting as a signal for quality and may also
+ indicate a potential income effect.
+\end_layout
+
+\begin_layout Subsection
+Continuous analysis
 \end_layout
 
 \begin_layout Standard
-Difference between price paid and what is recalled
+In this part, we estimate a models that are similar to 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "10.1257/aer.100.5.2383"
+literal "false"
+
+\end_inset
+
+ that allows us to isolate the screening effect.
+ To do so, we drop the groups that did not enroll in the bargaining experiment
+ and confine attention to the first two groups (farmers that paid a positive
+ price and farmers that received a 100 percent discount after negotiation).
+ We first regress outcomes on the price that was agreed on during the bargaining
+ experiment (controlling for the actual price paid after the discount and
+ the initial offer price) to estimate the screening effect.
+ We also regress outcomes on the actual price paid (controlling for the
+ price agreed on during bargaining and the initial offer price) to estimate
+ the sunk cost effect.
+ Finally, we regress outcomes on the initial offer price (controlling for
+ the price agreed on during bargaining and the price paid after discount)
+ to estimate the signaling effect.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Controls are demeaned and enter the regression fully interacted 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "10.1214/12-AOAS583"
+literal "false"
+
+\end_inset
+
+.
+ Standard errors are not adjusted as initial offer prices are randomized
+ at the individual level.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Trial pack use
 \end_layout
 
 \begin_layout Standard
-Recalls seed type at midline
+We start again by looking at if, and how, farmers used the seed trial pack.
+ Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Effects-on-Use"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows that on average, almost 97 percent of farmers that obtained the seed
+ pack after negotiation used it as seed on a plot in the first season of
+ 2023.
+ The second column shows that there is no impact on the propensity to use
+ the seed as the price at which the transaction was concluded changes.
+ In other words, we do not find evidence of screening effects on seed trial
+ pack use.
+ In a similar vein, we do not find evidence of a sunk cost effect on seed
+ trial pack use: in the third column, we estimate the relationship between
+ actual price paid (after discount) and trial pack use, but the coefficient
+ is zero.
+ Finally, the fourth column shows that the price at which the seed was initially
+ offered at the start of the bargaining does also not impact seed use, suggestin
+g there is not signaling effect.
 \end_layout
 
 \begin_layout Standard
-Recalls producer at midline
+The table similarly does not find screening, sunk cost, nor signaling effects
+ for the likelihood that farmers did not mix the seed from the seed trial
+ pack with other seed.
+ There are also no effects for the proportion of farmers that use a plot
+ layout that enables for direct comparison between seed performance of the
+ trial seed and local seed.
+ We do find that farmers who paid a higher price after the discount were
+ less likely to keep grain obtained from the trial plot separate during
+ and after harvest.
+ This points to a negative sunk cost effect.
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+How can this be explained? A potential explanation for this is that the
+ estimate is conflated with an income effect, whereby farmers who paid the
+ full price do not have money to keep harvest separate??? This explanation
+ is consistent with the finding in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Effects-on-Use-binary"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ that the likelihood of keeping grain separated is significantly higher
+ in the group that received the 100 percent discount.
 \end_layout
 
-\begin_layout Standard
-Remembers getting/buying seed at endline
-\end_layout
+\end_inset
 
-\begin_layout Standard
-Remembers price at endline (yes/no)
-\end_layout
 
-\begin_layout Standard
-Difference between price paid and what is recalled
-\end_layout
-
-\begin_layout Standard
-Recalls seed type at endline
-\end_layout
-
-\begin_layout Standard
-Recalls producer at endline
 \end_layout
 
 \begin_layout Standard
@@ -5618,6 +6959,13 @@ status collapsed
 
 \begin_layout Plain Layout
 Effects on Use of trial seed
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Effects-on-Use"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -6244,6 +7592,1892 @@ Note:
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Overall, we do not find convincing effects that screening, sunk cost or
+ signaling are important early in the causal impact chain.
+\end_layout
+
+\begin_layout Subsubsection
+Adoption and outcomes in subsequent season
+\end_layout
+
+\begin_layout Standard
+Also here, no real effects.
+\end_layout
+
+\begin_layout Standard
+Finally, we do find evidence of screening effects on production.
+ For each 1000 UGX increase in the valuation of the seed trial pack, production
+ in the subsequent year increased by almost 20 kilograms.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways true
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Effects in subsequent season
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnotesize
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tabular}{rccccc}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& mean & screening & sunk cost & signaling & nobs 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+cline{2-6}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+used improved seed on any plot?
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_next_season[1,1,1]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_next_season[1,2,1]}$^{
+\backslash
+Sexpr{ifelse(res_tab_next_season[3,2,1]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_next_season[3,2,1]<.05,"*",ifelse(res_tab_next_season[3,2,1]<.1,"
++","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_next_season[1,3,1]}$^{
+\backslash
+Sexpr{ifelse(res_tab_next_season[3,3,1]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_next_season[3,3,1]<.05,"*",ifelse(res_tab_next_season[3,3,1]<.1,"
++","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_next_season[1,4,1]}$^{
+\backslash
+Sexpr{ifelse(res_tab_next_season[3,4,1]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_next_season[3,4,1]<.05,"*",ifelse(res_tab_next_season[3,4,1]<.1,"
++","")))}}$ & 
+\backslash
+Sexpr{res_tab_next_season[1,5,1]} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_next_season[2,1,1]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_next_season[2,2,1]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_next_season[2,3,1]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_next_season[2,4,1]})
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+used fresh bazooka on any plot?
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_next_season[1,1,2]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_next_season[1,2,2]}$^{
+\backslash
+Sexpr{ifelse(res_tab_next_season[3,2,2]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_next_season[3,2,2]<.05,"*",ifelse(res_tab_next_season[3,2,2]<.1,"
++","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_next_season[1,3,2]}$^{
+\backslash
+Sexpr{ifelse(res_tab_next_season[3,3,2]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_next_season[3,3,2]<.05,"*",ifelse(res_tab_next_season[3,3,2]<.1,"
++","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_next_season[1,4,2]}$^{
+\backslash
+Sexpr{ifelse(res_tab_next_season[3,4,2]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_next_season[3,4,2]<.05,"*",ifelse(res_tab_next_season[3,4,2]<.1,"
++","")))}}$ & 
+\backslash
+Sexpr{res_tab_next_season[1,5,2]} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_next_season[2,1,2]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_next_season[2,2,2]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_next_season[2,3,2]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_next_season[2,4,2]})
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+used improved seed on random plot
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_next_season[1,1,3]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_next_season[1,2,3]}$^{
+\backslash
+Sexpr{ifelse(res_tab_next_season[3,2,3]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_next_season[3,2,3]<.05,"*",ifelse(res_tab_next_season[3,2,3]<.1,"
++","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_next_season[1,3,3]}$^{
+\backslash
+Sexpr{ifelse(res_tab_next_season[3,3,3]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_next_season[3,3,3]<.05,"*",ifelse(res_tab_next_season[3,3,3]<.1,"
++","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_next_season[1,4,3]}$^{
+\backslash
+Sexpr{ifelse(res_tab_next_season[3,4,3]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_next_season[3,4,3]<.05,"*",ifelse(res_tab_next_season[3,4,3]<.1,"
++","")))}}$ & 
+\backslash
+Sexpr{res_tab_next_season[1,5,3]} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_next_season[2,1,3]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_next_season[2,2,3]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_next_season[2,3,3]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_next_season[2,4,3]})
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+used bazooka seed on random plot
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_next_season[1,1,4]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_next_season[1,2,4]}$^{
+\backslash
+Sexpr{ifelse(res_tab_next_season[3,2,4]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_next_season[3,2,4]<.05,"*",ifelse(res_tab_next_season[3,2,4]<.1,"
++","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_next_season[1,3,4]}$^{
+\backslash
+Sexpr{ifelse(res_tab_next_season[3,3,4]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_next_season[3,3,4]<.05,"*",ifelse(res_tab_next_season[3,3,4]<.1,"
++","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_next_season[1,4,4]}$^{
+\backslash
+Sexpr{ifelse(res_tab_next_season[3,4,4]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_next_season[3,4,4]<.05,"*",ifelse(res_tab_next_season[3,4,4]<.1,"
++","")))}}$ & 
+\backslash
+Sexpr{res_tab_next_season[1,5,4]} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_next_season[2,1,4]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_next_season[2,2,4]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_next_season[2,3,4]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_next_season[2,4,4]})
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Quantity of seed
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_next_season[1,1,5]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_next_season[1,2,5]}$^{
+\backslash
+Sexpr{ifelse(res_tab_next_season[3,2,5]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_next_season[3,2,5]<.05,"*",ifelse(res_tab_next_season[3,2,5]<.1,"
++","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_next_season[1,3,5]}$^{
+\backslash
+Sexpr{ifelse(res_tab_next_season[3,3,5]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_next_season[3,3,5]<.05,"*",ifelse(res_tab_next_season[3,3,5]<.1,"
++","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_next_season[1,4,5]}$^{
+\backslash
+Sexpr{ifelse(res_tab_next_season[3,4,5]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_next_season[3,4,5]<.05,"*",ifelse(res_tab_next_season[3,4,5]<.1,"
++","")))}}$ & 
+\backslash
+Sexpr{res_tab_next_season[1,5,5]} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_next_season[2,1,5]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_next_season[2,2,5]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_next_season[2,3,5]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_next_season[2,4,5]})
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Quantity of seed/acre
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_next_season[1,1,6]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_next_season[1,2,6]}$^{
+\backslash
+Sexpr{ifelse(res_tab_next_season[3,2,6]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_next_season[3,2,6]<.05,"*",ifelse(res_tab_next_season[3,2,6]<.1,"
++","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_next_season[1,3,6]}$^{
+\backslash
+Sexpr{ifelse(res_tab_next_season[3,3,6]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_next_season[3,3,6]<.05,"*",ifelse(res_tab_next_season[3,3,6]<.1,"
++","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_next_season[1,4,6]}$^{
+\backslash
+Sexpr{ifelse(res_tab_next_season[3,4,6]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_next_season[3,4,6]<.05,"*",ifelse(res_tab_next_season[3,4,6]<.1,"
++","")))}}$ & 
+\backslash
+Sexpr{res_tab_next_season[1,5,6]} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_next_season[2,1,6]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_next_season[2,2,6]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_next_season[2,3,6]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_next_season[2,4,6]})
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Production
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_next_season[1,1,7]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_next_season[1,2,7]}$^{
+\backslash
+Sexpr{ifelse(res_tab_next_season[3,2,7]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_next_season[3,2,7]<.05,"*",ifelse(res_tab_next_season[3,2,7]<.1,"
++","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_next_season[1,3,7]}$^{
+\backslash
+Sexpr{ifelse(res_tab_next_season[3,3,7]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_next_season[3,3,7]<.05,"*",ifelse(res_tab_next_season[3,3,7]<.1,"
++","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_next_season[1,4,7]}$^{
+\backslash
+Sexpr{ifelse(res_tab_next_season[3,4,7]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_next_season[3,4,7]<.05,"*",ifelse(res_tab_next_season[3,4,7]<.1,"
++","")))}}$ & 
+\backslash
+Sexpr{res_tab_next_season[1,5,7]} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_next_season[2,1,7]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_next_season[2,2,7]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_next_season[2,3,7]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_next_season[2,4,7]})
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Productivity
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_next_season[1,1,8]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_next_season[1,2,8]}$^{
+\backslash
+Sexpr{ifelse(res_tab_next_season[3,2,8]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_next_season[3,2,8]<.05,"*",ifelse(res_tab_next_season[3,2,8]<.1,"
++","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_next_season[1,3,8]}$^{
+\backslash
+Sexpr{ifelse(res_tab_next_season[3,3,8]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_next_season[3,3,8]<.05,"*",ifelse(res_tab_next_season[3,3,8]<.1,"
++","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_next_season[1,4,8]}$^{
+\backslash
+Sexpr{ifelse(res_tab_next_season[3,4,8]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_next_season[3,4,8]<.05,"*",ifelse(res_tab_next_season[3,4,8]<.1,"
++","")))}}$ & 
+\backslash
+Sexpr{res_tab_next_season[1,5,8]} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_next_season[2,1,8]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_next_season[2,2,8]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_next_season[2,3,8]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_next_season[2,4,8]})
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Index
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_next_season[1,1,9]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_next_season[1,2,9]}$^{
+\backslash
+Sexpr{ifelse(res_tab_next_season[3,2,9]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_next_season[3,2,9]<.05,"*",ifelse(res_tab_next_season[3,2,9]<.1,"
++","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_next_season[1,3,9]}$^{
+\backslash
+Sexpr{ifelse(res_tab_next_season[3,3,9]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_next_season[3,3,9]<.05,"*",ifelse(res_tab_next_season[3,3,9]<.1,"
++","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_next_season[1,4,9]}$^{
+\backslash
+Sexpr{ifelse(res_tab_next_season[3,4,9]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_next_season[3,4,9]<.05,"*",ifelse(res_tab_next_season[3,4,9]<.1,"
++","")))}}$ & 
+\backslash
+Sexpr{res_tab_next_season[1,5,9]} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_next_season[2,1,9]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_next_season[2,2,9]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_next_season[2,3,9]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_next_season[2,4,9]})
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+scriptsize
+\end_layout
+
+\begin_layout Plain Layout
+
+Note: 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Attention
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways true
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Pathways
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnotesize
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tabular}{rccccc}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& mean & screening & sunk cost & signaling & nobs 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+cline{2-6}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Remembers seed at midline
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path[1,1,3]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path[1,2,3]}$^{
+\backslash
+Sexpr{ifelse(res_tab_path[3,2,3]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_path[3,2,3]<.05,"*",ifelse(res_tab_path[3,2,3]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path[1,3,3]}$^{
+\backslash
+Sexpr{ifelse(res_tab_path[3,3,3]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_path[3,3,3]<.05,"*",ifelse(res_tab_path[3,3,3]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path[1,4,3]}$^{
+\backslash
+Sexpr{ifelse(res_tab_path[3,4,3]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_path[3,4,3]<.05,"*",ifelse(res_tab_path[3,4,3]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+ & 
+\backslash
+Sexpr{res_tab_path[1,5,3]} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path[2,1,3]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path[2,2,3]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path[2,3,3]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path[2,4,3]})
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Remembers seed producer correctly at midline
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path[1,1,4]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path[1,2,4]}$^{
+\backslash
+Sexpr{ifelse(res_tab_path[3,2,4]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_path[3,2,4]<.05,"*",ifelse(res_tab_path[3,2,4]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path[1,3,4]}$^{
+\backslash
+Sexpr{ifelse(res_tab_path[3,3,4]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_path[3,3,4]<.05,"*",ifelse(res_tab_path[3,3,4]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path[1,4,4]}$^{
+\backslash
+Sexpr{ifelse(res_tab_path[3,4,4]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_path[3,4,4]<.05,"*",ifelse(res_tab_path[3,4,4]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+ & 
+\backslash
+Sexpr{res_tab_path[1,5,4]} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path[2,1,4]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path[2,2,4]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path[2,3,4]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path[2,4,4]})
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Remembers price of trail pack at midline
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path[1,1,1]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path[1,2,1]}$^{
+\backslash
+Sexpr{ifelse(res_tab_path[3,2,1]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_path[3,2,1]<.05,"*",ifelse(res_tab_path[3,2,1]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path[1,3,1]}$^{
+\backslash
+Sexpr{ifelse(res_tab_path[3,3,1]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_path[3,3,1]<.05,"*",ifelse(res_tab_path[3,3,1]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path[1,4,1]}$^{
+\backslash
+Sexpr{ifelse(res_tab_path[3,4,1]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_path[3,4,1]<.05,"*",ifelse(res_tab_path[3,4,1]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+ & 
+\backslash
+Sexpr{res_tab_path[1,5,1]} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path[2,1,1]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path[2,2,1]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path[2,3,1]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path[2,4,1]})
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+difference between actually paid and what farmer remembers at midline
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path[1,1,2]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path[1,2,2]}$^{
+\backslash
+Sexpr{ifelse(res_tab_path[3,2,2]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_path[3,2,2]<.05,"*",ifelse(res_tab_path[3,2,2]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path[1,3,2]}$^{
+\backslash
+Sexpr{ifelse(res_tab_path[3,3,2]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_path[3,3,2]<.05,"*",ifelse(res_tab_path[3,3,2]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path[1,4,2]}$^{
+\backslash
+Sexpr{ifelse(res_tab_path[3,4,2]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_path[3,4,2]<.05,"*",ifelse(res_tab_path[3,4,2]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+ & 
+\backslash
+Sexpr{res_tab_path[1,5,2]} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path[2,1,2]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path[2,2,2]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path[2,3,2]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path[2,4,2]})
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Remembers price of trail pack at endline
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path_next_season[1,1,1]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path_next_season[1,2,1]}$^{
+\backslash
+Sexpr{ifelse(res_tab_path_next_season[3,2,1]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_path_next_season[3,2,1]<.05,"*",ifelse(res_tab_path_next_season[
+3,2,1]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path_next_season[1,3,1]}$^{
+\backslash
+Sexpr{ifelse(res_tab_path_next_season[3,3,1]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_path_next_season[3,3,1]<.05,"*",ifelse(res_tab_path_next_season[
+3,3,1]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path_next_season[1,4,1]}$^{
+\backslash
+Sexpr{ifelse(res_tab_path_next_season[3,4,1]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_path_next_season[3,4,1]<.05,"*",ifelse(res_tab_path_next_season[
+3,4,1]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+ & 
+\backslash
+Sexpr{res_tab_path_next_season[1,5,1]} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path_next_season[2,1,1]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path_next_season[2,2,1]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path_next_season[2,3,1]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path_next_season[2,4,1]})
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+difference between actually paid and what farmer remembers at endline
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path_next_season[1,1,2]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path_next_season[1,2,2]}$^{
+\backslash
+Sexpr{ifelse(res_tab_path_next_season[3,2,2]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_path_next_season[3,2,2]<.05,"*",ifelse(res_tab_path_next_season[
+3,2,2]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path_next_season[1,3,2]}$^{
+\backslash
+Sexpr{ifelse(res_tab_path_next_season[3,3,2]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_path_next_season[3,3,2]<.05,"*",ifelse(res_tab_path_next_season[
+3,3,2]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_path_next_season[1,4,2]}$^{
+\backslash
+Sexpr{ifelse(res_tab_path_next_season[3,4,2]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_path_next_season[3,4,2]<.05,"*",ifelse(res_tab_path_next_season[
+3,4,2]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+ & 
+\backslash
+Sexpr{res_tab_path_next_season[1,5,2]} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path_next_season[2,1,2]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path_next_season[2,2,2]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path_next_season[2,3,2]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_path_next_season[2,4,2]})
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+scriptsize
+\end_layout
+
+\begin_layout Plain Layout
+
+Note: price bought only on subset of farmers that paid positive price -
+ not included in index.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Complementary input use
 \end_layout
 
 \begin_layout Standard
@@ -9612,1751 +12846,13 @@ Note:
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Float table
-wide false
-sideways true
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Pathways
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-footnotesize
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{center}
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tabular}{rccccc}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& mean & screening & sunk cost & signaling & nobs 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-cline{2-6}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Attention: remembers seed type correctly
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_path[1,1,1]}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_path[1,2,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_path[3,2,1]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_path[3,2,1]<.05,"*",ifelse(res_tab_path[3,2,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_path[1,3,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_path[3,3,1]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_path[3,3,1]<.05,"*",ifelse(res_tab_path[3,3,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_path[1,4,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_path[3,4,1]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_path[3,4,1]<.05,"*",ifelse(res_tab_path[3,4,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
- & 
-\backslash
-Sexpr{res_tab_path[1,5,1]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_path[2,1,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_path[2,2,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_path[2,3,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_path[2,4,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Attention: remembers producer
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_path[1,1,2]}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_path[1,2,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_path[3,2,2]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_path[3,2,2]<.05,"*",ifelse(res_tab_path[3,2,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_path[1,3,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_path[3,3,2]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_path[3,3,2]<.05,"*",ifelse(res_tab_path[3,3,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_path[1,4,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_path[3,4,2]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_path[3,4,2]<.05,"*",ifelse(res_tab_path[3,4,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
- & 
-\backslash
-Sexpr{res_tab_path[1,5,2]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_path[2,1,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_path[2,2,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_path[2,3,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_path[2,4,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Valuation: price in shop
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_path[1,1,3]}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_path[1,2,3]}$^{
-\backslash
-Sexpr{ifelse(res_tab_path[3,2,3]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_path[3,2,3]<.05,"*",ifelse(res_tab_path[3,2,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_path[1,3,3]}$^{
-\backslash
-Sexpr{ifelse(res_tab_path[3,3,3]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_path[3,3,3]<.05,"*",ifelse(res_tab_path[3,3,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_path[1,4,3]}$^{
-\backslash
-Sexpr{ifelse(res_tab_path[3,4,3]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_path[3,4,3]<.05,"*",ifelse(res_tab_path[3,4,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
- & 
-\backslash
-Sexpr{res_tab_path[1,5,3]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_path[2,1,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_path[2,2,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_path[2,3,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_path[2,4,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Valuation: price bought
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_path[1,1,4]}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_path[1,2,4]}$^{
-\backslash
-Sexpr{ifelse(res_tab_path[3,2,4]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_path[3,2,4]<.05,"*",ifelse(res_tab_path[3,2,4]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_path[1,3,4]}$^{
-\backslash
-Sexpr{ifelse(res_tab_path[3,3,4]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_path[3,3,4]<.05,"*",ifelse(res_tab_path[3,3,4]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_path[1,4,4]}$^{
-\backslash
-Sexpr{ifelse(res_tab_path[3,4,4]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_path[3,4,4]<.05,"*",ifelse(res_tab_path[3,4,4]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
- & 
-\backslash
-Sexpr{res_tab_path[1,5,4]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_path[2,1,4]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_path[2,2,4]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_path[2,3,4]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_path[2,4,4]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Index
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_path[1,1,5]}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_path[1,2,5]}$^{
-\backslash
-Sexpr{ifelse(res_tab_path[3,2,5]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_path[3,2,5]<.05,"*",ifelse(res_tab_path[3,2,5]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_path[1,3,5]}$^{
-\backslash
-Sexpr{ifelse(res_tab_path[3,3,5]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_path[3,3,5]<.05,"*",ifelse(res_tab_path[3,3,5]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_path[1,4,5]}$^{
-\backslash
-Sexpr{ifelse(res_tab_path[3,4,5]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_path[3,4,5]<.05,"*",ifelse(res_tab_path[3,4,5]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
- & 
-\backslash
-Sexpr{res_tab_path[1,5,5]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_path[2,1,5]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_path[2,2,5]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_path[2,3,5]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_path[2,4,5]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{tabular}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-scriptsize
-\end_layout
-
-\begin_layout Plain Layout
-
-Note: price bought only on subset of farmers that paid positive price -
- not included in index.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+\begin_layout Section
+Conclusion
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float table
-wide false
-sideways true
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Effects in subsequent season
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-footnotesize
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{center}
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tabular}{rccccc}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& mean & screening & sunk cost & signaling & nobs 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-cline{2-6}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-used improved seed on any plot?
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,1,1]}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,2,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season[3,2,1]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_next_season[3,2,1]<.05,"*",ifelse(res_tab_next_season[3,2,1]<.1,"
-+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,3,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season[3,3,1]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_next_season[3,3,1]<.05,"*",ifelse(res_tab_next_season[3,3,1]<.1,"
-+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,4,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season[3,4,1]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_next_season[3,4,1]<.05,"*",ifelse(res_tab_next_season[3,4,1]<.1,"
-+","")))}}$ & 
-\backslash
-Sexpr{res_tab_next_season[1,5,1]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,1,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,2,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,3,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,4,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-used fresh bazooka on any plot?
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,1,2]}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,2,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season[3,2,2]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_next_season[3,2,2]<.05,"*",ifelse(res_tab_next_season[3,2,2]<.1,"
-+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,3,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season[3,3,2]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_next_season[3,3,2]<.05,"*",ifelse(res_tab_next_season[3,3,2]<.1,"
-+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,4,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season[3,4,2]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_next_season[3,4,2]<.05,"*",ifelse(res_tab_next_season[3,4,2]<.1,"
-+","")))}}$ & 
-\backslash
-Sexpr{res_tab_next_season[1,5,2]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,1,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,2,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,3,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,4,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-used improved seed on random plot
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,1,3]}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,2,3]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season[3,2,3]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_next_season[3,2,3]<.05,"*",ifelse(res_tab_next_season[3,2,3]<.1,"
-+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,3,3]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season[3,3,3]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_next_season[3,3,3]<.05,"*",ifelse(res_tab_next_season[3,3,3]<.1,"
-+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,4,3]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season[3,4,3]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_next_season[3,4,3]<.05,"*",ifelse(res_tab_next_season[3,4,3]<.1,"
-+","")))}}$ & 
-\backslash
-Sexpr{res_tab_next_season[1,5,3]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,1,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,2,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,3,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,4,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-used bazooka seed on random plot
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,1,4]}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,2,4]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season[3,2,4]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_next_season[3,2,4]<.05,"*",ifelse(res_tab_next_season[3,2,4]<.1,"
-+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,3,4]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season[3,3,4]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_next_season[3,3,4]<.05,"*",ifelse(res_tab_next_season[3,3,4]<.1,"
-+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,4,4]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season[3,4,4]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_next_season[3,4,4]<.05,"*",ifelse(res_tab_next_season[3,4,4]<.1,"
-+","")))}}$ & 
-\backslash
-Sexpr{res_tab_next_season[1,5,4]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,1,4]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,2,4]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,3,4]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,4,4]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Quantity of seed
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,1,5]}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,2,5]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season[3,2,5]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_next_season[3,2,5]<.05,"*",ifelse(res_tab_next_season[3,2,5]<.1,"
-+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,3,5]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season[3,3,5]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_next_season[3,3,5]<.05,"*",ifelse(res_tab_next_season[3,3,5]<.1,"
-+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,4,5]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season[3,4,5]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_next_season[3,4,5]<.05,"*",ifelse(res_tab_next_season[3,4,5]<.1,"
-+","")))}}$ & 
-\backslash
-Sexpr{res_tab_next_season[1,5,5]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,1,5]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,2,5]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,3,5]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,4,5]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Quantity of seed/acre
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,1,6]}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,2,6]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season[3,2,6]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_next_season[3,2,6]<.05,"*",ifelse(res_tab_next_season[3,2,6]<.1,"
-+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,3,6]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season[3,3,6]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_next_season[3,3,6]<.05,"*",ifelse(res_tab_next_season[3,3,6]<.1,"
-+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,4,6]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season[3,4,6]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_next_season[3,4,6]<.05,"*",ifelse(res_tab_next_season[3,4,6]<.1,"
-+","")))}}$ & 
-\backslash
-Sexpr{res_tab_next_season[1,5,6]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,1,6]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,2,6]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,3,6]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,4,6]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Production
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,1,7]}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,2,7]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season[3,2,7]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_next_season[3,2,7]<.05,"*",ifelse(res_tab_next_season[3,2,7]<.1,"
-+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,3,7]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season[3,3,7]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_next_season[3,3,7]<.05,"*",ifelse(res_tab_next_season[3,3,7]<.1,"
-+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,4,7]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season[3,4,7]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_next_season[3,4,7]<.05,"*",ifelse(res_tab_next_season[3,4,7]<.1,"
-+","")))}}$ & 
-\backslash
-Sexpr{res_tab_next_season[1,5,7]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,1,7]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,2,7]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,3,7]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,4,7]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Productivity
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,1,8]}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,2,8]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season[3,2,8]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_next_season[3,2,8]<.05,"*",ifelse(res_tab_next_season[3,2,8]<.1,"
-+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,3,8]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season[3,3,8]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_next_season[3,3,8]<.05,"*",ifelse(res_tab_next_season[3,3,8]<.1,"
-+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,4,8]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season[3,4,8]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_next_season[3,4,8]<.05,"*",ifelse(res_tab_next_season[3,4,8]<.1,"
-+","")))}}$ & 
-\backslash
-Sexpr{res_tab_next_season[1,5,8]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,1,8]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,2,8]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,3,8]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,4,8]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Index
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,1,9]}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,2,9]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season[3,2,9]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_next_season[3,2,9]<.05,"*",ifelse(res_tab_next_season[3,2,9]<.1,"
-+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,3,9]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season[3,3,9]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_next_season[3,3,9]<.05,"*",ifelse(res_tab_next_season[3,3,9]<.1,"
-+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,4,9]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season[3,4,9]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_next_season[3,4,9]<.05,"*",ifelse(res_tab_next_season[3,4,9]<.1,"
-+","")))}}$ & 
-\backslash
-Sexpr{res_tab_next_season[1,5,9]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,1,9]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,2,9]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,3,9]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,4,9]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{tabular}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-scriptsize
-\end_layout
-
-\begin_layout Plain Layout
-
-Note: 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+A farmer's willingness to pay as approximated by the price on which agreement
+ was reached during does not predict use of the seed trial pack.
 \end_layout
 
 \begin_layout Section

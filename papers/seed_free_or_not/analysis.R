@@ -270,7 +270,7 @@ dta$used_TP <- dta$used_TP == "Yes"
 dta$remembers <- dta$Rec_TP == "Yes" |  dta$Buy_TP  == "Yes"
 dta$TP_separate <- dta$TP_separate == 1
 
-dta$cor_plant <- dta$space==2 & dta$seed_no==2
+dta$cor_plant <- dta$space=="4" & dta$seed_no=="2"
 dta$use_fert_inorg <-  dta$dap_app== "Yes" | dta$ure_app== "Yes"
 dta$use_fert_org <-  dta$org_app== "Yes" 
 dta$use_chem <-  dta$cide_use== "Yes" 
@@ -288,11 +288,11 @@ dta$happy_disease <- dta$happy_disease == 1
 dta$happy_germinate <- dta$happy_germinate ==1
 dta$happy <- dta$happy == 1
 
-dta$screening <- (as.numeric(as.character(dta$final_price)))/1000
-dta$signaling <- (as.numeric(as.character(dta$P1_pric)))/1000
+dta$screening <- (as.numeric(as.character(dta$final_price)))/1000  ###this is the offer price in ashraf et al
+dta$signaling <- (as.numeric(as.character(dta$P1_pric)))/1000 
 #to measure sunk cost effect, the transaction price is used, that is the amount that is paid after the discount
 #as we did a full discount to it is zero for those that got a discount, and the price paid for those that did not get the discount
-dta$sunk <- as.numeric(!dta$discounted)*dta$screening
+dta$sunk <- as.numeric(!dta$discounted)*dta$screening ## this would be the transaction price in ahsraf et al
 
 dta$d_screening <- dta$screening - mean(dta$screening, na.rm=TRUE)
 dta$d_signaling <- dta$signaling - mean(dta$signaling, na.rm=TRUE)
@@ -431,6 +431,42 @@ for (i in 1:length(outcomes)) {
 }
 res_tab_pract <- round(res_tab,digits=3)
 save(res_tab_pract, file=paste(path,"papers/seed_free_or_not/res_tab_pract.Rdata",sep="/"))
+
+###now run binary analysis
+
+#matrix to store results
+res_tab <-  array(NA,dim=c(3,5,length(outcomes)))
+
+for (i in 1:length(outcomes)) {
+  ### here we need clustering
+  ### here we need clustering
+  ols <- lm(as.formula( paste(outcomes[i],"discounted+trial_P",sep="~")), data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+  coef_test(ols, vcov_cluster)$beta
+  
+  res_tab[1,1,i] <-  coef_test(ols, vcov_cluster)$beta[1]
+  res_tab[2,1,i] <- coef_test(ols, vcov_cluster)$SE[1]
+  
+  res_tab[1,2,i]  <-  coef_test(ols, vcov_cluster)$beta[2]
+  res_tab[2,2,i] <-  coef_test(ols, vcov_cluster)$SE[2]
+  res_tab[3,2,i] <-  coef_test(ols, vcov_cluster)$p_Satt[2]
+  ### regression for sunk cost effect - clustering
+  
+  
+  res_tab[1,3,i]  <- coef_test(ols, vcov_cluster)$beta[3]
+  res_tab[2,3,i] <- coef_test(ols, vcov_cluster)$SE[3]
+  res_tab[3,3,i] <-  coef_test(ols, vcov_cluster)$p_Satt[3]
+  
+  lh <-   linearHypothesis(ols, c("discountedTRUE = trial_PTRUE"),vcov=vcov_cluster )
+  res_tab[1,4,i] <- lh$F[2]
+  res_tab[3,4,i] <- lh$`Pr(>F)`[2]
+  
+  res_tab[1,5,i] <- nobs(ols)
+  
+}
+
+res_tab_pract_bin <- round(res_tab,digits=3)
+save(res_tab_pract_bin, file=paste(path,"papers/seed_free_or_not/res_tab_pract_bin.Rdata",sep="/"))
 
 #table 3: impact on characteristics
 
@@ -610,30 +646,32 @@ for (i in 1:length(outcomes)) {
 res_tab_plan <- round(res_tab,digits=3)
 save(res_tab_plan, file=paste(path,"papers/seed_free_or_not/res_tab_plan.Rdata",sep="/"))
 
+###impact on 
 
-
-dta$remembers_seed <- dta$rem_sdType == "Yes"
-dta$remembers_comp <- dta$rem_comp == "Yes"
+dta$remembers_seed <- dta$exp1_lmpr == "Bazooka"
+dta$remembers_comp <- dta$seedco == "4"
 dta$value_shop <- as.numeric(as.character(dta$value))
 
 dta$remembers_paying <- FALSE
 dta$remembers_paying <- dta$pay == "Yes" | dta$pay_d=="Yes"
 dta$remembers_paying[dta$pay == "n/a" & dta$pay_d=="n/a"] <- NA
+dta$remembers_paying[dta$trial_P] <- NA
+
 
 dta$value_paid <- as.numeric(as.character(dta$final_price))
 ### quadratic loss for error in price recall
-dta$price_diff_sq <- (as.numeric(as.character(dta$final_price))/1000 - as.numeric(as.character(dta$price_paid))/1000)^2
+dta$price_diff_sq <- abs(as.numeric(as.character(dta$final_price)) - as.numeric(as.character(dta$price_paid)))
+dta$price_diff_sq[dta$trial_P] <- NA
 #iterate over outcomes
-outcomes <- c("remembers_paying","remembers_seed",
-              "remembers_comp",
-              "value_shop")
+outcomes <- c("remembers_paying","price_diff_sq","remembers_seed",
+              "remembers_comp")
 
 index_use <- icwIndex(xmat=dta[outcomes]) #x
 dta <- data.frame(dta,index_use)
 
 names(dta)[names(dta) == 'index'] <- 'index_plan'
 
-outcomes <- c(outcomes,"value_paid", "index_plan" )
+outcomes <- c(outcomes, "index_plan" )
 
 #matrix to store results
 res_tab <-  array(NA,dim=c(3,5,length(outcomes)))
@@ -666,13 +704,46 @@ for (i in 1:length(outcomes)) {
   
   
 }
-## for subset of those that bought
-res_tab[1,1, 4] <- mean(dta$value_paid[dta$paid_pac==TRUE & dta$discounted==FALSE], na.rm=TRUE)
-res_tab[2,1, 4] <- sd(dta$value_paid[dta$paid_pac==TRUE & dta$discounted==FALSE], na.rm=TRUE)
 
 res_tab_path <- round(res_tab,digits=3)
 save(res_tab_path, file=paste(path,"papers/seed_free_or_not/res_tab_path.Rdata",sep="/"))
+###now run binary analysis
 
+#matrix to store results
+res_tab <-  array(NA,dim=c(3,5,length(outcomes)))
+
+
+
+for (i in 1:length(outcomes)) {
+  ### here we need clustering
+
+  ols <- lm(as.formula( paste(outcomes[i],"discounted+trial_P",sep="~")), data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+  coef_test(ols, vcov_cluster)$beta
+  
+  res_tab[1,1,i] <-  coef_test(ols, vcov_cluster)$beta[1]
+  res_tab[2,1,i] <- coef_test(ols, vcov_cluster)$SE[1]
+  
+  res_tab[1,2,i]  <-  coef_test(ols, vcov_cluster)$beta[2]
+  res_tab[2,2,i] <-  coef_test(ols, vcov_cluster)$SE[2]
+  res_tab[3,2,i] <-  coef_test(ols, vcov_cluster)$p_Satt[2]
+  ### regression for sunk cost effect - clustering
+  
+  
+  res_tab[1,3,i]  <- coef_test(ols, vcov_cluster)$beta[3]
+  res_tab[2,3,i] <- coef_test(ols, vcov_cluster)$SE[3]
+  res_tab[3,3,i] <-  coef_test(ols, vcov_cluster)$p_Satt[3]
+if (i %in% 3:5) {  
+  lh <-   linearHypothesis(ols, c("discountedTRUE = trial_PTRUE"),vcov=vcov_cluster )
+  res_tab[1,4,i] <- lh$F[2]
+  res_tab[3,4,i] <- lh$`Pr(>F)`[2]
+}
+  res_tab[1,5,i] <- nobs(ols)
+  
+}
+
+res_tab_path_bin <- round(res_tab,digits=3)
+save(res_tab_path_bin, file=paste(path,"papers/seed_free_or_not/res_tab_path_bin.Rdata",sep="/"))
 
 
 ####analysis of actual behavior in subsequent season
@@ -876,3 +947,103 @@ for (i in 1:length(outcomes)) {
 res_tab_next_season_bin <- round(res_tab,digits=3)
 #res_tab <- round(res_tab,digits=3)
 save(res_tab_next_season_bin, file=paste(path,"papers/seed_free_or_not/res_tab_next_season_bin.Rdata",sep="/"))
+
+
+dta$remembers_seed <- dta$Trial_group.TP_exp1_lmpr == "Bazooka"
+dta$remembers_comp <- dta$Trial_group.TP_seedco == "4"
+dta$value_shop <- as.numeric(as.character(dta$value))
+
+dta$remembers_paying <- FALSE
+dta$remembers_paying <- dta$check3.pay == "Yes" | dta$check3.pay_d=="Yes"
+dta$remembers_paying[dta$check3.pay == "n/a" & dta$check3.pay_d=="n/a"] <- NA
+dta$remembers_paying[dta$trial_P] <- NA
+
+
+dta$value_paid <- as.numeric(as.character(dta$final_price))
+### quadratic loss for error in price recall
+dta$price_diff_sq <- abs(as.numeric(as.character(dta$final_price)) - as.numeric(as.character(dta$check3.price_paid)))
+dta$price_diff_sq[dta$trial_P] <- NA
+
+outcomes <- c("remembers_paying","price_diff_sq","remembers_seed",
+              "remembers_comp")
+
+index_use <- icwIndex(xmat=dta[outcomes]) #x
+dta <- data.frame(dta,index_use)
+
+names(dta)[names(dta) == 'index'] <- 'index_plan'
+
+outcomes <- c(outcomes, "index_plan" )
+
+#matrix to store results
+res_tab <-  array(NA,dim=c(3,5,length(outcomes)))
+
+res_tab[1,1,1:length(outcomes)] <- colMeans(dta[outcomes], na.rm=T)
+res_tab[2,1,1:length(outcomes)] <- apply(dta[outcomes], 2, sd, na.rm=T)
+
+for (i in 1:length(outcomes)) {
+  ### regression for screening effect - no clustering
+  ols <- lm(as.formula( paste(outcomes[i],"screening*d_sunk*d_signaling",sep="~")), data=dta)
+  
+  res_tab[1,2,i]  <- summary(ols)$coefficients[2,1]
+  res_tab[2,2,i] <-  summary(ols)$coefficients[2,2]
+  res_tab[3,2,i] <- summary(ols)$coefficients[2,4]
+  ### regression for sunk cost effect - clustering
+  ols <- lm(as.formula( paste(outcomes[i],"sunk*d_screening*d_signaling",sep="~")), data=dta)  
+  
+  res_tab[1,3,i]  <- summary(ols)$coefficients[2,1]
+  res_tab[2,3,i] <- summary(ols)$coefficients[2,2]
+  res_tab[3,3,i] <- summary(ols)$coefficients[2,4]
+  
+  ### regression for signaling effect - no clustering
+  
+  ols <- lm(as.formula( paste(outcomes[i],"signaling*d_screening*d_sunk",sep="~")), data=dta)
+  
+  res_tab[1,4,i]  <- summary(ols)$coefficients[2,1]
+  res_tab[2,4,i] <-  summary(ols)$coefficients[2,2]
+  res_tab[3,4,i] <- summary(ols)$coefficients[2,4]
+  res_tab[1,5,i] <- nobs(ols)
+  
+  
+}
+## for subset of those that bought
+
+
+res_tab_path_next_season <- round(res_tab,digits=3)
+save(res_tab_path_next_season, file=paste(path,"papers/seed_free_or_not/res_tab_path_next_season.Rdata",sep="/"))
+###now run binary analysis
+
+#matrix to store results
+res_tab <-  array(NA,dim=c(3,5,length(outcomes)))
+
+
+
+for (i in 1:length(outcomes)) {
+  ### here we need clustering
+  
+  ols <- lm(as.formula( paste(outcomes[i],"discounted+trial_P",sep="~")), data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+  coef_test(ols, vcov_cluster)$beta
+  
+  res_tab[1,1,i] <-  coef_test(ols, vcov_cluster)$beta[1]
+  res_tab[2,1,i] <- coef_test(ols, vcov_cluster)$SE[1]
+  
+  res_tab[1,2,i]  <-  coef_test(ols, vcov_cluster)$beta[2]
+  res_tab[2,2,i] <-  coef_test(ols, vcov_cluster)$SE[2]
+  res_tab[3,2,i] <-  coef_test(ols, vcov_cluster)$p_Satt[2]
+  ### regression for sunk cost effect - clustering
+  
+  
+  res_tab[1,3,i]  <- coef_test(ols, vcov_cluster)$beta[3]
+  res_tab[2,3,i] <- coef_test(ols, vcov_cluster)$SE[3]
+  res_tab[3,3,i] <-  coef_test(ols, vcov_cluster)$p_Satt[3]
+  if (i %in% 3:5) {  
+    lh <-   linearHypothesis(ols, c("discountedTRUE = trial_PTRUE"),vcov=vcov_cluster )
+    res_tab[1,4,i] <- lh$F[2]
+    res_tab[3,4,i] <- lh$`Pr(>F)`[2]
+  }
+  res_tab[1,5,i] <- nobs(ols)
+  
+}
+
+res_tab_path_next_season_bin <- round(res_tab,digits=3)
+save(res_tab_path_next_season_bin, file=paste(path,"papers/seed_free_or_not/res_tab_path_next_season_bin.Rdata",sep="/"))
