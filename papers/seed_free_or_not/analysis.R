@@ -158,17 +158,17 @@ bse$yield_rand_ihs <- ihs(bse$yield_rand )
 
 ##merge in price paid from midline data (this was calculated and pulled into the app at midline)
 
+bse_reg <- subset(bse, !trial_P)
 
-
-bse$screening <- (as.numeric(as.character(bse$final_price)))/1000
-bse$signaling <- (as.numeric(as.character(bse$P1_pric)))/1000
+bse_reg$screening <- (as.numeric(as.character(bse_reg$final_price)))/1000
+bse_reg$signaling <- (as.numeric(as.character(bse_reg$P1_pric)))/1000
 ##important: it is the non-discounted (those that pay the full price) that identify the sunk cost
 ##they are the filtered ones that also pay a postive price
-bse$sunk <- as.numeric(!bse$discounted)*bse$screening
+bse_reg$sunk <- as.numeric(!bse_reg$discounted)
 
-bse$d_screening <- bse$screening - mean(bse$screening, na.rm=TRUE)
-bse$d_signaling <- bse$signaling - mean(bse$signaling, na.rm=TRUE)
-bse$d_sunk <- bse$sunk - mean(bse$sunk, na.rm=TRUE)
+bse_reg$d_screening <- bse_reg$screening - mean(bse_reg$screening, na.rm=TRUE)
+bse_reg$d_signaling <- bse_reg$signaling - mean(bse_reg$signaling, na.rm=TRUE)
+bse_reg$d_sunk <- bse_reg$sunk - mean(bse_reg$sunk, na.rm=TRUE)
 
 ###balance table
 #iterate over outcomes
@@ -178,18 +178,18 @@ outcomes <- c("age_head","prim_head","male_head","hh_size","dist_ag","quality_us
 #matrix to store results
 res_tab <-  array(NA,dim=c(3,5,length(outcomes)))
 
-res_tab[1,1,1:length(outcomes)] <- colMeans(bse[outcomes], na.rm=T)
-res_tab[2,1,1:length(outcomes)] <- apply(bse[outcomes], 2, sd, na.rm=T)
+res_tab[1,1,1:length(outcomes)] <- colMeans(bse_reg[outcomes], na.rm=T)
+res_tab[2,1,1:length(outcomes)] <- apply(bse_reg[outcomes], 2, sd, na.rm=T)
 
 for (i in 1:length(outcomes)) {
   ### regression for screening effect - no clustering
-  ols <- lm(as.formula( paste(outcomes[i],"screening*d_sunk*d_signaling",sep="~")), data=bse[!bse$trial,])
+  ols <- lm(as.formula( paste(outcomes[i],"screening*d_sunk*d_signaling",sep="~")), data=bse_reg)
   
   res_tab[1,2,i]  <- summary(ols)$coefficients[2,1]
   res_tab[2,2,i] <-  summary(ols)$coefficients[2,2]
   res_tab[3,2,i] <- summary(ols)$coefficients[2,4]
   ### regression for sunk cost effect - clustering
-  ols <- lm(as.formula( paste(outcomes[i],"sunk*d_screening*d_signaling",sep="~")),  data=bse[!bse$trial,])
+  ols <- lm(as.formula( paste(outcomes[i],"sunk*d_screening*d_signaling",sep="~")),  data=bse_reg)
 
   
   res_tab[1,3,i]  <- summary(ols)$coefficients[2,1]
@@ -198,7 +198,7 @@ for (i in 1:length(outcomes)) {
   
   ### regression for signaling effect - no clustering
   
-  ols <- lm(as.formula( paste(outcomes[i],"signaling*d_screening*d_sunk",sep="~")),  data=bse[!bse$trial,])
+  ols <- lm(as.formula( paste(outcomes[i],"signaling*d_screening*d_sunk",sep="~")),  data=bse_reg)
   
   res_tab[1,4,i]  <- summary(ols)$coefficients[2,1]
   res_tab[2,4,i] <-  summary(ols)$coefficients[2,2]
@@ -257,12 +257,8 @@ save(base_balance_bin, file=paste(path,"papers/seed_free_or_not/base_balance_bin
 
 ###this is where midline data analysis starts
 dta <- read.csv(paste(path,"midline/data/public/midline.csv", sep="/"))
-
-
 ## merge in randomized staring price
 dta <- merge(dta, bse[c("farmer_ID","P1_pric","final_price")], by.x="ID", by.y="farmer_ID", all.x=TRUE)
-
-
 ##create unique village level identifier for clustering of standard errors
 dta$cluster_ID <- as.factor(paste(paste(dta$dist_ID,dta$sub_ID, sep="_"), dta$vil_ID, sep="_"))
 
@@ -287,47 +283,102 @@ dta$happy_drought <- dta$happy_drought ==1
 dta$happy_disease <- dta$happy_disease == 1
 dta$happy_germinate <- dta$happy_germinate ==1
 dta$happy <- dta$happy == 1
+dta$layout <- dta$layout == 3
 
-dta$screening <- (as.numeric(as.character(dta$final_price)))/1000  ###this is the offer price in ashraf et al
-dta$signaling <- (as.numeric(as.character(dta$P1_pric)))/1000 
+dta$area_tot <- as.numeric(as.character(dta$plot_size_all))
+dta$area_tot[is.na(dta$area_tot)] <- as.numeric(as.character(dta$plot_size_all_no_rem[is.na(dta$area_tot)]))
+
+dta$bags_tot <- as.numeric(as.character(dta$bags_all))
+dta$bags_tot[is.na(dta$bags_tot)] <- as.numeric(as.character(dta$bags_all_no_rem[is.na(dta$bags_tot)]))
+
+dta$bag_size_tot <- as.numeric(as.character(dta$bag_size_all))
+dta$bag_size_tot[is.na(dta$bag_size_tot)] <- as.numeric(as.character(dta$bag_size_all_no_rem[is.na(dta$bag_size_tot)]))
+
+dta$prod_kg_tot <- dta$bag_size_tot*dta$bags_tot
+
+dta$yield_tot <- dta$prod_kg_tot/dta$area_tot
+#
+dta <- trim("prod_kg_tot",dta,trim_perc=.01)
+dta <- trim("yield_tot",dta,trim_perc=.01)
+dta$yield_tot_ihs <- ihs(dta$yield_tot)
+dta$prod_kg_tot_ihs  <- ihs(dta$prod_kg_tot)
+
+dta$area_trial <- as.numeric(as.character(dta$plot_size))
+dta$bags_trial <- as.numeric(as.character(dta$bags))
+dta$bag_size_trial <- as.numeric(as.character(dta$bag_size))
+
+dta$prod_kg_trial <- dta$bag_size_trial*dta$bags_trial
+dta$yield_trial <- dta$prod_kg_trial/dta$area_trial
+dta <- trim("prod_kg_trial",dta,trim_perc=.01)
+dta <- trim("yield_trial",dta,trim_perc=.01)
+dta$yield_trial_ihs <- ihs(dta$yield_trial)
+dta$prod_kg_trial_ihs  <- ihs(dta$prod_kg_trial)
+
+dta$plan_imp <- (dta$seed_nxt == 1 |  dta$seed_nxt == 2) 
+dta$plan_bazooka <- dta$imp_var.Bazooka == "True"
+dta$plan_bought <- dta$buy_plan=="Yes"
+dta$plan_area <-  as.numeric(as.character(dta$area_plan))
+dta$plan_area[dta$plan_area > 50] <- NA
+
+
+dta$remembers_seed <- dta$exp1_lmpr == "Bazooka"
+dta$remembers_comp <- dta$seedco == "4"
+dta$value_shop <- as.numeric(as.character(dta$value))
+
+dta$remembers_paying <- FALSE
+dta$remembers_paying <- dta$pay == "Yes" | dta$pay_d=="Yes"
+dta$remembers_paying[dta$pay == "n/a" & dta$pay_d=="n/a"] <- NA
+dta$remembers_paying[dta$trial_P] <- NA
+
+
+dta$value_paid <- as.numeric(as.character(dta$final_price))
+### quadratic loss for error in price recall
+dta$price_diff_sq <- abs(as.numeric(as.character(dta$final_price)) - as.numeric(as.character(dta$price_paid)))
+dta$price_diff_sq[dta$trial_P] <- NA
+
+
+### subset for regressions
+
+dta_reg <- subset(dta,!trial_P)
+
+dta_reg$screening <- (as.numeric(as.character(dta_reg$final_price)))/1000  ###this is the offer price in ashraf et al
+dta_reg$signaling <- (as.numeric(as.character(dta_reg$P1_pric)))/1000 
 #to measure sunk cost effect, the transaction price is used, that is the amount that is paid after the discount
 #as we did a full discount to it is zero for those that got a discount, and the price paid for those that did not get the discount
-dta$sunk <- as.numeric(!dta$discounted)*dta$screening ## this would be the transaction price in ahsraf et al
+dta_reg$sunk <- as.numeric(!dta_reg$discounted)*dta_reg$screening ## this would be the transaction price in ahsraf et al
+dta_reg$sunk <- as.numeric(!dta_reg$discounted) ## this would be the transaction price in ahsraf et al
 
-dta$d_screening <- dta$screening - mean(dta$screening, na.rm=TRUE)
-dta$d_signaling <- dta$signaling - mean(dta$signaling, na.rm=TRUE)
-dta$d_sunk <- dta$sunk - mean(dta$sunk, na.rm=TRUE)
+dta_reg$d_screening <- dta_reg$screening - mean(dta_reg$screening, na.rm=TRUE)
+dta_reg$d_signaling <- dta_reg$signaling - mean(dta_reg$signaling, na.rm=TRUE)
+dta_reg$d_sunk <- dta_reg$sunk - mean(dta_reg$sunk, na.rm=TRUE)
 
 
-#define paid_pack and discounted as incremental contrasts
-#dta$paid_pac[dta$discounted==TRUE] <- TRUE 
-dta$layout <- dta$layout == 3
 
 ###table 1 - impact on use
 #iterate over outcomes
 outcomes <- c("used_TP","TP_separate","layout","sep_post_harvest" )
 
-index_use <- icwIndex(xmat=dta[outcomes]) #x
-dta <- data.frame(dta,index_use)
-names(dta)[names(dta) == 'index'] <- 'index_use'
+index_use <- icwIndex(xmat=dta_reg[outcomes]) #x
+dta_reg <- data.frame(dta_reg,index_use)
+names(dta_reg)[names(dta_reg) == 'index'] <- 'index_use'
 
 outcomes <- c(outcomes,"index_use" )
 
 #matrix to store results
 res_tab <-  array(NA,dim=c(3,5,length(outcomes)))
 
-res_tab[1,1,1:length(outcomes)] <- colMeans(dta[outcomes], na.rm=T)
-res_tab[2,1,1:length(outcomes)] <- apply(dta[outcomes], 2, sd, na.rm=T)
+res_tab[1,1,1:length(outcomes)] <- colMeans(dta_reg[outcomes], na.rm=T)
+res_tab[2,1,1:length(outcomes)] <- apply(dta_reg[outcomes], 2, sd, na.rm=T)
 
 for (i in 1:length(outcomes)) {
   ### regression for screening effect - no clustering
-  ols <- lm(as.formula( paste(outcomes[i],"screening*d_sunk*d_signaling",sep="~")), data=dta[!(dta$trial_P),])
+  ols <- lm(as.formula( paste(outcomes[i],"screening*d_sunk*d_signaling",sep="~")), data=dta_reg)
   
   res_tab[1,2,i]  <- summary(ols)$coefficients[2,1]
   res_tab[2,2,i] <-  summary(ols)$coefficients[2,2]
   res_tab[3,2,i] <- summary(ols)$coefficients[2,4]
   ### regression for sunk cost effect - clustering
-  ols <- lm(as.formula( paste(outcomes[i],"sunk*d_screening*d_signaling",sep="~")), data=dta[!(dta$trial_P),])  
+  ols <- lm(as.formula( paste(outcomes[i],"sunk*d_screening*d_signaling",sep="~")), data=dta_reg)  
   
   res_tab[1,3,i]  <- summary(ols)$coefficients[2,1]
   res_tab[2,3,i] <- summary(ols)$coefficients[2,2]
@@ -335,7 +386,7 @@ for (i in 1:length(outcomes)) {
   
   ### regression for signaling effect - no clustering
   
-  ols <- lm(as.formula( paste(outcomes[i],"signaling*d_screening*d_sunk",sep="~")), data=dta[!(dta$trial_P),])
+  ols <- lm(as.formula( paste(outcomes[i],"signaling*d_screening*d_sunk",sep="~")), data=dta_reg)
   
   res_tab[1,4,i]  <- summary(ols)$coefficients[2,1]
   res_tab[2,4,i] <-  summary(ols)$coefficients[2,2]
@@ -349,6 +400,16 @@ res_tab <- round(res_tab,digits=3)
 save(res_tab, file=paste(path,"papers/seed_free_or_not/res_tab.Rdata",sep="/"))
 
 ###now run binary analysis
+
+#iterate over outcomes
+outcomes <- c("used_TP","TP_separate","layout","sep_post_harvest" )
+
+index_use <- icwIndex(xmat=dta[outcomes]) #x
+dta <- data.frame(dta,index_use)
+names(dta)[names(dta) == 'index'] <- 'index_use'
+
+outcomes <- c(outcomes,"index_use" )
+
 
 #matrix to store results
 res_tab <-  array(NA,dim=c(3,5,length(outcomes)))
@@ -392,27 +453,27 @@ save(res_tab_bin, file=paste(path,"papers/seed_free_or_not/res_tab_bin.Rdata",se
 #iterate over outcomes
 outcomes <- c("cor_plant","use_fert_inorg","use_fert_org","use_chem","gap_fill","nr_weed","timely_planting")
 
-index_use <- icwIndex(xmat=dta[outcomes]) #x
-dta <- data.frame(dta,index_use)
-names(dta)[names(dta) == 'index'] <- 'index_pract'
+index_use <- icwIndex(xmat=dta_reg[outcomes]) #x
+dta_reg <- data.frame(dta_reg,index_use)
+names(dta_reg)[names(dta_reg) == 'index'] <- 'index_pract'
 
 outcomes <- c(outcomes,"index_pract" )
 
 #matrix to store results
 res_tab <-  array(NA,dim=c(3,5,length(outcomes)))
 
-res_tab[1,1,1:length(outcomes)] <- colMeans(dta[outcomes], na.rm=T)
-res_tab[2,1,1:length(outcomes)] <- apply(dta[outcomes], 2, sd, na.rm=T)
+res_tab[1,1,1:length(outcomes)] <- colMeans(dta_reg[outcomes], na.rm=T)
+res_tab[2,1,1:length(outcomes)] <- apply(dta_reg[outcomes], 2, sd, na.rm=T)
 
 for (i in 1:length(outcomes)) {
   ### regression for screening effect - no clustering
-  ols <- lm(as.formula( paste(outcomes[i],"screening*d_sunk*d_signaling",sep="~")), data=dta)
+  ols <- lm(as.formula( paste(outcomes[i],"screening*d_sunk*d_signaling",sep="~")), data=dta_reg)
   
   res_tab[1,2,i]  <- summary(ols)$coefficients[2,1]
   res_tab[2,2,i] <-  summary(ols)$coefficients[2,2]
   res_tab[3,2,i] <- summary(ols)$coefficients[2,4]
   ### regression for sunk cost effect - clustering
-  ols <- lm(as.formula( paste(outcomes[i],"sunk*d_screening*d_signaling",sep="~")), data=dta)  
+  ols <- lm(as.formula( paste(outcomes[i],"sunk*d_screening*d_signaling",sep="~")), data=dta_reg)  
   
   res_tab[1,3,i]  <- summary(ols)$coefficients[2,1]
   res_tab[2,3,i] <- summary(ols)$coefficients[2,2]
@@ -420,7 +481,7 @@ for (i in 1:length(outcomes)) {
   
   ### regression for signaling effect - no clustering
   
-  ols <- lm(as.formula( paste(outcomes[i],"signaling*d_screening*d_sunk",sep="~")), data=dta)
+  ols <- lm(as.formula( paste(outcomes[i],"signaling*d_screening*d_sunk",sep="~")), data=dta_reg)
   
   res_tab[1,4,i]  <- summary(ols)$coefficients[2,1]
   res_tab[2,4,i] <-  summary(ols)$coefficients[2,2]
@@ -433,6 +494,14 @@ res_tab_pract <- round(res_tab,digits=3)
 save(res_tab_pract, file=paste(path,"papers/seed_free_or_not/res_tab_pract.Rdata",sep="/"))
 
 ###now run binary analysis
+outcomes <- c("cor_plant","use_fert_inorg","use_fert_org","use_chem","gap_fill","nr_weed","timely_planting")
+
+
+index_use <- icwIndex(xmat=dta[outcomes]) #x
+dta <- data.frame(dta,index_use)
+names(dta)[names(dta) == 'index'] <- 'index_pract'
+
+outcomes <- c(outcomes,"index_pract" )
 
 #matrix to store results
 res_tab <-  array(NA,dim=c(3,5,length(outcomes)))
@@ -475,27 +544,27 @@ outcomes <- c("happy_yield",
 "happy_drought",
 "happy_disease","happy_germinate", "happy")
 
-index_use <- icwIndex(xmat=dta[outcomes]) #x
-dta <- data.frame(dta,index_use)
-names(dta)[names(dta) == 'index'] <- 'index_char'
+index_use <- icwIndex(xmat=dta_reg[outcomes]) #x
+dta_reg <- data.frame(dta_reg,index_use)
+names(dta_reg)[names(dta_reg) == 'index'] <- 'index_char'
 
 outcomes <- c(outcomes,"index_char" )
 
 #matrix to store results
 res_tab <-  array(NA,dim=c(3,5,length(outcomes)))
 
-res_tab[1,1,1:length(outcomes)] <- colMeans(dta[outcomes], na.rm=T)
-res_tab[2,1,1:length(outcomes)] <- apply(dta[outcomes], 2, sd, na.rm=T)
+res_tab[1,1,1:length(outcomes)] <- colMeans(dta_reg[outcomes], na.rm=T)
+res_tab[2,1,1:length(outcomes)] <- apply(dta_reg[outcomes], 2, sd, na.rm=T)
 
 for (i in 1:length(outcomes)) {
   ### regression for screening effect - no clustering
-  ols <- lm(as.formula( paste(outcomes[i],"screening*d_sunk*d_signaling",sep="~")), data=dta)
+  ols <- lm(as.formula( paste(outcomes[i],"screening*d_sunk*d_signaling",sep="~")), data=dta_reg)
   
   res_tab[1,2,i]  <- summary(ols)$coefficients[2,1]
   res_tab[2,2,i] <-  summary(ols)$coefficients[2,2]
   res_tab[3,2,i] <- summary(ols)$coefficients[2,4]
   ### regression for sunk cost effect - clustering
-  ols <- lm(as.formula( paste(outcomes[i],"sunk*d_screening*d_signaling",sep="~")), data=dta)  
+  ols <- lm(as.formula( paste(outcomes[i],"sunk*d_screening*d_signaling",sep="~")), data=dta_reg)  
   
   res_tab[1,3,i]  <- summary(ols)$coefficients[2,1]
   res_tab[2,3,i] <- summary(ols)$coefficients[2,2]
@@ -503,7 +572,7 @@ for (i in 1:length(outcomes)) {
   
   ### regression for signaling effect - no clustering
   
-  ols <- lm(as.formula( paste(outcomes[i],"signaling*d_screening*d_sunk",sep="~")), data=dta)
+  ols <- lm(as.formula( paste(outcomes[i],"signaling*d_screening*d_sunk",sep="~")), data=dta_reg)
   
   res_tab[1,4,i]  <- summary(ols)$coefficients[2,1]
   res_tab[2,4,i] <-  summary(ols)$coefficients[2,2]
@@ -516,34 +585,7 @@ res_tab_char <- round(res_tab,digits=3)
 save(res_tab_char, file=paste(path,"papers/seed_free_or_not/res_tab_char.Rdata",sep="/"))
 
 #table 4: impact on yield
-dta$area_tot <- as.numeric(as.character(dta$plot_size_all))
-dta$area_tot[is.na(dta$area_tot)] <- as.numeric(as.character(dta$plot_size_all_no_rem[is.na(dta$area_tot)]))
 
-dta$bags_tot <- as.numeric(as.character(dta$bags_all))
-dta$bags_tot[is.na(dta$bags_tot)] <- as.numeric(as.character(dta$bags_all_no_rem[is.na(dta$bags_tot)]))
-
-dta$bag_size_tot <- as.numeric(as.character(dta$bag_size_all))
-dta$bag_size_tot[is.na(dta$bag_size_tot)] <- as.numeric(as.character(dta$bag_size_all_no_rem[is.na(dta$bag_size_tot)]))
-
-dta$prod_kg_tot <- dta$bag_size_tot*dta$bags_tot
-
-dta$yield_tot <- dta$prod_kg_tot/dta$area_tot
-#
-dta <- trim("prod_kg_tot",dta,trim_perc=.01)
-dta <- trim("yield_tot",dta,trim_perc=.01)
-dta$yield_tot_ihs <- ihs(dta$yield_tot)
-dta$prod_kg_tot_ihs  <- ihs(dta$prod_kg_tot)
-
-dta$area_trial <- as.numeric(as.character(dta$plot_size))
-dta$bags_trial <- as.numeric(as.character(dta$bags))
-dta$bag_size_trial <- as.numeric(as.character(dta$bag_size))
-
-dta$prod_kg_trial <- dta$bag_size_trial*dta$bags_trial
-dta$yield_trial <- dta$prod_kg_trial/dta$area_trial
-dta <- trim("prod_kg_trial",dta,trim_perc=.01)
-dta <- trim("yield_trial",dta,trim_perc=.01)
-dta$yield_trial_ihs <- ihs(dta$yield_trial)
-dta$prod_kg_trial_ihs  <- ihs(dta$prod_kg_trial)
 
 #iterate over outcomes
 outcomes <- c("area_tot",
@@ -552,28 +594,28 @@ outcomes <- c("area_tot",
               "prod_kg_trial_ihs",
               "yield_trial_ihs")
 
-index_use <- icwIndex(xmat=dta[outcomes]) #x
-dta <- data.frame(dta,index_use)
+index_use <- icwIndex(xmat=dta_reg[outcomes]) #x
+dta_reg <- data.frame(dta_reg,index_use)
 
-names(dta)[names(dta) == 'index'] <- 'index_yield'
+names(dta_reg)[names(dta_reg) == 'index'] <- 'index_yield'
 
 outcomes <- c(outcomes,"index_yield" )
 
 #matrix to store results
 res_tab <-  array(NA,dim=c(3,5,length(outcomes)))
 
-res_tab[1,1,1:length(outcomes)] <- colMeans(dta[outcomes], na.rm=T)
-res_tab[2,1,1:length(outcomes)] <- apply(dta[outcomes], 2, sd, na.rm=T)
+res_tab[1,1,1:length(outcomes)] <- colMeans(dta_reg[outcomes], na.rm=T)
+res_tab[2,1,1:length(outcomes)] <- apply(dta_reg[outcomes], 2, sd, na.rm=T)
 
 for (i in 1:length(outcomes)) {
   ### regression for screening effect - no clustering
-  ols <- lm(as.formula( paste(outcomes[i],"screening*d_sunk*d_signaling",sep="~")), data=dta)
+  ols <- lm(as.formula( paste(outcomes[i],"screening*d_sunk*d_signaling",sep="~")), data=dta_reg)
   
   res_tab[1,2,i]  <- summary(ols)$coefficients[2,1]
   res_tab[2,2,i] <-  summary(ols)$coefficients[2,2]
   res_tab[3,2,i] <- summary(ols)$coefficients[2,4]
   ### regression for sunk cost effect - clustering
-  ols <- lm(as.formula( paste(outcomes[i],"sunk*d_screening*d_signaling",sep="~")), data=dta)  
+  ols <- lm(as.formula( paste(outcomes[i],"sunk*d_screening*d_signaling",sep="~")), data=dta_reg)  
   
   res_tab[1,3,i]  <- summary(ols)$coefficients[2,1]
   res_tab[2,3,i] <- summary(ols)$coefficients[2,2]
@@ -581,7 +623,7 @@ for (i in 1:length(outcomes)) {
   
   ### regression for signaling effect - no clustering
   
-  ols <- lm(as.formula( paste(outcomes[i],"signaling*d_screening*d_sunk",sep="~")), data=dta)
+  ols <- lm(as.formula( paste(outcomes[i],"signaling*d_screening*d_sunk",sep="~")), data=dta_reg)
   
   res_tab[1,4,i]  <- summary(ols)$coefficients[2,1]
   res_tab[2,4,i] <-  summary(ols)$coefficients[2,2]
@@ -594,39 +636,35 @@ res_tab_yield <- round(res_tab,digits=3)
 save(res_tab_yield, file=paste(path,"papers/seed_free_or_not/res_tab_yield.Rdata",sep="/"))
 
 #table 4: intentions
-dta$plan_imp <- (dta$seed_nxt == 1 |  dta$seed_nxt == 2) 
-dta$plan_bazooka <- dta$imp_var.Bazooka == "True"
-dta$plan_bought <- dta$buy_plan=="Yes"
-dta$plan_area <-  as.numeric(as.character(dta$area_plan))
-dta$plan_area[dta$plan_area > 50] <- NA
+
 #iterate over outcomes
 outcomes <- c("plan_imp",
               "plan_bazooka",
               "plan_area",
               "plan_bought")
 
-index_use <- icwIndex(xmat=dta[outcomes]) #x
-dta <- data.frame(dta,index_use)
+index_use <- icwIndex(xmat=dta_reg[outcomes]) #x
+dta_reg <- data.frame(dta_reg,index_use)
 
-names(dta)[names(dta) == 'index'] <- 'index_plan'
+names(dta_reg)[names(dta_reg) == 'index'] <- 'index_plan'
 
 outcomes <- c(outcomes,"index_plan" )
 
 #matrix to store results
 res_tab <-  array(NA,dim=c(3,5,length(outcomes)))
 
-res_tab[1,1,1:length(outcomes)] <- colMeans(dta[outcomes], na.rm=T)
-res_tab[2,1,1:length(outcomes)] <- apply(dta[outcomes], 2, sd, na.rm=T)
+res_tab[1,1,1:length(outcomes)] <- colMeans(dta_reg[outcomes], na.rm=T)
+res_tab[2,1,1:length(outcomes)] <- apply(dta_reg[outcomes], 2, sd, na.rm=T)
 
 for (i in 1:length(outcomes)) {
   ### regression for screening effect - no clustering
-  ols <- lm(as.formula( paste(outcomes[i],"screening*d_sunk*d_signaling",sep="~")), data=dta)
+  ols <- lm(as.formula( paste(outcomes[i],"screening*d_sunk*d_signaling",sep="~")), data=dta_reg)
   
   res_tab[1,2,i]  <- summary(ols)$coefficients[2,1]
   res_tab[2,2,i] <-  summary(ols)$coefficients[2,2]
   res_tab[3,2,i] <- summary(ols)$coefficients[2,4]
   ### regression for sunk cost effect - clustering
-  ols <- lm(as.formula( paste(outcomes[i],"sunk*d_screening*d_signaling",sep="~")), data=dta)  
+  ols <- lm(as.formula( paste(outcomes[i],"sunk*d_screening*d_signaling",sep="~")), data=dta_reg)  
   
   res_tab[1,3,i]  <- summary(ols)$coefficients[2,1]
   res_tab[2,3,i] <- summary(ols)$coefficients[2,2]
@@ -634,7 +672,7 @@ for (i in 1:length(outcomes)) {
   
   ### regression for signaling effect - no clustering
   
-  ols <- lm(as.formula( paste(outcomes[i],"signaling*d_screening*d_sunk",sep="~")), data=dta)
+  ols <- lm(as.formula( paste(outcomes[i],"signaling*d_screening*d_sunk",sep="~")), data=dta_reg)
   
   res_tab[1,4,i]  <- summary(ols)$coefficients[2,1]
   res_tab[2,4,i] <-  summary(ols)$coefficients[2,2]
@@ -648,46 +686,32 @@ save(res_tab_plan, file=paste(path,"papers/seed_free_or_not/res_tab_plan.Rdata",
 
 ###impact on 
 
-dta$remembers_seed <- dta$exp1_lmpr == "Bazooka"
-dta$remembers_comp <- dta$seedco == "4"
-dta$value_shop <- as.numeric(as.character(dta$value))
-
-dta$remembers_paying <- FALSE
-dta$remembers_paying <- dta$pay == "Yes" | dta$pay_d=="Yes"
-dta$remembers_paying[dta$pay == "n/a" & dta$pay_d=="n/a"] <- NA
-dta$remembers_paying[dta$trial_P] <- NA
-
-
-dta$value_paid <- as.numeric(as.character(dta$final_price))
-### quadratic loss for error in price recall
-dta$price_diff_sq <- abs(as.numeric(as.character(dta$final_price)) - as.numeric(as.character(dta$price_paid)))
-dta$price_diff_sq[dta$trial_P] <- NA
 #iterate over outcomes
 outcomes <- c("remembers_paying","price_diff_sq","remembers_seed",
               "remembers_comp")
 
-index_use <- icwIndex(xmat=dta[outcomes]) #x
-dta <- data.frame(dta,index_use)
+index_use <- icwIndex(xmat=dta_reg[outcomes]) #x
+dta_reg <- data.frame(dta_reg,index_use)
 
-names(dta)[names(dta) == 'index'] <- 'index_plan'
+names(dta_reg)[names(dta_reg) == 'index'] <- 'index_plan'
 
 outcomes <- c(outcomes, "index_plan" )
 
 #matrix to store results
 res_tab <-  array(NA,dim=c(3,5,length(outcomes)))
 
-res_tab[1,1,1:length(outcomes)] <- colMeans(dta[outcomes], na.rm=T)
-res_tab[2,1,1:length(outcomes)] <- apply(dta[outcomes], 2, sd, na.rm=T)
+res_tab[1,1,1:length(outcomes)] <- colMeans(dta_reg[outcomes], na.rm=T)
+res_tab[2,1,1:length(outcomes)] <- apply(dta_reg[outcomes], 2, sd, na.rm=T)
 
 for (i in 1:length(outcomes)) {
   ### regression for screening effect - no clustering
-  ols <- lm(as.formula( paste(outcomes[i],"screening*d_sunk*d_signaling",sep="~")), data=dta)
+  ols <- lm(as.formula( paste(outcomes[i],"screening*d_sunk*d_signaling",sep="~")), data=dta_reg)
   
   res_tab[1,2,i]  <- summary(ols)$coefficients[2,1]
   res_tab[2,2,i] <-  summary(ols)$coefficients[2,2]
   res_tab[3,2,i] <- summary(ols)$coefficients[2,4]
   ### regression for sunk cost effect - clustering
-  ols <- lm(as.formula( paste(outcomes[i],"sunk*d_screening*d_signaling",sep="~")), data=dta)  
+  ols <- lm(as.formula( paste(outcomes[i],"sunk*d_screening*d_signaling",sep="~")), data=dta_reg)  
   
   res_tab[1,3,i]  <- summary(ols)$coefficients[2,1]
   res_tab[2,3,i] <- summary(ols)$coefficients[2,2]
@@ -695,7 +719,7 @@ for (i in 1:length(outcomes)) {
   
   ### regression for signaling effect - no clustering
   
-  ols <- lm(as.formula( paste(outcomes[i],"signaling*d_screening*d_sunk",sep="~")), data=dta)
+  ols <- lm(as.formula( paste(outcomes[i],"signaling*d_screening*d_sunk",sep="~")), data=dta_reg)
   
   res_tab[1,4,i]  <- summary(ols)$coefficients[2,1]
   res_tab[2,4,i] <-  summary(ols)$coefficients[2,2]
@@ -708,7 +732,15 @@ for (i in 1:length(outcomes)) {
 res_tab_path <- round(res_tab,digits=3)
 save(res_tab_path, file=paste(path,"papers/seed_free_or_not/res_tab_path.Rdata",sep="/"))
 ###now run binary analysis
+outcomes <- c("remembers_paying","price_diff_sq","remembers_seed",
+              "remembers_comp")
 
+index_use <- icwIndex(xmat=dta[outcomes]) #x
+dta <- data.frame(dta,index_use)
+
+names(dta)[names(dta) == 'index'] <- 'index_plan'
+
+outcomes <- c(outcomes, "index_plan" )
 #matrix to store results
 res_tab <-  array(NA,dim=c(3,5,length(outcomes)))
 
@@ -759,16 +791,6 @@ dta <- subset(dta, cont == FALSE & (trial_P== TRUE | paid_pac == TRUE | discount
 
 dta <- merge(dta,bse[c("farmer_ID","P1_pric","final_price","cluster_ID")], by.x="ID", by.y="farmer_ID", all.x=TRUE)
 dta <- subset(dta, !is.na(cluster_ID))
-dta$screening <- (as.numeric(as.character(dta$final_price)))/1000
-dta$signaling <- (as.numeric(as.character(dta$P1_pric)))/1000
-#to measure sunk cost effect, the transaction price is used, that is the amount that is paid after the discount
-#as we did a full discount to it is zero for those that got a discount, and the price paid for those that did not get the discount
-dta$sunk <- as.numeric(!dta$discounted)*dta$screening
-
-dta$d_screening <- dta$screening - mean(dta$screening, na.rm=TRUE)
-dta$d_signaling <- dta$signaling - mean(dta$signaling, na.rm=TRUE)
-dta$d_sunk <- dta$sunk - mean(dta$sunk, na.rm=TRUE)
-
 
 ## primary outcome 1: uses improved seed on at least one plot
 num_plots <- max(as.numeric(dta$plot_count), na.rm=TRUE)
@@ -871,30 +893,61 @@ dta <- trim("production", dta)
 dta$productivity <- dta$production/dta$size_selected
 dta <- trim("productivity", dta)
 
+
+
+dta$remembers_seed <- dta$Trial_group.TP_exp1_lmpr == "Bazooka"
+dta$remembers_comp <- dta$Trial_group.TP_seedco == "4"
+dta$value_shop <- as.numeric(as.character(dta$value))
+
+dta$remembers_paying <- FALSE
+dta$remembers_paying <- dta$check3.pay == "Yes" | dta$check3.pay_d=="Yes"
+dta$remembers_paying[dta$check3.pay == "n/a" & dta$check3.pay_d=="n/a"] <- NA
+dta$remembers_paying[dta$trial_P] <- NA
+
+
+dta$value_paid <- as.numeric(as.character(dta$final_price))
+### quadratic loss for error in price recall
+dta$price_diff_sq <- abs(as.numeric(as.character(dta$final_price)) - as.numeric(as.character(dta$check3.price_paid)))
+dta$price_diff_sq[dta$trial_P] <- NA
+
+dta_reg <- subset(dta,!trial_P)
+dta_reg$screening <- (as.numeric(as.character(dta_reg$final_price)))/1000
+dta_reg$signaling <- (as.numeric(as.character(dta_reg$P1_pric)))/1000
+#to measure sunk cost effect, the transaction price is used, that is the amount that is paid after the discount
+#as we did a full discount to it is zero for those that got a discount, and the price paid for those that did not get the discount
+dta_reg$sunk <- as.numeric(!dta_reg$discounted)
+
+dta_reg$d_screening <- dta_reg$screening - mean(dta_reg$screening, na.rm=TRUE)
+dta_reg$d_signaling <- dta_reg$signaling - mean(dta_reg$signaling, na.rm=TRUE)
+dta_reg$d_sunk <- dta_reg$sunk - mean(dta_reg$sunk, na.rm=TRUE)
+
+
+
+
 #iterate over outcomes
 outcomes <- c("p_outcome_1", "p_outcome_2","rnd_adopt", "rnd_bazo", "imp_seed_qty_rnd", "imp_seed_qty_rnd_acre","production", "productivity" )
-index_use <- icwIndex(xmat=dta[setdiff(outcomes,c("p_outcome_1","p_outcome_2"))]) #x
-dta <- data.frame(dta,index_use)
+index_use <- icwIndex(xmat=dta_reg[setdiff(outcomes,c("p_outcome_1","p_outcome_2"))]) #x
+dta_reg <- data.frame(dta_reg,index_use)
 
-names(dta)[names(dta) == 'index'] <- 'index_next_season'
+names(dta_reg)[names(dta_reg) == 'index'] <- 'index_next_season'
 
 outcomes <- c(outcomes,"index_next_season" )
 
 res_tab <-  array(NA,dim=c(3,5,length(outcomes)))
 
-res_tab[1,1,1:length(outcomes)] <- colMeans(dta[outcomes], na.rm=T)
-res_tab[2,1,1:length(outcomes)] <- apply(dta[outcomes], 2, sd, na.rm=T)
+res_tab[1,1,1:length(outcomes)] <- colMeans(dta_reg[outcomes], na.rm=T)
+res_tab[2,1,1:length(outcomes)] <- apply(dta_reg[outcomes], 2, sd, na.rm=T)
 
 
 for (i in 1:length(outcomes)) {
   ### regression for screening effect - no clustering
-  ols <- lm(as.formula( paste(outcomes[i],"screening*d_sunk*d_signaling",sep="~")), data=dta[!(dta$trial_P),])
+  ols <- lm(as.formula( paste(outcomes[i],"screening*d_sunk*d_signaling",sep="~")), data=dta_reg[!(dta_reg$trial_P),])
   
   res_tab[1,2,i]  <- summary(ols)$coefficients[2,1]
   res_tab[2,2,i] <-  summary(ols)$coefficients[2,2]
   res_tab[3,2,i] <- summary(ols)$coefficients[2,4]
   ### regression for sunk cost effect - clustering
-  ols <- lm(as.formula( paste(outcomes[i],"sunk*d_screening*d_signaling",sep="~")), data=dta[!(dta$trial_P),])  
+  ols <- lm(as.formula( paste(outcomes[i],"sunk*d_screening*d_signaling",sep="~")), data=dta_reg[!(dta_reg$trial_P),])  
   
   res_tab[1,3,i]  <- summary(ols)$coefficients[2,1]
   res_tab[2,3,i] <- summary(ols)$coefficients[2,2]
@@ -902,7 +955,7 @@ for (i in 1:length(outcomes)) {
   
   ### regression for signaling effect - no clustering
   
-  ols <- lm(as.formula( paste(outcomes[i],"signaling*d_screening*d_sunk",sep="~")), data=dta[!(dta$trial_P),])
+  ols <- lm(as.formula( paste(outcomes[i],"signaling*d_screening*d_sunk",sep="~")), data=dta_reg[!(dta_reg$trial_P),])
   
   res_tab[1,4,i]  <- summary(ols)$coefficients[2,1]
   res_tab[2,4,i] <-  summary(ols)$coefficients[2,2]
@@ -914,6 +967,13 @@ for (i in 1:length(outcomes)) {
 res_tab_next_season <- round(res_tab,digits=3)
 save(res_tab_next_season, file=paste(path,"papers/seed_free_or_not/res_tab_next_season.Rdata",sep="/"))
 
+outcomes <- c("p_outcome_1", "p_outcome_2","rnd_adopt", "rnd_bazo", "imp_seed_qty_rnd", "imp_seed_qty_rnd_acre","production", "productivity" )
+index_use <- icwIndex(xmat=dta[setdiff(outcomes,c("p_outcome_1","p_outcome_2"))]) #x
+dta <- data.frame(dta,index_use)
+
+names(dta)[names(dta) == 'index'] <- 'index_next_season'
+
+outcomes <- c(outcomes,"index_next_season" )
 #matrix to store results
 res_tab <-  array(NA,dim=c(3,5,length(outcomes)))
 
@@ -949,46 +1009,31 @@ res_tab_next_season_bin <- round(res_tab,digits=3)
 save(res_tab_next_season_bin, file=paste(path,"papers/seed_free_or_not/res_tab_next_season_bin.Rdata",sep="/"))
 
 
-dta$remembers_seed <- dta$Trial_group.TP_exp1_lmpr == "Bazooka"
-dta$remembers_comp <- dta$Trial_group.TP_seedco == "4"
-dta$value_shop <- as.numeric(as.character(dta$value))
-
-dta$remembers_paying <- FALSE
-dta$remembers_paying <- dta$check3.pay == "Yes" | dta$check3.pay_d=="Yes"
-dta$remembers_paying[dta$check3.pay == "n/a" & dta$check3.pay_d=="n/a"] <- NA
-dta$remembers_paying[dta$trial_P] <- NA
-
-
-dta$value_paid <- as.numeric(as.character(dta$final_price))
-### quadratic loss for error in price recall
-dta$price_diff_sq <- abs(as.numeric(as.character(dta$final_price)) - as.numeric(as.character(dta$check3.price_paid)))
-dta$price_diff_sq[dta$trial_P] <- NA
-
 outcomes <- c("remembers_paying","price_diff_sq","remembers_seed",
               "remembers_comp")
 
-index_use <- icwIndex(xmat=dta[outcomes]) #x
-dta <- data.frame(dta,index_use)
+index_use <- icwIndex(xmat=dta_reg[outcomes]) #x
+dta_reg <- data.frame(dta_reg,index_use)
 
-names(dta)[names(dta) == 'index'] <- 'index_plan'
+names(dta_reg)[names(dta_reg) == 'index'] <- 'index_plan'
 
 outcomes <- c(outcomes, "index_plan" )
 
 #matrix to store results
 res_tab <-  array(NA,dim=c(3,5,length(outcomes)))
 
-res_tab[1,1,1:length(outcomes)] <- colMeans(dta[outcomes], na.rm=T)
-res_tab[2,1,1:length(outcomes)] <- apply(dta[outcomes], 2, sd, na.rm=T)
+res_tab[1,1,1:length(outcomes)] <- colMeans(dta_reg[outcomes], na.rm=T)
+res_tab[2,1,1:length(outcomes)] <- apply(dta_reg[outcomes], 2, sd, na.rm=T)
 
 for (i in 1:length(outcomes)) {
   ### regression for screening effect - no clustering
-  ols <- lm(as.formula( paste(outcomes[i],"screening*d_sunk*d_signaling",sep="~")), data=dta)
+  ols <- lm(as.formula( paste(outcomes[i],"screening*d_sunk*d_signaling",sep="~")), data=dta_reg)
   
   res_tab[1,2,i]  <- summary(ols)$coefficients[2,1]
   res_tab[2,2,i] <-  summary(ols)$coefficients[2,2]
   res_tab[3,2,i] <- summary(ols)$coefficients[2,4]
   ### regression for sunk cost effect - clustering
-  ols <- lm(as.formula( paste(outcomes[i],"sunk*d_screening*d_signaling",sep="~")), data=dta)  
+  ols <- lm(as.formula( paste(outcomes[i],"sunk*d_screening*d_signaling",sep="~")), data=dta_reg)  
   
   res_tab[1,3,i]  <- summary(ols)$coefficients[2,1]
   res_tab[2,3,i] <- summary(ols)$coefficients[2,2]
@@ -996,7 +1041,7 @@ for (i in 1:length(outcomes)) {
   
   ### regression for signaling effect - no clustering
   
-  ols <- lm(as.formula( paste(outcomes[i],"signaling*d_screening*d_sunk",sep="~")), data=dta)
+  ols <- lm(as.formula( paste(outcomes[i],"signaling*d_screening*d_sunk",sep="~")), data=dta_reg)
   
   res_tab[1,4,i]  <- summary(ols)$coefficients[2,1]
   res_tab[2,4,i] <-  summary(ols)$coefficients[2,2]
@@ -1011,6 +1056,16 @@ for (i in 1:length(outcomes)) {
 res_tab_path_next_season <- round(res_tab,digits=3)
 save(res_tab_path_next_season, file=paste(path,"papers/seed_free_or_not/res_tab_path_next_season.Rdata",sep="/"))
 ###now run binary analysis
+
+outcomes <- c("remembers_paying","price_diff_sq","remembers_seed",
+              "remembers_comp")
+
+index_use <- icwIndex(xmat=dta[outcomes]) #x
+dta <- data.frame(dta,index_use)
+
+names(dta)[names(dta) == 'index'] <- 'index_plan'
+
+outcomes <- c(outcomes, "index_plan" )
 
 #matrix to store results
 res_tab <-  array(NA,dim=c(3,5,length(outcomes)))

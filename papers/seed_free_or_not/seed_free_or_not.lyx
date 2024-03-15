@@ -132,30 +132,30 @@ Does cost-sharing increase learning? Experimental evidence from seed trail
 \end_layout
 
 \begin_layout Abstract
-A popular way to increase adoption of a new technology is by providing the
- technology for free (or greatly reduced price) for a limited period of
- time such that potential users can gain experience with it and share this
- experience with their others.
+A popular way to increase use of a product or technology is providing it
+ for free (or at greatly reduced price) for a limited period of time such
+ that potential users can gain experience with it and share this experience
+ with others.
  However, it is sometimes argued that something that is provided for free
- is less likely to be used for its intended purpose, leading to waste.
- There are three reasons why a positive price may increase use.
+ is less likely to be used for its intended purpose.
+ There are three main reasons why a positive price may increase use.
  First, a pecuniary cost may serve as a screening mechanism, putting the
  product only in the hands of those that value it.
- Second, a price tag may be interpreted as a signal about the quality of
+ Second, a mechanism known as the sunk cost effect may be at play where
+ a price induces a psychological cost of failing to use the product for
+ its intended purpose.
+ Third, a price tag may be interpreted as a signal about the quality of
  the product.
- Third, a mechanism known as the sunk cost effect may be at play where a
- price induces a psychological cost of failing to use the product for its
- intended purpose.
- We design a field experiment that enables us to separate these three effects
- for the case of improved seed varieties and implement it among smallholder
- maize farmers in eastern Uganda.
- We find evidence of economically important screening and sunk-cost effects
- but no consistent evidence of signaling effects.
+ Using a recently released seed variety as a case, we offer smallholder
+ farmers the opportunity to buy a trial pack of seed from us, and compare
+ use of the seed and subsequent adoption of the technology to farmers that
+ were provided the seed trial pack for free.
+ We further design a field experiment that enables us to assess the importance
+ of screening, sunk cost, and signaling effects of prices.
 \end_layout
 
 \begin_layout Abstract
-Keywords: technology adoption, income effect, screening effect, sunk cost
- effect, signaling.
+Keywords: technology adoption, screening effect, sunk cost effect, signaling.
 \end_layout
 
 \begin_layout Abstract
@@ -163,16 +163,17 @@ JEL: Q16, H24, O33, D91
 \end_layout
 
 \begin_layout Section
-Motivation
+Introduction
 \end_layout
 
 \begin_layout Standard
 Prices are ubiquitous in economic transactions.
- In general, prices are key to the efficient allocation of scare resources
- within a society and provide an provide an important incentive for producers.
- But charging a (full) price may not always be optimal for society.
- If a commodity is new, providing it for free or at a discount for a short
- period of time may be necessary to encourage to try out a new product 
+ Prices are central to the efficient allocation of scare resources within
+ a society and provide an important incentive to producers.
+ But charging the (full) price may not always be optimal.
+ For instance, if a product or technology is new, providing it for free
+ or at a discount for a short period of time may be necessary to encourage
+ potential consumers to try and learn from it 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "bawa2004effects"
@@ -181,51 +182,25 @@ literal "false"
 \end_inset
 
 .
- Public sector actors may think commercial seed is out of reach of poor
- households and want to kick-start large scale adoption by providing the
- initial investment 
+ From a social welfare point of view, subsidies may be justified to ensure
+ access to essential goods and services for low-income individuals or disadvanta
+ged communities that may benefit most.
+ Positive externalities is another strong argument against charging the
+ full price 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "blackie2005origin"
+key "miguel2004worms"
 literal "false"
 
 \end_inset
 
 .
- The case for free (or subsidized) inputs also stems from positive externalities
-: it is well established that one of the most effective ways to increase
- technology adoption is through peer learning, and both private and public
- partners may attempt to leverage social learning 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "10.1257/aer.100.1.35,https://doi.org/10.1111/j.1468-0297.2006.01115.x"
-literal "false"
-
-\end_inset
-
-.
- Furthermore, informal seed systems used by farmers often suffer from decades
- of seed degeneration due to recycling of seed introduced during colonial
- times 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "mcguire2016seed"
-literal "false"
-
-\end_inset
-
-.
- Injecting new seed varieties can be one strategy to improve the overall
- seed stock.
- For instance, public research organizations often invest in open pollinating
- varieties (OPVs) that can be recycled to some extent without losing vigor.
- Income effects, and the fact that the poorest are likely to gain most of
- it.
+ 
 \end_layout
 
 \begin_layout Standard
-At the same time, some argue that providing goods or services for free (or
- with a significant subsidy) may lead to wastage.
+At the same time, some argue that when goods or services are provided for
+ free, recipients often do not value them and lead to waste.
  Goods obtained for free often remain unused, are resold, or are otherwise
  used in unintended ways.
  High profile examples include the use of free bed-nets for fishing or the
@@ -274,8 +249,8 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-The basic problem is that these effects are conflated in standard observational
- data, as each of these effects assume that if prices rise, so does use.
+The basic problem is that these effects are conflated in observational data,
+ as each of these effects imply that if prices rise, so does use.
  Building on the work of 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -286,7 +261,8 @@ literal "false"
 
 , this paper uses a field experiment designed to disentangle these three
  effects.
- We extend the randomized two-stage pricing design introduced by 
+ To do so, we extend the randomized two-stage pricing design introduced
+ by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "arkes1985psychology"
@@ -296,6 +272,208 @@ literal "false"
 
  by adding a third stage that allows us to, in addition to the screening
  and sunk cost effects, identify the signaling effect as well.
+\end_layout
+
+\begin_layout Standard
+For the empirical application, we use seed trial packs to promote a recently
+ introduced improved maize seed variety among smallholder farmers in eastern
+ Uganda.
+ There are various reasons why improved seed varieties provide an interesting
+ and policy relevant case.
+ First, as this is a new and relatively unknown seed type, providing free
+ samples may be necessary to encourage risk averse farmers to learn by experimen
+tation.
+\end_layout
+
+\begin_layout Standard
+Second, it is well established that one of the most effective ways to increase
+ agricultural technology adoption is through peer learning 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "10.1257/aer.100.1.35,https://doi.org/10.1111/j.1468-0297.2006.01115.x"
+literal "false"
+
+\end_inset
+
+.
+ Furthermore, informal seed systems used by farmers often suffer from decades
+ of seed degeneration due to recycling of seed introduced during colonial
+ times 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mcguire2016seed"
+literal "false"
+
+\end_inset
+
+.
+ Injecting new seed varieties can be one strategy to improve the overall
+ seed stock.
+\end_layout
+
+\begin_layout Standard
+Seed is an important investment requiring non-negligable monetary outlays
+ up front.
+ As such, there may be important sunk cost effects associated to seed purchases.
+ Finally, improved seed varieties suffer from substantial information asymmetrie
+s with respect to quality.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "10.1162/rest_a_01285"
+literal "false"
+
+\end_inset
+
+ find that uncertainty about the quality of the seed leads to reduced labour
+ allocation and conclude that the presence of lemon inputs on the market
+ for modern inputs impedes learning about the profitability of these inputs.
+ This suggests a signaling role for prices.
+\end_layout
+
+\begin_layout Standard
+The rest of this paper is organized as follows.
+ 
+\end_layout
+
+\begin_layout Section
+Methods and experimental design
+\end_layout
+
+\begin_layout Standard
+At the heart of the study is randomized trial that comprises three 3 groups.
+ 
+\end_layout
+
+\begin_layout Standard
+A first group of randomly selected farmers was provided a seed trial pack
+ for free.
+ The enumerator then explains what kind of seed it is and what the advantages
+ are.
+ 
+\end_layout
+
+\begin_layout Standard
+A second group of farmers farmers paid a positive price for the seed trial
+ pack.
+ In particular this group of randomly selected farmers were offered the
+ opportunity to buy a bag of seed from the enumerator in a way that is as
+ close as possible as how this happens in a real life setting where bargaining
+ is the norm.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+In other studies that use a two-stage pricing design 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "10.1257/aer.100.5.2383,10.1162/qjec.2010.125.1.1"
+literal "false"
+
+\end_inset
+
+, farmers are simply offered the commodity at different price points.
+ However, this results in a substantial number of farmers that decide not
+ to buy the seed, leading to important reductions in sample size (or requiring
+ significant over-subscription).
+ However, as willingness to pay of a farmer is needed for two-stage pricing
+ experiments, one could use elicitation methods such as a Becker-DeGroot-Marscha
+k (BDM) auction.
+ In it simplest version, the subject formulates a bid and this bid is compared
+ to a price determined by a random number generator.
+ If the subject's bid is greater than the price, they pay the price and
+ receives the item being auctioned.
+ If the subject's bid is lower than the price, they pay nothing and receive
+ nothing.
+ A BDM has the added advantage of also including the second stage surprise
+ discount if farmers bid higher than the trigger price - see appendix E
+ in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "doi:10.1086/705374"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ The enumerator follows a standard script.
+ An initial ask price is randomly drawn, ranging from 12,000 to 9,000, and
+ this price is then presented to the farmer as the price of the bag of seed.
+ The enumerator explains what kind of seed it is and what the advantages
+ are.
+ The farmer has the option to accept this price or not.
+ 
+\end_layout
+
+\begin_layout Standard
+If the farmer does not accept the initial offer price, the farmer enters
+ into a bargaining stage where he or she is encouraged to name his/her first
+ bid price.
+ A computer algorithm then determines a counter-offer that the enumerator
+ asks in a second round of negotiation.
+ This new ask price is determined as the farmer's bid price plus 80 percent
+ of the difference between the (initial) ask price and the farmer's bid
+ price, and this is rounded to the nearest multiple of 500.
+ This updated (lower) ask price is then presented to the farmer and the
+ farmer gets another opportunity to accept or not.
+ If the farmer does not accept, he or she is encouraged to make a second
+ bid and a third ask price is determined as the farmer's last bid price
+ plus 80 percent of the difference between the last ask price and the farmer's
+ last bid price.
+ Bargaining continues until the farmer accepts an ask price, or the price
+ difference between the bid and ask price is smaller than 500 ugandan shilling,
+ in which case the computer instructs the enumerator sell at the last price
+ the farmer bids.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+To make the bargaining also incentive compatible for the enumerators, we
+ tell them in advance that the money that is collected from farmers during
+ this first stage will be divided and distributed equally among all the
+ enumerators.
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+A third group of farmers also plays the bargaining game, but is offered
+ a surprise 100 percent discount.
+ Most pricing designs use a random discount to be included as a continuous
+ variable in the regression, or a set of equally spaced discounts.
+ The aim of this is often to set optimal subsidy level.
+ In our study, we want to maximize power and work with only one discount.
+ The decision to use only a single full discount is also due to the fact
+ that we expect a discontinuity in the relationship (free versus paying,
+ even though it may be only a little) and the fact that we also want to
+ maximize sample size for a comparison between the 100 % discount and the
+ farmers that get the free seed trial pack.
+\end_layout
+
+\begin_layout Standard
+In a first part of the analysis, we simply compare behaviour between the
+ 3 groups of farmers.
+\end_layout
+
+\begin_layout Standard
+To further investigate the relationship between prices and use we focus
+ on the second and third group and extend the randomized two-stage pricing
+ design to isolate the sunk-cost effect from the screening effect 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "10.1257/aer.100.5.2383,10.1162/qjec.2010.125.1.1"
+literal "false"
+
+\end_inset
+
+.
  In the original two-stage design, study participants are given the opportunity
  to buy a commodity at different prices and in a second stage are given
  a surprise discount.
@@ -319,113 +497,6 @@ In our design, instead of simply asking farmers to purchase the seed at
 \end_layout
 
 \begin_layout Standard
-There are various reasons why improved seed varieties provide an interesting
- case.
- First, improved seed is an important investment requiring non-negligable
- monetary outlays up front with a noisy return in the future.
- As such, a positive price may act as an important filter Second 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "kremer2019behavioral"
-literal "false"
-
-\end_inset
-
- note that learning about new technologies requires costly experimentation
- and costly attention, and so individuals would benefit from decreasing
- the costs of learning.
- The fact that learning is also costly means the same mechanisms (a screening
- effect and/or a sunk cost effect) may also affect the extent to which farmers
- learn.
- That is, if a seed is valued less because it is provided for free, it may
- also be that farmers put in less effort and complementary investment when
- experimenting, and pay less attention to outcomes.
- Examples include planting subsidized seed on sub-optimal plots or mixing
- subsidized seed with farmer-saved seed, which would make learning harder.
- Finally, improved seed varieties suffer from substantial information asymmetrie
-s with respect to quality.
- 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "10.1162/rest_a_01285"
-literal "false"
-
-\end_inset
-
- find that uncertainty about the quality of the seed leads to reduced labour
- allocation and conclude that the presence of lemon inputs on the market
- for modern inputs impedes learning about the profitability of these inputs.
-\end_layout
-
-\begin_layout Standard
-Our paper extends the literature in various ways.
- special psychological properties to zero financial price and that demand
- may drop precipitously when the price is raised slightly above zero (Ariely
- and Shampan’er 2007; Kremer and Miguel 2007).
-\end_layout
-
-\begin_layout Standard
-The above also suggests that the size of the subsidy and the relative magnitude
- of screening and sunk cost effects are important unknowns when evaluating
- supply interventions to promote seed varietal turnover.
- In this study, we use an intervention that has three treatment arms.
- In one treatment arm, a seed trial pack is provided for free.
- In a second treatment arm, we offer farmers the opportunity to buy seed
- through a sequential bargaining game.
- In a third treatment arm a two stage pricing design is used, where we again
- play the sequential bargaining game to identify the screening effect, and
- then provide a discount to isolate the sunk cost effect.
-\end_layout
-
-\begin_layout Standard
-This document was started as a dynamic report prior to data endline data
- collection.
- It combines latex with R code using the Knitr engine and is tracked under
- revision control on github.
- As such, this 
-\begin_inset Quotes eld
-\end_inset
-
-mock report
-\begin_inset Quotes erd
-\end_inset
-
- will provide a useful reference in evaluating the final results of the
- study 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "humphreys_sanchezdelasierra_vanderwindt_2013,651546"
-literal "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Section
-Methods and experimental design
-\end_layout
-
-\begin_layout Standard
-To test whether farmers learn differently from seed that was obtained for
- free than if they had to pay a (small) price for it, we use a randomized
- two-stage pricing design to isolate the sunk-cost effect from the screening
- effect 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "10.1257/aer.100.5.2383,10.1162/qjec.2010.125.1.1"
-literal "false"
-
-\end_inset
-
-.
- In the original designs, subjects are offered a service or good for a particula
-r price in a first stage.
- In a second stage, a discount is applied to that price.
- Regressing outcomes (such as whether the product is used for the intended
- purpose) on the price while controlling for the discount gives an estimate
- of the screening effect of the price; regressing outcomes on the discount
- while controlling for the price gives an estimate of the sunk cost effect.
 \begin_inset Note Note
 status collapsed
 
@@ -442,79 +513,6 @@ Is Zero a Special Price? Evidence from Child Health Care (#13) Toshiaki
 \end_layout
 
 \begin_layout Standard
-The two stage pricing design consist of a first stage where farmers are
- offered the opportunity to buy a bag of seed from the enumerator in a way
- that is as close as possible as how this happens in a real life setting
- where bargaining is the norm.
- The enumerator follows a standard script.
- An initial ask price is randomly drawn, ranging from 12,000 to 9,000, and
- this price is then presented to the farmer as the price of the bag of seed.
- The enumerator then explains what kind of seed it is and what the advantages
- are.
- The farmer has the option to accept this price or not.
- If the farmer does not accept the ask price, then the farmer is encouraged
- to name his/her first bid price.
-\end_layout
-
-\begin_layout Standard
-A computer algorithm then determines a counter-offer that the enumerator
- asks in a second round of negotiation.
- This new ask price is determined as the farmer's bid price plus 80 percent
- of the difference between the (initial) ask price and the farmer's bid
- price, and this is rounded to the nearest multiple of 500.
- This updated (lower) ask price is then presented to the farmer and the
- farmer gets another opportunity to accept or not.
- If the farmer does not accept, he or she is encouraged to make a second
- bid and a third ask price is determined as the farmer's last bid price
- plus 80 percent of the difference between the last ask price and the farmer's
- last bid price.
- Bargaining continues until the farmer accepts an ask price, or the price
- difference between the bid and ask price is smaller than 500 ugandan shilling,
- in which case the computer instructs the enumerator sell at the last price
- the farmer bids.
- To make the bargaining also incentive compatible for the enumerators, we
- tell them in advance that the money that is collected from farmers during
- this first stage will be divided and distributed equally among all the
- enumerators.
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-A popular alternative way to measure willingness to pay is a Becker-DeGroot-Mars
-chak (BDM) auction.
- In it simplest version, the subject formulates a bid and this bid is compared
- to a price determined by a random number generator.
- If the subject's bid is greater than the price, they pay the price and
- receives the item being auctioned.
- If the subject's bid is lower than the price, they pay nothing and receive
- nothing.
- However, after testing in the field, we found that too many farmers had
- problems comprehending the procedure, struggling especially with the fact
- that they could not bargain over the price.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The second stage of the design involves providing an unexpected discount
- on the price.
- Most pricing designs use a random discount to be included as a continuous
- variable in the regression, or a set of equally spaced discounts.
- The aim of this is often to set optimal subsidy level.
- In our study, we want to maximize power and work with only one discount.
- In particular, half of the farmers that bought seed will get all their
- money back (100 percent discount).
- The decision to use only a single full discount is also due to the fact
- that we expect a discontinuity in the relationship (free versus paying,
- even though it may be only a little) and the fact that we also want to
- maximize sample size for a comparison between the 100 % discount and the
- farmers that get the free seed trial pack.
-\end_layout
-
-\begin_layout Standard
 Treatment assignment will be at the village level, as we want to avoid that
  a control farmer (that gets a bar of soap as a token of gratitude) lives
  right next to a treatment farmer that gets a bag of maize seed for free.
@@ -522,8 +520,26 @@ Treatment assignment will be at the village level, as we want to avoid that
  teams can handle.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Our paper extends the literature in various ways.
+ First, we add an additional stage to the two-stage pricing design to also
+ identify the signaling of prices.
+ Second, we include special psychological properties to zero financial price
+ and that demand may drop precipitously when the price is raised slightly
+ above zero (Ariely and Shampan’er 2007; Kremer and Miguel 2007).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
-Estimation and inference
+Estimation
 \end_layout
 
 \begin_layout Standard
@@ -3255,6 +3271,16 @@ noprefix "false"
 
  shows that more than 95 percent of farmers that paid a positive price for
  the trial pack planted the seed in the first season of 2023.
+ This is very high, for instance compared to the use of the improved wheat
+ variety trail pack used by less than 50 percent of farmers in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "mai"
+literal "false"
+
+\end_inset
+
+.
  There is no difference in seed use with the group that received a 100 percent
  cash-back.
  In the group that did not negotiate over the seed but was simply given
@@ -8691,7 +8717,7 @@ Attention
 \begin_inset Float table
 wide false
 sideways true
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -9478,6 +9504,19 @@ Note: price bought only on subset of farmers that paid positive price -
 
 \begin_layout Subsubsection
 Complementary input use
+\end_layout
+
+\begin_layout Standard
+Finally, we look at screening, sunk cost and signaling effects with respect
+ to complementary inputs and practices.
+ We find evidence of important screening effects for some of the inputs.
+ For example, an increase in the farmer's willingness to pay by 1000 UGX
+ as proxied by the outcome of the negotiation leads to an increase in the
+ likelihood that the farmer uses organic fertilizer of almost 2 percentage
+ points.
+ Similarly, for inorganic fertilizer use, an 1000 UGX higher valuation leads
+ to an increase of 1.3 percentage points in use rate.
+ A similar effect is found for 
 \end_layout
 
 \begin_layout Standard
@@ -10483,2367 +10522,8 @@ Note:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float table
-wide false
-sideways true
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Effects on assessment of characteristics
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-footnotesize
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{center}
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tabular}{rccccc}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& mean & screening & sunk cost & signaling & nobs 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-cline{2-6}
-\end_layout
-
-\begin_layout Plain Layout
-
-Seed had higher yields that expected 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_char[1,1,1]}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_char[1,2,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_char[3,2,1]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_char[3,2,1]<.05,"*",ifelse(res_tab_char[3,2,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_char[1,3,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_char[3,3,1]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_char[3,3,1]<.05,"*",ifelse(res_tab_char[3,3,1]<.1,"+","")))}}$
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_char[1,4,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_char[3,4,1]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_char[3,4,1]<.05,"*",ifelse(res_tab_char[3,4,1]<.1,"+","")))}}$
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_char[1,5,1]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_char[2,1,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_char[2,2,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_char[2,3,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_char[2,4,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Seed was more drought tolerant than expected 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_char[1,1,2]}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_char[1,2,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_char[3,2,2]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_char[3,2,2]<.05,"*",ifelse(res_tab_char[3,2,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_char[1,3,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_char[3,3,2]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_char[3,3,2]<.05,"*",ifelse(res_tab_char[3,3,2]<.1,"+","")))}}$
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_char[1,4,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_char[3,4,2]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_char[3,4,2]<.05,"*",ifelse(res_tab_char[3,4,2]<.1,"+","")))}}$
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_char[1,5,2]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_char[2,1,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_char[2,2,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_char[2,3,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_char[2,4,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Seed more pest/disease resistant than expected 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_char[1,1,3]}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_char[1,2,3]}$^{
-\backslash
-Sexpr{ifelse(res_tab_char[3,2,3]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_char[3,2,3]<.05,"*",ifelse(res_tab_char[3,2,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_char[1,3,3]}$^{
-\backslash
-Sexpr{ifelse(res_tab_char[3,3,3]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_char[3,3,3]<.05,"*",ifelse(res_tab_char[3,3,3]<.1,"+","")))}}$
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_char[1,4,3]}$^{
-\backslash
-Sexpr{ifelse(res_tab_char[3,4,3]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_char[3,4,3]<.05,"*",ifelse(res_tab_char[3,4,3]<.1,"+","")))}}$
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_char[1,5,3]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_char[2,1,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_char[2,2,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_char[2,3,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_char[2,4,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Seed germinated better than expected 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_char[1,1,4]}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_char[1,2,4]}$^{
-\backslash
-Sexpr{ifelse(res_tab_char[3,2,4]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_char[3,2,4]<.05,"*",ifelse(res_tab_char[3,2,4]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_char[1,3,4]}$^{
-\backslash
-Sexpr{ifelse(res_tab_char[3,3,4]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_char[3,3,4]<.05,"*",ifelse(res_tab_char[3,3,4]<.1,"+","")))}}$
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_char[1,4,4]}$^{
-\backslash
-Sexpr{ifelse(res_tab_char[3,4,4]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_char[3,4,4]<.05,"*",ifelse(res_tab_char[3,4,4]<.1,"+","")))}}$
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_char[1,5,4]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_char[2,1,4]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_char[2,2,4]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_char[2,3,4]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_char[2,4,4]})
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-In general, was happy with the seed 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_char[1,1,5]}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_char[1,2,5]}$^{
-\backslash
-Sexpr{ifelse(res_tab_char[3,2,5]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_char[3,2,5]<.05,"*",ifelse(res_tab_char[3,2,5]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_char[1,3,5]}$^{
-\backslash
-Sexpr{ifelse(res_tab_char[3,3,5]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_char[3,3,5]<.05,"*",ifelse(res_tab_char[3,3,5]<.1,"+","")))}}$
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_char[1,4,5]}$^{
-\backslash
-Sexpr{ifelse(res_tab_char[3,4,5]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_char[3,4,5]<.05,"*",ifelse(res_tab_char[3,4,5]<.1,"+","")))}}$
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_char[1,5,5]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_char[2,1,5]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_char[2,2,5]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_char[2,3,5]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_char[2,4,5]})
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Index
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_char[1,1,6]}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_char[1,2,6]}$^{
-\backslash
-Sexpr{ifelse(res_tab_char[3,2,6]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_char[3,2,6]<.05,"*",ifelse(res_tab_char[3,2,6]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_char[1,3,6]}$^{
-\backslash
-Sexpr{ifelse(res_tab_char[3,3,6]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_char[3,3,6]<.05,"*",ifelse(res_tab_char[3,3,6]<.1,"+","")))}}$
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_char[1,4,6]}$^{
-\backslash
-Sexpr{ifelse(res_tab_char[3,4,6]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_char[3,4,6]<.05,"*",ifelse(res_tab_char[3,4,6]<.1,"+","")))}}$
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_char[1,5,6]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_char[2,1,6]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_char[2,2,6]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_char[2,3,6]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_char[2,4,6]})
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{tabular}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-scriptsize
-\end_layout
-
-\begin_layout Plain Layout
-
-Note: 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float table
-wide false
-sideways true
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Effects on yield
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-footnotesize
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{center}
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tabular}{rccccc}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& mean & screening & sunk cost & signaling & nobs 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-cline{2-6}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-overall area
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_yield[1,1,1]}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_yield[1,2,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_yield[3,2,1]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_yield[3,2,1]<.05,"*",ifelse(res_tab_yield[3,2,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_yield[1,3,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_yield[3,3,1]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_yield[3,3,1]<.05,"*",ifelse(res_tab_yield[3,3,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_yield[1,4,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_yield[3,4,1]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_yield[3,4,1]<.05,"*",ifelse(res_tab_yield[3,4,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_yield[1,5,1]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_yield[2,1,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_yield[2,2,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_yield[2,3,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_yield[2,4,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-overall production
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_yield[1,1,2]}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_yield[1,2,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_yield[3,2,2]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_yield[3,2,2]<.05,"*",ifelse(res_tab_yield[3,2,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_yield[1,3,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_yield[3,3,2]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_yield[3,3,2]<.05,"*",ifelse(res_tab_yield[3,3,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_yield[1,4,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_yield[3,4,2]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_yield[3,4,2]<.05,"*",ifelse(res_tab_yield[3,4,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_yield[1,5,2]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_yield[2,1,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_yield[2,2,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_yield[2,3,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_yield[2,4,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-overall yield
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_yield[1,1,3]}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_yield[1,2,3]}$^{
-\backslash
-Sexpr{ifelse(res_tab_yield[3,2,3]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_yield[3,2,3]<.05,"*",ifelse(res_tab_yield[3,2,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_yield[1,3,3]}$^{
-\backslash
-Sexpr{ifelse(res_tab_yield[3,3,3]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_yield[3,3,3]<.05,"*",ifelse(res_tab_yield[3,3,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_yield[1,4,3]}$^{
-\backslash
-Sexpr{ifelse(res_tab_yield[3,4,3]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_yield[3,4,3]<.05,"*",ifelse(res_tab_yield[3,4,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_yield[1,5,3]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_yield[2,1,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_yield[2,2,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_yield[2,3,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_yield[2,4,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-trial plot area
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_yield[1,1,4]}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_yield[1,2,4]}$^{
-\backslash
-Sexpr{ifelse(res_tab_yield[3,2,4]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_yield[3,2,4]<.05,"*",ifelse(res_tab_yield[3,2,4]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_yield[1,3,4]}$^{
-\backslash
-Sexpr{ifelse(res_tab_yield[3,3,4]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_yield[3,3,4]<.05,"*",ifelse(res_tab_yield[3,3,4]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_yield[1,4,4]}$^{
-\backslash
-Sexpr{ifelse(res_tab_yield[3,4,4]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_yield[3,4,4]<.05,"*",ifelse(res_tab_yield[3,4,4]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_yield[1,5,4]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_yield[2,1,4]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_yield[2,2,4]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_yield[2,3,4]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_yield[2,4,4]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-trial plot production
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_yield[1,1,5]}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_yield[1,2,5]}$^{
-\backslash
-Sexpr{ifelse(res_tab_yield[3,2,5]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_yield[3,2,5]<.05,"*",ifelse(res_tab_yield[3,2,5]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_yield[1,3,5]}$^{
-\backslash
-Sexpr{ifelse(res_tab_yield[3,3,5]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_yield[3,3,5]<.05,"*",ifelse(res_tab_yield[3,3,5]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_yield[1,4,5]}$^{
-\backslash
-Sexpr{ifelse(res_tab_yield[3,4,5]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_yield[3,4,5]<.05,"*",ifelse(res_tab_yield[3,4,5]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_yield[1,5,5]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_yield[2,1,5]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_yield[2,2,5]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_yield[2,3,5]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_yield[2,4,5]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-trial plot yield
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_yield[1,1,6]}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_yield[1,2,6]}$^{
-\backslash
-Sexpr{ifelse(res_tab_yield[3,2,6]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_yield[3,2,6]<.05,"*",ifelse(res_tab_yield[3,2,6]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_yield[1,3,6]}$^{
-\backslash
-Sexpr{ifelse(res_tab_yield[3,3,6]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_yield[3,3,6]<.05,"*",ifelse(res_tab_yield[3,3,6]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_yield[1,4,6]}$^{
-\backslash
-Sexpr{ifelse(res_tab_yield[3,4,6]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_yield[3,4,6]<.05,"*",ifelse(res_tab_yield[3,4,6]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_yield[1,5,6]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_yield[2,1,6]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_yield[2,2,6]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_yield[2,3,6]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_yield[2,4,6]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-index
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_yield[1,1,7]}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_yield[1,2,7]}$^{
-\backslash
-Sexpr{ifelse(res_tab_yield[3,2,7]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_yield[3,2,7]<.05,"*",ifelse(res_tab_yield[3,2,7]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_yield[1,3,7]}$^{
-\backslash
-Sexpr{ifelse(res_tab_yield[3,3,7]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_yield[3,3,7]<.05,"*",ifelse(res_tab_yield[3,3,7]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_yield[1,4,7]}$^{
-\backslash
-Sexpr{ifelse(res_tab_yield[3,4,7]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_yield[3,4,7]<.05,"*",ifelse(res_tab_yield[3,4,7]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_yield[1,5,7]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_yield[2,1,7]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_yield[2,2,7]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_yield[2,3,7]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_yield[2,4,7]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{tabular}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-scriptsize
-\end_layout
-
-\begin_layout Plain Layout
-
-Note: 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float table
-wide false
-sideways true
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Effects on plans
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-footnotesize
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{center}
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tabular}{rccccc}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& mean & screening & sunk cost & signaling & nobs 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-cline{2-6}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-planning to use improved seed?
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_plan[1,1,1]}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_plan[1,2,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_plan[3,2,1]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_plan[3,2,1]<.05,"*",ifelse(res_tab_plan[3,2,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_plan[1,3,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_plan[3,3,1]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_plan[3,3,1]<.05,"*",ifelse(res_tab_plan[3,3,1]<.1,"+","")))}}$
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_plan[1,4,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_plan[3,4,1]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_plan[3,4,1]<.05,"*",ifelse(res_tab_plan[3,4,1]<.1,"+","")))}}$
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_plan[1,5,1]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_plan[2,1,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_plan[2,2,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_plan[2,3,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_plan[2,4,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-planning to use bazooka?
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_plan[1,1,2]}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_plan[1,2,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_plan[3,2,2]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_plan[3,2,2]<.05,"*",ifelse(res_tab_plan[3,2,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_plan[1,3,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_plan[3,3,2]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_plan[3,3,2]<.05,"*",ifelse(res_tab_plan[3,3,2]<.1,"+","")))}}$
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_plan[1,4,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_plan[3,4,2]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_plan[3,4,2]<.05,"*",ifelse(res_tab_plan[3,4,2]<.1,"+","")))}}$
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_plan[1,5,2]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_plan[2,1,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_plan[2,2,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_plan[2,3,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_plan[2,4,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-acre planned under new seed (acre)?
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_plan[1,1,3]}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_plan[1,2,3]}$^{
-\backslash
-Sexpr{ifelse(res_tab_plan[3,2,3]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_plan[3,2,3]<.05,"*",ifelse(res_tab_plan[3,2,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_plan[1,3,3]}$^{
-\backslash
-Sexpr{ifelse(res_tab_plan[3,3,3]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_plan[3,3,3]<.05,"*",ifelse(res_tab_plan[3,3,3]<.1,"+","")))}}$
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_plan[1,4,3]}$^{
-\backslash
-Sexpr{ifelse(res_tab_plan[3,4,3]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_plan[3,4,3]<.05,"*",ifelse(res_tab_plan[3,4,3]<.1,"+","")))}}$
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_plan[1,5,3]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_plan[2,1,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_plan[2,2,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_plan[2,3,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_plan[2,4,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-already bought improved seed for next season?
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_plan[1,1,4]}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_plan[1,2,4]}$^{
-\backslash
-Sexpr{ifelse(res_tab_plan[3,2,4]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_plan[3,2,4]<.05,"*",ifelse(res_tab_plan[3,2,4]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_plan[1,3,4]}$^{
-\backslash
-Sexpr{ifelse(res_tab_plan[3,3,4]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_plan[3,3,4]<.05,"*",ifelse(res_tab_plan[3,3,4]<.1,"+","")))}}$
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_plan[1,4,4]}$^{
-\backslash
-Sexpr{ifelse(res_tab_plan[3,4,4]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_plan[3,4,4]<.05,"*",ifelse(res_tab_plan[3,4,4]<.1,"+","")))}}$
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_plan[1,5,4]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_plan[2,1,4]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_plan[2,2,4]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_plan[2,3,4]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_plan[2,4,4]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-index
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_plan[1,1,5]}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_plan[1,2,5]}$^{
-\backslash
-Sexpr{ifelse(res_tab_plan[3,2,5]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_plan[3,2,5]<.05,"*",ifelse(res_tab_plan[3,2,5]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_plan[1,3,5]}$^{
-\backslash
-Sexpr{ifelse(res_tab_plan[3,3,5]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_plan[3,3,5]<.05,"*",ifelse(res_tab_plan[3,3,5]<.1,"+","")))}}$
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_plan[1,4,5]}$^{
-\backslash
-Sexpr{ifelse(res_tab_plan[3,4,5]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_plan[3,4,5]<.05,"*",ifelse(res_tab_plan[3,4,5]<.1,"+","")))}}$
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_plan[1,5,5]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_plan[2,1,5]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_plan[2,2,5]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_plan[2,3,5]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_plan[2,4,5]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{tabular}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-scriptsize
-\end_layout
-
-\begin_layout Plain Layout
-
-Note: 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+Overall, and as illustrated by the index, we find evidence of screening
+ effects 
 \end_layout
 
 \begin_layout Section
