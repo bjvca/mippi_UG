@@ -154,8 +154,7 @@ bse$acre_rand <- as.numeric(as.character(bse$plot_size))
 bse$acre_rand[bse$acre_rand==999] <- NA
 bse$yield_rand <- bse$prod_rand/bse$acre_rand
 bse <- trim("yield_rand",bse,trim_perc=.01)
-bse$yield_rand_ihs <- ihs(bse$yield_rand )
-
+bse$yield_rand_ihs <- bse$yield_rand
 ##merge in price paid from midline data (this was calculated and pulled into the app at midline)
 
 bse_reg <- subset(bse, !trial_P)
