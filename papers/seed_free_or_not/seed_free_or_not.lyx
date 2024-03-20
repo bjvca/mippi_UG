@@ -331,11 +331,6 @@ literal "false"
  This suggests a signaling role for prices.
 \end_layout
 
-\begin_layout Standard
-The rest of this paper is organized as follows.
- 
-\end_layout
-
 \begin_layout Section
 Methods and experimental design
 \begin_inset CommandInset label
@@ -1057,7 +1052,13 @@ The decision to only ask detailed questions on one (randomly selected) plot
  where we asked detailed questions on seed use on all plots: average use
  of the promoted variety calculated using all maize plots was the same as
  only using the randomly selected plot.
- 
+\begin_inset CommandInset label
+LatexCommand label
+name "fn:The-decision-to"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2326,6 +2327,10 @@ noprefix "false"
 Results
 \end_layout
 
+\begin_layout Subsection
+Analysis of different treatment groups
+\end_layout
+
 \begin_layout Standard
 We now present results.
  In a first part of this section, we compare outcomes across the three groups
@@ -2340,17 +2345,13 @@ noprefix "false"
 \end_inset
 
 ).
- We so this for four categories of outcomes measured at different points
+ We do this for four categories of outcomes measured at different points
  along the causal impact chain.
  We first look if, and how, the trial pack was used.
  We then look adoption in the subsequent season and potential impact on
  production.
  We then explore impact pathways and explore differences in attention and
  effort when using the seed trial pack.
-\end_layout
-
-\begin_layout Subsection
-Analysis of different treatment groups
 \end_layout
 
 \begin_layout Subsubsection
@@ -2385,7 +2386,7 @@ noprefix "false"
 
 \end_inset
 
- shows that more than 95 percent of farmers that paid a positive price for
+ shows that more than 96 percent of farmers that paid a positive price for
  the trial pack planted the seed in the first season of 2023.
  This is very high.
  In 
@@ -2402,7 +2403,7 @@ literal "false"
  cash-back.
  In the group that did not negotiate over the seed but was simply given
  it for free, the likelihood that the seed from that trial pack was planted
- is 2.5 percentage points higher that in the group that paid a positive price
+ is 2.2 percentage points higher that in the group that paid a positive price
  for the trial pack, and the difference is significant at the 10 percent
  level.
  However, results need to be interpreted with caution given the limited
@@ -2422,26 +2423,28 @@ ons have the same value within the relevant sample will be omitted from
 \end_layout
 
 \begin_layout Standard
-About 90 percent of households that paid a positive price for the trial
+About 94 percent of households that paid a positive price for the trial
  pack did not mix the seed with other seed.
- This share increases to 95 percent in the group that got the seed for free
- without bargaining, and the different with the first group is significant
- the 5 percent level.
- The likelihood of not mixing the seed in this group is also significantly
- higher than in the second group where farmers also received the trial pack
- for free, but after going through the negotiation process.
- 
+ This share increases to 97 percent in the group that got the seed for free
+ without bargaining, but the difference is not statistically significant.
 \end_layout
 
 \begin_layout Standard
-About a third of the households that paid for the trial pack planted the
- seed in close proximity to a plot with local seed.
- This share is again significantly higher for the group of farmers that
- just received the seed trial pack without being taken through the bargaining
- process.
- Similar to the likelihood of not mixing the seed above, there is no difference
- between the groups that got a surprise discount after negotiating and those
- that did not get the discount.
+A next outcome we consider is the fact that the seed from the trial pack
+ was used by the person that generally makes the decision with respect to
+ what seed to plant.
+ We find that this was the case in about 90 percent of the households that
+ paid a positive price.
+ This is almost 5 percentage points higher in the group that received a
+ discount after the bargaining.
+\end_layout
+
+\begin_layout Standard
+About 37 percent of the households that paid for the trial pack planted
+ the seed in close proximity to a plot with local seed.
+ This share is significantly higher for the group of farmers that just received
+ the seed trial pack without being taken through the bargaining process,
+ albeit only at the 10 percent level.
 \end_layout
 
 \begin_layout Standard
@@ -2449,10 +2452,10 @@ Finally, we test if there are differences between groups with respect to
  the likelihood that maize derived from the seed trial pack is kept separate
  during and post harvest.
  Maize derived from the seed trial pack is kept separate post harvest by
- almost 60 percent of households that paid the agreed price.
+ about 65 percent of households that paid the agreed price.
  This share increases if the seed was provided for free; in the group that
  was taken through the negotiation and then received the discount, this
- share increases to almost 70 percent.
+ share increases to 77 percent.
 \end_layout
 
 \begin_layout Standard
@@ -2749,7 +2752,7 @@ Sexpr{res_tab_bin[2,3,2]})
 
 \begin_layout Plain Layout
 
-field layout improved next to local seed
+decision maker used seed
 \end_layout
 
 \begin_layout Plain Layout
@@ -2844,11 +2847,11 @@ Sexpr{res_tab_bin[2,3,3]})
 
 \begin_layout Plain Layout
 
+field layout improved next to local seed
 \end_layout
 
 \begin_layout Plain Layout
 
-kept produce from improved separate from local during and post harvest
 \end_layout
 
 \begin_layout Plain Layout
@@ -2947,7 +2950,7 @@ Sexpr{res_tab_bin[2,3,4]})
 
 \begin_layout Plain Layout
 
-Index
+kept produce from improved separate from local during and post harvest
 \end_layout
 
 \begin_layout Plain Layout
@@ -3042,6 +3045,93 @@ Sexpr{res_tab_bin[2,3,5]})
 
 \begin_layout Plain Layout
 
+Index
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_bin[1,1,6]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_bin[1,2,6]}$^{
+\backslash
+Sexpr{ifelse(res_tab_bin[3,2,6]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_bin[3,2,6]<.05,"*",ifelse(res_tab_bin[3,2,6]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_bin[1,3,6]}$^{
+\backslash
+Sexpr{ifelse(res_tab_bin[3,3,6]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_bin[3,3,6]<.05,"*",ifelse(res_tab_bin[3,3,6]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab_bin[1,4,6]}$^{
+\backslash
+Sexpr{ifelse(res_tab_bin[3,4,6]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab_bin[3,4,6]<.05,"*",ifelse(res_tab_bin[3,4,6]<.1,"+","")))}}$
+ & 
+\backslash
+Sexpr{res_tab_bin[1,5,6]} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_bin[2,1,6]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_bin[2,2,6]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab_bin[2,3,6]})
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -3096,16 +3186,15 @@ Note:
 \begin_layout Standard
 Overall, we do not find that farmers that paid a positive price for the
  seed used it more or in ways that facilitate learning more than farmers
- that did not pay a price for it.
- In fact, results point towards the opposite, where farmers that paid a
- positive price are actually less likely to have used the seed trial pack
- in ways that would optimize learning.
+ that did not pay a price for it; fact that all coefficients are positive
+ suggests the opposite: farmers that paid a positive price are actually
+ less likely to have used the seed trial pack in ways that would optimize
+ learning.
  This seems to be particularly the case when the group that paid a positive
- price is compared to farmers that were simply given the seed for free,
- and this is confirmed by the significant positive effect for this group
- on the index.
+ price is compared to farmers that were given a cashback, and this is confirmed
+ by the significant positive effect for this group on the index.
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 What could be the reason for this???
@@ -3121,8 +3210,9 @@ Adoption and outcomes in subsequent season
 \end_layout
 
 \begin_layout Standard
-We now look at differences in behavior between the three farmer groups that
- may result from differential use and learning from the seed trial pack.
+We now look at differences in benefits derived from the technology between
+ the three farmer groups that may result from differential use and learning
+ from the seed trial pack.
  The primary objective of a seed trial pack is to increase adoption of the
  promoted seed (or of seed of an improved variety in general) in subsequent
  seasons.
@@ -3141,7 +3231,7 @@ noprefix "false"
 
 \end_inset
 
- shows that about 22 percent of farmers that paid the price arrived at after
+ shows that about 23 percent of farmers that paid the price arrived at after
  bargaining have used seed of an improved variety in the season following
  the season that they used the trial pack.
 \begin_inset Foot
@@ -3167,35 +3257,64 @@ The seed usage measure referenced here applies to a plot chosen randomly
  all plots.
  As most farmers cultivated only one or two plots, defining the outcome
  in terms of seed use on at least one plots leads results that are very
- similar.
+ similar - see also footnote 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fn:The-decision-to"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \end_inset
 
- This share reduces to about 14 percent for farmers that got the seed trial
+ This share reduces to about 15 percent for farmers that got the seed trial
  pack for free without participating in the bargaining experiment and this
  difference is significant at the 5 percent level.
  In the group that received a full discount after negotiation, the share
  of adopters is similar to the group that did not receive the discount.
  If we define adoption more narrowly as the use of fresh seed of the promoted
- variety in the season following the try-out, we see that only about 11
+ variety in the season following the try-out, we see that only about 12
  percent of farmers that paid a positive price adopts.
  Also here, adoption in the group did not negotiate is lower, but the difference
- is significant at 10 percent only.
+ is not significant.
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+how can it be that the linear hypothesis is significant but none of the
+ differences with the control group is different and they go in same direction?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-In addition to adoption as a binary variable, we consider quantity of improved
+In addition to just the decision to adopt, we consider quantity of improved
  seed used on a randomly selected maize plot within the household.
- We see that this is about 1 kilograms in households that paid a positive
+ We see that this is about 5.5 kilograms in households that paid a positive
  price for the seed trial pack.
- Difference are again largest with farmers that were not enrolled in the
- bargaining treatment but just received the seed trial pack for free.
- These farmers only used on average about 0.7 kg of seed.
- To look at the intensive margin, we also compare seed use per acre.
- Seed use per acre in the reference group is about 1.2 kilo per acre.
- Seed use per acre is somewhat lower in the group that did not negotiate
- and was given the seed for free.
+ If we again confine ourselves to farmers that use bazooka, the average
+ farmer in the groups that paid a positive price for the seed uses 4.3 kilograms
+ of bazooka seed.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Recommended seed rate is about 10kg/acre and the average size of a plot
+ is about 0.8 acre.
+\end_layout
+
+\end_inset
+
+ We do not find that these quantities differ by treatment group, although
+ these results should be interpreted with care given small sample size.
 \end_layout
 
 \begin_layout Standard
@@ -3512,7 +3631,7 @@ Sexpr{res_tab_next_season_bin[2,3,4]})
 
 \begin_layout Plain Layout
 
-Quantity of seed
+Quantity of improved seed used on random plot
 \end_layout
 
 \begin_layout Plain Layout
@@ -3613,7 +3732,7 @@ Sexpr{res_tab_next_season_bin[2,3,5]})
 
 \begin_layout Plain Layout
 
-Quantity of seed/acre
+Quantity of bazooka seed used on random plot
 \end_layout
 
 \begin_layout Plain Layout
@@ -4065,13 +4184,15 @@ Note:
 \end_layout
 
 \begin_layout Standard
-Overall, we find lower adoption of improved seed varieties and as a result
- lower production among farmers that did not engage in bargaining.
- This suggests that for actual behavior change, it is important that farmers
- learn about the value of seed (eg through a signaling effect emanating
- from the initial offer price or some other psychological process whereby
- the bargaining made valuation more salient to the farmer).
- 
+Overall, in the season following the season when farmers used the trial
+ pack, we find lower adoption of improved seed varieties among farmers that
+ did not engage in bargaining and got seed for free.
+ This finding suggests that providing seed for free may not be the best
+ way to increase adoption of the technology in the longer run.
+ However, results also suggest that increase in use is not related to a
+ sunk cost effect, but rather because the willingness to pay experiment
+ creates awareness about the value of the product, perhaps through some
+ kind of signaling.
 \end_layout
 
 \begin_layout Subsubsection
@@ -4080,7 +4201,8 @@ Attention
 
 \begin_layout Standard
 One of the main reasons why farmers that get the trial seed pack for free
- have lower adoption and yield is that they may be paying less attention.
+ have lower adoption and yield in subsequent seasons is that they may be
+ paying less attention to free stuff.
  To test this hypothesis, we look at the proportion of farmers that correctly
  remembered the type of seed that was used for the trial pack (reported
  in Table 
@@ -4094,7 +4216,7 @@ noprefix "false"
 \end_inset
 
 ).
- We find that in the group that paid a positive price, almost 77 percent
+ We find that in the group that paid a positive price, about 77 percent
  of farmers correctly recalled that we used a seed variety called 
 \begin_inset Quotes eld
 \end_inset
@@ -4104,9 +4226,9 @@ Bazooka
 \end_inset
 
 .
- This is about 6.5 percentage points lower in the group that got the seed
+ This is about 6.8 percentage points lower in the group that got the seed
  for free without negotiation, but the reduction is not significant.
- The discount did not affect the proportion.
+ We reject the null that the coefficients are the same for group 2 and 3.
 \end_layout
 
 \begin_layout Standard
@@ -4121,15 +4243,15 @@ Naseco Seeds
  was clearly indicated on the seed pack, only about 5 percent of farmers
  that paid for the seed correctly recalled the name.
  This is again lower in the group that got the seed for free without bargaining,
- and this time the difference is significant at the 5 percent level.
+ and this time the difference is significant at the 1 percent level.
 \end_layout
 
 \begin_layout Standard
 For farmers that were enrolled in the bargaining experiment, we also test
  if they remember the price at which agreement was reached.
  During midline, about 95 percent of farmers that actually paid the price
- indicated that they did, while at endline this share reduced to about 91
- percent.
+ indicated that they remembered the price, while at endline this share reduced
+ to about 91 percent.
  We find that this share was lower among farmers were offered a 100 percent
  discount, especially at endline where the share is about 9 percentage points
  lower.
@@ -4137,14 +4259,18 @@ For farmers that were enrolled in the bargaining experiment, we also test
 
 \begin_layout Standard
 When farmers indicated that they remembered the price, we asked them what
- the price they thought it was and compared it the the price recorded during
- baseline.
+ the price was.
+ We use this information to calculate how far off they were by comparing
+ it to the price recorded during baseline (simply taking the absolute value
+ of the difference).
  We find that in the group that paid the full price, the absolute value
  of the difference between the real price and the price farmers remember
  is on average 722 UGX.
  Recall error goes up to about 900 UGX at endline.
  We find that farmers that received the discount are less accurate in recalling
  the price they arrived at during negotiation.
+ The fact that farmers that received a discount tend to recall the value
+ of the package less accurately be due to sunk cost effects.
 \end_layout
 
 \begin_layout Standard
@@ -4885,6 +5011,16 @@ Complementary input use
 \begin_layout Standard
 Performance of improved seed varieties also depends on the use of good agronomic
  practices such as row planting and complementary inputs such as fertilizer.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The seed trial pack we used clearly indicated the various good agronomic
+ practices and inputs that are needed to get the most out of the seed.
+\end_layout
+
+\end_inset
+
  Differential use of complementary inputs across the three groups may be
  expected for several reasons.
  For example, as some inputs such as fertilizer or pesticides are costly,
@@ -4895,9 +5031,9 @@ Performance of improved seed varieties also depends on the use of good agronomic
  It may also be that farmers who paid a positive price value the seed higher
  because of a sunk cost effect and this may crowd-in complementary inputs
  and practices.
- Farmers who participated in the bargaining experiment may likewise value
- the seed higher due to signaling with similar crowding in of complementary
- inputs and services 
+ Farmers who participated in the bargaining experiment but got the seed
+ for free may likewise value the seed higher due to signaling with similar
+ crowding-in of complementary inputs and services 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "10.1162/rest_a_01285"
@@ -4908,7 +5044,7 @@ literal "false"
 .
  At the same time, paying a positive price for improved seed may lead to
  overly optimistic expectations, leading farmers to cut back on other inputs
- or practices (for example since the seed is of a higher yielding variety
+ or practices (for example since the seed is of a higher yielding variety,
  farmers expect that the seed would grow even without fertilizer or weeding)
  
 \begin_inset CommandInset citation
@@ -4932,46 +5068,45 @@ noprefix "false"
 
 \end_inset
 
-, we see that only about 25 percent of farmers in the first group used the
- latest recommendations with respect to seed spacing and seed rate when
- planting the seed from the trial pack.
+, we see that only about 15 percent of farmers in the first group used the
+ recommendations as indicated on the seed pack with respect to seed spacing
+ and seed rate when planting the seed from the trial pack.
  We do not find differences in this probability across the groups.
 \end_layout
 
 \begin_layout Standard
-About 35 percent of farmers that paid a positive price have used organic
+About 36 percent of farmers that paid a positive price have used organic
  fertilizer on the field where the seed from the trial pack was planted.
  This is higher among farmers that received a discount after negotiations,
  albeit not significantly so.
  It is lower among farmers that received the seed for free without bargaining,
  but also here the difference is not significant.
- When comparing the last two groups, we do find a significant difference,
- suggesting the importance of prices to signal quality.
+ When comparing the last two groups, we do find a significant difference.
 \end_layout
 
 \begin_layout Standard
-About 20 percent of farmers in the reference group used inorganic fertilizer
+About 21 percent of farmers in the reference group used inorganic fertilizer
  on the trial plot.
  While inorganic fertilizer use seems somewhat higher in the group that
- received the seed for free, results do not point towards an important income
- effect.
- The same can be said for the use of chemicals, which is also a complementary
- input that comes at a significant cost.
+ received the seed for free, the difference is not significant.
+ For the use of chemicals, which is also a complementary input that comes
+ at a significant cost, we also find higher proportions of farmers that
+ use it, but differences are not significant.
 \end_layout
 
 \begin_layout Standard
 Gap filling, whereby farmers replant seed that did not germinate after about
  one week, requires both labour time and seed.
- About 13 percent of farmers that paid a positive price for seed engaged
+ About 14 percent of farmers that paid a positive price for seed engaged
  in gap filling.
- This is higher in the groups where seed was provided for free, which suggests
- an important income effect.
+ This is higher in the groups where seed was provided for free, and the
+ difference is significant at the 10 percent level.
 \end_layout
 
 \begin_layout Standard
 Weeding is labour intensive.
  We do not find that farmers allocate more or less labour to the trial plot
- depending on what group the fall in.
+ depending on what group they fall in.
  Timely planting requires that labour is available at the right time.
  If seed is valued less because it was provided for free, we would expect
  to find that farmers in this group are less likely to prioritize the trial
@@ -5978,12 +6113,37 @@ Note:
 Overall, looking at the index, we find increased use of complementary inputs
  and good agronomic practices in the group that was exposed to the bargaining
  experiment but then received a surprise discount.
- This is consistent with prices acting as a signal for quality and may also
- indicate a potential income effect.
+ While none of the individual components of the index is significant, they
+ are all positive and the fact that components are weighted by the inverse
+ variance covariance matrix results in a significant difference for the
+ index.
+ This positive finding is consistent with prices acting as a signal for
+ quality and may also indicate a potential income effect.
 \end_layout
 
 \begin_layout Subsection
 Three-stage pricing analysis
+\end_layout
+
+\begin_layout Standard
+In the second part of the analysis, we restrict the sample to farmers that
+ were enrolled in the bargaining experiment (some of which received their
+ money back at the end of the baseline survey) and run regressions to isolate
+ screening, sunk cost, and signaling effects of prices following Equation
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:one-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ We do this again for the four categories of outcomes measured at different
+ points along the causal impact chain.
+ 
 \end_layout
 
 \begin_layout Subsubsection
@@ -6006,7 +6166,8 @@ noprefix "false"
  pack after negotiation used it as seed on a plot in the first season of
  2023.
  The second column shows that there is no impact on the propensity to use
- the seed as the price at which the transaction was concluded changes.
+ the seed as the price at which the bargaining transaction was concluded
+ changes.
  In other words, we do not find evidence of screening effects on seed trial
  pack use.
  In a similar vein, we do not find evidence of a sunk cost effect on seed
@@ -6022,13 +6183,21 @@ g there is not signaling effect.
 The table similarly does not find screening, sunk cost, nor signaling effects
  for the likelihood that farmers did not mix the seed from the seed trial
  pack with other seed.
- There are also no effects for the proportion of farmers that use a plot
- layout that enables for direct comparison between seed performance of the
- trial seed and local seed.
- We do find that farmers who paid a higher price after the discount were
- less likely to keep grain obtained from the trial plot separate during
- and after harvest.
- This points to a negative sunk cost effect.
+ For the proportion of farmers that use a plot layout that enables for direct
+ comparison between seed performance of the trial seed and local seed, we
+ find that as prices rise, the proportion reduces, suggesting a negative
+ screening effect.
+ 
+\end_layout
+
+\begin_layout Standard
+In about 92 percent of the cases, the seed trial pack was used by the person
+ who generally takes decisions with respect to what seed to use.
+ We find among farmers that paid the full price, this proportion is significantl
+y lower.
+ We also find that farmers who paid did not get the discount were less likely
+ to keep grain obtained from the trial plot separate during and after harvest.
+ This suggests negative sunk cost effect.
  
 \begin_inset Note Note
 status collapsed
@@ -6049,6 +6218,7 @@ noprefix "false"
 
  that the likelihood of keeping grain separated is significantly higher
  in the group that received the 100 percent discount.
+ Alternative explanations: look into "zero-price effect" or "free-good effect."
 \end_layout
 
 \end_inset
@@ -6352,7 +6522,7 @@ Sexpr{res_tab[2,4,2]})
 
 \begin_layout Plain Layout
 
-field layout improved next to local seed
+decision maker used seed
 \end_layout
 
 \begin_layout Plain Layout
@@ -6453,7 +6623,7 @@ Sexpr{res_tab[2,4,3]})
 
 \begin_layout Plain Layout
 
-kept produce from improved separate from local during and post harvest
+field layout improved next to local seed
 \end_layout
 
 \begin_layout Plain Layout
@@ -6554,7 +6724,7 @@ Sexpr{res_tab[2,4,4]})
 
 \begin_layout Plain Layout
 
-Index
+kept produce from improved separate from local during and post harvest
 \end_layout
 
 \begin_layout Plain Layout
@@ -6655,6 +6825,107 @@ Sexpr{res_tab[2,4,5]})
 
 \begin_layout Plain Layout
 
+Index
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab[1,1,6]}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab[1,2,6]}$^{
+\backslash
+Sexpr{ifelse(res_tab[3,2,6]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab[3,2,6]<.05,"*",ifelse(res_tab[3,2,6]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab[1,3,6]}$^{
+\backslash
+Sexpr{ifelse(res_tab[3,3,6]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab[3,3,6]<.05,"*",ifelse(res_tab[3,3,6]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{res_tab[1,4,6]}$^{
+\backslash
+Sexpr{ifelse(res_tab[3,4,6]<.01,"**"
+\end_layout
+
+\begin_layout Plain Layout
+
+	,ifelse(res_tab[3,4,6]<.05,"*",ifelse(res_tab[3,4,6]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{res_tab[1,5,6]} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab[2,1,6]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab[2,2,6]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab[2,3,6]})
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{res_tab[2,4,6]})
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -6705,6 +6976,7 @@ Note:
 \begin_layout Standard
 Overall, we do not find convincing effects that screening, sunk cost or
  signaling are important early in the causal impact chain.
+ In fact, the summary index shows a negatives sunk cost effect.
 \end_layout
 
 \begin_layout Subsubsection
@@ -6712,13 +6984,27 @@ Adoption and outcomes in subsequent season
 \end_layout
 
 \begin_layout Standard
-Also here, no real effects.
+Turning to adoption in the season following the one where farmers could
+ use the trial pack, we see that about 22 percent of farmers used improved
+ seed on the randomly selected plot.
+ Restricting to the seed that was the focus of the study, we find that about
+ 11 percent of farmers used bazooka on the randomly selected plot.
+ We do not find that seed use in the subsequent season is susceptible to
+ screening, sunk cost nor signaling effects.
+ Looking at the quantities of seed used for farmers that used improved seed
+ varieties and farmers that used Bazooka, we similarly find no price effects.
 \end_layout
 
 \begin_layout Standard
 Finally, we do find evidence of screening effects on production.
  For each 1000 UGX increase in the valuation of the seed trial pack, production
- in the subsequent year increased by almost 20 kilograms.
+ in the subsequent year increased by about 17 kilograms, which corresponds
+ to about 5 % over the mean.
+ The significant screening effect disappears at the intensive margin, suggesting
+ that farmers with a higher valuation also expand plot size.
+ For the sunk cost effect, we find no impact on production, but a negative
+ sunk cost effect appears for productivity (pointing to an reduction in
+ plot size associated to sunk cost effects.
 \end_layout
 
 \begin_layout Standard
@@ -6803,210 +7089,6 @@ cline{2-6}
 \end_layout
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-used improved seed on any plot?
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,1,1]}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,2,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season[3,2,1]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_next_season[3,2,1]<.05,"*",ifelse(res_tab_next_season[3,2,1]<.1,"
-+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,3,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season[3,3,1]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_next_season[3,3,1]<.05,"*",ifelse(res_tab_next_season[3,3,1]<.1,"
-+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,4,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season[3,4,1]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_next_season[3,4,1]<.05,"*",ifelse(res_tab_next_season[3,4,1]<.1,"
-+","")))}}$ & 
-\backslash
-Sexpr{res_tab_next_season[1,5,1]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,1,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,2,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,3,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,4,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-used fresh bazooka on any plot?
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,1,2]}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,2,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season[3,2,2]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_next_season[3,2,2]<.05,"*",ifelse(res_tab_next_season[3,2,2]<.1,"
-+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,3,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season[3,3,2]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_next_season[3,3,2]<.05,"*",ifelse(res_tab_next_season[3,3,2]<.1,"
-+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season[1,4,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season[3,4,2]<.01,"**"
-\end_layout
-
-\begin_layout Plain Layout
-
-	,ifelse(res_tab_next_season[3,4,2]<.05,"*",ifelse(res_tab_next_season[3,4,2]<.1,"
-+","")))}}$ & 
-\backslash
-Sexpr{res_tab_next_season[1,5,2]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,1,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,2,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,3,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season[2,4,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
 
 \end_layout
 
@@ -7791,8 +7873,27 @@ Note:
 
 \end_layout
 
+\begin_layout Standard
+In sum, we only find weak evidence of screening effects on outcomes in the
+ next season, with the summary index being positive only at the 10 percent
+ level.
+\end_layout
+
 \begin_layout Subsubsection
 Attention
+\end_layout
+
+\begin_layout Standard
+We now consider if higher price affects how much attention farmers pay to
+ the seed trial pack and what the relative importance is of the different
+ effects.
+ At the time of the midline questionnaire, about 77 percent of farmers correctly
+ remember the name of the seed that they received.
+ We do not find significant screening or sunk cost effects.
+ We do find weak evidence of a reduction in this likelihood if the initial
+ offer price was higher (indicating a negative signaling effect).
+ Only 5 percent of farmers correctly recalled the name of the seed company
+ and there are no screening, sunk cost, or signaling effects.
 \end_layout
 
 \begin_layout Standard
@@ -8584,6 +8685,28 @@ Note: price bought only on subset of farmers that paid positive price -
 
 \end_layout
 
+\begin_layout Standard
+A high share of farmers say they remember the price that emerged from the
+ bargaining experiment.
+ As expected, this share reduced somewhat over time.
+ We find a positive sunk cost effect that is significant at the 1 percent
+ level at midline.
+ Farmers that paid the full price (controlling for their valuation of the
+ seed trial pack) are 9 percentage points more likely to say that they remember
+ the price.
+ 
+\end_layout
+
+\begin_layout Standard
+We also look at how accurately they remember the price by considering the
+ average absolute deviation from the actual price arrived at during bargaining.
+ Farmers under or overestimate the price by about 1000 UGX, and, again as
+ expected, this amount increases over time.
+ We find that due to sunk cost effects, the margin reduces significantly:
+ farmers who paid a positive price are better at recalling the agreed upon
+ price.
+\end_layout
+
 \begin_layout Subsubsection
 Complementary input use
 \end_layout
@@ -8591,14 +8714,21 @@ Complementary input use
 \begin_layout Standard
 Finally, we look at screening, sunk cost and signaling effects with respect
  to complementary inputs and practices.
- We find evidence of important screening effects for some of the inputs.
- For example, an increase in the farmer's willingness to pay by 1000 UGX
- as proxied by the outcome of the negotiation leads to an increase in the
- likelihood that the farmer uses organic fertilizer of almost 2 percentage
- points.
- Similarly, for inorganic fertilizer use, an 1000 UGX higher valuation leads
- to an increase of 1.3 percentage points in use rate.
- A similar effect is found for 
+ We find evidence of screening effects for some of the inputs and practices.
+ For example, overall, about 17 percent of farmers follow recommended seed
+ spacing and seed rates on the trial plot and this share is increasing with
+ valuation as proxied by the outcome of the bargaining experiment.
+ For inorganic fertilizer use, there seems to be a positive relationship
+ with price negotiated, but the coefficient is not significant.
+\end_layout
+
+\begin_layout Standard
+Looking at sunk cost effects, signs generally turn negative.
+ The share of farmers that used organic fertilizer on the trial plot reduced
+ if farmers had to pay the full price.
+ Farmers also seemed to engage less in timely planting if they had to did
+ not received the discount.
+ There is no evidence of signaling.
 \end_layout
 
 \begin_layout Standard
@@ -9604,8 +9734,11 @@ Note:
 \end_layout
 
 \begin_layout Standard
-Overall, and as illustrated by the index, we find evidence of screening
- effects 
+Taken together, we find evidence of screening effects for complementary
+ input use and used of recommended agronomic practices on the seed trial
+ plot.
+ We again find evidence of negative sunk cost effects.
+ This is confirmed by significant coefficient estimates for the index.
 \end_layout
 
 \begin_layout Section
@@ -9613,8 +9746,95 @@ Conclusion
 \end_layout
 
 \begin_layout Standard
-A farmer's willingness to pay as approximated by the price on which agreement
- was reached during does not predict use of the seed trial pack.
+In this paper, we study the importance of prices when introducing a new
+ product or service.
+ We use a recently released hybrid maize seed variety as case study and
+ provide smallholder farmers with seed trial packs.
+ The seed trial packs are provided through three different modalities.
+ A first group is asked to pay a positive price for the seed according to
+ their willingness to pay.
+ This willingness to pay is approximated by the price that is agreed upon
+ after bargaining over the seed (starting from a random initial offer price).
+ A second group also bargained over the price but given a 100 percent surprise
+ discount, hence receiving the trial pack for free.
+ A third group simply got the seed trial pack for free without going through
+ the bargaining process.
+\end_layout
+
+\begin_layout Standard
+Simply comparing the three groups, we do not find that paying a positive
+ price for the seed bag led to higher use or use that is more likely to
+ lead to learning about the new technology.
+ In fact, the opposite seems to be the case, with even stronger positive
+ effects if the farmer was first made aware of the value of the seed through
+ the bargaining experiment and then received the 100 percent cash-back.
+ Outcomes in subsequent seasons are different.
+ The group that received the seed for free and without being taken through
+ the bargaining process reports lower yields and productivity on their maize
+ plots.
+ The reason for this contradiction is not entirely clear, but there is some
+ evidence that farmers that get the seed for free without bargaining pay
+ less attention to the seed and use less complementary inputs and good agronomic
+ practices.
+\end_layout
+
+\begin_layout Standard
+Confining attention to the group that participated in the bargaining experiment
+ allows us to control for that willingness to pay of the farmer and disentangle
+ screening, sunk cost and signaling effects.
+ We find that a farmer's willingness to pay as approximated by the price
+ on which agreement was reached during bargaining does not predict use of
+ the seed trial pack.
+ We find negative sunk cost effects of trial pack usage, with farmers that
+ paid the full price being less likely to use it in ways that would maximize
+ learning.
+ Farmers that paid the full price were also less likely to use recommended
+ agronomic practices such as timely planting and complementary inputs such
+ as fertilizer.
+ At the same time we do find that farmers that value seed higher put more
+ effort and practices into it.
+ This leads then to expand the area under cultivation, significantly increasing
+ production as valuation rises.
+ We do not find evidence that prices signal value or quality.
+\end_layout
+
+\begin_layout Standard
+Our findings suggest that providing goods for free for a limited period
+ of time does not increase wastage.
+ In fact, free seed trial pack may invoke a zero price effect, whereby farmers
+ are more likely to adopt an entire package (including complementary inputs
+ and increased effort) if seed is received for free 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "shampanier2007zero"
+literal "false"
+
+\end_inset
+
+.
+ Furthermore, the existence of a screening effect does mean that subsidies
+ may be justified from a social welfare point of view (for instance to provide
+ poor farmers with an initial investment to kick-start longer term adoption)
+ or to leverage positive externalizes (where adoption at the aggregate level
+ will increase if farmers have more neighbors to learn from).
+\end_layout
+
+\begin_layout Standard
+Finally, the fact that we do find lower adoption in the group that got the
+ seed for free (but did not participate in the bargain) does suggest that
+ free seed may serve as an anchor and reduce willingness-to-pay in the future
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "shukla2022trouble"
+literal "false"
+
+\end_inset
+
+.
+ However, we do find that the negative effect disappears when the value
+ of the seed pack is made salient through the bargaining experiment.
+ 
 \end_layout
 
 \begin_layout Section
@@ -9627,41 +9847,6 @@ This research received clearance form Makerere's School of Social Sciences
  IRB (DSGD-23-0108).
  The research was also registered at the Ugandan National Commission for
  Science and Technology (SS1657ES).
-\end_layout
-
-\begin_layout Section
-Transparency and replicability
-\end_layout
-
-\begin_layout Standard
-To maximize transparency and allow for replicabiliy, we use the following
- strategies:
-\end_layout
-
-\begin_layout Itemize
-pre-analysis plan: in the past, a document was prepared that provides an
- ex-ante step-by-step plan setting out the hypothesis we will test, the
- intervention we will implement to test these hypotheses, the data that
- will be collected and specifications we will run to bring the hypotheses
- to the data.
- This pre-analysis plan was pre-registered at the AEA RCT registry.
-\end_layout
-
-\begin_layout Itemize
-revision control: the entire project will be under revision control (that
- is time stamped track changes) and committed regularly to a public repository
- (github).
-\end_layout
-
-\begin_layout Itemize
-mock report: This document provides a pre-registered report that was added
- to the AEA RCT registry and GitHub.
- This report differs from the pre-analyisis plan in that it already has
- the tables filled with simulated data.
- The idea is that after the endline, only minimal changes are necessary
- (basically connecting a different dataset) to obtain the final result,
- further reducing the opportunity of specification search.
- In the near future as data comes in, this report will be updated on github.
 \end_layout
 
 \begin_layout Section

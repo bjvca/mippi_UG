@@ -260,21 +260,33 @@ dta <- read.csv(paste(path,"midline/data/public/midline.csv", sep="/"))
 dta <- merge(dta, bse[c("farmer_ID","P1_pric","final_price")], by.x="ID", by.y="farmer_ID", all.x=TRUE)
 ##create unique village level identifier for clustering of standard errors
 dta$cluster_ID <- as.factor(paste(paste(dta$dist_ID,dta$sub_ID, sep="_"), dta$vil_ID, sep="_"))
-
+dta$used_TP[dta$used_TP=="n/a"] <- NA
 dta$used_TP <- dta$used_TP == "Yes"
 dta$remembers <- dta$Rec_TP == "Yes" |  dta$Buy_TP  == "Yes"
+dta$TP_separate[dta$TP_separate=="n/a"] <- NA
 dta$TP_separate <- dta$TP_separate == 1
 
-dta$cor_plant <- dta$space=="4" & dta$seed_no=="2"
+dta$space[dta$space == "n/a"] <- NA
+dta$space[dta$space == "98"] <- NA
+dta$seed_no[dta$seed_no == "n/a"] <- NA
+dta$cor_plant <- (dta$space=="2" & dta$seed_no=="2") | (dta$space=="3" & dta$seed_no=="1")
+
+dta$dap_app[dta$dap_app == "n/a"] <- NA
+dta$ure_app[dta$ure_app == "n/a"] <- NA
 dta$use_fert_inorg <-  dta$dap_app== "Yes" | dta$ure_app== "Yes"
+dta$org_app[dta$org_app == "n/a"] <- NA
 dta$use_fert_org <-  dta$org_app== "Yes" 
+dta$cide_use[dta$cide_use == "n/a"] <- NA
 dta$use_chem <-  dta$cide_use== "Yes" 
+dta$resow[dta$resow == "n/a"] <- NA
 dta$gap_fill <-  dta$resow== "Yes"
 dta$nr_weed <- as.numeric(as.character(dta$weed_no))
 dta$nr_weed[dta$nr_weed == 999] <- NA
 dta$plant_date <- as.numeric(as.character(dta$plant_date))
 dta$plant_date[dta$plant_date == 999] <- NA
 dta$timely_planting <- dta$plant_date < 5
+
+dta$sep_post_harvest[dta$sep_post_harvest == "n/a"] <- NA
 dta$sep_post_harvest <- dta$sep_post_harvest=="Yes"
 
 dta$happy_yield <- dta$happy_yield == 1 
@@ -282,6 +294,8 @@ dta$happy_drought <- dta$happy_drought ==1
 dta$happy_disease <- dta$happy_disease == 1
 dta$happy_germinate <- dta$happy_germinate ==1
 dta$happy <- dta$happy == 1
+dta$layout[dta$layout=="n/a"] <- NA
+dta$layout[dta$layout=="98"] <- NA
 dta$layout <- dta$layout == 3
 
 dta$area_tot <- as.numeric(as.character(dta$plot_size_all))
@@ -319,8 +333,10 @@ dta$plan_bought <- dta$buy_plan=="Yes"
 dta$plan_area <-  as.numeric(as.character(dta$area_plan))
 dta$plan_area[dta$plan_area > 50] <- NA
 
-
+dta$exp1_lmpr[dta$rem_sdType == "n/a"] <- NA
 dta$remembers_seed <- dta$exp1_lmpr == "Bazooka"
+dta$remembers_seed[dta$remembers_seed == "n/a"] <- NA
+dta$seedco[dta$rem_comp == "n/a"] <- NA
 dta$remembers_comp <- dta$seedco == "4"
 dta$value_shop <- as.numeric(as.character(dta$value))
 
@@ -335,6 +351,8 @@ dta$value_paid <- as.numeric(as.character(dta$final_price))
 dta$price_diff_sq <- abs(as.numeric(as.character(dta$final_price)) - as.numeric(as.character(dta$price_paid)))
 dta$price_diff_sq[dta$trial_P] <- NA
 
+dta$who_used[dta$who_used == "n/a"] <- NA
+dta$who_used <- dta$who_used == "1"
 
 ### subset for regressions
 
@@ -355,7 +373,7 @@ dta_reg$d_sunk <- dta_reg$sunk - mean(dta_reg$sunk, na.rm=TRUE)
 
 ###table 1 - impact on use
 #iterate over outcomes
-outcomes <- c("used_TP","TP_separate","layout","sep_post_harvest" )
+outcomes <- c("used_TP","TP_separate","who_used","layout","sep_post_harvest" )
 
 index_use <- icwIndex(xmat=dta_reg[outcomes]) #x
 dta_reg <- data.frame(dta_reg,index_use)
@@ -401,7 +419,7 @@ save(res_tab, file=paste(path,"papers/seed_free_or_not/res_tab.Rdata",sep="/"))
 ###now run binary analysis
 
 #iterate over outcomes
-outcomes <- c("used_TP","TP_separate","layout","sep_post_harvest" )
+outcomes <- c("used_TP","TP_separate","who_used","layout","sep_post_harvest" )
 
 index_use <- icwIndex(xmat=dta[outcomes]) #x
 dta <- data.frame(dta,index_use)
@@ -858,10 +876,12 @@ dta$rnd_adopt <-   (((dta$maize_var_selected %in%
                         c("Longe_10H", "Longe_10R", "Longe_7H", "Longe_7R_Kayongo-go", "Bazooka", "DK", "Longe_6H", "Panner", "UH5051", "Wema", "KH_series", "other_hybrid")) & (dta$times_recycled_selected %in% 1) & (dta$single_source_selected %in% letters[4:9])  ) |
                       ((dta$maize_var_selected  %in%  c("Longe_5", "Longe_5D", "Longe_4", "MM3","other_opv")) & (dta$times_recycled_selected %in% 1:4) &  (((dta$single_source_selected %in% letters[4:9])) | (dta$recycled_source_selected %in% letters[4:9]))))
 dta$rnd_adopt[dta$no_grow] <- NA 
+dta$rnd_adopt[dta$maize_var_selected == "n/a"] <- NA 
 
 
 dta$rnd_bazo <-  ((dta$maize_var_selected == "Bazooka") & (dta$single_source_selected %in% letters[4:9]  & (dta$times_recycled_selected %in% 1)))
 dta$rnd_bazo[dta$no_grow] <- NA 
+dta$rnd_bazo[dta$maize_var_selected =="n/a"] <- NA 
 
 
 
@@ -870,16 +890,19 @@ dta$seed_qty <- as.numeric(as.character(dta$seed_qty))
 dta$seed_qty[dta$seed_qty == 999] <- NA 
 
 dta$imp_seed_qty_rnd <- dta$rnd_adopt*dta$seed_qty
-#dta$imp_seed_qty_rnd[is.na(dta$imp_seed_qty_rnd)] <- 0
+dta$imp_seed_qty_rnd[dta$imp_seed_qty_rnd == 0] <- NA 
 
 
 
 dta <- trim("imp_seed_qty_rnd", dta)
 
+dta$imp_seed_qty_rnd_acre <- dta$rnd_bazo*dta$seed_qty
+dta$imp_seed_qty_rnd_acre[dta$imp_seed_qty_rnd_acre == 0] <- NA 
+dta <- trim("imp_seed_qty_rnd_acre", dta)
 
-dta$size_selected <- as.numeric(as.character(dta$size_selected)) 
+#dta$size_selected <- as.numeric(as.character(dta$size_selected)) 
 ### seed quantity per area
-dta$imp_seed_qty_rnd_acre <- dta$imp_seed_qty_rnd/dta$size_selected  
+#dta$imp_seed_qty_rnd_acre <- dta$imp_seed_qty_rnd/dta$size_selected  
 
 
 
@@ -925,7 +948,7 @@ dta_reg$d_sunk <- dta_reg$sunk - mean(dta_reg$sunk, na.rm=TRUE)
 
 #iterate over outcomes
 outcomes <- c("p_outcome_1", "p_outcome_2","rnd_adopt", "rnd_bazo", "imp_seed_qty_rnd", "imp_seed_qty_rnd_acre","production", "productivity" )
-index_use <- icwIndex(xmat=dta_reg[setdiff(outcomes,c("p_outcome_1","p_outcome_2"))]) #x
+index_use <- icwIndex(xmat=dta_reg[setdiff(outcomes,c("p_outcome_1","p_outcome_2", "imp_seed_qty_rnd", "imp_seed_qty_rnd_acre"))]) #x
 dta_reg <- data.frame(dta_reg,index_use)
 
 names(dta_reg)[names(dta_reg) == 'index'] <- 'index_next_season'
@@ -967,7 +990,7 @@ res_tab_next_season <- round(res_tab,digits=3)
 save(res_tab_next_season, file=paste(path,"papers/seed_free_or_not/res_tab_next_season.Rdata",sep="/"))
 
 outcomes <- c("p_outcome_1", "p_outcome_2","rnd_adopt", "rnd_bazo", "imp_seed_qty_rnd", "imp_seed_qty_rnd_acre","production", "productivity" )
-index_use <- icwIndex(xmat=dta[setdiff(outcomes,c("p_outcome_1","p_outcome_2"))]) #x
+index_use <- icwIndex(xmat=dta[setdiff(outcomes,c("p_outcome_1","p_outcome_2", "imp_seed_qty_rnd", "imp_seed_qty_rnd_acre"))]) #x
 dta <- data.frame(dta,index_use)
 
 names(dta)[names(dta) == 'index'] <- 'index_next_season'
