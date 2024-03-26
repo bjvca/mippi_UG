@@ -208,6 +208,26 @@ base_balance <- round(res_tab,digits=3)
 #res_tab <- round(res_tab,digits=3)
 save(base_balance, file=paste(path,"papers/seed_free_or_not/base_balance.Rdata",sep="/"))
 
+###WTP graph
+bse_graph <- bse
+bse_graph$final_price[bse_graph$final_price== "3000"] <- NA
+
+bse_graph$final_price[bse_graph$final_price == "9000" & bse_graph$P1_pric== "9000"] <- NA
+bse_graph$final_price[bse_graph$final_price == "10000" & bse_graph$P1_pric== "10000"] <- NA
+bse_graph$final_price[bse_graph$final_price == "11000" & bse_graph$P1_pric== "11000"] <- NA
+bse_graph$final_price[bse_graph$final_price == "12000" & bse_graph$P1_pric== "12000"] <- NA
+breaks <- seq(from = 4000, to= 10000, by =1000)
+bse_graph$final_price <- cut(bse_graph$final_price, breaks = breaks,labels = c("4000","5000","6000","7000","8000","9000"), right = FALSE)
+bse_graph$final_price <- as.numeric(as.character(bse_graph$final_price))
+bse_graph$final_price[bse_graph$final_price < 5000] <- NA
+bse_graph <- subset(bse_graph, !is.na(final_price) )
+library(ggplot2)
+p <- ggplot(bse_graph, aes(x=final_price)) + 
+geom_histogram(aes(y=..density..), colour="black", fill="white")+
+ geom_density(alpha=.2, fill="#FF6666", bw=500) 
+
+barplot(prop.table(table(bse_graph$final_price)), xlab = "Price", ylab = "Density")
+
 ### now run binary analysis 
 
 ##important: it is the non-discounted (those that pay the full price) that identify the sunk cost
