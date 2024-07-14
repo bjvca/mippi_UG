@@ -25,7 +25,7 @@ baseline_dta$quality_use_any <-  (baseline_dta$quality_use=="Yes")
 baseline_dta$baz_rand <- baseline_dta$maize_var=="Bazooka"
 baseline_dta$source_rand <- (baseline_dta$source %in% letters[4:9])
 baseline_dta$recycler 
-baseline_dta$recycler <- baseline_dta$often == "f"
+baseline_dta$recycler <- baseline_dta$often %in% c("e","f")
 baseline_dta$yield <- baseline_dta$bag_harv*baseline_dta$bag_kg/baseline_dta$plot_size
 baseline_dta <- trim("yield",baseline_dta,trim_perc=.02)
 baseline_dta$yield_level <- baseline_dta$yield 

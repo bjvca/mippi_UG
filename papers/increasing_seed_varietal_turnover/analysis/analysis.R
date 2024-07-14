@@ -204,6 +204,7 @@ dta$totsize[dta$no_grow] <- NA
 dta$plot_no <- as.numeric(dta$plot_no)
 dta$share_plots_imp <-  dta$nr_improved/dta$plot_no
 dta$share_plots_imp[dta$no_grow] <- NA
+dta$share_plots_imp[dta$share_plots_imp>1] <- NA
 ## share of area under improved cultivation
 dta$share_area_imp <-  dta$nr_improvedxsize/dta$totsize
 dta$share_area_imp[dta$no_grow] <- NA
@@ -358,6 +359,18 @@ dta <- trim("productivity", dta)
 bse$b_productivity <- bse$b_production/bse$plot_size
 bse <- trim("b_productivity", bse)
 dta <- merge(dta, bse[c("farmer_ID","b_productivity")], by.x="ID", by.y="farmer_ID")
+dta$production_mean <- dta$production
+dta$productivity_mean <- dta$productivity
+
+dta$production <- log(dta$production)
+dta$b_production <- log(dta$b_production)
+dta$productivity <- log(dta$productivity)
+dta$b_productivity <- log(dta$b_productivity)
+
+dta$production[dta$production=="-Inf"] <- NA
+dta$b_production[dta$b_production=="-Inf"] <- NA
+dta$productivity[dta$productivity=="-Inf"] <- NA
+dta$b_productivity[dta$b_productivity=="-Inf"] <- NA
 #iterate over outcomes
 outcomes <- c("rnd_adopt", "rnd_bazo", "imp_seed_qty_rnd", "imp_seed_qty_rnd_acre","production", "productivity" )
 b_outcomes <- c("b_rnd_adopt", "b_rnd_bazo","b_imp_seed_qty_rnd","b_imp_seed_qty_rnd_acre", "b_production", "b_productivity")
@@ -405,6 +418,12 @@ for (i in 1:length(outcomes)){
   df_res_pool[2,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
   
 }
+
+df_means_out[1,5] <- mean(dta$production_mean, na.rm=TRUE)
+df_means_out[2,5] <- sd(dta$production_mean, na.rm=TRUE)
+
+df_means_out[1,6] <- mean(dta$productivity_mean, na.rm=TRUE)
+df_means_out[2,6] <- sd(dta$productivity_mean, na.rm=TRUE)
 
 df_rnd_pool <- df_res_pool
 df_rnd <- df_res
@@ -1018,6 +1037,7 @@ dta$seed_keep[dta$seed_keep == "999"] <- NA
 
 dta$seed_keep[dta$no_grow] <- NA
 dta$seed_keep <- as.numeric(as.character(dta$seed_keep))
+dta$seed_keep[dta$seed_keep>50] <- NA
 #iterate over outcomes
 outcomes <- c("perc_cons","perc_sell","seed_keep")
 
