@@ -449,6 +449,8 @@ dta$downside_risk_imp <- dta$risk_imp == "1" | dta$risk_imp=="2"
 
 
 dta$risk_bazo[dta$risk_bazo == "98"] <- NA
+dta$risk_bazo[dta$risk_bazo == "n/a"] <- NA
+
 dta$downside_risk_bazo <- dta$risk_bazo == "1" | dta$risk_bazo == "2"
 
 
@@ -457,10 +459,11 @@ dta$future_imp[dta$future_imp == "98"] <- NA
 dta$future_imp <- dta$future_imp == "1" | dta$future_imp == "2"
 
 
-
+dta$share_bazo[dta$share_bazo == "n/a"] <- NA
 dta$share_bazo <- dta$share_bazo == "Yes"
 dta$future_bazo[dta$future_bazo == "98"] <- NA
-dta$future_bazo <- dta$future_bazo == "1" | dta$future_bazo == "2"
+
+dta$future_bazo <- dta$future_bazo == "1"
 
 
 

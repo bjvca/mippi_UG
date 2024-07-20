@@ -1842,7 +1842,7 @@ noprefix "false"
 \begin_inset Float table
 wide false
 sideways true
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -3112,7 +3112,7 @@ We do find that some farmers that grew maize at baseline do not grow maize
 \end_layout
 
 \begin_layout Section
-Results
+Results: outcomes and impact
 \end_layout
 
 \begin_layout Standard
@@ -5151,6 +5151,8 @@ We conjecture that making consumption traits of improved seed varieties
  The cooking demonstration and tasting session may sensitize men that there
  is more to maize than just higher yield, which may crates pace for women
  to participate in decision making.
+ As such, involvement of women in decision making is an important impact
+ area in this study.
 \end_layout
 
 \begin_layout Standard
@@ -5662,20 +5664,50 @@ noprefix "false"
 
  shows that three quarters of the maize is grown for home consumption.
  We do not find a significant effect of any intervention.
- This could be due to the fact that few people use improved seed, and 
 \end_layout
 
 \begin_layout Standard
-, what share of the harvest is sold (bag_sell/bag_harv) and what share of
- the harvest is recycled for seed in the next season (seed_keep/harv_kgs).
- We do this for a randomly selected plot within the household.
+Maize that is not consumed is usually sold.
+ We thus also look at what share of the harvest is sold (bag_sell/bag_harv).
+ Indeed, Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "disposal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows that about 20 percent of seed is sold on average.
+ We do not see any effects of the intervetions.
+\end_layout
+
+\begin_layout Standard
+Finally, a small amount of maize grain may be saved for planting material
+ for the next season.
+ We expected a reduction in the amount of saved seed, as both interventions
+ are designed to increase adoption of improved maize variety and varietal
+ turnover.
+ However, we do not find a significant effect of the intervention.
+ This may be because, as we have seen in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Adoption"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, farmers appear to also recycle improved seeds.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float table
 wide false
 sideways true
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -6232,7 +6264,9 @@ Well-being and food security
 \end_layout
 
 \begin_layout Standard
-Table 
+Increasing adoption of improved seed is never the end-goal.
+ In the end, farmers want to improve their food security, and welfare.
+ Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "welfare"
@@ -6242,9 +6276,37 @@ noprefix "false"
 
 \end_inset
 
- shows the impact of the treatments on various welfare and food security
- indicators.
+ therefor explores the impact of the treatments on various welfare and food
+ security indicators.
  
+\end_layout
+
+\begin_layout Standard
+The first two questions are subjective measures of relative welbeing, both
+ within the village and across time.
+ About 35 percent of farm households report that they think they are doing
+ better than average within their village.
+ We do not find that this share changes after the seed trial pack not the
+ cooking demonstration and tasting session.
+ We see that 42 percent of households think that they are doing better than
+ 6 months ago—roughly one agricultural season back.
+ Interestingly, there is some indication that farmers in the seed trial
+ pack group are more likely to feel better off than 6 months ago than farmers
+ that did not get a seed trial pack.
+ This could be because they are have been enjoying better harvest from the
+ seed trial pack and/or even without adopting new seed but recycling seed
+ from the trial pack they may still feel as if they are better off (even
+ though as we saw in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "adoptiom-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, yields did not significantly increase).
 \end_layout
 
 \begin_layout Standard
@@ -7007,8 +7069,12 @@ s includ control for baseline outcome.
 
 \end_layout
 
+\begin_layout Section
+Results: Mechanisms
+\end_layout
+
 \begin_layout Subsection
-Pathways
+Knowledge, risk, social learning, and intentions
 \end_layout
 
 \begin_layout Standard
@@ -7016,19 +7082,78 @@ We asked some question to explore impact pathways.
  First, both intervention may raise awareness of improved seed, and bazooka
  in particular.
  Therefore we asked farmers to provide use with the names of as many improved
- maize seed varieties they know and enumerator record this number (nr_vars).
+ maize seed varieties they know and enumerator record this number.
  Second, we also simply ask if the farmer knows a maize seed variety called
- “Bazooka” (knw_bazo).
+ “Bazooka”.
 \end_layout
 
 \begin_layout Standard
-The interventions, and the producer side intervention in particular, may
- affect risk perceptions from farmers now that they were able to try the
- seed.
- To get a sense of perceived risk, we ask farmers to indicate how likely
- is it that they would end up with lower yields than when they would use
- local seed if you would use improved seed varieties (risk_imp).
- Responses are recorded on a 5 point likert scale ranging from 
+Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pathways"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows a clear impact on knowledge of seed from the two interventions.
+ On average, farmers know about 2.66 different seed varieties.
+ Both interventions lead do a significant increase in the number of seed
+ farmers know, and the effects are very similar.
+ Overall, 82 percent of farmers in our sample knows bazooka.
+ Not surprisingly, the impact on this question was highest for the seed
+ trial intervention.
+ This is probably due to the fact that the cooking and tasting demonstration
+ was kept more general (focusing on consumption traits of improved seed
+ varieties), while the seed trial pack was in the original pack with the
+ name printed on it.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+However, we did mention that the maize flour that we used (and also provided
+ a take home sample from) came from bazooka.
+ This is why the result for the cooking demonstration is small but still
+ significant (at least in the pooled model), and also why we do see that
+ farmers in demo group also adopted more fresh bazooka (see Tables 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "adoptiom"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "adoptiom-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As mentioned in the introduction, one of the reasons why seed trial packs
+ are used is to reduce potential risk premiums associated with trying out
+ a new seed.
+ To get a sense of how perceived risk changed in response to the interventions,
+ we ask farmers to indicate how likely is it that they would end up with
+ lower yields than when they would use local seed if you would use improved
+ seed varieties.
+ Responses are recorded on a 4 point likert scale ranging from 
 \begin_inset Quotes eld
 \end_inset
 
@@ -7046,31 +7171,89 @@ very unlikely (improved seed will give more yield than local)
 
 .
  The same question is repeated for the specific seed type we used in the
- study (albeit only for farmers who indicated that they know the seed (kwo_bazo)
-): How likely is it that you would end up with lower yield than with local
- seed if you would use the promoted variety? (risk_bazo).
+ study (albeit only for farmers who indicated that they know the seed).
+ For both cases, we focus on downside risk and construct an indicator that
+ is one if the farmers answer 1 or 2 on the likert scale (very likely or
+ somewhat likely that improved seed will give lower yield).
+ We find that downside risk is limited.
+ We also do not find that the intervention affect risk perceptions related
+ to risk of improved seed in general nor the seed we used for the intervention.
 \end_layout
 
 \begin_layout Standard
-As indicated in the motivation, one important justification for subsidizing
- seed or flour (eg in the form of trial pack) is to leverage spillover effects
- to increase adoption.
+Another important justification for subsidizing seed or giving seed for
+ free is to leverage spillover effects to increase adoption.
  We include a few questions to see if our interventions affect social learning.
- In particular, we ask how likely is it that a farmer would recommend one
- of the improved seed varieties they know to a friend? (share_imp).
- And a similar question is asked for the particular seed that we used for
- the seed trial pack (share_bazo).
- Results are in table 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "pathways"
-plural "false"
-caps "false"
-noprefix "false"
+ In particular, we ask if farmers recommended one of the improved seed varieties
+ they know to a friend.
+ Again, a similar question is asked for the particular seed that we used
+ for the seed trial pack (only if they know bazooka).
+ 
+\end_layout
+
+\begin_layout Standard
+We find that a large share of farmers recommends improved seed to other
+ farmers.
+ The share of farmers that recommends using improved seed is particularly
+ high among farmers that received the seed trial pack.
+ If we restrict attention to only bazooka, the differences become much bigger.
+ Having received a trial pack increases the likelihood that a farmer will
+ recommend this to others with 38 to 44 percentage points (depending on
+ the model).
+\end_layout
+
+\begin_layout Standard
+Finally, we look at the intentions of farmers to use the seed in the future.
+ The share of farmers that say they will use improved seed in the future
+ is fairly high, but we do not find a significant impact of the seed trial
+ pack nor the cooking demonstration and tasting session.
+ Furthermore, we find that, overall, about 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round(df_means_path[1,8]*100,digits=0),nsmall=0)} 
+\end_layout
 
 \end_inset
 
-.
+ percent of farmers indicate that they are very likely to use bazooka in
+ the next season.
+ We see that in the group that received a seed trial pack, the percentage
+ is 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round(df_path_pool[1,1,8]*100,digits=0),nsmall=0)}
+\end_layout
+
+\end_inset
+
+ to 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round(df_path[1,1,8]*100,digits=0),nsmall=0)}
+\end_layout
+
+\end_inset
+
+ percentage points higher than in the group that did not receive a seed
+ trial pack.
+ When these outcomes are summarized in an index, we find a positive impact
+ from the seed trial pack.
+ The positive effect from the cooking demonstration is less convincing.
 \end_layout
 
 \begin_layout Standard
@@ -7983,6 +8166,11 @@ Sexpr{format(round(df_path[3,2,8],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
+
+\backslash
+
+\backslash
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -8140,14 +8328,16 @@ s includ control for baseline outcome.
 \end_layout
 
 \begin_layout Subsection
+Perceptions
+\end_layout
+
+\begin_layout Subsubsection
 Perceptions of consumer traits
 \end_layout
 
 \begin_layout Standard
-The cooking demonstrations are designed to change perceptions related to
- the consumption of maize obtained from seed of an improved variety.
- For instance, farmers may think that food that is obtained from local seed
- is tastier than its commercial counterpart 
+Farmers may think that food that is obtained from local seed is tastier
+ than its commercial counterpart 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "picha2018preference"
@@ -8156,7 +8346,9 @@ literal "false"
 \end_inset
 
 .
- Furthermore, if farmers plant the seed trial pack keep harvest separate
+ The cooking demonstrations are designed to change perceptions related to
+ the consumption of maize obtained from seed of an improved variety.
+ Furthermore, if farmers plant the seed trial pack and keep harvest separate
  when processing and cooking, they may also update their preconceived beliefs
  about certain consumer traits.
  In Table 
@@ -8186,6 +8378,12 @@ This is related to the starch content of maize meal that leads to expansion
 
 ; if the appearance was better (generally meaning that the posho is more
  white); and ease of cooking.
+\end_layout
+
+\begin_layout Standard
+Results show that X percent of farmers indicate that the maize flour tasted
+ better or much better than expected.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -8887,6 +9085,9 @@ noprefix "false"
  to compare maize obtained from seed of an improved variety such as Longe5
  or Bazooka to maize obtained from local seed on the same four consumption
  traits.
+ In particular, farmers are now not asked to compare the seed they used
+ against their expectations; they are asked to compare consumption attributes
+ of improved seed to local seed.
  Results are summarized in Table 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -9627,7 +9828,7 @@ s includ control for baseline outcome.
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Perceptions of producer traits
 \end_layout
 
@@ -11299,7 +11500,7 @@ s includ control for baseline outcome.
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Perceptions on post-harvest traits
 \end_layout
 
@@ -12471,8 +12672,22 @@ s includ control for baseline outcome.
 
 \end_layout
 
-\begin_layout Section*
-Ethical clearance
+\begin_layout Section
+Conclusion
+\end_layout
+
+\begin_layout Standard
+Exploring impact pathways, we see that seed trial packs are effective in
+ making a new seed known.
+ However, we do not find evidence that the argument that farmers do adopt
+ new seeds because they are risk averse is unfounded.
+ In our sample, farmers think adverse outcomes with improved seed are unlikely,
+ and giving them a seed trial pack to experiment does not change that.
+ 
+\end_layout
+
+\begin_layout Section
+Acknowledgments
 \end_layout
 
 \begin_layout Standard
@@ -12481,48 +12696,7 @@ This research received clearance form Makerere's School of Social Sciences
  IRB (DSGD-23-0108).
  The research was also registered at the Ugandan National Commission for
  Science and Technology (SS1657ES).
-\end_layout
-
-\begin_layout Section
-Transparency and replicability
-\end_layout
-
-\begin_layout Standard
-To maximize transparency and allow for replicabiliy, we use the following
- strategies:
-\end_layout
-
-\begin_layout Itemize
-pre-analysis plan: the current document provides an ex-ante step-by-step
- plan setting out the hypothesis we will test, the intervention we will
- implement to test these hypotheses, the data that will be collected and
- specifications we will run to bring the hypotheses to the data.
- This pre-analysis plan will be pre-registered at the AEA RCT registry.
-\end_layout
-
-\begin_layout Itemize
-revision control: the entire project will be under revision control (that
- is time stamped track changes) and committed regularly to a public repository
- (github).
-\end_layout
-
-\begin_layout Itemize
-mock report: After baseline data is collected, a pre-registered report will
- be produced and added to the AEA RCT registry and GitHub.
- This report will differ from the pre-analyisis plan in that it already
- has the tables filled with simulated data.
- The idea is that after the endline, only minimal changes are necessary
- (basically connecting a different dataset) to obtain the final result,
- further reducing the opportunity of specification search.
- This document is the mock report.
-\end_layout
-
-\begin_layout Section
-Funding
-\end_layout
-
-\begin_layout Standard
-This research is part of the 
+ This research is part of the 
 \begin_inset CommandInset href
 LatexCommand href
 name "OneCG Market Intelligence Initiative"
