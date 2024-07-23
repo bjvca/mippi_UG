@@ -746,7 +746,7 @@ Sample size was determined through a series of power simulations that can
  We use the following assumptions for the power calculations.
  The primary outcome we use is a binary indicator for use of improved seed
  at the farmer level.
- Using data previously collected as part of a different project from 3450
+ Using data previously collected as part of a different project from 3,450
  smallholder maize farmers located in 345 villages, we find that about 64
  percent of farmers indicate that they are already using improved seed.
  However, this is likely to be an overestimate as these farmers were sample
@@ -8346,8 +8346,9 @@ literal "false"
 \end_inset
 
 .
- The cooking demonstrations are designed to change perceptions related to
- the consumption of maize obtained from seed of an improved variety.
+ The cooking demonstrations and tasting sessions are designed to change
+ perceptions related to the consumption of maize obtained from seed of an
+ improved variety.
  Furthermore, if farmers plant the seed trial pack and keep harvest separate
  when processing and cooking, they may also update their preconceived beliefs
  about certain consumer traits.
@@ -8381,9 +8382,48 @@ This is related to the starch content of maize meal that leads to expansion
 \end_layout
 
 \begin_layout Standard
-Results show that X percent of farmers indicate that the maize flour tasted
- better or much better than expected.
- 
+Results show that 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round(df_means_cons_traits_seed[1,1]*100,digits=0),nsmall=0)}
+\end_layout
+
+\end_inset
+
+ percent of farmers indicate that the maize flour obtained from the randomly
+ selected plot tasted better or much better than what they expected expected.
+ A slightly lower share of farmers, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round(df_means_cons_traits_seed[1,2]*100,digits=0),nsmall=0)}
+\end_layout
+
+\end_inset
+
+ percent, indicated that portions obtained from the maize turn out larger
+ (or much larger than expected).
+ A similar share of farmers responded that the appearance, generally indicated
+ by the whiteness of the maize starch, was better or much better than expected.
+ Finally, just over half of farmers found that the maize grain obtained
+ from the randomly selected plot was (much) easier to cook than they had
+ expected.
+\end_layout
+
+\begin_layout Standard
+We see that the seed trial intervention led to improvements in these shares
+ across the board.
+ Treatment effects are around 20 percentage points, which is substantial.
+ We do not find an effect of the cooking demo and tasting session.
 \end_layout
 
 \begin_layout Standard
@@ -9085,10 +9125,13 @@ noprefix "false"
  to compare maize obtained from seed of an improved variety such as Longe5
  or Bazooka to maize obtained from local seed on the same four consumption
  traits.
- In particular, farmers are now not asked to compare the seed they used
- against their expectations; they are asked to compare consumption attributes
+ in other words, we now ask farmers to directly compare consumption attributes
  of improved seed to local seed.
- Results are summarized in Table 
+ 
+\end_layout
+
+\begin_layout Standard
+Results are summarized in Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "cons_traits_compare"
@@ -9099,6 +9142,23 @@ noprefix "false"
 \end_inset
 
 .
+ As in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cons_traits_used"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we find relatively high satisfaction with consumer traits of improved
+ seed in the entire sample.
+ Furthermore, we again find that the seed trial pack intervention increased
+ the share of farmers that perceive improved seed to be superior to local
+ seed on a range of consumption attributes.
+ Interestingly, we also find that now the cooking demonstration and tasting
+ session has changed consumer perceptions.
 \end_layout
 
 \begin_layout Standard
@@ -9828,17 +9888,103 @@ s includ control for baseline outcome.
 
 \end_layout
 
+\begin_layout Standard
+The difference between Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cons_traits_compare"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cons_traits_used"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is consistent with results reported in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "adoptiom"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "adoptiom-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ There, we found that the negative effect on adoption that emanates from
+ the seed trial pack can be explained by a substantial share of farmers
+ that recycled this seed.
+ These farmers are more likely to indicate that the grain from this seed
+ was better than expected.
+ Farmers in the demo group increased adoption of bazooka, and with the effect
+ is statistically significant, it is marginal economically, increasing the
+ share by only five percentage points.
+ Farmers in this group were thus mostly growing local seed and so consumer
+ traits were as expected.
+ This is different when these same farmers were asked to compare consumption
+ traits of seed like bazooka to local seed.
+ Here we do see that the cooking demonstration and tasting session had the
+ expected effect on perceptions.
+\end_layout
+
 \begin_layout Subsubsection
 Perceptions of producer traits
 \end_layout
 
 \begin_layout Standard
-The seed trial pack allows farmers to experiment with improved seed varieties
- thereby potentially changing preconceived ideas they have about improved
- seed.
- For instance, some farmers indicated that that improved seed varieties
- may yield more, but are less resistant to army-worm infestations.
- In Table 
+The seed trial pack is also designed to challenge preconceived ideas that
+ farmers may have about production related traits of improved seed.
+ For instance, during qualitative fieldwork to prepare this study, some
+ farmers indicated that improved seed varieties may yield more, but are
+ less resistant to fall army-worm 
+\emph on
+(Spodoptera Frugiperda)
+\emph default
+ infestation.
+ Others may have been disappointed in the past, and may not believe in the
+ yield premium of improved seed anymore 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "miehe2023miracle"
+literal "false"
+
+\end_inset
+
+.
+ Free seed trial pack may be a powerful means to alter perceptions as it
+ allows farmers to discover production traits of a new technology themselves
+ and in their own fields 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "doi:10.1086/601447"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "prod_traits_used"
@@ -9854,7 +10000,8 @@ noprefix "false"
  In particular, we ask if yield of the seed exceeded expectations; whether
  abiotic stress (drought and heat) tolerance was better than expected; whether
  biotic (pests, deceases, weed,...) stress tolerance was better than expected;
- germination rates; and if time to maturity was shorter than expected.
+ whether germination rates exceeded expectations; and if time to maturity
+ was shorter than expected.
 \end_layout
 
 \begin_layout Standard
@@ -10635,6 +10782,38 @@ s includ control for baseline outcome.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Overall, farmers seem to be more critical when it comes to production traits
+ of the seed they used on the randomly selected plot.
+ For instance, we see that for the yield of the seed they planted, only
+ about 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round(df_means_prod_traits_seed[1,1]*100,digits=0),nsmall=0)}
+\end_layout
+
+\end_inset
+
+ indicated that yields are (much) higher than what they expected from the
+ randomly selected plot.
+ 
+\end_layout
+
+\begin_layout Standard
+As was the case for the consumer traits, we see an impact on all producer
+ traits from the seed trial pack.
+ For instance, we do see that a significant higher share of farmers that
+ received the seed trial pack indicate that yield was better than expected,
+ compared to farmers that did not get the seed trial pack.
+ We do not find an impact from the cooking demonstration and tasting session,
+ which was to be expected.
 \end_layout
 
 \begin_layout Standard
@@ -11500,6 +11679,52 @@ s includ control for baseline outcome.
 
 \end_layout
 
+\begin_layout Standard
+Overall averages show that most farmers already perceive improved seed varieties
+ to be superior on a range of production traits.
+ For instance, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round(df_means_compare_prod_traits_seed[1,1]*100,digits=0),nsmall=0
+)}
+\end_layout
+
+\end_inset
+
+ percent of farmers acknowledge that improved seed yields more or much more
+ than local seed varieties.
+ Equally high shares of farmers appreciate shorter time to maturity and
+ better germination of improved seed.
+ Farmers are relatively less convinced about the benefits of improved seed
+ in terms of resistance to biotic stressors (echoing what we said above
+ farmer's believes that improved seed may be less resistant to fall army-worm
+ 
+\emph on
+(Spodoptera Frugiperda)
+\emph default
+ infestation, which is a major issue in the area).
+\end_layout
+
+\begin_layout Standard
+When farmers are asked to compare improved seed directly to local seed,
+ the summary index still points to a significantly positive impact of the
+ seed trial pack.
+ Looking at the individual outcomes, farmers who received a seed trial pack
+ updated their beliefs about germination rates most.
+ Interestingly, farmers that received the trial pack also revised their
+ relatively pessimistic perceptions about biotic stress resistance.
+ Estimates for other attributes are all positive, but statistical power
+ is likely to be low given the already high baseline perceptions of the
+ virtues of improved seed varieties.
+ We do not find an impact from the cooking demonstration and tasting session,
+ which was to be expected.
+\end_layout
+
 \begin_layout Subsubsection
 Perceptions on post-harvest traits
 \end_layout
@@ -11507,7 +11732,21 @@ Perceptions on post-harvest traits
 \begin_layout Standard
 We also include perceptions on some post harvest traits that may influence
  the decision to adopt or not and which may be altered by our interventions.
- Table 
+ In particular, we ask about perceptions related to marketability (eg does
+ it fetch a high price, is it easy to find buyers,...
+ ); perceptions about biomass or crop residual (eg maize stalks and maize
+ bran) that can be used as organic fertilizer or animal feed; and perceptions
+ on how easy it is to process (eg.
+ shelling, milling,...).
+ These traits are treated separately because they fall somewhere in the
+ middle between production and consumer traits.
+ In a way, they are related to the way the product obtained from the seed
+ is used, but we only expect an impact of the intervention that targets
+ production related traits.
+\end_layout
+
+\begin_layout Standard
+Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "ph_traits_used"
@@ -11517,10 +11756,26 @@ noprefix "false"
 
 \end_inset
 
- shows if the seed that the farmer used exceeded expectations in terms of
- marketability; in terms of biomass or crop residual (eg maize stalks and
- maize bran) that can be used as organic fertilizer or animal feed; or in
- terms of how easy it is to process.
+ shows results for perceptions related to post harvest characteristics of
+ the seed used in the randomly selected plot, while Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "ph_traits_compare"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ presents direct comparison between improved seed varieties and local seed.
+ We find weak evidence that farmers in the group that received the seed
+ trail pack rate the seed they used on the randomly selected plot higher
+ on a range of post harvest traits than those that did not get a seed trial
+ pack.
+ We come to a similar conclusion when farmers are asked to directly compare
+ improved seed to local seed.
+ As expected, we find no impact of the cooking demonstration and tasting
+ session.
 \end_layout
 
 \begin_layout Standard
@@ -12081,35 +12336,6 @@ s includ control for baseline outcome.
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-The results in Table 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "ph_traits_used"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- are for the seed that was used by the farmer, only some of which may be
- using improved seed varieties.
- Therefore, we also include a module in the questionnaire where we ask farmers
- to compare seed of an improved variety such as Longe5 or Bazooka to local
- seed on the same five production traits.
- Results are summarized in Table 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "ph_traits_compare"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard
@@ -12677,13 +12903,74 @@ Conclusion
 \end_layout
 
 \begin_layout Standard
-Exploring impact pathways, we see that seed trial packs are effective in
- making a new seed known.
- However, we do not find evidence that the argument that farmers do adopt
- new seeds because they are risk averse is unfounded.
- In our sample, farmers think adverse outcomes with improved seed are unlikely,
- and giving them a seed trial pack to experiment does not change that.
+In this paper, we employ a field experiment to evaluate the effectiveness
+ of two interventions designed to enhance varietal turnover of maize seed
+ among smallholder farmers in eastern Uganda.
+ The first intervention involves providing free seed trial packs, enabling
+ farmers to acquaint themselves with production-related attributes of the
+ new variety, such as yield potential, pest tolerance, and germination rate.
+ The second intervention consists of a cooking demonstration and tasting
+ session, aimed at highlighting the consumption-related attributes of the
+ new variety, including taste, texture, and color of the food prepared from
+ crops harvested from fields planted with the new seed variety.
+\end_layout
+
+\begin_layout Standard
+The interventions are tested using a cluster randomized controlled trial
+ involving 1,560 maize farmers.
+ The intervention was clustered at the village level and in each village,
+ 10 households were randomly selected to participate in the study.
+ Villages were assigned to the treatments following a 2x2 factorial design.
+\end_layout
+
+\begin_layout Standard
+We find that the seed trial pack intervention affects adoption of seed of
+ an improved variety in the season that follows the season in which the
+ seed trial pack was used.
+ However, the effect is in the opposite direction: Farmers who received
+ the trial pack are less likely to use improved seed.
+ This is because farmers that received a seed trial pack are more likely
+ to recycle seed from the trial pack instead of buying fresh seed, and recycled
+ seed of the seed trial pack was not considered as 
+\begin_inset Quotes eld
+\end_inset
+
+improved seed
+\begin_inset Quotes erd
+\end_inset
+
+ in our analysis.
+\end_layout
+
+\begin_layout Standard
+Despite the unexpected effect on adoption, results on intermediary variables
+ are in line with expectations and suggest that the interventions have the
+ intended effects.
+ For instance, we find that the seed trial pack increases leads to more
+ positive perceptions of production related traits, and the cooking demonstratio
+n and tasting session makes consumer traits stand out more.
  
+\end_layout
+
+\begin_layout Standard
+It is interesting to note that the trial pack intervention does not only
+ affect perceptions related to production traits such as germination rate
+ and resistance to biotic and abiotic stressors.
+ Indeed, farmers that received the trail pack also appreciated consumption
+ related traits more than farmers who did not.
+ As such, from a cost-efficiency perspective and assuming both interventions
+ will cost about the same, providing seed trial packs probably better.
+\end_layout
+
+\begin_layout Standard
+The key takeaway from the seed trial pack experiment is that other constraints
+ need to be addressed at the same time.
+ While the seed trial pack seems to affect farmer perceptions and intentions,
+ the fact that they do not use fresh seed as recommended but recycle old
+ seed suggests problems related to access.
+ For instance, it could be that the improved seed was simply not available
+ at the nearest agro-input shop.
+ Alternatively, the price of seed may have been deemed too high.
 \end_layout
 
 \begin_layout Section
