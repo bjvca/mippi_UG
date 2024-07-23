@@ -103,11 +103,23 @@ status open
 \backslash
 author{Bjorn Van Campenhout
 \backslash
-thanks{Innovation Policy and Scaling Division, International Food Policy
- Research Institute, Leuven, Belgium}, Leocardia Nabwire
+thanks{Development Strategy and Governance Division, International Food
+ Policy Research Institute, Leuven, Belgium}, Leocardia Nabwire
 \backslash
-thanks{Innovation Policy and Scaling Division, International Food Policy
- Research Institute, Kampala, Uganda}}
+thanks{Development Strategy and Governance Division, International Food
+ Policy Research Institute, Kampala, Uganda}, Berber Kramer
+\backslash
+thanks{Markets Trade and Institutions Division, International Food Policy
+ Research Institute, Nairobi, Kenya}, 
+\backslash
+
+\backslash
+ Carly Trachtman
+\backslash
+thanks{Markets Trade and Institutions Division, International Food Policy
+ Research Institute, Washington DC, USA}, Gashaw Tadesse Abate
+\backslash
+footnotemark[4]}
 \end_layout
 
 \end_inset
@@ -117,23 +129,31 @@ thanks{Innovation Policy and Scaling Division, International Food Policy
 
 \end_inset
 
-Increasing Adoption and Varietal Turnover of Seed—The role of producer and
- consumer traits
+Increasing Adoption and Varietal Turnover of Seed—The Role of Producer and
+ Consumer traits
 \end_layout
 
 \begin_layout Abstract
-We compare the effectiveness of two interventions designed to increase the
- uptake of a new technology using adoption of maize seed of an improved
- variety among smallholder maize farmers in Uganda as a case.
- In one intervention, we provide farmers with free samples of the technology,
- enabling potential future users discover production related characteristics
- of the maize seed (such as increased yield potential or drought resistance)
- on their own fields.
- In a second intervention, we invite farmers to a cooking demonstration
- and blind tasting session that compares maize flour obtained from the improved
- seed variety to that of local seed, enabling farmers to assess consumption
- related traits such as palatability, texture and ease of cooking.
- We find that...
+This study evaluates the effectiveness of two interventions aimed at increasing
+ the adoption of improved maize seed varieties among smallholder farmers
+ in eastern Uganda.
+ The first intervention involves providing farmers with free seed trial
+ packs, allowing them to directly experience the agronomic benefits, such
+ as higher yield potential and drought resistance.
+ The second intervention consists of organizing cooking demonstrations and
+ blind tasting sessions to compare maize flour from the improved variety
+ with local varieties, focusing on consumption traits like palatability,
+ texture, and ease of cooking.
+ Our findings indicate that the seed trial packs significantly enhance farmers'
+ perceptions of the seed's production traits, while the cooking demonstrations
+ improve appreciation for its consumption attributes.
+ There is evidence suggesting that the cooking demonstration intervention
+ increases the adoption of improved seed varieties.
+ However, farmers who received the seed trial packs are more likely to reuse
+ the harvested grain as seed in the subsequent season.
+ We conclude that although the seed trial pack intervention has the greater
+ overall impact, addressing additional constraints is necessary to achieve
+ higher seed varietal turnover.
 \end_layout
 
 \begin_layout Abstract
@@ -149,27 +169,24 @@ Motivation
 \end_layout
 
 \begin_layout Standard
-To feed a growing population without further jeopardizing the climate and
- biodiversity, more will have to be grown on less land.
- A lot is expected of green revolution technologies, and in particular from
- improved planting material that promise higher yields and at the same time
- are more adapted to more challenging environmental conditions (eg drought
- tolerance).
- Until recently, breeders have been focusing disproportionately on production
- related attributes, breeding for better yields, increased drought tolerance,
- or better able to withstand pests and diseases.
- These days, more attention is also going to consumption attributes such
- as taste, colour, texture, and ease of cooking.
- However, to increase uptake by farmers of these new technologies, farmers
- also need to be made aware of these traits.
- 
+To sustainably feed a growing population without exacerbating climate change
+ and harming biodiversity, more food must be grown on less land.
+ Green revolution technologies, particularly improved planting materials,
+ play a crucial role as they promise higher yields and better adaptation
+ to challenging environmental conditions such as drought.
+ Historically, breeders have focused primarily on production-related traits
+ like yield, drought tolerance, and pest resistance.
+ Currently, there is an increasing emphasis on consumer-oriented attributes,
+ including taste, color, texture, and ease of cooking.
+ For these new technologies to be widely adopted, it is essential to raise
+ farmers' awareness of these beneficial traits.
 \end_layout
 
 \begin_layout Standard
-As with breeding, we feel that sensitization often focuses most on production
- traits.
- The most common strategy to encourage farmers to learn about production
- traits of a new seed variety is to provide them with seed trial packs.
+Similar to the historical focus in breeding, sensitization efforts often
+ emphasize production traits.
+ A common strategy to encourage farmers to learn about the production traits
+ of a new seed variety is through seed trial packs.
 \begin_inset Foot
 status collapsed
 
@@ -182,31 +199,36 @@ One may argue that seed trial packs also enable farmers to discover consumer
 
 \end_inset
 
- These are small quantities of seed (eg 1 kg) that are given for free such
- that farmers can try them out on a small part of their plot, in hope that
- this will encourage farmers to invest in the seed in subsequent seasons.
+ These packs, typically containing small quantities of seed (e.g., 1 kg),
+ are provided for free, allowing farmers to test them on a small portion
+ of their plot.
+ The goal is to encourage farmers to invest in the seed in subsequent seasons
+ if they find it beneficial.
 \end_layout
 
 \begin_layout Standard
-From a theoretical point of view, seed trial packs are a kind of subsidy.
- Subsidies are indeed often used to spur adoption and are justified for
- at least these three reasons.
- First, for resource constrained farmers, a new product may carry a risk
- premium that is too high to justify investment.
- But also more broadly, even in the absence of risk premia, farmer may not
- have the resources to buy the seed (especially if complementary inputs
- and effort is needed—see 
+From a theoretical standpoint, seed trial packs can be viewed as a form
+ of subsidy.
+ Subsidies are often employed to promote adoption and are justified for
+ several reasons.
+ First, resource-constrained farmers may perceive the risk premium of a
+ new product as too high to justify investment.
+ More broadly, even without considering risk premia, farmers may lack the
+ resources to purchase the seed, especially if complementary inputs and
+ effort are required 
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citep
+before "see"
 key "miehe2023miracle"
 literal "false"
 
 \end_inset
 
-) and so a one off subsidy may kick-start adoption.
- This argument is grounded in the theory of micro poverty traps, where household
-s and individuals remain in chronic poverty because they are unable to self-fina
-nce investments needed to generate high returns 
+.
+ A one-time subsidy can help initiate adoption, as supported by the theory
+ of micro poverty traps, which posits that households and individuals remain
+ in chronic poverty because they cannot self-finance investments necessary
+ for high returns 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "barrett2006fractal"
@@ -238,8 +260,8 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-There are surprisingly few studies that directly evaluate the effectiveness
- of seed trial packs to accelerate technology adoption.
+Surprisingly few studies directly evaluate the effectiveness of seed trial
+ packs in accelerating technology adoption.
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -248,22 +270,21 @@ literal "false"
 
 \end_inset
 
- find that in Tanzania, adding trial packs to demonstration plots in the
- context of village based agricultural advisors does not significantly affect
- input sales, orders received, or learning.
- In many studies, the impact of seed packs itself are not the subject of
- research, but rather some attribute of the seed (like the risk reduction
- potential, 
+ found that in Tanzania, adding trial packs to demonstration plots within
+ the framework of village-based agricultural advisors did not significantly
+ impact input sales, orders received, or learning outcomes.
+ In many studies, the focus is not on the seed packs themselves but on some
+ attribute of the seed, such as its risk reduction potential 
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citep
 before "eg."
 key "boucher2021bundling"
 literal "false"
 
 \end_inset
 
-).
- Also related is 
+.
+ 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "MORGAN2020101955"
@@ -271,33 +292,32 @@ literal "false"
 
 \end_inset
 
-, who compare different extension approaches, one of which involves the
- use of trial packs.
- Their outcome is not subsequent adoption of the new technology, but the
- willingness to pay, which is elicited using a Becker-DeGroot-Marschak (BDM)
- auction.
- As such, their interest is more in explaining dis-adoption once new technologie
-s are sold through traditional market channels.
- They find that, in the southern highlands of Tanzania, bean farmers' willingnes
-s to pay is not affected by seed trial packs.
- Most studies on seed trial packs involve only a single season and seem
- to be most interested in the actual use of the seed trial pack.
- Subsequent adoption is often determined by asking if farmers intent to
- use the seed in the next season, which is prone to social desirability
+ examined different extension approaches, including the use of trial packs,
+ but their focus was on farmers' willingness to pay, elicited through a
+ Becker-DeGroot-Marschak (BDM) auction, rather than subsequent adoption
+ of the new technology.
+ They found that in the southern highlands of Tanzania, bean farmers' willingnes
+s to pay was not influenced by seed trial packs.
+ Most studies on seed trial packs are limited to a single season and primarily
+ investigate the immediate use of the seed trial pack.
+ Subsequent adoption is often assessed by asking farmers about their intention
+ to use the seed in the next season, which can be prone to social desirability
  bias.
+ 
 \end_layout
 
 \begin_layout Standard
-It is much harder to find examples of strategies that focus more on consumption
- related traits.
- This seems surprising, as in many of the contexts were adoption is lacking,
- farmers consume most of the crops they grown themselves.
- Indeed, previous exploratory data analysis suggests that both ease of cooking
- and taste are also important characteristics that determine the choice
- of what varieties to adopt.
- Interventions aimed at demonstrating consumption traits such as cooking
- demonstrations and tasting sessions are primarily concerned about nutrition
- education 
+It is much harder to find examples of strategies that emphasize consumption-rela
+ted traits.
+ This is surprising, considering that in many contexts where adoption is
+ lacking, farmers consume most of the crops they grow.
+ Exploratory data analysis indicates that both ease of cooking and taste
+ are important characteristics influencing farmers' choice of which varieties
+ to adopt.
+ Interventions that focus on demonstrating consumption traits, such as cooking
+ demonstrations and tasting sessions, are typically concerned with nutrition
+ education and rarely examine subsequent adoption in the following season
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 before "eg."
@@ -306,15 +326,18 @@ literal "false"
 
 \end_inset
 
-; they rarely look at subsequent adoption in the next season.
+.
 \end_layout
 
 \begin_layout Standard
-In this paper, we evaluate the relative effectiveness of two interventions
- using a cluster randomized control trial.
- We do this using a simple factorial design.
- A first intervention targets production traits and provides improved seed
- trial packs of 1 kg to farmers.
+In this paper, the focus is on increasing seed varietal turnover by highlighting
+ both the production and consumption attributes of improved maize seed varieties
+ to farmers in their roles as producers and consumers.
+ To achieve this, a field experiment is conducted to test the relative effective
+ness of two interventions using a cluster randomized control trial with
+ a simple factorial design.
+ The first intervention targets production traits by providing farmers with
+ 1 kg improved seed trial packs.
 \begin_inset Foot
 status collapsed
 
@@ -337,25 +360,71 @@ improved variety
 
 \end_inset
 
- The seed is a hybrid seed variety called Bazooka that is widely available
- yet few farmers are using it since it is relatively new.
- The most important production trait that the seed embodies is an increase
- in yield.
- Orthogonal to this treatment we mix in a second treat that consists of
- a cooking demonstrations where farmers can familiarize themselves with
- maize derived from the improved seed varieties, and are provided with maize
- flour obtained from seed of an improved variety to allow them to further
- familiarize themselves with consumption traits at home.
+ The seed used is a hybrid variety called Bazooka, which, despite being
+ widely available, is relatively new and thus not widely adopted by farmers.
+ The primary production trait of this seed is its potential for increased
+ yield.
+ Orthogonal to this intervention, a second was introduced that involves
+ cooking demonstrations and tasting sessions.
+ These demonstrations allow farmers to familiarize themselves with consumption
+ attributes of maize flour derived from the grain grown using improved seed
+ varieties.
+ Additionally, farmers are provided with maize flour samples to further
+ explore consumption traits at home.
+ 
 \end_layout
 
 \begin_layout Standard
-We find that ....
+Somewhat surprisingly, we find that farmers who received a free seed sampler
+ are actually less likely to use improved seed in the next season.
+ Further analysis suggests this is because farmers who received Bazooka
+ for free used grain obtained from this seed as planting material in the
+ next season.
+ Since we categorize recycled hybrid seed as local seed, these farmers are
+ considered non-adopters in our analysis.
+ However, we do find that the cooking demonstration and tasting session
+ increased the use of fresh Bazooka, with some indications that this also
+ led to higher maize productivity.
+\end_layout
+
+\begin_layout Standard
+While we expected that increased attention to consumption traits may affect
+ the gender balance in decision making with respect to seed choice, we do
+ not find this effect.
+ We also test if making consumption traits more salient would increase consumpti
+on, but also here we do not find an effect.
+ We also do not find effects further down the impact pathway in terms of
+ food security or welfare.
+\end_layout
+
+\begin_layout Standard
+Exploring some of the impact pathways, we do find that the cooking demonstration
+ and tasting session increased the share of farmers that rank improved seed
+ higher on a range of consumption attributes such as taste, portions, appearance
+, and ease of cooking.
+ Also in line with the theory of change, we find that farmers that received
+ the seed trial pack rank improved seed higher in terms of production related
+ attributes such as yield, abiotic and biotic stress resistance, time to
+ maturity, and germination rate.
+ Interestingly, the seed trial pack also positively affects how farmers
+ think about consumption traits of improved seed, suggesting farmers consume
+ grain obtained from the seed trial pack and paying close attention to consumpti
+on attributes.
+ 
 \end_layout
 
 \begin_layout Standard
 The rest of the paper is organized as follows.
  The next section presents research methods with sub-sections for the experiment
-al layout, the treatments, and estimation and inference.
+al layout, the treatments, estimation and inference, and timeline.
+ We then turn to the data and discuss the study context, present balance
+ tables and look at attrition.
+ The next section presents the findings, starting with adoption.
+ We further look how the interventions affect decision making, food security,
+ and well-being.
+ We also study some of the potential underlying mechanisms.
+ A final section concludes.
+ 
 \end_layout
 
 \begin_layout Section
@@ -662,7 +731,11 @@ d to maximize the amount of information captured in the index by giving
  less weight to outcomes that are highly correlated with each other.
  Combining outcomes in indices is a common strategy to guard against over-reject
 ion of the null hypothesis due to multiple inference.
- However, it may also be interesting to see the effect of the intervention
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+However, it may also be interesting to see the effect of the intervention
  on individual outcomes.
  An alternative strategy to deal with the multiple comparisons problem is
  to adjust the significance levels to control the Family Wise Error Rates
@@ -679,10 +752,15 @@ literal "false"
 
 \end_inset
 
+.
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Timeline
 \end_layout
 
@@ -736,6 +814,10 @@ Timeline
 
 \begin_layout Section
 Sample
+\end_layout
+
+\begin_layout Subsection
+Context
 \end_layout
 
 \begin_layout Standard
@@ -803,9 +885,9 @@ y.
 \end_layout
 
 \begin_layout Standard
-The study will be implemented in Eastern Uganda in an area known as the
- Busoga Kingdom.
- We will sample from 4 districts that have relatively low adoption (compared
+The study was implemented in Eastern Uganda in an area known as the Busoga
+ Kingdom.
+ We sampled from 4 districts that have relatively low adoption (compared
  to neighboring villages) but a good network of agro-input dealers.
  Using data that was previously collected as part of a different study,
  we found that the districts of Kamuli, Mayuge, Bugweri, and Bugiri fit
@@ -1752,7 +1834,7 @@ results/df_welfare_pool.Rdata
 
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Balance test and descriptive statistics
 \end_layout
 
@@ -3075,7 +3157,7 @@ The estimates indicate good overall balance.
  effective.
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Attrition and compliance
 \end_layout
 
