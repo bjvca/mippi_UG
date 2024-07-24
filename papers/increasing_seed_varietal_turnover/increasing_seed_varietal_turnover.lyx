@@ -434,31 +434,57 @@ Experimental design
 \end_layout
 
 \begin_layout Standard
-We use a field experiment to test the effectiveness of free trial packs
- and the consumer side interventions.
- To do so, we use a cluster randomize control trial that takes the form
- of a 2x2 factorial design.
- Each factor has a control and a treatment level and the interventions are
+In this study, we employ a field experiment to evaluate the effectiveness
+ of two interventions, which are elaborated in the subsequent section.
+ This evaluation is conducted using a cluster randomized controlled trial
+ (RCT) structured as a 2x2 factorial design.
+ Each factor includes both a control and a treatment level, with interventions
  clustered at the village level.
- In each village a fixed number of households was randomly selected.
+ Within each village, a predetermined number of households were randomly
+ selected.
+\end_layout
+
+\begin_layout Standard
+The first factor pertains to the seed trial pack treatment.
+ Farmers in the treatment villages receive a complimentary sample of a new,
+ improved seed variety (bazooka), whereas those in the control villages
+ do not receive this free sample pack.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+They do get something of similar value—a so-called token of appreciation—to
+ account for potential income effects
+\end_layout
+
+\end_inset
+
  
 \end_layout
 
 \begin_layout Standard
-The first factor corresponds to the seed trial pack treatment explained
- in detail below.
- In the treatment level of this factor, farmers in treatment villages receive
- a free sample of a new improved seed variety (bazooka).
- In the control level of this factor, farmers do not receive a free sample
- pack (but they do get something of similar value—a so-called token of appreciat
-ion—to account for potential income effects).
- The second factor corresponds to the demand side intervention.
- In the treatment level of this factor, farmers in treatment villages are
- exposed to a cooking demonstration where farmers are provided with the
- opportunity to taste food prepared using the promoted variety, and directly
- compare this to food that was prepared using the local variety.
- In the control level of this factor, we did not organize these kind of
- events.
+The second factor involves a cooking demonstration and tasting session.
+ In the treatment villages, farmers participate in a demonstration where
+ they can taste food prepared with the promoted seed variety and compare
+ it directly to food made with the local variety.
+ Additionally, all participants receive a free sample of maize flour derived
+ from the improved seed variety to try at home.
+ In the control villages, these events are not organized.
+\end_layout
+
+\begin_layout Standard
+Treatment assignment is conducted at the village level to ensure that control
+ and treatment conditions are not confounded by proximity.
+ Specifically, this approach prevents a situation where a control farmer,
+ who receives only a bar of soap as a token of gratitude, lives adjacent
+ to a treatment farmer who receives a free bag of maize seed.
+ By assigning treatments at the village level, we also mitigate potential
+ concerns about spillover effects, where benefits or changes experienced
+ by treatment farmers might unintentionally influence the control farmers.
+ This strategy helps to maintain the integrity of the experimental conditions
+ and ensures that the observed effects can be more accurately attributed
+ to the interventions being tested.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -466,27 +492,29 @@ Treatments
 \end_layout
 
 \begin_layout Standard
-For the first factor, the treatment level consists of a seed trail pack
- that the household receives.
- This trial pack is of an improved seed variety (hybrid seed) that is available
- in the market but at the same time not yet widely adopted by farmers.
- In particular, we used 1 kg bags of bazooka, which is sufficient to plant
- about 1/8 of an acre.
- The control level for this factor is simply be the absence of a seed trial
- pack, that is, these household do not receive a seed trial pack.
- However, in both treatment and control groups, we inform farmers about
- the existence of the improved seed variety and the benefits of using them,
- to be able to isolate the effect of the trail pack from merely knowledge
- effects.
+The first intervention is straightforward and involves providing a seed
+ trial pack to the household member responsible for most maize cultivation
+ decisions.
+ This trial pack contains an improved seed variety (hybrid seed) that is
+ currently available in the market but has not yet been widely adopted by
+ farmers.
+ Specifically, we used 1 kg bags of bazooka seed, which is sufficient to
+ plant approximately 1/8 of an acre.
+ The control condition for this factor is the absence of a seed trial pack,
+ meaning these households do not receive the pack.
+ However, both the treatment and control groups are informed about the existence
+ and benefits of the improved seed variety.
+ This allows us to isolate the effect of the trial pack from the effects
+ of merely having knowledge about the improved seeds.
 \end_layout
 
 \begin_layout Standard
 For the second factor, the treatment level consists of a cooking demonstration
  and tasting event.
- Here, participating farmers of the treatment villages are invited to a
- central place (the village chairperson's residence) for a facilitated meeting.
- The meeting starts by asking the group to mention the most commonly grown
- varieties by farmers in the village.
+ Here, sampled farmers of the treatment villages are invited to a central
+ place (the village chairperson's residence) for a facilitated meeting.
+ The facilitator starts by asking the group to mention the most commonly
+ grown varieties by farmers in the village.
  These varieties are then grouped into 
 \begin_inset Quotes eld
 \end_inset
@@ -503,29 +531,60 @@ local seed varieties
 \begin_inset Quotes erd
 \end_inset
 
- (Omusoga) on a flip-chart.
- Farmers are then asked to rate the two categories on various consumption
- attribute by show of hands.
- To guide the discussion, the flip-charts already indicate the five most
- common consumption traits: taste, texture, colour, aroma and the degree
- to which the flour expands while cooking.
+ on a flip-chart.
 \begin_inset Foot
 status collapsed
 
 \begin_layout Plain Layout
-These consumption traits were based on focus group discussions.
- The expansion property, whereby the increased starchiness results in 
+The terms to the seed types in the local language were 
 \begin_inset Quotes eld
 \end_inset
 
-more food from less flour
+Dhuuma Omulongosemu
 \begin_inset Quotes erd
 \end_inset
 
- was mentioned especially by women.
- When starch is heated with water, the starch granules swell and burst,
- causing them to break down and release the glucose molecules into the water.
- 
+ for 
+\begin_inset Quotes eld
+\end_inset
+
+improved seed
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+Dhuuma Omusoga
+\begin_inset Quotes erd
+\end_inset
+
+ for local seed.
+ The latter is clearly derived from the name of the region, Busoga.
+\end_layout
+
+\end_inset
+
+ Farmers are then asked to rate the two categories based on various consumption
+ attributes by a show of hands.
+ To facilitate the discussion, flip charts display the five most common
+ consumption traits: taste, texture, color, aroma, and the degree to which
+ the flour expands during cooking.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+These consumption traits were identified through focus group discussions.
+ One notable trait that emerged during these discussions, which was integral
+ to designing the treatment, is the extent to which maize flour expands
+ during cooking, yielding "more food from less flour." This characteristic
+ is linked to the starch content of maize flour, which is a carbohydrate
+ and a natural component of most plants, including fruits, vegetables, and
+ grains.
+ When starch is heated in water, the granules swell and burst, releasing
+ glucose molecules into the water.
+ This expansion property of maize flour was particularly valued by women.
 \end_layout
 
 \end_inset
@@ -534,47 +593,56 @@ more food from less flour
 \end_layout
 
 \begin_layout Standard
-After the rating, we proceed with blind tasting.
- We ask a volunteer from the farmers to prepare 
-\begin_inset Quotes eld
-\end_inset
-
-posho
-\begin_inset Quotes erd
-\end_inset
-
- twice, once using flour obtained from local seed and once using flour from
- Bazooka (the hybrid seed variety that was also used for the seed trial
- pack).
- The cook did not know which flour was from which maize type.
- The resulting dishes are then displayed on a table and farmers are invited
- to taste the two varieties (indicated as the variety on the left and the
- variety on the right).
- The two varieties that were tasted are rated on the various consumption
- attributes and farmers are again asked to indicate which of the two samples
- are superior on each attribute by show of hands.
-\end_layout
-
-\begin_layout Standard
-Finally, results are discussed within the group.
- Farmers are told that one of the two samples was made from flour obtained
- from local maize, while the other was from an improved maize type called
- Bazooka.
- We then asked farmers to guess which of the two samples was based on flour
- from the local variety and which was from the improved variety and then
- reveal the truth.
- 
+After the rating, we proceed with a blind tasting.
+ The facilitator asks a volunteer from the participants to prepare posho,
+ a thick, dense porridge made by mixing maize flour with boiling water until
+ it reaches a dough-like consistency.
+ Two meals are prepared: one using flour obtained from local seed and one
+ using flour derived from Bazooka seed (the hybrid seed variety used in
+ the seed trial pack).
+ The cook is unaware of which flour corresponds to which maize type.
 \begin_inset Foot
 status collapsed
 
 \begin_layout Plain Layout
-During testing in the field, we always found that a large majority of farmers
- indicated before tasting that local seed excels in almost all dimensions
- (sweeter taste, whiter, better aroma,...).
- During tasting, almost all farmers consistently ranked the sample based
- on Bazooka as superior.
- After the tasting, most farmers indicated that the superior sample was
- from the local variety, which in reality it was maize obtained from Bazooka
+The research team provided all necessary utensils for the session, including
+ a gas stove, pots, aprons, and even a chef's hat.
+ We ensured that the two dishes differed only in terms of the flour used
+ by employing the same cook and starting with identical amounts of flour,
+ measured on a weighing scale.
+ Additionally, the order in which the meals were cooked was randomized across
+ sessions.
+\end_layout
+
+\end_inset
+
+ The resulting dishes are then displayed on a table, and farmers are invited
+ to taste the two varieties, labeled as the variety on the left and the
+ variety on the right.
+ The farmers then rate the two varieties on various consumption attributes,
+ and they are asked to indicate which of the two samples is superior for
+ each attribute by a show of hands.
+\end_layout
+
+\begin_layout Standard
+Finally, the results are discussed within the group.
+ Participants are informed that one of the two samples was made from flour
+ obtained from local maize, while the other was from an improved maize type
+ called Bazooka.
+ The facilitator asks the farmers to guess which sample was based on flour
+ from the local variety and which was from the improved variety.
+ After gathering the guesses, the facilitator reveals the correct answers.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+During field testing, a large majority of farmers initially stated that
+ the local seed excelled in nearly all dimensions, such as having a sweeter
+ taste, whiter appearance, and better aroma.
+ However, during the tasting, almost all farmers consistently rated the
+ sample made from Bazooka maize as superior.
+ After the tasting, most farmers incorrectly identified the superior sample
+ as being from the local variety, when in fact, it was made from Bazooka
  maize.
 \end_layout
 
@@ -583,29 +651,21 @@ During testing in the field, we always found that a large majority of farmers
 
 \end_layout
 
-\begin_layout Standard
-Treatment assignment is at the village level, as we want to avoid that a
- control farmer (that gets a bar of soap as a token of gratitude) lives
- right next to a treatment farmer that gets a bag of maize seed for free.
- Furthermore, it will also reduce potential concerns about spillover effects
- from the treatments.
- 
-\end_layout
-
 \begin_layout Subsection
 Estimation and inference
 \end_layout
 
 \begin_layout Standard
-We will use ANCOVA models to assess impact (with a focus on the Intent to
- treat effect).
- As randomization happened at the village level, we estimate a similar equation:
+We will use Analysis of Covariance (ANCOVA) models to assess the impact
+ of the interventions, focusing specifically on the Intent-to-Treat effect.
+ Given that randomization was conducted at the village level, we will estimate
+ the following equation:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-Y_{ij}=\alpha+\beta_{T}T_{i}^{T}+\beta_{D}T_{i}^{D}+\beta_{I}T_{i}^{T}T_{i}^{D}+\delta Y_{ij}^{B}+\varepsilon_{ij}\label{eq:one}
+Y_{ij}=\alpha+\beta_{T}T_{j}^{T}+\beta_{D}T_{j}^{D}+\beta_{I}T_{j}^{T}T_{j}^{D}+\delta Y_{ij}^{B}+\varepsilon_{ij}\label{eq:one}
 \end{equation}
 
 \end_inset
@@ -615,43 +675,65 @@ Y_{ij}=\alpha+\beta_{T}T_{i}^{T}+\beta_{D}T_{i}^{D}+\beta_{I}T_{i}^{T}T_{i}^{D}+
 
 \begin_layout Standard
 where 
-\begin_inset Formula $T_{i}^{T}$
+\begin_inset Formula $T_{j}^{T}$
 \end_inset
 
- is a dummy for the seed trial pack intervention treatment status of village
- 
+ is an indicator variable that is one if village 
 \emph on
-i
+j
 \emph default
+ was randomly assigned to the seed trial pack intervention (and zero otherwise),
  and 
-\begin_inset Formula $T_{i}^{D}$
+\begin_inset Formula $T_{j}^{D}$
 \end_inset
 
- is a dummy for the cooking demo and blind tasting intervention treatment
- status of village 
+ is an indicator variable that is one if village 
 \emph on
-i
+j
 \emph default
-.
- We also allow for an interaction effect between the two treatments and
- control for baseline outcomes to improve precision.
- We use HC3 standard errors clustered at the village level.
- 
-\end_layout
+ was randomly assigned to the cooking demonstration and blind tasting interventi
+on (and zero otherwise).
+ Outcomes are measured at the individual level 
+\begin_inset Formula $\left(Y_{ij}\right)$
+\end_inset
 
-\begin_layout Standard
-Factorial designs have recently been criticized for the proliferation of
- underpowered studies and replication failure 
+.
+ We also allow for an interaction effect between the two interventions and
+ control for baseline outcomes 
+\begin_inset Formula $\left(Y_{ij}^{B}\right)$
+\end_inset
+
+ to improve precision.
+ We will apply a cluster-robust variance estimator with the "bias-reduced
+ linearization" small-sample correction 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "muralidharan2019factorial"
+key "imbens2016robust"
 literal "false"
 
 \end_inset
 
 .
- While in the previous section we ran power calculations based on models
- with a complete set of interactions (as on equation 
+ Standard errors are clustered at the level of randomization (village level).
+ 
+\end_layout
+
+\begin_layout Standard
+Factorial designs are commonly employed to evaluate multiple treatments
+ within a single experiment.
+ However, combining treatment cells to enhance statistical power can lead
+ to unintended consequences if there is an interaction between the treatments
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "10.1162/rest_a_01317"
+literal "false"
+
+\end_inset
+
+.
+ While our design is powered for a complete set of interactions (as in equation
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:one"
@@ -661,18 +743,16 @@ noprefix "false"
 
 \end_inset
 
-), we may still want to try boosting power by pooling observations across
- the orthogonal treatment in the event that we find a treatment effect that
- appears smaller than the minimal detectable effect size that we assumed
- during power calculations.
- To do so, we will consider the orthogonal treatment as a co-variate we
- adjust for, and interact the treatment variable with the demeaned orthogonal
+), we may wish to enhance statistical power by pooling observations across
+ the orthogonal treatments if we find that a treatment effect is smaller
+ than the minimal detectable effect size assumed during power calculations.
+ To achieve this, we will treat the orthogonal treatment as a covariate
+ to adjust for, and interact the treatment variable with the demeaned orthogonal
  treatment.
- This give a more robust version of the treatment estimate that corresponds
- to the coefficient estimate of the treatment of interest after dropping
- the interaction with orthogonal the treatment
+ This approach provides a more robust and unbiased estimate of the treatment
+ effect
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 see: https://blogs.worldbank.org/impactevaluations/what-should-you-do-experiments-
@@ -700,7 +780,8 @@ Where now
 \begin_inset Formula $T_{i}^{M}$
 \end_inset
 
- is a dummy for the main treatment and 
+ is a dummy for the main treatment (the seed trial pack or the cooking demonstra
+tion respectively) and 
 \begin_inset Formula $T_{i}^{O}$
 \end_inset
 
@@ -709,10 +790,9 @@ Where now
 \end_layout
 
 \begin_layout Standard
-Because we will test for treatment effects on a range of outcome measures,
- we will deal with multiple outcomes and multiple hypotheses testing by
- means of two approaches.
- Firstly, we follow a method proposed by 
+Since we will evaluate treatment effects across a range of outcome measures,
+ it is essential to address the multiple comparisons problem.
+ Following the approach outlined by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "doi:10.1198/016214508000000841"
@@ -720,17 +800,18 @@ literal "false"
 
 \end_inset
 
- and aggregate different outcome measures within each domain into single
- summary indices.
- Each index is computed as a weighted mean of the standardized values of
- the outcome variables.
- The weights of this efficient generalized least squares estimator are calculate
-d to maximize the amount of information captured in the index by giving
- less weight to outcomes that are highly correlated with each other.
- Combining outcomes in indices is a common strategy to guard against over-reject
-ion of the null hypothesis due to multiple inference.
+, we aggregate various outcome measures within a given family into summary
+ indices.
+ Each index is calculated as a weighted mean of the standardized values
+ of the outcome variables.
+ The weights for this efficient generalized least squares estimator are
+ determined to maximize the information captured by the index, giving less
+ weight to outcomes that are highly correlated with one another.
+ This method of combining outcomes into indices is a widely adopted strategy
+ to mitigate the risk of over-rejecting the null hypothesis due to multiple
+ comparisons.
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 However, it may also be interesting to see the effect of the intervention
@@ -763,17 +844,14 @@ Timeline
 \end_layout
 
 \begin_layout Standard
-There are two maize growing seasons in the area we are planning to work.
- One (locally know as Entoigo) is running from march/april to june/July,
- the other (Nsambya) from August/Sept to November/December.
-\end_layout
-
-\begin_layout Standard
-We distributed trail packs together with baseline data collection about
- a few months before planting.
- After the first season, we then implemented the cooking demonstration and
- tasting session in time for the second season of 2023.
- Endline data was collected in February 2024.
+To assess the impact of seed trial packs, two agricultural seasons are required.
+ Seed samples are distributed to farmers before the first season, allowing
+ them to experiment with the new seed in their fields.
+ The impact of the seed trial pack is evaluated in the subsequent season,
+ as farmers adjust their practices based on their experiences with the seeds
+ from the first season.
+ In contrast, the cooking demonstration and tasting session can result in
+ immediate behavior changes following the intervention.
 \end_layout
 
 \begin_layout Standard
@@ -798,7 +876,9 @@ status collapsed
 
 \begin_layout Plain Layout
 Timeline
-\end_layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Timeline"
 
 \end_inset
 
@@ -808,6 +888,37 @@ Timeline
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Fortunately, the study area experiences two maize growing seasons each calendar
+ year.
+ The first season, locally known as Entoigo, runs from March/April to June/July,
+ while the second season, referred to as Nsambya, extends from August/September
+ to November/December.
+ We distributed the seed trial packs along with baseline data collection
+ a few months before planting commenced for the first agricultural season
+ in 2023.
+ Following this, we conducted the cooking demonstration and tasting session
+ in time for the second season of 2023.
+ Endline data was collected in February 2024, after the conclusion of the
+ second season.
+ This timeline is also depicted in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Timeline"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
