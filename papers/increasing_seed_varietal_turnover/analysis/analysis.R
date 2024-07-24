@@ -1103,6 +1103,27 @@ dta$better_off_six <- dta$in_six == "1"
 dta$food_secure_pref <- dta$fd_pref =="No"
 dta$food_secure_quant <- dta$fd_less =="No"
 
+columns_to_replace <- c(
+  "maize_value_sp",
+  "sorghum_value_sp",
+  "millet_value_sp",
+  "rice_value_sp",
+  "cassava_value_sp",
+  "sweetpotatoes_value_sp",
+  "beans_value_sp",
+  "gnuts_value_sp",
+  "fruits_value_sp",
+  "veg_value_sp",
+  "sugar_value_sp",
+  "cooking_oil_value_sp",
+  "soap_value_sp",
+  "airtime_value_sp"
+)
+
+# Replace 999 with NA for each specified column
+for (col in columns_to_replace) {
+  dta[[col]][dta[[col]] == "999"] <- NA
+}
 
 dta$cons_exp <- rowSums(cbind(as.numeric(dta$maize_value_sp),
 as.numeric(dta$sorghum_value_sp),
