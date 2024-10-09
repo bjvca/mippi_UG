@@ -162,6 +162,28 @@ bse$b_p_outcome_2 <- bse$bazo_use=="Yes"
 
 dta <- merge(dta, bse[c("farmer_ID","b_p_outcome_2")], by.x="ID", by.y="farmer_ID")
 
+## primary outcome 2alt: uses bazooka on at least one plot
+num_plots <- max(as.numeric(dta$plot_count), na.rm=TRUE)
+logical_result <- logical(nrow(dta))
+
+for (i in 1:num_plots) {
+  condition <- (((dta[[paste0("plot.", i, "..plot_imp_type")]] %in%  
+                    c("Bazooka")) )  ) 
+  # Combine the condition with the logical OR operator
+  logical_result <- logical_result | condition
+}
+
+# Assign the result to the new column p_outcome_1
+dta$p_outcome_2alt <- logical_result
+
+dta$p_outcome_2alt[dta$no_grow] <- NA
+
+
+bse$b_p_outcome_2alt <- bse$bazo_use=="Yes"
+
+dta <- merge(dta, bse[c("farmer_ID","b_p_outcome_2alt")], by.x="ID", by.y="farmer_ID")
+
+
 ## third primary outcome <- number of plots under improved maize cultivation
 num_plots <- max(as.numeric(dta$plot_count), na.rm=TRUE)
 logical_result <- logical(nrow(dta))
@@ -210,8 +232,8 @@ dta$share_area_imp <-  dta$nr_improvedxsize/dta$totsize
 dta$share_area_imp[dta$no_grow] <- NA
 
 #iterate over outcomes
-outcomes <- c("p_outcome_1","p_outcome_2","nr_improved", "share_plots_imp", "nr_improvedxsize", "share_area_imp" )
-b_outcomes <- c("b_p_outcome_1", "b_p_outcome_2",NA,NA)
+outcomes <- c("p_outcome_1","p_outcome_2","p_outcome_2alt","nr_improved", "share_plots_imp", "nr_improvedxsize", "share_area_imp" )
+b_outcomes <- c("b_p_outcome_1", "b_p_outcome_2","b_p_outcome_2alt",NA,NA,NA)
 ### do not include outcome 2 (adoption of bazooka) as this results in singularity - on second thought, maybe p_outcome_2 should be a key outcome and included
 ## in fact, the singularity disappeared in the real data
 dta$index <- icwIndex(xmat= as.matrix(dta[outcomes]), sgroup=dta$s_ind)$index
@@ -227,7 +249,7 @@ for (i in 1:length(outcomes)){
   
   df_means_out[1,i] <- mean(unlist(dta[outcomes[i]]), na.rm=TRUE)
   df_means_out[2,i] <- sd(unlist(dta[outcomes[i]]), na.rm=TRUE)
-  if (i %in% 3:7) {
+  if (i %in% 4:8) {
   formula1 <- as.formula(paste(outcomes[i],paste("trial_P*cont"),sep="~"))
   ols <- lm(formula1, data=dta)
   vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
@@ -247,7 +269,7 @@ for (i in 1:length(outcomes)){
   df_res[1,4,i] <- nobs(ols) 
   }  
 
-  if (i %in% 3:7) {  
+  if (i %in% 4:8) {  
   formula2 <- as.formula(paste(outcomes[i],paste("trial_P*cont_demeaned"),sep="~"))
   } else {
   formula2 <- as.formula(paste(paste(outcomes[i],paste("trial_P*cont_demeaned"),sep="~"), b_outcomes[i],sep="+"))   
@@ -258,7 +280,7 @@ for (i in 1:length(outcomes)){
   df_res_pool[1,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
   df_res_pool[1,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
   df_res_pool[1,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
-  if (i %in% 3:7) {   
+  if (i %in% 4:8) {   
   formula3 <- as.formula(paste(outcomes[i],paste("cont*trial_P_demeaned"),sep="~"))
   } else {
   formula3 <- as.formula(paste(paste(outcomes[i],paste("cont*trial_P_demeaned"),sep="~"), b_outcomes[i],sep="+"))    
@@ -1194,3 +1216,96 @@ df_means_welfare <- df_means_out
 save(df_welfare_pool,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_welfare_pool.Rdata",sep="/"))
 save(df_welfare,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_welfare.Rdata",sep="/"))
 save(df_means_welfare,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_means_welfare.Rdata",sep="/"))
+
+
+#select variables for carly
+dta$p_outcome_2alt ## adoption_pv
+
+## primary outcome 1: uses improved seed on at least one plot
+num_plots <- max(as.numeric(dta$plot_count), na.rm=TRUE)
+logical_result <- logical(nrow(dta))
+
+for (i in 1:num_plots) {
+  ### definition of improved seed: fresh hybrid from trusted source or OPV recycled max 3 times from trusted source
+  condition <- (((dta[[paste0("plot.", i, "..plot_imp_type")]] %in%  
+                    c("Longe_10H", "Longe_10R", "Longe_7H", "Longe_7R_Kayongo-go", "Bazooka", "DK", "Longe_6H", "Panner", "UH5051", "Wema", "KH_series", "other_hybrid")) ) |
+                  ((dta[[paste0("plot.", i, "..plot_imp_type")]] %in%  c("Longe_5", "Longe_5D", "Longe_4", "MM3", "other_opv")) ))
+  # Combine the condition with the logical OR operator
+  logical_result <- logical_result | condition
+}
+
+# Assign the result to the new column p_outcome_1
+dta$p_outcome_1alt <- logical_result
+###only for those that 
+dta$p_outcome_1alt[dta$no_grow] <- NA
+
+###not interviewed
+dta$p_outcome_1alt[is.na(dta$plot_no)] <- NA
+
+dta$adoption_riv <- FALSE
+
+dta$p_outcome_2 #purchase
+
+##area under improved maize cultivation
+num_plots <-  max(as.numeric(dta$plot_count), na.rm=TRUE)
+areas <- matrix(NA,nrow(dta),num_plots)
+tot_area <- matrix(NA,nrow(dta),num_plots)
+
+for (i in 1:num_plots) {
+  #create a matrix if size of plots with adoption
+  areas[,i] <-  (((dta[[paste0("plot.", i, "..plot_imp_type")]] %in%  
+                     c("Longe_10H", "Longe_10R", "Longe_7H", "Longe_7R_Kayongo-go", "Bazooka", "DK", "Longe_6H", "Panner", "UH5051", "Wema", "KH_series", "other_hybrid")) ) |
+                   ((dta[[paste0("plot.", i, "..plot_imp_type")]] %in%  c("Longe_5", "Longe_5D", "Longe_4", "MM3", "other_opv")) ))*as.numeric(as.character(dta[[paste0("plot.", i, "..plot_size")]] ))
+  tot_area[,i] <- as.numeric(as.character(dta[[paste0("plot.", i, "..plot_size")]] ))
+}
+
+
+dta$nr_improvedxsize <- rowSums( areas, na.rm=TRUE)
+dta$nr_improvedxsize[dta$no_grow] <- NA
+dta$totsize <- rowSums( tot_area, na.rm=TRUE)
+dta$totsize[dta$no_grow] <- NA
+
+##share of plots under improved cultivation
+dta$plot_no <- as.numeric(dta$plot_no)
+dta$share_plots_imp <-  dta$nr_improved/dta$plot_no
+dta$share_plots_imp[dta$no_grow] <- NA
+dta$share_plots_imp[dta$share_plots_imp>1] <- NA
+## share of area under improved cultivation
+dta$share_area_imp <-  dta$nr_improvedxsize/dta$totsize
+dta$share_area_imp[dta$no_grow] <- NA
+
+##area under bazooka cultivation
+num_plots <-  max(as.numeric(dta$plot_count), na.rm=TRUE)
+areas <- matrix(NA,nrow(dta),num_plots)
+tot_area <- matrix(NA,nrow(dta),num_plots)
+
+for (i in 1:num_plots) {
+  #create a matrix if size of plots with adoption
+  areas[,i] <-  (((dta[[paste0("plot.", i, "..plot_imp_type")]] %in%  
+                     c("Bazooka")) ))*as.numeric(as.character(dta[[paste0("plot.", i, "..plot_size")]] ))
+  tot_area[,i] <- as.numeric(as.character(dta[[paste0("plot.", i, "..plot_size")]] ))
+}
+
+
+dta$nr_bazxsize <- rowSums( areas, na.rm=TRUE)
+dta$nr_bazxsize[dta$no_grow] <- NA
+dta$totsize <- rowSums( tot_area, na.rm=TRUE)
+dta$totsize[dta$no_grow] <- NA
+
+##share of plots under improved cultivation
+dta$plot_no <- as.numeric(dta$plot_no)
+dta$share_plots_baz <-  dta$nr_baz/dta$plot_no
+dta$share_plots_baz[dta$no_grow] <- NA
+dta$share_plots_baz[dta$share_plots_imp>1] <- NA
+## share of area under improved cultivation
+dta$share_area_baz <-  dta$nr_bazxsize/dta$totsize
+dta$share_area_baz[dta$no_grow] <- NA
+
+##avearge varietal age of the crop being planted
+### first merge in varietal age for the seed varieties used on the different plots
+
+
+
+dta_meta <- data.frame(cbind(dta$ID,dta$cluster_ID,dta$cont,dta$trial_P,dta$p_outcome_2alt,dta$p_outcome_1alt, dta$adoption_riv,dta$p_outcome_2, dta$share_area_baz, dta$share_area_imp))
+names(dta_meta) <- c("farmer_ID","cluster_ID", "T_cons", "T_prod", "adoption_pv","adoption_iv","adoption_riv", "purchase", "area_pv","area_iv")
+

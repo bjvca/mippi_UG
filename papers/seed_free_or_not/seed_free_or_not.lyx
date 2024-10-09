@@ -876,7 +876,7 @@ literal "false"
  Finally, we regress outcomes on the initial offer price (controlling for
  the price agreed on during bargaining and an indicator for having received
  the discount) to estimate the signaling effect (corresponding to 
-\begin_inset Formula $\beta_{FD}$
+\begin_inset Formula $\beta_{I}$
 \end_inset
 
  in equation 
@@ -2710,7 +2710,7 @@ Finally, we test if there are differences between groups with respect to
 \begin_inset Float table
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -3000,7 +3000,7 @@ Sexpr{res_tab_bin[2,3,2]})
 
 \begin_layout Plain Layout
 
-decision maker used seed
+person who was involved in bargaining used seed
 \end_layout
 
 \begin_layout Plain Layout
