@@ -1,5 +1,5 @@
-#LyX 2.3 created this file. For more info see http://www.lyx.org/
-\lyxformat 544
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -9,11 +9,11 @@
 \begin_modules
 knitr
 \end_modules
-\maintain_unincluded_children false
+\maintain_unincluded_children no
 \language english
 \language_package default
 \inputencoding utf8
-\fontencoding global
+\fontencoding auto
 \font_roman "default" "default"
 \font_sans "default" "default"
 \font_typewriter "default" "default"
@@ -21,7 +21,9 @@ knitr
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
-\font_osf false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
 \use_microtype false
@@ -65,7 +67,9 @@ knitr
 \suppress_date false
 \justification true
 \use_refstyle 1
+\use_formatted_ref 0
 \use_minted 0
+\use_lineno 0
 \index Index
 \shortcut idx
 \color #008000
@@ -81,11 +85,16 @@ knitr
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
+\tablestyle default
 \tracking_changes false
 \output_changes false
+\change_bars false
+\postpone_fragile_content false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
 \end_header
 
 \begin_body
@@ -103,28 +112,43 @@ status open
 \backslash
 author{Bjorn Van Campenhout
 \backslash
-thanks{Innovation Policy and Scaling Unit, International Food Policy Research
- Institute, Leuven, Belgium}, Leocardia Nabwire
+thanks{Innovation Policy and Scaling Unit,
+ International Food Policy Research Institute,
+ Leuven,
+ Belgium},
+ Leocardia Nabwire
 \backslash
-thanks{Innovation Policy and Scaling Unit, International Food Policy Research
- Institute, Kampala, Uganda},
+thanks{Innovation Policy and Scaling Unit,
+ International Food Policy Research Institute,
+ Kampala,
+ Uganda},
 \backslash
 
 \backslash
  Gashaw Tadesse Abate
 \backslash
-thanks{Markets, Trade and Institutions Unit, International Food Policy Research
- Institute, Kampala, Uganda}, Liesbeth Colen
+thanks{Markets,
+ Trade and Institutions Unit,
+ International Food Policy Research Institute,
+ Kampala,
+ Uganda},
+ Liesbeth Colen
 \backslash
-thanks{Department of Agricultural Economics and Rural Development, Georg-August-
-University of Göttingen, Germany}} Are Free Testers Effective for Learning
- about a New Technology? 
+thanks{Department of Agricultural Economics and Rural Development,
+ Georg-August-University of Göttingen,
+ Germany},
+ Berber Kramer
+\backslash
+thanks{International Food Policy Research Institute,
+ Nairobi,
+ Kenya}} Are Free Testers Effective for Learning about a New Technology?
+ 
 \backslash
 
 \backslash
  {
 \backslash
-large{}Experimental Evidence from Seed Trail Packs in Uganda} 
+large{}Experimental Evidence from Seed Trail Packs in Ethiopia and Uganda} 
 \end_layout
 
 \begin_layout Plain Layout
@@ -142,34 +166,39 @@ large{}Experimental Evidence from Seed Trail Packs in Uganda}
 \end_layout
 
 \begin_layout Abstract
-A popular way to increase use of a product or technology is providing it
- for free (or at greatly reduced price) for a limited period of time such
- that potential users can gain experience with it and share this experience
- with others.
- However, it is sometimes argued that something that is provided for free
- is less likely to be used for its intended purpose.
+A popular way to increase use of a product or technology is providing it for free (or at greatly reduced price) for a limited period of time such that potential users can gain experience with it and share this experience with others.
+ However,
+ it is sometimes argued that something that is provided for free is less likely to be used for its intended purpose.
  There are three main reasons why a positive price may increase use.
- First, a pecuniary cost may serve as a screening mechanism, putting the
- product only in the hands of those that value it.
- Second, a mechanism known as the sunk cost effect may be at play where
- a price induces a psychological cost of failing to use the product for
- its intended purpose.
- Third, a price tag may be interpreted as a signal about the quality of
- the product.
- Using a recently released maize seed variety as a case, we offer smallholder
- farmers in eastern Uganda the opportunity to buy a trial pack of seed from
- us, and compare use of the seed and subsequent adoption of the technology
- to farmers that were provided the seed trial pack for free.
- We further design a field experiment that enables us to assess the importance
- of screening, sunk cost, and signaling effects of prices.
+ First,
+ a pecuniary cost may serve as a screening mechanism,
+ putting the product only in the hands of those that value it.
+ Second,
+ a mechanism known as the sunk cost effect may be at play where a price induces a psychological cost of failing to use the product for its intended purpose.
+ Third,
+ a price tag may be interpreted as a signal about the quality of the product.
+ Using a recently released maize seed variety as a case,
+ we offer smallholder farmers in eastern Uganda the opportunity to buy a trial pack of seed from us,
+ and compare use of the seed and subsequent adoption of the technology to farmers that were provided the seed trial pack for free.
+ We further design a field experiment that enables us to assess the importance of screening,
+ sunk cost,
+ and signaling effects of prices.
 \end_layout
 
 \begin_layout Abstract
-Keywords: technology adoption, screening effect, sunk cost effect, signaling.
+Keywords:
+ technology adoption,
+ screening effect,
+ sunk cost effect,
+ signaling.
 \end_layout
 
 \begin_layout Abstract
-JEL: Q16, H24, O33, D91
+JEL:
+ Q16,
+ H24,
+ O33,
+ D91
 \end_layout
 
 \begin_layout Section
@@ -178,12 +207,11 @@ Introduction
 
 \begin_layout Standard
 Prices are ubiquitous in economic transactions.
- Prices are central to the efficient allocation of scare resources within
- a society and provide an important incentive to producers.
+ Prices are central to the efficient allocation of scare resources within a society and provide an important incentive to producers.
  But charging the (full) price may not always be optimal.
- For instance, if a product or technology is new, providing it for free
- or at a discount for a short period of time may be necessary to encourage
- potential consumers to try it and learn from it 
+ For instance,
+ if a product or technology is new,
+ providing it for free or at a discount for a short period of time may be necessary to encourage potential consumers to try it and learn from it 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "bawa2004effects"
@@ -192,11 +220,9 @@ literal "false"
 \end_inset
 
 .
- From a social welfare point of view, subsidies may be justified to ensure
- access to essential goods and services for low-income individuals or disadvanta
-ged communities that may benefit most.
- Positive externalities is another strong argument against charging the
- full price 
+ From a social welfare point of view,
+ subsidies may be justified to ensure access to essential goods and services for low-income individuals or disadvantaged communities that may benefit most.
+ Positive externalities is another strong argument against charging the full price 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "miguel2004worms"
@@ -209,13 +235,13 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-At the same time, some argue that when goods or services are provided for
- free, recipients often do not value them.
- Goods obtained for free often remain unused, are resold, or are otherwise
- used in unintended ways.
- High profile examples include the use of free bed-nets for fishing or the
- use of subsidized chlorine for cleaning instead of treating drinking water
- 
+At the same time,
+ some argue that when goods or services are provided for free,
+ recipients often do not value them.
+ Goods obtained for free often remain unused,
+ are resold,
+ or are otherwise used in unintended ways.
+ High profile examples include the use of free bed-nets for fishing or the use of subsidized chlorine for cleaning instead of treating drinking water 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "10.1162/qjec.2010.125.1.1,10.1257/aer.100.5.2383"
@@ -227,27 +253,26 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-There are at least three ways in which charging a positive price may lead
- to increased use.
+There are at least three ways in which charging a positive price may lead to increased use.
  The first is a 
 \emph on
 screening effect
 \emph default
-, whereby only people who really appreciate the intrinsic value the product
- will acquire it.
- A second is more psychological in nature and conjectures that people are
- prone to
+,
+ whereby only people who really appreciate the intrinsic value the product will acquire it.
+ A second is more psychological in nature and conjectures that people are prone to
 \emph on
  sunk cost effects
 \emph default
-, and as a result, paying a positive price for something leads one to appreciate
- it more (regardless of whether they really want it or not).
- Finally, prices may also provide a 
+,
+ and as a result,
+ paying a positive price for something leads one to appreciate it more (regardless of whether they really want it or not).
+ Finally,
+ prices may also provide a 
 \emph on
 signaling effect
 \emph default
- especially in cases where there is uncertainty about the intrinsic value
- of the product 
+ especially in cases where there is uncertainty about the intrinsic value of the product 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "milgrom1986price"
@@ -260,7 +285,8 @@ literal "false"
 
 \begin_layout Standard
 The basic problem is that these effects are conflated in observational data,
- as each of these effects imply that if prices rise, so does use.
+ as each of these effects imply that if prices rise,
+ so does use.
  Building on the work of 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -269,10 +295,10 @@ literal "false"
 
 \end_inset
 
-, this paper uses a field experiment designed to disentangle these three
- effects.
- To do so, we extend the randomized two-stage pricing design introduced
- by 
+,
+ this paper uses a field experiment designed to disentangle these three effects.
+ To do so,
+ we extend the randomized two-stage pricing design introduced by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "arkes1985psychology"
@@ -280,21 +306,20 @@ literal "false"
 
 \end_inset
 
- by adding a third stage that allows us to, in addition to screening and
- sunk cost effects, identify signaling effects as well.
+ by adding a third stage that allows us to,
+ in addition to screening and sunk cost effects,
+ identify signaling effects as well.
 \end_layout
 
 \begin_layout Standard
-For the empirical application, we use seed trial packs to promote a recently
- introduced improved maize seed variety among smallholder farmers in eastern
- Uganda.
- There are various reasons why improved seed varieties provide an interesting
- and policy relevant case.
- First, as this is a new and relatively unknown seed type, providing free
- samples may be necessary to encourage risk averse farmers to learn by experimen
-tation.
- Second, it is well established that one of the most effective ways to increase
- agricultural technology adoption is through peer learning 
+For the empirical application,
+ we use seed trial packs to promote a recently introduced improved maize seed variety among smallholder farmers in eastern Uganda.
+ There are various reasons why improved seed varieties provide an interesting and policy relevant case.
+ First,
+ as this is a new and relatively unknown seed type,
+ providing free samples may be necessary to encourage risk averse farmers to learn by experimentation.
+ Second,
+ it is well established that one of the most effective ways to increase agricultural technology adoption is through peer learning 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "10.1257/aer.100.1.35,https://doi.org/10.1111/j.1468-0297.2006.01115.x"
@@ -303,11 +328,11 @@ literal "false"
 \end_inset
 
 .
- Seed is an important investment requiring non-negligable monetary outlays
- up front.
- As such, there may be important sunk cost effects associated to seed purchases.
- Finally, improved seed varieties suffer from substantial information asymmetrie
-s with respect to quality.
+ Seed is an important investment requiring non-negligable monetary outlays up front.
+ As such,
+ there may be important sunk cost effects associated to seed purchases.
+ Finally,
+ improved seed varieties suffer from substantial information asymmetries with respect to quality.
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -316,24 +341,22 @@ literal "false"
 
 \end_inset
 
- find that uncertainty about the quality of the seed leads to reduced labour
- allocation and conclude that the presence of lemon inputs on the market
- for modern inputs impedes learning about the profitability of these inputs.
+ find that uncertainty about the quality of the seed leads to reduced labour allocation and conclude that the presence of lemon inputs on the market for modern inputs impedes learning about the profitability of these inputs.
  This suggests a signaling role for prices.
 \end_layout
 
 \begin_layout Standard
 We start with a selective review of the literature.
- We then explain the methods used and the experimental design, followed
- by the estimation strategy.
- We then turn to sampling and provide descriptive statistics of our study
- population.
+ We then explain the methods used and the experimental design,
+ followed by the estimation strategy.
+ We then turn to sampling and provide descriptive statistics of our study population.
  The analysis consists of three parts.
- We first look at the price elasticity of demand for the seed trial packs
- using willingness-to-pay data.
- We then compare groups of farmers that received a seed trial pack under
- different modalities.
- Finally, we provide estimates for screening, sunk cost, and signaling effects.
+ We first look at the price elasticity of demand for the seed trial packs using willingness-to-pay data.
+ We then compare groups of farmers that received a seed trial pack under different modalities.
+ Finally,
+ we provide estimates for screening,
+ sunk cost,
+ and signaling effects.
  The last section concludes and reflects on implications for policy.
 \end_layout
 
@@ -343,17 +366,13 @@ Related literature
 
 \begin_layout Standard
 The provision of products or services for free raises a central question:
- Do users value them and hence use them in alignment with their intended
- purpose? This issue often surfaces in debates around public health intervention
-s (often with significant positive externalities) where a positive price
- is assumed to increase appreciation of the product due to a sunk cost effect
- 
+ Do users value them and hence use them in alignment with their intended purpose?
+ This issue often surfaces in debates around public health interventions (often with significant positive externalities) where a positive price is assumed to increase appreciation of the product due to a sunk cost effect 
 \emph on
 ceteris paribus
 \emph default
 .
- Two influential studies that were published at around the same time are
- 
+ Two influential studies that were published at around the same time are 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "10.1257/aer.100.5.2383"
@@ -380,20 +399,18 @@ literal "false"
 
 \end_inset
 
- run a field experiment in Lusaka, Zambia where they market chlorine as
- a home water purification solution, which can also be used for other purposes
- such as clearing.
- They use a two-stage pricing design to estimate screening and sunk cost
- effects, where participants are offered the product at randomized price
- points in a first stage (a set of take-it-or-leave-it offers with prices
- ranging from 300 to 800 Zambian Kwacha with increments of 100 Zambian Kwacha),
- and receive a surprise discount in a second stage (leading to a set of
- transaction prices between 0 and 700).
+ run a field experiment in Lusaka,
+ Zambia where they market chlorine as a home water purification solution,
+ which can also be used for other purposes such as clearing.
+ They use a two-stage pricing design to estimate screening and sunk cost effects,
+ where participants are offered the product at randomized price points in a first stage (a set of take-it-or-leave-it offers with prices ranging from 300 to 800 Zambian Kwacha with increments of 100 Zambian Kwacha),
+ and receive a surprise discount in a second stage (leading to a set of transaction prices between 0 and 700).
  They find evidence of screening effects but not of sunk-cost effects.
- They conclude that households have private information about their use
- propensities that is reflected in willingness-to-pay, which, assuming a
- given level of health externalities, reduces the optimal subsidy by approximate
-ly one-half, relative to a case with no screening effects.
+ They conclude that households have private information about their use propensities that is reflected in willingness-to-pay,
+ which,
+ assuming a given level of health externalities,
+ reduces the optimal subsidy by approximately one-half,
+ relative to a case with no screening effects.
 \end_layout
 
 \begin_layout Standard
@@ -405,18 +422,18 @@ literal "false"
 \end_inset
 
  study use of subsidized insecticide-treated bed nets in Kenya.
- The do not find that paying a positive price reduces wastage and they also
- do not find that higher prices result in allocation of nets to people who
- need them the most.
- They do find, however, that a positive price, even a very small one, seriously
- reduces program coverage and conclude that free distribution of insecticide-tre
-ated nets could save many more lives than cost-sharing programs.
+ The do not find that paying a positive price reduces wastage and they also do not find that higher prices result in allocation of nets to people who need them the most.
+ They do find,
+ however,
+ that a positive price,
+ even a very small one,
+ seriously reduces program coverage and conclude that free distribution of insecticide-treated nets could save many more lives than cost-sharing programs.
 \begin_inset Note Note
 status collapsed
 
 \begin_layout Plain Layout
-Can we also do something like that? Calculate yield gains that would have
- materialized if seed would have been given for free?
+Can we also do something like that?
+ Calculate yield gains that would have materialized if seed would have been given for free?
 \end_layout
 
 \end_inset
@@ -432,16 +449,12 @@ literal "false"
 
 \end_inset
 
- also study insecticide-treated bed nets in Kenya and are particularly intereste
-d in the likelihood that resource poor households would be more likely to
- sell nets that were given for free.
- They find that none of the study participants demonstrated the capability
- or willingness to pay the wholesale price of the nets.
- They also find very low levels of external leakage: very few households
- were willing to sell the nets they received for free.
- Take together, the authors suggest that targeted distribution of free or
- highly subsidized nets to rural households is a viable strategy for achieving
- higher rates of insecticide-treated bednet usage.
+ also study insecticide-treated bed nets in Kenya and are particularly interested in the likelihood that resource poor households would be more likely to sell nets that were given for free.
+ They find that none of the study participants demonstrated the capability or willingness to pay the wholesale price of the nets.
+ They also find very low levels of external leakage:
+ very few households were willing to sell the nets they received for free.
+ Take together,
+ the authors suggest that targeted distribution of free or highly subsidized nets to rural households is a viable strategy for achieving higher rates of insecticide-treated bednet usage.
 \end_layout
 
 \begin_layout Standard
@@ -453,17 +466,11 @@ literal "false"
 
 \end_inset
 
- studies the role of prices in the efficient allocation of agricultural
- technologies in Bangladesh.
- Her two-stage design focuses on the non-buyers of a seed trial pack from
- a first stage, who are then given the seed trial pack for free in a second
- stage.
- This allows her to test if farmers that self-selected out of the the technology
- behave differently and have different returns to adoption than those that
- did buy the seed (part of farmers that bought the seed also got a full
- discount to account for sunk cost effects).
- She does not find that farmers that bought the seed benefit more from it
- that farmers that did not buy the seed.
+ studies the role of prices in the efficient allocation of agricultural technologies in Bangladesh.
+ Her two-stage design focuses on the non-buyers of a seed trial pack from a first stage,
+ who are then given the seed trial pack for free in a second stage.
+ This allows her to test if farmers that self-selected out of the the technology behave differently and have different returns to adoption than those that did buy the seed (part of farmers that bought the seed also got a full discount to account for sunk cost effects).
+ She does not find that farmers that bought the seed benefit more from it that farmers that did not buy the seed.
 \end_layout
 
 \begin_layout Section
@@ -478,30 +485,22 @@ name "sec:Methods-and-experimental"
 \end_layout
 
 \begin_layout Standard
-At the heart of the study is randomized trial that comprises of three different
- groups of farmers that receive a seed trial pack of 1 kg of seed of an
- improved variety in some way.
- The seed we use is a recently introduced hybrid seed popularly known as
- Bazooka, produced by Naseco Seed Ltd.
+At the heart of the study is randomized trial that comprises of three different groups of farmers that receive a seed trial pack of 1 kg of seed of an improved variety in some way.
+ The seed we use is a recently introduced hybrid seed popularly known as Bazooka,
+ produced by Naseco Seed Ltd.
  The seed is high yielding promising between 3.5 and 4 metric tons per acre.
  The seed was partly chosen because it is widely available in the market.
 \end_layout
 
 \begin_layout Standard
-A first group of randomly selected farmers was provided a seed trial pack
- for free.
- The enumerator then explains what kind of seed it is and what the advantages
- are.
+A first group of randomly selected farmers was provided a seed trial pack for free.
+ The enumerator then explains what kind of seed it is and what the advantages are.
  
 \end_layout
 
 \begin_layout Standard
-A second group of farmers farmers paid a positive price for the seed trial
- pack.
- In particular this group of randomly selected farmers were offered the
- opportunity to buy a bag of seed from the enumerator in a way that is as
- close as possible as how this happens in a real life setting where bargaining
- is the norm.
+A second group of farmers farmers paid a positive price for the seed trial pack.
+ In particular this group of randomly selected farmers were offered the opportunity to buy a bag of seed from the enumerator in a way that is as close as possible as how this happens in a real life setting where bargaining is the norm.
 \begin_inset Foot
 status collapsed
 
@@ -514,21 +513,21 @@ literal "false"
 
 \end_inset
 
-, farmers are simply offered the commodity at different price points.
- However, this results in a substantial number of farmers that decide not
- to buy the seed, leading to important reductions in sample size (or requiring
- significant over-subscription).
- However, as willingness to pay of a farmer is needed for the analysis of
- two-stage pricing experiments, one could use willingess-to-pay elicitation
- methods such as a Becker-DeGroot-Marschak (BDM) auction.
- In it simplest version, the subject formulates a bid and this bid is compared
- to a trigger price determined by a random number generator.
- If the subject's bid is lower than the trigger price, the deal is off.
- If the subject's bid is higher than the price, the subject gets the the
- object under auction at the trigger price.
- A BDM thus has the added advantage of also including the second stage surprise
- discount if farmers bid higher than the trigger price - see appendix E
- in 
+,
+ farmers are simply offered the commodity at different price points.
+ However,
+ this results in a substantial number of farmers that decide not to buy the seed,
+ leading to important reductions in sample size (or requiring significant over-subscription).
+ However,
+ as willingness to pay of a farmer is needed for the analysis of two-stage pricing experiments,
+ one could use willingess-to-pay elicitation methods such as a Becker-DeGroot-Marschak (BDM) auction.
+ In it simplest version,
+ the subject formulates a bid and this bid is compared to a trigger price determined by a random number generator.
+ If the subject's bid is lower than the trigger price,
+ the deal is off.
+ If the subject's bid is higher than the price,
+ the subject gets the the object under auction at the trigger price.
+ A BDM thus has the added advantage of also including the second stage surprise discount if farmers bid higher than the trigger price - see appendix E in 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "doi:10.1086/705374"
@@ -541,43 +540,33 @@ literal "false"
 
 \end_inset
 
- The enumerator follows a standard script that was implemented in Open Data
- Kit (ODK) on Android tablet computers.
- An initial ask price is randomly drawn, ranging from 12,000 to 9,000, and
- this price is then presented to the farmer as the price of the bag of seed.
- The enumerator explains what kind of seed it is and what the advantages
- are.
+ The enumerator follows a standard script that was implemented in Open Data Kit (ODK) on Android tablet computers.
+ An initial ask price is randomly drawn,
+ ranging from 12,000 to 9,000,
+ and this price is then presented to the farmer as the price of the bag of seed.
+ The enumerator explains what kind of seed it is and what the advantages are.
  The farmer has the option to accept this price or not.
  
 \end_layout
 
 \begin_layout Standard
-If the farmer does not accept the initial offer price, the farmer enters
- into a bargaining stage where he or she is encouraged to name his/her first
- bid price.
- A computer algorithm then determines a counter-offer that the enumerator
- asks in a second round of negotiation.
- This new ask price is determined as the farmer's bid price plus 80 percent
- of the difference between the (initial) ask price and the farmer's bid
- price, and this is rounded to the nearest multiple of 500.
- This updated (lower) ask price is then presented to the farmer and the
- farmer gets another opportunity to accept or not.
- If the farmer does not accept, he or she is encouraged to make a second
- bid and a third ask price is determined as the farmer's last bid price
- plus 80 percent of the difference between the last ask price and the farmer's
- last bid price.
- Bargaining continues until the farmer accepts an ask price, or the price
- difference between the bid and ask price is smaller than 500 ugandan shilling,
- in which case the computer instructs the enumerator sell at the last price
- the farmer bids.
+If the farmer does not accept the initial offer price,
+ the farmer enters into a bargaining stage where he or she is encouraged to name his/her first bid price.
+ A computer algorithm then determines a counter-offer that the enumerator asks in a second round of negotiation.
+ This new ask price is determined as the farmer's bid price plus 80 percent of the difference between the (initial) ask price and the farmer's bid price,
+ and this is rounded to the nearest multiple of 500.
+ This updated (lower) ask price is then presented to the farmer and the farmer gets another opportunity to accept or not.
+ If the farmer does not accept,
+ he or she is encouraged to make a second bid and a third ask price is determined as the farmer's last bid price plus 80 percent of the difference between the last ask price and the farmer's last bid price.
+ Bargaining continues until the farmer accepts an ask price,
+ or the price difference between the bid and ask price is smaller than 500 ugandan shilling,
+ in which case the computer instructs the enumerator sell at the last price the farmer bids.
 \begin_inset Foot
 status collapsed
 
 \begin_layout Plain Layout
-To make the bargaining also incentive compatible for the enumerators, we
- tell them in advance that the money that is collected from farmers during
- this first stage will be divided and distributed equally among all the
- enumerators.
+To make the bargaining also incentive compatible for the enumerators,
+ we tell them in advance that the money that is collected from farmers during this first stage will be divided and distributed equally among all the enumerators.
 \end_layout
 
 \end_inset
@@ -586,40 +575,30 @@ To make the bargaining also incentive compatible for the enumerators, we
 \end_layout
 
 \begin_layout Standard
-A third group of farmers also plays the bargaining game, but is offered
- a surprise 100 percent discount.
- Most pricing designs use a random discount to be included as a continuous
- variable in the regression, or a set of equally spaced discounts.
+A third group of farmers also plays the bargaining game,
+ but is offered a surprise 100 percent discount.
+ Most pricing designs use a random discount to be included as a continuous variable in the regression,
+ or a set of equally spaced discounts.
  The aim of this is often to set optimal subsidy level.
- In our study, we want to maximize power and work with only one discount.
- The decision to use only a single full discount is also due to the fact
- that we expect a discontinuity in the relationship (free versus paying,
- even though it may be only a little) and the fact that we also want to
- maximize sample size for a comparison between the 100 % discount and the
- farmers that get the free seed trial pack.
+ In our study,
+ we want to maximize power and work with only one discount.
+ The decision to use only a single full discount is also due to the fact that we expect a discontinuity in the relationship (free versus paying,
+ even though it may be only a little) and the fact that we also want to maximize sample size for a comparison between the 100 % discount and the farmers that get the free seed trial pack.
 \end_layout
 
 \begin_layout Standard
-In a first part of the analysis, we simply compare behaviour between the
- 3 groups of farmers.
- We ask for instance if seed pack use is indeed lower in the subset of farmers
- that received the seed for free as opposed to those who paid a positive
- price.
- Comparing the three groups may also give us an idea of what effects are
- most important.
- For instance, if we see a pattern of higher use in the subgroup that paid
- a positive price and the subgroup that got a discount (and lower use in
- the group that received the seed for free without going though the bargaining)
- this would suggest that signaling may be important.
- Trial pack use that is higher in the group that paid a positive price only
- would be consistent with a sunk cost effect.
+In a first part of the analysis,
+ we simply compare behaviour between the 3 groups of farmers.
+ We ask for instance if seed pack use is indeed lower in the subset of farmers that received the seed for free as opposed to those who paid a positive price.
+ Comparing the three groups may also give us an idea of what effects are most important.
+ For instance,
+ if we see a pattern of higher use in the subgroup that paid a positive price and the subgroup that got a discount (and lower use in the group that received the seed for free without going though the bargaining) this would suggest that signaling may be important.
+ Trial pack use that is higher in the group that paid a positive price only would be consistent with a sunk cost effect.
  
 \end_layout
 
 \begin_layout Standard
-To further investigate the relationship between prices and use we focus
- on the second and third group and extend the randomized two-stage pricing
- design to isolate the sunk-cost effect from the screening effect 
+To further investigate the relationship between prices and use we focus on the second and third group and extend the randomized two-stage pricing design to isolate the sunk-cost effect from the screening effect 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "10.1257/aer.100.5.2383,10.1162/qjec.2010.125.1.1"
@@ -628,36 +607,29 @@ literal "false"
 \end_inset
 
 .
- In the original two-stage design, study participants are given the opportunity
- to buy a commodity at different price points and in a second stage are
- given a surprise discount.
- Running a regression of product use on the price paid while controlling
- for the discount gives an estimate of the screening effect, while a regression
- of product use on the discount while controlling for price paid provides
- an estimate of the sunk cost effect.
+ In the original two-stage design,
+ study participants are given the opportunity to buy a commodity at different price points and in a second stage are given a surprise discount.
+ Running a regression of product use on the price paid while controlling for the discount gives an estimate of the screening effect,
+ while a regression of product use on the discount while controlling for price paid provides an estimate of the sunk cost effect.
 \end_layout
 
 \begin_layout Standard
-As mentioned above, in our design, instead of simply asking farmers to purchase
- the seed at a given price, we provide farmers with the opportunity to buy
- seed through a sequential bargaining game starting from a randomized initial
- offer price that provides the starting point of the negotiations process.
- This procedure gives us a price that can be used to estimate (or control
- for) the signaling effect that is different from the price that farmers
- agree upon, the latter which can be used to estimate (or control for) the
- screening effect.
- The last stage in our design remains the same with a surprise discount
- that can be used to estimate (or control for) the sunk cost effect.
+As mentioned above,
+ in our design,
+ instead of simply asking farmers to purchase the seed at a given price,
+ we provide farmers with the opportunity to buy seed through a sequential bargaining game starting from a randomized initial offer price that provides the starting point of the negotiations process.
+ This procedure gives us a price that can be used to estimate (or control for) the signaling effect that is different from the price that farmers agree upon,
+ the latter which can be used to estimate (or control for) the screening effect.
+ The last stage in our design remains the same with a surprise discount that can be used to estimate (or control for) the sunk cost effect.
 \end_layout
 
 \begin_layout Standard
-Assignment into the groups will be at the village level, as we want to avoid
- that a farmer that gets a bag of maize seed for free lives right next to
- a farmer that has to pay a positive price for it.
- However, we did vary the initial offer price in the bargaining experiment
- at the individual level.
- We will work with 10 farmers per village, a number that was informed by
- weighing logistical against statistical power consideration.
+Assignment into the groups will be at the village level,
+ as we want to avoid that a farmer that gets a bag of maize seed for free lives right next to a farmer that has to pay a positive price for it.
+ However,
+ we did vary the initial offer price in the bargaining experiment at the individual level.
+ We will work with 10 farmers per village,
+ a number that was informed by weighing logistical against statistical power consideration.
 \end_layout
 
 \begin_layout Standard
@@ -666,11 +638,11 @@ status collapsed
 
 \begin_layout Plain Layout
 Our paper extends the literature in various ways.
- First, we add an additional stage to the two-stage pricing design to also
- identify the signaling of prices.
- Second, we include special psychological properties to zero financial price
- and that demand may drop precipitously when the price is raised slightly
- above zero (Ariely and Shampan’er 2007; Kremer and Miguel 2007).
+ First,
+ we add an additional stage to the two-stage pricing design to also identify the signaling of prices.
+ Second,
+ we include special psychological properties to zero financial price and that demand may drop precipitously when the price is raised slightly above zero (Ariely and Shampan’er 2007;
+ Kremer and Miguel 2007).
 \end_layout
 
 \end_inset
@@ -683,13 +655,11 @@ Estimation
 \end_layout
 
 \begin_layout Standard
-In a first part of the analysis, we compare the outcomes of three groups:
- 1) farmers who paid a positive price for the seed trial pack after the
- bargaining experiment explained in the previous section; 2) farmers who
- participated in the bargaining experiment but received the seed for free
- anyway due to a 100 percent surprise discount; and 3) farmers that received
- the seed trial pack for free and did not participate in the bargaining
- experiment.
+In a first part of the analysis,
+ we compare the outcomes of three groups:
+ 1) farmers who paid a positive price for the seed trial pack after the bargaining experiment explained in the previous section;
+ 2) farmers who participated in the bargaining experiment but received the seed for free anyway due to a 100 percent surprise discount;
+ and 3) farmers that received the seed trial pack for free and did not participate in the bargaining experiment.
  We do this by estimating the following equation:
 \end_layout
 
@@ -714,31 +684,30 @@ where
 i 
 \emph default
 (eg.
- use of the seed trial pack, adoption of improved seed variety in next season,...)
+ use of the seed trial pack,
+ adoption of improved seed variety in next season,...)
 \emph on
-, 
+,
+ 
 \emph default
 
 \begin_inset Formula $D_{i}$
 \end_inset
 
- is an indicator variable that takes the value of 1 if the farmer was randomly
- selected to receive a full discount after then bargaining, and 
+ is an indicator variable that takes the value of 1 if the farmer was randomly selected to receive a full discount after then bargaining,
+ and 
 \begin_inset Formula $F_{i}$
 \end_inset
 
- is an indicator variable that takes the value of 1 if the farmer was randomly
- selected to receive the seed trial pack for free without bargaining.
- The group that paid a positive price for the seed trial pack thus serves
- as the reference group.
+ is an indicator variable that takes the value of 1 if the farmer was randomly selected to receive the seed trial pack for free without bargaining.
+ The group that paid a positive price for the seed trial pack thus serves as the reference group.
  We also implement a linear hypothesis test to test if 
 \begin_inset Formula $\beta_{D}=\beta_{F}$
 \end_inset
 
 .
- As randomization happened at the village level, we use cluster-robust standard
- errors with a small sample correction following the bias-reduced linearization
- adjustment proposed by 
+ As randomization happened at the village level,
+ we use cluster-robust standard errors with a small sample correction following the bias-reduced linearization adjustment proposed by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "bell2002bias"
@@ -758,12 +727,13 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-If signaling is important, we would expect that being enrolled in the bargaining
- experiment (group 1 and group 2) will result in a positive impact (
+If signaling is important,
+ we would expect that being enrolled in the bargaining experiment (group 1 and group 2) will result in a positive impact (
 \begin_inset Formula $\beta_{D}=0$
 \end_inset
 
-, 
+,
+ 
 \begin_inset Formula $\beta_{F}<0$
 \end_inset
 
@@ -772,13 +742,14 @@ If signaling is important, we would expect that being enrolled in the bargaining
 \end_inset
 
 ).
- If the sunk cost effect exists, we would expect a positive impact only
- in the first group, as these are the only ones that paid a positive price
- (
+ If the sunk cost effect exists,
+ we would expect a positive impact only in the first group,
+ as these are the only ones that paid a positive price (
 \begin_inset Formula $\beta_{D}<0$
 \end_inset
 
- , 
+ ,
+ 
 \begin_inset Formula $\beta_{F}<0$
 \end_inset
 
@@ -792,9 +763,9 @@ If signaling is important, we would expect that being enrolled in the bargaining
 status collapsed
 
 \begin_layout Plain Layout
-If there is an income effect, we expect to have positive effects in the
- groups that received the trial pack for free, either after bargaining (group
- 2) or without bargaining (group 3).
+If there is an income effect,
+ we expect to have positive effects in the groups that received the trial pack for free,
+ either after bargaining (group 2) or without bargaining (group 3).
 \end_layout
 
 \end_inset
@@ -803,8 +774,9 @@ If there is an income effect, we expect to have positive effects in the
 \end_layout
 
 \begin_layout Standard
-To identify screening effects, in a second part of the analysis, we estimate
- models that are similar to 
+To identify screening effects,
+ in a second part of the analysis,
+ we estimate models that are similar to 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "10.1257/aer.100.5.2383"
@@ -813,12 +785,9 @@ literal "false"
 \end_inset
 
  that allow us to isolate the screening effect.
- To do so, we drop the group that did not enroll in the bargaining experiment
- and confine attention to the first two groups (farmers that paid a positive
- price and farmers that received a 100 percent discount after negotiation).
- We then regress outcomes on the price that was agreed on during the bargaining
- experiment (controlling for an indicator for having received a discount
- and the initial offer price) to estimate the screening effect (see 
+ To do so,
+ we drop the group that did not enroll in the bargaining experiment and confine attention to the first two groups (farmers that paid a positive price and farmers that received a 100 percent discount after negotiation).
+ We then regress outcomes on the price that was agreed on during the bargaining experiment (controlling for an indicator for having received a discount and the initial offer price) to estimate the screening effect (see 
 \begin_inset Formula $\beta_{P}$
 \end_inset
 
@@ -829,14 +798,12 @@ reference "eq:one-1"
 plural "false"
 caps "false"
 noprefix "false"
+nolink "false"
 
 \end_inset
 
 ).
- We also regress outcomes on an indicator that takes the value of 1 if the
- farmer paid the agreed upon price (and did not get the reduction) and 0
- if the farmer got the surprise discount to estimate the sunk cost effect
- (which corresponds to 
+ We also regress outcomes on an indicator that takes the value of 1 if the farmer paid the agreed upon price (and did not get the reduction) and 0 if the farmer got the surprise discount to estimate the sunk cost effect (which corresponds to 
 \begin_inset Formula $\beta_{D}$
 \end_inset
 
@@ -847,6 +814,7 @@ reference "eq:one-1"
 plural "false"
 caps "false"
 noprefix "false"
+nolink "false"
 
 \end_inset
 
@@ -855,11 +823,10 @@ noprefix "false"
 status collapsed
 
 \begin_layout Plain Layout
-In two-stage pricing designs where there is also variation in the discount
- offered, the price paid after the discount is used in the regressions to
- measure sunk-cost effects.
- We focus on the hypothesis that paying something results in more use than
- paying nothing, since we expect non-linearities around zero price.
+In two-stage pricing designs where there is also variation in the discount offered,
+ the price paid after the discount is used in the regressions to measure sunk-cost effects.
+ We focus on the hypothesis that paying something results in more use than paying nothing,
+ since we expect non-linearities around zero price.
  This hypothesis was also suggested by a practitioner in 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -873,9 +840,8 @@ literal "false"
 
 \end_inset
 
- Finally, we regress outcomes on the initial offer price (controlling for
- the price agreed on during bargaining and an indicator for having received
- the discount) to estimate the signaling effect (corresponding to 
+ Finally,
+ we regress outcomes on the initial offer price (controlling for the price agreed on during bargaining and an indicator for having received the discount) to estimate the signaling effect (corresponding to 
 \begin_inset Formula $\beta_{I}$
 \end_inset
 
@@ -886,6 +852,7 @@ reference "eq:one-1"
 plural "false"
 caps "false"
 noprefix "false"
+nolink "false"
 
 \end_inset
 
@@ -894,18 +861,20 @@ noprefix "false"
 status collapsed
 
 \begin_layout Plain Layout
-In the analysis, instead of simply estimating Equation 
+In the analysis,
+ instead of simply estimating Equation 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:one-1"
 plural "false"
 caps "false"
 noprefix "false"
+nolink "false"
 
 \end_inset
 
-, we estimate 3 separate equations depending on the effect we are interested
- in and controls are included demeaned and fully interacted 
+,
+ we estimate 3 separate equations depending on the effect we are interested in and controls are included demeaned and fully interacted 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "10.1214/12-AOAS583"
@@ -914,8 +883,7 @@ literal "false"
 \end_inset
 
 .
- Standard errors are not adjusted as initial offer prices are randomized
- at the individual level.
+ Standard errors are not adjusted as initial offer prices are randomized at the individual level.
 \end_layout
 
 \end_inset
@@ -939,7 +907,8 @@ where
 \begin_inset Formula $P_{i}$
 \end_inset
 
- is the price for the seed pack that was agreed upon after bargaining, 
+ is the price for the seed pack that was agreed upon after bargaining,
+ 
 \begin_inset Formula $\bar{D}_{i}$
 \end_inset
 
@@ -952,10 +921,10 @@ where
 \end_layout
 
 \begin_layout Standard
-In the analysis, we look at different (correlated) outcomes and it is often
- not immediately clear which are the most appropriate especially when some
- outcomes are significantly different and others are not.
- To deal with this problem, we follow a method proposed by 
+In the analysis,
+ we look at different (correlated) outcomes and it is often not immediately clear which are the most appropriate especially when some outcomes are significantly different and others are not.
+ To deal with this problem,
+ we follow a method proposed by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "anderson2008multiple"
@@ -963,14 +932,12 @@ literal "false"
 
 \end_inset
 
- and aggregate different outcome measures within broadly defined families
- (eg seed pack use, subsequent adoption of technology, use of complementary
- inputs and practices,...) into single summary indices.
- Each index is computed as a weighted mean of the standardized values of
- the outcome variables, with the weights derived from the inverse variance
- covariance matrix of the components of the index.
- Combining outcomes in indices is also a common strategy to guard against
- over-rejection of the null hypothesis due to multiple inference.
+ and aggregate different outcome measures within broadly defined families (eg seed pack use,
+ subsequent adoption of technology,
+ use of complementary inputs and practices,...) into single summary indices.
+ Each index is computed as a weighted mean of the standardized values of the outcome variables,
+ with the weights derived from the inverse variance covariance matrix of the components of the index.
+ Combining outcomes in indices is also a common strategy to guard against over-rejection of the null hypothesis due to multiple inference.
 \end_layout
 
 \begin_layout Section
@@ -979,66 +946,63 @@ Sample and Descriptive Statistics
 
 \begin_layout Standard
 The total sample consists of a representative sample of about 1150 households,
- drawn from 4 districts in southeastern Uganda (Mayuge, Kamuli, Iganga,
+ drawn from 4 districts in southeastern Uganda (Mayuge,
+ Kamuli,
+ Iganga,
  and Bugiri).
 \begin_inset Foot
 status collapsed
 
 \begin_layout Plain Layout
-According to a series of power simulations, we needed about 360 household
- per groups, which would have been 1080 households.
+According to a series of power simulations,
+ we needed about 360 household per groups,
+ which would have been 1080 households.
 \end_layout
 
 \end_inset
 
- These districts were chosen because maize is an important crop for both
- food and cash.
- In these 4 districts, 115 villages were randomly selected from a list of
- all villages with the likelihood of a village being selected proportional
- to the number of households that live in the village.
- Within each village, 10 households were randomly selected.
+ These districts were chosen because maize is an important crop for both food and cash.
+ In these 4 districts,
+ 115 villages were randomly selected from a list of all villages with the likelihood of a village being selected proportional to the number of households that live in the village.
+ Within each village,
+ 10 households were randomly selected.
 \end_layout
 
 \begin_layout Standard
-In February and March 2023, well before the first agricultural season, we
- visited all sampled households and collected baseline data.
- At that time, farmers were also provided with the trial seed pack.
- The groups were equally split across the sample, with about 390 farmers
- (in 39 villages) that received the seed trial pack for free without bargaining,
- 380 farmers (in 38 villages) that were enrolled in the bargaining and paid
- the price agreed upon, and 380 farmers (in 38 villages) that were enrolled
- in the bargaining and received a 100% discount.
- Selected farmers were notified that we would visit them a few days before
- enumerators would visit the villages, and they were told that there may
- be an opportunity to buy something so they should make sure they had a
- little bit of money by the time we visited them.
+In February and March 2023,
+ well before the first agricultural season,
+ we visited all sampled households and collected baseline data.
+ At that time,
+ farmers were also provided with the trial seed pack.
+ The groups were equally split across the sample,
+ with about 390 farmers (in 39 villages) that received the seed trial pack for free without bargaining,
+ 380 farmers (in 38 villages) that were enrolled in the bargaining and paid the price agreed upon,
+ and 380 farmers (in 38 villages) that were enrolled in the bargaining and received a 100% discount.
+ Selected farmers were notified that we would visit them a few days before enumerators would visit the villages,
+ and they were told that there may be an opportunity to buy something so they should make sure they had a little bit of money by the time we visited them.
 \end_layout
 
 \begin_layout Standard
 Baseline survey and treatment administration was done by trained enumerators.
- After a short introduction and obtaining consent, enumerators started with
- the bargaining as explained in detail in Section 
+ After a short introduction and obtaining consent,
+ enumerators started with the bargaining as explained in detail in Section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Methods-and-experimental"
 plural "false"
 caps "false"
 noprefix "false"
+nolink "false"
 
 \end_inset
 
- (if farmers were in the treatment groups that involved the bargaining experimen
-t).
- After the experiment ended and seed and money changed hands, the baseline
- survey was implemented asking questions about general household characteristics
- and more specific questions about maize farming and the use of seed of
- an improved variety.
- We also collected some data on consumption expenditure and more subjective
- questions on food security and welfare.
- After the survey, farmers that were in the 100 percent discount groups
- were told that they were lucky winners and got a 100 percent cash-back.
- Farmers who were in the group that would receive seed for free got their
- bag of seed at this point.
+ (if farmers were in the treatment groups that involved the bargaining experiment).
+ After the experiment ended and seed and money changed hands,
+ the baseline survey was implemented asking questions about general household characteristics and more specific questions about maize farming and the use of seed of an improved variety.
+ We also collected some data on consumption expenditure and more subjective questions on food security and welfare.
+ After the survey,
+ farmers that were in the 100 percent discount groups were told that they were lucky winners and got a 100 percent cash-back.
+ Farmers who were in the group that would receive seed for free got their bag of seed at this point.
 \end_layout
 
 \begin_layout Standard
@@ -1047,7 +1011,10 @@ status open
 
 \begin_layout Plain Layout
 
-<<code,  echo=FALSE, warning = FALSE, message=FALSE>>=
+<<code,
+  echo=FALSE,
+ warning = FALSE,
+ message=FALSE>>=
 \end_layout
 
 \begin_layout Plain Layout
@@ -1065,75 +1032,14 @@ path <- getwd()
 
 \begin_layout Plain Layout
 
-load(paste(path,"base_balance.Rdata", sep="/"))
+load(paste(path,"base_balance.Rdata",
+ sep="/"))
 \end_layout
 
 \begin_layout Plain Layout
 
-load(paste(path,"base_balance_bin.Rdata", sep="/"))
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-load(paste(path,"res_tab.Rdata", sep="/"))
-\end_layout
-
-\begin_layout Plain Layout
-
-load(paste(path,"res_tab_bin.Rdata", sep="/"))
-\end_layout
-
-\begin_layout Plain Layout
-
-load(paste(path,"res_tab_pract.Rdata", sep="/"))
-\end_layout
-
-\begin_layout Plain Layout
-
-load(paste(path,"res_tab_pract_bin.Rdata", sep="/"))
-\end_layout
-
-\begin_layout Plain Layout
-
-load(paste(path,"res_tab_char.Rdata", sep="/"))
-\end_layout
-
-\begin_layout Plain Layout
-
-load(paste(path,"res_tab_yield.Rdata", sep="/"))
-\end_layout
-
-\begin_layout Plain Layout
-
-load(paste(path,"res_tab_plan.Rdata", sep="/"))
-\end_layout
-
-\begin_layout Plain Layout
-
-load(paste(path,"res_tab_path.Rdata", sep="/"))
-\end_layout
-
-\begin_layout Plain Layout
-
-load(paste(path,"res_tab_path_bin.Rdata", sep="/"))
-\end_layout
-
-\begin_layout Plain Layout
-
-load(paste(path,"res_tab_next_season.Rdata", sep="/"))
-\end_layout
-
-\begin_layout Plain Layout
-
-load(paste(path,"res_tab_next_season_bin.Rdata", sep="/"))
+load(paste(path,"base_balance_bin.Rdata",
+ sep="/"))
 \end_layout
 
 \begin_layout Plain Layout
@@ -1142,12 +1048,88 @@ load(paste(path,"res_tab_next_season_bin.Rdata", sep="/"))
 
 \begin_layout Plain Layout
 
-load(paste(path,"res_tab_path_next_season_bin.Rdata", sep="/"))
 \end_layout
 
 \begin_layout Plain Layout
 
-load(paste(path,"res_tab_path_next_season.Rdata", sep="/"))
+load(paste(path,"res_tab.Rdata",
+ sep="/"))
+\end_layout
+
+\begin_layout Plain Layout
+
+load(paste(path,"res_tab_bin.Rdata",
+ sep="/"))
+\end_layout
+
+\begin_layout Plain Layout
+
+load(paste(path,"res_tab_pract.Rdata",
+ sep="/"))
+\end_layout
+
+\begin_layout Plain Layout
+
+load(paste(path,"res_tab_pract_bin.Rdata",
+ sep="/"))
+\end_layout
+
+\begin_layout Plain Layout
+
+load(paste(path,"res_tab_char.Rdata",
+ sep="/"))
+\end_layout
+
+\begin_layout Plain Layout
+
+load(paste(path,"res_tab_yield.Rdata",
+ sep="/"))
+\end_layout
+
+\begin_layout Plain Layout
+
+load(paste(path,"res_tab_plan.Rdata",
+ sep="/"))
+\end_layout
+
+\begin_layout Plain Layout
+
+load(paste(path,"res_tab_path.Rdata",
+ sep="/"))
+\end_layout
+
+\begin_layout Plain Layout
+
+load(paste(path,"res_tab_path_bin.Rdata",
+ sep="/"))
+\end_layout
+
+\begin_layout Plain Layout
+
+load(paste(path,"res_tab_next_season.Rdata",
+ sep="/"))
+\end_layout
+
+\begin_layout Plain Layout
+
+load(paste(path,"res_tab_next_season_bin.Rdata",
+ sep="/"))
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+load(paste(path,"res_tab_path_next_season_bin.Rdata",
+ sep="/"))
+\end_layout
+
+\begin_layout Plain Layout
+
+load(paste(path,"res_tab_path_next_season.Rdata",
+ sep="/"))
 \end_layout
 
 \begin_layout Plain Layout
@@ -1172,54 +1154,46 @@ reference "tab:Baseline-Balance"
 plural "false"
 caps "false"
 noprefix "false"
+nolink "false"
 
 \end_inset
 
- shows farmer characteristics at baseline and also doubles as a balance
- test for the three groups we will compare in the first part of the study.
- For instance, we see that the average household head in the sample that
- paid a positive price for the seed is 48 years (column 1).
- Household heads in the group that participated in the bargaining but was
- provided a cash-back are almost 1.5 years older, but the difference with
- the first group is not statistically significant.
- Also in the group that got the seed for free, the average age of the head
- does not differ from the group that paid a positive price.
+ shows farmer characteristics at baseline and also doubles as a balance test for the three groups we will compare in the first part of the study.
+ For instance,
+ we see that the average household head in the sample that paid a positive price for the seed is 48 years (column 1).
+ Household heads in the group that participated in the bargaining but was provided a cash-back are almost 1.5 years older,
+ but the difference with the first group is not statistically significant.
+ Also in the group that got the seed for free,
+ the average age of the head does not differ from the group that paid a positive price.
 \end_layout
 
 \begin_layout Standard
 About 53 percent of farmers finished primary education.
- In 82 percent of households, the head is a man.
- However, in the group that received a discount, this is only about 75 percent.
+ In 82 percent of households,
+ the head is a man.
+ However,
+ in the group that received a discount,
+ this is only about 75 percent.
  The average household in our sample comprises of 8.5 individuals.
- Also on this characteristic we find a slight imbalance for the group that
- received a discount.
+ Also on this characteristic we find a slight imbalance for the group that received a discount.
 \end_layout
 
 \begin_layout Standard
-Of relevance to the current study is that the average household in our sample
- lives about 3.7 kilometers from the nearest agro-input shop.
- About 43 percent of farmers report that they used maize of an improved
- variety (as opposed to local seed) on at least one plot in the season preceding
- the baseline (which was the second season of 2022).
- For a more precise measure of technology adoption, we asked farmers to
- list all plots on which maize was grown.
- The data capturing program (ODK) then randomly selected a plot for which
- a series of detailed questions are asked.
+Of relevance to the current study is that the average household in our sample lives about 3.7 kilometers from the nearest agro-input shop.
+ About 43 percent of farmers report that they used maize of an improved variety (as opposed to local seed) on at least one plot in the season preceding the baseline (which was the second season of 2022).
+ For a more precise measure of technology adoption,
+ we asked farmers to list all plots on which maize was grown.
+ The data capturing program (ODK) then randomly selected a plot for which a series of detailed questions are asked.
 \begin_inset Foot
 status open
 
 \begin_layout Plain Layout
-The decision to only ask detailed questions on one (randomly selected) plot
- was guided by the fact that outcomes at plot level (such as adoption of
- improved inputs and technologies, management practices and production)
- are likely to be correlated such that gains in power from surveying all
- plots likely do not outweigh costs of longer and more tedious questionnaires.
- As the plot to survey was selected randomly, outcomes should be unbiased
- and consistent.
- The validity of this approach was confirmed during the endline questionnaire
- where we asked detailed questions on seed use on all plots: average use
- of the promoted variety calculated using all maize plots was the same as
- only using the randomly selected plot.
+The decision to only ask detailed questions on one (randomly selected) plot was guided by the fact that outcomes at plot level (such as adoption of improved inputs and technologies,
+ management practices and production) are likely to be correlated such that gains in power from surveying all plots likely do not outweigh costs of longer and more tedious questionnaires.
+ As the plot to survey was selected randomly,
+ outcomes should be unbiased and consistent.
+ The validity of this approach was confirmed during the endline questionnaire where we asked detailed questions on seed use on all plots:
+ average use of the promoted variety calculated using all maize plots was the same as only using the randomly selected plot.
 \begin_inset CommandInset label
 LatexCommand label
 name "fn:The-decision-to"
@@ -1231,34 +1205,28 @@ name "fn:The-decision-to"
 
 \end_inset
 
- About 7 percent of farmers indicated that they adopted the seed variety
- that we promoted (Bazooka) in the season preceding the baseline.
- This low adoption rate confirms that the new technology was not yet widely
- adopted before our study.
+ About 7 percent of farmers indicated that they adopted the seed variety that we promoted (Bazooka) in the season preceding the baseline.
+ This low adoption rate confirms that the new technology was not yet widely adopted before our study.
  
 \end_layout
 
 \begin_layout Standard
-About 35 percent of farmers in the group that paid a positive price used
- seed from a formal seed source in the season preceding the baseline (for
- instance from an agro-input dealer or from the government extension system).
- This is somewhat lower in the group that received the seed for free without
- bargaining.
- While this difference is not significant when compared to the group that
- paid a positive price, it is significantly lower than in the group that
- got the 100 percent discount.
- To maintain sufficient vigor, seed should not be reused too much.
- Only about 22 percent of households used seed that was recycled less than
- 4 times (which is considered the limit for open pollinating varieties).
- Finally, maize yields on the randomly selected plot in the second season
- of 2022 was about 400 kilograms per acre.
- This was slightly higher in the group that got the 100 percent discount
- after negotiation than in the group that got the seed for free without
- participating in the bargaining.
+About 35 percent of farmers in the group that paid a positive price used seed from a formal seed source in the season preceding the baseline (for instance from an agro-input dealer or from the government extension system).
+ This is somewhat lower in the group that received the seed for free without bargaining.
+ While this difference is not significant when compared to the group that paid a positive price,
+ it is significantly lower than in the group that got the 100 percent discount.
+ To maintain sufficient vigor,
+ seed should not be reused too much.
+ Only about 22 percent of households used seed that was recycled less than 4 times (which is considered the limit for open pollinating varieties).
+ Finally,
+ maize yields on the randomly selected plot in the second season of 2022 was about 400 kilograms per acre.
+ This was slightly higher in the group that got the 100 percent discount after negotiation than in the group that got the seed for free without participating in the bargaining.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float table
+placement document
+alignment document
 wide false
 sideways true
 status collapsed
@@ -1374,8 +1342,7 @@ Sexpr{ifelse(base_balance_bin[3,2,1]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance_bin[3,2,1]<.05,"*",ifelse(base_balance_bin[3,2,1]<.1,"+","")
-))}}$
+	,ifelse(base_balance_bin[3,2,1]<.05,"*",ifelse(base_balance_bin[3,2,1]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -1389,8 +1356,7 @@ Sexpr{ifelse(base_balance_bin[3,3,1]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance_bin[3,3,1]<.05,"*",ifelse(base_balance_bin[3,3,1]<.1,"+","")
-))}}$ 
+	,ifelse(base_balance_bin[3,3,1]<.05,"*",ifelse(base_balance_bin[3,3,1]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -1404,8 +1370,7 @@ Sexpr{ifelse(base_balance_bin[3,4,1]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance_bin[3,4,1]<.05,"*",ifelse(base_balance_bin[3,4,1]<.1,"+","")
-))}}$ 
+	,ifelse(base_balance_bin[3,4,1]<.05,"*",ifelse(base_balance_bin[3,4,1]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -1481,8 +1446,7 @@ Sexpr{ifelse(base_balance_bin[3,2,2]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance_bin[3,2,2]<.05,"*",ifelse(base_balance_bin[3,2,2]<.1,"+","")
-))}}$
+	,ifelse(base_balance_bin[3,2,2]<.05,"*",ifelse(base_balance_bin[3,2,2]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -1496,8 +1460,7 @@ Sexpr{ifelse(base_balance_bin[3,3,2]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance_bin[3,3,2]<.05,"*",ifelse(base_balance_bin[3,3,2]<.1,"+","")
-))}}$ 
+	,ifelse(base_balance_bin[3,3,2]<.05,"*",ifelse(base_balance_bin[3,3,2]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -1511,8 +1474,7 @@ Sexpr{ifelse(base_balance_bin[3,4,2]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance_bin[3,4,2]<.05,"*",ifelse(base_balance_bin[3,4,2]<.1,"+","")
-))}}$ 
+	,ifelse(base_balance_bin[3,4,2]<.05,"*",ifelse(base_balance_bin[3,4,2]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -1588,8 +1550,7 @@ Sexpr{ifelse(base_balance_bin[3,2,3]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance_bin[3,2,3]<.05,"*",ifelse(base_balance_bin[3,2,3]<.1,"+","")
-))}}$
+	,ifelse(base_balance_bin[3,2,3]<.05,"*",ifelse(base_balance_bin[3,2,3]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -1603,8 +1564,7 @@ Sexpr{ifelse(base_balance_bin[3,3,3]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance_bin[3,3,3]<.05,"*",ifelse(base_balance_bin[3,3,3]<.1,"+","")
-))}}$ 
+	,ifelse(base_balance_bin[3,3,3]<.05,"*",ifelse(base_balance_bin[3,3,3]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -1618,8 +1578,7 @@ Sexpr{ifelse(base_balance_bin[3,4,3]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance_bin[3,4,3]<.05,"*",ifelse(base_balance_bin[3,4,3]<.1,"+","")
-))}}$ 
+	,ifelse(base_balance_bin[3,4,3]<.05,"*",ifelse(base_balance_bin[3,4,3]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -1695,8 +1654,7 @@ Sexpr{ifelse(base_balance_bin[3,2,4]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance_bin[3,2,4]<.05,"*",ifelse(base_balance_bin[3,2,4]<.1,"+","")
-))}}$
+	,ifelse(base_balance_bin[3,2,4]<.05,"*",ifelse(base_balance_bin[3,2,4]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -1710,8 +1668,7 @@ Sexpr{ifelse(base_balance_bin[3,3,4]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance_bin[3,3,4]<.05,"*",ifelse(base_balance_bin[3,3,4]<.1,"+","")
-))}}$ 
+	,ifelse(base_balance_bin[3,3,4]<.05,"*",ifelse(base_balance_bin[3,3,4]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -1725,8 +1682,7 @@ Sexpr{ifelse(base_balance_bin[3,4,4]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance_bin[3,4,4]<.05,"*",ifelse(base_balance_bin[3,4,4]<.1,"+","")
-))}}$ 
+	,ifelse(base_balance_bin[3,4,4]<.05,"*",ifelse(base_balance_bin[3,4,4]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -1802,8 +1758,7 @@ Sexpr{ifelse(base_balance_bin[3,2,5]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance_bin[3,2,5]<.05,"*",ifelse(base_balance_bin[3,2,5]<.1,"+","")
-))}}$
+	,ifelse(base_balance_bin[3,2,5]<.05,"*",ifelse(base_balance_bin[3,2,5]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -1817,8 +1772,7 @@ Sexpr{ifelse(base_balance_bin[3,3,5]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance_bin[3,3,5]<.05,"*",ifelse(base_balance_bin[3,3,5]<.1,"+","")
-))}}$ 
+	,ifelse(base_balance_bin[3,3,5]<.05,"*",ifelse(base_balance_bin[3,3,5]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -1832,8 +1786,7 @@ Sexpr{ifelse(base_balance_bin[3,4,5]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance_bin[3,4,5]<.05,"*",ifelse(base_balance_bin[3,4,5]<.1,"+","")
-))}}$ 
+	,ifelse(base_balance_bin[3,4,5]<.05,"*",ifelse(base_balance_bin[3,4,5]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -1909,8 +1862,7 @@ Sexpr{ifelse(base_balance_bin[3,2,6]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance_bin[3,2,6]<.05,"*",ifelse(base_balance_bin[3,2,6]<.1,"+","")
-))}}$
+	,ifelse(base_balance_bin[3,2,6]<.05,"*",ifelse(base_balance_bin[3,2,6]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -1924,8 +1876,7 @@ Sexpr{ifelse(base_balance_bin[3,3,6]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance_bin[3,3,6]<.05,"*",ifelse(base_balance_bin[3,3,6]<.1,"+","")
-))}}$ 
+	,ifelse(base_balance_bin[3,3,6]<.05,"*",ifelse(base_balance_bin[3,3,6]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -1939,8 +1890,7 @@ Sexpr{ifelse(base_balance_bin[3,4,6]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance_bin[3,4,6]<.05,"*",ifelse(base_balance_bin[3,4,6]<.1,"+","")
-))}}$ 
+	,ifelse(base_balance_bin[3,4,6]<.05,"*",ifelse(base_balance_bin[3,4,6]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -1995,8 +1945,7 @@ Sexpr{base_balance_bin[2,3,6]})
 
 \begin_layout Plain Layout
 
-Has used the promoted seed (bazooka) on a randomly chosen plot in the last
- season
+Has used the promoted seed (bazooka) on a randomly chosen plot in the last season
 \end_layout
 
 \begin_layout Plain Layout
@@ -2017,8 +1966,7 @@ Sexpr{ifelse(base_balance_bin[3,2,7]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance_bin[3,2,7]<.05,"*",ifelse(base_balance_bin[3,2,7]<.1,"+","")
-))}}$
+	,ifelse(base_balance_bin[3,2,7]<.05,"*",ifelse(base_balance_bin[3,2,7]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -2032,8 +1980,7 @@ Sexpr{ifelse(base_balance_bin[3,3,7]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance_bin[3,3,7]<.05,"*",ifelse(base_balance_bin[3,3,7]<.1,"+","")
-))}}$ 
+	,ifelse(base_balance_bin[3,3,7]<.05,"*",ifelse(base_balance_bin[3,3,7]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -2047,8 +1994,7 @@ Sexpr{ifelse(base_balance_bin[3,4,7]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance_bin[3,4,7]<.05,"*",ifelse(base_balance_bin[3,4,7]<.1,"+","")
-))}}$ 
+	,ifelse(base_balance_bin[3,4,7]<.05,"*",ifelse(base_balance_bin[3,4,7]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -2124,8 +2070,7 @@ Sexpr{ifelse(base_balance_bin[3,2,8]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance_bin[3,2,8]<.05,"*",ifelse(base_balance_bin[3,2,8]<.1,"+","")
-))}}$
+	,ifelse(base_balance_bin[3,2,8]<.05,"*",ifelse(base_balance_bin[3,2,8]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -2139,8 +2084,7 @@ Sexpr{ifelse(base_balance_bin[3,3,8]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance_bin[3,3,8]<.05,"*",ifelse(base_balance_bin[3,3,8]<.1,"+","")
-))}}$ 
+	,ifelse(base_balance_bin[3,3,8]<.05,"*",ifelse(base_balance_bin[3,3,8]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -2154,8 +2098,7 @@ Sexpr{ifelse(base_balance_bin[3,4,8]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance_bin[3,4,8]<.05,"*",ifelse(base_balance_bin[3,4,8]<.1,"+","")
-))}}$ 
+	,ifelse(base_balance_bin[3,4,8]<.05,"*",ifelse(base_balance_bin[3,4,8]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -2210,7 +2153,8 @@ Sexpr{base_balance_bin[2,3,8]})
 
 \begin_layout Plain Layout
 
-Seed on random plot was recycled less than 4 times? 
+Seed on random plot was recycled less than 4 times?
+ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -2231,8 +2175,7 @@ Sexpr{ifelse(base_balance_bin[3,2,9]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance_bin[3,2,9]<.05,"*",ifelse(base_balance_bin[3,2,9]<.1,"+","")
-))}}$
+	,ifelse(base_balance_bin[3,2,9]<.05,"*",ifelse(base_balance_bin[3,2,9]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -2246,8 +2189,7 @@ Sexpr{ifelse(base_balance_bin[3,3,9]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance_bin[3,3,9]<.05,"*",ifelse(base_balance_bin[3,3,9]<.1,"+","")
-))}}$ 
+	,ifelse(base_balance_bin[3,3,9]<.05,"*",ifelse(base_balance_bin[3,3,9]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -2261,8 +2203,7 @@ Sexpr{ifelse(base_balance_bin[3,4,9]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance_bin[3,4,9]<.05,"*",ifelse(base_balance_bin[3,4,9]<.1,"+","")
-))}}$ 
+	,ifelse(base_balance_bin[3,4,9]<.05,"*",ifelse(base_balance_bin[3,4,9]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -2338,8 +2279,7 @@ Sexpr{ifelse(base_balance_bin[3,2,10]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance_bin[3,2,10]<.05,"*",ifelse(base_balance_bin[3,2,10]<.1,"+","
-")))}}$
+	,ifelse(base_balance_bin[3,2,10]<.05,"*",ifelse(base_balance_bin[3,2,10]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -2353,8 +2293,7 @@ Sexpr{ifelse(base_balance_bin[3,3,10]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance_bin[3,3,10]<.05,"*",ifelse(base_balance_bin[3,3,10]<.1,"+","
-")))}}$ 
+	,ifelse(base_balance_bin[3,3,10]<.05,"*",ifelse(base_balance_bin[3,3,10]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -2368,8 +2307,7 @@ Sexpr{ifelse(base_balance_bin[3,4,10]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance_bin[3,4,10]<.05,"*",ifelse(base_balance_bin[3,4,10]<.1,"+","
-")))}}$ 
+	,ifelse(base_balance_bin[3,4,10]<.05,"*",ifelse(base_balance_bin[3,4,10]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -2458,7 +2396,8 @@ scriptsize
 
 \begin_layout Plain Layout
 
-Note: 
+Note:
+ 
 \end_layout
 
 \end_inset
@@ -2472,23 +2411,22 @@ Note:
 \end_layout
 
 \begin_layout Standard
-In total, Table 
+In total,
+ Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:Baseline-Balance"
 plural "false"
 caps "false"
 noprefix "false"
+nolink "false"
 
 \end_inset
 
  makes 30 comparisons.
- This means that we should expect about three false positives at the 10
- percent level and one or two false positives at the 5 percent significance
- level.
- Even though we find somewhat more significant differences at the 5 percent
- level, we would still argue that our sample is reasonably balanced across
- treatment groups.
+ This means that we should expect about three false positives at the 10 percent level and one or two false positives at the 5 percent significance level.
+ Even though we find somewhat more significant differences at the 5 percent level,
+ we would still argue that our sample is reasonably balanced across treatment groups.
  
 \end_layout
 
@@ -2501,20 +2439,20 @@ Price elasticity of demand
 \end_layout
 
 \begin_layout Standard
-A first step in the analysis is to determine if the seed trial pack is a
- normal good, in a sense that demand reduces with price.
+A first step in the analysis is to determine if the seed trial pack is a normal good,
+ in a sense that demand reduces with price.
  This a prerequisite for screening and sunk cost effects to exist.
- However, demand elasticity also determines how increasing the price dampens
- demand and reduces the share of farmers that gets access to the seed, preventin
-g them from using it even in the absence of screening and sunk cost effects.
- In the context of cash or credit constrained farmers, this may sideline
- the farmers that could potentially benefit most.
+ However,
+ demand elasticity also determines how increasing the price dampens demand and reduces the share of farmers that gets access to the seed,
+ preventing them from using it even in the absence of screening and sunk cost effects.
+ In the context of cash or credit constrained farmers,
+ this may sideline the farmers that could potentially benefit most.
  
 \end_layout
 
 \begin_layout Standard
-To get a sense of how demand responds to prices, we can look at the prices
- at which the bargaining was concluded.
+To get a sense of how demand responds to prices,
+ we can look at the prices at which the bargaining was concluded.
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2522,18 +2460,21 @@ reference "fig:Distribution-of-prices"
 plural "false"
 caps "false"
 noprefix "false"
+nolink "false"
 
 \end_inset
 
- shows that of all farmers that participated in the bargaining, more than
- 35 percent was willing to pay only 5000 UGX for the bag.
- At the other end, less than 5 percent of farmers valued the seed at 9000
- UGX.
+ shows that of all farmers that participated in the bargaining,
+ more than 35 percent was willing to pay only 5000 UGX for the bag.
+ At the other end,
+ less than 5 percent of farmers valued the seed at 9000 UGX.
  
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
+placement document
+alignment document
 wide false
 sideways false
 status collapsed
@@ -2582,25 +2523,25 @@ Analysis of different treatment groups
 \end_layout
 
 \begin_layout Standard
-In this sub-section, we compare outcomes across the three groups (see Equation
- 
+In this sub-section,
+ we compare outcomes across the three groups (see Equation 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:one-1-1"
 plural "false"
 caps "false"
 noprefix "false"
+nolink "false"
 
 \end_inset
 
 ).
- We do this for four categories of outcomes measured at different points
- along the causal impact chain.
- We first look if, and how, the trial pack was used.
- We then at look adoption in the subsequent season and potential impact
- on production.
- We then explore impact pathways and explore differences in attention and
- effort when using the seed trial pack.
+ We do this for four categories of outcomes measured at different points along the causal impact chain.
+ We first look if,
+ and how,
+ the trial pack was used.
+ We then at look adoption in the subsequent season and potential impact on production.
+ We then explore impact pathways and explore differences in attention and effort when using the seed trial pack.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2608,20 +2549,17 @@ Trial pack use
 \end_layout
 
 \begin_layout Standard
-A first set of outcomes we consider is related to the use of the seed trial
- pack.
- Not only did we check if the seed was planted, but we also consider if
- the trial pack was used in ways that would facilitate learning from it.
- For instance, if the seed from the trial pack was mixed with other seed,
- it will be more difficult for farmers to observe differences in for instance
- germination rates or yield of the promoted seed variety compared to other
- seed.
- Furthermore, a plot layout whereby the seed from the trial pack is planted
- next to a plot that was planted with another (local) seed variety will
- facilitate comparison throughout the growing and harvesting cycle.
- Similarly, if the maize obtained from the trial pack is kept separate after
- harvest, differences in for example susceptibility to aflotoxin or market
- value of the grain may become more salient.
+A first set of outcomes we consider is related to the use of the seed trial pack.
+ Not only did we check if the seed was planted,
+ but we also consider if the trial pack was used in ways that would facilitate learning from it.
+ For instance,
+ if the seed from the trial pack was mixed with other seed,
+ it will be more difficult for farmers to observe differences in for instance germination rates or yield of the promoted seed variety compared to other seed.
+ Furthermore,
+ a plot layout whereby the seed from the trial pack is planted next to a plot that was planted with another (local) seed variety will facilitate comparison throughout the growing and harvesting cycle.
+ Similarly,
+ if the maize obtained from the trial pack is kept separate after harvest,
+ differences in for example susceptibility to aflotoxin or market value of the grain may become more salient.
 \end_layout
 
 \begin_layout Standard
@@ -2632,12 +2570,13 @@ reference "tab:Effects-on-Use-binary"
 plural "false"
 caps "false"
 noprefix "false"
+nolink "false"
 
 \end_inset
 
- shows that more than 96 percent of farmers that paid a positive price for
- the trial pack planted the seed in the first season of 2023.
- This is very high: In 
+ shows that more than 96 percent of farmers that paid a positive price for the trial pack planted the seed in the first season of 2023.
+ This is very high:
+ In 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "mai"
@@ -2645,24 +2584,18 @@ literal "false"
 
 \end_inset
 
- less than 50 percent of farmers actually planted the trial pack of an improved
- wheat variety in Bangladesh.
- There is no difference in seed use with the group that received a 100 percent
- cash-back.
- In the group that did not negotiate over the seed but was simply given
- it for free, the likelihood that the seed from that trial pack was planted
- is 2.2 percentage points higher than in the group that paid a positive price
- for the trial pack, and the difference is significant at the 10 percent
- level.
- However, results need to be interpreted with caution given the limited
- variation in the outcome variable.
+ less than 50 percent of farmers actually planted the trial pack of an improved wheat variety in Bangladesh.
+ There is no difference in seed use with the group that received a 100 percent cash-back.
+ In the group that did not negotiate over the seed but was simply given it for free,
+ the likelihood that the seed from that trial pack was planted is 2.2 percentage points higher than in the group that paid a positive price for the trial pack,
+ and the difference is significant at the 10 percent level.
+ However,
+ results need to be interpreted with caution given the limited variation in the outcome variable.
 \begin_inset Foot
 status collapsed
 
 \begin_layout Plain Layout
-Our pre-analysis plan specifies that questions for which 95 percent of observati
-ons have the same value within the relevant sample will be omitted from
- the analysis.
+Our pre-analysis plan specifies that questions for which 95 percent of observations have the same value within the relevant sample will be omitted from the analysis.
 \end_layout
 
 \end_inset
@@ -2671,43 +2604,36 @@ ons have the same value within the relevant sample will be omitted from
 \end_layout
 
 \begin_layout Standard
-About 94 percent of households that paid a positive price for the trial
- pack did not mix the seed with other seed.
- This share increases to 97 percent in the group that got the seed for free
- without bargaining, but the difference is not statistically significant.
+About 94 percent of households that paid a positive price for the trial pack did not mix the seed with other seed.
+ This share increases to 97 percent in the group that got the seed for free without bargaining,
+ but the difference is not statistically significant.
 \end_layout
 
 \begin_layout Standard
-A next outcome we consider is the fact that the seed from the trial pack
- was used by the person that generally makes the decisions with respect
- to what seed to plant.
- We find that this was the case in about 90 percent of the households that
- paid a positive price.
- This is almost 5 percentage points higher in the group that received a
- discount after the bargaining.
+A next outcome we consider is the fact that the seed from the trial pack was used by the person that generally makes the decisions with respect to what seed to plant.
+ We find that this was the case in about 90 percent of the households that paid a positive price.
+ This is almost 5 percentage points higher in the group that received a discount after the bargaining.
 \end_layout
 
 \begin_layout Standard
-About 37 percent of the households that paid for the trial pack planted
- the seed in close proximity to a plot with local seed.
- This share is significantly higher for the group of farmers that just received
- the seed trial pack without being taken through the bargaining process,
+About 37 percent of the households that paid for the trial pack planted the seed in close proximity to a plot with local seed.
+ This share is significantly higher for the group of farmers that just received the seed trial pack without being taken through the bargaining process,
  albeit only at the 10 percent level.
 \end_layout
 
 \begin_layout Standard
-Finally, we test if there are differences between groups with respect to
- the likelihood that maize derived from the seed trial pack is kept separate
- during and post harvest.
- Maize derived from the seed trial pack is kept separate post harvest by
- about 65 percent of households that paid the agreed price.
- This share increases if the seed was provided for free; in the group that
- was taken through the negotiation and then received the discount, this
- share increases to 77 percent.
+Finally,
+ we test if there are differences between groups with respect to the likelihood that maize derived from the seed trial pack is kept separate during and post harvest.
+ Maize derived from the seed trial pack is kept separate post harvest by about 65 percent of households that paid the agreed price.
+ This share increases if the seed was provided for free;
+ in the group that was taken through the negotiation and then received the discount,
+ this share increases to 77 percent.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float table
+placement document
+alignment document
 wide false
 sideways true
 status open
@@ -2851,8 +2777,7 @@ Sexpr{ifelse(res_tab_bin[3,4,1]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_bin[3,4,1]<.05,"*",ifelse(res_tab_bin[3,4,1]<.1,"+","")))}}$
- & 
+	,ifelse(res_tab_bin[3,4,1]<.05,"*",ifelse(res_tab_bin[3,4,1]<.1,"+","")))}}$ & 
 \backslash
 Sexpr{res_tab_bin[1,5,1]} 
 \backslash
@@ -2950,8 +2875,7 @@ Sexpr{ifelse(res_tab_bin[3,4,2]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_bin[3,4,2]<.05,"*",ifelse(res_tab_bin[3,4,2]<.1,"+","")))}}$
- & 
+	,ifelse(res_tab_bin[3,4,2]<.05,"*",ifelse(res_tab_bin[3,4,2]<.1,"+","")))}}$ & 
 \backslash
 Sexpr{res_tab_bin[1,5,2]} 
 \backslash
@@ -3049,8 +2973,7 @@ Sexpr{ifelse(res_tab_bin[3,4,3]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_bin[3,4,3]<.05,"*",ifelse(res_tab_bin[3,4,3]<.1,"+","")))}}$
- & 
+	,ifelse(res_tab_bin[3,4,3]<.05,"*",ifelse(res_tab_bin[3,4,3]<.1,"+","")))}}$ & 
 \backslash
 Sexpr{res_tab_bin[1,5,3]} 
 \backslash
@@ -3148,8 +3071,7 @@ Sexpr{ifelse(res_tab_bin[3,4,4]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_bin[3,4,4]<.05,"*",ifelse(res_tab_bin[3,4,4]<.1,"+","")))}}$
- & 
+	,ifelse(res_tab_bin[3,4,4]<.05,"*",ifelse(res_tab_bin[3,4,4]<.1,"+","")))}}$ & 
 \backslash
 Sexpr{res_tab_bin[1,5,4]} 
 \backslash
@@ -3247,8 +3169,7 @@ Sexpr{ifelse(res_tab_bin[3,4,5]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_bin[3,4,5]<.05,"*",ifelse(res_tab_bin[3,4,5]<.1,"+","")))}}$
- & 
+	,ifelse(res_tab_bin[3,4,5]<.05,"*",ifelse(res_tab_bin[3,4,5]<.1,"+","")))}}$ & 
 \backslash
 Sexpr{res_tab_bin[1,5,5]} 
 \backslash
@@ -3342,8 +3263,7 @@ Sexpr{ifelse(res_tab_bin[3,4,6]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_bin[3,4,6]<.05,"*",ifelse(res_tab_bin[3,4,6]<.1,"+","")))}}$
- & 
+	,ifelse(res_tab_bin[3,4,6]<.05,"*",ifelse(res_tab_bin[3,4,6]<.1,"+","")))}}$ & 
 \backslash
 Sexpr{res_tab_bin[1,5,6]} 
 \backslash
@@ -3418,7 +3338,8 @@ scriptsize
 
 \begin_layout Plain Layout
 
-Note: 
+Note:
+ 
 \end_layout
 
 \end_inset
@@ -3432,15 +3353,12 @@ Note:
 \end_layout
 
 \begin_layout Standard
-Overall, we do not find that farmers that paid a positive price for the
- seed used it more or in ways that facilitate learning more than farmers
- that did not pay a price for it; the fact that all coefficients are positive
- suggests the opposite: farmers that paid a positive price are actually
- less likely to have used the seed trial pack in ways that would optimize
- learning.
- This seems to be particularly the case when the group that paid a positive
- price is compared to farmers that were given a cashback, and this is confirmed
- by the significant positive effect for this group on the index.
+Overall,
+ we do not find that farmers that paid a positive price for the seed used it more or in ways that facilitate learning more than farmers that did not pay a price for it;
+ the fact that all coefficients are positive suggests the opposite:
+ farmers that paid a positive price are actually less likely to have used the seed trial pack in ways that would optimize learning.
+ This seems to be particularly the case when the group that paid a positive price is compared to farmers that were given a cashback,
+ and this is confirmed by the significant positive effect for this group on the index.
 \begin_inset Note Note
 status collapsed
 
@@ -3458,14 +3376,9 @@ Adoption and outcomes in subsequent season
 \end_layout
 
 \begin_layout Standard
-We now look at differences in benefits derived from the technology between
- the three farmer groups that may result from differential use and learning
- from the seed trial pack.
- The primary objective of a seed trial pack is to increase adoption of the
- promoted seed (or of seed of an improved variety in general) in subsequent
- seasons.
- The ultimate aim of promoting improved seed varieties is increasing maize
- yields.
+We now look at differences in benefits derived from the technology between the three farmer groups that may result from differential use and learning from the seed trial pack.
+ The primary objective of a seed trial pack is to increase adoption of the promoted seed (or of seed of an improved variety in general) in subsequent seasons.
+ The ultimate aim of promoting improved seed varieties is increasing maize yields.
 \end_layout
 
 \begin_layout Standard
@@ -3476,18 +3389,16 @@ reference "tab:Effects-in-subsequent-bin"
 plural "false"
 caps "false"
 noprefix "false"
+nolink "false"
 
 \end_inset
 
- shows that about 23 percent of farmers that paid the price arrived at after
- bargaining have used seed of an improved variety in the season following
- the season that they used the trial pack.
+ shows that about 23 percent of farmers that paid the price arrived at after bargaining have used seed of an improved variety in the season following the season that they used the trial pack.
 \begin_inset Foot
 status collapsed
 
 \begin_layout Plain Layout
-We define seed of an improved variety as a fresh hybrid or an OPV that has
- not been recycled more than four times.
+We define seed of an improved variety as a fresh hybrid or an OPV that has not been recycled more than four times.
 \end_layout
 
 \end_inset
@@ -3497,21 +3408,21 @@ We define seed of an improved variety as a fresh hybrid or an OPV that has
 status collapsed
 
 \begin_layout Plain Layout
-The seed usage measure referenced here applies to a plot chosen randomly
- from within the farm household.
- During endline, we asked farmers to enumerate all maize plots they cultivated
- and one plot was randomly selected on which detailed information was collected.
- However, for key outcomes such as seed use, we collected information on
- all plots.
- As most farmers cultivated only one or two plots, defining the outcome
- in terms of seed use on at least one plots leads to results that are very
- similar - see also footnote 
+The seed usage measure referenced here applies to a plot chosen randomly from within the farm household.
+ During endline,
+ we asked farmers to enumerate all maize plots they cultivated and one plot was randomly selected on which detailed information was collected.
+ However,
+ for key outcomes such as seed use,
+ we collected information on all plots.
+ As most farmers cultivated only one or two plots,
+ defining the outcome in terms of seed use on at least one plots leads to results that are very similar - see also footnote 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fn:The-decision-to"
 plural "false"
 caps "false"
 noprefix "false"
+nolink "false"
 
 \end_inset
 
@@ -3520,22 +3431,19 @@ noprefix "false"
 
 \end_inset
 
- This share reduces to about 15 percent for farmers that got the seed trial
- pack for free without participating in the bargaining experiment and this
- difference is significant at the 5 percent level.
- In the group that received a full discount after negotiation, the share
- of adopters is similar to the group that did not receive the discount.
- If we define adoption more narrowly as the use of fresh seed of the promoted
- variety in the season following the try-out, we see that only about 12
- percent of farmers that paid a positive price adopts.
- Also here, adoption in the group that did not negotiate is lower, but the
- difference is not significant.
+ This share reduces to about 15 percent for farmers that got the seed trial pack for free without participating in the bargaining experiment and this difference is significant at the 5 percent level.
+ In the group that received a full discount after negotiation,
+ the share of adopters is similar to the group that did not receive the discount.
+ If we define adoption more narrowly as the use of fresh seed of the promoted variety in the season following the try-out,
+ we see that only about 12 percent of farmers that paid a positive price adopts.
+ Also here,
+ adoption in the group that did not negotiate is lower,
+ but the difference is not significant.
 \begin_inset Note Note
 status collapsed
 
 \begin_layout Plain Layout
-how can it be that the linear hypothesis is significant but none of the
- differences with the control group is different and they go in same direction?
+how can it be that the linear hypothesis is significant but none of the differences with the control group is different and they go in same direction?
 \end_layout
 
 \end_inset
@@ -3544,41 +3452,39 @@ how can it be that the linear hypothesis is significant but none of the
 \end_layout
 
 \begin_layout Standard
-In addition to just the decision to adopt, we consider quantity of improved
- seed used on a randomly selected maize plot within the household.
- We see that this is about 5.5 kilograms in households that paid a positive
- price for the seed trial pack.
- If we again confine ourselves to farmers that use bazooka, the average
- farmer in the groups that paid a positive price for the seed uses 4.3 kilograms
- of bazooka seed.
+In addition to just the decision to adopt,
+ we consider quantity of improved seed used on a randomly selected maize plot within the household.
+ We see that this is about 5.5 kilograms in households that paid a positive price for the seed trial pack.
+ If we again confine ourselves to farmers that use bazooka,
+ the average farmer in the groups that paid a positive price for the seed uses 4.3 kilograms of bazooka seed.
 \begin_inset Foot
 status open
 
 \begin_layout Plain Layout
-Recommended seed rate is about 10kg/acre and the average size of a plot
- is about 0.8 acre.
+Recommended seed rate is about 10kg/acre and the average size of a plot is about 0.8 acre.
 \end_layout
 
 \end_inset
 
- We do not find that these quantities differ by treatment group, although
- these results should be interpreted with care given small sample size.
+ We do not find that these quantities differ by treatment group,
+ although these results should be interpreted with care given small sample size.
 \end_layout
 
 \begin_layout Standard
-Finally, we look at production (expressed in kilograms of maize) on the
- randomly selected plot and also scale by area of the selected plot.
- Farmers that received the seed trial pack at a positive cost after negotiation
- reported harvesting about 360 kilograms on the randomly selected plot,
+Finally,
+ we look at production (expressed in kilograms of maize) on the randomly selected plot and also scale by area of the selected plot.
+ Farmers that received the seed trial pack at a positive cost after negotiation reported harvesting about 360 kilograms on the randomly selected plot,
  corresponding to about 440 kg per acre.
- Production is significantly lower among farmers that did not bargain and
- received the seed for free.
- Interestingly, in the group that negotiated and received full discount,
+ Production is significantly lower among farmers that did not bargain and received the seed for free.
+ Interestingly,
+ in the group that negotiated and received full discount,
  productivity is highest.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float table
+placement document
+alignment document
 wide false
 sideways true
 status collapsed
@@ -3698,8 +3604,7 @@ Sexpr{ifelse(res_tab_next_season_bin[3,2,3]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season_bin[3,2,3]<.05,"*",ifelse(res_tab_next_season_bin[3,
-2,3]<.1,"+","")))}}$
+	,ifelse(res_tab_next_season_bin[3,2,3]<.05,"*",ifelse(res_tab_next_season_bin[3,2,3]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -3713,8 +3618,7 @@ Sexpr{ifelse(res_tab_next_season_bin[3,3,3]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season_bin[3,3,3]<.05,"*",ifelse(res_tab_next_season_bin[3,
-3,3]<.1,"+","")))}}$
+	,ifelse(res_tab_next_season_bin[3,3,3]<.05,"*",ifelse(res_tab_next_season_bin[3,3,3]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -3728,8 +3632,7 @@ Sexpr{ifelse(res_tab_next_season_bin[3,4,3]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season_bin[3,4,3]<.05,"*",ifelse(res_tab_next_season_bin[3,
-4,3]<.1,"+","")))}}$ & 
+	,ifelse(res_tab_next_season_bin[3,4,3]<.05,"*",ifelse(res_tab_next_season_bin[3,4,3]<.1,"+","")))}}$ & 
 \backslash
 Sexpr{res_tab_next_season_bin[1,5,3]} 
 \backslash
@@ -3799,8 +3702,7 @@ Sexpr{ifelse(res_tab_next_season_bin[3,2,4]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season_bin[3,2,4]<.05,"*",ifelse(res_tab_next_season_bin[3,
-2,4]<.1,"+","")))}}$
+	,ifelse(res_tab_next_season_bin[3,2,4]<.05,"*",ifelse(res_tab_next_season_bin[3,2,4]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -3814,8 +3716,7 @@ Sexpr{ifelse(res_tab_next_season_bin[3,3,4]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season_bin[3,3,4]<.05,"*",ifelse(res_tab_next_season_bin[3,
-3,4]<.1,"+","")))}}$
+	,ifelse(res_tab_next_season_bin[3,3,4]<.05,"*",ifelse(res_tab_next_season_bin[3,3,4]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -3829,8 +3730,7 @@ Sexpr{ifelse(res_tab_next_season_bin[3,4,4]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season_bin[3,4,4]<.05,"*",ifelse(res_tab_next_season_bin[3,
-4,4]<.1,"+","")))}}$ & 
+	,ifelse(res_tab_next_season_bin[3,4,4]<.05,"*",ifelse(res_tab_next_season_bin[3,4,4]<.1,"+","")))}}$ & 
 \backslash
 Sexpr{res_tab_next_season_bin[1,5,4]} 
 \backslash
@@ -3900,8 +3800,7 @@ Sexpr{ifelse(res_tab_next_season_bin[3,2,5]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season_bin[3,2,5]<.05,"*",ifelse(res_tab_next_season_bin[3,
-2,5]<.1,"+","")))}}$
+	,ifelse(res_tab_next_season_bin[3,2,5]<.05,"*",ifelse(res_tab_next_season_bin[3,2,5]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -3915,8 +3814,7 @@ Sexpr{ifelse(res_tab_next_season_bin[3,3,5]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season_bin[3,3,5]<.05,"*",ifelse(res_tab_next_season_bin[3,
-3,5]<.1,"+","")))}}$
+	,ifelse(res_tab_next_season_bin[3,3,5]<.05,"*",ifelse(res_tab_next_season_bin[3,3,5]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -3930,8 +3828,7 @@ Sexpr{ifelse(res_tab_next_season_bin[3,4,5]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season_bin[3,4,5]<.05,"*",ifelse(res_tab_next_season_bin[3,
-4,5]<.1,"+","")))}}$ & 
+	,ifelse(res_tab_next_season_bin[3,4,5]<.05,"*",ifelse(res_tab_next_season_bin[3,4,5]<.1,"+","")))}}$ & 
 \backslash
 Sexpr{res_tab_next_season_bin[1,5,5]} 
 \backslash
@@ -4001,8 +3898,7 @@ Sexpr{ifelse(res_tab_next_season_bin[3,2,6]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season_bin[3,2,6]<.05,"*",ifelse(res_tab_next_season_bin[3,
-2,6]<.1,"+","")))}}$
+	,ifelse(res_tab_next_season_bin[3,2,6]<.05,"*",ifelse(res_tab_next_season_bin[3,2,6]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -4016,8 +3912,7 @@ Sexpr{ifelse(res_tab_next_season_bin[3,3,6]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season_bin[3,3,6]<.05,"*",ifelse(res_tab_next_season_bin[3,
-3,6]<.1,"+","")))}}$
+	,ifelse(res_tab_next_season_bin[3,3,6]<.05,"*",ifelse(res_tab_next_season_bin[3,3,6]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -4031,8 +3926,7 @@ Sexpr{ifelse(res_tab_next_season_bin[3,4,6]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season_bin[3,4,6]<.05,"*",ifelse(res_tab_next_season_bin[3,
-4,6]<.1,"+","")))}}$ & 
+	,ifelse(res_tab_next_season_bin[3,4,6]<.05,"*",ifelse(res_tab_next_season_bin[3,4,6]<.1,"+","")))}}$ & 
 \backslash
 Sexpr{res_tab_next_season_bin[1,5,6]} 
 \backslash
@@ -4102,8 +3996,7 @@ Sexpr{ifelse(res_tab_next_season_bin[3,2,7]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season_bin[3,2,7]<.05,"*",ifelse(res_tab_next_season_bin[3,
-2,7]<.1,"+","")))}}$
+	,ifelse(res_tab_next_season_bin[3,2,7]<.05,"*",ifelse(res_tab_next_season_bin[3,2,7]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -4117,8 +4010,7 @@ Sexpr{ifelse(res_tab_next_season_bin[3,3,7]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season_bin[3,3,7]<.05,"*",ifelse(res_tab_next_season_bin[3,
-3,7]<.1,"+","")))}}$
+	,ifelse(res_tab_next_season_bin[3,3,7]<.05,"*",ifelse(res_tab_next_season_bin[3,3,7]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -4132,8 +4024,7 @@ Sexpr{ifelse(res_tab_next_season_bin[3,4,7]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season_bin[3,4,7]<.05,"*",ifelse(res_tab_next_season_bin[3,
-4,7]<.1,"+","")))}}$ & 
+	,ifelse(res_tab_next_season_bin[3,4,7]<.05,"*",ifelse(res_tab_next_season_bin[3,4,7]<.1,"+","")))}}$ & 
 \backslash
 Sexpr{res_tab_next_season_bin[1,5,7]} 
 \backslash
@@ -4203,8 +4094,7 @@ Sexpr{ifelse(res_tab_next_season_bin[3,2,8]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season_bin[3,2,8]<.05,"*",ifelse(res_tab_next_season_bin[3,
-2,8]<.1,"+","")))}}$
+	,ifelse(res_tab_next_season_bin[3,2,8]<.05,"*",ifelse(res_tab_next_season_bin[3,2,8]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -4218,8 +4108,7 @@ Sexpr{ifelse(res_tab_next_season_bin[3,3,8]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season_bin[3,3,8]<.05,"*",ifelse(res_tab_next_season_bin[3,
-3,8]<.1,"+","")))}}$
+	,ifelse(res_tab_next_season_bin[3,3,8]<.05,"*",ifelse(res_tab_next_season_bin[3,3,8]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -4233,8 +4122,7 @@ Sexpr{ifelse(res_tab_next_season_bin[3,4,8]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season_bin[3,4,8]<.05,"*",ifelse(res_tab_next_season_bin[3,
-4,8]<.1,"+","")))}}$ & 
+	,ifelse(res_tab_next_season_bin[3,4,8]<.05,"*",ifelse(res_tab_next_season_bin[3,4,8]<.1,"+","")))}}$ & 
 \backslash
 Sexpr{res_tab_next_season_bin[1,5,8]} 
 \backslash
@@ -4304,8 +4192,7 @@ Sexpr{ifelse(res_tab_next_season_bin[3,2,9]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season_bin[3,2,9]<.05,"*",ifelse(res_tab_next_season_bin[3,
-2,9]<.1,"+","")))}}$
+	,ifelse(res_tab_next_season_bin[3,2,9]<.05,"*",ifelse(res_tab_next_season_bin[3,2,9]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -4319,8 +4206,7 @@ Sexpr{ifelse(res_tab_next_season_bin[3,3,9]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season_bin[3,3,9]<.05,"*",ifelse(res_tab_next_season_bin[3,
-3,9]<.1,"+","")))}}$
+	,ifelse(res_tab_next_season_bin[3,3,9]<.05,"*",ifelse(res_tab_next_season_bin[3,3,9]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -4334,8 +4220,7 @@ Sexpr{ifelse(res_tab_next_season_bin[3,4,9]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season_bin[3,4,9]<.05,"*",ifelse(res_tab_next_season_bin[3,
-4,9]<.1,"+","")))}}$ & 
+	,ifelse(res_tab_next_season_bin[3,4,9]<.05,"*",ifelse(res_tab_next_season_bin[3,4,9]<.1,"+","")))}}$ & 
 \backslash
 Sexpr{res_tab_next_season_bin[1,5,9]} 
 \backslash
@@ -4418,7 +4303,8 @@ scriptsize
 
 \begin_layout Plain Layout
 
-Note: 
+Note:
+ 
 \end_layout
 
 \end_inset
@@ -4432,15 +4318,14 @@ Note:
 \end_layout
 
 \begin_layout Standard
-Overall, in the season following the season when farmers used the trial
- pack, we find lower adoption of improved seed varieties among farmers that
- did not engage in bargaining and got seed for free.
- This finding suggests that providing seed for free may not be the best
- way to increase adoption of the technology in the longer run.
- However, results also suggest that increase in use is not related to a
- sunk cost effect, but rather because the willingness to pay experiment
- creates awareness about the value of the product, perhaps through some
- kind of signaling.
+Overall,
+ in the season following the season when farmers used the trial pack,
+ we find lower adoption of improved seed varieties among farmers that did not engage in bargaining and got seed for free.
+ This finding suggests that providing seed for free may not be the best way to increase adoption of the technology in the longer run.
+ However,
+ results also suggest that increase in use is not related to a sunk cost effect,
+ but rather because the willingness to pay experiment creates awareness about the value of the product,
+ perhaps through some kind of signaling.
 \end_layout
 
 \begin_layout Subsubsection
@@ -4448,24 +4333,22 @@ Attention
 \end_layout
 
 \begin_layout Standard
-One of the main reasons why farmers that get the trial seed pack for free
- have lower adoption and yield in subsequent seasons is that they may be
- paying less attention to free stuff.
- To test this hypothesis, we look at the proportion of farmers that correctly
- remembered the type of seed that was used for the trial pack (reported
- in Table 
+One of the main reasons why farmers that get the trial seed pack for free have lower adoption and yield in subsequent seasons is that they may be paying less attention to free stuff.
+ To test this hypothesis,
+ we look at the proportion of farmers that correctly remembered the type of seed that was used for the trial pack (reported in Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:Attention"
 plural "false"
 caps "false"
 noprefix "false"
+nolink "false"
 
 \end_inset
 
 ).
- We find that in the group that paid a positive price, about 77 percent
- of farmers correctly recalled that we used a seed variety called 
+ We find that in the group that paid a positive price,
+ about 77 percent of farmers correctly recalled that we used a seed variety called 
 \begin_inset Quotes eld
 \end_inset
 
@@ -4474,13 +4357,14 @@ Bazooka
 \end_inset
 
 .
- This is about 6.8 percentage points lower in the group that got the seed
- for free without negotiation, but the reduction is not significant.
+ This is about 6.8 percentage points lower in the group that got the seed for free without negotiation,
+ but the reduction is not significant.
  We reject the null that the coefficients are the same for group 2 and 3.
 \end_layout
 
 \begin_layout Standard
-Interestingly, despite the fact that the company name 
+Interestingly,
+ despite the fact that the company name 
 \begin_inset Quotes eld
 \end_inset
 
@@ -4488,41 +4372,37 @@ Naseco Seeds
 \begin_inset Quotes erd
 \end_inset
 
- was clearly indicated on the seed pack, only about 5 percent of farmers
- that paid for the seed correctly recalled the name.
+ was clearly indicated on the seed pack,
+ only about 5 percent of farmers that paid for the seed correctly recalled the name.
  This is again lower in the group that got the seed for free without bargaining,
  and this time the difference is significant at the 1 percent level.
 \end_layout
 
 \begin_layout Standard
-For farmers that were enrolled in the bargaining experiment, we also test
- if they remember the price at which agreement was reached.
- During midline, about 95 percent of farmers that actually paid the price
- indicated that they remembered the price, while at endline this share reduced
- to about 91 percent.
- We find that this share was lower among farmers that were offered a 100
- percent discount, especially at endline where the share is about 9 percentage
- points lower.
+For farmers that were enrolled in the bargaining experiment,
+ we also test if they remember the price at which agreement was reached.
+ During midline,
+ about 95 percent of farmers that actually paid the price indicated that they remembered the price,
+ while at endline this share reduced to about 91 percent.
+ We find that this share was lower among farmers that were offered a 100 percent discount,
+ especially at endline where the share is about 9 percentage points lower.
 \end_layout
 
 \begin_layout Standard
-When farmers indicated that they remembered the price, we asked them what
- the price was.
- We use this information to calculate how far off they were by comparing
- it to the price recorded during baseline (simply taking the absolute value
- of the difference).
- We find that in the group that paid the full price, the absolute value
- of the difference between the real price and the price farmers remember
- is on average 722 UGX.
+When farmers indicated that they remembered the price,
+ we asked them what the price was.
+ We use this information to calculate how far off they were by comparing it to the price recorded during baseline (simply taking the absolute value of the difference).
+ We find that in the group that paid the full price,
+ the absolute value of the difference between the real price and the price farmers remember is on average 722 UGX.
  Recall error goes up to about 900 UGX at endline.
- We find that farmers that received the discount are less accurate in recalling
- the price they arrived at during negotiation.
- The fact that farmers that received a discount tend to recall the value
- of the package less accurately may be due to sunk cost effects.
+ We find that farmers that received the discount are less accurate in recalling the price they arrived at during negotiation.
+ The fact that farmers that received a discount tend to recall the value of the package less accurately may be due to sunk cost effects.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float table
+placement document
+alignment document
 wide false
 sideways true
 status collapsed
@@ -4638,8 +4518,7 @@ Sexpr{ifelse(res_tab_path_bin[3,2,3]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_path_bin[3,2,3]<.05,"*",ifelse(res_tab_path_bin[3,2,3]<.1,"+","")
-))}}$
+	,ifelse(res_tab_path_bin[3,2,3]<.05,"*",ifelse(res_tab_path_bin[3,2,3]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -4653,8 +4532,7 @@ Sexpr{ifelse(res_tab_path_bin[3,3,3]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_path_bin[3,3,3]<.05,"*",ifelse(res_tab_path_bin[3,3,3]<.1,"+","")
-))}}$
+	,ifelse(res_tab_path_bin[3,3,3]<.05,"*",ifelse(res_tab_path_bin[3,3,3]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -4668,8 +4546,7 @@ Sexpr{ifelse(res_tab_path_bin[3,4,3]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_path_bin[3,4,3]<.05,"*",ifelse(res_tab_path_bin[3,4,3]<.1,"+","")
-))}}$
+	,ifelse(res_tab_path_bin[3,4,3]<.05,"*",ifelse(res_tab_path_bin[3,4,3]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -4748,8 +4625,7 @@ Sexpr{ifelse(res_tab_path_bin[3,2,4]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_path_bin[3,2,4]<.05,"*",ifelse(res_tab_path_bin[3,2,4]<.1,"+","")
-))}}$
+	,ifelse(res_tab_path_bin[3,2,4]<.05,"*",ifelse(res_tab_path_bin[3,2,4]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -4763,8 +4639,7 @@ Sexpr{ifelse(res_tab_path_bin[3,3,4]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_path_bin[3,3,4]<.05,"*",ifelse(res_tab_path_bin[3,3,4]<.1,"+","")
-))}}$
+	,ifelse(res_tab_path_bin[3,3,4]<.05,"*",ifelse(res_tab_path_bin[3,3,4]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -4778,8 +4653,7 @@ Sexpr{ifelse(res_tab_path_bin[3,4,4]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_path_bin[3,4,4]<.05,"*",ifelse(res_tab_path_bin[3,4,4]<.1,"+","")
-))}}$
+	,ifelse(res_tab_path_bin[3,4,4]<.05,"*",ifelse(res_tab_path_bin[3,4,4]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -4854,8 +4728,7 @@ Sexpr{ifelse(res_tab_path_bin[3,2,1]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_path_bin[3,2,1]<.05,"*",ifelse(res_tab_path_bin[3,2,1]<.1,"+","")
-))}}$
+	,ifelse(res_tab_path_bin[3,2,1]<.05,"*",ifelse(res_tab_path_bin[3,2,1]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -4944,8 +4817,7 @@ Sexpr{ifelse(res_tab_path_bin[3,2,2]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_path_bin[3,2,2]<.05,"*",ifelse(res_tab_path_bin[3,2,2]<.1,"+","")
-))}}$
+	,ifelse(res_tab_path_bin[3,2,2]<.05,"*",ifelse(res_tab_path_bin[3,2,2]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -5030,8 +4902,7 @@ Sexpr{ifelse(res_tab_path_next_season_bin[3,2,1]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_path_next_season_bin[3,2,1]<.05,"*",ifelse(res_tab_path_next_sea
-son_bin[3,2,1]<.1,"+","")))}}$
+	,ifelse(res_tab_path_next_season_bin[3,2,1]<.05,"*",ifelse(res_tab_path_next_season_bin[3,2,1]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -5120,8 +4991,7 @@ Sexpr{ifelse(res_tab_path_next_season_bin[3,2,2]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_path_next_season_bin[3,2,2]<.05,"*",ifelse(res_tab_path_next_sea
-son_bin[3,2,2]<.1,"+","")))}}$
+	,ifelse(res_tab_path_next_season_bin[3,2,2]<.05,"*",ifelse(res_tab_path_next_season_bin[3,2,2]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -5257,31 +5127,24 @@ Complementary input use
 \end_layout
 
 \begin_layout Standard
-Performance of improved seed varieties also depends on the use of good agronomic
- practices such as row planting and complementary inputs such as fertilizer.
+Performance of improved seed varieties also depends on the use of good agronomic practices such as row planting and complementary inputs such as fertilizer.
 \begin_inset Foot
 status collapsed
 
 \begin_layout Plain Layout
-The seed trial pack we used clearly indicated the various good agronomic
- practices and inputs that are needed to get the most out of the seed.
+The seed trial pack we used clearly indicated the various good agronomic practices and inputs that are needed to get the most out of the seed.
 \end_layout
 
 \end_inset
 
- Differential use of complementary inputs across the three groups may be
- expected for several reasons.
- For example, as some inputs such as fertilizer or pesticides are costly,
- an income effect related to whether a price was paid or not may affect
- complementary input use.
- In such cases, one would expect that input use is lower in the group that
- was charged a positive price.
- It may also be that farmers who paid a positive price value the seed higher
- because of a sunk cost effect and this may crowd-in complementary inputs
- and practices.
- Farmers who participated in the bargaining experiment but got the seed
- for free may likewise value the seed higher due to signaling with similar
- crowding-in of complementary inputs and services 
+ Differential use of complementary inputs across the three groups may be expected for several reasons.
+ For example,
+ as some inputs such as fertilizer or pesticides are costly,
+ an income effect related to whether a price was paid or not may affect complementary input use.
+ In such cases,
+ one would expect that input use is lower in the group that was charged a positive price.
+ It may also be that farmers who paid a positive price value the seed higher because of a sunk cost effect and this may crowd-in complementary inputs and practices.
+ Farmers who participated in the bargaining experiment but got the seed for free may likewise value the seed higher due to signaling with similar crowding-in of complementary inputs and services 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "10.1162/rest_a_01285"
@@ -5290,11 +5153,10 @@ literal "false"
 \end_inset
 
 .
- At the same time, paying a positive price for improved seed may lead to
- overly optimistic expectations, leading farmers to cut back on other inputs
- or practices (for example since the seed is of a higher yielding variety,
- farmers expect that the seed would grow even without fertilizer or weeding)
- 
+ At the same time,
+ paying a positive price for improved seed may lead to overly optimistic expectations,
+ leading farmers to cut back on other inputs or practices (for example since the seed is of a higher yielding variety,
+ farmers expect that the seed would grow even without fertilizer or weeding) 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "miehe2023miracle"
@@ -5313,58 +5175,57 @@ reference "tab:Inputs-and-Agronomic"
 plural "false"
 caps "false"
 noprefix "false"
+nolink "false"
 
 \end_inset
 
-, we see that only about 15 percent of farmers in the first group used the
- recommendations as indicated on the seed pack with respect to seed spacing
- and seed rate when planting the seed from the trial pack.
+,
+ we see that only about 15 percent of farmers in the first group used the recommendations as indicated on the seed pack with respect to seed spacing and seed rate when planting the seed from the trial pack.
  We do not find differences in this probability across the groups.
 \end_layout
 
 \begin_layout Standard
-About 36 percent of farmers that paid a positive price have used organic
- fertilizer on the field where the seed from the trial pack was planted.
+About 36 percent of farmers that paid a positive price have used organic fertilizer on the field where the seed from the trial pack was planted.
  This is higher among farmers that received a discount after negotiations,
  albeit not significantly so.
  It is lower among farmers that received the seed for free without bargaining,
  but also here the difference is not significant.
- When comparing the last two groups, we do find a significant difference.
+ When comparing the last two groups,
+ we do find a significant difference.
 \end_layout
 
 \begin_layout Standard
-About 21 percent of farmers in the reference group used inorganic fertilizer
- on the trial plot.
- While inorganic fertilizer use seems somewhat higher in the group that
- received the seed for free, the difference is not significant.
- For the use of chemicals, which is also a complementary input that comes
- at a significant cost, we also find higher proportions of farmers that
- use it in the groups that got the seed for free, but differences are not
- significant.
+About 21 percent of farmers in the reference group used inorganic fertilizer on the trial plot.
+ While inorganic fertilizer use seems somewhat higher in the group that received the seed for free,
+ the difference is not significant.
+ For the use of chemicals,
+ which is also a complementary input that comes at a significant cost,
+ we also find higher proportions of farmers that use it in the groups that got the seed for free,
+ but differences are not significant.
 \end_layout
 
 \begin_layout Standard
-Gap filling, whereby farmers replant seed that did not germinate after about
- one week, requires both labour time and seed.
- About 14 percent of farmers that paid a positive price for seed engaged
- in gap filling.
- This is higher in the groups where seed was provided for free, and the
- difference is significant at the 10 percent level.
+Gap filling,
+ whereby farmers replant seed that did not germinate after about one week,
+ requires both labour time and seed.
+ About 14 percent of farmers that paid a positive price for seed engaged in gap filling.
+ This is higher in the groups where seed was provided for free,
+ and the difference is significant at the 10 percent level.
 \end_layout
 
 \begin_layout Standard
 Weeding is labour intensive.
- We do not find that farmers allocate more or less labour to the trial plot
- depending on what group they fall in.
+ We do not find that farmers allocate more or less labour to the trial plot depending on what group they fall in.
  Timely planting requires that labour is available at the right time.
- If seed is valued less because it was provided for free, we would expect
- to find that farmers in this group are less likely to prioritize the trial
- seed plot.
+ If seed is valued less because it was provided for free,
+ we would expect to find that farmers in this group are less likely to prioritize the trial seed plot.
  This does not seem to be the case.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float table
+placement document
+alignment document
 wide false
 sideways true
 status collapsed
@@ -5480,8 +5341,7 @@ Sexpr{ifelse(res_tab_pract_bin[3,2,1]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract_bin[3,2,1]<.05,"*",ifelse(res_tab_pract_bin[3,2,1]<.1,"+","
-")))}}$
+	,ifelse(res_tab_pract_bin[3,2,1]<.05,"*",ifelse(res_tab_pract_bin[3,2,1]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -5495,8 +5355,7 @@ Sexpr{ifelse(res_tab_pract_bin[3,3,1]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract_bin[3,3,1]<.05,"*",ifelse(res_tab_pract_bin[3,3,1]<.1,"+","
-")))}}$ 
+	,ifelse(res_tab_pract_bin[3,3,1]<.05,"*",ifelse(res_tab_pract_bin[3,3,1]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -5510,8 +5369,7 @@ Sexpr{ifelse(res_tab_pract_bin[3,4,1]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract_bin[3,4,1]<.05,"*",ifelse(res_tab_pract_bin[3,4,1]<.1,"+","
-")))}}$ 
+	,ifelse(res_tab_pract_bin[3,4,1]<.05,"*",ifelse(res_tab_pract_bin[3,4,1]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -5586,8 +5444,7 @@ Sexpr{ifelse(res_tab_pract_bin[3,2,2]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract_bin[3,2,2]<.05,"*",ifelse(res_tab_pract_bin[3,2,2]<.1,"+","
-")))}}$
+	,ifelse(res_tab_pract_bin[3,2,2]<.05,"*",ifelse(res_tab_pract_bin[3,2,2]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -5601,8 +5458,7 @@ Sexpr{ifelse(res_tab_pract_bin[3,3,2]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract_bin[3,3,2]<.05,"*",ifelse(res_tab_pract_bin[3,3,2]<.1,"+","
-")))}}$ 
+	,ifelse(res_tab_pract_bin[3,3,2]<.05,"*",ifelse(res_tab_pract_bin[3,3,2]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -5616,8 +5472,7 @@ Sexpr{ifelse(res_tab_pract_bin[3,4,2]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract_bin[3,4,2]<.05,"*",ifelse(res_tab_pract_bin[3,4,2]<.1,"+","
-")))}}$ 
+	,ifelse(res_tab_pract_bin[3,4,2]<.05,"*",ifelse(res_tab_pract_bin[3,4,2]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -5696,8 +5551,7 @@ Sexpr{ifelse(res_tab_pract_bin[3,2,3]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract_bin[3,2,3]<.05,"*",ifelse(res_tab_pract_bin[3,2,3]<.1,"+","
-")))}}$
+	,ifelse(res_tab_pract_bin[3,2,3]<.05,"*",ifelse(res_tab_pract_bin[3,2,3]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -5711,8 +5565,7 @@ Sexpr{ifelse(res_tab_pract_bin[3,3,3]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract_bin[3,3,3]<.05,"*",ifelse(res_tab_pract_bin[3,3,3]<.1,"+","
-")))}}$ 
+	,ifelse(res_tab_pract_bin[3,3,3]<.05,"*",ifelse(res_tab_pract_bin[3,3,3]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -5726,8 +5579,7 @@ Sexpr{ifelse(res_tab_pract_bin[3,4,3]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract_bin[3,4,3]<.05,"*",ifelse(res_tab_pract_bin[3,4,3]<.1,"+","
-")))}}$ 
+	,ifelse(res_tab_pract_bin[3,4,3]<.05,"*",ifelse(res_tab_pract_bin[3,4,3]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -5802,8 +5654,7 @@ Sexpr{ifelse(res_tab_pract_bin[3,2,4]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract_bin[3,2,4]<.05,"*",ifelse(res_tab_pract_bin[3,2,4]<.1,"+","
-")))}}$
+	,ifelse(res_tab_pract_bin[3,2,4]<.05,"*",ifelse(res_tab_pract_bin[3,2,4]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -5817,8 +5668,7 @@ Sexpr{ifelse(res_tab_pract_bin[3,3,4]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract_bin[3,3,4]<.05,"*",ifelse(res_tab_pract_bin[3,3,4]<.1,"+","
-")))}}$ 
+	,ifelse(res_tab_pract_bin[3,3,4]<.05,"*",ifelse(res_tab_pract_bin[3,3,4]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -5832,8 +5682,7 @@ Sexpr{ifelse(res_tab_pract_bin[3,4,4]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract_bin[3,4,4]<.05,"*",ifelse(res_tab_pract_bin[3,4,4]<.1,"+","
-")))}}$ 
+	,ifelse(res_tab_pract_bin[3,4,4]<.05,"*",ifelse(res_tab_pract_bin[3,4,4]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -5908,8 +5757,7 @@ Sexpr{ifelse(res_tab_pract_bin[3,2,5]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract_bin[3,2,5]<.05,"*",ifelse(res_tab_pract_bin[3,2,5]<.1,"+","
-")))}}$
+	,ifelse(res_tab_pract_bin[3,2,5]<.05,"*",ifelse(res_tab_pract_bin[3,2,5]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -5923,8 +5771,7 @@ Sexpr{ifelse(res_tab_pract_bin[3,3,5]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract_bin[3,3,5]<.05,"*",ifelse(res_tab_pract_bin[3,3,5]<.1,"+","
-")))}}$ 
+	,ifelse(res_tab_pract_bin[3,3,5]<.05,"*",ifelse(res_tab_pract_bin[3,3,5]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -5938,8 +5785,7 @@ Sexpr{ifelse(res_tab_pract_bin[3,4,5]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract_bin[3,4,5]<.05,"*",ifelse(res_tab_pract_bin[3,4,5]<.1,"+","
-")))}}$ 
+	,ifelse(res_tab_pract_bin[3,4,5]<.05,"*",ifelse(res_tab_pract_bin[3,4,5]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -6014,8 +5860,7 @@ Sexpr{ifelse(res_tab_pract_bin[3,2,6]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract_bin[3,2,6]<.05,"*",ifelse(res_tab_pract_bin[3,2,6]<.1,"+","
-")))}}$
+	,ifelse(res_tab_pract_bin[3,2,6]<.05,"*",ifelse(res_tab_pract_bin[3,2,6]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -6029,8 +5874,7 @@ Sexpr{ifelse(res_tab_pract_bin[3,3,6]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract_bin[3,3,6]<.05,"*",ifelse(res_tab_pract_bin[3,3,6]<.1,"+","
-")))}}$ 
+	,ifelse(res_tab_pract_bin[3,3,6]<.05,"*",ifelse(res_tab_pract_bin[3,3,6]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -6044,8 +5888,7 @@ Sexpr{ifelse(res_tab_pract_bin[3,4,6]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract_bin[3,4,6]<.05,"*",ifelse(res_tab_pract_bin[3,4,6]<.1,"+","
-")))}}$ 
+	,ifelse(res_tab_pract_bin[3,4,6]<.05,"*",ifelse(res_tab_pract_bin[3,4,6]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -6120,8 +5963,7 @@ Sexpr{ifelse(res_tab_pract_bin[3,2,7]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract_bin[3,2,7]<.05,"*",ifelse(res_tab_pract_bin[3,2,7]<.1,"+","
-")))}}$
+	,ifelse(res_tab_pract_bin[3,2,7]<.05,"*",ifelse(res_tab_pract_bin[3,2,7]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -6135,8 +5977,7 @@ Sexpr{ifelse(res_tab_pract_bin[3,3,7]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract_bin[3,3,7]<.05,"*",ifelse(res_tab_pract_bin[3,3,7]<.1,"+","
-")))}}$ 
+	,ifelse(res_tab_pract_bin[3,3,7]<.05,"*",ifelse(res_tab_pract_bin[3,3,7]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -6150,8 +5991,7 @@ Sexpr{ifelse(res_tab_pract_bin[3,4,7]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract_bin[3,4,7]<.05,"*",ifelse(res_tab_pract_bin[3,4,7]<.1,"+","
-")))}}$ 
+	,ifelse(res_tab_pract_bin[3,4,7]<.05,"*",ifelse(res_tab_pract_bin[3,4,7]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -6226,8 +6066,7 @@ Sexpr{ifelse(res_tab_pract_bin[3,2,8]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract_bin[3,2,8]<.05,"*",ifelse(res_tab_pract_bin[3,2,8]<.1,"+","
-")))}}$
+	,ifelse(res_tab_pract_bin[3,2,8]<.05,"*",ifelse(res_tab_pract_bin[3,2,8]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -6241,8 +6080,7 @@ Sexpr{ifelse(res_tab_pract_bin[3,3,8]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract_bin[3,3,8]<.05,"*",ifelse(res_tab_pract_bin[3,3,8]<.1,"+","
-")))}}$ 
+	,ifelse(res_tab_pract_bin[3,3,8]<.05,"*",ifelse(res_tab_pract_bin[3,3,8]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -6256,8 +6094,7 @@ Sexpr{ifelse(res_tab_pract_bin[3,4,8]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract_bin[3,4,8]<.05,"*",ifelse(res_tab_pract_bin[3,4,8]<.1,"+","
-")))}}$ 
+	,ifelse(res_tab_pract_bin[3,4,8]<.05,"*",ifelse(res_tab_pract_bin[3,4,8]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -6345,7 +6182,8 @@ scriptsize
 
 \begin_layout Plain Layout
 
-Note: 
+Note:
+ 
 \end_layout
 
 \end_inset
@@ -6359,15 +6197,12 @@ Note:
 \end_layout
 
 \begin_layout Standard
-Overall, looking at the index, we find increased use of complementary inputs
- and good agronomic practices in the group that was exposed to the bargaining
- experiment but then received a surprise discount.
- While none of the individual components of the index is significant, they
- are all positive and the fact that components are weighted by the inverse
- variance covariance matrix results in a significant difference for the
- index.
- This positive finding is consistent with prices acting as a signal for
- quality and may also indicate a potential income effect.
+Overall,
+ looking at the index,
+ we find increased use of complementary inputs and good agronomic practices in the group that was exposed to the bargaining experiment but then received a surprise discount.
+ While none of the individual components of the index is significant,
+ they are all positive and the fact that components are weighted by the inverse variance covariance matrix results in a significant difference for the index.
+ This positive finding is consistent with prices acting as a signal for quality and may also indicate a potential income effect.
 \end_layout
 
 \begin_layout Subsection
@@ -6375,22 +6210,21 @@ Three-stage pricing analysis
 \end_layout
 
 \begin_layout Standard
-We now restrict the sample to farmers that were enrolled in the bargaining
- experiment (some of which received their money back at the end of the baseline
- survey) and run regressions to isolate screening, sunk cost, and signaling
- effects of prices following Equation 
+We now restrict the sample to farmers that were enrolled in the bargaining experiment (some of which received their money back at the end of the baseline survey) and run regressions to isolate screening,
+ sunk cost,
+ and signaling effects of prices following Equation 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:one-1"
 plural "false"
 caps "false"
 noprefix "false"
+nolink "false"
 
 \end_inset
 
 .
- We do this again for the four categories of outcomes measured at different
- points along the causal impact chain.
+ We do this again for the four categories of outcomes measured at different points along the causal impact chain.
  
 \end_layout
 
@@ -6399,7 +6233,9 @@ Trial pack use
 \end_layout
 
 \begin_layout Standard
-We start again by testing if, and how, farmers used the seed trial pack.
+We start again by testing if,
+ and how,
+ farmers used the seed trial pack.
  Table 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -6407,67 +6243,64 @@ reference "tab:Effects-on-Use"
 plural "false"
 caps "false"
 noprefix "false"
+nolink "false"
 
 \end_inset
 
- shows that on average, almost 97 percent of farmers that obtained the seed
- pack after negotiation used it as seed on a plot in the first season of
- 2023.
- The second column shows that there is no impact on the propensity to use
- the seed as the price at which the bargaining transaction was concluded
- changes.
- In other words, we do not find evidence of screening effects on seed trial
- pack use.
- In a similar vein, we do not find evidence of a sunk cost effect on seed
- trial pack use: in the third column, do not find a significant coefficient
- for and indicator that the full price was paid.
- Finally, the fourth column shows that the price at which the seed was initially
- offered at the start of the bargaining does also not impact seed use, suggestin
-g there is no signaling effect.
+ shows that on average,
+ almost 97 percent of farmers that obtained the seed pack after negotiation used it as seed on a plot in the first season of 2023.
+ The second column shows that there is no impact on the propensity to use the seed as the price at which the bargaining transaction was concluded changes.
+ In other words,
+ we do not find evidence of screening effects on seed trial pack use.
+ In a similar vein,
+ we do not find evidence of a sunk cost effect on seed trial pack use:
+ in the third column,
+ do not find a significant coefficient for and indicator that the full price was paid.
+ Finally,
+ the fourth column shows that the price at which the seed was initially offered at the start of the bargaining does also not impact seed use,
+ suggesting there is no signaling effect.
 \end_layout
 
 \begin_layout Standard
-The table similarly does not find screening, sunk cost, nor signaling effects
- for the likelihood that farmers did not mix the seed from the seed trial
- pack with other seed.
- For the proportion of farmers that use a plot layout that enables for direct
- comparison between seed performance of the trial seed and local seed, we
- find that as prices rise, the proportion reduces, suggesting a negative
- screening effect.
+The table similarly does not find screening,
+ sunk cost,
+ nor signaling effects for the likelihood that farmers did not mix the seed from the seed trial pack with other seed.
+ For the proportion of farmers that use a plot layout that enables for direct comparison between seed performance of the trial seed and local seed,
+ we find that as prices rise,
+ the proportion reduces,
+ suggesting a negative screening effect.
  
 \end_layout
 
 \begin_layout Standard
-In about 92 percent of the cases, the seed trial pack was used by the person
- who generally takes decisions with respect to what seed to use.
- We find among farmers that paid the full price, this proportion is significantl
-y lower.
- We also find that farmers who paid and did not get the discount were less
- likely to keep grain obtained from the trial plot separate during and after
- harvest.
+In about 92 percent of the cases,
+ the seed trial pack was used by the person who generally takes decisions with respect to what seed to use.
+ We find among farmers that paid the full price,
+ this proportion is significantly lower.
+ We also find that farmers who paid and did not get the discount were less likely to keep grain obtained from the trial plot separate during and after harvest.
  This suggests negative sunk cost effect.
  
 \begin_inset Note Note
 status collapsed
 
 \begin_layout Plain Layout
-How can this be explained? A potential explanation for this is that the
- estimate is conflated with an income effect, whereby farmers who paid the
- full price do not have money to keep harvest separate??? This explanation
- is consistent with the finding in Table 
+How can this be explained?
+ A potential explanation for this is that the estimate is conflated with an income effect,
+ whereby farmers who paid the full price do not have money to keep harvest separate???
+ This explanation is consistent with the finding in Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:Effects-on-Use-binary"
 plural "false"
 caps "false"
 noprefix "false"
+nolink "false"
 
 \end_inset
 
- that the likelihood of keeping grain separated is significantly higher
- in the group that received the 100 percent discount.
- Alternative explanations: look into "zero-price effect" or "free-good effect."
- Note that 
+ that the likelihood of keeping grain separated is significantly higher in the group that received the 100 percent discount.
+ Alternative explanations:
+ look into "zero-price effect" or "free-good effect." Note that 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "10.1257/aer.100.5.2383"
@@ -6479,9 +6312,8 @@ literal "false"
 \begin_inset Quotes eld
 \end_inset
 
-...do not find that households paying a higher transaction price are more likely
- to use Clorin in their drinking water, and some of our point estimates
- even suggest the opposite...
+...do not find that households paying a higher transaction price are more likely to use Clorin in their drinking water,
+ and some of our point estimates even suggest the opposite...
 \begin_inset Quotes erd
 \end_inset
 
@@ -6495,6 +6327,8 @@ literal "false"
 
 \begin_layout Standard
 \begin_inset Float table
+placement document
+alignment document
 wide false
 sideways true
 status collapsed
@@ -7227,7 +7061,8 @@ scriptsize
 
 \begin_layout Plain Layout
 
-Note: 
+Note:
+ 
 \end_layout
 
 \end_inset
@@ -7241,9 +7076,11 @@ Note:
 \end_layout
 
 \begin_layout Standard
-Overall, we do not find convincing effects that screening, sunk cost or
- signaling are important early in the causal impact chain.
- In fact, the summary index shows a negatives sunk cost effect.
+Overall,
+ we do not find convincing effects that screening,
+ sunk cost or signaling are important early in the causal impact chain.
+ In fact,
+ the summary index shows a negatives sunk cost effect.
 \end_layout
 
 \begin_layout Subsubsection
@@ -7251,31 +7088,34 @@ Adoption and outcomes in subsequent season
 \end_layout
 
 \begin_layout Standard
-Turning to adoption in the season following the one where farmers could
- use the trial pack, we see that about 22 percent of farmers used improved
- seed on the randomly selected plot.
- Restricting to the seed that was the focus of the study, we find that about
- 11 percent of farmers used bazooka on the randomly selected plot.
- We do not find that seed use in the subsequent season is susceptible to
- screening, sunk cost, nor signaling effects.
- Looking at the quantities of seed used for farmers that used improved seed
- varieties and farmers that used Bazooka, we similarly find no price effects.
+Turning to adoption in the season following the one where farmers could use the trial pack,
+ we see that about 22 percent of farmers used improved seed on the randomly selected plot.
+ Restricting to the seed that was the focus of the study,
+ we find that about 11 percent of farmers used bazooka on the randomly selected plot.
+ We do not find that seed use in the subsequent season is susceptible to screening,
+ sunk cost,
+ nor signaling effects.
+ Looking at the quantities of seed used for farmers that used improved seed varieties and farmers that used Bazooka,
+ we similarly find no price effects.
 \end_layout
 
 \begin_layout Standard
-Finally, we do find evidence of screening effects on production.
- For each 1000 UGX increase in the valuation of the seed trial pack, production
- in the subsequent year increased by about 17 kilograms, which corresponds
- to about 5 % over the mean.
- The significant screening effect disappears at the intensive margin, suggesting
- that farmers with a higher valuation also expand plot size.
- For the sunk cost effect, we find no impact on production, but a negative
- sunk cost effect appears for productivity (pointing to a reduction in plot
- size associated to sunk cost effects).
+Finally,
+ we do find evidence of screening effects on production.
+ For each 1000 UGX increase in the valuation of the seed trial pack,
+ production in the subsequent year increased by about 17 kilograms,
+ which corresponds to about 5 % over the mean.
+ The significant screening effect disappears at the intensive margin,
+ suggesting that farmers with a higher valuation also expand plot size.
+ For the sunk cost effect,
+ we find no impact on production,
+ but a negative sunk cost effect appears for productivity (pointing to a reduction in plot size associated to sunk cost effects).
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float table
+placement document
+alignment document
 wide false
 sideways true
 status collapsed
@@ -7386,8 +7226,7 @@ Sexpr{ifelse(res_tab_next_season[3,2,3]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season[3,2,3]<.05,"*",ifelse(res_tab_next_season[3,2,3]<.1,"
-+","")))}}$
+	,ifelse(res_tab_next_season[3,2,3]<.05,"*",ifelse(res_tab_next_season[3,2,3]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -7401,8 +7240,7 @@ Sexpr{ifelse(res_tab_next_season[3,3,3]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season[3,3,3]<.05,"*",ifelse(res_tab_next_season[3,3,3]<.1,"
-+","")))}}$
+	,ifelse(res_tab_next_season[3,3,3]<.05,"*",ifelse(res_tab_next_season[3,3,3]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -7416,8 +7254,7 @@ Sexpr{ifelse(res_tab_next_season[3,4,3]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season[3,4,3]<.05,"*",ifelse(res_tab_next_season[3,4,3]<.1,"
-+","")))}}$ & 
+	,ifelse(res_tab_next_season[3,4,3]<.05,"*",ifelse(res_tab_next_season[3,4,3]<.1,"+","")))}}$ & 
 \backslash
 Sexpr{res_tab_next_season[1,5,3]} 
 \backslash
@@ -7490,8 +7327,7 @@ Sexpr{ifelse(res_tab_next_season[3,2,4]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season[3,2,4]<.05,"*",ifelse(res_tab_next_season[3,2,4]<.1,"
-+","")))}}$
+	,ifelse(res_tab_next_season[3,2,4]<.05,"*",ifelse(res_tab_next_season[3,2,4]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -7505,8 +7341,7 @@ Sexpr{ifelse(res_tab_next_season[3,3,4]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season[3,3,4]<.05,"*",ifelse(res_tab_next_season[3,3,4]<.1,"
-+","")))}}$
+	,ifelse(res_tab_next_season[3,3,4]<.05,"*",ifelse(res_tab_next_season[3,3,4]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -7520,8 +7355,7 @@ Sexpr{ifelse(res_tab_next_season[3,4,4]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season[3,4,4]<.05,"*",ifelse(res_tab_next_season[3,4,4]<.1,"
-+","")))}}$ & 
+	,ifelse(res_tab_next_season[3,4,4]<.05,"*",ifelse(res_tab_next_season[3,4,4]<.1,"+","")))}}$ & 
 \backslash
 Sexpr{res_tab_next_season[1,5,4]} 
 \backslash
@@ -7594,8 +7428,7 @@ Sexpr{ifelse(res_tab_next_season[3,2,5]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season[3,2,5]<.05,"*",ifelse(res_tab_next_season[3,2,5]<.1,"
-+","")))}}$
+	,ifelse(res_tab_next_season[3,2,5]<.05,"*",ifelse(res_tab_next_season[3,2,5]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -7609,8 +7442,7 @@ Sexpr{ifelse(res_tab_next_season[3,3,5]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season[3,3,5]<.05,"*",ifelse(res_tab_next_season[3,3,5]<.1,"
-+","")))}}$
+	,ifelse(res_tab_next_season[3,3,5]<.05,"*",ifelse(res_tab_next_season[3,3,5]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -7624,8 +7456,7 @@ Sexpr{ifelse(res_tab_next_season[3,4,5]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season[3,4,5]<.05,"*",ifelse(res_tab_next_season[3,4,5]<.1,"
-+","")))}}$ & 
+	,ifelse(res_tab_next_season[3,4,5]<.05,"*",ifelse(res_tab_next_season[3,4,5]<.1,"+","")))}}$ & 
 \backslash
 Sexpr{res_tab_next_season[1,5,5]} 
 \backslash
@@ -7698,8 +7529,7 @@ Sexpr{ifelse(res_tab_next_season[3,2,6]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season[3,2,6]<.05,"*",ifelse(res_tab_next_season[3,2,6]<.1,"
-+","")))}}$
+	,ifelse(res_tab_next_season[3,2,6]<.05,"*",ifelse(res_tab_next_season[3,2,6]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -7713,8 +7543,7 @@ Sexpr{ifelse(res_tab_next_season[3,3,6]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season[3,3,6]<.05,"*",ifelse(res_tab_next_season[3,3,6]<.1,"
-+","")))}}$
+	,ifelse(res_tab_next_season[3,3,6]<.05,"*",ifelse(res_tab_next_season[3,3,6]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -7728,8 +7557,7 @@ Sexpr{ifelse(res_tab_next_season[3,4,6]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season[3,4,6]<.05,"*",ifelse(res_tab_next_season[3,4,6]<.1,"
-+","")))}}$ & 
+	,ifelse(res_tab_next_season[3,4,6]<.05,"*",ifelse(res_tab_next_season[3,4,6]<.1,"+","")))}}$ & 
 \backslash
 Sexpr{res_tab_next_season[1,5,6]} 
 \backslash
@@ -7802,8 +7630,7 @@ Sexpr{ifelse(res_tab_next_season[3,2,7]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season[3,2,7]<.05,"*",ifelse(res_tab_next_season[3,2,7]<.1,"
-+","")))}}$
+	,ifelse(res_tab_next_season[3,2,7]<.05,"*",ifelse(res_tab_next_season[3,2,7]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -7817,8 +7644,7 @@ Sexpr{ifelse(res_tab_next_season[3,3,7]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season[3,3,7]<.05,"*",ifelse(res_tab_next_season[3,3,7]<.1,"
-+","")))}}$
+	,ifelse(res_tab_next_season[3,3,7]<.05,"*",ifelse(res_tab_next_season[3,3,7]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -7832,8 +7658,7 @@ Sexpr{ifelse(res_tab_next_season[3,4,7]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season[3,4,7]<.05,"*",ifelse(res_tab_next_season[3,4,7]<.1,"
-+","")))}}$ & 
+	,ifelse(res_tab_next_season[3,4,7]<.05,"*",ifelse(res_tab_next_season[3,4,7]<.1,"+","")))}}$ & 
 \backslash
 Sexpr{res_tab_next_season[1,5,7]} 
 \backslash
@@ -7906,8 +7731,7 @@ Sexpr{ifelse(res_tab_next_season[3,2,8]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season[3,2,8]<.05,"*",ifelse(res_tab_next_season[3,2,8]<.1,"
-+","")))}}$
+	,ifelse(res_tab_next_season[3,2,8]<.05,"*",ifelse(res_tab_next_season[3,2,8]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -7921,8 +7745,7 @@ Sexpr{ifelse(res_tab_next_season[3,3,8]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season[3,3,8]<.05,"*",ifelse(res_tab_next_season[3,3,8]<.1,"
-+","")))}}$
+	,ifelse(res_tab_next_season[3,3,8]<.05,"*",ifelse(res_tab_next_season[3,3,8]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -7936,8 +7759,7 @@ Sexpr{ifelse(res_tab_next_season[3,4,8]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season[3,4,8]<.05,"*",ifelse(res_tab_next_season[3,4,8]<.1,"
-+","")))}}$ & 
+	,ifelse(res_tab_next_season[3,4,8]<.05,"*",ifelse(res_tab_next_season[3,4,8]<.1,"+","")))}}$ & 
 \backslash
 Sexpr{res_tab_next_season[1,5,8]} 
 \backslash
@@ -8010,8 +7832,7 @@ Sexpr{ifelse(res_tab_next_season[3,2,9]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season[3,2,9]<.05,"*",ifelse(res_tab_next_season[3,2,9]<.1,"
-+","")))}}$
+	,ifelse(res_tab_next_season[3,2,9]<.05,"*",ifelse(res_tab_next_season[3,2,9]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -8025,8 +7846,7 @@ Sexpr{ifelse(res_tab_next_season[3,3,9]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season[3,3,9]<.05,"*",ifelse(res_tab_next_season[3,3,9]<.1,"
-+","")))}}$
+	,ifelse(res_tab_next_season[3,3,9]<.05,"*",ifelse(res_tab_next_season[3,3,9]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -8040,8 +7860,7 @@ Sexpr{ifelse(res_tab_next_season[3,4,9]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_next_season[3,4,9]<.05,"*",ifelse(res_tab_next_season[3,4,9]<.1,"
-+","")))}}$ & 
+	,ifelse(res_tab_next_season[3,4,9]<.05,"*",ifelse(res_tab_next_season[3,4,9]<.1,"+","")))}}$ & 
 \backslash
 Sexpr{res_tab_next_season[1,5,9]} 
 \backslash
@@ -8127,7 +7946,8 @@ scriptsize
 
 \begin_layout Plain Layout
 
-Note: 
+Note:
+ 
 \end_layout
 
 \end_inset
@@ -8141,9 +7961,9 @@ Note:
 \end_layout
 
 \begin_layout Standard
-In sum, we only find weak evidence of screening effects on outcomes in the
- next season, with the summary index being positive only at the 10 percent
- level.
+In sum,
+ we only find weak evidence of screening effects on outcomes in the next season,
+ with the summary index being positive only at the 10 percent level.
 \end_layout
 
 \begin_layout Subsubsection
@@ -8151,20 +7971,20 @@ Attention
 \end_layout
 
 \begin_layout Standard
-We now consider if higher prices affects how much attention farmers pay
- to the seed trial pack and what the relative importance is of the different
- effects.
- At the time of the midline questionnaire, about 77 percent of farmers correctly
- remember the name of the seed that they received.
+We now consider if higher prices affects how much attention farmers pay to the seed trial pack and what the relative importance is of the different effects.
+ At the time of the midline questionnaire,
+ about 77 percent of farmers correctly remember the name of the seed that they received.
  We do not find significant screening or sunk cost effects.
- We do find weak evidence of a reduction in this likelihood if the initial
- offer price was higher (indicating a negative signaling effect).
- Only 5 percent of farmers correctly recalled the name of the seed company
- and there are no screening, sunk cost, or signaling effects.
+ We do find weak evidence of a reduction in this likelihood if the initial offer price was higher (indicating a negative signaling effect).
+ Only 5 percent of farmers correctly recalled the name of the seed company and there are no screening,
+ sunk cost,
+ or signaling effects.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float table
+placement document
+alignment document
 wide false
 sideways true
 status collapsed
@@ -8695,8 +8515,7 @@ Sexpr{ifelse(res_tab_path_next_season[3,2,1]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_path_next_season[3,2,1]<.05,"*",ifelse(res_tab_path_next_season[
-3,2,1]<.1,"+","")))}}$
+	,ifelse(res_tab_path_next_season[3,2,1]<.05,"*",ifelse(res_tab_path_next_season[3,2,1]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -8710,8 +8529,7 @@ Sexpr{ifelse(res_tab_path_next_season[3,3,1]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_path_next_season[3,3,1]<.05,"*",ifelse(res_tab_path_next_season[
-3,3,1]<.1,"+","")))}}$
+	,ifelse(res_tab_path_next_season[3,3,1]<.05,"*",ifelse(res_tab_path_next_season[3,3,1]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -8725,8 +8543,7 @@ Sexpr{ifelse(res_tab_path_next_season[3,4,1]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_path_next_season[3,4,1]<.05,"*",ifelse(res_tab_path_next_season[
-3,4,1]<.1,"+","")))}}$
+	,ifelse(res_tab_path_next_season[3,4,1]<.05,"*",ifelse(res_tab_path_next_season[3,4,1]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -8804,8 +8621,7 @@ Sexpr{ifelse(res_tab_path_next_season[3,2,2]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_path_next_season[3,2,2]<.05,"*",ifelse(res_tab_path_next_season[
-3,2,2]<.1,"+","")))}}$
+	,ifelse(res_tab_path_next_season[3,2,2]<.05,"*",ifelse(res_tab_path_next_season[3,2,2]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -8819,8 +8635,7 @@ Sexpr{ifelse(res_tab_path_next_season[3,3,2]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_path_next_season[3,3,2]<.05,"*",ifelse(res_tab_path_next_season[
-3,3,2]<.1,"+","")))}}$
+	,ifelse(res_tab_path_next_season[3,3,2]<.05,"*",ifelse(res_tab_path_next_season[3,3,2]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -8834,8 +8649,7 @@ Sexpr{ifelse(res_tab_path_next_season[3,4,2]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_path_next_season[3,4,2]<.05,"*",ifelse(res_tab_path_next_season[
-3,4,2]<.1,"+","")))}}$
+	,ifelse(res_tab_path_next_season[3,4,2]<.05,"*",ifelse(res_tab_path_next_season[3,4,2]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
@@ -8938,8 +8752,8 @@ scriptsize
 
 \begin_layout Plain Layout
 
-Note: price bought only on subset of farmers that paid positive price -
- not included in index.
+Note:
+ price bought only on subset of farmers that paid positive price - not included in index.
 \end_layout
 
 \end_inset
@@ -8953,25 +8767,23 @@ Note: price bought only on subset of farmers that paid positive price -
 \end_layout
 
 \begin_layout Standard
-A high share of farmers say they remember the price that emerged from the
- bargaining experiment.
- As expected, this share reduced somewhat over time.
- We find a positive sunk cost effect that is significant at the 1 percent
- level at midline.
- Farmers that paid the full price (controlling for their valuation of the
- seed trial pack) are 9 percentage points more likely to say that they remember
- the price.
+A high share of farmers say they remember the price that emerged from the bargaining experiment.
+ As expected,
+ this share reduced somewhat over time.
+ We find a positive sunk cost effect that is significant at the 1 percent level at midline.
+ Farmers that paid the full price (controlling for their valuation of the seed trial pack) are 9 percentage points more likely to say that they remember the price.
  
 \end_layout
 
 \begin_layout Standard
-We also look at how accurately they remember the price by considering the
- average absolute deviation from the actual price arrived at during bargaining.
- Farmers under- or overestimate the price by about 1000 UGX, and, again
- as expected, this amount increases over time.
- We find that due to sunk cost effects, the margin reduces significantly:
- farmers who paid a positive price are better at recalling the agreed upon
- price.
+We also look at how accurately they remember the price by considering the average absolute deviation from the actual price arrived at during bargaining.
+ Farmers under- or overestimate the price by about 1000 UGX,
+ and,
+ again as expected,
+ this amount increases over time.
+ We find that due to sunk cost effects,
+ the margin reduces significantly:
+ farmers who paid a positive price are better at recalling the agreed upon price.
 \end_layout
 
 \begin_layout Subsubsection
@@ -8979,27 +8791,30 @@ Complementary input use
 \end_layout
 
 \begin_layout Standard
-Finally, we look at screening, sunk cost and signaling effects with respect
- to complementary inputs and practices.
+Finally,
+ we look at screening,
+ sunk cost and signaling effects with respect to complementary inputs and practices.
  We find evidence of screening effects for some of the inputs and practices.
- For example, overall, about 17 percent of farmers follow recommended seed
- spacing and seed rates on the trial plot and this share is increasing with
- valuation as proxied by the outcome of the bargaining experiment.
- For inorganic fertilizer use, there seems to be a positive relationship
- with price negotiated, but the coefficient is not significant.
+ For example,
+ overall,
+ about 17 percent of farmers follow recommended seed spacing and seed rates on the trial plot and this share is increasing with valuation as proxied by the outcome of the bargaining experiment.
+ For inorganic fertilizer use,
+ there seems to be a positive relationship with price negotiated,
+ but the coefficient is not significant.
 \end_layout
 
 \begin_layout Standard
-Looking at sunk cost effects, signs generally turn negative.
- The share of farmers that used organic fertilizer on the trial plot reduced
- if farmers had to pay the full price.
- Farmers also seemed to engage less in timely planting if they had to did
- not received the discount.
+Looking at sunk cost effects,
+ signs generally turn negative.
+ The share of farmers that used organic fertilizer on the trial plot reduced if farmers had to pay the full price.
+ Farmers also seemed to engage less in timely planting if they had to did not received the discount.
  There is no evidence of signaling.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float table
+placement document
+alignment document
 wide false
 sideways true
 status collapsed
@@ -9120,8 +8935,7 @@ Sexpr{ifelse(res_tab_pract[3,3,1]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract[3,3,1]<.05,"*",ifelse(res_tab_pract[3,3,1]<.1,"+","")))}}$
- 
+	,ifelse(res_tab_pract[3,3,1]<.05,"*",ifelse(res_tab_pract[3,3,1]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -9135,8 +8949,7 @@ Sexpr{ifelse(res_tab_pract[3,4,1]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract[3,4,1]<.05,"*",ifelse(res_tab_pract[3,4,1]<.1,"+","")))}}$
- 
+	,ifelse(res_tab_pract[3,4,1]<.05,"*",ifelse(res_tab_pract[3,4,1]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -9228,8 +9041,7 @@ Sexpr{ifelse(res_tab_pract[3,3,2]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract[3,3,2]<.05,"*",ifelse(res_tab_pract[3,3,2]<.1,"+","")))}}$
- 
+	,ifelse(res_tab_pract[3,3,2]<.05,"*",ifelse(res_tab_pract[3,3,2]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -9243,8 +9055,7 @@ Sexpr{ifelse(res_tab_pract[3,4,2]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract[3,4,2]<.05,"*",ifelse(res_tab_pract[3,4,2]<.1,"+","")))}}$
- 
+	,ifelse(res_tab_pract[3,4,2]<.05,"*",ifelse(res_tab_pract[3,4,2]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -9340,8 +9151,7 @@ Sexpr{ifelse(res_tab_pract[3,3,3]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract[3,3,3]<.05,"*",ifelse(res_tab_pract[3,3,3]<.1,"+","")))}}$
- 
+	,ifelse(res_tab_pract[3,3,3]<.05,"*",ifelse(res_tab_pract[3,3,3]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -9355,8 +9165,7 @@ Sexpr{ifelse(res_tab_pract[3,4,3]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract[3,4,3]<.05,"*",ifelse(res_tab_pract[3,4,3]<.1,"+","")))}}$
- 
+	,ifelse(res_tab_pract[3,4,3]<.05,"*",ifelse(res_tab_pract[3,4,3]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -9448,8 +9257,7 @@ Sexpr{ifelse(res_tab_pract[3,3,4]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract[3,3,4]<.05,"*",ifelse(res_tab_pract[3,3,4]<.1,"+","")))}}$
- 
+	,ifelse(res_tab_pract[3,3,4]<.05,"*",ifelse(res_tab_pract[3,3,4]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -9463,8 +9271,7 @@ Sexpr{ifelse(res_tab_pract[3,4,4]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract[3,4,4]<.05,"*",ifelse(res_tab_pract[3,4,4]<.1,"+","")))}}$
- 
+	,ifelse(res_tab_pract[3,4,4]<.05,"*",ifelse(res_tab_pract[3,4,4]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -9556,8 +9363,7 @@ Sexpr{ifelse(res_tab_pract[3,3,5]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract[3,3,5]<.05,"*",ifelse(res_tab_pract[3,3,5]<.1,"+","")))}}$
- 
+	,ifelse(res_tab_pract[3,3,5]<.05,"*",ifelse(res_tab_pract[3,3,5]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -9571,8 +9377,7 @@ Sexpr{ifelse(res_tab_pract[3,4,5]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract[3,4,5]<.05,"*",ifelse(res_tab_pract[3,4,5]<.1,"+","")))}}$
- 
+	,ifelse(res_tab_pract[3,4,5]<.05,"*",ifelse(res_tab_pract[3,4,5]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -9664,8 +9469,7 @@ Sexpr{ifelse(res_tab_pract[3,3,6]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract[3,3,6]<.05,"*",ifelse(res_tab_pract[3,3,6]<.1,"+","")))}}$
- 
+	,ifelse(res_tab_pract[3,3,6]<.05,"*",ifelse(res_tab_pract[3,3,6]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -9679,8 +9483,7 @@ Sexpr{ifelse(res_tab_pract[3,4,6]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract[3,4,6]<.05,"*",ifelse(res_tab_pract[3,4,6]<.1,"+","")))}}$
- 
+	,ifelse(res_tab_pract[3,4,6]<.05,"*",ifelse(res_tab_pract[3,4,6]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -9772,8 +9575,7 @@ Sexpr{ifelse(res_tab_pract[3,3,7]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract[3,3,7]<.05,"*",ifelse(res_tab_pract[3,3,7]<.1,"+","")))}}$
- 
+	,ifelse(res_tab_pract[3,3,7]<.05,"*",ifelse(res_tab_pract[3,3,7]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -9787,8 +9589,7 @@ Sexpr{ifelse(res_tab_pract[3,4,7]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract[3,4,7]<.05,"*",ifelse(res_tab_pract[3,4,7]<.1,"+","")))}}$
- 
+	,ifelse(res_tab_pract[3,4,7]<.05,"*",ifelse(res_tab_pract[3,4,7]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -9880,8 +9681,7 @@ Sexpr{ifelse(res_tab_pract[3,3,8]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract[3,3,8]<.05,"*",ifelse(res_tab_pract[3,3,8]<.1,"+","")))}}$
- 
+	,ifelse(res_tab_pract[3,3,8]<.05,"*",ifelse(res_tab_pract[3,3,8]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -9895,8 +9695,7 @@ Sexpr{ifelse(res_tab_pract[3,4,8]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(res_tab_pract[3,4,8]<.05,"*",ifelse(res_tab_pract[3,4,8]<.1,"+","")))}}$
- 
+	,ifelse(res_tab_pract[3,4,8]<.05,"*",ifelse(res_tab_pract[3,4,8]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -9987,7 +9786,8 @@ scriptsize
 
 \begin_layout Plain Layout
 
-Note: 
+Note:
+ 
 \end_layout
 
 \end_inset
@@ -10001,9 +9801,8 @@ Note:
 \end_layout
 
 \begin_layout Standard
-Taken together, we find evidence of screening effects for complementary
- input use and use of recommended agronomic practices on the seed trial
- plot.
+Taken together,
+ we find evidence of screening effects for complementary input use and use of recommended agronomic practices on the seed trial plot.
  We again find evidence of negative sunk cost effects.
  This is confirmed by significant coefficient estimates for the index.
 \end_layout
@@ -10013,64 +9812,48 @@ Conclusion
 \end_layout
 
 \begin_layout Standard
-In this paper, we study the importance of prices when introducing a new
- product or service.
- We use a recently released hybrid maize seed variety as case study and
- provide smallholder farmers with seed trial packs.
+In this paper,
+ we study the importance of prices when introducing a new product or service.
+ We use a recently released hybrid maize seed variety as case study and provide smallholder farmers with seed trial packs.
  The seed trial packs are provided through three different modalities.
- A first group is asked to pay a positive price for the seed according to
- their willingness to pay.
- This willingness to pay is approximated by the price that is agreed upon
- after bargaining over the seed (starting from a random initial offer price).
- A second group also bargained over the price, but was given a 100 percent
- surprise discount, hence receiving the trial pack for free.
- A third group simply got the seed trial pack for free without going through
- the bargaining process.
+ A first group is asked to pay a positive price for the seed according to their willingness to pay.
+ This willingness to pay is approximated by the price that is agreed upon after bargaining over the seed (starting from a random initial offer price).
+ A second group also bargained over the price,
+ but was given a 100 percent surprise discount,
+ hence receiving the trial pack for free.
+ A third group simply got the seed trial pack for free without going through the bargaining process.
 \end_layout
 
 \begin_layout Standard
-Simply comparing the three groups, we do not find that paying a positive
- price for the seed pack led to higher use or use that is more likely to
- lead to learning about the new technology.
- In fact, the opposite seems to be the case, with even stronger positive
- effects if the farmer was first made aware of the value of the seed through
- the bargaining experiment and then received the 100 percent cash-back.
+Simply comparing the three groups,
+ we do not find that paying a positive price for the seed pack led to higher use or use that is more likely to lead to learning about the new technology.
+ In fact,
+ the opposite seems to be the case,
+ with even stronger positive effects if the farmer was first made aware of the value of the seed through the bargaining experiment and then received the 100 percent cash-back.
  Outcomes in subsequent seasons are different.
- The group that received the seed for free and without being taken through
- the bargaining process reports lower yields and productivity on their maize
- plots.
- The reason for this contradiction is not entirely clear, but there is some
- evidence that farmers that get the seed for free without bargaining pay
- less attention to the seed and use less complementary inputs and good agronomic
- practices.
+ The group that received the seed for free and without being taken through the bargaining process reports lower yields and productivity on their maize plots.
+ The reason for this contradiction is not entirely clear,
+ but there is some evidence that farmers that get the seed for free without bargaining pay less attention to the seed and use less complementary inputs and good agronomic practices.
 \end_layout
 
 \begin_layout Standard
-Confining attention to the group that participated in the bargaining experiment
- allows us to control for that willingness to pay of the farmer and disentangle
- screening, sunk cost and signaling effects.
- We find that a farmer's willingness to pay as approximated by the price
- on which agreement was reached during bargaining does not predict use of
- the seed trial pack.
- We find negative sunk cost effects of trial pack usage, with farmers that
- paid the full price being less likely to use it in ways that would maximize
- learning.
- Farmers that paid the full price were also less likely to use recommended
- agronomic practices such as timely planting and complementary inputs such
- as fertilizer.
- At the same time we do find that farmers that value seed higher put more
- effort and practices into it.
- This leads them to expand the area under cultivation, significantly increasing
- production as valuation rises.
+Confining attention to the group that participated in the bargaining experiment allows us to control for that willingness to pay of the farmer and disentangle screening,
+ sunk cost and signaling effects.
+ We find that a farmer's willingness to pay as approximated by the price on which agreement was reached during bargaining does not predict use of the seed trial pack.
+ We find negative sunk cost effects of trial pack usage,
+ with farmers that paid the full price being less likely to use it in ways that would maximize learning.
+ Farmers that paid the full price were also less likely to use recommended agronomic practices such as timely planting and complementary inputs such as fertilizer.
+ At the same time we do find that farmers that value seed higher put more effort and practices into it.
+ This leads them to expand the area under cultivation,
+ significantly increasing production as valuation rises.
  We do not find evidence that prices signal value or quality.
 \end_layout
 
 \begin_layout Standard
-Our findings suggest that providing goods for free for a limited period
- of time does not increase wastage.
- In fact, free seed trial pack may invoke a zero price effect, whereby farmers
- are more likely to adopt an entire package (including complementary inputs
- and increased effort) if seed is received for free 
+Our findings suggest that providing goods for free for a limited period of time does not increase wastage.
+ In fact,
+ free seed trial pack may invoke a zero price effect,
+ whereby farmers are more likely to adopt an entire package (including complementary inputs and increased effort) if seed is received for free 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "shampanier2007zero"
@@ -10079,20 +9862,14 @@ literal "false"
 \end_inset
 
 .
- Furthermore, the existence of a screening effect does mean that subsidies
- may be justified from a social welfare point of view (for instance to provide
- poor farmers with an initial investment to kick-start longer term adoption)
- or to leverage positive externalizes (where adoption at the aggregate level
- will increase if farmers have more neighbors to learn from).
+ Furthermore,
+ the existence of a screening effect does mean that subsidies may be justified from a social welfare point of view (for instance to provide poor farmers with an initial investment to kick-start longer term adoption) or to leverage positive externalizes (where adoption at the aggregate level will increase if farmers have more neighbors to learn from).
 \end_layout
 
 \begin_layout Standard
-Finally, the fact that we do find lower adoption in the group that got the
- seed for free (but did not participate in the bargain) does suggest that
- free seed may serve as an anchor and reduce willingness-to-pay in the future,
- which is consistent with the finding that the negative effect disappears
- when the value of the seed pack is made salient through the bargaining
- experiment.
+Finally,
+ the fact that we do find lower adoption in the group that got the seed for free (but did not participate in the bargain) does suggest that free seed may serve as an anchor and reduce willingness-to-pay in the future,
+ which is consistent with the finding that the negative effect disappears when the value of the seed pack is made salient through the bargaining experiment.
  
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -10109,11 +9886,8 @@ Ethical clearance
 \end_layout
 
 \begin_layout Standard
-This research received clearance form Makerere's School of Social Sciences
- Research Ethics Committee (MAKSSREC 01.23.627/PR1) as well as from IFPRI
- IRB (DSGD-23-0108).
- The research was also registered at the Ugandan National Commission for
- Science and Technology (SS1657ES).
+This research received clearance form Makerere's School of Social Sciences Research Ethics Committee (MAKSSREC 01.23.627/PR1) as well as from IFPRI IRB (DSGD-23-0108).
+ The research was also registered at the Ugandan National Commission for Science and Technology (SS1657ES).
 \end_layout
 
 \begin_layout Section
@@ -10121,14 +9895,15 @@ Acknowledgments
 \end_layout
 
 \begin_layout Standard
-We acknowledge support from the University of Göttingen, Department of Agricultu
-ral Economics and Rural Development.
+We acknowledge support from the University of Göttingen,
+ Department of Agricultural Economics and Rural Development.
  Additional support was provided by the CGIAR Research Program on Policies,
- Institutions, and Markets (PIM), the CGIAR Seed Equal Research Initiative,
- and the CGIAR Market Intelligence Research Initiative which are funded
- by contributors to the CGIAR Fund (https://www.cgiar.org/funders/).
- We would like to thank Richard Ariong, Marc Charles Wanume and Wilberfoce
- Walukano for excellent support in the field.
+ Institutions,
+ and Markets (PIM),
+ the CGIAR Seed Equal Research Initiative,
+ and the CGIAR Market Intelligence Research Initiative which are funded by contributors to the CGIAR Fund (https://www.cgiar.org/funders/).
+ We would like to thank Richard Ariong,
+ Marc Charles Wanume and Wilberfoce Walukano for excellent support in the field.
 \end_layout
 
 \begin_layout Section
@@ -10137,6 +9912,8 @@ Appendix
 
 \begin_layout Standard
 \begin_inset Float table
+placement document
+alignment document
 wide false
 sideways true
 status collapsed
@@ -10257,8 +10034,7 @@ Sexpr{ifelse(base_balance[3,3,1]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance[3,3,1]<.05,"*",ifelse(base_balance[3,3,1]<.1,"+","")))}}$
- 
+	,ifelse(base_balance[3,3,1]<.05,"*",ifelse(base_balance[3,3,1]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -10272,8 +10048,7 @@ Sexpr{ifelse(base_balance[3,4,1]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance[3,4,1]<.05,"*",ifelse(base_balance[3,4,1]<.1,"+","")))}}$
- 
+	,ifelse(base_balance[3,4,1]<.05,"*",ifelse(base_balance[3,4,1]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -10365,8 +10140,7 @@ Sexpr{ifelse(base_balance[3,3,2]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance[3,3,2]<.05,"*",ifelse(base_balance[3,3,2]<.1,"+","")))}}$
- 
+	,ifelse(base_balance[3,3,2]<.05,"*",ifelse(base_balance[3,3,2]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -10380,8 +10154,7 @@ Sexpr{ifelse(base_balance[3,4,2]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance[3,4,2]<.05,"*",ifelse(base_balance[3,4,2]<.1,"+","")))}}$
- 
+	,ifelse(base_balance[3,4,2]<.05,"*",ifelse(base_balance[3,4,2]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -10473,8 +10246,7 @@ Sexpr{ifelse(base_balance[3,3,3]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance[3,3,3]<.05,"*",ifelse(base_balance[3,3,3]<.1,"+","")))}}$
- 
+	,ifelse(base_balance[3,3,3]<.05,"*",ifelse(base_balance[3,3,3]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -10488,8 +10260,7 @@ Sexpr{ifelse(base_balance[3,4,3]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance[3,4,3]<.05,"*",ifelse(base_balance[3,4,3]<.1,"+","")))}}$
- 
+	,ifelse(base_balance[3,4,3]<.05,"*",ifelse(base_balance[3,4,3]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -10581,8 +10352,7 @@ Sexpr{ifelse(base_balance[3,3,4]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance[3,3,4]<.05,"*",ifelse(base_balance[3,3,4]<.1,"+","")))}}$
- 
+	,ifelse(base_balance[3,3,4]<.05,"*",ifelse(base_balance[3,3,4]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -10596,8 +10366,7 @@ Sexpr{ifelse(base_balance[3,4,4]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance[3,4,4]<.05,"*",ifelse(base_balance[3,4,4]<.1,"+","")))}}$
- 
+	,ifelse(base_balance[3,4,4]<.05,"*",ifelse(base_balance[3,4,4]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -10689,8 +10458,7 @@ Sexpr{ifelse(base_balance[3,3,5]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance[3,3,5]<.05,"*",ifelse(base_balance[3,3,5]<.1,"+","")))}}$
- 
+	,ifelse(base_balance[3,3,5]<.05,"*",ifelse(base_balance[3,3,5]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -10704,8 +10472,7 @@ Sexpr{ifelse(base_balance[3,4,5]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance[3,4,5]<.05,"*",ifelse(base_balance[3,4,5]<.1,"+","")))}}$
- 
+	,ifelse(base_balance[3,4,5]<.05,"*",ifelse(base_balance[3,4,5]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -10797,8 +10564,7 @@ Sexpr{ifelse(base_balance[3,3,6]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance[3,3,6]<.05,"*",ifelse(base_balance[3,3,6]<.1,"+","")))}}$
- 
+	,ifelse(base_balance[3,3,6]<.05,"*",ifelse(base_balance[3,3,6]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -10812,8 +10578,7 @@ Sexpr{ifelse(base_balance[3,4,6]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance[3,4,6]<.05,"*",ifelse(base_balance[3,4,6]<.1,"+","")))}}$
- 
+	,ifelse(base_balance[3,4,6]<.05,"*",ifelse(base_balance[3,4,6]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -10870,8 +10635,7 @@ Sexpr{base_balance[2,4,6]})
 
 \begin_layout Plain Layout
 
-Has used the promoted seed (bazooka) on a randomly chosen plot in the last
- season
+Has used the promoted seed (bazooka) on a randomly chosen plot in the last season
 \end_layout
 
 \begin_layout Plain Layout
@@ -10906,8 +10670,7 @@ Sexpr{ifelse(base_balance[3,3,7]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance[3,3,7]<.05,"*",ifelse(base_balance[3,3,7]<.1,"+","")))}}$
- 
+	,ifelse(base_balance[3,3,7]<.05,"*",ifelse(base_balance[3,3,7]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -10921,8 +10684,7 @@ Sexpr{ifelse(base_balance[3,4,7]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance[3,4,7]<.05,"*",ifelse(base_balance[3,4,7]<.1,"+","")))}}$
- 
+	,ifelse(base_balance[3,4,7]<.05,"*",ifelse(base_balance[3,4,7]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -11014,8 +10776,7 @@ Sexpr{ifelse(base_balance[3,3,8]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance[3,3,8]<.05,"*",ifelse(base_balance[3,3,8]<.1,"+","")))}}$
- 
+	,ifelse(base_balance[3,3,8]<.05,"*",ifelse(base_balance[3,3,8]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -11029,8 +10790,7 @@ Sexpr{ifelse(base_balance[3,4,8]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance[3,4,8]<.05,"*",ifelse(base_balance[3,4,8]<.1,"+","")))}}$
- 
+	,ifelse(base_balance[3,4,8]<.05,"*",ifelse(base_balance[3,4,8]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -11087,7 +10847,8 @@ Sexpr{base_balance[2,4,8]})
 
 \begin_layout Plain Layout
 
-Seed on random plot was recycled less than 4 times? 
+Seed on random plot was recycled less than 4 times?
+ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -11122,8 +10883,7 @@ Sexpr{ifelse(base_balance[3,3,9]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance[3,3,9]<.05,"*",ifelse(base_balance[3,3,9]<.1,"+","")))}}$
- 
+	,ifelse(base_balance[3,3,9]<.05,"*",ifelse(base_balance[3,3,9]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -11137,8 +10897,7 @@ Sexpr{ifelse(base_balance[3,4,9]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance[3,4,9]<.05,"*",ifelse(base_balance[3,4,9]<.1,"+","")))}}$
- 
+	,ifelse(base_balance[3,4,9]<.05,"*",ifelse(base_balance[3,4,9]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -11230,8 +10989,7 @@ Sexpr{ifelse(base_balance[3,3,10]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance[3,3,10]<.05,"*",ifelse(base_balance[3,3,10]<.1,"+","")))}}$
- 
+	,ifelse(base_balance[3,3,10]<.05,"*",ifelse(base_balance[3,3,10]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -11245,8 +11003,7 @@ Sexpr{ifelse(base_balance[3,4,10]<.01,"**"
 
 \begin_layout Plain Layout
 
-	,ifelse(base_balance[3,4,10]<.05,"*",ifelse(base_balance[3,4,10]<.1,"+","")))}}$
- 
+	,ifelse(base_balance[3,4,10]<.05,"*",ifelse(base_balance[3,4,10]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -11337,7 +11094,8 @@ scriptsize
 
 \begin_layout Plain Layout
 
-Note: 
+Note:
+ 
 \end_layout
 
 \end_inset
