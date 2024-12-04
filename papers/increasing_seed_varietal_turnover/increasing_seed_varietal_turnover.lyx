@@ -156,21 +156,25 @@ The Role of Producer and Consumer traits
 \end_layout
 
 \begin_layout Abstract
-This study evaluates the effectiveness of two interventions aimed at increasing the adoption of improved maize seed varieties among smallholder farmers in eastern Uganda.
- The first intervention involves providing farmers with free seed trial packs,
- allowing them to directly experience the agronomic benefits,
+In developing countries,
+ semi-subsistence farmers often play dual roles as both consumers and producers of the same crops.
+ Consequently,
+ decisions regarding crop selection are influenced by a combination of household food security needs and market-oriented considerations.
+ This study assesses the effectiveness of two interventions designed to enhance the adoption of improved maize seed varieties among smallholder farmers in eastern Uganda.
+ A first intervention involves providing farmers with free seed sample packs,
+ allowing them to directly experience the producer related benefits,
  such as higher yield potential and drought resistance.
- The second intervention consists of organizing cooking demonstrations and blind tasting sessions to compare maize flour from the improved variety with local varieties,
+ A second intervention consists of organizing cooking demonstrations and blind tasting sessions to compare maize flour from the improved variety with local varieties,
  focusing on consumption traits like palatability,
  texture,
  and ease of cooking.
- Our findings indicate that the seed trial packs significantly enhance farmers' perceptions of the seed's production traits,
+ We find that the seed sample packs significantly enhance farmers' perceptions of the seed's production traits,
  while the cooking demonstrations improve appreciation for its consumption attributes.
  There is evidence suggesting that the cooking demonstration intervention increases the adoption of improved seed varieties.
  However,
- farmers who received the seed trial packs are more likely to reuse the harvested grain as seed in the subsequent season.
- We conclude that although the seed trial pack intervention has the greater overall impact,
- addressing additional constraints is necessary to achieve higher seed varietal turnover.
+ farmers who received the seed sample packs are more likely to reuse the harvested grain as seed in the subsequent season,
+ essentially crowding out the adoption of fresh seed.
+ We argue that this may be a rational response in the context of positive transaction costs related to the use of improved seed varieties.
 \end_layout
 
 \begin_layout Abstract
@@ -189,45 +193,48 @@ JEL:
 \end_layout
 
 \begin_layout Section
-Motivation
+Introduction
 \end_layout
 
 \begin_layout Standard
-To sustainably feed a growing population without exacerbating climate change and harming biodiversity,
- more food must be grown on less land.
- Green revolution technologies,
- particularly improved planting materials,
- play a crucial role as they promise higher yields and better adaptation to challenging environmental conditions such as drought.
- Historically,
- breeders have focused primarily on production-related traits like yield,
+To sustainably feed a growing global population while mitigating climate change and preserving biodiversity,
+ it is essential to produce more food on less land.
+ Green Revolution technologies,
+ particularly the development of improved planting materials,
+ have been instrumental in achieving higher yields and enhancing resilience to environmental challenges such as drought.
+ Traditionally,
+ breeding programs have prioritized production-related traits,
+ such as yield,
  drought tolerance,
  and pest resistance.
- Currently,
- there is an increasing emphasis on consumer-oriented attributes,
+ However,
+ there is a growing focus on consumer-oriented traits,
  including taste,
  color,
  texture,
  and ease of cooking.
- For these new technologies to be widely adopted,
- it is essential to raise farmers' awareness of these beneficial traits.
+ Integrating these consumption-oriented attributes alongside production advantages is crucial for driving demand for improved crop varieties,
+ whether among subsistence farmers growing their own food or producers targeting commercial markets.
 \end_layout
 
 \begin_layout Standard
-Similar to the historical focus in breeding,
+For new technologies to be widely adopted,
+ it is essential to raise farmers' awareness about beneficial traits.
+ Similar to the historical focus in breeding programs,
  sensitization efforts often emphasize production traits.
- A common strategy to encourage farmers to learn about the production traits of a new seed variety is through seed trial packs.
+ A common strategy to encourage farmers to learn about the production traits of a new seed variety is through seed sample packs.
 \begin_inset Foot
 status collapsed
 
 \begin_layout Plain Layout
-One may argue that seed trial packs also enable farmers to discover consumer traits after they harvest the grain obtained from the seed trial pack.
+One may argue that seed sample packs also enable farmers to discover consumer traits after they harvest the grain obtained from the seed sample pack.
  However,
- this would require farmers to keep the grain separate from grain obtained from local seed.
+ this would require farmers to keep the grain separate from grain obtained from local seed and consume the grain themselves (as opposed to selling it).
 \end_layout
 
 \end_inset
 
- These packs,
+ These trial packs,
  typically containing small quantities of seed (e.g.,
  1 kg),
  are provided for free,
@@ -237,7 +244,7 @@ One may argue that seed trial packs also enable farmers to discover consumer tra
 
 \begin_layout Standard
 From a theoretical standpoint,
- seed trial packs can be viewed as a form of subsidy.
+ seed sample packs can be viewed as a form of subsidy.
  Subsidies are often employed to promote adoption and are justified for several reasons.
  First,
  resource-constrained farmers may perceive the risk premium of a new product as too high to justify investment.
@@ -254,7 +261,7 @@ literal "false"
 \end_inset
 
 .
- A one-time subsidy can help initiate adoption,
+ A one-off subsidy in the form of a starter kit can help initiate adoption,
  as supported by the theory of micro poverty traps,
  which posits that households and individuals remain in chronic poverty because they cannot self-finance investments necessary for high returns 
 \begin_inset CommandInset citation
@@ -265,8 +272,18 @@ literal "false"
 \end_inset
 
 .
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+In the context of seed,
+ a sample pack can foster sustained adoption either directly (if the seed is reused in future seasons) or indirectly (if surplus production is sold and the proceeds are used to buy new seed).
+\end_layout
+
+\end_inset
+
  Second,
- it is well known that farmers learn from others when new a technology is introduced 
+ it is well known that farmers learn from others when a new technology is introduced 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "10.1257/aer.100.1.35,campenhout2021role"
@@ -274,10 +291,11 @@ literal "false"
 
 \end_inset
 
- In case where there are positive externalizes,
+ In case where there are positive externalities,
  subsidies may be justified.
  Finally,
- the government may want to inject new seed into the existing degenerated seed stock to increase overall vigor of seed circulating in society 
+ governments may use subsidies to replenish deteriorated seed stocks,
+ enhancing the overall vigor of seeds circulating within society 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "mcguire2016seed"
@@ -289,7 +307,17 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-Surprisingly few studies directly evaluate the effectiveness of seed trial packs in accelerating technology adoption.
+Surprisingly few studies directly evaluate the effectiveness of seed sample packs in accelerating technology adoption and results are mixed.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "10.1257/aer.20150474"
+literal "false"
+
+\end_inset
+
+ distribute stater kits for seed of a new rice variety in India.
+ They find that seventy-six percent of treatment farmers cultivated the technology in the second season following distribution.
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -299,7 +327,7 @@ literal "false"
 \end_inset
 
  found that in Tanzania,
- adding trial packs to demonstration plots within the framework of village-based agricultural advisors did not significantly impact input sales,
+ adding sample packs to demonstration plots within the framework of village-based agricultural advisors had no significant impacts on sales,
  orders received,
  or learning outcomes.
  In many studies,
@@ -323,43 +351,52 @@ literal "false"
 \end_inset
 
  examined different extension approaches,
- including the use of trial packs,
+ including the use of sample packs,
  but their focus was on farmers' willingness to pay,
  elicited through a Becker-DeGroot-Marschak (BDM) auction,
  rather than subsequent adoption of the new technology.
  They found that in the southern highlands of Tanzania,
- bean farmers' willingness to pay was not influenced by seed trial packs.
- Most studies on seed trial packs are limited to a single season and primarily investigate the immediate use of the seed trial pack.
+ bean farmers' willingness to pay was not influenced by seed sample packs.
+ Most studies on seed sample packs are limited to a single season and primarily investigate the immediate use of the seed sample pack.
  Subsequent adoption is often assessed by asking farmers about their intention to use the seed in the next season,
  which can be prone to social desirability bias.
 \end_layout
 
 \begin_layout Standard
-It is much harder to find examples of strategies that emphasize consumption-related traits.
- This is surprising,
- considering that in many contexts where adoption is lacking,
- farmers consume most of the crops they grow.
- Exploratory data analysis indicates that both ease of cooking and taste are important characteristics influencing farmers' choice of which varieties to adopt.
+It is even harder to find examples of strategies that emphasize consumption-related traits.
+ This is surprising given that in many contexts where adoption is lacking,
+ farmers consume most of the crops they grow,
+ and there is a large literature that shows that in such settings consumption and production decisions are inseparable.
  Interventions that focus on demonstrating consumption traits,
  such as cooking demonstrations and tasting sessions,
  are typically concerned with nutrition education and rarely examine subsequent adoption in the following season 
 \begin_inset CommandInset citation
 LatexCommand citep
 before "eg."
-key "REICKS2014259"
+key "olney20152"
 literal "false"
 
 \end_inset
 
 .
+ One exception is 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "de2018biofortification"
+literal "false"
+
+\end_inset
+
+,
+ who study the impact of the HarvestPlus' Reaching End Users project (and includes a demand creation component) on the adoption of bio-fortified crops in Mozambique and Uganda.
 \end_layout
 
 \begin_layout Standard
 In this paper,
- the focus is on increasing seed varietal turnover by highlighting both the production and consumption attributes of improved maize seed varieties to farmers in their roles as producers and consumers.
+ we test to what extent one can accelerate varietal turnover by highlighting both the production and consumption attributes of improved maize varieties to farmers in their roles as producers and consumers.
  To achieve this,
  a field experiment is conducted to test the relative effectiveness of two interventions using a cluster randomized control trial with a simple factorial design.
- The first intervention targets production traits by providing farmers with 1 kg improved seed trial packs.
+ The first intervention targets production traits by providing farmers with 1 kg sample packs with seed of an improved variety.
 \begin_inset Foot
 status collapsed
 
@@ -381,22 +418,30 @@ improved variety
 
 \end_inset
 
- The seed used is a hybrid variety called Bazooka,
- which,
- despite being widely available,
- is relatively new and thus not widely adopted by farmers.
- The primary production trait of this seed is its potential for increased yield.
  Orthogonal to this intervention,
  a second was introduced that involves cooking demonstrations and tasting sessions.
- These demonstrations allow farmers to familiarize themselves with consumption attributes of maize flour derived from the grain grown using improved seed varieties.
+ This intervention allows farmers to familiarize themselves with consumption attributes of maize flour derived from the grain grown using improved varieties.
  Additionally,
- farmers are provided with maize flour samples to further explore consumption traits at home.
+ farmers in this treatment are provided with maize flour samples to further explore consumption traits at home.
 \end_layout
 
 \begin_layout Standard
-Somewhat surprisingly,
- we find that farmers who received a free seed sample are actually less likely to use improved seed in the next season.
- Further analysis suggests this is because farmers who received Bazooka for free used grain obtained from this seed as planting material in the next season.
+The field experiment was conducted in four districts in eastern Uganda among a representative sample of about 1,500 farmers.
+ The area,
+ commonly know as the Busoga Kingdom,
+ is populated with smallholder farmers who produce for both home consumption and the market.
+ The seed we promoted in this study is a hybrid variety called Bazooka,
+ which,
+ despite being widely available,
+ was relatively new and thus not widely adopted by farmers.
+ The primary production trait of this seed is its potential for increased yield.
+ The study ran over two consecutive agricultural seasons in 2023,
+ with endline data being collected early 2024.
+\end_layout
+
+\begin_layout Standard
+We find that farmers who received a free seed sample are actually less likely to use fresh seed of an improved variety in the next season.
+ This counter intuitive result is caused by the fact that farmers who received Bazooka for free used grain obtained from this seed as planting material in the next season.
  Since we categorize recycled hybrid seed as local seed,
  these farmers are considered non-adopters in our analysis.
  However,
@@ -405,27 +450,45 @@ Somewhat surprisingly,
 \end_layout
 
 \begin_layout Standard
-While we expected that increased attention to consumption traits may affect the gender balance in decision-making with respect to seed choice,
+While we expected that increased attention to consumption traits would increase the role of women in the decision making process with respect to seed choice,
  we do not find this effect.
  We also test if making consumption traits more salient would increase consumption,
  but also here we do not find an effect.
- We also do not find effects further down the impact pathway in terms of food security or welfare.
+ Moreover,
+ we do not find effects further down the impact pathway in terms of food security or welfare.
 \end_layout
 
 \begin_layout Standard
 Exploring some of the impact pathways,
- we do find that the cooking demonstration and tasting session increased the share of farmers that rank improved seed higher on a range of consumption attributes such as taste,
+ we do find that the cooking demonstration and tasting session increased the share of farmers that rank improved seed varieties higher on a range of consumption attributes such as taste,
  portions,
  appearance,
  and ease of cooking.
- Also in line with the theory of change,
- we find that farmers that received the seed trial pack rank improved seed higher in terms of production-related attributes such as yield,
+ Again in line with the theory of change,
+ we find that farmers that received the seed sample pack rank improved seed higher in terms of production-related attributes such as yield,
  abiotic and biotic stress resistance,
  time to maturity,
  and germination rate.
  Interestingly,
- the seed trial pack also positively affects how farmers think about consumption traits of improved seed,
- suggesting farmers consume grain obtained from the seed trial pack and pay close attention to consumption attributes.
+ the seed sample pack also positively affects how farmers think about consumption traits of improved varieties,
+ suggesting farmers consume grain obtained from the seed sample pack and pay close attention to consumption attributes.
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Berber:
+ This is contradicting footnote 1 a bit,
+ and is it in the seed trial pack only treatment arm or could it be coming from 50% of these farmers having been in the combined treatment?
+ (writing this before I've made it through the results though).
+ Bjorn:
+ True,
+ it seems indeed that farmers keep the seed separate and do consume it themselves.
+ It can not come from the 50 percent because we estimate fully saturated models control for the orthogonal treatment.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -457,7 +520,7 @@ Experimental design
 \begin_layout Standard
 In this study,
  we employ a field experiment to evaluate the effectiveness of two interventions,
- which are elaborated in the subsequent section.
+ which we elaborate on in the subsequent section.
  This evaluation is conducted using a cluster randomized controlled trial (RCT) structured as a 2x2 factorial design.
  Each factor includes both a control and a treatment level,
  with interventions clustered at the village level.
@@ -466,9 +529,9 @@ In this study,
 \end_layout
 
 \begin_layout Standard
-The first factor pertains to the seed trial pack treatment.
+The first factor pertains to the seed sample pack treatment.
  Farmers in the treatment villages receive a complimentary sample of a new,
- improved seed variety (bazooka),
+ improved maize seed variety (bazooka),
  whereas those in the control villages do not receive this free sample pack.
 \begin_inset Foot
 status collapsed
@@ -487,9 +550,9 @@ to account for potential income effects
 \begin_layout Standard
 The second factor involves a cooking demonstration and tasting session.
  In the treatment villages,
- farmers participate in a demonstration where they can taste food prepared with the promoted seed variety and compare it directly to food made with the local variety.
+ farmers are invited to participate in a session where they can taste food prepared with the promoted variety (bazooka) and compare it directly to food made with the local variety.
  Additionally,
- all participants receive a free sample of maize flour derived from the improved seed variety to try at home.
+ all participants receive a free sample of maize flour derived from the improved variety to try at home.
  In the control villages,
  these events are not organized.
 \end_layout
@@ -502,9 +565,7 @@ Treatment assignment is conducted at the village level to ensure that control an
  lives adjacent to a treatment farmer who receives a free bag of maize seed.
  By assigning treatments at the village level,
  we also mitigate potential concerns about spillover effects,
- where benefits or changes experienced by treatment farmers might unintentionally influence the control farmers.
- This strategy helps to maintain the integrity of the experimental conditions and ensures that the observed effects can be more accurately attributed to the interventions being tested.
- 
+ where benefits or changes experienced by treatment farmers might unintentionally influence control farmers.
 \end_layout
 
 \begin_layout Subsection
@@ -512,16 +573,16 @@ Treatments
 \end_layout
 
 \begin_layout Standard
-The first intervention is straightforward and involves providing a seed trial pack to the household member responsible for most maize cultivation decisions.
- This trial pack contains an improved seed variety (hybrid seed) that is currently available in the market but has not yet been widely adopted by farmers.
+The first intervention is straightforward and involves providing a seed sample pack to the household member responsible for most maize cultivation decisions.
+ This sample pack contains an improved variety that is currently available in the market but has not yet been widely adopted by farmers.
  Specifically,
- we used 1 kg bags of bazooka seed,
+ we provided 1 kg bags of bazooka seed,
  which is sufficient to plant approximately 1/8 of an acre.
- The control condition for this factor is the absence of a seed trial pack,
+ The control condition for this factor is the absence of a seed sample pack,
  meaning these households do not receive the pack.
  However,
  both the treatment and control groups are informed about the existence and benefits of the improved seed variety.
- This allows us to isolate the effect of the trial pack from the effects of merely having knowledge about the improved seeds.
+ This allows us to isolate the effect of the sample pack from the effects of merely having knowledge about the seeds of the improved variety.
 \end_layout
 
 \begin_layout Standard
@@ -530,11 +591,11 @@ For the second factor,
  Here,
  sampled farmers of the treatment villages are invited to a central place (the village chairperson's residence) for a facilitated meeting.
  The facilitator starts by asking the group to mention the most commonly grown varieties by farmers in the village.
- These varieties are then grouped into 
+ These varieties are grouped into 
 \begin_inset Quotes eld
 \end_inset
 
-improved seed varieties
+improved varieties
 \begin_inset Quotes erd
 \end_inset
 
@@ -542,7 +603,7 @@ improved seed varieties
 \begin_inset Quotes eld
 \end_inset
 
-local seed varieties
+local varieties
 \begin_inset Quotes erd
 \end_inset
 
@@ -563,7 +624,7 @@ Dhuuma Omulongosemu
 \begin_inset Quotes eld
 \end_inset
 
-improved seed
+seed of an improved variety
 \begin_inset Quotes erd
 \end_inset
 
@@ -582,16 +643,16 @@ Dhuuma Omusoga
 
 \end_inset
 
- Farmers are then asked to rate the two categories based on various consumption attributes by a show of hands.
+ Farmers are then asked to rank the two categories based on ratings of various consumption attributes by a show of hands.
  To facilitate the discussion,
- flip charts display the five most common consumption traits:
+ flip charts were pre-filled with the five most common consumption traits:
  taste,
  texture,
  color,
  aroma,
  and the degree to which the flour expands during cooking.
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 These consumption traits were identified through focus group discussions.
@@ -616,12 +677,12 @@ These consumption traits were identified through focus group discussions.
 
 \begin_layout Standard
 After the rating,
- we proceed with a blind tasting.
+ we proceed with blind tasting.
  The facilitator asks a volunteer from the participants to prepare posho,
  a thick,
  dense porridge made by mixing maize flour with boiling water until it reaches a dough-like consistency.
  Two meals are prepared:
- one using flour obtained from local seed and one using flour derived from Bazooka seed (the hybrid seed variety used in the seed trial pack).
+ one using flour obtained from local variety and one using flour derived from Bazooka (the hybrid variety used in the seed sample pack).
  The cook is unaware of which flour corresponds to which maize type.
 \begin_inset Foot
 status collapsed
@@ -643,8 +704,8 @@ The research team provided all necessary utensils for the session,
  The resulting dishes are then displayed on a table,
  and farmers are invited to taste the two varieties,
  labeled as the variety on the left and the variety on the right.
- The farmers then rate the two varieties on various consumption attributes,
- and they are asked to indicate which of the two samples is superior for each attribute by a show of hands.
+ The farmers then rate the two varieties on the various consumption attributes again,
+ indicating which of the two samples is superior for each attribute by a show of hands.
 \end_layout
 
 \begin_layout Standard
@@ -716,7 +777,7 @@ where
 \emph on
 j
 \emph default
- was randomly assigned to the seed trial pack intervention (and zero otherwise),
+ was randomly assigned to the seed sample pack intervention (and zero otherwise),
  and 
 \begin_inset Formula $T_{j}^{D}$
 \end_inset
@@ -752,8 +813,8 @@ literal "false"
 
 \end_inset
 
-.
- Standard errors are clustered at the level of randomization (village level).
+,
+ with standard errors clustered at the level of randomization (village level).
 \end_layout
 
 \begin_layout Standard
@@ -782,8 +843,16 @@ nolink "false"
 ),
  we may wish to enhance statistical power by pooling observations across the orthogonal treatments if we find that a treatment effect is smaller than the minimal detectable effect size assumed during power calculations.
  To achieve this,
- we will treat the orthogonal treatment as a covariate to adjust for,
- and interact the treatment variable with the demeaned orthogonal treatment.
+ we will treat the orthogonal treatment as a covariate we want to adjust for,
+ and interact the treatment variable with the demeaned orthogonal treatment 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "10.1214/12-AOAS583"
+literal "false"
+
+\end_inset
+
+.
  This approach provides a more robust and unbiased estimate of the treatment effect:
 \end_layout
 
@@ -803,7 +872,7 @@ Where now
 \begin_inset Formula $T_{i}^{M}$
 \end_inset
 
- is a dummy for the main treatment (the seed trial pack or the cooking demonstration respectively) and 
+ is a dummy for the main treatment (the seed sample pack or the cooking demonstration respectively) and 
 \begin_inset Formula $T_{i}^{O}$
 \end_inset
 
@@ -834,14 +903,18 @@ Timeline
 \end_layout
 
 \begin_layout Standard
-To assess the impact of seed trial packs,
- two agricultural seasons are required.
- Seed samples are distributed to farmers before the first season,
- allowing them to experiment with the new seed in their fields.
- The impact of the seed trial pack is evaluated in the subsequent season,
- as farmers adjust their practices based on their experiences with the seeds from the first season.
- In contrast,
- the cooking demonstration and tasting session can result in immediate behavior changes following the intervention.
+To assess the impact of seed sample packs,
+ we look at two consecutive agricultural seasons.
+ That is,
+ our main outcome of interest is not whether farmers use the seed trial pack on their fields,
+ but whether the fact that they could experiment with a new seed variety led them to continue using it in subsequent seasons.
+ As such,
+ key outcomes to assess the impact of the seed sample pack seed choice in the second season and yield after the second season.
+ This is different for the cooking demonstration and tasting session.
+ Here,
+ we expect that after having been exposed to the intervention,
+ behavior change can be observed in the agricultural season immediately following the intervention.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -896,9 +969,10 @@ Fortunately,
  while the second season,
  referred to as Nsambya,
  extends from August/September to November/December.
- We distributed the seed trial packs along with baseline data collection a few months before planting commenced for the first agricultural season in 2023.
- Following this,
- we conducted the cooking demonstration and tasting session in time for the second season of 2023.
+ We distributed the seed sample packs along with baseline data collection a few months before planting commenced for the first agricultural season in 2023.
+ This then allows farmers to experiment with the new seed in the first season of 2023.
+ After the first season and before the start of the second season,
+ the cooking demonstrations and tasting sessions were organized.
  Endline data was collected in February 2024,
  after the conclusion of the second season.
  This timeline is also depicted in Figure 
@@ -925,7 +999,7 @@ Sample size was determined through a series of power simulations detailed in the
 status collapsed
 
 \begin_layout Plain Layout
-The primary outcome used in these simulations is a binary indicator of improved seed use at the farmer level.
+The primary outcome used in these simulations is a binary indicator of quality seed of an improved variety use at the farmer level.
  Data from a previous project,
  which included 3,450 smallholder maize farmers across 345 villages,
  was used to estimate the intra-cluster (within-village) correlation for this outcome 
@@ -937,7 +1011,7 @@ literal "false"
 \end_inset
 
 .
- We assumed a treatment effect of a 13.5 percentage point increase for both the seed trial treatment and the consumption treatment,
+ We assumed a treatment effect of a 13.5 percentage point increase for both the seed sample treatment and the consumption treatment,
  and a 23.5 percentage point increase for the interaction effect.
  The R code used for the simulations is available 
 \begin_inset CommandInset href
@@ -966,21 +1040,25 @@ literal "false"
  The simulations resulted in a sample design of 148 villages,
  with 10 households in each village.
  In this setup,
- 74 villages (740 households) will receive a free trial pack,
- and 74 villages (740 households) will be exposed to the consumption treatment.
- Approximately half of these villages will receive both treatments,
- resulting in around 37 villages (370 households) receiving both interventions.
- With this design,
- we are not powered to detect all three effects simultaneously.
+ 74 villages (740 households) would receive a free sample pack,
+ and 74 villages (740 households) would be exposed to the consumption treatment.
+ Approximately half of the villages in each treatment group (or around 37 villages comprising of 370 households) )would receive both treatments.
+ To account for attrition,
+ we collected data on 2 more villages in each treatment cell.
+ This leads to a total sample size of 1,560 households located in 156 villages.
+\end_layout
+
+\begin_layout Standard
+With this design,
+ sample size,
+ and assumptions about outcome variable and minimum detectable effect sizes detailed in the pre-analysis plan,
+ we are not powered to detect both main effects and the interaction simultaneously.
  Specifically,
  we can estimate a positive effect for both treatments and their interaction at the 5% significance level in only 68% of cases.
  However,
- when considering the treatments individually,
- we achieve conventional power levels for both treatments and a power of up to 0.97 for the interaction effect.
- We are confident in identifying at least one of the three parameters of interest—
-seed packs,
- the consumer intervention,
- or their interaction.
+ when we only require one hypothesis to be detected,
+ we achieve power levels in excess of the conventional 80%.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -1001,7 +1079,7 @@ chosen for their relatively low adoption rates of the improved seed variety (Baz
 \end_layout
 
 \begin_layout Standard
-The study population comprises smallholder maize farmers.
+The study population comprises of smallholder maize farmers.
  To obtain a representative random sample,
  villages were selected with probability proportional to the number of households within each village.
  Within each sampled village,
@@ -2054,16 +2132,16 @@ nolink "false"
 \end_inset
 
  The seed type of interest was Bazooka,
- the hybrid seed that is also utilized in our experiment.
+ the hybrid seed variety that is also utilized in our experiment.
  At baseline,
  only about 7 percent of farmers reported having used Bazooka seed on the randomly selected plot in the previous season.
- We also asked where the seed used on the randomly selected plot was obtained.
- Results indicate that approximately 29 percent of farmers sourced their seed from formal channels,
+ We also asked where the seed used on the randomly selected plot was obtained from.
+ Results indicate that approximately 30 percent of farmers sourced their seed from formal channels,
  such as agro-input dealers,
  non-governmental organizations,
  or the government extension system (Operation Wealth Creation).
  Conversely,
- 47 percent of farmers reported reusing seed from previous seasons,
+ 54 percent of farmers reported reusing seed from previous seasons,
  with some having used it for more than four seasons.
  Notably,
  Open Pollinated Varieties that have been used more than four times tend to lose their yield advantage.
@@ -2151,7 +2229,7 @@ textit{Interacted model}}
 
 \begin_layout Plain Layout
 
-& mean & trial & cons & trial & cons & interact 
+& mean & sample & cons & sample & cons & interact 
 \backslash
 
 \backslash
@@ -2921,7 +2999,7 @@ Sexpr{format(round(df_balance[3,2,8],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Used seed that is recycled more than 5 seasons on randomly selected plot?
+Used seed that is recycled more than 3 seasons on randomly selected plot?
  
 \end_layout
 
@@ -3163,7 +3241,9 @@ ref{eq:one};
  5 and 10
 \backslash
 % levels.
- Productivity is log transformed (means and standard deviations are in levels).
+ Household  size,
+ distance to nearest agro-input shop,
+ and productivity is transformed using the inverse hyperbolic sine transformation (means and standard deviations are in levels).
 \end_layout
 
 \end_inset
@@ -3228,7 +3308,7 @@ nolink "false"
 
 \end_inset
 
- for the seed trial treatment (in which case the cooking demonstration and tasting treatment is considered the orthogonal treatment).
+ for the seed sample treatment (in which case the cooking demonstration and tasting treatment is considered the orthogonal treatment and controlled for).
  In the third column,
  this is reversed,
  showing 
@@ -3246,7 +3326,7 @@ nolink "false"
 
 \end_inset
 
- for the cooking demonstration and tasting treatment (with the seed trial treatment now considered the orthogonal treatment).
+ for the cooking demonstration and tasting treatment (with the seed sample treatment now considered the orthogonal treatment and controlled for).
  The fourth,
  fifth and sixth columns correspond to 
 \begin_inset Formula $\beta_{T}$
@@ -3277,15 +3357,10 @@ nolink "false"
 
 \begin_layout Standard
 The estimates indicate good overall balance.
- Specifically,
- the proportion of male household heads is about 4 percentage points lower in the subsample assigned to the cooking demonstration treatment compared to those not exposed to the intervention,
+ The proportion of male household heads is about 4 percentage points lower in the subsample assigned to the cooking demonstration treatment compared to those not exposed to the intervention,
  but this difference is only significant at the 10 percent level.
- Additionally,
- this group has a slightly higher proportion of seed recyclers,
- with the difference being significant at the 5 percent level.
- However,
- considering that out of 50 comparisons,
- we would expect 2.5 to be significant at the 5 percent level and 5 to be significant at the 10 percent level by chance alone,
+ Considering that out of 50 comparisons,
+ we would expect 5 outcomes to be significant at the 10 percent level by chance alone,
  we conclude that the randomization appears to have been effective.
 \end_layout
 
@@ -3306,14 +3381,14 @@ Attrition was minimal:
 One of the first questions we asked was whether farmers recalled the treatment,
  irrespective of their treatment group.
  This question serves as a useful proxy to assess compliance.
- For the trial pack treatment,
- 98 percent of farmers in the treatment group indicated that they received a seed trial pack from us in March 2023.
- However,
- 8.6 percent of farmers in the control group also indicated that they received a seed pack from us,
- representing excess coverage.
+ For the sample pack treatment,
+ 98 percent of farmers in the treatment group indicated that they received a seed sample pack from us in March 2023.
+ Furthermore,
+ only 8.6 percent of farmers in the control group indicated that they received a seed pack from us,
+ suggesting only limited excess coverage.
  For the cooking demonstration treatment,
  92 percent of farmers in the treatment group recalled being invited to a cooking and tasting demonstration,
- indicating a failure to reach rate of 8 percent.
+ corresponding to a failure to reach rate of 8 percent.
  Meanwhile,
  96 percent of farmers in the control group did not recall a cooking and tasting demonstration,
  leading to an excess coverage rate of 4 percent.
@@ -3335,7 +3410,8 @@ name "subsec:Adoption"
 \end_layout
 
 \begin_layout Standard
-Adoption of improved seed varieties is the primary outcome of interest in this study.
+Adoption of improved varieties is the primary outcome of interest in this study.
+ Therefore,
  Table 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3347,7 +3423,7 @@ nolink "false"
 
 \end_inset
 
- looks at adoption in general,
+ investigates if farmers use quality seed of improved varieties in general,
  while Table 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3359,7 +3435,7 @@ nolink "false"
 
 \end_inset
 
- asks more detailed questions about a seed use and practices on a particular (randomly selected) plot within the household.
+ asks more detailed questions about seed use and practices on a particular (randomly selected) plot within the household.
  As mentioned in Section 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3384,7 +3460,18 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-The structure of this table,
+The structure of Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "adoptiom"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+,
  and all other tables below,
  is the same as the one used in Table 
 \begin_inset CommandInset ref
@@ -3398,7 +3485,8 @@ nolink "false"
 \end_inset
 
 .
- It reports overall sample means at endline,
+ It reports overall sample means (this time at endline;
+ column 1),
  as well as intent-to-treat estimates for the pooled model in Equation 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3410,7 +3498,7 @@ nolink "false"
 
 \end_inset
 
- and the fully interacted model in Table 
+ (columns 2 and 3) and the fully interacted model in Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:one"
@@ -3421,7 +3509,7 @@ nolink "false"
 
 \end_inset
 
-.
+ (columns 4 to 6).
 \end_layout
 
 \begin_layout Standard
@@ -3430,7 +3518,7 @@ placement document
 alignment document
 wide false
 sideways true
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -3504,7 +3592,7 @@ textit{Interacted model}}
 
 \begin_layout Plain Layout
 
-& mean & trial & demo & trial & demo & interact & nobs
+& mean & sample & demo & sample & demo & interact & nobs
 \backslash
 
 \backslash
@@ -4386,7 +4474,31 @@ ref{eq:one};
 \end_layout
 
 \begin_layout Standard
-This discrepancy is due to a change in the question used to measure seed use.
+Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "adoptiom"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ shows that at enline about 25 percent of farm households used maize seed of an improved variety on at least one plot in the second season of 2023.
+ This is significantly lower than the share reported during baseline (see Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "balance_table"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+).
+ This discrepancy is due to a change in the question used to measure seed use.
  While at baseline we asked a single,
  broad question,
  at endline we inquired about seed use on each plot individually.
@@ -4398,7 +4510,7 @@ This discrepancy is due to a change in the question used to measure seed use.
 \end_layout
 
 \begin_layout Standard
-We find that the seed trial pack intervention reduced the likelihood of adoption,
+We find that the seed sample pack intervention reduced the likelihood of adoption,
  regardless of the model used.
  This reduction is substantial,
  amounting to approximately half of the mean adoption rate.
@@ -4413,7 +4525,7 @@ We define a similar variable to examine the adoption of the specific seed used i
  about 9 percent of farmers use fresh Bazooka seed on at least one plot.
  Notably,
  when considering this outcome,
- the negative effect of the seed trial pack disappears.
+ the negative effect of the seed sample pack disappears.
  In fact,
  we now find that farmer households exposed to the cooking demonstration intervention are more likely to use fresh Bazooka seed in the season following the intervention.
 \end_layout
@@ -4426,8 +4538,8 @@ Next,
  it could also be that the intervention changes the total number of plots used for cultivation,
  so we also scale the number of plots on which improved seed was used by the total number of plots.
  We find that improved seed was planted on 0.33 plots in the entire sample.
- The seed trial pack reduced the number of plots on which improved seed was planted.
- We further find that the seed trial pack intervention also reduced the share of plots on which improved seed was planted by 13 to 14 percentage points.
+ The seed sample pack reduced the number of plots on which improved seed was planted.
+ We further find that the seed sample pack intervention also reduced the share of plots on which improved seed was planted by 13 to 14 percentage points.
  This suggests that total number of plots did not change,
  but that treated households dis-adopted.
 \end_layout
@@ -4438,14 +4550,14 @@ A related outcome is the area planted with improved seed.
  on average,
  households planted about 0.34 acres with improved seed.
  However,
- in households that received a seed trial pack,
- the area planted with improved seed was 0.16 acres less compared to households that did not receive a seed trial pack.
+ in households that received a seed sample pack,
+ the area planted with improved seed was 0.16 acres less compared to households that did not receive a seed sample pack.
  To account for potential changes in total acreage due to the intervention,
  we also scale the area planted with improved seed by the total area under cultivation.
  We observe a reduction in the proportion of the total area planted with improved seed,
  suggesting that the intervention led farmers to switch from planting improved seed to planting local seed.
  Additionally,
- the summary index confirms a significant and negative impact of the seed trial pack on these adoption outcomes.
+ the summary index confirms a significant and negative impact of the seed sample pack on these adoption outcomes.
 \end_layout
 
 \begin_layout Standard
@@ -4509,7 +4621,7 @@ nolink "false"
 
 \end_inset
 
- with negative effects on the adoption of seed of an improved variety for the seed trial pack treatment,
+ with negative effects on the adoption of seed of an improved variety for the seed sample pack treatment,
  but a positive effect on the use of fresh bazooka seed from the cooking demonstration.
  The table further indicates that reduced adoption leads to lower quantities of improved seed used,
  both in absolute terms and when measured per acre.
@@ -4604,7 +4716,7 @@ textit{Interacted model}}
 
 \begin_layout Plain Layout
 
-& mean & trial & demo & trial & demo & interact & nobs 
+& mean & sample & demo & sample & demo & interact & nobs 
 \backslash
 
 \backslash
@@ -5383,15 +5495,15 @@ ref{eq:one};
 
 \begin_layout Standard
 At first glance,
- the results for the seed trial packs seem counterintuitive.
- The primary objective of distributing seed trial packs is to increase the adoption of improved seed varieties in subsequent years.
+ the results for the seed sample packs seem counterintuitive.
+ The primary objective of distributing seed sample packs is to increase the adoption of improved seed varieties in subsequent years.
  However,
- our findings suggest that a significant portion of farmers in our sample opted to recycle seed from the trial packs rather than purchasing fresh Bazooka seed from agro-input dealers.
+ our findings suggest that a significant portion of farmers in our sample opted to recycle seed from the sample packs rather than purchasing fresh Bazooka seed from agro-input dealers.
  According to our definition of improved seed,
  recycled Bazooka seed does not qualify as such.
  Furthermore,
  the intervention appears to have inadvertently crowded out the use of fresh improved seed:
- the high yields experienced with the trial packs led farmers to continue using recycled Bazooka seed.
+ the high yields experienced with the sample packs led farmers to continue using recycled Bazooka seed.
  In contrast,
  farmers in the control group may have been dissatisfied with the local seed they were using.
  This dissatisfaction could have led them to seek fresh seed or use an Open Pollinated Variety (OPV) that was recycled fewer than four times.
@@ -5506,7 +5618,7 @@ textit{Interacted model}}
 
 \begin_layout Plain Layout
 
-& mean & trial & cons & trial & cons & interact & nobs 
+& mean & sample & cons & sample & cons & interact & nobs 
 \backslash
 
 \backslash
@@ -5910,7 +6022,7 @@ nolink "false"
  Contrary to our expectations,
  the consumption intervention does not show a significant effect on this involvement.
  However,
- there is a positive effect associated with the seed trial pack intervention,
+ there is a positive effect associated with the seed sample pack intervention,
  observed only in the fully interacted model,
  with significance at the 10 percent level.
 \end_layout
@@ -6058,7 +6170,7 @@ textit{Interacted model}}
 
 \begin_layout Plain Layout
 
-& mean & trial & cons & trial & cons & interact & nobs 
+& mean & sample & cons & sample & cons & interact & nobs 
 \backslash
 
 \backslash
@@ -6566,14 +6678,14 @@ nolink "false"
 The first two questions assess subjective measures of relative well-being,
  both within the village and over time.
  Approximately 35 percent of farm households report that they perceive themselves as better off compared to the average within their village.
- There is no significant change in this perception following either the seed trial pack or the cooking demonstration and tasting session.
+ There is no significant change in this perception following either the seed sample pack or the cooking demonstration and tasting session.
  Additionally,
  42 percent of households believe they are better off than they were six months ago—
 approximately one agricultural season prior.
  Notably,
- there is some indication that farmers in the seed trial pack group are more likely to feel better off compared to those who did not receive a seed trial pack.
- This may be due to the perceived benefits from the seed trial pack,
- either through improved harvests or a sense of improvement even if they recycled the trial pack seed rather than adopting new seed (despite yields not showing a significant increase,
+ there is some indication that farmers in the seed sample pack group are more likely to feel better off compared to those who did not receive a seed sample pack.
+ This may be due to the perceived benefits from the seed sample pack,
+ either through improved harvests or a sense of improvement even if they recycled the sample pack seed rather than adopting new seed (despite yields not showing a significant increase,
  as detailed in Table 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -6668,7 +6780,7 @@ textit{Interacted model}}
 
 \begin_layout Plain Layout
 
-& mean & trial & cons & trial & cons & interact & nobs 
+& mean & sample & cons & sample & cons & interact & nobs 
 \backslash
 
 \backslash
@@ -7386,7 +7498,7 @@ nolink "false"
  with the effects being quite similar.
  Overall,
  82 percent of farmers in our sample are familiar with the Bazooka variety.
- The intervention with the most pronounced impact on this specific knowledge was the seed trial pack,
+ The intervention with the most pronounced impact on this specific knowledge was the seed sample pack,
  likely because it directly involved the Bazooka variety,
  with its name prominently displayed on the packaging.
  In contrast,
@@ -7432,7 +7544,7 @@ nolink "false"
 
 \begin_layout Standard
 As noted in the introduction,
- seed trial packs aim to mitigate the perceived risk associated with trying new seed varieties.
+ seed sample packs aim to mitigate the perceived risk associated with trying new seed varieties.
  To assess changes in perceived risk in response to the interventions,
  we asked farmers to rate how likely they believe it is that using improved seed varieties would result in lower yields compared to local seed.
  Responses were recorded on a 4-point Likert scale,
@@ -7481,17 +7593,17 @@ somewhat likely
 An additional rationale for subsidizing or providing seed at no cost is to harness potential spillover effects to enhance adoption.
  To examine whether our interventions influenced social learning,
  we included questions on whether farmers recommended any improved seed varieties to others.
- A similar question was posed specifically regarding the seed variety used in the trial pack,
+ A similar question was posed specifically regarding the seed variety used in the sample pack,
  but only for those farmers who were familiar with Bazooka.
 \end_layout
 
 \begin_layout Standard
 Our findings indicate that a substantial proportion of farmers recommend improved seed to their peers.
  Notably,
- the likelihood of recommending improved seed is significantly higher among those who received the seed trial pack.
+ the likelihood of recommending improved seed is significantly higher among those who received the seed sample pack.
  When focusing specifically on Bazooka,
  the difference becomes even more pronounced.
- Receiving a seed trial pack increases the probability of recommending Bazooka by 38 to 44 percentage points,
+ Receiving a seed sample pack increases the probability of recommending Bazooka by 38 to 44 percentage points,
  depending on the model used.
 \end_layout
 
@@ -7499,7 +7611,7 @@ Our findings indicate that a substantial proportion of farmers recommend improve
 Finally,
  we examined farmers' intentions regarding future use of improved seed.
  Although a considerable proportion of farmers expressed an intention to use improved seed in the future,
- we did not observe a significant impact from either the seed trial pack nor the cooking demonstration and tasting session on these intentions.
+ we did not observe a significant impact from either the seed sample pack nor the cooking demonstration and tasting session on these intentions.
  Furthermore,
  we find that,
  overall,
@@ -7517,7 +7629,7 @@ Sexpr{format(round(df_means_path[1,8]*100,digits=0),nsmall=0)}
 \end_inset
 
  percent of farmers indicate that they are very likely to use bazooka in the next season.
- We see that in the group that received a seed trial pack,
+ We see that in the group that received a seed sample pack,
  the percentage is 
 \begin_inset ERT
 status open
@@ -7544,9 +7656,9 @@ Sexpr{format(round(df_path[1,1,8]*100,digits=0),nsmall=0)}
 
 \end_inset
 
- percentage points higher than in the group that did not receive a seed trial pack.
+ percentage points higher than in the group that did not receive a seed sample pack.
  When summarizing these outcomes into an index,
- we observe a positive impact from the seed trial pack.
+ we observe a positive impact from the seed sample pack.
  In contrast,
  the effect of the cooking demonstration and tasting session is less convincing.
 \end_layout
@@ -7634,7 +7746,7 @@ textit{Interacted model}}
 
 \begin_layout Plain Layout
 
-& mean & trial & cons & trial & cons & interact & nobs 
+& mean & sample & cons & sample & cons & interact & nobs 
 \backslash
 
 \backslash
@@ -8624,7 +8736,7 @@ literal "false"
 .
  The cooking demonstrations and tasting sessions are intended to alter these perceptions about the consumption qualities of maize from improved seed varieties.
  Additionally,
- if farmers plant the seed trial pack and process and cook the harvest separately,
+ if farmers plant the seed sample pack and process and cook the harvest separately,
  they may revise their preconceived beliefs about the consumer traits of these improved varieties.
  In Table 
 \begin_inset CommandInset ref
@@ -8686,7 +8798,7 @@ Sexpr{format(round(df_means_cons_traits_seed[1,2]*100,digits=0),nsmall=0)}
 \end_layout
 
 \begin_layout Standard
-We observe that the seed trial intervention resulted in significant improvements across all these measures.
+We observe that the seed sample intervention resulted in significant improvements across all these measures.
  The treatment effects are approximately 20 percentage points,
  indicating a substantial impact.
  In contrast,
@@ -8773,7 +8885,7 @@ textit{Interacted model}}
 
 \begin_layout Plain Layout
 
-& mean & trial & cons & trial & cons & interact & nobs 
+& mean & sample & cons & sample & cons & interact & nobs 
 \backslash
 
 \backslash
@@ -9402,7 +9514,7 @@ nolink "false"
 ,
  the overall satisfaction with the consumption traits of improved seed is high across the sample.
  Furthermore,
- the seed trial pack intervention significantly increased the proportion of farmers who perceive improved seed as superior to local seed across various consumption attributes.
+ the seed sample pack intervention significantly increased the proportion of farmers who perceive improved seed as superior to local seed across various consumption attributes.
  Notably,
  we now also observe that the cooking demonstration and tasting session has influenced consumer perceptions,
  demonstrating its effectiveness in altering views on the quality of improved seed.
@@ -9488,7 +9600,7 @@ textit{Interacted model}}
 
 \begin_layout Plain Layout
 
-& mean & trial & cons & trial & cons & interact & nobs 
+& mean & sample & cons & sample & cons & interact & nobs 
 \backslash
 
 \backslash
@@ -10117,8 +10229,8 @@ nolink "false"
 
 .
  Specifically,
- the negative impact on adoption observed with the seed trial pack can be attributed to a significant proportion of farmers recycling the trial seed.
- These farmers are more likely to report that the grain from the trial seed exceeded their expectations.
+ the negative impact on adoption observed with the seed sample pack can be attributed to a significant proportion of farmers recycling the sample seed.
+ These farmers are more likely to report that the grain from the sample seed exceeded their expectations.
  Conversely,
  farmers in the cooking demonstration group increased their adoption of bazooka seed.
  Although this effect is statistically significant,
@@ -10139,7 +10251,7 @@ Perceptions of producer traits
 \end_layout
 
 \begin_layout Standard
-The seed trial pack is also designed to address preconceived notions farmers may have about the production-related traits of improved seed.
+The seed sample pack is also designed to address preconceived notions farmers may have about the production-related traits of improved seed.
  For example,
  qualitative fieldwork conducted during the study’s preparation revealed that some farmers believed improved seed varieties might offer higher yields but were less resistant to fall armyworm (
 \emph on
@@ -10157,7 +10269,7 @@ literal "false"
 \end_inset
 
 .
- Providing free seed trial packs can be an effective way to alter these perceptions,
+ Providing free seed sample packs can be an effective way to alter these perceptions,
  as it allows farmers to directly experience the production traits of new technology on their own fields 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -10274,7 +10386,7 @@ textit{Interacted model}}
 
 \begin_layout Plain Layout
 
-& mean & trial & cons & trial & cons & interact & nobs 
+& mean & sample & cons & sample & cons & interact & nobs 
 \backslash
 
 \backslash
@@ -10971,9 +11083,9 @@ Sexpr{format(round(df_means_prod_traits_seed[1,1]*100,digits=0),nsmall=0)}
 
 \begin_layout Standard
 As with consumer traits,
- the seed trial pack significantly impacts all production-related traits.
+ the seed sample pack significantly impacts all production-related traits.
  Specifically,
- a notably higher proportion of farmers who received the seed trial pack report that the yield exceeded their expectations compared to those who did not receive the trial pack.
+ a notably higher proportion of farmers who received the seed sample pack report that the yield exceeded their expectations compared to those who did not receive the sample pack.
  Conversely,
  we do not observe any significant impact from the cooking demonstration and tasting session on production traits,
  which aligns with our expectations.
@@ -11090,7 +11202,7 @@ textit{Interacted model}}
 
 \begin_layout Plain Layout
 
-& mean & trial & cons & trial & cons & interact & nobs 
+& mean & sample & cons & sample & cons & interact & nobs 
 \backslash
 
 \backslash
@@ -11787,8 +11899,8 @@ Sexpr{format(round(df_means_compare_prod_traits_seed[1,1]*100,digits=0),nsmall=0
 
 \begin_layout Standard
 When farmers compare improved seed directly to local seed,
- the summary index indicates a significantly positive impact from the seed trial pack.
- Farmers who received the seed trial pack updated their beliefs most notably regarding germination rates.
+ the summary index indicates a significantly positive impact from the seed sample pack.
+ Farmers who received the seed sample pack updated their beliefs most notably regarding germination rates.
  Interestingly,
  these farmers also revised their previously pessimistic views on biotic stress resistance.
  Although the effects on other attributes are positive,
@@ -11897,7 +12009,7 @@ textit{Interacted model}}
 
 \begin_layout Plain Layout
 
-& mean & trial & cons & trial & cons & interact & nobs 
+& mean & sample & cons & sample & cons & interact & nobs 
 \backslash
 
 \backslash
@@ -12407,7 +12519,7 @@ nolink "false"
 \end_inset
 
  presents direct comparison between improved seed varieties and local seed.
- We find weak evidence that farmers in the group that received the seed trail pack rate the seed they used on the randomly selected plot higher on a range of post harvest traits than those that did not get a seed trial pack.
+ We find weak evidence that farmers in the group that received the seed trail pack rate the seed they used on the randomly selected plot higher on a range of post harvest traits than those that did not get a seed sample pack.
  We come to a similar conclusion when farmers are asked to directly compare improved seed to local seed.
  As expected,
  we find no impact of the cooking demonstration and tasting session.
@@ -12493,7 +12605,7 @@ textit{Interacted model}}
 
 \begin_layout Plain Layout
 
-& mean & trial & cons & trial & cons & interact & nobs 
+& mean & sample & cons & sample & cons & interact & nobs 
 \backslash
 
 \backslash
@@ -12985,7 +13097,7 @@ Conclusion
 \begin_layout Standard
 In this study,
  we conduct a field experiment to evaluate the effectiveness of two interventions aimed at increasing the adoption of improved maize seed varieties among smallholder farmers in eastern Uganda.
- The first intervention provides free seed trial packs,
+ The first intervention provides free seed sample packs,
  allowing farmers to assess the production-related attributes of the new variety,
  including its yield potential,
  pest tolerance,
@@ -13004,34 +13116,34 @@ The interventions are tested using a cluster randomized controlled trial involvi
 \end_layout
 
 \begin_layout Standard
-Our findings indicate that the seed trial pack intervention has an unintended effect:
+Our findings indicate that the seed sample pack intervention has an unintended effect:
  it reduces the likelihood of adopting improved seed in the subsequent season.
- This counterintuitive result arises because farmers who received the trial pack are more inclined to recycle the seed from the trial pack,
+ This counterintuitive result arises because farmers who received the sample pack are more inclined to recycle the seed from the sample pack,
  rather than purchase fresh seed.
  Notably,
- recycled seed from the trial pack is not categorized as “improved seed” in our analysis.
+ recycled seed from the sample pack is not categorized as “improved seed” in our analysis.
 \end_layout
 
 \begin_layout Standard
 Despite the unexpected outcome concerning seed adoption,
  the intermediary variables align with our expectations and indicate that the interventions achieved their intended effects.
  Specifically,
- the seed trial pack improves perceptions of production-related traits,
+ the seed sample pack improves perceptions of production-related traits,
  while the cooking demonstration and tasting session enhance perceptions of consumption traits.
 \end_layout
 
 \begin_layout Standard
 Interestingly,
- the seed trial pack intervention also positively influences perceptions of consumption-related traits,
+ the seed sample pack intervention also positively influences perceptions of consumption-related traits,
  in addition to production traits.
  From a cost-efficiency standpoint,
  and assuming comparable costs for both interventions,
- the seed trial pack appears to be a more effective approach.
+ the seed sample pack appears to be a more effective approach.
 \end_layout
 
 \begin_layout Standard
-The main lesson from the seed trial pack experiment is the necessity of addressing additional constraints.
- While the trial pack positively impacts farmer perceptions and intentions,
+The main lesson from the seed sample pack experiment is the necessity of addressing additional constraints.
+ While the sample pack positively impacts farmer perceptions and intentions,
  the observed preference for recycling old seed over purchasing fresh seed suggests issues related to seed access.
  Potential barriers include the unavailability of improved seed at local agro-input shops or high seed prices.
  Ultimately,

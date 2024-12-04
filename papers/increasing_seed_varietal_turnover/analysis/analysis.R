@@ -1,11 +1,14 @@
-
+#### this file runs the analysis of endline data for "the "Increasing Adoption and Varietal Turnover of Seed—The Role of Producer and Consumer traits"
+#### b.vancampenhout@cgiar.org 
 rm(list=ls())
 path <- getwd()
 library(dplyr)
-
-#to use vcovCR
 library(clubSandwich)
-### functions definitions
+library(moments)
+########################################################################################################################################
+######################################################### start function definitions ###################################################
+########################################################################################################################################
+
 ###2. Demean and divide outcomes by control group standard deviation (normalizes outcomes to be on comparable scale)
 #https://github.com/cdsamii/make_index/blob/master/r/index_comparison.R
 #function to standardize columns of matrix, sgroup = control group = logical vector
@@ -53,23 +56,62 @@ ihs <- function(x) {
   y <- log(x + sqrt(x ^ 2 + 1))
   return(y)}
 
+# Function to evaluate skewness and recommend transformation
+evaluate_skewness <- function(data) {
+  # Ensure the data is numeric
+  if (!is.numeric(data)) {
+    stop("Input data must be numeric.")
+  }
+  
+  # Calculate skewness
+  skew <- skewness(data, na.rm = TRUE)
+  
+  # Calculate SE of skewness
+  n <- length(data[!is.na(data)])  # Exclude NAs for sample size
+  se_skew <- sqrt(6 / n)
+  
+  # Determine critical value
+  critical_value <- 2.5 * se_skew
+  
+  # Check if skewness is significant
+  is_significant <- abs(skew) > critical_value
+  
+  # Recommendation
+  recommendation <- if (is_significant) {
+    "Data is significantly skewed. Consider transforming."
+  } else {
+    "Data is not significantly skewed. Transformation is likely unnecessary."
+  }
+  
+  # Return results
+  list(
+    Skewness = round(skew, 3),
+    SE_Skewness = round(se_skew, 3),
+    Critical_Value = round(critical_value, 3),
+    Is_Significant = is_significant,
+    Recommendation = recommendation
+  )
+}
+
+########################################################################################################################################
+######################################################### end function definitions #####################################################
+########################################################################################################################################
+
 path <- strsplit(path,"papers/increasing_seed_varietal_turnover/analysis")[[1]]
 #read in baseline data
 bse <- read.csv(paste(path,"baseline/data/public/baseline.csv",sep="/"))
-
+bse <- subset(bse, !(paid_pac=="TRUE" | discounted=="TRUE"))
 ### create unique ID at level of randomization for clustering standard errors 
 bse$cluster_ID <- as.factor(paste(paste(bse$distID,bse$subID, sep="_"), bse$vilID, sep="_"))
-
-bse <- subset(bse, paid_pac == FALSE & discounted == FALSE)
 
 ### read in endline data (anonymized version)
 dta <- read.csv(paste(path,"endline/data/public/endline.csv", sep="/"))
 
 ## drop non-free trial packs and non-free + discount trial packs
-dta <- subset(dta, paid_pac == FALSE & discounted == FALSE)
+dta <- subset(dta, !(paid_pac=="TRUE" | discounted=="TRUE"))
 ## create an indicator for pure control to standardize the indices (sgroup in icsIndex)
 dta$s_ind <- (!dta$cont & !dta$trial_P)
-#merge to baseline data
+#merge cluster)ID to baseline data - we lose 4 observations
 dta <-merge(dta, bse[c("farmer_ID","cluster_ID")], by.x="ID", by.y="farmer_ID")
 
 
@@ -84,7 +126,6 @@ dta <- subset(dta, consent == "Yes")
 ### do people recall the treatment (correctly)
 table(dta$check3.Rec_TP,dta$trial_P)
 table(dta$check3.cons_TP, dta$cont)
-
 
 ## these give treatment coverage, excess coverage, failure to reach and control group coverage:
 ## for trial pack treatment
@@ -118,14 +159,25 @@ coef_test(ols, vcov_cluster)
 num_plots <- max(as.numeric(dta$plot_count), na.rm=TRUE)
 logical_result <- logical(nrow(dta))
 
+## drop if type is unkown
 for (i in 1:num_plots) {
-### definition of improved seed: fresh hybrid from trusted source or OPV recycled max 3 times from trusted source
+  dta[[paste0("plot.", i, "..plot_imp_type")]][ dta[[paste0("plot.", i, "..plot_imp_type")]] == "unknown"] <- NA
+  dta[[paste0("plot.", i, "..plot_times_rec")]][ dta[[paste0("plot.", i, "..plot_times_rec")]] == 99 ] <- NA
+  dta[[paste0("plot.", i, "..single_source")]][dta[[paste0("plot.", i, "..single_source")]] == 98] <- NA
+  dta[[paste0("plot.", i, "..recycle_source_rest")]][dta[[paste0("plot.", i, "..recycle_source_rest")]] == 98] <- NA
+}
+
+
+for (i in 1:num_plots) {
+### definition of improved seed: fresh hybrid from trusted source or OPV recycled max 3 times (use max 4 times) from trusted source
  condition <- (((dta[[paste0("plot.", i, "..plot_imp_type")]] %in%  
        c("Longe_10H", "Longe_10R", "Longe_7H", "Longe_7R_Kayongo-go", "Bazooka", "DK", "Longe_6H", "Panner", "UH5051", "Wema", "KH_series", "other_hybrid")) & (dta[[paste0("plot.", i, "..plot_times_rec")]] %in% 1) & (dta[[paste0("plot.", i, "..single_source")]]%in% letters[4:9])  ) |
       ((dta[[paste0("plot.", i, "..plot_imp_type")]] %in%  c("Longe_5", "Longe_5D", "Longe_4", "MM3", "other_opv")) & (dta[[paste0("plot.", i, "..plot_times_rec")]] %in% 1:4) &  ((dta[[paste0("plot.", i, "..recycle_source_rest")]] %in% letters[4:9]) | (dta[[paste0("plot.", i, "..single_source")]]%in% letters[4:9])))) 
  # Combine the condition with the logical OR operator
  logical_result <- logical_result | condition
 }
+
+
 
 # Assign the result to the new column p_outcome_1
 dta$p_outcome_1 <- logical_result
@@ -138,6 +190,7 @@ dta$p_outcome_1[is.na(dta$plot_no)] <- NA
 
 ## to control for this outcome at baseline, we use the question "Q20. Did you use any quality maize seed like **OPV or hybrid seed** in the previous season (Nsambya of 2022) on any of your plots?"
 bse$b_p_outcome_1 <- bse$quality_use=="Yes"
+bse$b_p_outcome_1[bse$quality_use==98] <- NA
 
 dta <- merge(dta, bse[c("farmer_ID","b_p_outcome_1")], by.x="ID", by.y="farmer_ID")
 
