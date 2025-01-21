@@ -151,37 +151,45 @@ footnotemark[4]}
 
 \end_inset
 
-Increasing Adoption and Varietal Turnover of Seed—
-The Role of Producer and Consumer traits
+The Influence of Production and Consumption Traits on the Adoption of Improved Maize Varieties:
+ Experimental Evidence from Eastern Uganda
 \end_layout
 
 \begin_layout Abstract
 In developing countries,
- semi-subsistence farmers often play dual roles as both consumers and producers of the same crops.
- Consequently,
- decisions regarding crop selection are influenced by a combination of household food security needs and market-oriented considerations.
- This study assesses the effectiveness of two interventions designed to enhance the adoption of improved maize seed varieties among smallholder farmers in eastern Uganda.
- A first intervention involves providing farmers with free seed sample packs,
- allowing them to directly experience the producer related benefits,
- such as higher yield potential and drought resistance.
- A second intervention consists of organizing cooking demonstrations and blind tasting sessions to compare maize flour from the improved variety with local varieties,
- focusing on consumption traits like palatability,
+ semi-subsistence farmers often act as both consumers and producers of the same crops,
+ a dual role that shapes their adoption decisions by weighing household food security against market-driven considerations.
+ This study examines two interventions aimed at promoting the adoption of improved maize seed varieties among smallholder farmers in eastern Uganda.
+ The first intervention distributed free sample packs of an improved seed variety—
+ in our case,
+ a hybrid—
+allowing farmers to experience benefits such as higher yields,
+ pest resistance,
+ and drought tolerance.
+ The second intervention featured cooking demonstrations and blind taste tests with flour obtained from this same improved maize variety to emphasize consumption-related traits,
+ including taste,
  texture,
- and ease of cooking.
- We find that the seed sample packs significantly enhance farmers' perceptions of the seed's production traits,
- while the cooking demonstrations improve appreciation for its consumption attributes.
- There is evidence suggesting that the cooking demonstration intervention increases the adoption of improved seed varieties.
+ and ease of preparation.
+ Our findings indicate that while seed sample packs positively impacted farmers' perceptions of both production and consumption traits,
+ cooking demonstrations primarily influenced consumption traits.
+ Both interventions increased the adoption of improved maize varieties in the next season,
+ with the seed sample packs having the most substantial effect.
  However,
- farmers who received the seed sample packs are more likely to reuse the harvested grain as seed in the subsequent season,
- essentially crowding out the adoption of fresh seed.
- We argue that this may be a rational response in the context of positive transaction costs related to the use of improved seed varieties.
+ farmers who received sample packs were more likely to reuse harvested grain from the sample pack as seed in subsequent seasons.
+ As recycling hybrid seed leads to productivity losses,
+ the large adoption effects do not translate into improvements in food security or market participation.
+ We argue that seed recycling may be a rational response to the transaction costs associated with purchasing fresh seeds,
+ and conclude that interventions should also address the underlying costs and challenges of maintaining seed supply,
+ including the incentives for farmers to recycle seed.
 \end_layout
 
 \begin_layout Abstract
 Keywords:
  technology adoption,
- subsidies,
- demonstration.
+ sample packs,
+ cooking demonstration and blind tasting,
+ maize,
+ Uganda.
 \end_layout
 
 \begin_layout Abstract
@@ -13179,6 +13187,16 @@ literal "false"
 .
  We want to thank Richard Ariong,
  Wilberfoce Walukano and Marc Charles Wanume for field support.
+\end_layout
+
+\begin_layout Section
+Declaration of generative AI and AI-assisted technologies in the writing process.
+\end_layout
+
+\begin_layout Standard
+During the preparation of this work the author(s) used OpenAI in order to obtain editorial suggestions to improve clarity and readability and explore alternative phrasing for technical terms.
+ After using this tool/service,
+ the author(s) reviewed and edited the content as needed and take(s) full responsibility for the content of the published article.
 \end_layout
 
 \begin_layout Standard
