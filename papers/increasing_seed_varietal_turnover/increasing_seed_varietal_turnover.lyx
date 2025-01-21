@@ -468,7 +468,11 @@ The field experiment was conducted in four districts in eastern Uganda among a r
  The area,
  commonly know as the Busoga Kingdom,
  is populated with smallholder farmers who produce for both home consumption and the market.
- The seed we promoted in this study is a hybrid variety called Bazooka,
+ The seed we promoted in this study is a hybrid variety called 
+\emph on
+Bazooka
+\emph default
+,
  which,
  despite being widely available,
  was relatively new and thus not widely adopted by farmers.
@@ -479,11 +483,19 @@ The field experiment was conducted in four districts in eastern Uganda among a r
 
 \begin_layout Standard
 We find that farmers who received a free seed sample are actually less likely to use fresh seed of an improved variety in the next season.
- This counter intuitive result is caused by the fact that farmers who received Bazooka for free used grain obtained from this seed as planting material in the next season.
+ This counter intuitive result is caused by the fact that farmers who received 
+\emph on
+Bazooka
+\emph default
+ for free used grain obtained from this seed as planting material in the next season.
  Since we categorize recycled hybrid seed as local seed,
  these farmers are considered non-adopters in our analysis.
  However,
- we do find that the cooking demonstration and tasting session increased the use of fresh Bazooka,
+ we do find that the cooking demonstration and tasting session increased the use of fresh 
+\emph on
+Bazooka
+\emph default
+,
  with some indications that this also led to higher maize productivity.
 \end_layout
 
@@ -551,8 +563,11 @@ In this study,
 
 \begin_layout Standard
 The first factor pertains to the seed sample pack treatment.
- Farmers in the treatment villages receive a complimentary sample of a new,
- improved maize seed variety (bazooka),
+ Farmers in the treatment villages receive a complimentary sample of a recently introduced improved maize seed variety (
+\emph on
+Bazooka
+\emph default
+),
  whereas those in the control villages do not receive this free sample pack.
 \begin_inset Foot
 status collapsed
@@ -571,7 +586,11 @@ to account for potential income effects
 \begin_layout Standard
 The second factor involves a cooking demonstration and tasting session.
  In the treatment villages,
- farmers are invited to participate in a session where they can taste food prepared with the promoted variety (bazooka) and compare it directly to food made with the local variety.
+ farmers are invited to participate in a session where they can taste food prepared with the promoted variety (
+\emph on
+Bazooka
+\emph default
+) and compare it directly to food made with the local variety.
  Additionally,
  all participants receive a free sample of maize flour derived from the improved variety to try at home.
  In the control villages,
@@ -597,7 +616,11 @@ Treatments
 The first intervention is straightforward and involves providing a seed sample pack to the household member responsible for most maize cultivation decisions.
  This sample pack contains an improved variety that is currently available in the market but has not yet been widely adopted by farmers.
  Specifically,
- we provided 1 kg bags of bazooka seed,
+ we provided 1 kg bags of 
+\emph on
+Bazooka
+\emph default
+ seed,
  which is sufficient to plant approximately 1/8 of an acre.
  The control condition for this factor is the absence of a seed sample pack,
  meaning these households do not receive the pack.
@@ -633,7 +656,7 @@ local varieties
 status collapsed
 
 \begin_layout Plain Layout
-The terms to the seed types in the local language were 
+The terms for the seed types in the local language were 
 \begin_inset Quotes eld
 \end_inset
 
@@ -676,10 +699,8 @@ Dhuuma Omusoga
 status collapsed
 
 \begin_layout Plain Layout
-These consumption traits were identified through focus group discussions.
- One notable trait that emerged during these discussions,
- which was integral to designing the treatment,
- is the extent to which maize flour expands during cooking,
+These consumption traits were identified through focus group discussions held during the design phase of the study.
+ One notable trait that emerged during these discussions was the extent to which maize flour expands during cooking,
  yielding "more food from less flour." This characteristic is linked to the starch content of maize flour,
  which is a carbohydrate and a natural component of most plants,
  including fruits,
@@ -698,12 +719,20 @@ These consumption traits were identified through focus group discussions.
 
 \begin_layout Standard
 After the rating,
- we proceed with blind tasting.
- The facilitator asks a volunteer from the participants to prepare posho,
+ we proceed with the cooking and blind taste testing.
+ The facilitator asks a volunteer from the participants to prepare 
+\emph on
+posho
+\emph default
+,
  a thick,
  dense porridge made by mixing maize flour with boiling water until it reaches a dough-like consistency.
  Two meals are prepared:
- one using flour obtained from local variety and one using flour derived from Bazooka (the hybrid variety used in the seed sample pack).
+ one using flour obtained from a local variety and one using flour derived from 
+\emph on
+Bazooka
+\emph default
+ (the hybrid variety used in the seed sample pack).
  The cook is unaware of which flour corresponds to which maize type.
 \begin_inset Foot
 status collapsed
@@ -716,8 +745,6 @@ The research team provided all necessary utensils for the session,
  and even a chef's hat.
  We ensured that the two dishes differed only in terms of the flour used by employing the same cook and starting with identical amounts of flour,
  measured on a weighing scale.
- Additionally,
- the order in which the meals were cooked was randomized across sessions.
 \end_layout
 
 \end_inset
@@ -733,12 +760,16 @@ The research team provided all necessary utensils for the session,
 Finally,
  the results are discussed within the group.
  Participants are informed that one of the two samples was made from flour obtained from local maize,
- while the other was from an improved maize type called Bazooka.
+ while the other sample was from an improved maize type called 
+\emph on
+Bazooka
+\emph default
+.
  The facilitator asks the farmers to guess which sample was based on flour from the local variety and which was from the improved variety.
  After gathering the guesses,
  the facilitator reveals the correct answers.
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 During field testing,
@@ -748,11 +779,19 @@ During field testing,
  and better aroma.
  However,
  during the tasting,
- almost all farmers consistently rated the sample made from Bazooka maize as superior.
+ almost all farmers rated the sample made from 
+\emph on
+Bazooka
+\emph default
+ maize as superior.
  After the tasting,
- most farmers incorrectly identified the superior sample as being from the local variety,
+ most farmers incorrectly identified the superior sample as being cooked from a local maize variety,
  when in fact,
- it was made from Bazooka maize.
+ it was prepared using 
+\emph on
+Bazooka
+\emph default
+ maize.
 \end_layout
 
 \end_inset
@@ -781,7 +820,7 @@ We will use Analysis of Covariance (ANCOVA) models to assess the impact of the i
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-Y_{ij}=\alpha+\beta_{T}T_{j}^{T}+\beta_{D}T_{j}^{D}+\beta_{I}T_{j}^{T}T_{j}^{D}+\delta Y_{ij}^{B}+\varepsilon_{ij}\label{eq:one}
+Y_{ij}=\alpha+\beta_{S}T_{j}^{S}+\beta_{D}T_{j}^{D}+\beta_{I}T_{j}^{S}T_{j}^{D}+\delta Y_{ij}^{B}+\varepsilon_{ij}\label{eq:one}
 \end{equation}
 
 \end_inset
@@ -791,10 +830,10 @@ Y_{ij}=\alpha+\beta_{T}T_{j}^{T}+\beta_{D}T_{j}^{D}+\beta_{I}T_{j}^{T}T_{j}^{D}+
 
 \begin_layout Standard
 where 
-\begin_inset Formula $T_{j}^{T}$
+\begin_inset Formula $T_{j}^{S}$
 \end_inset
 
- is an indicator variable that is one if village 
+ is an indicator variable that takes the value of one if village 
 \emph on
 j
 \emph default
@@ -818,15 +857,7 @@ j
 \end_inset
 
  to improve precision.
- We will apply a cluster-robust variance estimator with the 
-\begin_inset Quotes qld
-\end_inset
-
-bias-reduced linearization
-\begin_inset Quotes qrd
-\end_inset
-
- small-sample correction 
+ We will apply a cluster-robust variance estimator with the bias-reduced linearization (CR2) small-sample correction 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "imbens2016robust"
@@ -841,7 +872,7 @@ literal "false"
 \begin_layout Standard
 Factorial designs are commonly employed to evaluate multiple treatments within a single experiment.
  However,
- combining treatment cells to enhance statistical power can lead to unintended consequences if there is an interaction between the treatments 
+ pooling treatment cells to enhance statistical power can lead to biased estimates of the main treatment effects if there is an interaction between the treatments 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "10.1162/rest_a_01317"
@@ -863,7 +894,7 @@ nolink "false"
 
 ),
  we may wish to enhance statistical power by pooling observations across the orthogonal treatments if we find that a treatment effect is smaller than the minimal detectable effect size assumed during power calculations.
- To achieve this,
+ To do so,
  we will treat the orthogonal treatment as a covariate we want to adjust for,
  and interact the treatment variable with the demeaned orthogonal treatment 
 \begin_inset CommandInset citation
@@ -874,7 +905,7 @@ literal "false"
 \end_inset
 
 .
- This approach provides a more robust and unbiased estimate of the treatment effect:
+ This approach provides a more robust and unbiased estimate of the main treatment effect:
 \end_layout
 
 \begin_layout Standard
@@ -926,16 +957,14 @@ Timeline
 \begin_layout Standard
 To assess the impact of seed sample packs,
  we look at two consecutive agricultural seasons.
- That is,
- our main outcome of interest is not whether farmers use the seed trial pack on their fields,
+ This is because our main outcome of interest is not whether farmers use the seed trial pack on their fields,
  but whether the fact that they could experiment with a new seed variety led them to continue using it in subsequent seasons.
  As such,
- key outcomes to assess the impact of the seed sample pack seed choice in the second season and yield after the second season.
+ key outcomes to assess the impact of the seed sample pack intervention are seed choice in the second season and yield after the second season.
  This is different for the cooking demonstration and tasting session.
  Here,
  we expect that after having been exposed to the intervention,
  behavior change can be observed in the agricultural season immediately following the intervention.
- 
 \end_layout
 
 \begin_layout Standard
@@ -985,10 +1014,18 @@ name "fig:Timeline"
 Fortunately,
  the study area experiences two maize growing seasons each calendar year.
  The first season,
- locally known as Entoigo,
+ locally known as 
+\emph on
+Entoigo
+\emph default
+,
  runs from March/April to June/July,
  while the second season,
- referred to as Nsambya,
+ referred to as 
+\emph on
+Nsambya
+\emph default
+,
  extends from August/September to November/December.
  We distributed the seed sample packs along with baseline data collection a few months before planting commenced for the first agricultural season in 2023.
  This then allows farmers to experiment with the new seed in the first season of 2023.
@@ -1094,7 +1131,11 @@ Bugiri,
  Iganga,
  Kamuli,
  and Mayuge—
-chosen for their relatively low adoption rates of the improved seed variety (Bazooka) and their well-established network of agro-input dealers,
+chosen for their relatively low adoption rates of the improved seed variety (
+\emph on
+Bazooka
+\emph default
+) and their well-established network of agro-input dealers,
  which helps mitigate access issues.
  These districts were identified based on data from a previous study that matched these criteria.
 \end_layout
@@ -2152,10 +2193,18 @@ nolink "false"
 
 \end_inset
 
- The seed type of interest was Bazooka,
+ The seed type of interest was 
+\emph on
+Bazooka
+\emph default
+,
  the hybrid seed variety that is also utilized in our experiment.
  At baseline,
- only about 7 percent of farmers reported having used Bazooka seed on the randomly selected plot in the previous season.
+ only about 7 percent of farmers reported having used 
+\emph on
+Bazooka
+\emph default
+ seed on the randomly selected plot in the previous season.
  We also asked where the seed used on the randomly selected plot was obtained from.
  Results indicate that approximately 30 percent of farmers sourced their seed from formal channels,
  such as agro-input dealers,
@@ -2833,7 +2882,7 @@ Sexpr{format(round(df_balance[3,2,6],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Has used the promoted seed (bazooka) on a randomly chosen plot in the last season?
+Has used the promoted seed (Bazooka) on a randomly chosen plot in the last season?
 \end_layout
 
 \begin_layout Plain Layout
@@ -4543,12 +4592,20 @@ We find that the seed sample pack intervention reduced the likelihood of adoptio
 We define a similar variable to examine the adoption of the specific seed used in the experiment,
  coding this outcome as true only if the seed is fresh and obtained from a trusted source.
  Overall,
- about 9 percent of farmers use fresh Bazooka seed on at least one plot.
+ about 9 percent of farmers use fresh 
+\emph on
+Bazooka
+\emph default
+ seed on at least one plot.
  Notably,
  when considering this outcome,
  the negative effect of the seed sample pack disappears.
  In fact,
- we now find that farmer households exposed to the cooking demonstration intervention are more likely to use fresh Bazooka seed in the season following the intervention.
+ we now find that farmer households exposed to the cooking demonstration intervention are more likely to use fresh 
+\emph on
+Bazooka
+\emph default
+ seed in the season following the intervention.
 \end_layout
 
 \begin_layout Standard
@@ -4643,7 +4700,11 @@ nolink "false"
 \end_inset
 
  with negative effects on the adoption of seed of an improved variety for the seed sample pack treatment,
- but a positive effect on the use of fresh bazooka seed from the cooking demonstration.
+ but a positive effect on the use of fresh 
+\emph on
+Bazooka
+\emph default
+ seed from the cooking demonstration.
  The table further indicates that reduced adoption leads to lower quantities of improved seed used,
  both in absolute terms and when measured per acre.
 \end_layout
@@ -5519,12 +5580,24 @@ At first glance,
  the results for the seed sample packs seem counterintuitive.
  The primary objective of distributing seed sample packs is to increase the adoption of improved seed varieties in subsequent years.
  However,
- our findings suggest that a significant portion of farmers in our sample opted to recycle seed from the sample packs rather than purchasing fresh Bazooka seed from agro-input dealers.
+ our findings suggest that a significant portion of farmers in our sample opted to recycle seed from the sample packs rather than purchasing fresh 
+\emph on
+Bazooka
+\emph default
+ seed from agro-input dealers.
  According to our definition of improved seed,
- recycled Bazooka seed does not qualify as such.
+ recycled 
+\emph on
+Bazooka
+\emph default
+ seed does not qualify as such.
  Furthermore,
  the intervention appears to have inadvertently crowded out the use of fresh improved seed:
- the high yields experienced with the sample packs led farmers to continue using recycled Bazooka seed.
+ the high yields experienced with the sample packs led farmers to continue using recycled 
+\emph on
+Bazooka
+\emph default
+ seed.
  In contrast,
  farmers in the control group may have been dissatisfied with the local seed they were using.
  This dissatisfaction could have led them to seek fresh seed or use an Open Pollinated Variety (OPV) that was recycled fewer than four times.
@@ -7493,11 +7566,19 @@ To explore potential impact pathways,
  we posed several questions.
  First,
  we aimed to assess whether the interventions increased awareness of improved maize seeds,
- specifically the Bazooka variety.
+ specifically the 
+\emph on
+Bazooka
+\emph default
+ variety.
  We asked farmers to list as many improved maize seed varieties as they could name,
  and enumerators recorded the number of varieties mentioned.
  Second,
- we directly inquired whether the farmer was familiar with a maize seed variety called “Bazooka.”
+ we directly inquired whether the farmer was familiar with a maize seed variety called “
+\emph on
+Bazooka
+\emph default
+.”
 \end_layout
 
 \begin_layout Standard
@@ -7518,9 +7599,17 @@ nolink "false"
  Both interventions lead to a substantial increase in the number of seed varieties known by farmers,
  with the effects being quite similar.
  Overall,
- 82 percent of farmers in our sample are familiar with the Bazooka variety.
+ 82 percent of farmers in our sample are familiar with the 
+\emph on
+Bazooka
+\emph default
+ variety.
  The intervention with the most pronounced impact on this specific knowledge was the seed sample pack,
- likely because it directly involved the Bazooka variety,
+ likely because it directly involved the 
+\emph on
+Bazooka
+\emph default
+ variety,
  with its name prominently displayed on the packaging.
  In contrast,
  the cooking and tasting demonstration had a more general focus on the consumption traits of improved seed varieties,
@@ -7531,9 +7620,17 @@ status collapsed
 \begin_layout Plain Layout
 The more general focus was deliberate as we did not want to be seen as promoting a particular commercial variety.
  However,
- we did mention that the maize flour that we used (and also provided a take home sample from) came from Bazooka.
+ we did mention that the maize flour that we used (and also provided a take home sample from) came from 
+\emph on
+Bazooka
+\emph default
+.
  This is why the result for the cooking demonstration is small but still significant (at least in the pooled model),
- and also why we do see that farmers in demo group also adopted more fresh bazooka (see Tables 
+ and also why we do see that farmers in demo group also adopted more fresh 
+\emph on
+Bazooka
+\emph default
+ (see Tables 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "adoptiom"
@@ -7615,16 +7712,28 @@ An additional rationale for subsidizing or providing seed at no cost is to harne
  To examine whether our interventions influenced social learning,
  we included questions on whether farmers recommended any improved seed varieties to others.
  A similar question was posed specifically regarding the seed variety used in the sample pack,
- but only for those farmers who were familiar with Bazooka.
+ but only for those farmers who were familiar with 
+\emph on
+Bazooka
+\emph default
+.
 \end_layout
 
 \begin_layout Standard
 Our findings indicate that a substantial proportion of farmers recommend improved seed to their peers.
  Notably,
  the likelihood of recommending improved seed is significantly higher among those who received the seed sample pack.
- When focusing specifically on Bazooka,
+ When focusing specifically on 
+\emph on
+Bazooka
+\emph default
+,
  the difference becomes even more pronounced.
- Receiving a seed sample pack increases the probability of recommending Bazooka by 38 to 44 percentage points,
+ Receiving a seed sample pack increases the probability of recommending 
+\emph on
+Bazooka
+\emph default
+ by 38 to 44 percentage points,
  depending on the model used.
 \end_layout
 
@@ -7649,7 +7758,11 @@ Sexpr{format(round(df_means_path[1,8]*100,digits=0),nsmall=0)}
 
 \end_inset
 
- percent of farmers indicate that they are very likely to use bazooka in the next season.
+ percent of farmers indicate that they are very likely to use 
+\emph on
+Bazooka
+\emph default
+ in the next season.
  We see that in the group that received a seed sample pack,
  the percentage is 
 \begin_inset ERT
@@ -7792,7 +7905,7 @@ hline
 
 \begin_layout Plain Layout
 
-Knows bazooka (yes=1)
+Knows Bazooka (yes=1)
 \end_layout
 
 \begin_layout Plain Layout
@@ -8083,7 +8196,7 @@ Sexpr{format(round(df_path[3,2,3],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Thinks bazooka is risky
+Thinks Bazooka is risky
 \end_layout
 
 \begin_layout Plain Layout
@@ -8277,7 +8390,7 @@ Sexpr{format(round(df_path[3,2,5],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Recommended bazooka to other
+Recommended Bazooka to other
 \end_layout
 
 \begin_layout Plain Layout
@@ -8471,7 +8584,7 @@ Sexpr{format(round(df_path[3,2,7],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Will use bazooka in the future
+Will use Bazooka in the future
 \end_layout
 
 \begin_layout Plain Layout
@@ -9510,7 +9623,15 @@ nolink "false"
  are for the seed that was used by the farmer,
  only some of which may be using improved seed varieties.
  Therefore,
- we also included a module in the questionnaire asking farmers to compare maize from improved seed varieties (such as Longe5 or Bazooka) with maize from local seed across the same four consumption traits.
+ we also included a module in the questionnaire asking farmers to compare maize from improved seed varieties (such as 
+\emph on
+Longe5
+\emph default
+ or 
+\emph on
+Bazooka
+\emph default
+) with maize from local seed across the same four consumption traits.
  In other words,
  this module directly compares the consumption attributes of improved seed with those of local seed.
 \end_layout
@@ -10260,7 +10381,11 @@ nolink "false"
  the negative impact on adoption observed with the seed sample pack can be attributed to a significant proportion of farmers recycling the sample seed.
  These farmers are more likely to report that the grain from the sample seed exceeded their expectations.
  Conversely,
- farmers in the cooking demonstration group increased their adoption of bazooka seed.
+ farmers in the cooking demonstration group increased their adoption of 
+\emph on
+Bazooka
+\emph default
+ seed.
  Although this effect is statistically significant,
  it is economically modest,
  with an increase of only five percentage points in adoption.
@@ -10268,7 +10393,11 @@ nolink "false"
  resulting in consumption traits aligning with their expectations.
  However,
  when asked to compare consumption traits of improved seed varieties,
- such as bazooka,
+ such as 
+\emph on
+Bazooka
+\emph default
+,
  to local seed,
  the cooking demonstration and tasting session effectively altered perceptions,
  as expected.
