@@ -230,39 +230,59 @@ For new technologies to be widely adopted,
  it is essential to raise farmers' awareness about beneficial traits.
  Similar to the historical focus in breeding programs,
  sensitization efforts often emphasize production traits.
- A common strategy to encourage farmers to learn about the production traits of a new seed variety is through seed sample packs.
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-One may argue that seed sample packs also enable farmers to discover consumer traits after they harvest the grain obtained from the seed sample pack.
- However,
- this would require farmers to keep the grain separate from grain obtained from local seed and consume the grain themselves (as opposed to selling it).
-\end_layout
-
-\end_inset
-
+ A common strategy to encourage farmers to learn about the production traits of a new seed variety is through the distribution of seed sample packs.
  These trial packs,
  typically containing small quantities of seed (e.g.,
  1 kg),
  are provided for free,
  allowing farmers to test them on a small portion of their plot.
  The goal is to encourage farmers to invest in the seed in subsequent seasons if they find it beneficial.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+One may argue that seed sample packs also enable farmers to discover consumer traits after they harvest the grain obtained from the seed sample pack.
+ While this is probably not the primary focus of seed trial packs and assumes farmers keep grain obtained from improved seed separate and consume it themselves (as opposed to selling),
+ we do find that seed sample packs indeed also affect perceptions of consumption traits—
+See Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Perceptions-of-consumer"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 From a theoretical standpoint,
  seed sample packs can be viewed as a form of subsidy.
- Subsidies are often employed to promote adoption and are justified for several reasons.
+ Subsidies are often used to promote adoption and may be justified for several reasons.
  First,
- resource-constrained farmers may perceive the risk premium of a new product as too high to justify investment.
+ resource-constrained farmers may perceive the risk premium of a new product as too high to justify investment 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "karlan2014agricultural"
+literal "false"
+
+\end_inset
+
+.
  More broadly,
  even without considering risk premia,
  farmers may lack the resources to purchase the seed,
  especially if complementary inputs and effort are required 
 \begin_inset CommandInset citation
 LatexCommand citep
-before "see"
 key "miehe2023miracle"
 literal "false"
 
@@ -299,7 +319,8 @@ literal "false"
 
 \end_inset
 
- In case where there are positive externalities,
+.
+ In cases where there are positive externalities,
  subsidies may be justified.
  Finally,
  governments may use subsidies to replenish deteriorated seed stocks,
@@ -315,7 +336,8 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-Surprisingly few studies directly evaluate the effectiveness of seed sample packs in accelerating technology adoption and results are mixed.
+Surprisingly few studies directly evaluate the effectiveness of seed sample packs in accelerating technology adoption.
+ Results are also mixed:
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -372,11 +394,19 @@ literal "false"
 
 \begin_layout Standard
 It is even harder to find examples of strategies that emphasize consumption-related traits.
- This is surprising given that in many contexts where adoption is lacking,
+ This is surprising given that in many contexts where adoption is low,
  farmers consume most of the crops they grow,
- and there is a large literature that shows that in such settings consumption and production decisions are inseparable.
+ and there is a large literature that shows that in such settings consumption and production decisions are inseparable 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "singh1986survey"
+literal "false"
+
+\end_inset
+
+.
  Interventions that focus on demonstrating consumption traits,
- such as cooking demonstrations and tasting sessions,
+ such as cooking demonstrations and tasting events,
  are typically concerned with nutrition education and rarely examine subsequent adoption in the following season 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -401,7 +431,7 @@ literal "false"
 
 \begin_layout Standard
 In this paper,
- we test to what extent one can accelerate varietal turnover by highlighting both the production and consumption attributes of improved maize varieties to farmers in their roles as producers and consumers.
+ we test to what extent one can accelerate varietal turnover by highlighting both the production and consumption attributes of improved maize varieties to farmers in their dual roles as both producers and consumers.
  To achieve this,
  a field experiment is conducted to test the relative effectiveness of two interventions using a cluster randomized control trial with a simple factorial design.
  The first intervention targets production traits by providing farmers with 1 kg sample packs with seed of an improved variety.
@@ -427,10 +457,10 @@ improved variety
 \end_inset
 
  Orthogonal to this intervention,
- a second was introduced that involves cooking demonstrations and tasting sessions.
+ a second intervention was introduced that involves cooking demonstrations and blind tasting tests.
  This intervention allows farmers to familiarize themselves with consumption attributes of maize flour derived from the grain grown using improved varieties.
  Additionally,
- farmers in this treatment are provided with maize flour samples to further explore consumption traits at home.
+ farmers in this treatment are provided with maize flour samples derived from the grain grown using improved varieties to further explore consumption traits at home and potentially convince other household members.
 \end_layout
 
 \begin_layout Standard
@@ -444,7 +474,7 @@ The field experiment was conducted in four districts in eastern Uganda among a r
  was relatively new and thus not widely adopted by farmers.
  The primary production trait of this seed is its potential for increased yield.
  The study ran over two consecutive agricultural seasons in 2023,
- with endline data being collected early 2024.
+ with endline data being collected early 2024 after the harvest of the second season.
 \end_layout
 
 \begin_layout Standard
@@ -468,7 +498,7 @@ While we expected that increased attention to consumption traits would increase 
 
 \begin_layout Standard
 Exploring some of the impact pathways,
- we do find that the cooking demonstration and tasting session increased the share of farmers that rank improved seed varieties higher on a range of consumption attributes such as taste,
+ we do find that the cooking demonstration and blind tasting increased the share of farmers that rank improved seed varieties higher on a range of consumption attributes such as taste,
  portions,
  appearance,
  and ease of cooking.
@@ -480,23 +510,6 @@ Exploring some of the impact pathways,
  Interestingly,
  the seed sample pack also positively affects how farmers think about consumption traits of improved varieties,
  suggesting farmers consume grain obtained from the seed sample pack and pay close attention to consumption attributes.
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Berber:
- This is contradicting footnote 1 a bit,
- and is it in the seed trial pack only treatment arm or could it be coming from 50% of these farmers having been in the combined treatment?
- (writing this before I've made it through the results though).
- Bjorn:
- True,
- it seems indeed that farmers keep the seed separate and do consume it themselves.
- It can not come from the 50 percent because we estimate fully saturated models control for the orthogonal treatment.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -8730,6 +8743,13 @@ Perceptions
 
 \begin_layout Subsubsection
 Perceptions of consumer traits
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Perceptions-of-consumer"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
