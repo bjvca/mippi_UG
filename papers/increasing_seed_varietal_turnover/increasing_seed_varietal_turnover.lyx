@@ -904,8 +904,7 @@ literal "false"
 
 \end_inset
 
-.
- This approach provides a more robust and unbiased estimate of the main treatment effect:
+:
 \end_layout
 
 \begin_layout Standard
@@ -1054,10 +1053,10 @@ Sample
 \begin_layout Standard
 Sample size was determined through a series of power simulations detailed in the pre-registered pre-analysis plan.
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
-The primary outcome used in these simulations is a binary indicator of quality seed of an improved variety use at the farmer level.
+The primary outcome used in these simulations is a binary indicator seed use at the farmer level (1 if the farmer used fresh seed of an improved variety).
  Data from a previous project,
  which included 3,450 smallholder maize farmers across 345 villages,
  was used to estimate the intra-cluster (within-village) correlation for this outcome 
@@ -1069,8 +1068,8 @@ literal "false"
 \end_inset
 
 .
- We assumed a treatment effect of a 13.5 percentage point increase for both the seed sample treatment and the consumption treatment,
- and a 23.5 percentage point increase for the interaction effect.
+ We assumed a 13.5 percentage point increase (over a baseline adoption percentage of 30 percent) for both the seed sample treatment and the consumption treatment,
+ and a 23.5 percentage point increase for the interaction effect as minimal detectable effect sized.
  The R code used for the simulations is available 
 \begin_inset CommandInset href
 LatexCommand href
@@ -1124,8 +1123,7 @@ Context
 \end_layout
 
 \begin_layout Standard
-The study was conducted in Eastern Uganda,
- specifically in the Busoga Kingdom.
+The study was conducted in Eastern Uganda in an area that is also known as the Busoga Kingdom.
  We selected our sample from four districts—
 Bugiri,
  Iganga,
@@ -2159,18 +2157,84 @@ Sexpr{format(round(df_means[1,1],digits=0),nsmall=0)}
 
  years old at the time of the baseline survey.
  About half of household heads had finished primary education.
- In 20 percent of the households,
+ In 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round((1-df_means[1,3])*100,digits=0),nsmall=0)}
+\end_layout
+
+\end_inset
+
+ percent of the households,
  the household head was a woman.
  Households in the area are large,
- with on average about 8 to 9 individuals.
- The average distance to the nearest agro-input shop where maize seed of an improved variety can be bought is about 4 kilometers.
+ with on average about 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(floor(df_means[1,4]),nsmall=0)}
+\end_layout
+
+\end_inset
+
+ to 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(ceiling(df_means[1,4]),nsmall=0)}
+\end_layout
+
+\end_inset
+
+ individuals.
+ The average distance to the nearest agro-input shop where maize seed of an improved variety can be bought is about 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round(df_means[1,5],digits=0),nsmall=0)}
+\end_layout
+
+\end_inset
+
+ kilometers.
 \end_layout
 
 \begin_layout Standard
-We first inquired whether farmers had used “quality maize seed,
+For variables that will be use to assess impact at endline,
+ we first inquired whether farmers had used “quality maize seed,
  such as an Open Pollinating Variety (OPV) or hybrid seed,
  on any of their plots during the previous season (Nsambya of 2022).” According to the baseline data,
- approximately 40 percent of households affirmed using such seeds.
+ approximately 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round(df_means[1,6]*100,digits=0),nsmall=0)}
+\end_layout
+
+\end_inset
+
+ percent of households affirmed using such seeds.
  Subsequently,
  we posed a more specific question regarding the exact type of seed used on a randomly selected plot.
 \begin_inset Foot
@@ -2200,23 +2264,75 @@ Bazooka
 ,
  the hybrid seed variety that is also utilized in our experiment.
  At baseline,
- only about 7 percent of farmers reported having used 
+ only about 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round(df_means[1,7]*100,digits=0),nsmall=0)}
+\end_layout
+
+\end_inset
+
+ percent of farmers reported having used 
 \emph on
 Bazooka
 \emph default
  seed on the randomly selected plot in the previous season.
  We also asked where the seed used on the randomly selected plot was obtained from.
- Results indicate that approximately 30 percent of farmers sourced their seed from formal channels,
+ Results indicate that approximately 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round(df_means[1,8]*100,digits=0),nsmall=0)}
+\end_layout
+
+\end_inset
+
+ percent of farmers sourced their seed from formal channels,
  such as agro-input dealers,
  non-governmental organizations,
  or the government extension system (Operation Wealth Creation).
  Conversely,
- 54 percent of farmers reported reusing seed from previous seasons,
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round(df_means[1,9]*100,digits=0),nsmall=0)}
+\end_layout
+
+\end_inset
+
+ percent of farmers reported reusing seed from previous seasons,
  with some having used it for more than four seasons.
  Notably,
  Open Pollinated Varieties that have been used more than four times tend to lose their yield advantage.
  Finally,
- the average farmer harvested about 390 kilograms per acre on the randomly selected plot at baseline.
+ the average farmer harvested about 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round(df_means[1,10],digits=-1),nsmall=0)}
+\end_layout
+
+\end_inset
+
+ kilograms per acre on the randomly selected plot at baseline.
 \end_layout
 
 \begin_layout Standard
@@ -3378,7 +3494,7 @@ nolink "false"
 
 \end_inset
 
- for the seed sample treatment (in which case the cooking demonstration and tasting treatment is considered the orthogonal treatment and controlled for).
+ for the seed sample pack treatment (in which case the cooking demonstration and tasting treatment is considered the orthogonal treatment and controlled for).
  In the third column,
  this is reversed,
  showing 
@@ -3396,7 +3512,7 @@ nolink "false"
 
 \end_inset
 
- for the cooking demonstration and tasting treatment (with the seed sample treatment now considered the orthogonal treatment and controlled for).
+ for the cooking demonstration and tasting treatment (with the seed sample pack treatment now considered the orthogonal treatment and controlled for).
  The fourth,
  fifth and sixth columns correspond to 
 \begin_inset Formula $\beta_{T}$
@@ -3427,7 +3543,20 @@ nolink "false"
 
 \begin_layout Standard
 The estimates indicate good overall balance.
- The proportion of male household heads is about 4 percentage points lower in the subsample assigned to the cooking demonstration treatment compared to those not exposed to the intervention,
+ The proportion of male household heads is about 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round(abs(df_balance_pool[2,1,3])*100,digits=0),nsmall=0)}
+\end_layout
+
+\end_inset
+
+ percentage points lower in the subsample assigned to the cooking demonstration treatment compared to those not exposed to the intervention,
  but this difference is only significant at the 10 percent level.
  Considering that out of 50 comparisons,
  we would expect 5 outcomes to be significant at the 10 percent level by chance alone,
@@ -3480,7 +3609,7 @@ name "subsec:Adoption"
 \end_layout
 
 \begin_layout Standard
-Adoption of improved varieties is the primary outcome of interest in this study.
+The use of quality seed of improved varieties by farmers is the primary outcome of interest in this study.
  Therefore,
  Table 
 \begin_inset CommandInset ref

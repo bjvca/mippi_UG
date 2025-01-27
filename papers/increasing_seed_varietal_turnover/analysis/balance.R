@@ -98,6 +98,7 @@ baseline_dta$ihs_yield <-  ihs(baseline_dta$yield)
 evaluate_skewness(baseline_dta$ihs_yield)
 
 evaluate_skewness(baseline_dta$hh_size)
+baseline_dta <- trim("hh_size",baseline_dta,trim_perc=.02)
 baseline_dta$ihs_hh_size <-  ihs(baseline_dta$hh_size)
 evaluate_skewness(baseline_dta$ihs_hh_size)
 
