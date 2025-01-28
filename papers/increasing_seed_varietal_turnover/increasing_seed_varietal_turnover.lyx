@@ -933,7 +933,8 @@ Where now
 \begin_layout Standard
 Since we will evaluate treatment effects across a range of outcome measures,
  it is essential to address the multiple comparisons problem.
- Following the approach outlined by 
+ To do so,
+ we follow 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "doi:10.1198/016214508000000841"
@@ -941,12 +942,22 @@ literal "false"
 
 \end_inset
 
-,
+ and use two strategies.
+ First,
  we aggregate various outcome measures within a given family into summary indices.
  Each index is calculated as a weighted mean of the standardized values of the outcome variables.
  The weights for this efficient generalized least squares estimator are determined to maximize the information captured by the index,
  giving less weight to outcomes that are highly correlated with one another.
- This method of combining outcomes into indices is a widely adopted strategy to mitigate the risk of over-rejecting the null hypothesis due to multiple comparisons.
+ Second,
+ we control the False Discovery Rate (FDR) when conducting multiple hypothesis testing using sharpened two-stage q-values proposed by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "benjamini2006adaptive"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
@@ -3609,7 +3620,7 @@ name "subsec:Adoption"
 \end_layout
 
 \begin_layout Standard
-The use of quality seed of improved varieties by farmers is the primary outcome of interest in this study.
+The use of seed of improved varieties by farmers is the primary outcome of interest in this study.
  Therefore,
  Table 
 \begin_inset CommandInset ref
@@ -3622,7 +3633,7 @@ nolink "false"
 
 \end_inset
 
- investigates if farmers use quality seed of improved varieties in general,
+ investigates if farmers use seed of improved varieties in general,
  while Table 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3634,7 +3645,7 @@ nolink "false"
 
 \end_inset
 
- asks more detailed questions about seed use and practices on a particular (randomly selected) plot within the household.
+ reports on more detailed outcomes on seed use and practices on a particular (randomly selected) plot within the household.
  As mentioned in Section 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3655,7 +3666,7 @@ literal "false"
 
 \end_inset
 
- as a first safeguard to over-rejection due to multiple hypothesis testing.
+.
 \end_layout
 
 \begin_layout Standard
@@ -3816,7 +3827,7 @@ hline
 
 \begin_layout Plain Layout
 
-Has used quality maize seed on any plot in last season?
+Has used seed of an improved variety on any plot in last season?
 \end_layout
 
 \begin_layout Plain Layout
@@ -4010,7 +4021,7 @@ Sexpr{format(round(df_res[3,2,2],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Has used Bazooka (fresh or recycled) on any plot in last season in last season?
+Number of plots planted with improved seed
 \end_layout
 
 \begin_layout Plain Layout
@@ -4107,7 +4118,11 @@ Sexpr{format(round(df_res[3,2,3],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Number of plots planted with improved seed
+Number of plots with improved seed as share of total number of plots
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -4204,11 +4219,7 @@ Sexpr{format(round(df_res[3,2,4],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Number of plots with improved seed as share of total number of plots
-\end_layout
-
-\begin_layout Plain Layout
-
+Area planted with improved seed (acres)
 \end_layout
 
 \begin_layout Plain Layout
@@ -4301,11 +4312,7 @@ Sexpr{format(round(df_res[3,2,5],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
-
-Area planted with improved seed (acres)
+Area planted with improved seed as a share of total maize cultivation area
 \end_layout
 
 \begin_layout Plain Layout
@@ -4398,7 +4405,16 @@ Sexpr{format(round(df_res[3,2,6],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Area planted with improved seed as a share of total maize cultivation area
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Index
 \end_layout
 
 \begin_layout Plain Layout
@@ -4491,108 +4507,6 @@ Sexpr{format(round(df_res[3,2,7],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Index
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_out[1,8],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_res_pool[1,1,8],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_res_pool[1,3,8]<.01,"**",ifelse(df_res_pool[1,3,8]<.05,"*",ifelse(df_res_pool[1,3,8]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_res_pool[2,1,8],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_res_pool[2,3,8]<.01,"**",ifelse(df_res_pool[2,3,8]<.05,"*",ifelse(df_res_pool[2,3,8]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_res[1,1,8],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_res[1,3,8]<.01,"**",ifelse(df_res[1,3,8]<.05,"*",ifelse(df_res[1,3,8]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_res[2,1,8],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_res[2,3,8]<.01,"**",ifelse(df_res[2,3,8]<.05,"*",ifelse(df_res[2,3,8]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_res[3,1,8],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_res[3,3,8]<.01,"**",ifelse(df_res[3,3,8]<.05,"*",ifelse(df_res[3,3,8]<.1,"+","")))}}$ & 
-\backslash
-Sexpr{format(round(df_res[1,4,8],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{format(round(df_means_out[2,8],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_res_pool[1,2,8],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_res_pool[2,2,8],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_res[1,2,8],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_res[2,2,8],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_res[3,2,8],digits=2),nsmall=2)})
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \begin_layout Plain Layout
@@ -4659,7 +4573,9 @@ ref{eq:one};
  and + denote significance at the 1,
  5 and 10
 \backslash
-% levels.
+% levels based on sharpened q-values 
+\backslash
+citep{benjamini2006adaptive}.
 \end_layout
 
 \end_inset
@@ -4684,7 +4600,20 @@ nolink "false"
 
 \end_inset
 
- shows that at enline about 25 percent of farm households used maize seed of an improved variety on at least one plot in the second season of 2023.
+ shows that at enline about 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round(df_means_out[1,1]*100,digits=0),nsmall=0)}
+\end_layout
+
+\end_inset
+
+ percent of farm households used maize seed of an improved variety on at least one plot in the second season of 2023.
  This is significantly lower than the share reported during baseline (see Table 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -4701,11 +4630,12 @@ nolink "false"
  While at baseline we asked a single,
  broad question,
  at endline we inquired about seed use on each plot individually.
- This detailed information is then used to determine if quality maize seed was used on at least one plot.
- At baseline,
+ This detailed information is then used to determine if maize seed of an improved variety was used on at least one plot.
+ Furthermore,
+ at baseline,
  we left it to the farmer to decide what quality seed means;
  at endline,
- we defined quality seed as fresh hybrid seed or an OPV recycled a maximum of three times from a trusted source.
+ we define seed of an improved variety as fresh seed of a hybrid variety or an OPV recycled a maximum of three times from a trusted source.
 \end_layout
 
 \begin_layout Standard
@@ -4714,14 +4644,27 @@ We find that the seed sample pack intervention reduced the likelihood of adoptio
  This reduction is substantial,
  amounting to approximately half of the mean adoption rate.
  Conversely,
- we do not observe any change in the use of improved seed as a result of the cooking demonstration and tasting session.
+ we do not observe any change in the use of seed of an improved variety as a result of the cooking demonstration and tasting session.
 \end_layout
 
 \begin_layout Standard
-We define a similar variable to examine the adoption of the specific seed used in the experiment,
+We define a similar variable to examine the adoption of the specific seed variety used in the experiment,
  coding this outcome as true only if the seed is fresh and obtained from a trusted source.
  Overall,
- about 9 percent of farmers use fresh 
+ about 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round(df_means_out[1,2]*100,digits=0),nsmall=0)}
+\end_layout
+
+\end_inset
+
+ percent of farmers use fresh 
 \emph on
 Bazooka
 \emph default
@@ -4729,7 +4672,7 @@ Bazooka
  Notably,
  when considering this outcome,
  the negative effect of the seed sample pack disappears.
- In fact,
+ In addition,
  we now find that farmer households exposed to the cooking demonstration intervention are more likely to use fresh 
 \emph on
 Bazooka
@@ -4739,30 +4682,94 @@ Bazooka
 
 \begin_layout Standard
 Next,
- using the same definition of improved seed as in the first question,
- we determine the number of plots on which improved seed was planted.
+ using the same definition of maize seed of an improved variety that was used to define the first outcome,
+ we determine the number of plots on which maize seed of an improved variety was planted.
  However,
- it could also be that the intervention changes the total number of plots used for cultivation,
- so we also scale the number of plots on which improved seed was used by the total number of plots.
- We find that improved seed was planted on 0.33 plots in the entire sample.
- The seed sample pack reduced the number of plots on which improved seed was planted.
- We further find that the seed sample pack intervention also reduced the share of plots on which improved seed was planted by 13 to 14 percentage points.
+ because the intervention could have changed the total number of plots used for cultivation,
+ we also scale the number of plots on which improved seed was used by the total number of plots.
+ We find that seed of an improved variety was planted on 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round(df_means_out[1,3],digits=2),nsmall=2)}
+\end_layout
+
+\end_inset
+
+ plots in the entire sample.
+ The seed sample pack reduced the number of plots on which seed of an improved variety was planted by 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round(abs(df_res_pool[1,1,3]),digits=2),nsmall=2)}
+\end_layout
+
+\end_inset
+
+ and the share of plots on which improved seed was planted by 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round(abs(df_res_pool[1,1,4]*100),digits=0),nsmall=0)}
+\end_layout
+
+\end_inset
+
+ percentage points.
  This suggests that total number of plots did not change,
  but that treated households dis-adopted.
 \end_layout
 
 \begin_layout Standard
-A related outcome is the area planted with improved seed.
+A related outcome is the area planted with maize seed of an improved variety.
  We find that,
  on average,
- households planted about 0.34 acres with improved seed.
+ households planted about 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round(df_means_out[1,5],digits=2),nsmall=2)}
+\end_layout
+
+\end_inset
+
+ acres with seed of an improved variety.
  However,
  in households that received a seed sample pack,
- the area planted with improved seed was 0.16 acres less compared to households that did not receive a seed sample pack.
+ the area planted with an improved seed variety was 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round(abs(df_res_pool[1,1,5]),digits=2),nsmall=2)}
+\end_layout
+
+\end_inset
+
+ acres less compared to households that did not receive a seed sample pack.
  To account for potential changes in total acreage due to the intervention,
- we also scale the area planted with improved seed by the total area under cultivation.
- We observe a reduction in the proportion of the total area planted with improved seed,
- suggesting that the intervention led farmers to switch from planting improved seed to planting local seed.
+ we also scale the area planted with seed of an improved variety by the total area under cultivation.
+ We observe a reduction in the proportion of the total area planted with seed of an improved variety,
+ suggesting that the intervention led farmers to switch from planting seed of an improved variety to planting local or recycled seed.
  Additionally,
  the summary index confirms a significant and negative impact of the seed sample pack on these adoption outcomes.
 \end_layout
@@ -4780,13 +4787,13 @@ status collapsed
 \begin_layout Plain Layout
 The decision to collect detailed data on only one randomly selected plot per household,
  rather than on all plots,
- was based on the generally high correlation between technology use,
+ was based on the generally high correlation of technology use,
  input use,
- and management practices within a household.
+ and management practices within plots of a household.
  By focusing on a single plot,
  we aimed to increase the number of farmers included in the sample,
  thereby enhancing statistical power.
- While one might be concerned that farmers could use different seeds on different plots,
+ While one might be concerned that farmers could use different seed varieties on different plots,
  potentially leading to misclassification of adopters if the 
 \begin_inset Quotes qld
 \end_inset
@@ -4797,7 +4804,6 @@ wrong
 
  plot is chosen,
  our data indicates that this is not a significant issue.
- Adoption outcomes measured at the plot level are virtually identical to those measured across any plot within the household.
 \end_layout
 
 \end_inset
@@ -4834,7 +4840,7 @@ nolink "false"
 Bazooka
 \emph default
  seed from the cooking demonstration.
- The table further indicates that reduced adoption leads to lower quantities of improved seed used,
+ The table further indicates that the seed trial packs lead to lower quantities of seed of an improved variety used,
  both in absolute terms and when measured per acre.
 \end_layout
 
@@ -4844,7 +4850,20 @@ Interestingly,
  In fact,
  there are some signs that the cooking demonstration and tasting sessions actually increased production and productivity.
  In particular,
- we find a 13 percent increase in maize productivity (as we use log transformations in the regression).
+ we find a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round(abs(df_rnd_pool[2,1,6]*100),digits=0),nsmall=0)}
+\end_layout
+
+\end_inset
+
+ percent increase in maize productivity (as we use log transformations in the regression).
 \end_layout
 
 \begin_layout Standard
@@ -5690,8 +5709,11 @@ ref{eq:one};
  and + denote significance at the 1,
  5 and 10
 \backslash
-% levels.
- Production and productivity are log transformed (means and standard deviations are in levels).
+% levels  based on sharpened q-values 
+\backslash
+citep{benjamini2006adaptive}.
+ Production and productivity are log transformed;
+ means and standard deviations are in levels.
 \end_layout
 
 \end_inset
@@ -5705,31 +5727,44 @@ ref{eq:one};
 \end_layout
 
 \begin_layout Standard
-At first glance,
- the results for the seed sample packs seem counterintuitive.
- The primary objective of distributing seed sample packs is to increase the adoption of improved seed varieties in subsequent years.
+Upon initial examination,
+ the outcomes associated with the distribution of seed sample packs appear counterintuitive.
+ The primary goal of this intervention was to enhance the adoption of improved seed varieties in subsequent agricultural cycles.
  However,
- our findings suggest that a significant portion of farmers in our sample opted to recycle seed from the sample packs rather than purchasing fresh 
+ a significant proportion of farmers who received the seed trial packs chose to recycle the seeds rather than purchasing new Bazooka seeds from agro-input suppliers.
+ According to the criteria we employ to assess the impact,
+ recycled Bazooka seeds do not qualify as improved varieties—
+only newly purchased Bazooka seeds meet this standard.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Indeed,
+ if we change the definition of adoption to also include recycled 
 \emph on
 Bazooka
 \emph default
- seed from agro-input dealers.
- According to our definition of improved seed,
- recycled 
+,
+ we find that more than 60 percent of the farmers that received the seed trial pack were growing 
 \emph on
 Bazooka
 \emph default
- seed does not qualify as such.
- Furthermore,
- the intervention appears to have inadvertently crowded out the use of fresh improved seed:
- the high yields experienced with the sample packs led farmers to continue using recycled 
-\emph on
-Bazooka
-\emph default
- seed.
- In contrast,
- farmers in the control group may have been dissatisfied with the local seed they were using.
- This dissatisfaction could have led them to seek fresh seed or use an Open Pollinated Variety (OPV) that was recycled fewer than four times.
+ in the subsequent agricultural season.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Moreover,
+ the intervention seems to have inadvertently displaced the use of fresh improved seeds:
+ the high yields achieved with the sample packs encouraged farmers to persist with recycled Bazooka seeds.
+ Conversely,
+ farmers in the control group,
+ potentially dissatisfied with their local seeds,
+ might have been more inclined to seek out fresh seeds of an improved variety or utilize an OPV recycled fewer than four times.
 \end_layout
 
 \begin_layout Subsection
@@ -5767,7 +5802,7 @@ placement document
 alignment document
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -6216,7 +6251,9 @@ ref{eq:one};
  and + denote significance at the 1,
  5 and 10
 \backslash
-% levels.
+% levels based on sharpened q-values 
+\backslash
+citep{benjamini2006adaptive}.
 \end_layout
 
 \end_inset
@@ -6319,7 +6356,7 @@ placement document
 alignment document
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -6861,7 +6898,9 @@ ref{eq:one};
  and + denote significance at the 1,
  5 and 10
 \backslash
-% levels.
+% levels based on sharpened q-values 
+\backslash
+citep{benjamini2006adaptive}.
 \end_layout
 
 \end_inset
@@ -6929,7 +6968,7 @@ placement document
 alignment document
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -7665,7 +7704,9 @@ ref{eq:one};
  and + denote significance at the 1,
  5 and 10
 \backslash
-% levels.
+% levels based on sharpened q-values 
+\backslash
+citep{benjamini2006adaptive}.
 \end_layout
 
 \end_inset
@@ -7679,8 +7720,7 @@ ref{eq:one};
 \end_layout
 
 \begin_layout Section
-Results:
- Mechanisms
+Mechanisms
 \end_layout
 
 \begin_layout Subsection
@@ -8966,7 +9006,9 @@ ref{eq:one};
  and + denote significance at the 1,
  5 and 10
 \backslash
-% levels.
+% levels based on sharpened q-values 
+\backslash
+citep{benjamini2006adaptive}.
 \end_layout
 
 \end_inset
@@ -9724,7 +9766,9 @@ ref{eq:one};
  and + denote significance at the 1,
  5 and 10
 \backslash
-% levels.
+% levels based on sharpened q-values 
+\backslash
+citep{benjamini2006adaptive}.
 \end_layout
 
 \end_inset
@@ -10447,7 +10491,9 @@ ref{eq:one};
  and + denote significance at the 1,
  5 and 10
 \backslash
-% levels.
+% levels based on sharpened q-values 
+\backslash
+citep{benjamini2006adaptive}.
 \end_layout
 
 \end_inset
@@ -12145,7 +12191,9 @@ ref{eq:one};
  and + denote significance at the 1,
  5 and 10
 \backslash
-% levels.
+% levels based on sharpened q-values 
+\backslash
+citep{benjamini2006adaptive}.
 \end_layout
 
 \end_inset
@@ -13363,7 +13411,9 @@ ref{eq:one};
  and + denote significance at the 1,
  5 and 10
 \backslash
-% levels.
+% levels based on sharpened q-values 
+\backslash
+citep{benjamini2006adaptive}.
 \end_layout
 
 \end_inset

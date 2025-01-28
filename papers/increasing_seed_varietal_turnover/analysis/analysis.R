@@ -5,6 +5,10 @@ path <- getwd()
 library(dplyr)
 library(clubSandwich)
 library(moments)
+library(andersonTools)
+# set to true if you want to use the Anderson lues
+sharp <- TRUE
+
 ########################################################################################################################################
 ######################################################### start function definitions ###################################################
 ########################################################################################################################################
@@ -184,10 +188,6 @@ dta$p_outcome_1 <- logical_result
 ###only for those that 
 dta$p_outcome_1[dta$no_grow] <- NA
 
-###not interviewed
-dta$p_outcome_1[is.na(dta$plot_no)] <- NA
-
-
 ## to control for this outcome at baseline, we use the question "Q20. Did you use any quality maize seed like **OPV or hybrid seed** in the previous season (Nsambya of 2022) on any of your plots?"
 bse$b_p_outcome_1 <- bse$quality_use=="Yes"
 bse$b_p_outcome_1[bse$quality_use==98] <- NA
@@ -209,7 +209,6 @@ for (i in 1:num_plots) {
 dta$p_outcome_2 <- logical_result
 
 dta$p_outcome_2[dta$no_grow] <- NA
-
 
 bse$b_p_outcome_2 <- bse$bazo_use=="Yes"
 
@@ -242,13 +241,14 @@ num_plots <- max(as.numeric(dta$plot_count), na.rm=TRUE)
 logical_result <- logical(nrow(dta))
 
 for (i in 1:num_plots) {
-  ### definition of improved seed: fresh hybrid from trusted source or OPV recycled max 3 times from trusted source
-  condition <- (((dta[[paste0("plot.", i, "..plot_imp_type")]] %in%  
-                    c("Longe_10H", "Longe_10R", "Longe_7H", "Longe_7R_Kayongo-go", "Bazooka", "DK", "Longe_6H", "Panner", "UH5051", "Wema", "KH_series", "other_hybrid")) & (dta[[paste0("plot.", i, "..plot_times_rec")]] %in% 1) & (dta[[paste0("plot.", i, "..single_source")]]%in% letters[4:9])  ) |
-                  ((dta[[paste0("plot.", i, "..plot_imp_type")]] %in%  c("Longe_5", "Longe_5D", "Longe_4", "MM3","other_opv")) & (dta[[paste0("plot.", i, "..plot_times_rec")]] %in% 1:4) &  ((dta[[paste0("plot.", i, "..recycle_source_rest")]] %in% letters[4:9]) | (dta[[paste0("plot.", i, "..single_source")]]%in% letters[4:9])))) 
+	  ### definition of improved seed: fresh hybrid from trusted source or OPV recycled max 3 times from trusted source
+	  condition <- (((dta[[paste0("plot.", i, "..plot_imp_type")]] %in%  
+			                      c("Longe_10H", "Longe_10R", "Longe_7H", "Longe_7R_Kayongo-go", "Bazooka", "DK", "Longe_6H", "Panner", "UH5051", "Wema", "KH_series", "other_hybrid")) & (dta[[paste0("plot.", i, "..plot_times_rec")]] %in% 1) & (dta[[paste0("plot.", i, "..single_source")]]%in% letters[4:9])  ) |
+			                  ((dta[[paste0("plot.", i, "..plot_imp_type")]] %in%  c("Longe_5", "Longe_5D", "Longe_4", "MM3","other_opv")) & (dta[[paste0("plot.", i, "..plot_times_rec")]] %in% 1:4) &  ((dta[[paste0("plot.", i, "..recycle_source_rest")]] %in% letters[4:9]) | (dta[[paste0("plot.", i, "..single_source")]]%in% letters[4:9])))) 
   # Combine the condition with the logical OR operator
   logical_result <- logical_result + condition
-}
+}     
+
 
 # Assign the result to the new column p_outcome_1
 dta$nr_improved <- logical_result
@@ -284,9 +284,10 @@ dta$share_plots_imp[dta$share_plots_imp>1] <- NA
 dta$share_area_imp <-  dta$nr_improvedxsize/dta$totsize
 dta$share_area_imp[dta$no_grow] <- NA
 
+
 #iterate over outcomes
-outcomes <- c("p_outcome_1","p_outcome_2","p_outcome_2alt","nr_improved", "share_plots_imp", "nr_improvedxsize", "share_area_imp" )
-b_outcomes <- c("b_p_outcome_1", "b_p_outcome_2","b_p_outcome_2alt",NA,NA,NA)
+outcomes <- c("p_outcome_1","p_outcome_2","nr_improved", "share_plots_imp", "nr_improvedxsize", "share_area_imp" )
+b_outcomes <- c("b_p_outcome_1", "b_p_outcome_2",NA,NA,NA,NA)
 ### do not include outcome 2 (adoption of bazooka) as this results in singularity - on second thought, maybe p_outcome_2 should be a key outcome and included
 ## in fact, the singularity disappeared in the real data
 dta$index <- icwIndex(xmat= as.matrix(dta[outcomes]), sgroup=dta$s_ind)$index
@@ -302,7 +303,7 @@ for (i in 1:length(outcomes)){
   
   df_means_out[1,i] <- mean(unlist(dta[outcomes[i]]), na.rm=TRUE)
   df_means_out[2,i] <- sd(unlist(dta[outcomes[i]]), na.rm=TRUE)
-  if (i %in% 4:8) {
+  if (i %in% 3:7) {
   formula1 <- as.formula(paste(outcomes[i],paste("trial_P*cont"),sep="~"))
   ols <- lm(formula1, data=dta)
   vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
@@ -322,7 +323,7 @@ for (i in 1:length(outcomes)){
   df_res[1,4,i] <- nobs(ols) 
   }  
 
-  if (i %in% 4:8) {  
+  if (i %in% 3:7) {  
   formula2 <- as.formula(paste(outcomes[i],paste("trial_P*cont_demeaned"),sep="~"))
   } else {
   formula2 <- as.formula(paste(paste(outcomes[i],paste("trial_P*cont_demeaned"),sep="~"), b_outcomes[i],sep="+"))   
@@ -333,7 +334,7 @@ for (i in 1:length(outcomes)){
   df_res_pool[1,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
   df_res_pool[1,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
   df_res_pool[1,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
-  if (i %in% 4:8) {   
+  if (i %in% 3:7) {   
   formula3 <- as.formula(paste(outcomes[i],paste("cont*trial_P_demeaned"),sep="~"))
   } else {
   formula3 <- as.formula(paste(paste(outcomes[i],paste("cont*trial_P_demeaned"),sep="~"), b_outcomes[i],sep="+"))    
@@ -346,7 +347,18 @@ for (i in 1:length(outcomes)){
   df_res_pool[2,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
   
 }
+if (sharp == TRUE){
+a_sharp <-  anderson_sharp_q(c(df_res[1,3,1:(length(outcomes)-1)],df_res[2,3,1:(length(outcomes)-1)],df_res[3,3,1:(length(outcomes)-1)]))
 
+df_res[1,3,1:(length(outcomes)-1)] <- a_sharp[1:(length(outcomes)-1)] 
+df_res[2,3,1:(length(outcomes)-1)] <-  a_sharp[length(outcomes):(2*length(outcomes)-2)]  
+df_res[3,3,1:(length(outcomes)-1)] <-  a_sharp[(2*length(outcomes)-1):(3*length(outcomes)-3)]
+
+a_sharp <-  anderson_sharp_q(c(df_res_pool[1,3,1:(length(outcomes)-1)],df_res_pool[2,3,1:(length(outcomes)-1)]))					       
+df_res_pool[1,3,1:(length(outcomes)-1)] <- a_sharp[1:(length(outcomes)-1)]
+df_res_pool[2,3,1:(length(outcomes)-1)] <- a_sharp[length(outcomes):(2*length(outcomes)-2)]  
+}
+#### this is for table 2 (impact on adoption)
 save(df_res_pool,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_res_pool.Rdata",sep="/"))
 save(df_res,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_res.Rdata",sep="/"))
 save(df_means_out,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_means_out.Rdata",sep="/"))
@@ -500,10 +512,21 @@ df_means_out[2,5] <- sd(dta$production_mean, na.rm=TRUE)
 df_means_out[1,6] <- mean(dta$productivity_mean, na.rm=TRUE)
 df_means_out[2,6] <- sd(dta$productivity_mean, na.rm=TRUE)
 
+if (sharp == TRUE){
+a_sharp <-  anderson_sharp_q(c(df_res[1,3,1:(length(outcomes)-1)],df_res[2,3,1:(length(outcomes)-1)],df_res[3,3,1:(length(outcomes)-1)]))
+
+df_res[1,3,1:(length(outcomes)-1)] <- a_sharp[1:(length(outcomes)-1)] 
+df_res[2,3,1:(length(outcomes)-1)] <-  a_sharp[length(outcomes):(2*length(outcomes)-2)]  
+df_res[3,3,1:(length(outcomes)-1)] <-  a_sharp[(2*length(outcomes)-1):(3*length(outcomes)-3)]
+
+a_sharp <-  anderson_sharp_q(c(df_res_pool[1,3,1:(length(outcomes)-1)],df_res_pool[2,3,1:(length(outcomes)-1)]))					       
+df_res_pool[1,3,1:(length(outcomes)-1)] <- a_sharp[1:(length(outcomes)-1)]
+df_res_pool[2,3,1:(length(outcomes)-1)] <- a_sharp[length(outcomes):(2*length(outcomes)-2)]  
+}
+
 df_rnd_pool <- df_res_pool
 df_rnd <- df_res
 df_means_rnd <- df_means_out
-
 
 save(df_rnd_pool,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_rnd_pool.Rdata",sep="/"))
 save(df_rnd,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_rnd.Rdata",sep="/"))
@@ -604,10 +627,21 @@ for (i in 1:length(outcomes)){
   
 }
 
+if (sharp == TRUE){
+a_sharp <-  anderson_sharp_q(c(df_res[1,3,1:(length(outcomes)-1)],df_res[2,3,1:(length(outcomes)-1)],df_res[3,3,1:(length(outcomes)-1)]))
+
+df_res[1,3,1:(length(outcomes)-1)] <- a_sharp[1:(length(outcomes)-1)] 
+df_res[2,3,1:(length(outcomes)-1)] <-  a_sharp[length(outcomes):(2*length(outcomes)-2)]  
+df_res[3,3,1:(length(outcomes)-1)] <-  a_sharp[(2*length(outcomes)-1):(3*length(outcomes)-3)]
+
+a_sharp <-  anderson_sharp_q(c(df_res_pool[1,3,1:(length(outcomes)-1)],df_res_pool[2,3,1:(length(outcomes)-1)]))					       
+df_res_pool[1,3,1:(length(outcomes)-1)] <- a_sharp[1:(length(outcomes)-1)]
+df_res_pool[2,3,1:(length(outcomes)-1)] <- a_sharp[length(outcomes):(2*length(outcomes)-2)]  
+}
+
 df_path_pool <- df_res_pool
 df_path <- df_res
 df_means_path <- df_means_out
-
 
 save(df_path_pool,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_path_pool.Rdata",sep="/"))
 save(df_path,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_path.Rdata",sep="/"))
@@ -677,10 +711,20 @@ for (i in 1:length(outcomes)){
   
 }
 
+if (sharp == TRUE){
+a_sharp <-  anderson_sharp_q(c(df_res[1,3,1:(length(outcomes)-1)],df_res[2,3,1:(length(outcomes)-1)],df_res[3,3,1:(length(outcomes)-1)]))
+
+df_res[1,3,1:(length(outcomes)-1)] <- a_sharp[1:(length(outcomes)-1)] 
+df_res[2,3,1:(length(outcomes)-1)] <-  a_sharp[length(outcomes):(2*length(outcomes)-2)]  
+df_res[3,3,1:(length(outcomes)-1)] <-  a_sharp[(2*length(outcomes)-1):(3*length(outcomes)-3)]
+
+a_sharp <-  anderson_sharp_q(c(df_res_pool[1,3,1:(length(outcomes)-1)],df_res_pool[2,3,1:(length(outcomes)-1)]))					       
+df_res_pool[1,3,1:(length(outcomes)-1)] <- a_sharp[1:(length(outcomes)-1)]
+df_res_pool[2,3,1:(length(outcomes)-1)] <- a_sharp[length(outcomes):(2*length(outcomes)-2)]  
+}
 df_cons_traits_seed_pool <- df_res_pool
 df_cons_traits_seed <- df_res
 df_means_cons_traits_seed <- df_means_out
-
 
 save(df_cons_traits_seed_pool,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_cons_traits_seed_pool.Rdata",sep="/"))
 save(df_cons_traits_seed,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_cons_traits_seed.Rdata",sep="/"))
@@ -753,10 +797,20 @@ for (i in 1:length(outcomes)){
   
 }
 
+if (sharp == TRUE){
+a_sharp <-  anderson_sharp_q(c(df_res[1,3,1:(length(outcomes)-1)],df_res[2,3,1:(length(outcomes)-1)],df_res[3,3,1:(length(outcomes)-1)]))
+
+df_res[1,3,1:(length(outcomes)-1)] <- a_sharp[1:(length(outcomes)-1)] 
+df_res[2,3,1:(length(outcomes)-1)] <-  a_sharp[length(outcomes):(2*length(outcomes)-2)]  
+df_res[3,3,1:(length(outcomes)-1)] <-  a_sharp[(2*length(outcomes)-1):(3*length(outcomes)-3)]
+
+a_sharp <-  anderson_sharp_q(c(df_res_pool[1,3,1:(length(outcomes)-1)],df_res_pool[2,3,1:(length(outcomes)-1)]))					       
+df_res_pool[1,3,1:(length(outcomes)-1)] <- a_sharp[1:(length(outcomes)-1)]
+df_res_pool[2,3,1:(length(outcomes)-1)] <- a_sharp[length(outcomes):(2*length(outcomes)-2)]  
+}
 df_prod_traits_seed_pool <- df_res_pool
 df_prod_traits_seed <- df_res
 df_means_prod_traits_seed <- df_means_out
-
 
 save(df_prod_traits_seed_pool,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_prod_traits_seed_pool.Rdata",sep="/"))
 save(df_prod_traits_seed,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_prod_traits_seed.Rdata",sep="/"))
@@ -825,42 +879,45 @@ for (i in 1:length(outcomes)){
   df_res_pool[2,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
 }
 
+if (sharp == TRUE){
+a_sharp <-  anderson_sharp_q(c(df_res[1,3,1:(length(outcomes)-1)],df_res[2,3,1:(length(outcomes)-1)],df_res[3,3,1:(length(outcomes)-1)]))
+
+df_res[1,3,1:(length(outcomes)-1)] <- a_sharp[1:(length(outcomes)-1)] 
+df_res[2,3,1:(length(outcomes)-1)] <-  a_sharp[length(outcomes):(2*length(outcomes)-2)]  
+df_res[3,3,1:(length(outcomes)-1)] <-  a_sharp[(2*length(outcomes)-1):(3*length(outcomes)-3)]
+
+a_sharp <-  anderson_sharp_q(c(df_res_pool[1,3,1:(length(outcomes)-1)],df_res_pool[2,3,1:(length(outcomes)-1)]))					       
+df_res_pool[1,3,1:(length(outcomes)-1)] <- a_sharp[1:(length(outcomes)-1)]
+df_res_pool[2,3,1:(length(outcomes)-1)] <- a_sharp[length(outcomes):(2*length(outcomes)-2)]  
+}
+
 df_compare_cons_traits_seed_pool <- df_res_pool
 df_compare_cons_traits_seed <- df_res
 df_means_compare_cons_traits_seed <- df_means_out
 
-
 save(df_compare_cons_traits_seed_pool,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_compare_cons_traits_seed_pool.Rdata",sep="/"))
 save(df_compare_cons_traits_seed,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_compare_cons_traits_seed.Rdata",sep="/"))
 save(df_means_compare_cons_traits_seed,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_means_compare_cons_traits_seed.Rdata",sep="/"))
-
 
 #### table with impact of producer traits of seed used (comparing improved and local seed)
 
 dta$compare_yield_rate[dta$compare_yield_rate == "98"] <- NA
 dta$compare_yield_rate_higher <- dta$compare_yield_rate =="1" | dta$compare_yield_rate=="2"
 
-
 dta$compare_drt_tol[dta$compare_drt_tol == "98"] <- NA
 dta$compare_drt_tol_better <- dta$compare_drt_tol =="1" | dta$compare_drt_tol=="2"
-
 
 dta$compare_dies_tol[dta$compare_dies_tol == "98"] <- NA
 dta$compare_dies_tol_better <- dta$compare_dies_tol =="1" | dta$compare_dies_tol=="2"
 
-
 dta$compare_erly_mat[dta$compare_erly_mat == "98"] <- NA
 dta$compare_erly_mat_shorter <- dta$compare_erly_mat =="1" | dta$compare_erly_mat=="2"
-
 
 dta$compare_germ_rate[dta$compare_germ_rate == "98"] <- NA
 dta$compare_germ_rate_higher <- dta$compare_germ_rate =="1" | dta$compare_germ_rate=="2"
 
-
-
 #iterate over outcomes
 outcomes <- c("compare_yield_rate_higher","compare_drt_tol_better","compare_dies_tol_better","compare_erly_mat_shorter", "compare_germ_rate_higher")
-
 
 dta$index <- icwIndex(xmat= as.matrix(dta[outcomes]),sgroup=dta$s_ind)$index
 outcomes <- c(outcomes, "index")
@@ -902,10 +959,21 @@ for (i in 1:length(outcomes)){
   df_res_pool[2,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
 }
 
+if (sharp == TRUE){
+a_sharp <-  anderson_sharp_q(c(df_res[1,3,1:(length(outcomes)-1)],df_res[2,3,1:(length(outcomes)-1)],df_res[3,3,1:(length(outcomes)-1)]))
+
+df_res[1,3,1:(length(outcomes)-1)] <- a_sharp[1:(length(outcomes)-1)] 
+df_res[2,3,1:(length(outcomes)-1)] <-  a_sharp[length(outcomes):(2*length(outcomes)-2)]  
+df_res[3,3,1:(length(outcomes)-1)] <-  a_sharp[(2*length(outcomes)-1):(3*length(outcomes)-3)]
+
+a_sharp <-  anderson_sharp_q(c(df_res_pool[1,3,1:(length(outcomes)-1)],df_res_pool[2,3,1:(length(outcomes)-1)]))					       
+df_res_pool[1,3,1:(length(outcomes)-1)] <- a_sharp[1:(length(outcomes)-1)]
+df_res_pool[2,3,1:(length(outcomes)-1)] <- a_sharp[length(outcomes):(2*length(outcomes)-2)]  
+}
+
 df_compare_prod_traits_seed_pool <- df_res_pool
 df_compare_prod_traits_seed <- df_res
 df_means_compare_prod_traits_seed <- df_means_out
-
 
 save(df_compare_prod_traits_seed_pool,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_compare_prod_traits_seed_pool.Rdata",sep="/"))
 save(df_compare_prod_traits_seed,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_compare_prod_traits_seed.Rdata",sep="/"))
@@ -967,10 +1035,21 @@ for (i in 1:length(outcomes)){
   df_res_pool[2,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
 }
 
+if (sharp == TRUE){
+a_sharp <-  anderson_sharp_q(c(df_res[1,3,1:(length(outcomes)-1)],df_res[2,3,1:(length(outcomes)-1)],df_res[3,3,1:(length(outcomes)-1)]))
+
+df_res[1,3,1:(length(outcomes)-1)] <- a_sharp[1:(length(outcomes)-1)] 
+df_res[2,3,1:(length(outcomes)-1)] <-  a_sharp[length(outcomes):(2*length(outcomes)-2)]  
+df_res[3,3,1:(length(outcomes)-1)] <-  a_sharp[(2*length(outcomes)-1):(3*length(outcomes)-3)]
+
+a_sharp <-  anderson_sharp_q(c(df_res_pool[1,3,1:(length(outcomes)-1)],df_res_pool[2,3,1:(length(outcomes)-1)]))					       
+df_res_pool[1,3,1:(length(outcomes)-1)] <- a_sharp[1:(length(outcomes)-1)]
+df_res_pool[2,3,1:(length(outcomes)-1)] <- a_sharp[length(outcomes):(2*length(outcomes)-2)]  
+}
+
 df_used_ph_pool <- df_res_pool
 df_used_ph <- df_res
 df_means_used_ph <- df_means_out
-
 
 save(df_used_ph_pool,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_used_ph_pool.Rdata",sep="/"))
 save(df_used_ph,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_used_ph.Rdata",sep="/"))
@@ -1033,6 +1112,18 @@ for (i in 1:length(outcomes)){
   df_res_pool[2,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
 }
 
+if (sharp == TRUE){
+a_sharp <-  anderson_sharp_q(c(df_res[1,3,1:(length(outcomes)-1)],df_res[2,3,1:(length(outcomes)-1)],df_res[3,3,1:(length(outcomes)-1)]))
+
+df_res[1,3,1:(length(outcomes)-1)] <- a_sharp[1:(length(outcomes)-1)] 
+df_res[2,3,1:(length(outcomes)-1)] <-  a_sharp[length(outcomes):(2*length(outcomes)-2)]  
+df_res[3,3,1:(length(outcomes)-1)] <-  a_sharp[(2*length(outcomes)-1):(3*length(outcomes)-3)]
+
+a_sharp <-  anderson_sharp_q(c(df_res_pool[1,3,1:(length(outcomes)-1)],df_res_pool[2,3,1:(length(outcomes)-1)]))					       
+df_res_pool[1,3,1:(length(outcomes)-1)] <- a_sharp[1:(length(outcomes)-1)]
+df_res_pool[2,3,1:(length(outcomes)-1)] <- a_sharp[length(outcomes):(2*length(outcomes)-2)]  
+}
+
 df_compare_ph_pool <- df_res_pool
 df_compare_ph <- df_res
 df_means_compare_ph <- df_means_out
@@ -1093,10 +1184,21 @@ for (i in 1:length(outcomes)){
   df_res_pool[2,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
 }
 
+if (sharp == TRUE){
+a_sharp <-  anderson_sharp_q(c(df_res[1,3,1:(length(outcomes)-1)],df_res[2,3,1:(length(outcomes)-1)],df_res[3,3,1:(length(outcomes)-1)]))
+
+df_res[1,3,1:(length(outcomes)-1)] <- a_sharp[1:(length(outcomes)-1)] 
+df_res[2,3,1:(length(outcomes)-1)] <-  a_sharp[length(outcomes):(2*length(outcomes)-2)]  
+df_res[3,3,1:(length(outcomes)-1)] <-  a_sharp[(2*length(outcomes)-1):(3*length(outcomes)-3)]
+
+a_sharp <-  anderson_sharp_q(c(df_res_pool[1,3,1:(length(outcomes)-1)],df_res_pool[2,3,1:(length(outcomes)-1)]))					       
+df_res_pool[1,3,1:(length(outcomes)-1)] <- a_sharp[1:(length(outcomes)-1)]
+df_res_pool[2,3,1:(length(outcomes)-1)] <- a_sharp[length(outcomes):(2*length(outcomes)-2)]  
+}
+
 df_decision_pool <- df_res_pool
 df_decision <- df_res
 df_means_decision <- df_means_out
-
 
 save(df_decision_pool,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_decision_pool.Rdata",sep="/"))
 save(df_decision,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_decision.Rdata",sep="/"))
@@ -1160,10 +1262,21 @@ for (i in 1:length(outcomes)){
   df_res_pool[2,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
 }
 
+if (sharp == TRUE){
+a_sharp <-  anderson_sharp_q(c(df_res[1,3,1:(length(outcomes)-1)],df_res[2,3,1:(length(outcomes)-1)],df_res[3,3,1:(length(outcomes)-1)]))
+
+df_res[1,3,1:(length(outcomes)-1)] <- a_sharp[1:(length(outcomes)-1)] 
+df_res[2,3,1:(length(outcomes)-1)] <-  a_sharp[length(outcomes):(2*length(outcomes)-2)]  
+df_res[3,3,1:(length(outcomes)-1)] <-  a_sharp[(2*length(outcomes)-1):(3*length(outcomes)-3)]
+
+a_sharp <-  anderson_sharp_q(c(df_res_pool[1,3,1:(length(outcomes)-1)],df_res_pool[2,3,1:(length(outcomes)-1)]))					       
+df_res_pool[1,3,1:(length(outcomes)-1)] <- a_sharp[1:(length(outcomes)-1)]
+df_res_pool[2,3,1:(length(outcomes)-1)] <- a_sharp[length(outcomes):(2*length(outcomes)-2)]  
+}
+
 df_disposal_pool <- df_res_pool
 df_disposal <- df_res
 df_means_disposal <- df_means_out
-
 
 save(df_disposal_pool,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_disposal_pool.Rdata",sep="/"))
 save(df_disposal,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_disposal.Rdata",sep="/"))
@@ -1215,7 +1328,7 @@ as.numeric(dta$cooking_oil_value_sp),
 as.numeric(dta$soap_value_sp),
 as.numeric(dta$airtime_value_sp)), na.rm=T)
 
-dta <- trim(dta, "cons_exp")
+dta <- trim("cons_exp",dta)
 
 #iterate over outcomes
 outcomes <- c("better_off_vil","better_off_six","food_secure_pref","food_secure_quant","cons_exp")
@@ -1259,6 +1372,18 @@ for (i in 1:length(outcomes)){
   df_res_pool[2,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
   df_res_pool[2,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
   df_res_pool[2,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
+}
+
+if (sharp == TRUE){
+a_sharp <-  anderson_sharp_q(c(df_res[1,3,1:(length(outcomes)-1)],df_res[2,3,1:(length(outcomes)-1)],df_res[3,3,1:(length(outcomes)-1)]))
+
+df_res[1,3,1:(length(outcomes)-1)] <- a_sharp[1:(length(outcomes)-1)] 
+df_res[2,3,1:(length(outcomes)-1)] <-  a_sharp[length(outcomes):(2*length(outcomes)-2)]  
+df_res[3,3,1:(length(outcomes)-1)] <-  a_sharp[(2*length(outcomes)-1):(3*length(outcomes)-3)]
+
+a_sharp <-  anderson_sharp_q(c(df_res_pool[1,3,1:(length(outcomes)-1)],df_res_pool[2,3,1:(length(outcomes)-1)]))					       
+df_res_pool[1,3,1:(length(outcomes)-1)] <- a_sharp[1:(length(outcomes)-1)]
+df_res_pool[2,3,1:(length(outcomes)-1)] <- a_sharp[length(outcomes):(2*length(outcomes)-2)]  
 }
 
 df_welfare_pool <- df_res_pool
@@ -1345,7 +1470,7 @@ dta$nr_bazxsize[dta$no_grow] <- NA
 dta$totsize <- rowSums( tot_area, na.rm=TRUE)
 dta$totsize[dta$no_grow] <- NA
 
-##share of plots under improved cultivation
+##share of plots under improveid cultivation
 dta$plot_no <- as.numeric(dta$plot_no)
 dta$share_plots_baz <-  dta$nr_baz/dta$plot_no
 dta$share_plots_baz[dta$no_grow] <- NA
