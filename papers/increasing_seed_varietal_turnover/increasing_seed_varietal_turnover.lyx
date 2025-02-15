@@ -205,24 +205,28 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-To sustainably feed a growing global population while mitigating climate change and preserving biodiversity,
- it is essential to produce more food on less land.
+To sustainably feed a growing global population while addressing climate change and preserving biodiversity,
+ it is essential to produce more food using less land.
  Green Revolution technologies,
  particularly the development of improved planting materials,
- have been instrumental in achieving higher yields and enhancing resilience to environmental challenges such as drought.
+ have been key to achieving higher yields and enhancing resilience to environmental challenges like drought.
  Traditionally,
- breeding programs have prioritized production-related traits,
- such as yield,
+ breeding programs have focused on production-related traits such as yield,
  drought tolerance,
  and pest resistance.
  However,
- there is a growing focus on consumer-oriented traits,
- including taste,
+ the adoption of new crop varieties is influenced by both production-oriented and consumer-oriented traits—
+such as taste,
  color,
  texture,
  and ease of cooking.
- Integrating these consumption-oriented attributes alongside production advantages is crucial for driving demand for improved crop varieties,
- whether among subsistence farmers growing their own food or producers targeting commercial markets.
+ When producing for the market,
+ production traits are often prioritized.
+ Conversely,
+ when producing for self-consumption,
+ consumption traits like taste and cooking ease become more significant.
+ As farmers in developing countries primarily produce for self-consumption,
+ integrating consumption-oriented attributes alongside production advantages is crucial for driving demand for improved crop varieties.
 \end_layout
 
 \begin_layout Standard
@@ -575,7 +579,7 @@ status collapsed
 \begin_layout Plain Layout
 They do get something of similar value—
 a so-called token of appreciation—
-to account for potential income effects
+to account for potential income effects.
 \end_layout
 
 \end_inset
@@ -769,14 +773,22 @@ Bazooka
  After gathering the guesses,
  the facilitator reveals the correct answers.
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 During field testing,
  a large majority of farmers initially stated that the local seed excelled in nearly all dimensions,
  such as having a sweeter taste,
  whiter appearance,
- and better aroma.
+ and better aroma (which is similar to what 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "timu2014role"
+literal "false"
+
+\end_inset
+
+ find for Sorghum in neighboring Kenya).
  However,
  during the tasting,
  almost all farmers rated the sample made from 
@@ -983,13 +995,13 @@ placement document
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename timeline.png
-	scale 35
+	filename Timeline.jpg
+	scale 70
 
 \end_inset
 
@@ -3827,7 +3839,9 @@ hline
 
 \begin_layout Plain Layout
 
-Has used seed of an improved variety on any plot in last season?
+Has used seed of an improved variety on any plot in last season?$^
+\backslash
+dag$
 \end_layout
 
 \begin_layout Plain Layout
@@ -3924,7 +3938,9 @@ Sexpr{format(round(df_res[3,2,1],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Has used fresh Bazooka on any plot in last season in last season?
+Has used fresh Bazooka on any plot in last season in last season?$^
+\backslash
+dag$
 \end_layout
 
 \begin_layout Plain Layout
@@ -4576,6 +4592,9 @@ ref{eq:one};
 % levels based on sharpened q-values 
 \backslash
 citep{benjamini2006adaptive}.
+ $^
+\backslash
+dag$ indicates that baseline outcome was controlled for in the regression.
 \end_layout
 
 \end_inset
@@ -5714,6 +5733,7 @@ ref{eq:one};
 citep{benjamini2006adaptive}.
  Production and productivity are log transformed;
  means and standard deviations are in levels.
+ All regressions include baseline outcome as control.
 \end_layout
 
 \end_inset
@@ -5727,53 +5747,78 @@ citep{benjamini2006adaptive}.
 \end_layout
 
 \begin_layout Standard
-Upon initial examination,
- the outcomes associated with the distribution of seed sample packs appear counterintuitive.
- The primary goal of this intervention was to enhance the adoption of improved seed varieties in subsequent agricultural cycles.
+At first glance,
+ the results of distributing seed sample packs appear counterintuitive.
+ The intervention aimed to increase the adoption of seeds of an improved variety in subsequent agricultural cycles,
+ yet we observe a decline instead.
+ This outcome can be explained by farmers' behavior:
+ a significant number of those who received the 
+\emph on
+Bazooka
+\emph default
+ seed sample packs opted to reuse the grain as seed in the following season rather than obtaining new 
+\emph on
+Bazooka
+\emph default
+ seeds from eg.
+ agro-input suppliers,
+ NGOs,
+ or government programs.
+ According to our criteria,
+ only fresh 
+\emph on
+Bazooka
+\emph default
+ seeds qualify as an improved variety,
+ whereas recycled 
+\emph on
+Bazooka
+\emph default
+ is categorized as local seed.
  However,
- a significant proportion of farmers who received the seed trial packs chose to recycle the seeds rather than purchasing new Bazooka seeds from agro-input suppliers.
- According to the criteria we employ to assess the impact,
- recycled Bazooka seeds do not qualify as improved varieties—
-only newly purchased Bazooka seeds meet this standard.
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-Indeed,
- if we change the definition of adoption to also include recycled 
+ if we redefine adoption to include the reuse of 
 \emph on
 Bazooka
 \emph default
-,
- we find that more than 60 percent of the farmers that received the seed trial pack were growing 
+ seeds,
+ we find that over 60 percent of farmers who received the trial pack continued growing 
 \emph on
 Bazooka
 \emph default
- in the subsequent agricultural season.
-\end_layout
-
-\end_inset
-
-
+ in the next agricultural season.
 \end_layout
 
 \begin_layout Standard
 Moreover,
  the intervention seems to have inadvertently displaced the use of fresh improved seeds:
- the high yields achieved with the sample packs encouraged farmers to persist with recycled Bazooka seeds.
+ the high yields achieved with the sample packs encouraged farmers to persist with recycled 
+\emph on
+Bazooka
+\emph default
+ seeds.
  Conversely,
  farmers in the control group,
  potentially dissatisfied with their local seeds,
- might have been more inclined to seek out fresh seeds of an improved variety or utilize an OPV recycled fewer than four times.
+ seem to be more inclined to seek out fresh seeds of an improved variety or utilize an OPV recycled fewer than four times.
 \end_layout
 
 \begin_layout Subsection
-Decision Making and Disposal
+Decision Making
 \end_layout
 
 \begin_layout Standard
-We hypothesize that highlighting the consumption traits of improved seed varieties may shift the decision-making role concerning seed selection and the use of harvested maize,
- potentially increasing the involvement of female co-heads in these decisions.
+We hypothesize that highlighting the consumption traits of improved seed varieties—
+domains where it is more culturally acceptable for women to make decisions—
+may shift the decision-making role concerning seed selection and the use of harvested maize,
+ potentially increasing the involvement of female co-heads in these decisions 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kramer2024gender"
+literal "false"
+
+\end_inset
+
+.
  In Uganda,
  as in many agriculture-based countries with pronounced gender norms,
  men typically handle production and marketing decisions,
@@ -5802,7 +5847,7 @@ placement document
 alignment document
 wide false
 sideways true
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -6254,6 +6299,7 @@ ref{eq:one};
 % levels based on sharpened q-values 
 \backslash
 citep{benjamini2006adaptive}.
+ All regressions include baseline outcome as control.
 \end_layout
 
 \end_inset
@@ -6278,639 +6324,12 @@ nolink "false"
 
 \end_inset
 
- reveals that approximately half of the women are involved in decision-making related to seed use and harvest management.
+ indicates that women are already highly engaged in decision-making regarding seed use and harvest management.
  Contrary to our expectations,
- the consumption intervention does not show a significant effect on this involvement.
- However,
- there is a positive effect associated with the seed sample pack intervention,
- observed only in the fully interacted model,
- with significance at the 10 percent level.
-\end_layout
-
-\begin_layout Standard
-The interventions may also influence the use of maize harvested from the selected plot.
- We first examined the proportion of the harvest allocated to household consumption.
- We anticipated that the cooking demonstration and tasting session would increase this share,
- based on the premise that emphasizing consumption traits would lead to higher consumption.
- Table 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "disposal"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
- shows that approximately three-quarters of the maize is grown for home consumption.
- However,
- we did not find a significant effect of either intervention on this outcome.
-\end_layout
-
-\begin_layout Standard
-Maize that is not consumed is usually sold.
- We thus also look at what share of the harvest is sold.
- Indeed,
- Table 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "disposal"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
- shows that about 20 percent of seed is sold on average.
- We do not see any effects of the interventions.
-\end_layout
-
-\begin_layout Standard
-Finally,
- we examined the amount of maize grain reserved as planting material for the next season.
- We anticipated a reduction in the quantity of saved seed,
- given that both interventions aim to promote the adoption of improved maize varieties and encourage varietal turnover.
- However,
- we did not observe a significant effect of the interventions on this outcome.
- This lack of effect may be attributed to the fact that,
- as discussed in Section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "subsec:Adoption"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-,
- farmers appear to recycle improved seeds also.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float table
-placement document
-alignment document
-wide false
-sideways true
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Disposal of harvest on random plot
-\begin_inset CommandInset label
-LatexCommand label
-name "disposal"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-footnotesize
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tabular}{rccccccc}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-& & 
-\backslash
-multicolumn{2}{c}{
-\backslash
-textit{Pooled model}} & 
-\backslash
-multicolumn{3}{c}{
-\backslash
-textit{Interacted model}} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& mean & sample & cons & sample & cons & interact & nobs 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Share kept for consumption
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_disposal[1,1],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_disposal_pool[1,1,1],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_disposal_pool[1,3,1]<.01,"**",ifelse(df_disposal_pool[1,3,1]<.05,"*",ifelse(df_disposal_pool[1,3,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_disposal_pool[2,1,1],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_disposal_pool[2,3,1]<.01,"**",ifelse(df_disposal_pool[2,3,1]<.05,"*",ifelse(df_disposal_pool[2,3,1]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_disposal[1,1,1],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_disposal[1,3,1]<.01,"**",ifelse(df_disposal[1,3,1]<.05,"*",ifelse(df_disposal[1,3,1]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_disposal[2,1,1],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_disposal[2,3,1]<.01,"**",ifelse(df_disposal[2,3,1]<.05,"*",ifelse(df_disposal[2,3,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_disposal[3,1,1],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_disposal[3,3,1]<.01,"**",ifelse(df_disposal[3,3,1]<.05,"*",ifelse(df_disposal[3,3,1]<.1,"+","")))}}$ & 
-\backslash
-Sexpr{format(round(df_disposal[1,4,1],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{format(round(df_means_disposal[2,1],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_disposal_pool[1,2,1],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_disposal_pool[2,2,1],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_disposal[1,2,1],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_disposal[2,2,1],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_disposal[3,2,1],digits=2),nsmall=2)})
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Share sold
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_disposal[1,2],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_disposal_pool[1,1,2],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_disposal_pool[1,3,2]<.01,"**",ifelse(df_disposal_pool[1,3,2]<.05,"*",ifelse(df_disposal_pool[1,3,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_disposal_pool[2,1,2],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_disposal_pool[2,3,2]<.01,"**",ifelse(df_disposal_pool[2,3,2]<.05,"*",ifelse(df_disposal_pool[2,3,2]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_disposal[1,1,2],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_disposal[1,3,2]<.01,"**",ifelse(df_disposal[1,3,2]<.05,"*",ifelse(df_disposal[1,3,2]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_disposal[2,1,2],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_disposal[2,3,2]<.01,"**",ifelse(df_disposal[2,3,2]<.05,"*",ifelse(df_disposal[2,3,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_disposal[3,1,2],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_disposal[3,3,2]<.01,"**",ifelse(df_disposal[3,3,2]<.05,"*",ifelse(df_disposal[3,3,2]<.1,"+","")))}}$ & 
-\backslash
-Sexpr{format(round(df_disposal[1,4,2],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{format(round(df_means_disposal[2,2],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_disposal_pool[1,2,2],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_disposal_pool[2,2,2],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_disposal[1,2,2],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_disposal[2,2,2],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_disposal[3,2,2],digits=2),nsmall=2)})
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Maize kept as seed (kg)
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_disposal[1,3],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_disposal_pool[1,1,3],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_disposal_pool[1,3,3]<.01,"**",ifelse(df_disposal_pool[1,3,3]<.05,"*",ifelse(df_disposal_pool[1,3,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_disposal_pool[2,1,3],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_disposal_pool[2,3,3]<.01,"**",ifelse(df_disposal_pool[2,3,3]<.05,"*",ifelse(df_disposal_pool[2,3,3]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_disposal[1,1,3],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_disposal[1,3,3]<.01,"**",ifelse(df_disposal[1,3,3]<.05,"*",ifelse(df_disposal[1,3,3]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_disposal[2,1,3],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_disposal[2,3,3]<.01,"**",ifelse(df_disposal[2,3,3]<.05,"*",ifelse(df_disposal[2,3,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_disposal[3,1,3],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_disposal[3,3,3]<.01,"**",ifelse(df_disposal[3,3,3]<.05,"*",ifelse(df_disposal[3,3,3]<.1,"+","")))}}$ & 
-\backslash
-Sexpr{format(round(df_disposal[1,4,3],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{format(round(df_means_disposal[2,3],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_disposal_pool[1,2,3],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_disposal_pool[2,2,3],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_disposal[1,2,3],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_disposal[2,2,3],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_disposal[3,2,3],digits=2),nsmall=2)})
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Index
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_disposal[1,4],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_disposal_pool[1,1,4],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_disposal_pool[1,3,4]<.01,"**",ifelse(df_disposal_pool[1,3,4]<.05,"*",ifelse(df_disposal_pool[1,3,4]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_disposal_pool[2,1,4],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_disposal_pool[2,3,4]<.01,"**",ifelse(df_disposal_pool[2,3,4]<.05,"*",ifelse(df_disposal_pool[2,3,4]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_disposal[1,1,4],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_disposal[1,3,4]<.01,"**",ifelse(df_disposal[1,3,4]<.05,"*",ifelse(df_disposal[1,3,4]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_disposal[2,1,4],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_disposal[2,3,4]<.01,"**",ifelse(df_disposal[2,3,4]<.05,"*",ifelse(df_disposal[2,3,4]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_disposal[3,1,4],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_disposal[3,3,4]<.01,"**",ifelse(df_disposal[3,3,4]<.05,"*",ifelse(df_disposal[3,3,4]<.1,"+","")))}}$ & 
-\backslash
-Sexpr{format(round(df_disposal[1,4,4],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{format(round(df_means_disposal[2,4],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_disposal_pool[1,2,4],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_disposal_pool[2,2,4],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_disposal[1,2,4],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_disposal[2,2,4],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_disposal[3,2,4],digits=2),nsmall=2)})
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{tabular}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-scriptsize
-\end_layout
-
-\begin_layout Plain Layout
-
-Note:
- Column (1) reports sample means at baseline and standard deviations below;
-  columns (2)-(3) report differences between treatment and control groups estimated using the pooled model of Equation  
-\backslash
-ref{eq:pooled};
- (4)-(5) report differences between treatment and control groups estimated using the fully interacted model of Equation 
-\backslash
-ref{eq:one};
- column (6) is the interaction effect.
- Standared errors are below the estimates and are clustered at the level of randomization;
- **,
- *,
- and + denote significance at the 1,
- 5 and 10
-\backslash
-% levels based on sharpened q-values 
-\backslash
-citep{benjamini2006adaptive}.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+ the consumption intervention does not increase women involvement.
+ At the same time,
+ judged by the index,
+ we find that the seed sample pack increases women involvement in decision making.
 \end_layout
 
 \begin_layout Subsection
@@ -6918,7 +6337,7 @@ Well-being and food security
 \end_layout
 
 \begin_layout Standard
-Increasing the adoption of improved seed is not an end in itself;
+Increasing the adoption of improved seed varieties is not an end in itself;
  ultimately,
  farmers seek to enhance their food security and overall welfare.
  Consequently,
@@ -6939,10 +6358,49 @@ nolink "false"
 \begin_layout Standard
 The first two questions assess subjective measures of relative well-being,
  both within the village and over time.
- Approximately 35 percent of farm households report that they perceive themselves as better off compared to the average within their village.
+ In particular,
+ we asked if the respondent felt that their household was better off,
+ about the same,
+ or worse off in terms of income and consumption than the average households in the community,
+ and convert this to an outcome that is true if the respondent answered that they were better off.
+ Similarly,
+ we ask if the respondent felt that their household was better off,
+ about the same,
+ or worse off in terms of income and consumption than six months earlier,
+ and convert this to an outcome that is true if the respondent answered that they are now better off.
+\end_layout
+
+\begin_layout Standard
+Approximately 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+Sexpr{format(round(df_means_welfare[1,1]*100,digits=0),nsmall=0)}
+\end_layout
+
+\end_inset
+
+ percent of farm households report that they perceive themselves as better off compared to the average within their village.
  There is no significant change in this perception following either the seed sample pack or the cooking demonstration and tasting session.
  Additionally,
- 42 percent of households believe they are better off than they were six months ago—
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round(df_means_welfare[1,2]*100,digits=0),nsmall=0)}
+\end_layout
+
+\end_inset
+
+ percent of households believe they are better off than they were six months ago—
 approximately one agricultural season prior.
  Notably,
  there is some indication that farmers in the seed sample pack group are more likely to feel better off compared to those who did not receive a seed sample pack.
@@ -6960,6 +6418,91 @@ nolink "false"
 \end_inset
 
 ).
+\end_layout
+
+\begin_layout Standard
+Next,
+ we use two questions from the The Household Food Insecurity Access Scale (HFIAS),
+ one that on aligns with the "food preference" aspect,
+ which assesses whether people had to compromise on their preferred diet due to financial or food constraints and one that captures "reducing quantity",
+ a more severe form of food insecurity where people eat smaller portions or skip meals due to lack of resources 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "coates2007household"
+literal "false"
+
+\end_inset
+
+.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+In our analysis,
+ as we want to focus on positive outcomes,
+ we take the inverse and measure food security instead of insecurity.
+\end_layout
+
+\end_inset
+
+ Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "welfare"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ show that 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round(df_means_welfare[1,3]*100,digits=0),nsmall=0)}
+\end_layout
+
+\end_inset
+
+ percent of households indicate that in the past month they were always able to eat what they wanted,
+ whereas 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round(df_means_welfare[1,4]*100,digits=0),nsmall=0)}
+\end_layout
+
+\end_inset
+
+ percent of households indicate that in the past month they always had the desired quantities of food that they wanted.
+\end_layout
+
+\begin_layout Standard
+Finally,
+ we approximate consumption expenditure by asking farmers to report how much money was spent in the last week prior to the survey on 14 of the most consumed items in the area (maize,
+ sorghum,
+ millet,
+ rice,
+ cassava,
+ sweet potatoes,
+ beans,
+ groundnuts,
+ fruits,
+ vegetables,
+ sugar,
+ cooking oil,
+ soap,
+ and airtime).
+ 
 \end_layout
 
 \begin_layout Standard
@@ -8074,7 +7617,9 @@ hline
 
 \begin_layout Plain Layout
 
-Knows Bazooka (yes=1)
+Knows Bazooka (yes=1)$^
+\backslash
+dag$
 \end_layout
 
 \begin_layout Plain Layout
@@ -9009,6 +8554,9 @@ ref{eq:one};
 % levels based on sharpened q-values 
 \backslash
 citep{benjamini2006adaptive}.
+ $^
+\backslash
+dag$ indicates that baseline outcome was used as control in regression.
 \end_layout
 
 \end_inset

@@ -1134,18 +1134,34 @@ save(df_compare_ph,file=paste(path,"/papers/increasing_seed_varietal_turnover/re
 save(df_means_compare_ph,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_means_compare_ph.Rdata",sep="/"))
 
 ## table with impact on decision making
-dta$who1[dta$who1 == 'n/a'] <- NA
-dta$who1 <- dta$who1 == "1" | dta$who1 == "3"
-dta$who2[dta$who2 == 'n/a'] <- NA
-dta$who2 <- dta$who2 == "1" | dta$who2 == "3"
+#note: there is a significant share of households where women are taking decisions alone
+#most likely this is due to high levels of polygamy in the area
+#for these households, we thus do not expect a change in decisionmaking
+#can we drop?
 
+dta$who1[dta$who1 == 'n/a'] <- NA
+dta$who1[(dta$gender_resp == "Female" & dta$head_resp == "Yes") | dta$head_gender == "Female"] <- NA
+dta$who1 <-  dta$who1 == "1" | dta$who1 == "3" | dta$who1 == "4"
+dta$who2[dta$who2 == 'n/a'] <- NA
+dta$who2[(dta$gender_resp == "Female" & dta$head_resp == "Yes") | dta$head_gender == "Female"] <- NA
+dta$who2 <-  dta$who2 == "1" | dta$who2 == "3" | dta$who2 == "4"
+
+bse$b_who1 <- bse$who1 == 1 | bse$who1 == 3 | bse$who1 == 4
+dta <- merge(dta, bse[c("farmer_ID","b_who1")], by.x="ID", by.y="farmer_ID")
+
+bse$b_who2 <- bse$who2 == 1 | bse$who2 == 3 | bse$who2 == 4
+dta <- merge(dta, bse[c("farmer_ID","b_who2")], by.x="ID", by.y="farmer_ID")
 
 #iterate over outcomes
 outcomes <- c("who1","who2")
+b_outcomes <- c("b_who1","b_who2")
+###can we control for baseline outcomes? Yes
 
 
 dta$index <- icwIndex(xmat= as.matrix(dta[outcomes]),sgroup=dta$s_ind)$index
+dta$b_index <- icwIndex(xmat= as.matrix(dta[b_outcomes]),sgroup=dta$s_ind)$index
 outcomes <- c(outcomes, "index")
+b_outcomes <- c(b_outcomes, "b_index")
 ## demean indicators
 dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)
 dta$trial_P_demeaned <-  dta$trial_P - mean(dta$trial_P,na.rm = T)
@@ -1154,20 +1170,19 @@ df_res <- array(NA,c(3,4,length(outcomes )))
 df_res_pool  <- array(NA,c(2,3,length(outcomes )))
 for (i in 1:length(outcomes)){
   ##means
-  
-  df_means_out[1,i] <- mean(unlist(dta[outcomes[i]]), na.rm=TRUE)
+   df_means_out[1,i] <- mean(unlist(dta[outcomes[i]]), na.rm=TRUE)
   df_means_out[2,i] <- sd(unlist(dta[outcomes[i]]), na.rm=TRUE)
   
-  formula1 <- as.formula(paste(outcomes[i],paste("trial_P*cont"),sep="~"))
+  formula1 <- as.formula(paste(paste(outcomes[i],paste("trial_P*cont"),sep="~"), b_outcomes[i],sep="+"))
   ols <- lm(formula1, data=dta)
   vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
   
-  df_res[1:3,1,i] <- coef_test(ols, vcov_cluster)$beta[2:4]
-  df_res[1:3,2,i] <- coef_test(ols, vcov_cluster)$SE[2:4]
-  df_res[1:3,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2:4]
+  df_res[1:3,1,i] <- coef_test(ols, vcov_cluster)$beta[c(2:3,5)]
+  df_res[1:3,2,i] <- coef_test(ols, vcov_cluster)$SE[c(2:3,5)]
+  df_res[1:3,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[c(2:3,5)]
   df_res[1,4,i] <- nobs(ols) 
   
-  formula2 <- as.formula(paste(outcomes[i],paste("trial_P*cont_demeaned"),sep="~"))
+  formula2 <- as.formula(paste(paste(outcomes[i],paste("trial_P*cont_demeaned"),sep="~"), b_outcomes[i],sep="+"))
   ols <- lm(formula2, data=dta)
   vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
   
@@ -1175,14 +1190,15 @@ for (i in 1:length(outcomes)){
   df_res_pool[1,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
   df_res_pool[1,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
   
-  formula3 <- as.formula(paste(outcomes[i],paste("cont*trial_P_demeaned"),sep="~"))
+  formula3 <- as.formula(paste(paste(outcomes[i],paste("cont*trial_P_demeaned"),sep="~"), b_outcomes[i],sep="+"))
   ols <- lm(formula3, data=dta)
   vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
   
   df_res_pool[2,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
   df_res_pool[2,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
   df_res_pool[2,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
-}
+  
+} 
 
 if (sharp == TRUE){
 a_sharp <-  anderson_sharp_q(c(df_res[1,3,1:(length(outcomes)-1)],df_res[2,3,1:(length(outcomes)-1)],df_res[3,3,1:(length(outcomes)-1)]))
@@ -1207,6 +1223,11 @@ save(df_means_decision,file=paste(path,"/papers/increasing_seed_varietal_turnove
 ## table with impact on decision making
 
 dta$perc_cons <- as.numeric(dta$bag_keep)/as.numeric(dta$bag_harv)*100
+bse$bag_keep[bse$bag_keep > 900] <- NA
+bse$bag_harv[bse$bag_harv > 900] <- NA
+
+bse$b_perc_cons <- as.numeric(bse$bag_keep)/as.numeric(bse$bag_harv)*100
+
 dta$perc_cons[dta$perc_cons>100] <- NA
 dta$perc_cons[dta$no_grow] <- NA
 dta$perc_sell <- as.numeric(as.character(dta$bag_sell))/as.numeric(dta$bag_harv)*100
@@ -1220,7 +1241,7 @@ dta$seed_keep <- as.numeric(as.character(dta$seed_keep))
 dta$seed_keep[dta$seed_keep>50] <- NA
 #iterate over outcomes
 outcomes <- c("perc_cons","perc_sell","seed_keep")
-
+#can we control for baseline outcomes here
 
 dta$index <- icwIndex(xmat= as.matrix(dta[outcomes]),revcols = c(2,3),sgroup=dta$s_ind)$index
 outcomes <- c(outcomes, "index")
