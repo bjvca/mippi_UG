@@ -6356,7 +6356,7 @@ nolink "false"
 \end_layout
 
 \begin_layout Standard
-The first two questions assess subjective measures of relative well-being,
+The first two indicators assess subjective measures of relative well-being,
  both within the village and over time.
  In particular,
  we asked if the respondent felt that their household was better off,
@@ -6364,7 +6364,7 @@ The first two questions assess subjective measures of relative well-being,
  or worse off in terms of income and consumption than the average households in the community,
  and convert this to an outcome that is true if the respondent answered that they were better off.
  Similarly,
- we ask if the respondent felt that their household was better off,
+ we asked if the respondent felt that their household was better off,
  about the same,
  or worse off in terms of income and consumption than six months earlier,
  and convert this to an outcome that is true if the respondent answered that they are now better off.
@@ -6385,7 +6385,7 @@ Sexpr{format(round(df_means_welfare[1,1]*100,digits=0),nsmall=0)}
 \end_inset
 
  percent of farm households report that they perceive themselves as better off compared to the average within their village.
- There is no significant change in this perception following either the seed sample pack or the cooking demonstration and tasting session.
+ There is no significant change in this perception following either the seed sample pack nor the cooking demonstration and tasting session.
  Additionally,
  
 \begin_inset ERT
@@ -6423,7 +6423,7 @@ nolink "false"
 \begin_layout Standard
 Next,
  we use two questions from the The Household Food Insecurity Access Scale (HFIAS),
- one that on aligns with the "food preference" aspect,
+ one that on aligns with the "food preference" dimension,
  which assesses whether people had to compromise on their preferred diet due to financial or food constraints and one that captures "reducing quantity",
  a more severe form of food insecurity where people eat smaller portions or skip meals due to lack of resources 
 \begin_inset CommandInset citation
@@ -6484,6 +6484,7 @@ Sexpr{format(round(df_means_welfare[1,4]*100,digits=0),nsmall=0)}
 \end_inset
 
  percent of households indicate that in the past month they always had the desired quantities of food that they wanted.
+ We do not find any impact of the interventions on these outcomes.
 \end_layout
 
 \begin_layout Standard
@@ -6502,7 +6503,46 @@ Finally,
  cooking oil,
  soap,
  and airtime).
+ On average,
+ a household spent about UGX
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round(df_means_welfare[1,5],digits=0),nsmall=0)}
+\end_layout
+
+\end_inset
+
+,
+ which at the time of the survey corresponds to about USD
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round(df_means_welfare[1,5]/3600,digits=0),nsmall=0)}
+\end_layout
+
+\end_inset
+
+.
+ We also do not find that out treatments affected consumption expenditure.
  
+\end_layout
+
+\begin_layout Standard
+Judging by the index,
+ we similarly find no effects from the treatments on overall welfare and food security.
+ However,
+ most of the interaction effects are positive and as a result,
+ there is some evidence that farmers that received both treatments did see welfare increase,
+ albeit only at a 10 percent significance level.
 \end_layout
 
 \begin_layout Standard
@@ -6511,7 +6551,7 @@ placement document
 alignment document
 wide false
 sideways true
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -7277,16 +7317,16 @@ Knowledge,
 To explore potential impact pathways,
  we posed several questions.
  First,
- we aimed to assess whether the interventions increased awareness of improved maize seeds,
- specifically the 
+ we aimed to assess whether the interventions increased awareness of improved maize seed varieties,
+ specifically 
 \emph on
 Bazooka
 \emph default
- variety.
+.
  We asked farmers to list as many improved maize seed varieties as they could name,
  and enumerators recorded the number of varieties mentioned.
  Second,
- we directly inquired whether the farmer was familiar with a maize seed variety called “
+ we directly inquired whether the farmer was familiar with a maize variety called “
 \emph on
 Bazooka
 \emph default
@@ -7307,16 +7347,54 @@ nolink "false"
 
  shows a clear impact on seed knowledge resulting from the two interventions.
  On average,
- farmers are aware of approximately 2 or 3 different maize seed varieties.
- Both interventions lead to a substantial increase in the number of seed varieties known by farmers,
- with the effects being quite similar.
+ farmers are aware of approximately 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round(floor(df_means_path[1,2]),digits=0),nsmall=0)}
+\end_layout
+
+\end_inset
+
+ or 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round(ceiling(df_means_path[1,2]),digits=0),nsmall=0)}
+\end_layout
+
+\end_inset
+
+ different maize varieties.
+ Both interventions lead to a substantial and similar increase in the number of seed varieties known by farmers.
  Overall,
- 82 percent of farmers in our sample are familiar with the 
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round(df_means_path[1,1]*100,digits=0),nsmall=0)}
+\end_layout
+
+\end_inset
+
+ percent of farmers in our sample are familiar with the 
 \emph on
 Bazooka
 \emph default
  variety.
- The intervention with the most pronounced impact on this specific knowledge was the seed sample pack,
+ The intervention with the most pronounced effect on this specific type of knowledge was the seed sample pack,
  likely because it directly involved the 
 \emph on
 Bazooka
@@ -7324,8 +7402,8 @@ Bazooka
  variety,
  with its name prominently displayed on the packaging.
  In contrast,
- the cooking and tasting demonstration had a more general focus on the consumption traits of improved seed varieties,
- which may explain its comparatively lower impact on specific seed recognition.
+ the cooking and tasting demonstration had a more general focus on the consumption traits of improved varieties,
+ which may explain its comparatively lower effect on specific variety knowledge.
 \begin_inset Foot
 status collapsed
 
@@ -7374,9 +7452,9 @@ nolink "false"
 
 \begin_layout Standard
 As noted in the introduction,
- seed sample packs aim to mitigate the perceived risk associated with trying new seed varieties.
+ seed sample packs aim to mitigate the perceived risk associated with trying new varieties.
  To assess changes in perceived risk in response to the interventions,
- we asked farmers to rate how likely they believe it is that using improved seed varieties would result in lower yields compared to local seed.
+ we asked farmers to rate how likely they believe it is that using improved varieties would result in lower yields compared to local varieties.
  Responses were recorded on a 4-point Likert scale,
  ranging from 
 \begin_inset Quotes qld
@@ -7386,7 +7464,7 @@ very likely
 \begin_inset Quotes qrd
 \end_inset
 
- (improved seed will yield less than local) to 
+ (improved varieties will yield less than local) to 
 \begin_inset Quotes qld
 \end_inset
 
@@ -7395,8 +7473,12 @@ very unlikely
 \end_inset
 
  (improved seed will yield more than local).
- We repeated this question specifically for the seed type used in the study,
- but only for farmers who reported familiarity with the seed.
+ We repeated this question specifically for 
+\emph on
+Bazooka
+\emph default
+ as well,
+ but only for farmers who reported familiarity with the variety.
  We constructed an indicator for downside risk,
  which is set to 1 if the farmer responded with a 1 or 2 on the Likert scale (indicating 
 \begin_inset Quotes qld
@@ -7414,45 +7496,72 @@ somewhat likely
 \begin_inset Quotes qrd
 \end_inset
 
- that improved seed will yield less).
+ that improved variety will yield less).
  Our findings reveal that perceived downside risk is generally limited,
- and neither intervention significantly affected risk perceptions related to improved seed in general nor to the specific seed used in the study.
+ and neither intervention significantly affected risk perceptions related to improved varieties in general,
+ nor the specific variety used in the study.
 \end_layout
 
 \begin_layout Standard
 An additional rationale for subsidizing or providing seed at no cost is to harness potential spillover effects to enhance adoption.
  To examine whether our interventions influenced social learning,
- we included questions on whether farmers recommended any improved seed varieties to others.
- A similar question was posed specifically regarding the seed variety used in the sample pack,
- but only for those farmers who were familiar with 
+ we included questions on whether farmers recommended any improved varieties to others.
+ A similar question was posed specifically regarding 
 \emph on
 Bazooka
 \emph default
-.
+,
+ but only for those farmers who were familiar with this variety.
 \end_layout
 
 \begin_layout Standard
-Our findings indicate that a substantial proportion of farmers recommend improved seed to their peers.
+Our findings indicate that a substantial proportion of farmers recommend improved varieties to their peers.
  Notably,
- the likelihood of recommending improved seed is significantly higher among those who received the seed sample pack.
+ the likelihood of recommending improved varieties is significantly higher among those who received the seed sample pack.
  When focusing specifically on 
 \emph on
 Bazooka
 \emph default
 ,
- the difference becomes even more pronounced.
+ the difference becomes even more pronounced:
  Receiving a seed sample pack increases the probability of recommending 
 \emph on
 Bazooka
 \emph default
- by 38 to 44 percentage points,
+ by 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round(df_path_pool[1,1,6]*100,digits=0),nsmall=0)}
+\end_layout
+
+\end_inset
+
+ to 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round(df_path[1,1,6]*100,digits=0),nsmall=0)}
+\end_layout
+
+\end_inset
+
+ percentage points,
  depending on the model used.
 \end_layout
 
 \begin_layout Standard
 Finally,
- we examined farmers' intentions regarding future use of improved seed.
- Although a considerable proportion of farmers expressed an intention to use improved seed in the future,
+ we examined farmers' intentions regarding future use of improved varieties.
+ Although a considerable proportion of farmers expressed an intention to use improved varieties in the future,
  we did not observe a significant impact from either the seed sample pack nor the cooking demonstration and tasting session on these intentions.
  Furthermore,
  we find that,
@@ -7506,7 +7615,7 @@ Sexpr{format(round(df_path[1,1,8]*100,digits=0),nsmall=0)}
  When summarizing these outcomes into an index,
  we observe a positive impact from the seed sample pack.
  In contrast,
- the effect of the cooking demonstration and tasting session is less convincing.
+ the effect of the cooking demonstration and tasting session is less robust.
 \end_layout
 
 \begin_layout Standard
