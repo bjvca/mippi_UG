@@ -5,6 +5,9 @@
 \save_transient_properties true
 \origin unavailable
 \textclass article
+\begin_preamble
+\sloppy
+\end_preamble
 \use_default_options true
 \begin_modules
 knitr
@@ -33,6 +36,8 @@ knitr
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement class
+\float_alignment class
 \paperfontsize default
 \spacing single
 \use_hyperref true
@@ -151,41 +156,40 @@ footnotemark[4]}
 
 \end_inset
 
-The Influence of Production and Consumption Traits on the Adoption of Improved Maize Varieties:
- Experimental Evidence from Eastern Uganda
+Production and Consumption Traits and the Adoption of Improved Maize Varieties:
+ Evidence from Seed Sample Packs and Cooking Demonstrations
 \end_layout
 
 \begin_layout Abstract
 In developing countries,
- semi-subsistence farmers often act as both consumers and producers of the same crops,
- a dual role that shapes their adoption decisions by weighing household food security against market-driven considerations.
- This study examines two interventions aimed at promoting the adoption of improved maize seed varieties among smallholder farmers in eastern Uganda.
- The first intervention distributed free sample packs of an improved seed variety—
- in our case,
- a hybrid—
-allowing farmers to experience benefits such as higher yields,
+ semi-subsistence farmers typically assume dual roles as both consumers and producers of the same crops,
+ which shapes their adoption decisions as they balance household food security with market-driven incentives.
+ This study,
+ conducted in eastern Uganda,
+ employs a field experiment with two intervention arms to assess the relative importance of these factors in farmers’ decisions to adopt improved maize seed varieties.
+ The first intervention focuses on production traits,
+ distributing free sample packs of an improved hybrid maize variety to showcase benefits such as higher yields,
  pest resistance,
  and drought tolerance.
- The second intervention featured cooking demonstrations and blind taste tests with flour obtained from this same improved maize variety to emphasize consumption-related traits,
- including taste,
+ The second intervention emphasizes consumption traits,
+ offering cooking demonstrations and blind taste tests using flour from the same improved maize variety to highlight its taste,
  texture,
  and ease of preparation.
- Our findings indicate that while seed sample packs positively impacted farmers' perceptions of both production and consumption traits,
- cooking demonstrations primarily influenced consumption traits.
- Both interventions increased the adoption of improved maize varieties in the next season,
- with the seed sample packs having the most substantial effect.
+ Our findings reveal that while seed sample packs positively influenced farmers' perceptions of both production and consumption traits,
+ cooking demonstrations primarily affected perceptions of consumption qualities.
+ Moreover,
+ the cooking demonstrations and tasting sessions significantly boosted adoption of the improved maize seed varieties.
  However,
- farmers who received sample packs were more likely to reuse harvested grain from the sample pack as seed in subsequent seasons.
- As recycling hybrid seed leads to productivity losses,
- the large adoption effects do not translate into improvements in food security or market participation.
- We argue that seed recycling may be a rational response to the transaction costs associated with purchasing fresh seeds,
- and conclude that interventions should also address the underlying costs and challenges of maintaining seed supply,
- including the incentives for farmers to recycle seed.
+ farmers who received seed sample packs tended to recycle the harvested grain as seed in subsequent seasons,
+ thereby crowding out fresh seed purchases.
+ This practice led to productivity losses,
+ suggesting that the seed trial packs did not translate into lasting improvements in food security or increased market participation.
 \end_layout
 
 \begin_layout Abstract
 Keywords:
  technology adoption,
+ consumption and production traits,
  sample packs,
  cooking demonstration and blind tasting,
  maize,
@@ -206,16 +210,32 @@ Introduction
 
 \begin_layout Standard
 To sustainably feed a growing global population while addressing climate change and preserving biodiversity,
- it is essential to produce more food using less land.
+ it is essential to produce more food using less land 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "tilman2011global"
+literal "false"
+
+\end_inset
+
+.
  Green Revolution technologies,
  particularly the development of improved planting materials,
- have been key to achieving higher yields and enhancing resilience to environmental challenges like drought.
+ have been key to achieving higher yields and enhancing resilience to environmental challenges like drought 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "evenson2003assessing"
+literal "false"
+
+\end_inset
+
+.
  Traditionally,
  breeding programs have focused on production-related traits such as yield,
  drought tolerance,
  and pest resistance.
  However,
- the adoption of new crop varieties is influenced by both production-oriented and consumer-oriented traits—
+ the adoption of new crop varieties equally influenced by consumer-oriented traits—
 such as taste,
  color,
  texture,
@@ -230,10 +250,11 @@ such as taste,
 \end_layout
 
 \begin_layout Standard
-For new technologies to be widely adopted,
- it is essential to raise farmers' awareness about beneficial traits.
- Similar to the historical focus in breeding programs,
- sensitization efforts often emphasize production traits.
+For new technologies to achieve widespread adoption,
+ it is crucial to raise farmers' awareness of their beneficial attributes.
+ Traditionally,
+ much of the focus in breeding programs has been on production traits,
+ often overshadowing the importance of consumption characteristics.
  A common strategy to encourage farmers to learn about the production traits of a new seed variety is through the distribution of seed sample packs.
  These trial packs,
  typically containing small quantities of seed (e.g.,
@@ -246,7 +267,7 @@ status collapsed
 
 \begin_layout Plain Layout
 One may argue that seed sample packs also enable farmers to discover consumption traits after they harvest the grain obtained from the seed sample pack.
- While this is probably not the primary focus of seed trial packs and assumes farmers keep grain obtained from improved seed separate and consume it themselves (as opposed to selling),
+ While this is probably not the primary focus of seed sample packs and assumes farmers keep grain obtained from seed separate and consume it themselves (as opposed to selling),
  we do find that seed sample packs indeed also affect perceptions of consumption traits—
 See Section 
 \begin_inset CommandInset ref
@@ -265,78 +286,6 @@ nolink "false"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-From a theoretical standpoint,
- seed sample packs can be viewed as a form of subsidy.
- Subsidies are often used to promote adoption and may be justified for several reasons.
- First,
- resource-constrained farmers may perceive the risk premium of a new product as too high to justify investment 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "karlan2014agricultural"
-literal "false"
-
-\end_inset
-
-.
- More broadly,
- even without considering risk premia,
- farmers may lack the resources to purchase the seed,
- especially if complementary inputs and effort are required 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "miehe2023miracle"
-literal "false"
-
-\end_inset
-
-.
- A one-off subsidy in the form of a starter kit can help initiate adoption,
- as supported by the theory of micro poverty traps,
- which posits that households and individuals remain in chronic poverty because they cannot self-finance investments necessary for high returns 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "barrett2006fractal"
-literal "false"
-
-\end_inset
-
-.
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-In the context of seed,
- a sample pack can foster sustained adoption either directly (if the seed is reused in future seasons) or indirectly (if surplus production is sold and the proceeds are used to buy new seed).
-\end_layout
-
-\end_inset
-
- Second,
- it is well known that farmers learn from others when a new technology is introduced 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "10.1257/aer.100.1.35,campenhout2021role"
-literal "false"
-
-\end_inset
-
-.
- In cases where there are positive externalities,
- subsidies may be justified.
- Finally,
- governments may use subsidies to replenish deteriorated seed stocks,
- enhancing the overall vigor of seeds circulating within society 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "mcguire2016seed"
-literal "false"
-
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Standard
@@ -397,7 +346,7 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-It is even harder to find examples of strategies that emphasize consumption-related traits.
+Strategies that emphasize consumption-related traits to increase technology adoption are less common in the literature.
  This is surprising given that in many contexts where adoption is low,
  farmers consume most of the crops they grow,
  and there is a large literature that shows that in such settings consumption and production decisions are inseparable 
@@ -430,7 +379,7 @@ literal "false"
 \end_inset
 
 ,
- who study the impact of the HarvestPlus' Reaching End Users project (and includes a demand creation component) on the adoption of bio-fortified crops in Mozambique and Uganda.
+ who study the impact of the HarvestPlus' Reaching End Users project (which includes a demand creation component that focuses on consumption attributes) on the adoption of bio-fortified crops in Mozambique and Uganda.
 \end_layout
 
 \begin_layout Standard
@@ -480,14 +429,19 @@ Bazooka
  which,
  despite being widely available,
  was relatively new and thus not widely adopted by farmers.
- The primary production trait of this seed is its potential for increased yield.
+ The primary production trait of this seed is its potential for increased yield,
+ but 
+\emph on
+Bazooka
+\emph default
+ also combines a high starch content with mild sweetness.
  The study ran over two consecutive agricultural seasons in 2023,
  with endline data being collected early 2024 after the harvest of the second season.
 \end_layout
 
 \begin_layout Standard
 We find that farmers who received a free seed sample are actually less likely to use fresh seed of an improved variety in the next season.
- This counter intuitive result is caused by the fact that farmers who received 
+ This counter intuitive result can be explained by the fact that farmers who received 
 \emph on
 Bazooka
 \emph default
@@ -495,19 +449,13 @@ Bazooka
  Since we categorize recycled hybrid seed as local seed,
  these farmers are considered non-adopters in our analysis.
  However,
- we do find that the cooking demonstration and tasting session increased the use of fresh 
-\emph on
-Bazooka
-\emph default
-,
+ we do find that the cooking demonstration and tasting session increased the use of improved varieties,
  with some indications that this also led to higher maize productivity.
 \end_layout
 
 \begin_layout Standard
 While we expected that increased attention to consumption traits would increase the role of women in the decision making process with respect to seed choice,
  we do not find this effect.
- We also test if making consumption traits more salient would increase consumption,
- but also here we do not find an effect.
  Moreover,
  we do not find effects further down the impact pathway in terms of food security or welfare.
 \end_layout
@@ -543,7 +491,7 @@ The rest of the paper is organized as follows.
  food security,
  and well-being.
  We also study some of the potential underlying mechanisms.
- A final section concludes.
+ A final section explores some of the reasons for the high rates of recycling in the seed sample pack group.
 \end_layout
 
 \begin_layout Section
@@ -551,23 +499,22 @@ Methods
 \end_layout
 
 \begin_layout Subsection
-Experimental design
+Experimental Design
 \end_layout
 
 \begin_layout Standard
-In this study,
- we employ a field experiment to evaluate the effectiveness of two interventions,
+We use a field experiment to evaluate the effectiveness of two interventions,
  which we elaborate on in the subsequent section.
- This evaluation is conducted using a cluster randomized controlled trial (RCT) structured as a 2x2 factorial design.
+ The experiment takes the form of a cluster randomized controlled trial (RCT) structured as a 2x2 factorial design.
  Each factor includes both a control and a treatment level,
  with interventions clustered at the village level.
  Within each village,
- a predetermined number of households were randomly selected.
+ a predetermined number of households were randomly selected to participate in the study.
 \end_layout
 
 \begin_layout Standard
-The first factor pertains to the seed sample pack treatment.
- Farmers in the treatment villages receive a complimentary sample of a recently introduced improved maize seed variety (
+The first factor in the factorial design pertains to the seed sample pack treatment.
+ Sampled farmers in the treatment villages receive a complimentary sample of a recently introduced improved hybrid maize seed variety (
 \emph on
 Bazooka
 \emph default
@@ -579,7 +526,7 @@ status collapsed
 \begin_layout Plain Layout
 They do get something of similar value—
 a so-called token of appreciation—
-to account for potential income effects.
+to account for potential endowment effects.
 \end_layout
 
 \end_inset
@@ -590,22 +537,20 @@ to account for potential income effects.
 \begin_layout Standard
 The second factor involves a cooking demonstration and tasting session.
  In the treatment villages,
- farmers are invited to participate in a session where they can taste food prepared with the promoted variety (
+ sampled farmers are invited to participate in a session where they can taste food prepared from flour that was obtained from growing the promoted variety (
 \emph on
 Bazooka
 \emph default
-) and compare it directly to food made with the local variety.
+) and compare it directly to food made with the local variety maize.
  Additionally,
- all participants receive a free sample of maize flour derived from the improved variety to try at home.
+ all participants in the treatment group receive a free sample of maize flour derived from the improved variety to try at home.
  In the control villages,
  these events are not organized.
 \end_layout
 
 \begin_layout Standard
-Treatment assignment is conducted at the village level to ensure that control and treatment conditions are not confounded by proximity.
- Specifically,
- this approach prevents a situation where a control farmer,
- who receives only a bar of soap as a token of gratitude,
+Treatment assignment is conducted at the village level to prevent situations where a control farmer,
+ who receives only a token of gratitude,
  lives adjacent to a treatment farmer who receives a free bag of maize seed.
  By assigning treatments at the village level,
  we also mitigate potential concerns about spillover effects,
@@ -627,10 +572,7 @@ Bazooka
  seed,
  which is sufficient to plant approximately 1/8 of an acre.
  The control condition for this factor is the absence of a seed sample pack,
- meaning these households do not receive the pack.
- However,
- both the treatment and control groups are informed about the existence and benefits of the improved seed variety.
- This allows us to isolate the effect of the sample pack from the effects of merely having knowledge about the seeds of the improved variety.
+ that is households who do not receive the pack.
 \end_layout
 
 \begin_layout Standard
@@ -706,13 +648,14 @@ status collapsed
 These consumption traits were identified through focus group discussions held during the design phase of the study.
  One notable trait that emerged during these discussions was the extent to which maize flour expands during cooking,
  yielding "more food from less flour." This characteristic is linked to the starch content of maize flour,
- which is a carbohydrate and a natural component of most plants,
+ a carbohydrate that is a natural component of many plants,
  including fruits,
  vegetables,
  and grains.
  When starch is heated in water,
- the granules swell and burst,
- releasing glucose molecules into the water.
+ it absorbs moisture,
+ causing the granules to swell and gelatinize,
+ which results in the flour expanding.
  This expansion property of maize flour was particularly valued by women.
 \end_layout
 
@@ -757,7 +700,7 @@ The research team provided all necessary utensils for the session,
  and farmers are invited to taste the two varieties,
  labeled as the variety on the left and the variety on the right.
  The farmers then rate the two varieties on the various consumption attributes again,
- indicating which of the two samples is superior for each attribute by a show of hands.
+ indicating which of the two samples is superior for each attribute again by a show of hands.
 \end_layout
 
 \begin_layout Standard
@@ -776,7 +719,7 @@ Bazooka
 status collapsed
 
 \begin_layout Plain Layout
-During field testing,
+During field testing this intervention,
  a large majority of farmers initially stated that the local seed excelled in nearly all dimensions,
  such as having a sweeter taste,
  whiter appearance,
@@ -804,6 +747,7 @@ Bazooka
 Bazooka
 \emph default
  maize.
+ This revelation sparked extensive discussions within the group.
 \end_layout
 
 \end_inset
@@ -812,7 +756,7 @@ Bazooka
 \end_layout
 
 \begin_layout Subsection
-Estimation and inference
+Estimation and Inference
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:Estimation-and-inference"
@@ -940,10 +884,67 @@ Where now
 \end_inset
 
  is a dummy for the orthogonal treatment (which enters in deviations from its means).
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+It is important to note that the estimand of the respective treatments in Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:pooled"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ changes.
+ For instance,
+ while the estimand for the seed sample pack treatment in Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:one"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ is the effect of the treatment in and on itself,
+ the estimand in Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:pooled"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ is a weighted average of the estimand of the seed sample pack treatment of Equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:one"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ and the effect of the seed sample pack in the presence of the cooking demonstration and testing treatment.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Since we will evaluate treatment effects across a range of outcome measures,
+Since we evaluate treatment effects across a range of outcomes,
  it is essential to address the multiple comparisons problem.
  To do so,
  we follow 
@@ -1050,7 +1051,7 @@ Nsambya
 ,
  extends from August/September to November/December.
  We distributed the seed sample packs along with baseline data collection a few months before planting commenced for the first agricultural season in 2023.
- This then allows farmers to experiment with the new seed in the first season of 2023.
+ This then allows farmers to experiment with the seed in the first season of 2023.
  After the first season and before the start of the second season,
  the cooking demonstrations and tasting sessions were organized.
  Endline data was collected in February 2024,
@@ -1076,10 +1077,11 @@ Sample
 \begin_layout Standard
 Sample size was determined through a series of power simulations detailed in the pre-registered pre-analysis plan.
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
-The primary outcome used in these simulations is a binary indicator seed use at the farmer level (1 if the farmer used fresh seed of an improved variety).
+The primary outcome used in these simulations is a binary indicator for the type of seed used by the farmer (1 if the farmer used fresh seed of an improved variety,
+ 0 otherwise).
  Data from a previous project,
  which included 3,450 smallholder maize farmers across 345 villages,
  was used to estimate the intra-cluster (within-village) correlation for this outcome 
@@ -1091,8 +1093,8 @@ literal "false"
 \end_inset
 
 .
- We assumed a 13.5 percentage point increase (over a baseline adoption percentage of 30 percent) for both the seed sample treatment and the consumption treatment,
- and a 23.5 percentage point increase for the interaction effect as minimal detectable effect sized.
+ We assumed a 13.5 percentage point increase (over a baseline adoption percentage of 30 percent) for both the seed sample treatment and the cooking demonstration treatment,
+ and a 23.5 percentage point increase for the interaction effect as minimal detectable effect size.
  The R code used for the simulations is available 
 \begin_inset CommandInset href
 LatexCommand href
@@ -1121,8 +1123,8 @@ literal "false"
  with 10 households in each village.
  In this setup,
  74 villages (740 households) would receive a free sample pack,
- and 74 villages (740 households) would be exposed to the consumption treatment.
- Approximately half of the villages in each treatment group (or around 37 villages comprising of 370 households) )would receive both treatments.
+ and 74 villages (740 households) would be exposed to the cooking demonstration and blind tasting treatment.
+ Approximately half of the villages in each treatment group (or around 37 villages comprising of 370 households) would receive both treatments.
  To account for attrition,
  we collected data on 2 more villages in each treatment cell.
  This leads to a total sample size of 1,560 households located in 156 villages.
@@ -1134,11 +1136,10 @@ With this design,
  and assumptions about outcome variable and minimum detectable effect sizes detailed in the pre-analysis plan,
  we are not powered to detect both main effects and the interaction simultaneously.
  Specifically,
- we can estimate a positive effect for both treatments and their interaction at the 5% significance level in only 68% of cases.
+ we can estimate a joint positive effect for both treatments and their interaction at the 5% significance level in only 68% of cases.
  However,
  when we only require one hypothesis to be detected,
  we achieve power levels in excess of the conventional 80%.
- 
 \end_layout
 
 \begin_layout Subsection
@@ -1158,7 +1159,15 @@ Bazooka
 \emph default
 ) and their well-established network of agro-input dealers,
  which helps mitigate access issues.
- These districts were identified based on data from a previous study that matched these criteria.
+ These districts were identified based on data from a previous study that matched these criteria 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "miehe2023perceived"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -2142,7 +2151,7 @@ results/df_welfare_pool.Rdata
 \end_layout
 
 \begin_layout Subsection
-Balance test and descriptive statistics
+Descriptive Statistics and Baseline Balance
 \end_layout
 
 \begin_layout Standard
@@ -2257,7 +2266,7 @@ Sexpr{format(round(df_means[1,6]*100,digits=0),nsmall=0)}
 
 \end_inset
 
- percent of households affirmed using such seeds.
+ percent of households answered affirmative to this question.
  Subsequently,
  we posed a more specific question regarding the exact type of seed used on a randomly selected plot.
 \begin_inset Foot
@@ -2275,7 +2284,7 @@ nolink "false"
 
 \end_inset
 
- for more information on the rationale of using of a randomly selected plot.
+ for more information on the rationale for using of a randomly selected plot.
 \end_layout
 
 \end_inset
@@ -2322,7 +2331,7 @@ Sexpr{format(round(df_means[1,8]*100,digits=0),nsmall=0)}
  percent of farmers sourced their seed from formal channels,
  such as agro-input dealers,
  non-governmental organizations,
- or the government extension system (Operation Wealth Creation).
+ or the government extension system.
  Conversely,
  
 \begin_inset ERT
@@ -3538,7 +3547,7 @@ nolink "false"
  for the cooking demonstration and tasting treatment (with the seed sample pack treatment now considered the orthogonal treatment and controlled for).
  The fourth,
  fifth and sixth columns correspond to 
-\begin_inset Formula $\beta_{T}$
+\begin_inset Formula $\beta_{S}$
 \end_inset
 
 ,
@@ -3587,11 +3596,12 @@ Sexpr{format(round(abs(df_balance_pool[2,1,3])*100,digits=0),nsmall=0)}
 \end_layout
 
 \begin_layout Subsection
-Attrition and compliance
+Attrition and Compliance
 \end_layout
 
 \begin_layout Standard
 Attrition was minimal:
+ during endline,
  we successfully located all but four of the 1,560 households interviewed at baseline.
  However,
  some of these households could not be interviewed due to circumstances such as burial or illness,
@@ -3606,14 +3616,13 @@ One of the first questions we asked was whether farmers recalled the treatment,
  For the sample pack treatment,
  98 percent of farmers in the treatment group indicated that they received a seed sample pack from us in March 2023.
  Furthermore,
- only 8.6 percent of farmers in the control group indicated that they received a seed pack from us,
- suggesting only limited excess coverage.
+ only 8.6 percent of farmers in the control group indicated that they received a seed pack from us.
  For the cooking demonstration treatment,
- 92 percent of farmers in the treatment group recalled being invited to a cooking and tasting demonstration,
- corresponding to a failure to reach rate of 8 percent.
+ 92 percent of farmers in the treatment group recalled being invited to a cooking and tasting demonstration.
  Meanwhile,
- 96 percent of farmers in the control group did not recall a cooking and tasting demonstration,
- leading to an excess coverage rate of 4 percent.
+ 96 percent of farmers in the control group did not recall a cooking and tasting demonstration.
+ Given these statistics,
+ we feel a focus on average treatment effects is appropriate.
 \end_layout
 
 \begin_layout Section
@@ -3657,7 +3666,7 @@ nolink "false"
 
 \end_inset
 
- reports on more detailed outcomes on seed use and practices on a particular (randomly selected) plot within the household.
+ reports on more detailed outcomes on seed use and practices on a particular (randomly selected) plot within the farm household.
  As mentioned in Section 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3709,7 +3718,7 @@ nolink "false"
 .
  It reports overall sample means (this time at endline;
  column 1),
- as well as intent-to-treat estimates for the pooled model in Equation 
+ as well as average treatment effect estimates for the pooled model in Equation 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:pooled"
@@ -4692,7 +4701,7 @@ Bazooka
  when considering this outcome,
  the negative effect of the seed sample pack disappears.
  In addition,
- we now find that farmer households exposed to the cooking demonstration intervention are more likely to use fresh 
+ we now find that farm households exposed to the cooking demonstration intervention are more likely to use fresh 
 \emph on
 Bazooka
 \emph default
@@ -4748,7 +4757,7 @@ Sexpr{format(round(abs(df_res_pool[1,1,4]*100),digits=0),nsmall=0)}
 
  percentage points.
  This suggests that total number of plots did not change,
- but that treated households dis-adopted.
+ but confirms the first result that households that received a seed sample pack actually reduced adoption.
 \end_layout
 
 \begin_layout Standard
@@ -4768,7 +4777,7 @@ Sexpr{format(round(df_means_out[1,5],digits=2),nsmall=2)}
 
 \end_inset
 
- acres with seed of an improved variety.
+ acres with seed of an improved variety (again using the definition of the first outcome).
  However,
  in households that received a seed sample pack,
  the area planted with an improved seed variety was 
@@ -4801,14 +4810,14 @@ We now turn to plot-level outcomes for a more detailed analysis.
  Additionally,
  we use this data to extrapolate yield estimates.
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 The decision to collect detailed data on only one randomly selected plot per household,
  rather than on all plots,
  was based on the generally high correlation of technology use,
  input use,
- and management practices within plots of a household.
+ and management practices between plots within a household.
  By focusing on a single plot,
  we aimed to increase the number of farmers included in the sample,
  thereby enhancing statistical power.
@@ -4865,9 +4874,10 @@ Bazooka
 
 \begin_layout Standard
 Interestingly,
- we do not see that the reduced use of improved seed had a negative impact on maize production or productivity.
- In fact,
- there are some signs that the cooking demonstration and tasting sessions actually increased production and productivity.
+ we do not see that the reduced use of improved seed as a result of the seed sample pack had a negative impact on maize production or productivity.
+ What is more,
+ we find that the cooking demonstration and tasting sessions actually increased production and productivity,
+ albeit only in the pooled model and only at the 10 and 5 percent significant levels respectively.
  In particular,
  we find a 
 \begin_inset ERT
@@ -5554,7 +5564,7 @@ Sexpr{format(round(df_rnd[1,2,6],digits=2),nsmall=2)})  & (
 \backslash
 Sexpr{format(round(df_rnd[2,2,6],digits=2),nsmall=2)})  & (
 \backslash
-Sexpr{format(round(df_rnd[3,2,6],digits=0),nsmall=0)})
+Sexpr{format(round(df_rnd[3,2,6],digits=2),nsmall=2)})
 \end_layout
 
 \begin_layout Plain Layout
@@ -5748,58 +5758,55 @@ citep{benjamini2006adaptive}.
 
 \begin_layout Standard
 At first glance,
- the results of distributing seed sample packs appear counterintuitive.
- The intervention aimed to increase the adoption of seeds of an improved variety in subsequent agricultural cycles,
- yet we observe a decline instead.
- This outcome can be explained by farmers' behavior:
- a significant number of those who received the 
+ the results of distributing seed sample packs may seem counter-intuitive.
+ The intervention aimed to increase the adoption of improved seeds in future planting seasons,
+ yet instead,
+ we observe a decline.
+ This can be explained by the fact that many farmers who received the 
 \emph on
 Bazooka
 \emph default
- seed sample packs opted to reuse the grain as seed in the following season rather than obtaining new 
-\emph on
-Bazooka
-\emph default
- seeds from eg.
- agro-input suppliers,
+ seed sample packs chose to reuse the harvested grain as seed rather than purchasing fresh Bazooka seeds from agro-input suppliers,
  NGOs,
  or government programs.
- According to our criteria,
+ According to our definition of seed of improved varieties,
  only fresh 
 \emph on
 Bazooka
 \emph default
- seeds qualify as an improved variety,
- whereas recycled 
+ seed obtained from a credible source qualifies as an improved variety,
+ while recycled 
 \emph on
 Bazooka
 \emph default
- is categorized as local seed.
+ is classified as local seed.
  However,
- if we redefine adoption to include the reuse of 
+ if we redefine adoption to include reused 
 \emph on
 Bazooka
 \emph default
  seeds,
- we find that over 60 percent of farmers who received the trial pack continued growing 
-\emph on
-Bazooka
-\emph default
- in the next agricultural season.
+ we find that over 60% of farmers who received the sample pack continued growing Bazooka in the next season.
 \end_layout
 
 \begin_layout Standard
-Moreover,
- the intervention seems to have inadvertently displaced the use of fresh improved seeds:
- the high yields achieved with the sample packs encouraged farmers to persist with recycled 
+What is more,
+ the fact that we observe an overall decline in fresh improved seed use—
+along with the insignificant effect of the sample pack on fresh Bazooka purchases—
+indicates that OPVs and other (non-
 \emph on
 Bazooka
 \emph default
- seeds.
- Conversely,
+) hybrid seed varieties were likely crowded out.
+ This is probably because farmers,
+ encouraged by the high yields from the trial pack,
+ opted to continue using recycled Bazooka rather than investing in fresh hybrids or recent OPVs.
+ Meanwhile,
  farmers in the control group,
  potentially dissatisfied with their local seeds,
- seem to be more inclined to seek out fresh seeds of an improved variety or utilize an OPV recycled fewer than four times.
+ were more likely to seek out fresh hybrids or use OPVs that are recycled a maximum of three times.
+ However,
+ they tended to opt for cheaper alternatives rather than purchasing Bazooka.
 \end_layout
 
 \begin_layout Subsection
@@ -5826,7 +5833,7 @@ literal "false"
  The cooking demonstration and tasting session might increase men's awareness that maize involves more than just yield,
  potentially creating opportunities for women to participate more in decision-making processes.
  Consequently,
- enhancing women's involvement in decision-making is a significant focus of this study.
+ women's involvement in decision-making is a key outcome in this study.
 \end_layout
 
 \begin_layout Standard
@@ -6327,20 +6334,21 @@ nolink "false"
  indicates that women are already highly engaged in decision-making regarding seed use and harvest management.
  Contrary to our expectations,
  the consumption intervention does not increase women involvement.
- At the same time,
+ In fact,
  judged by the index,
  we find that the seed sample pack increases women involvement in decision making.
+ However,
+ the effect is significant only at the 10 percent level.
 \end_layout
 
 \begin_layout Subsection
-Well-being and food security
+Well-being and Food Security
 \end_layout
 
 \begin_layout Standard
-Increasing the adoption of improved seed varieties is not an end in itself;
- ultimately,
- farmers seek to enhance their food security and overall welfare.
- Consequently,
+Increasing the adoption of improved seed varieties is a means to an end,
+ as farmers ultimately aim to improve their food security and overall well-being.
+ Therefore,
  Table 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -6352,7 +6360,7 @@ nolink "false"
 
 \end_inset
 
- examines the impact of the interventions on various indicators of welfare and food security.
+ evaluates the interventions' effects on key welfare and food security indicators.
 \end_layout
 
 \begin_layout Standard
@@ -6403,7 +6411,7 @@ Sexpr{format(round(df_means_welfare[1,2]*100,digits=0),nsmall=0)}
  percent of households believe they are better off than they were six months ago—
 approximately one agricultural season prior.
  Notably,
- there is some indication that farmers in the seed sample pack group are more likely to feel better off compared to those who did not receive a seed sample pack.
+ there is some indication that farmers in the seed sample pack group are more likely to feel that their well-being improved over time compared to those who did not receive a seed sample pack.
  This may be due to the perceived benefits from the seed sample pack,
  either through improved harvests or a sense of improvement even if they recycled the sample pack seed rather than adopting new seed (despite yields not showing a significant increase,
  as detailed in Table 
@@ -6423,7 +6431,7 @@ nolink "false"
 \begin_layout Standard
 Next,
  we use two questions from the The Household Food Insecurity Access Scale (HFIAS),
- one that on aligns with the "food preference" dimension,
+ one that aligns with the "food preference" dimension,
  which assesses whether people had to compromise on their preferred diet due to financial or food constraints and one that captures "reducing quantity",
  a more severe form of food insecurity where people eat smaller portions or skip meals due to lack of resources 
 \begin_inset CommandInset citation
@@ -6489,7 +6497,7 @@ Sexpr{format(round(df_means_welfare[1,4]*100,digits=0),nsmall=0)}
 
 \begin_layout Standard
 Finally,
- we approximate consumption expenditure by asking farmers to report how much money was spent in the last week prior to the survey on 14 of the most consumed items in the area (maize,
+ we approximate consumption expenditure by asking farmers to report how much money was spent in the week prior to the survey on 14 of the most consumed items in the area (maize,
  sorghum,
  millet,
  rice,
@@ -6532,7 +6540,7 @@ Sexpr{format(round(df_means_welfare[1,5]/3600,digits=0),nsmall=0)}
 \end_inset
 
 .
- We also do not find that out treatments affected consumption expenditure.
+ We also do not find that our treatments affected consumption expenditure.
  
 \end_layout
 
@@ -7306,18 +7314,24 @@ citep{benjamini2006adaptive}.
 Mechanisms
 \end_layout
 
+\begin_layout Standard
+In this section,
+ we explore various secondary and intermediary outcomes to investigate potential impact pathways.
+ We start by looking at changes in knowledge,
+ risk perceptions,
+ social learning and intentions.
+ We also have a separate section that looks at the impact on perceptions related to consumption and production traits of improved varieties.
+\end_layout
+
 \begin_layout Subsection
 Knowledge,
- risk,
- social learning,
- and intentions
+ Risk,
+ Social Learning,
+ and Intentions
 \end_layout
 
 \begin_layout Standard
-To explore potential impact pathways,
- we posed several questions.
- First,
- we aimed to assess whether the interventions increased awareness of improved maize seed varieties,
+We start by testing if the interventions increased awareness of improved maize seed varieties,
  specifically 
 \emph on
 Bazooka
@@ -7360,7 +7374,7 @@ Sexpr{format(round(floor(df_means_path[1,2]),digits=0),nsmall=0)}
 
 \end_inset
 
- or 
+ to 
 \begin_inset ERT
 status open
 
@@ -7451,8 +7465,7 @@ nolink "false"
 \end_layout
 
 \begin_layout Standard
-As noted in the introduction,
- seed sample packs aim to mitigate the perceived risk associated with trying new varieties.
+One of the reasons why seed sample packs are distributed for free is to mitigate the perceived risk associated with trying out new varieties.
  To assess changes in perceived risk in response to the interventions,
  we asked farmers to rate how likely they believe it is that using improved varieties would result in lower yields compared to local varieties.
  Responses were recorded on a 4-point Likert scale,
@@ -7472,7 +7485,7 @@ very unlikely
 \begin_inset Quotes qrd
 \end_inset
 
- (improved seed will yield more than local).
+ (improved varieties will yield more than local).
  We repeated this question specifically for 
 \emph on
 Bazooka
@@ -7503,8 +7516,17 @@ somewhat likely
 \end_layout
 
 \begin_layout Standard
-An additional rationale for subsidizing or providing seed at no cost is to harness potential spillover effects to enhance adoption.
- To examine whether our interventions influenced social learning,
+An additional rationale for subsidizing or providing seed at no cost is to harness potential spillover effects to enhance adoption,
+ as it is well known that farmers learn form others when new a technology is introduced 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "10.1257/aer.100.1.35,campenhout2021role"
+literal "false"
+
+\end_inset
+
+.
+ To examine whether our interventions influenced peer learning,
  we included questions on whether farmers recommended any improved varieties to others.
  A similar question was posed specifically regarding 
 \emph on
@@ -7515,7 +7537,7 @@ Bazooka
 \end_layout
 
 \begin_layout Standard
-Our findings indicate that a substantial proportion of farmers recommend improved varieties to their peers.
+Our findings indicate that a substantial proportion of farmers recommended improved varieties to their peers.
  Notably,
  the likelihood of recommending improved varieties is significantly higher among those who received the seed sample pack.
  When focusing specifically on 
@@ -7524,7 +7546,7 @@ Bazooka
 \emph default
 ,
  the difference becomes even more pronounced:
- Receiving a seed sample pack increases the probability of recommending 
+ Receiving a seed sample pack increased the probability of recommending 
 \emph on
 Bazooka
 \emph default
@@ -7560,7 +7582,7 @@ Sexpr{format(round(df_path[1,1,6]*100,digits=0),nsmall=0)}
 
 \begin_layout Standard
 Finally,
- we examined farmers' intentions regarding future use of improved varieties.
+ we examine farmers' intentions regarding future use of improved varieties.
  Although a considerable proportion of farmers expressed an intention to use improved varieties in the future,
  we did not observe a significant impact from either the seed sample pack nor the cooking demonstration and tasting session on these intentions.
  Furthermore,
@@ -7615,7 +7637,7 @@ Sexpr{format(round(df_path[1,1,8]*100,digits=0),nsmall=0)}
  When summarizing these outcomes into an index,
  we observe a positive impact from the seed sample pack.
  In contrast,
- the effect of the cooking demonstration and tasting session is less robust.
+ the effect of the cooking demonstration and tasting session appears to be less robust.
 \end_layout
 
 \begin_layout Standard
@@ -8683,7 +8705,7 @@ Perceptions
 \end_layout
 
 \begin_layout Subsubsection
-Perceptions of consumption traits
+Perceptions of Consumption Traits
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:Perceptions-of-consumer"
@@ -8744,7 +8766,7 @@ nolink "false"
  Interestingly,
  the results show that the seed trial pack is equally,
  if not more,
- effective changing biased perceptions.
+ effective in changing biased perceptions.
 \end_layout
 
 \begin_layout Standard
@@ -9412,13 +9434,13 @@ citep{benjamini2006adaptive}.
 \end_layout
 
 \begin_layout Subsubsection
-Perceptions of production traits
+Perceptions of Production Traits
 \end_layout
 
 \begin_layout Standard
-The seed sample pack is also designed to address preconceived notions farmers may have about the production-related traits of improved seed.
+The seed sample pack is primarily designed to address preconceived notions farmers may have about the production-related traits of improved varieties.
  For example,
- qualitative fieldwork conducted during the study’s preparation revealed that some farmers believed improved seed varieties might offer higher yields but were less resistant to fall armyworm (
+ qualitative fieldwork conducted during the study’s preparation revealed that some farmers believe that improved seed varieties might offer higher yields but were less resistant to fall armyworm (
 \emph on
 Spodoptera frugiperda
 \emph default
@@ -9450,8 +9472,8 @@ literal "false"
 To test if our interventions alter perceptions of production traits of maize of improved varieties,
  we also include a module in the questionnaire where we ask farmers to compare seed of an improved variety to local seed on five production traits—
 yield,
- abiotic stress resistance such as drought or heat,
- biotic stress resistance such as pests and weeds,
+ abiotic stress resistance such as drought or heat resistance,
+ biotic stress resistance such as pests and weed resistance,
  time to maturity,
  and germination rates.
  
@@ -9470,13 +9492,13 @@ nolink "false"
 \end_inset
 
 .
- When farmers compare improved seed directly to local seed,
+ When farmers compare improved varieties directly to local varieties,
  the summary index indicates a significantly positive impact from the seed sample pack.
  Farmers who received the seed sample pack updated their beliefs most notably regarding germination rates.
  Although the effects on the other production attributes are positive,
  the statistical power may be limited due to already high baseline perceptions of improved seed varieties.
  No significant impact was observed from the cooking demonstration and tasting session,
- which aligns with our expectations.
+ which aligns with expectations.
 \end_layout
 
 \begin_layout Standard
@@ -10231,610 +10253,6 @@ citep{benjamini2006adaptive}.
 
 \end_layout
 
-\begin_layout Subsubsection
-Perceptions of post-harvest traits
-\end_layout
-
-\begin_layout Standard
-We also examine perceptions of post-harvest traits that could influence adoption decisions and might be affected by our interventions.
- Specifically,
- we assess perceptions related to marketability (e.g.,
- whether the seed fetches a high price,
- is easy to sell),
- biomass or crop residues (e.g.,
- maize stalks and maize bran for use as organic fertilizer or animal feed),
- and processing ease (e.g.,
- shelling,
- milling).
- These traits are considered separately as they straddle the line between production and consumption traits.
- They relate to the utilization of the product obtained from the seed,
- but we anticipate an impact primarily from the intervention targeting production-related traits.
-\end_layout
-
-\begin_layout Standard
-Table 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "ph_traits_compare"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
- presents comparisons between perceptions of local improved and local varieties.
- We find some evidence that farmers in the group that received the seed sample pack rate improved varieties higher in terms of marketability.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float table
-placement document
-alignment document
-wide false
-sideways true
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Impact on post harvest traits - improved seed compared to local
-\begin_inset CommandInset label
-LatexCommand label
-name "ph_traits_compare"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-footnotesize
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tabular}{rccccccc}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-& & 
-\backslash
-multicolumn{2}{c}{
-\backslash
-textit{Pooled model}} & 
-\backslash
-multicolumn{3}{c}{
-\backslash
-textit{Interacted model}} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& mean & sample & cons & sample & cons & interact & nobs 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Marketability
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_compare_ph[1,1],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_ph_pool[1,1,1],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_ph_pool[1,3,1]<.01,"**",ifelse(df_compare_ph_pool[1,3,1]<.05,"*",ifelse(df_compare_ph_pool[1,3,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_ph_pool[2,1,1],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_ph_pool[2,3,1]<.01,"**",ifelse(df_compare_ph_pool[2,3,1]<.05,"*",ifelse(df_compare_ph_pool[2,3,1]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_ph[1,1,1],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_ph[1,3,1]<.01,"**",ifelse(df_compare_ph[1,3,1]<.05,"*",ifelse(df_compare_ph[1,3,1]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_ph[2,1,1],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_ph[2,3,1]<.01,"**",ifelse(df_compare_ph[2,3,1]<.05,"*",ifelse(df_compare_ph[2,3,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_ph[3,1,1],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_ph[3,3,1]<.01,"**",ifelse(df_compare_ph[3,3,1]<.05,"*",ifelse(df_compare_ph[3,3,1]<.1,"+","")))}}$ & 
-\backslash
-Sexpr{format(round(df_compare_ph[1,4,1],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{format(round(df_means_compare_ph[2,1],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_compare_ph_pool[1,2,1],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_compare_ph_pool[2,2,1],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_compare_ph[1,2,1],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_compare_ph[2,2,1],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_compare_ph[3,2,1],digits=2),nsmall=2)})
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Biomass
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_compare_ph[1,2],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_ph_pool[1,1,2],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_ph_pool[1,3,2]<.01,"**",ifelse(df_compare_ph_pool[1,3,2]<.05,"*",ifelse(df_compare_ph_pool[1,3,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_ph_pool[2,1,2],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_ph_pool[2,3,2]<.01,"**",ifelse(df_compare_ph_pool[2,3,2]<.05,"*",ifelse(df_compare_ph_pool[2,3,2]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_ph[1,1,2],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_ph[1,3,2]<.01,"**",ifelse(df_compare_ph[1,3,2]<.05,"*",ifelse(df_compare_ph[1,3,2]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_ph[2,1,2],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_ph[2,3,2]<.01,"**",ifelse(df_compare_ph[2,3,2]<.05,"*",ifelse(df_compare_ph[2,3,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_ph[3,1,2],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_ph[3,3,2]<.01,"**",ifelse(df_compare_ph[3,3,2]<.05,"*",ifelse(df_compare_ph[3,3,2]<.1,"+","")))}}$ & 
-\backslash
-Sexpr{format(round(df_compare_ph[1,4,2],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{format(round(df_means_compare_ph[2,2],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_compare_ph_pool[1,2,2],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_compare_ph_pool[2,2,2],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_compare_ph[1,2,2],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_compare_ph[2,2,2],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_compare_ph[3,2,2],digits=2),nsmall=2)})
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Easy to process
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_compare_ph[1,3],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_ph_pool[1,1,3],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_ph_pool[1,3,3]<.01,"**",ifelse(df_compare_ph_pool[1,3,3]<.05,"*",ifelse(df_compare_ph_pool[1,3,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_ph_pool[2,1,3],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_ph_pool[2,3,3]<.01,"**",ifelse(df_compare_ph_pool[2,3,3]<.05,"*",ifelse(df_compare_ph_pool[2,3,3]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_ph[1,1,3],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_ph[1,3,3]<.01,"**",ifelse(df_compare_ph[1,3,3]<.05,"*",ifelse(df_compare_ph[1,3,3]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_ph[2,1,3],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_ph[2,3,3]<.01,"**",ifelse(df_compare_ph[2,3,3]<.05,"*",ifelse(df_compare_ph[2,3,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_ph[3,1,3],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_ph[3,3,3]<.01,"**",ifelse(df_compare_ph[3,3,3]<.05,"*",ifelse(df_compare_ph[3,3,3]<.1,"+","")))}}$ & 
-\backslash
-Sexpr{format(round(df_compare_ph[1,4,3],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{format(round(df_means_compare_ph[2,3],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_compare_ph_pool[1,2,3],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_compare_ph_pool[2,2,3],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_compare_ph[1,2,3],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_compare_ph[2,2,3],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_compare_ph[3,2,3],digits=2),nsmall=2)})
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Index
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_compare_ph[1,4],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_ph_pool[1,1,4],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_ph_pool[1,3,4]<.01,"**",ifelse(df_compare_ph_pool[1,3,4]<.05,"*",ifelse(df_compare_ph_pool[1,3,4]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_ph_pool[2,1,4],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_ph_pool[2,3,4]<.01,"**",ifelse(df_compare_ph_pool[2,3,4]<.05,"*",ifelse(df_compare_ph_pool[2,3,4]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_ph[1,1,4],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_ph[1,3,4]<.01,"**",ifelse(df_compare_ph[1,3,4]<.05,"*",ifelse(df_compare_ph[1,3,4]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_ph[2,1,4],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_ph[2,3,4]<.01,"**",ifelse(df_compare_ph[2,3,4]<.05,"*",ifelse(df_compare_ph[2,3,4]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_ph[3,1,4],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_ph[3,3,4]<.01,"**",ifelse(df_compare_ph[3,3,4]<.05,"*",ifelse(df_compare_ph[3,3,4]<.1,"+","")))}}$ & 
-\backslash
-Sexpr{format(round(df_compare_ph[1,4,4],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{format(round(df_means_compare_ph[2,4],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_compare_ph_pool[1,2,4],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_compare_ph_pool[2,2,4],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_compare_ph[1,2,4],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_compare_ph[2,2,4],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_compare_ph[3,2,4],digits=2),nsmall=2)})
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{tabular}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-scriptsize
-\end_layout
-
-\begin_layout Plain Layout
-
-Note:
- Column (1) reports sample means at baseline and standard deviations below;
-  columns (2)-(3) report differences between treatment and control groups estimated using the pooled model of Equation  
-\backslash
-ref{eq:pooled};
- (4)-(5) report differences between treatment and control groups estimated using the fully interacted model of Equation 
-\backslash
-ref{eq:one};
- column (6) is the interaction effect.
- Standared errors are below the estimates and are clustered at the level of randomization;
- **,
- *,
- and + denote significance at the 1,
- 5 and 10
-\backslash
-% levels based on sharpened q-values 
-\backslash
-citep{benjamini2006adaptive}.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Conclusion
 \end_layout
@@ -10843,14 +10261,14 @@ Conclusion
 In this study,
  we conduct a field experiment to evaluate the effectiveness of two interventions aimed at increasing the adoption of improved maize seed varieties among smallholder farmers in eastern Uganda.
  The first intervention provides free seed sample packs,
- allowing farmers to assess the production-related attributes of the new variety,
+ allowing farmers to assess production-related attributes of the improved variety,
  including its yield potential,
  pest tolerance,
  and germination rate.
- The second intervention consists of a cooking demonstration and blind tasting session designed to emphasize the consumption-related attributes of the new variety,
+ The second intervention consists of a cooking demonstration and blind tasting session designed to emphasize the consumption-related attributes of the improved variety,
  such as taste,
  texture,
- and color of the food produced from the new variety.
+ and color of the food produced from the variety.
 \end_layout
 
 \begin_layout Standard
@@ -10864,10 +10282,11 @@ The interventions are tested using a cluster randomized controlled trial involvi
 Our findings indicate that the seed sample pack intervention has an unintended effect:
  it reduces the likelihood that farmers adopt quality seed of improved varieties in the subsequent season.
  This counterintuitive result arises because farmers who received the sample pack are more inclined to recycle the seed from the sample pack,
- rather than purchasing fresh seed.
- Notably,
- recycled seed from the sample pack is not categorized as “improved” in our analysis,
+ rather than purchasing fresh seed,
+ and recycled seed from the sample pack is not categorized as “improved” in our analysis,
  given that the widely accepted recommendation is to not reuse seed of hybrid varieties.
+ The cooking demonstration and tasting session did increase adoption,
+ albeit only moderately.
 \end_layout
 
 \begin_layout Standard
@@ -10879,11 +10298,162 @@ Despite the unexpected outcome concerning seed adoption,
  What is more,
  the seed sample pack intervention also positively influences perceptions of consumption-related traits,
  in addition to production traits.
+\end_layout
+
+\begin_layout Standard
+There are various reasons why farmers recycle seed instead of purchasing fresh seed.
+ For instance,
+ it could be that farmers are unaware that there is a yield penalty from recycling hybrid seed.
+ Alternatively,
+ the seed may not be available at reasonable cost,
+ or farmer may not trust seed suppliers 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "miehe2023perceived,barriga2020supply,bold2017lemon"
+literal "false"
+
+\end_inset
+
+.
  
 \end_layout
 
 \begin_layout Standard
-The main lessons we draw from this research is that farmers can be encouraged to adopt new varieties even just by highlighting consumption-related traits,
+When we presented our finding to farmers during focus group discussions,
+ the general impression was that farmers are typically aware of the yield penalty of recycling and that seed was also available,
+ but that some level of recycling is a rational response give that the yield reduction is gradual.
+ Our data suggests that planting fresh 
+\emph on
+Bazooka
+\emph default
+ seed leads to an average yield of about 535 kilograms of maize per acre.
+ In the subset of farmers that use local seed (but excluding recycled 
+\emph on
+Bazooka
+\emph default
+),
+ average yield is only 323 kilograms of maize per acre.
+ In the subset of farmers that recycled Bazooka from the seed trial pack,
+ average yield is 375 kilograms per acre.
+ To plant one acre with 
+\emph on
+Bazooka
+\emph default
+,
+ one needs about 8 kilograms.
+ As one kilogram of Bazooka costs UGX12,000,
+ the cost of one acre of 
+\emph on
+Bazooka
+\emph default
+ maize is UGX96,000.
+ We further assume that the cost of local seed,
+ as well a recycling 
+\emph on
+Bazooka
+\emph default
+,
+ is negligible.
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Profits-as-a"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ plots out profits as a function of the value of the harvest (proxied by the price at which a 100 kg bag of maize is sold).
+ The graph shows that profits from recycling 
+\emph on
+Bazooka
+\emph default
+ are generally higher than using fresh 
+\emph on
+Bazooka
+\emph default
+;
+ only if prices at which 
+\emph on
+Bazooka
+\emph default
+ is sold become larger than about UGX62,000 per bag,
+ buying fresh 
+\emph on
+Bazooka
+\emph default
+ becomes more profitable than recycling.
+ For our sample with median sales price of UGX60,000 per bag,
+ this means that recycling would be the rational response to the seed trial pack.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Consistent with this,
+ we also find that within the subsample of farmers that received the seed trial pack,
+ farmers that report to have been selling maize at prices higher than UGX62,000 are significantly more likely to use fresh Bazooka seed as opposed to farmers that sold at low prices.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename analysis/profit_plot.png
+	lyxscale 20
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Profits as a Function of Sales Price
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Profits-as-a"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The main lessons we draw from this research is that farmers can be encouraged to adopt new varieties even by simply highlighting consumption-related traits,
  without having to grow the variety for themselves.
  However,
  the sample packs are more effective,
@@ -10893,6 +10463,33 @@ The main lessons we draw from this research is that farmers can be encouraged to
  constraints in accessing seeds (especially the higher prices of Bazooka seed) may well be limiting the effectiveness of the consumer intervention.
 \end_layout
 
+\begin_layout Standard
+These findings highlight the complex decision-making processes that farmers navigate when adopting improved seed varieties.
+ While the seed sample pack intervention successfully increased farmers’ awareness and appreciation of the improved variety’s production and consumption traits,
+ its unintended consequence—
+encouraging seed recycling—
+suggests that adoption is influenced not only by knowledge but also by heterogeneous benefits and costs of the technologies 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "suri2011selection"
+literal "false"
+
+\end_inset
+
+.
+ Given the gradual yield decline from recycling and the relatively low maize prices faced by the majority of farmers in our sample,
+ many farmers appear to weigh the costs and benefits and opt for seed reuse as a cost-effective strategy.
+\end_layout
+
+\begin_layout Standard
+This underscores the need for complementary interventions that address economic constraints alongside knowledge dissemination interventions such as seed sample packs and cooking demonstrations and tasting sessions.
+ This includes policies that improve farmers’ access to reliable and affordable seed,
+ potentially in the from of credit.
+ Additionally,
+ interventions that enhance market linkages and ensure that quality maize fetches premium prices may help shift the cost-benefit calculation in favor of purchasing fresh seed.
+ Future research should explore these avenues to design more effective strategies for improving seed adoption and enhancing smallholder productivity in a sustainable manner.
+\end_layout
+
 \begin_layout Section
 Acknowledgments
 \end_layout
@@ -10900,22 +10497,15 @@ Acknowledgments
 \begin_layout Standard
 This research received clearance form Makerere's School of Social Sciences Research Ethics Committee (MAKSSREC 01.23.627/PR1) as well as from IFPRI IRB (DSGD-23-0108).
  The research was also registered at the Ugandan National Commission for Science and Technology (SS1657ES).
+ During the preparation of this work the author(s) used OpenAI in order to obtain editorial suggestions to improve clarity and readability and explore alternative phrasing for technical terms.
+ After using this tool/service,
+ the author(s) reviewed and edited the content as needed and take(s) full responsibility for the content of the published article.
  We would like to thank all funders who support this research through their contributions to the CGIAR Trust Fund:
  https://www.cgiar.org/funders/.
  In particular,
  funding from the CGIAR Initiative on Market Intelligence and SeedEqual is greatly acknowledged.
  We want to thank Richard Ariong,
  Wilberfoce Walukano and Marc Charles Wanume for field support.
-\end_layout
-
-\begin_layout Section
-Declaration of generative AI and AI-assisted technologies in the writing process.
-\end_layout
-
-\begin_layout Standard
-During the preparation of this work the author(s) used OpenAI in order to obtain editorial suggestions to improve clarity and readability and explore alternative phrasing for technical terms.
- After using this tool/service,
- the author(s) reviewed and edited the content as needed and take(s) full responsibility for the content of the published article.
 \end_layout
 
 \begin_layout Standard

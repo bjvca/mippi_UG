@@ -149,7 +149,14 @@ for (i in 1:length(bal_vars)){
   df_balance_pool[2,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
   
 }
+#F-test
 
+
+summary(lm(trial_P~age+prim_ed+HH_male+ihs_hh_size+ihs_dist_ag+quality_use_any+baz_rand+source_rand+recycler+ihs_yield,data=baseline_dta))
+
+summary(lm(cont~age+prim_ed+HH_male+ihs_hh_size+ihs_dist_ag+quality_use_any+baz_rand+source_rand+recycler+ihs_yield,data=baseline_dta))
+
+summary(lm(trial_P*cont~age+prim_ed+HH_male+ihs_hh_size+ihs_dist_ag+quality_use_any+baz_rand+source_rand+recycler+ihs_yield,data=baseline_dta))
 
 save(df_balance,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_balance.Rdata",sep="/"))
 save(df_balance_pool,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_balance_pool.Rdata",sep="/"))
