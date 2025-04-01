@@ -531,7 +531,12 @@ df_means_rnd <- df_means_out
 save(df_rnd_pool,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_rnd_pool.Rdata",sep="/"))
 save(df_rnd,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_rnd.Rdata",sep="/"))
 save(df_means_rnd,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_means_rnd.Rdata",sep="/"))
-
+###interlude: check if fresh bazooka is adopted more in treatment group when price is high
+dta$bag_charge <- as.numeric(as.character(dta$bag_charge))
+dta$high_p <- dta$bag_charge > 62000
+ols <- lm(rnd_bazo~high_p+b_rnd_bazo, data=dta[dta$trial_P,])
+vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID[dta$trial_P],type="CR2")
+coef_test(ols, vcov_cluster)
 ### some interesting impact pathways
 ## knowledge
 dta$nr_vars <- as.numeric(as.character(dta$nr_vars))
