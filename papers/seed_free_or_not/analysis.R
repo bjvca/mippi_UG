@@ -1,7 +1,7 @@
 rm(list=ls())
 path <- getwd()
 library(dplyr)
-
+library(haven)
 #to use vcovCR
 library(clubSandwich)
 ### functions definitions
@@ -54,6 +54,14 @@ path <- strsplit(path,"papers/seed_free_or_not")[[1]]
 #create treatmetn cluster indicator for clustering SE
 bse <- read.csv(paste(path,"baseline/data/public/baseline.csv",sep="/"))
 bse$cluster_ID <- as.factor(paste(paste(bse$distID,bse$subID, sep="_"), bse$vilID, sep="_"))
+
+### read bse_eth
+bse <- read.csv(paste(path,"baseline/data/public/baseline.csv",sep="/"))
+
+bse_eth <- data.frame(read_dta(paste(path,"papers/seed_free_or_not/eth_data/2. Phone survey (pre-production)/Eth_phonesurvey_2024.dta", sep = "/")))
+end_eth <- data.frame(read_dta(paste(path,"papers/seed_free_or_not/eth_data/3. Seed promotion (endline)/HHLevel.dta", sep = "/")))
+
+
 
 
 
@@ -127,6 +135,8 @@ bse$accepts[bse$paid.start_neg=="Yes"| bse$paid.start_neg_2=="Yes" | bse$paid.st
             | bse$paid.start_neg_4=="Yes" | bse$paid.start_neg_5=="Yes" | bse$paid.start_neg_6=="Yes"| bse$paid.start_neg_7=="Yes" 
             | bse$paid.start_neg_8=="Yes" | bse$paid.start_neg_9=="Yes" | bse$paid.start_neg_10=="Yes" | bse$paid.start_neg_11=="Yes"] <- "buyer"
 
+
+
 ##determine willingness to pay
 bse$final_price <- NA
 ### if buyer accepts, this is the last ask price
@@ -135,6 +145,161 @@ bse$final_price[bse$accepts=="buyer"] <- bse$ask[bse$accepts=="buyer"]
 bse$final_price[bse$accepts=="seller"] <- bse$bid[bse$accepts=="seller"]
 
 bse <- subset(bse, cont == FALSE & (trial_P== TRUE | paid_pac == TRUE | discounted == TRUE))
+
+###now do this for ethiopia_teff
+
+teff_bar <- read.csv(paste(path,"papers/seed_free_or_not/eth_data/1. Bargaining exp/teff_bargaining.csv",sep="/"))
+
+##determine maximum bid price
+teff_bar$bid <- ifelse(!is.na(as.numeric(teff_bar$p2_pric_11)),as.numeric(teff_bar$p2_pric_11),
+                  ifelse(!is.na(as.numeric(teff_bar$p2_pric_10)),as.numeric(teff_bar$p2_pric_10),
+                         ifelse(!is.na(as.numeric(teff_bar$p2_pric_9)),as.numeric(teff_bar$p2_pric_9),
+                                ifelse(!is.na(as.numeric(teff_bar$p2_pric_8)),as.numeric(teff_bar$p2_pric_8),
+                                       ifelse(!is.na(as.numeric(teff_bar$p2_pric_7)),as.numeric(teff_bar$p2_pric_7),
+                                              ifelse(!is.na(as.numeric(teff_bar$p2_pric_6)),as.numeric(teff_bar$p2_pric_6),
+                                                     ifelse(!is.na(as.numeric(teff_bar$p2_pric_5)),as.numeric(teff_bar$p2_pric_5),
+                                                            ifelse(!is.na(as.numeric(teff_bar$p2_pric_4)),as.numeric(teff_bar$p2_pric_4),
+                                                                   ifelse(!is.na(as.numeric(teff_bar$p2_pric_3)),as.numeric(teff_bar$p2_pric_3),
+                                                                          ifelse(!is.na(as.numeric(teff_bar$p2_pric_2)),as.numeric(teff_bar$p2_pric_2),
+                                                                                 as.numeric(teff_bar$p2_pric)
+                                                                          ))))))))))
+
+##determine minimum ask price
+teff_bar$ask <- ifelse(!is.na(as.numeric(teff_bar$p3_pric_10)),as.numeric(teff_bar$p3_pric_10),
+                    ifelse(!is.na(as.numeric(teff_bar$p3_pric_9)),as.numeric(teff_bar$p3_pric_9),
+                           ifelse(!is.na(as.numeric(teff_bar$p3_pric_8)),as.numeric(teff_bar$p3_pric_8),
+                                  ifelse(!is.na(as.numeric(teff_bar$p3_pric_7)),as.numeric(teff_bar$p3_pric_7),
+                                        ifelse(!is.na(as.numeric(teff_bar$p3_pric_6)),as.numeric(teff_bar$p3_pric_6),
+                                               ifelse(!is.na(as.numeric(teff_bar$p3_pric_5)),as.numeric(teff_bar$p3_pric_5),
+                                                      ifelse(!is.na(as.numeric(teff_bar$p3_pric_4)),as.numeric(teff_bar$p3_pric_4),
+                                                             ifelse(!is.na(as.numeric(teff_bar$p3_pric_3)),as.numeric(teff_bar$p3_pric_3),
+                                                                    ifelse(!is.na(as.numeric(teff_bar$p3_pric_2)),as.numeric(teff_bar$p3_pric_2),
+                                                                           ifelse(!is.na(as.numeric(teff_bar$p3_pric)),as.numeric(teff_bar$p3_pric),
+                                                                                  as.numeric(teff_bar$p1_pric)
+                                                                               ))))))))))
+
+teff_bar$accepts <- "seller"
+teff_bar$accepts[teff_bar$start_neg=="Yes"| teff_bar$start_neg_2=="Yes" | teff_bar$start_neg_3=="Yes"
+            | teff_bar$start_neg_4=="Yes" | teff_bar$start_neg_5=="Yes" | teff_bar$start_neg_6=="Yes"| teff_bar$start_neg_7=="Yes" 
+            | teff_bar$start_neg_8=="Yes" | teff_bar$start_neg_9=="Yes" | teff_bar$start_neg_10=="Yes" | teff_bar$start_neg_11=="Yes"] <- "buyer"
+
+
+
+##determine willingness to pay
+
+
+teff_bar$trunc <- FALSE
+teff_bar$trunc[as.numeric(teff_bar$pr_test_5)<0] <- TRUE
+
+## final price is probably too low if bargaining was truncated
+## should probably between previous ask and bid price
+## replace (wrong) ask price with previous ask price of round 4
+teff_bar$ask[teff_bar$trunc==TRUE] <- teff_bar$p3_pric_4[teff_bar$trunc==TRUE]
+
+teff_bar$final_price <- NA
+### if buyer accepts, this is the last ask price
+teff_bar$final_price[teff_bar$accepts=="buyer"] <- teff_bar$ask[teff_bar$accepts=="buyer"]
+### if seller accepts this is the last bid price
+teff_bar$final_price[teff_bar$accepts=="seller"] <- teff_bar$bid[teff_bar$accepts=="seller"]
+### if truncated, take average of ask and bid price
+teff_bar$final_price[teff_bar$trunc==TRUE] <-   (teff_bar$ask[teff_bar$trunc==TRUE] +  teff_bar$bid[teff_bar$trunc==TRUE])/2
+
+##establish a lower limit 
+teff_bar$final_price_ll <- NA
+### if buyer accepts, this is the last ask price
+teff_bar$final_price_ll[teff_bar$accepts=="buyer"] <- teff_bar$ask[teff_bar$accepts=="buyer"]
+### if seller accepts this is the last bid price
+teff_bar$final_price_ll[teff_bar$accepts=="seller"] <- teff_bar$bid[teff_bar$accepts=="seller"]
+
+##establish an upper limit 
+teff_bar$final_price_ul <- NA
+### if buyer accepts, this is the last ask price
+teff_bar$final_price_ul[teff_bar$accepts=="buyer"] <- teff_bar$ask[teff_bar$accepts=="buyer"]
+### if seller accepts this is the last bid price
+teff_bar$final_price_ul[teff_bar$accepts=="seller"] <- teff_bar$bid[teff_bar$accepts=="seller"]
+### use upper limit for truncated
+teff_bar$final_price_ul[teff_bar$trunc==TRUE] <-   teff_bar$ask[teff_bar$trunc==TRUE]
+
+##now do this for wheat
+
+wheat_bar <- read.csv(paste(path,"papers/seed_free_or_not/eth_data/1. Bargaining exp/wheat_bargaining.csv",sep="/"))
+
+##determine maximum bid price
+wheat_bar$bid <- ifelse(!is.na(as.numeric(wheat_bar$p2_pric_11)),as.numeric(wheat_bar$p2_pric_11),
+                       ifelse(!is.na(as.numeric(wheat_bar$p2_pric_10)),as.numeric(wheat_bar$p2_pric_10),
+                              ifelse(!is.na(as.numeric(wheat_bar$p2_pric_9)),as.numeric(wheat_bar$p2_pric_9),
+                                     ifelse(!is.na(as.numeric(wheat_bar$p2_pric_8)),as.numeric(wheat_bar$p2_pric_8),
+                                            ifelse(!is.na(as.numeric(wheat_bar$p2_pric_7)),as.numeric(wheat_bar$p2_pric_7),
+                                                   ifelse(!is.na(as.numeric(wheat_bar$p2_pric_6)),as.numeric(wheat_bar$p2_pric_6),
+                                                          ifelse(!is.na(as.numeric(wheat_bar$p2_pric_5)),as.numeric(wheat_bar$p2_pric_5),
+                                                                 ifelse(!is.na(as.numeric(wheat_bar$p2_pric_4)),as.numeric(wheat_bar$p2_pric_4),
+                                                                        ifelse(!is.na(as.numeric(wheat_bar$p2_pric_3)),as.numeric(wheat_bar$p2_pric_3),
+                                                                               ifelse(!is.na(as.numeric(wheat_bar$p2_pric_2)),as.numeric(wheat_bar$p2_pric_2),
+                                                                                      as.numeric(wheat_bar$p2_pric)
+                                                                               ))))))))))
+
+##determine minimum ask price
+wheat_bar$ask <- ifelse(!is.na(as.numeric(wheat_bar$p3_pric_10)),as.numeric(wheat_bar$p3_pric_10),
+                       ifelse(!is.na(as.numeric(wheat_bar$p3_pric_9)),as.numeric(wheat_bar$p3_pric_9),
+                              ifelse(!is.na(as.numeric(wheat_bar$p3_pric_8)),as.numeric(wheat_bar$p3_pric_8),
+                                     ifelse(!is.na(as.numeric(wheat_bar$p3_pric_7)),as.numeric(wheat_bar$p3_pric_7),
+                                            ifelse(!is.na(as.numeric(wheat_bar$p3_pric_6)),as.numeric(wheat_bar$p3_pric_6),
+                                                   ifelse(!is.na(as.numeric(wheat_bar$p3_pric_5)),as.numeric(wheat_bar$p3_pric_5),
+                                                          ifelse(!is.na(as.numeric(wheat_bar$p3_pric_4)),as.numeric(wheat_bar$p3_pric_4),
+                                                                 ifelse(!is.na(as.numeric(wheat_bar$p3_pric_3)),as.numeric(wheat_bar$p3_pric_3),
+                                                                        ifelse(!is.na(as.numeric(wheat_bar$p3_pric_2)),as.numeric(wheat_bar$p3_pric_2),
+                                                                               ifelse(!is.na(as.numeric(wheat_bar$p3_pric)),as.numeric(wheat_bar$p3_pric),
+                                                                                      as.numeric(wheat_bar$p1_pric)
+                                                                               ))))))))))
+
+wheat_bar$accepts <- "seller"
+wheat_bar$accepts[wheat_bar$start_neg=="Yes"| wheat_bar$start_neg_2=="Yes" | wheat_bar$start_neg_3=="Yes"
+                 | wheat_bar$start_neg_4=="Yes" | wheat_bar$start_neg_5=="Yes" | wheat_bar$start_neg_6=="Yes"| wheat_bar$start_neg_7=="Yes" 
+                 | wheat_bar$start_neg_8=="Yes" | wheat_bar$start_neg_9=="Yes" | wheat_bar$start_neg_10=="Yes" | wheat_bar$start_neg_11=="Yes"] <- "buyer"
+
+
+
+##determine willingness to pay
+
+
+wheat_bar$trunc <- FALSE
+wheat_bar$trunc[as.numeric(wheat_bar$pr_test_5)<0] <- TRUE
+
+## final price is probably too low if bargaining was truncated
+## should probably between previous ask and bid price
+## replace (wrong) ask price with previous ask price of round 4
+wheat_bar$ask[wheat_bar$trunc==TRUE] <- wheat_bar$p3_pric_4[wheat_bar$trunc==TRUE]
+
+wheat_bar$final_price <- NA
+### if buyer accepts, this is the last ask price
+wheat_bar$final_price[wheat_bar$accepts=="buyer"] <- wheat_bar$ask[wheat_bar$accepts=="buyer"]
+### if seller accepts this is the last bid price
+wheat_bar$final_price[wheat_bar$accepts=="seller"] <- wheat_bar$bid[wheat_bar$accepts=="seller"]
+### if truncated, take average of ask and bid price
+wheat_bar$final_price[wheat_bar$trunc==TRUE] <-   (wheat_bar$ask[wheat_bar$trunc==TRUE] +  wheat_bar$bid[wheat_bar$trunc==TRUE])/2
+
+##establish a lower limit 
+wheat_bar$final_price_ll <- NA
+### if buyer accepts, this is the last ask price
+wheat_bar$final_price_ll[wheat_bar$accepts=="buyer"] <- wheat_bar$ask[wheat_bar$accepts=="buyer"]
+### if seller accepts this is the last bid price
+wheat_bar$final_price_ll[wheat_bar$accepts=="seller"] <- wheat_bar$bid[wheat_bar$accepts=="seller"]
+
+##establish an upper limit 
+wheat_bar$final_price_ul <- NA
+### if buyer accepts, this is the last ask price
+wheat_bar$final_price_ul[wheat_bar$accepts=="buyer"] <- wheat_bar$ask[wheat_bar$accepts=="buyer"]
+### if seller accepts this is the last bid price
+wheat_bar$final_price_ul[wheat_bar$accepts=="seller"] <- wheat_bar$bid[wheat_bar$accepts=="seller"]
+### use upper limit for truncated
+wheat_bar$final_price_ul[wheat_bar$trunc==TRUE] <-   wheat_bar$ask[wheat_bar$trunc==TRUE]
+
+
+
+
+###use only subset that did not get consumption intervention
+
+
 
 
 bse$age_head <- as.numeric(as.character(bse$age))
@@ -228,10 +393,72 @@ geom_histogram(aes(y=..density..), colour="black", fill="white")+
 
 barplot(prop.table(table(bse_graph$final_price)), xlab = "Price", ylab = "Density")
 
+###WTP graph for teff
+
+bse_graph <- teff_bar
+bse_graph$final_price[bse_graph$final_price>110] <- NA
+
+#bse_graph$final_price[bse_graph$final_price == "9000" & bse_graph$P1_pric== "9000"] <- NA
+#bse_graph$final_price[bse_graph$final_price == "10000" & bse_graph$P1_pric== "10000"] <- NA
+#bse_graph$final_price[bse_graph$final_price == "11000" & bse_graph$P1_pric== "11000"] <- NA
+#bse_graph$final_price[bse_graph$final_price == "12000" & bse_graph$P1_pric== "12000"] <- NA
+breaks <- seq(from = 30, to= 100, by =10)
+bse_graph$final_price <- cut(bse_graph$final_price, breaks = breaks,labels = c("30","40","50","60","70","80","90"),right = FALSE)
+bse_graph$final_price <- as.numeric(as.character(bse_graph$final_price))
+bse_graph <- subset(bse_graph, !is.na(final_price) )
+library(ggplot2)
+p <- ggplot(bse_graph, aes(x=final_price)) + 
+  geom_histogram(aes(y=..density..), colour="black", fill="white")+
+  geom_density(alpha=.2, fill="#FF6666", bw=500) 
+
+barplot(prop.table(table(bse_graph$final_price)), xlab = "Price", ylab = "Density")
+
+##WTP graph for teff - lee bounds for truncation
+
+bse_graph <- teff_bar
+bse_graph$final_price <- bse_graph$final_price_ul
+bse_graph$final_price[bse_graph$final_price>110] <- NA
+
+#bse_graph$final_price[bse_graph$final_price == "9000" & bse_graph$P1_pric== "9000"] <- NA
+#bse_graph$final_price[bse_graph$final_price == "10000" & bse_graph$P1_pric== "10000"] <- NA
+#bse_graph$final_price[bse_graph$final_price == "11000" & bse_graph$P1_pric== "11000"] <- NA
+#bse_graph$final_price[bse_graph$final_price == "12000" & bse_graph$P1_pric== "12000"] <- NA
+breaks <- seq(from = 30, to= 100, by =10)
+bse_graph$final_price <- cut(bse_graph$final_price, breaks = breaks,labels = c("30","40","50","60","70","80","90"),right = FALSE)
+bse_graph$final_price <- as.numeric(as.character(bse_graph$final_price))
+bse_graph <- subset(bse_graph, !is.na(final_price) )
+library(ggplot2)
+p <- ggplot(bse_graph, aes(x=final_price)) + 
+  geom_histogram(aes(y=..density..), colour="black", fill="white")+
+  geom_density(alpha=.2, fill="#FF6666", bw=500) 
+
+barplot(prop.table(table(bse_graph$final_price)), xlab = "Price", ylab = "Density")
+###WTP graph for wheat
+
+bse_graph <- wheat_bar
+bse_graph$final_price <- bse_graph$final_price_ul
+bse_graph$final_price[bse_graph$final_price>90] <- NA
+
+#bse_graph$final_price[bse_graph$final_price == "9000" & bse_graph$P1_pric== "9000"] <- NA
+#bse_graph$final_price[bse_graph$final_price == "10000" & bse_graph$P1_pric== "10000"] <- NA
+#bse_graph$final_price[bse_graph$final_price == "11000" & bse_graph$P1_pric== "11000"] <- NA
+#bse_graph$final_price[bse_graph$final_price == "12000" & bse_graph$P1_pric== "12000"] <- NA
+breaks <- seq(from = 20, to= 80, by =10)
+bse_graph$final_price <- cut(bse_graph$final_price, breaks = breaks,labels = c("20","30","40","50","60","70"),right = FALSE)
+bse_graph$final_price <- as.numeric(as.character(bse_graph$final_price))
+bse_graph <- subset(bse_graph, !is.na(final_price) )
+library(ggplot2)
+p <- ggplot(bse_graph, aes(x=final_price)) + 
+  geom_histogram(aes(y=..density..), colour="black", fill="white")+
+  geom_density(alpha=.2, fill="#FF6666", bw=500) 
+
+barplot(prop.table(table(bse_graph$final_price)), xlab = "Price", ylab = "Density")
+
+
 ### now run binary analysis 
 
 ##important: it is the non-discounted (those that pay the full price) that identify the sunk cost
-##they are the filtered ones that also pay a postive price
+##they are the filtered ones that also pay a positive price
 
 
 
