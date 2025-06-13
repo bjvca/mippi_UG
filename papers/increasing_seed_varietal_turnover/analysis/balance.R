@@ -103,12 +103,19 @@ baseline_dta$ihs_hh_size <-  ihs(baseline_dta$hh_size)
 evaluate_skewness(baseline_dta$ihs_hh_size)
 
 bal_vars <- c("age","prim_ed","HH_male", "hh_size", "dist_ag", "quality_use_any","baz_rand","source_rand", "recycler", "yield_level" )
-df_means <- array(NA,c(2,length(bal_vars )))
+df_means <- array(NA,c(6,length(bal_vars )))
 for (i in 1:length(bal_vars)){
   ##means
   
-  df_means[1,i] <- mean(unlist(baseline_dta[bal_vars[i]]), na.rm=TRUE)
-  df_means[2,i] <- sd(unlist(baseline_dta[bal_vars[i]]), na.rm=TRUE)
+  df_means[1,i] <- mean(unlist(baseline_dta[(baseline_dta$trial_P == FALSE & baseline_dta$cont==FALSE),bal_vars[i]]), na.rm=TRUE)
+  df_means[2,i] <- sd(unlist(baseline_dta[(baseline_dta$trial_P == FALSE & baseline_dta$cont==FALSE),bal_vars[i]]), na.rm=TRUE)
+  
+  df_means[3,i] <- mean(unlist(baseline_dta[(baseline_dta$trial_P == FALSE),bal_vars[i]]), na.rm=TRUE)
+  df_means[4,i] <- sd(unlist(baseline_dta[(baseline_dta$trial_P == FALSE),bal_vars[i]]), na.rm=TRUE)
+  
+  df_means[5,i] <- mean(unlist(baseline_dta[(baseline_dta$cont==FALSE),bal_vars[i]]), na.rm=TRUE)
+  df_means[6,i] <- sd(unlist(baseline_dta[(baseline_dta$cont==FALSE),bal_vars[i]]), na.rm=TRUE)
+  
 }
 
 

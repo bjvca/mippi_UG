@@ -295,14 +295,23 @@ outcomes <- c(outcomes, "index")
 ## demean indicators
 dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)
 dta$trial_P_demeaned <-  dta$trial_P - mean(dta$trial_P,na.rm = T)
-df_means_out <- array(NA,c(2,length(outcomes )))
+df_means_out <- array(NA,c(6,length(outcomes )))
 df_res <- array(NA,c(3,4,length(outcomes )))
 df_res_pool  <- array(NA,c(2,3,length(outcomes )))
 for (i in 1:length(outcomes)){
   ##means
   
-  df_means_out[1,i] <- mean(unlist(dta[outcomes[i]]), na.rm=TRUE)
-  df_means_out[2,i] <- sd(unlist(dta[outcomes[i]]), na.rm=TRUE)
+  df_means_out[1,i] <- mean(unlist(dta[(dta$trial_P == FALSE & dta$cont == FALSE),outcomes[i]]), na.rm=TRUE)
+  df_means_out[2,i] <- sd(unlist(dta[(dta$trial_P == FALSE & dta$cont == FALSE),outcomes[i]]), na.rm=TRUE)
+  
+  df_means_out[3,i] <- mean(unlist(dta[dta$trial_P == FALSE,outcomes[i]]), na.rm=TRUE)
+  df_means_out[4,i] <- sd(unlist(dta[dta$trial_P == FALSE,outcomes[i]]), na.rm=TRUE)
+  
+  df_means_out[5,i] <- mean(unlist(dta[dta$cont == FALSE,outcomes[i]]), na.rm=TRUE)
+  df_means_out[6,i] <- sd(unlist(dta[dta$cont == FALSE,outcomes[i]]), na.rm=TRUE)
+  
+  
+  
   if (i %in% 3:7) {
   formula1 <- as.formula(paste(outcomes[i],paste("trial_P*cont"),sep="~"))
   ols <- lm(formula1, data=dta)
@@ -470,7 +479,7 @@ b_outcomes <- c(b_outcomes, "b_index")
 ## demean indicators
 dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)
 dta$trial_P_demeaned <-  dta$trial_P - mean(dta$trial_P,na.rm = T)
-df_means_out <- array(NA,c(2,length(outcomes )))
+df_means_out <- array(NA,c(6,length(outcomes )))
 df_res <- array(NA,c(3,4,length(outcomes )))
 df_res_pool  <- array(NA,c(2,3,length(outcomes )))
 for (i in 1:length(outcomes)){
@@ -478,6 +487,15 @@ for (i in 1:length(outcomes)){
   
   df_means_out[1,i] <- mean(unlist(dta[outcomes[i]]), na.rm=TRUE)
   df_means_out[2,i] <- sd(unlist(dta[outcomes[i]]), na.rm=TRUE)
+  
+  
+  df_means_out[3,i] <- mean(unlist(dta[dta$trial_P == FALSE,outcomes[i]]), na.rm=TRUE)
+  df_means_out[4,i] <- sd(unlist(dta[dta$trial_P == FALSE,outcomes[i]]), na.rm=TRUE)
+  
+  df_means_out[5,i] <- mean(unlist(dta[dta$cont == FALSE,outcomes[i]]), na.rm=TRUE)
+  df_means_out[6,i] <- sd(unlist(dta[dta$cont == FALSE,outcomes[i]]), na.rm=TRUE)
+  
+  
   
   formula1 <- as.formula(paste(paste(outcomes[i],paste("trial_P*cont"),sep="~"), b_outcomes[i],sep="+"))
   ols <- lm(formula1, data=dta)
@@ -506,11 +524,7 @@ for (i in 1:length(outcomes)){
   
 }
 
-df_means_out[1,5] <- mean(dta$production_mean, na.rm=TRUE)
-df_means_out[2,5] <- sd(dta$production_mean, na.rm=TRUE)
 
-df_means_out[1,6] <- mean(dta$productivity_mean, na.rm=TRUE)
-df_means_out[2,6] <- sd(dta$productivity_mean, na.rm=TRUE)
 
 if (sharp == TRUE){
 a_sharp <-  anderson_sharp_q(c(df_res[1,3,1:(length(outcomes)-1)],df_res[2,3,1:(length(outcomes)-1)],df_res[3,3,1:(length(outcomes)-1)]))
@@ -579,14 +593,22 @@ outcomes <- c(outcomes, "index")
 ## demean indicators
 dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)
 dta$trial_P_demeaned <-  dta$trial_P - mean(dta$trial_P,na.rm = T)
-df_means_out <- array(NA,c(2,length(outcomes )))
+df_means_out <- array(NA,c(6,length(outcomes )))
 df_res <- array(NA,c(3,4,length(outcomes )))
 df_res_pool  <- array(NA,c(2,3,length(outcomes )))
 for (i in 1:length(outcomes)){
   ##means
   
-  df_means_out[1,i] <- mean(unlist(dta[outcomes[i]]), na.rm=TRUE)
-  df_means_out[2,i] <- sd(unlist(dta[outcomes[i]]), na.rm=TRUE)
+  df_means_out[1,i] <- mean(unlist(dta[(dta$trial_P == FALSE & dta$cont == FALSE),outcomes[i]]), na.rm=TRUE)
+  df_means_out[2,i] <- sd(unlist(dta[(dta$trial_P == FALSE & dta$cont == FALSE),outcomes[i]]), na.rm=TRUE)
+  
+  df_means_out[3,i] <- mean(unlist(dta[dta$trial_P == FALSE,outcomes[i]]), na.rm=TRUE)
+  df_means_out[4,i] <- sd(unlist(dta[dta$trial_P == FALSE,outcomes[i]]), na.rm=TRUE)
+  
+  df_means_out[5,i] <- mean(unlist(dta[dta$cont == FALSE,outcomes[i]]), na.rm=TRUE)
+  df_means_out[6,i] <- sd(unlist(dta[dta$cont == FALSE,outcomes[i]]), na.rm=TRUE)
+  
+  
   if (i %in% 2:9) {
     formula1 <- as.formula(paste(outcomes[i],paste("trial_P*cont"),sep="~"))
     ols <- lm(formula1, data=dta)
@@ -680,14 +702,22 @@ outcomes <- c(outcomes, "index")
 ## demean indicators
 dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)
 dta$trial_P_demeaned <-  dta$trial_P - mean(dta$trial_P,na.rm = T)
-df_means_out <- array(NA,c(2,length(outcomes )))
+df_means_out <- array(NA,c(6,length(outcomes )))
 df_res <- array(NA,c(3,4,length(outcomes )))
 df_res_pool  <- array(NA,c(2,3,length(outcomes )))
 for (i in 1:length(outcomes)){
   ##means
   
-  df_means_out[1,i] <- mean(unlist(dta[outcomes[i]]), na.rm=TRUE)
-  df_means_out[2,i] <- sd(unlist(dta[outcomes[i]]), na.rm=TRUE)
+  df_means_out[1,i] <- mean(unlist(dta[(dta$trial_P == FALSE & dta$cont == FALSE),outcomes[i]]), na.rm=TRUE)
+  df_means_out[2,i] <- sd(unlist(dta[(dta$trial_P == FALSE & dta$cont == FALSE),outcomes[i]]), na.rm=TRUE)
+  
+  df_means_out[3,i] <- mean(unlist(dta[dta$trial_P == FALSE,outcomes[i]]), na.rm=TRUE)
+  df_means_out[4,i] <- sd(unlist(dta[dta$trial_P == FALSE,outcomes[i]]), na.rm=TRUE)
+  
+  df_means_out[5,i] <- mean(unlist(dta[dta$cont == FALSE,outcomes[i]]), na.rm=TRUE)
+  df_means_out[6,i] <- sd(unlist(dta[dta$cont == FALSE,outcomes[i]]), na.rm=TRUE)
+  
+  
   
   formula1 <- as.formula(paste(outcomes[i],paste("trial_P*cont"),sep="~"))
   ols <- lm(formula1, data=dta)
@@ -766,14 +796,22 @@ outcomes <- c(outcomes, "index")
 ## demean indicators
 dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)
 dta$trial_P_demeaned <-  dta$trial_P - mean(dta$trial_P,na.rm = T)
-df_means_out <- array(NA,c(2,length(outcomes )))
+df_means_out <- array(NA,c(6,length(outcomes )))
 df_res <- array(NA,c(3,4,length(outcomes )))
 df_res_pool  <- array(NA,c(2,3,length(outcomes )))
 for (i in 1:length(outcomes)){
   ##means
   
-  df_means_out[1,i] <- mean(unlist(dta[outcomes[i]]), na.rm=TRUE)
-  df_means_out[2,i] <- sd(unlist(dta[outcomes[i]]), na.rm=TRUE)
+  df_means_out[1,i] <- mean(unlist(dta[(dta$trial_P == FALSE & dta$cont == FALSE),outcomes[i]]), na.rm=TRUE)
+  df_means_out[2,i] <- sd(unlist(dta[(dta$trial_P == FALSE & dta$cont == FALSE),outcomes[i]]), na.rm=TRUE)
+  
+  df_means_out[3,i] <- mean(unlist(dta[dta$trial_P == FALSE,outcomes[i]]), na.rm=TRUE)
+  df_means_out[4,i] <- sd(unlist(dta[dta$trial_P == FALSE,outcomes[i]]), na.rm=TRUE)
+  
+  df_means_out[5,i] <- mean(unlist(dta[dta$cont == FALSE,outcomes[i]]), na.rm=TRUE)
+  df_means_out[6,i] <- sd(unlist(dta[dta$cont == FALSE,outcomes[i]]), na.rm=TRUE)
+  
+  
   
   formula1 <- as.formula(paste(outcomes[i],paste("trial_P*cont"),sep="~"))
   ols <- lm(formula1, data=dta)
@@ -849,14 +887,22 @@ outcomes <- c(outcomes, "index")
 ## demean indicators
 dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)
 dta$trial_P_demeaned <-  dta$trial_P - mean(dta$trial_P,na.rm = T)
-df_means_out <- array(NA,c(2,length(outcomes )))
+df_means_out <- array(NA,c(6,length(outcomes )))
 df_res <- array(NA,c(3,4,length(outcomes )))
 df_res_pool  <- array(NA,c(2,3,length(outcomes )))
 for (i in 1:length(outcomes)){
   ##means
   
-  df_means_out[1,i] <- mean(unlist(dta[outcomes[i]]), na.rm=TRUE)
-  df_means_out[2,i] <- sd(unlist(dta[outcomes[i]]), na.rm=TRUE)
+  df_means_out[1,i] <- mean(unlist(dta[(dta$trial_P == FALSE & dta$cont == FALSE),outcomes[i]]), na.rm=TRUE)
+  df_means_out[2,i] <- sd(unlist(dta[(dta$trial_P == FALSE & dta$cont == FALSE),outcomes[i]]), na.rm=TRUE)
+  
+  df_means_out[3,i] <- mean(unlist(dta[dta$trial_P == FALSE,outcomes[i]]), na.rm=TRUE)
+  df_means_out[4,i] <- sd(unlist(dta[dta$trial_P == FALSE,outcomes[i]]), na.rm=TRUE)
+  
+  df_means_out[5,i] <- mean(unlist(dta[dta$cont == FALSE,outcomes[i]]), na.rm=TRUE)
+  df_means_out[6,i] <- sd(unlist(dta[dta$cont == FALSE,outcomes[i]]), na.rm=TRUE)
+  
+  
   
   formula1 <- as.formula(paste(outcomes[i],paste("trial_P*cont"),sep="~"))
   ols <- lm(formula1, data=dta)
@@ -929,14 +975,21 @@ outcomes <- c(outcomes, "index")
 ## demean indicators
 dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)
 dta$trial_P_demeaned <-  dta$trial_P - mean(dta$trial_P,na.rm = T)
-df_means_out <- array(NA,c(2,length(outcomes )))
+df_means_out <- array(NA,c(6,length(outcomes )))
 df_res <- array(NA,c(3,4,length(outcomes )))
 df_res_pool  <- array(NA,c(2,3,length(outcomes )))
 for (i in 1:length(outcomes)){
   ##means
+  df_means_out[1,i] <- mean(unlist(dta[(dta$trial_P == FALSE & dta$cont == FALSE),outcomes[i]]), na.rm=TRUE)
+  df_means_out[2,i] <- sd(unlist(dta[(dta$trial_P == FALSE & dta$cont == FALSE),outcomes[i]]), na.rm=TRUE)
   
-  df_means_out[1,i] <- mean(unlist(dta[outcomes[i]]), na.rm=TRUE)
-  df_means_out[2,i] <- sd(unlist(dta[outcomes[i]]), na.rm=TRUE)
+  df_means_out[3,i] <- mean(unlist(dta[dta$trial_P == FALSE,outcomes[i]]), na.rm=TRUE)
+  df_means_out[4,i] <- sd(unlist(dta[dta$trial_P == FALSE,outcomes[i]]), na.rm=TRUE)
+  
+  df_means_out[5,i] <- mean(unlist(dta[dta$cont == FALSE,outcomes[i]]), na.rm=TRUE)
+  df_means_out[6,i] <- sd(unlist(dta[dta$cont == FALSE,outcomes[i]]), na.rm=TRUE)
+  
+  
   
   formula1 <- as.formula(paste(outcomes[i],paste("trial_P*cont"),sep="~"))
   ols <- lm(formula1, data=dta)
@@ -1005,14 +1058,22 @@ outcomes <- c(outcomes, "index")
 ## demean indicators
 dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)
 dta$trial_P_demeaned <-  dta$trial_P - mean(dta$trial_P,na.rm = T)
-df_means_out <- array(NA,c(2,length(outcomes )))
+df_means_out <- array(NA,c(6,length(outcomes )))
 df_res <- array(NA,c(3,4,length(outcomes )))
 df_res_pool  <- array(NA,c(2,3,length(outcomes )))
 for (i in 1:length(outcomes)){
   ##means
   
-  df_means_out[1,i] <- mean(unlist(dta[outcomes[i]]), na.rm=TRUE)
-  df_means_out[2,i] <- sd(unlist(dta[outcomes[i]]), na.rm=TRUE)
+  df_means_out[1,i] <- mean(unlist(dta[(dta$trial_P == FALSE & dta$cont == FALSE),outcomes[i]]), na.rm=TRUE)
+  df_means_out[2,i] <- sd(unlist(dta[(dta$trial_P == FALSE & dta$cont == FALSE),outcomes[i]]), na.rm=TRUE)
+  
+  df_means_out[3,i] <- mean(unlist(dta[dta$trial_P == FALSE,outcomes[i]]), na.rm=TRUE)
+  df_means_out[4,i] <- sd(unlist(dta[dta$trial_P == FALSE,outcomes[i]]), na.rm=TRUE)
+  
+  df_means_out[5,i] <- mean(unlist(dta[dta$cont == FALSE,outcomes[i]]), na.rm=TRUE)
+  df_means_out[6,i] <- sd(unlist(dta[dta$cont == FALSE,outcomes[i]]), na.rm=TRUE)
+  
+  
   
   formula1 <- as.formula(paste(outcomes[i],paste("trial_P*cont"),sep="~"))
   ols <- lm(formula1, data=dta)
@@ -1082,14 +1143,22 @@ outcomes <- c(outcomes, "index")
 ## demean indicators
 dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)
 dta$trial_P_demeaned <-  dta$trial_P - mean(dta$trial_P,na.rm = T)
-df_means_out <- array(NA,c(2,length(outcomes )))
+df_means_out <- array(NA,c(6,length(outcomes )))
 df_res <- array(NA,c(3,4,length(outcomes )))
 df_res_pool  <- array(NA,c(2,3,length(outcomes )))
 for (i in 1:length(outcomes)){
   ##means
   
-  df_means_out[1,i] <- mean(unlist(dta[outcomes[i]]), na.rm=TRUE)
-  df_means_out[2,i] <- sd(unlist(dta[outcomes[i]]), na.rm=TRUE)
+  df_means_out[1,i] <- mean(unlist(dta[(dta$trial_P == FALSE & dta$cont == FALSE),outcomes[i]]), na.rm=TRUE)
+  df_means_out[2,i] <- sd(unlist(dta[(dta$trial_P == FALSE & dta$cont == FALSE),outcomes[i]]), na.rm=TRUE)
+  
+  df_means_out[3,i] <- mean(unlist(dta[dta$trial_P == FALSE,outcomes[i]]), na.rm=TRUE)
+  df_means_out[4,i] <- sd(unlist(dta[dta$trial_P == FALSE,outcomes[i]]), na.rm=TRUE)
+  
+  df_means_out[5,i] <- mean(unlist(dta[dta$cont == FALSE,outcomes[i]]), na.rm=TRUE)
+  df_means_out[6,i] <- sd(unlist(dta[dta$cont == FALSE,outcomes[i]]), na.rm=TRUE)
+  
+  
   
   formula1 <- as.formula(paste(outcomes[i],paste("trial_P*cont"),sep="~"))
   ols <- lm(formula1, data=dta)
@@ -1170,13 +1239,21 @@ b_outcomes <- c(b_outcomes, "b_index")
 ## demean indicators
 dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)
 dta$trial_P_demeaned <-  dta$trial_P - mean(dta$trial_P,na.rm = T)
-df_means_out <- array(NA,c(2,length(outcomes )))
+df_means_out <- array(NA,c(6,length(outcomes )))
 df_res <- array(NA,c(3,4,length(outcomes )))
 df_res_pool  <- array(NA,c(2,3,length(outcomes )))
 for (i in 1:length(outcomes)){
   ##means
-   df_means_out[1,i] <- mean(unlist(dta[outcomes[i]]), na.rm=TRUE)
-  df_means_out[2,i] <- sd(unlist(dta[outcomes[i]]), na.rm=TRUE)
+  df_means_out[1,i] <- mean(unlist(dta[(dta$trial_P == FALSE & dta$cont == FALSE),outcomes[i]]), na.rm=TRUE)
+  df_means_out[2,i] <- sd(unlist(dta[(dta$trial_P == FALSE & dta$cont == FALSE),outcomes[i]]), na.rm=TRUE)
+  
+  df_means_out[3,i] <- mean(unlist(dta[dta$trial_P == FALSE,outcomes[i]]), na.rm=TRUE)
+  df_means_out[4,i] <- sd(unlist(dta[dta$trial_P == FALSE,outcomes[i]]), na.rm=TRUE)
+  
+  df_means_out[5,i] <- mean(unlist(dta[dta$cont == FALSE,outcomes[i]]), na.rm=TRUE)
+  df_means_out[6,i] <- sd(unlist(dta[dta$cont == FALSE,outcomes[i]]), na.rm=TRUE)
+  
+  
   
   formula1 <- as.formula(paste(paste(outcomes[i],paste("trial_P*cont"),sep="~"), b_outcomes[i],sep="+"))
   ols <- lm(formula1, data=dta)
@@ -1253,14 +1330,22 @@ outcomes <- c(outcomes, "index")
 ## demean indicators
 dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)
 dta$trial_P_demeaned <-  dta$trial_P - mean(dta$trial_P,na.rm = T)
-df_means_out <- array(NA,c(2,length(outcomes )))
+df_means_out <- array(NA,c(6,length(outcomes )))
 df_res <- array(NA,c(3,4,length(outcomes )))
 df_res_pool  <- array(NA,c(2,3,length(outcomes )))
 for (i in 1:length(outcomes)){
   ##means
   
-  df_means_out[1,i] <- mean(unlist(dta[outcomes[i]]), na.rm=TRUE)
-  df_means_out[2,i] <- sd(unlist(dta[outcomes[i]]), na.rm=TRUE)
+  df_means_out[1,i] <- mean(unlist(dta[(dta$trial_P == FALSE & dta$cont == FALSE),outcomes[i]]), na.rm=TRUE)
+  df_means_out[2,i] <- sd(unlist(dta[(dta$trial_P == FALSE & dta$cont == FALSE),outcomes[i]]), na.rm=TRUE)
+  
+  df_means_out[3,i] <- mean(unlist(dta[dta$trial_P == FALSE,outcomes[i]]), na.rm=TRUE)
+  df_means_out[4,i] <- sd(unlist(dta[dta$trial_P == FALSE,outcomes[i]]), na.rm=TRUE)
+  
+  df_means_out[5,i] <- mean(unlist(dta[dta$cont == FALSE,outcomes[i]]), na.rm=TRUE)
+  df_means_out[6,i] <- sd(unlist(dta[dta$cont == FALSE,outcomes[i]]), na.rm=TRUE)
+  
+  
   
   formula1 <- as.formula(paste(outcomes[i],paste("trial_P*cont"),sep="~"))
   ols <- lm(formula1, data=dta)
@@ -1365,14 +1450,22 @@ outcomes <- c(outcomes, "index")
 ## demean indicators
 dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)
 dta$trial_P_demeaned <-  dta$trial_P - mean(dta$trial_P,na.rm = T)
-df_means_out <- array(NA,c(2,length(outcomes )))
+df_means_out <- array(NA,c(6,length(outcomes )))
 df_res <- array(NA,c(3,4,length(outcomes )))
 df_res_pool  <- array(NA,c(2,3,length(outcomes )))
 for (i in 1:length(outcomes)){
   ##means
   
-  df_means_out[1,i] <- mean(unlist(dta[outcomes[i]]), na.rm=TRUE)
-  df_means_out[2,i] <- sd(unlist(dta[outcomes[i]]), na.rm=TRUE)
+  df_means_out[1,i] <- mean(unlist(dta[(dta$trial_P == FALSE & dta$cont == FALSE),outcomes[i]]), na.rm=TRUE)
+  df_means_out[2,i] <- sd(unlist(dta[(dta$trial_P == FALSE & dta$cont == FALSE),outcomes[i]]), na.rm=TRUE)
+  
+  df_means_out[3,i] <- mean(unlist(dta[dta$trial_P == FALSE,outcomes[i]]), na.rm=TRUE)
+  df_means_out[4,i] <- sd(unlist(dta[dta$trial_P == FALSE,outcomes[i]]), na.rm=TRUE)
+  
+  df_means_out[5,i] <- mean(unlist(dta[dta$cont == FALSE,outcomes[i]]), na.rm=TRUE)
+  df_means_out[6,i] <- sd(unlist(dta[dta$cont == FALSE,outcomes[i]]), na.rm=TRUE)
+  
+  
   
   formula1 <- as.formula(paste(outcomes[i],paste("trial_P*cont"),sep="~"))
   ols <- lm(formula1, data=dta)
