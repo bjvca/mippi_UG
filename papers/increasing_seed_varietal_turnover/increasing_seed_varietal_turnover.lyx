@@ -498,7 +498,26 @@ Exploring some of the impact pathways,
 \begin_layout Standard
 Our work contributes to various strands of literature on adoption of agricultural technologies.
  First,
- we add to the limited set of experimental impact evaluations of effectiveness of trial packs in accelerating technology adoption,
+ we add to the literature testing whether the provision of short term subsidies (either cash or in-kind) on agricultural inputs can lead to longer term adoption 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "carter2021subsidies,balew2025short,gignoux2023input,fishman2022can"
+literal "false"
+
+\end_inset
+
+.
+ Specifically,
+ despite the prevalent use of temporary subsidies as a policy instrument to spur improved seed adoption 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "phiri2000introducing,dorward2005starter,christinck2014innovations"
+literal "false"
+
+\end_inset
+
+,
+ we add to a relatively limited set of experimental impact evaluations testing the effectiveness of trial packs in accelerating technology adoption,
  which finds mixed results.
  For instance,
  
@@ -523,7 +542,15 @@ literal "false"
  in Tanzania,
  adding sample packs to demonstration plots within the framework of village-based agricultural advisors had no significant impacts on sales,
  orders received,
- or learning outcomes.
+ or learning outcomes and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "maredia2025does"
+literal "false"
+
+\end_inset
+
+ further show no increases in adoption at the 1 or 4 year marks as a result of the trial pack.
  Similarly,
  
 \begin_inset CommandInset citation
@@ -534,7 +561,11 @@ literal "false"
 \end_inset
 
  find provision of a horticulture mini-kit to farmers in Rwanda has no significant impact on the adoption of horticulture.
- While other studies with interventions featuring a trial pack exist,
+ 
+\end_layout
+
+\begin_layout Standard
+While other studies with interventions featuring a trial pack exist,
  the aim of many is not to evaluate its impacts on future technology adoption.
  For instance,
  
@@ -558,7 +589,21 @@ literal "false"
  including the use of sample packs in the southern highlands of Tanzania,
  and find that bean farmers' willingness to pay for the new variety is not influenced by seed sample packs,
  yet they do not look at actual planting decisions.
- We contribute to this literature by assessing the effect of seed trial packs on subsequent adoption,
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "tjernstrom2019seeds"
+literal "false"
+
+\end_inset
+
+ explore how the provision of hybrid maize seed sample packs influence Kenyan farmers' beliefs about expected yields,
+ and then show that more positive beliefs about yields of hybrid maize seeds leads to increased adoption.
+ 
+\end_layout
+
+\begin_layout Standard
+We contribute to this literature by assessing the effect of seed trial packs on subsequent adoption,
  instead of limiting observation to a single season,
  and primarily investigating the immediate use of the seed sample pack.
  Moreover,
@@ -570,11 +615,15 @@ literal "false"
 \begin_layout Standard
 We also contribute to the literature on consumer acceptance of improved varieties,
  by introducing an intervention that exposes farmers to a variety's consumption traits.
- While many studies use consumer tasting of new varieties as part of the research,
+ While many studies use consumer tasting
+\end_layout
+
+\begin_layout Standard
+of new varieties as part of the research,
  in order to either assess consumer preferences for the varieties or sensitize consumers to varietal traits before eliciting willingness to pay 
 \begin_inset CommandInset citation
-LatexCommand citep
-key "birol2015developing"
+LatexCommand citet
+key "birol2015developing,de2014combining,okello2021quality"
 literal "false"
 
 \end_inset
@@ -583,17 +632,21 @@ literal "false"
  these studies do not treat the tasting experience as an intervention designed to induce take-up of new varieties.
  As such,
  the opportunity to sample the new variety is not randomized between participants.
- Existing interventions that expose farmers to consumption attributes of new varieties mostly promote nutritional traits and rarely measure subsequent adoption in the following season 
+\end_layout
+
+\begin_layout Standard
+Existing interventions that expose farmers to consumption attributes of new varieties also tend to promote nutritional (credence) traits,
+ rather than experience traits such as taste or cooking quality,
+ and rarely measure subsequent adoption in the following season 
 \begin_inset CommandInset citation
 LatexCommand citep
-before "eg."
-key "olney20152"
+key "olney20152,kramer2017cooking,schreinemachers2016impact,osei2017combining,murty2016impact"
 literal "false"
 
 \end_inset
 
 .
- One exception is 
+ One exception is
 \begin_inset CommandInset citation
 LatexCommand citet
 key "de2018biofortification"
@@ -603,8 +656,41 @@ literal "false"
 
 ,
  who study the impact of the HarvestPlus' Reaching End Users project (which includes a demand creation component that focuses on consumption attributes) on the adoption of bio-fortified sweet potato in Mozambique and Uganda.
- They find that the combination of the demand creation treatment and production-focused extension activities increases adoption of vitamin A fortified orange-fleshed sweet potatoes in the subsequent season by over 60 percent in both Mozambique and Uganda.
+ They find that the combination of the demand creation treatment and production-focused
+\end_layout
+
+\begin_layout Standard
+extension activities increases adoption of vitamin A fortified orange-fleshed sweet potatoes in the subsequent season by over 60 percent in both Mozambique and Uganda.
  We contribute to this literature by developing and testing an intervention that highlights non-nutrition-related consumption traits as well as offering this both apart from and in combination with other interventions highlighting production attributes.
+\end_layout
+
+\begin_layout Standard
+Critically,
+ this work is part of a broader set of coordinated trials testing similar interventions (seed sample packs and a consumer-focused intervention) across six sites 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Trachtman2023Accelerating"
+literal "false"
+
+\end_inset
+
+.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "ragasa2025impact"
+literal "false"
+
+\end_inset
+
+ presents the results from one of these sister studies,
+ which uses similar interventions to promote improved maize and cowpeas in the context of Nigeria.
+ They find the seed trial pack to be highly effective,
+ increasing the adoption of the targeted varieties by over 40 percentage points.
+ While they do not find the consumption intervention alone to spur adoption,
+ there are marginal gains from receiving both the seed trial pack and consumer intervention,
+ as opposed to the seed trial pack alone.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2430,7 +2516,7 @@ placement document
 alignment document
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -3268,14 +3354,10 @@ scriptsize
 \begin_layout Plain Layout
 
 Note:
- Column (1) reports sample means at baseline and standard deviations below;
- columns (2)–(3) report differences between treatment and control groups estimated using the pooled model of Equation 
-\backslash
-ref{eq:pooled};
- (4)–(5) report differences between treatment and control groups estimated using the fully interacted model of Equation 
-\backslash
-ref{eq:one};
- column (6) is the interaction effect.
+ Column (1) reports control group means at baseline (and standard deviations below);
+ column (2) reports the estimate of the average treatment effect of the seed trial packs;
+ column (3) reports the estimate of the average treatment effect of the cooking and tasting demonstrations;
+ column (4) is the interaction effect.
  Standard errors are below the estimates and are clustered at the level of randomization;
  **,
  *,
@@ -3506,7 +3588,7 @@ placement document
 alignment document
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -4178,14 +4260,10 @@ scriptsize
 \begin_layout Plain Layout
 
 Note:
- Column (1) reports sample means at baseline and standard deviations below;
- columns (2)–(3) report differences between treatment and control groups estimated using the pooled model of Equation 
-\backslash
-ref{eq:pooled};
- (4)–(5) report differences between treatment and control groups estimated using the fully interacted model of Equation 
-\backslash
-ref{eq:one};
- column (6) is the interaction effect.
+ Column (1) reports control group means at baseline (and standard deviations below);
+ column (2) reports the estimate of the average treatment effect of the seed trial packs;
+ column (3) reports the estimate of the average treatment effect of the cooking and tasting demonstrations;
+ column (4) is the interaction effect.
  Standard errors are below the estimates and are clustered at the level of randomization;
  **,
  *,
@@ -5720,14 +5798,10 @@ scriptsize
 \begin_layout Plain Layout
 
 Note:
- Column (1) reports sample means at baseline and standard deviations below;
- columns (2)–(3) report differences between treatment and control groups estimated using the pooled model of Equation 
-\backslash
-ref{eq:pooled};
- (4)–(5) report differences between treatment and control groups estimated using the fully interacted model of Equation 
-\backslash
-ref{eq:one};
- column (6) is the interaction effect.
+ Column (1) reports control group means at baseline (and standard deviations below);
+ column (2) reports the estimate of the average treatment effect of the seed trial packs;
+ column (3) reports the estimate of the average treatment effect of the cooking and tasting demonstrations;
+ column (4) is the interaction effect.
  Standard errors are below the estimates and are clustered at the level of randomization;
  **,
  *,
@@ -5989,7 +6063,7 @@ placement document
 alignment document
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -6566,19 +6640,16 @@ scriptsize
 \begin_layout Plain Layout
 
 Note:
- Column (1) reports sample means at baseline and standard deviations below;
-  columns (2)-(3) report differences between treatment and control groups estimated using the pooled model of Equation  
-\backslash
-ref{eq:pooled};
- (4)-(5) report differences between treatment and control groups estimated using the fully interacted model of Equation 
-\backslash
-ref{eq:one};
- column (6) is the interaction effect.
- Standared errors are below the estimates and are clustered at the level of randomization;
+ Column (1) reports control group means at baseline (and standard deviations below);
+ column (2) reports the estimate of the average treatment effect of the seed trial packs;
+ column (3) reports the estimate of the average treatment effect of the cooking and tasting demonstrations;
+ column (4) is the interaction effect.
+ Standard errors are below the estimates and are clustered at the level of randomization;
  **,
  *,
  and + denote significance at the 1,
- 5 and 10
+ 5,
+ and 10
 \backslash
 % levels based on sharpened q-values 
 \backslash
@@ -7741,14 +7812,10 @@ scriptsize
 \begin_layout Plain Layout
 
 Note:
- Column (1) reports sample means at baseline and standard deviations below;
- columns (2)–(3) report differences between treatment and control groups estimated using the pooled model of Equation 
-\backslash
-ref{eq:pooled};
- (4)–(5) report differences between treatment and control groups estimated using the fully interacted model of Equation 
-\backslash
-ref{eq:one};
- column (6) is the interaction effect.
+ Column (1) reports control group means at baseline (and standard deviations below);
+ column (2) reports the estimate of the average treatment effect of the seed trial packs;
+ column (3) reports the estimate of the average treatment effect of the cooking and tasting demonstrations;
+ column (4) is the interaction effect.
  Standard errors are below the estimates and are clustered at the level of randomization;
  **,
  *,
@@ -8411,14 +8478,10 @@ scriptsize
 \begin_layout Plain Layout
 
 Note:
- Column (1) reports sample means at baseline and standard deviations below;
- columns (2)–(3) report differences between treatment and control groups estimated using the pooled model of Equation 
-\backslash
-ref{eq:pooled};
- (4)–(5) report differences between treatment and control groups estimated using the fully interacted model of Equation 
-\backslash
-ref{eq:one};
- column (6) is the interaction effect.
+ Column (1) reports control group means at baseline (and standard deviations below);
+ column (2) reports the estimate of the average treatment effect of the seed trial packs;
+ column (3) reports the estimate of the average treatment effect of the cooking and tasting demonstrations;
+ column (4) is the interaction effect.
  Standard errors are below the estimates and are clustered at the level of randomization;
  **,
  *,
@@ -8429,7 +8492,6 @@ ref{eq:one};
 % levels based on sharpened q-values 
 \backslash
 citep{benjamini2006adaptive}.
- 
 \end_layout
 
 \begin_layout Plain Layout
@@ -9107,14 +9169,10 @@ scriptsize
 \begin_layout Plain Layout
 
 Note:
- Column (1) reports sample means at baseline and standard deviations below;
- columns (2)–(3) report differences between treatment and control groups estimated using the pooled model of Equation 
-\backslash
-ref{eq:pooled};
- (4)–(5) report differences between treatment and control groups estimated using the fully interacted model of Equation 
-\backslash
-ref{eq:one};
- column (6) is the interaction effect.
+ Column (1) reports control group means at baseline (and standard deviations below);
+ column (2) reports the estimate of the average treatment effect of the seed trial packs;
+ column (3) reports the estimate of the average treatment effect of the cooking and tasting demonstrations;
+ column (4) is the interaction effect.
  Standard errors are below the estimates and are clustered at the level of randomization;
  **,
  *,
@@ -9125,7 +9183,6 @@ ref{eq:one};
 % levels based on sharpened q-values 
 \backslash
 citep{benjamini2006adaptive}.
- 
 \end_layout
 
 \begin_layout Plain Layout
@@ -9240,11 +9297,7 @@ Bazooka
  In our sample,
  the median sales price is UGX60,000 per bag,
  meaning that recycling the trial pack for one season would be a rational response.
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Consistent with this,
+ Consistent with this,
  we also find that within the subsample of farmers that received the seed trial pack,
  farmers that report to have been selling maize at prices higher than UGX62,000 are significantly more likely to use fresh 
 \shape italic
@@ -9253,18 +9306,13 @@ Bazooka
  seed as opposed to farmers that sold at low prices.
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout Standard
 \begin_inset Float figure
 placement document
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -9595,7 +9643,7 @@ nolink "false"
  in Equation 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:pooled"
+reference "eq:pooled-1"
 plural "false"
 caps "false"
 noprefix "false"
@@ -9613,7 +9661,7 @@ nolink "false"
  in Equation 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:pooled"
+reference "eq:pooled-1"
 plural "false"
 caps "false"
 noprefix "false"
@@ -9631,7 +9679,7 @@ placement document
 alignment document
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -10529,14 +10577,11 @@ scriptsize
 \begin_layout Plain Layout
 
 Note:
- Column (1) reports sample means at baseline and standard deviations below;
- columns (2)–(3) report differences between treatment and control groups estimated using the pooled model of Equation 
-\backslash
-ref{eq:pooled};
- (4)–(5) report differences between treatment and control groups estimated using the fully interacted model of Equation 
-\backslash
-ref{eq:one};
- column (6) is the interaction effect.
+ Column (1) reports control means at baseline for farmers that did not receive the seed trial pack (and standard deviations below);
+ columns (2) reports estimates of the average treatment effect of the seed trial pack.
+ Column (1) reports control means at baseline for farmers that did not receive the seed trial pack (and standard errors below);
+  Column (3) reports control means at baseline for farmers that did not receive the cooking demonstration and tasting sessions (and standard deviations below);
+ column (4) reports estimates of the average treatment effect of the cooking demonstration and tasting sessions.
  Standard errors are below the estimates and are clustered at the level of randomization;
  **,
  *,
@@ -10570,7 +10615,7 @@ placement document
 alignment document
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -11278,14 +11323,10 @@ scriptsize
 \begin_layout Plain Layout
 
 Note:
- Column (1) reports sample means at baseline and standard deviations below;
- columns (2)–(3) report differences between treatment and control groups estimated using the pooled model of Equation 
-\backslash
-ref{eq:pooled};
- (4)–(5) report differences between treatment and control groups estimated using the fully interacted model of Equation 
-\backslash
-ref{eq:one};
- column (6) is the interaction effect.
+ Column (1) reports control means at baseline for farmers that did not receive the seed trial pack (and standard deviations below);
+ column (2) reports estimates of the average treatment effect of the seed trial pack;
+  column (3) reports control means at baseline for farmers that did not receive the cooking demonstration and tasting sessions (and standard deviations below);
+ column (4) reports estimates of the average treatment effect of the cooking demonstration and tasting sessions.
  Standard errors are below the estimates and are clustered at the level of randomization;
  **,
  *,
@@ -11322,7 +11363,7 @@ placement document
 alignment document
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -12055,14 +12096,10 @@ scriptsize
 \begin_layout Plain Layout
 
 Note:
- Column (1) reports sample means at baseline and standard deviations below;
- columns (2)–(3) report differences between treatment and control groups estimated using the pooled model of Equation 
-\backslash
-ref{eq:pooled};
- (4)–(5) report differences between treatment and control groups estimated using the fully interacted model of Equation 
-\backslash
-ref{eq:one};
- column (6) is the interaction effect.
+ Column (1) reports control means at baseline for farmers that did not receive the seed trial pack (and standard deviations below);
+ column (2) reports estimates of the average treatment effect of the seed trial pack;
+  column (3) reports control means at baseline for farmers that did not receive the cooking demonstration and tasting sessions (and standard deviations below);
+ column (4) reports estimates of the average treatment effect of the cooking demonstration and tasting sessions.
  Standard errors are below the estimates and are clustered at the level of randomization;
  **,
  *,
@@ -12073,8 +12110,6 @@ ref{eq:one};
 % levels based on sharpened q-values 
 \backslash
 citep{benjamini2006adaptive}.
- Production and productivity are log transformed;
- means and standard deviations are in levels.
  All regressions include baseline outcome as control.
  
 \end_layout
@@ -12103,7 +12138,7 @@ placement document
 alignment document
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -12487,14 +12522,10 @@ scriptsize
 \begin_layout Plain Layout
 
 Note:
- Column (1) reports sample means at baseline and standard deviations below;
- columns (2)–(3) report differences between treatment and control groups estimated using the pooled model of Equation 
-\backslash
-ref{eq:pooled};
- (4)–(5) report differences between treatment and control groups estimated using the fully interacted model of Equation 
-\backslash
-ref{eq:one};
- column (6) is the interaction effect.
+ Column (1) reports control means at baseline for farmers that did not receive the seed trial pack (and standard deviations below);
+ column (2) reports estimates of the average treatment effect of the seed trial pack;
+  column (3) reports control means at baseline for farmers that did not receive the cooking demonstration and tasting sessions (and standard deviations below);
+ column (4) reports estimates of the average treatment effect of the cooking demonstration and tasting sessions.
  Standard errors are below the estimates and are clustered at the level of randomization;
  **,
  *,
@@ -12529,7 +12560,7 @@ placement document
 alignment document
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -13204,19 +13235,16 @@ scriptsize
 \begin_layout Plain Layout
 
 Note:
- Column (1) reports sample means at baseline and standard deviations below;
-  columns (2)-(3) report differences between treatment and control groups estimated using the pooled model of Equation  
-\backslash
-ref{eq:pooled};
- (4)-(5) report differences between treatment and control groups estimated using the fully interacted model of Equation 
-\backslash
-ref{eq:one};
- column (6) is the interaction effect.
- Standared errors are below the estimates and are clustered at the level of randomization;
+ Column (1) reports control means at baseline for farmers that did not receive the seed trial pack (and standard deviations below);
+ column (2) reports estimates of the average treatment effect of the seed trial pack;
+  column (3) reports control means at baseline for farmers that did not receive the cooking demonstration and tasting sessions (and standard deviations below);
+ column (4) reports estimates of the average treatment effect of the cooking demonstration and tasting sessions.
+ Standard errors are below the estimates and are clustered at the level of randomization;
  **,
  *,
  and + denote significance at the 1,
- 5 and 10
+ 5,
+ and 10
 \backslash
 % levels based on sharpened q-values 
 \backslash
@@ -13239,7 +13267,7 @@ placement document
 alignment document
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -14122,14 +14150,10 @@ scriptsize
 \begin_layout Plain Layout
 
 Note:
- Column (1) reports sample means at baseline and standard deviations below;
- columns (2)–(3) report differences between treatment and control groups estimated using the pooled model of Equation 
-\backslash
-ref{eq:pooled};
- (4)–(5) report differences between treatment and control groups estimated using the fully interacted model of Equation 
-\backslash
-ref{eq:one};
- column (6) is the interaction effect.
+ Column (1) reports control means at baseline for farmers that did not receive the seed trial pack (and standard deviations below);
+ column (2) reports estimates of the average treatment effect of the seed trial pack;
+  column (3) reports control means at baseline for farmers that did not receive the cooking demonstration and tasting sessions (and standard deviations below);
+ column (4) reports estimates of the average treatment effect of the cooking demonstration and tasting sessions.
  Standard errors are below the estimates and are clustered at the level of randomization;
  **,
  *,
@@ -14170,7 +14194,7 @@ placement document
 alignment document
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -14716,14 +14740,10 @@ scriptsize
 \begin_layout Plain Layout
 
 Note:
- Column (1) reports sample means at baseline and standard deviations below;
- columns (2)–(3) report differences between treatment and control groups estimated using the pooled model of Equation 
-\backslash
-ref{eq:pooled};
- (4)–(5) report differences between treatment and control groups estimated using the fully interacted model of Equation 
-\backslash
-ref{eq:one};
- column (6) is the interaction effect.
+ Column (1) reports control means at baseline for farmers that did not receive the seed trial pack (and standard deviations below);
+ column (2) reports estimates of the average treatment effect of the seed trial pack;
+  column (3) reports control means at baseline for farmers that did not receive the cooking demonstration and tasting sessions (and standard deviations below);
+ column (4) reports estimates of the average treatment effect of the cooking demonstration and tasting sessions.
  Standard errors are below the estimates and are clustered at the level of randomization;
  **,
  *,
@@ -15420,14 +15440,10 @@ scriptsize
 \begin_layout Plain Layout
 
 Note:
- Column (1) reports sample means at baseline and standard deviations below;
- columns (2)–(3) report differences between treatment and control groups estimated using the pooled model of Equation 
-\backslash
-ref{eq:pooled};
- (4)–(5) report differences between treatment and control groups estimated using the fully interacted model of Equation 
-\backslash
-ref{eq:one};
- column (6) is the interaction effect.
+ Column (1) reports control means at baseline for farmers that did not receive the seed trial pack (and standard deviations below);
+ column (2) reports estimates of the average treatment effect of the seed trial pack;
+  column (3) reports control means at baseline for farmers that did not receive the cooking demonstration and tasting sessions (and standard deviations below);
+ column (4) reports estimates of the average treatment effect of the cooking demonstration and tasting sessions.
  Standard errors are below the estimates and are clustered at the level of randomization;
  **,
  *,
