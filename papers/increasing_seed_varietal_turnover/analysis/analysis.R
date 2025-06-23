@@ -372,6 +372,180 @@ save(df_res_pool,file=paste(path,"/papers/increasing_seed_varietal_turnover/resu
 save(df_res,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_res.Rdata",sep="/"))
 save(df_means_out,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_means_out.Rdata",sep="/"))
 
+###################################################### interlude: heterogeneity
+
+### those that live far from agro-input shop are more likely to recycle? Not really
+# dta <- merge(dta, bse[c("farmer_ID","dist_ag")], by.x="ID", by.y="farmer_ID")
+# dta$dist_ag[dta$dist_ag==999] <- NA
+# dta$het_1 <- dta$dist_ag>3
+
+# ### those that recycled at baseline
+# dta <- merge(dta, bse[c("farmer_ID","source")], by.x="ID", by.y="farmer_ID")
+# dta$het_1 <- dta$source == "a" | dta$source == "b" 
+# 
+# ### thos that have lot of land
+# dta <- merge(dta, bse[c("farmer_ID","ttl_land")], by.x="ID", by.y="farmer_ID")
+# dta$ttl_land[dta$ttl_land==999] <- NA
+# dta$het_1 <- dta$ttl_land>3
+# 
+# ### thos that had experience with bazo at baseline
+# dta <- merge(dta, bse[c("farmer_ID","bazo_use")], by.x="ID", by.y="farmer_ID")
+# # 
+#  dta$het_1 <- dta$bazo_use =="Yes"
+# ### thos that were not satisfied with seed used at baseline - indication of trust? hypo is that these are more likely to recycle our seed
+# dta <- merge(dta, bse[c("farmer_ID","satfy")], by.x="ID", by.y="farmer_ID")
+# 
+# dta$het_1 <- dta$satfy =="No"
+# ###those that sell at high prices - baseline
+ dta <- merge(dta, bse[c("farmer_ID","bag_charge")], by.x="ID", by.y="farmer_ID")
+# 
+ dta$bag_charge <- as.numeric(dta$bag_charge.y)
+ dta$bag_charge[dta$bag_charge >200000] <- NA
+ dta$bag_charge_high <- as.numeric(dta$bag_charge)>90000
+ # 
+
+# 
+#dta$bag_charge <- as.numeric(dta$bag_charge.x)
+#dta$bag_charge[dta$bag_charge >200000] <- NA
+#dta$bag_charge_high <- as.numeric(dta$bag_charge)>64000
+
+dta$het_1 <- dta$bag_charge_high
+
+### those that are poor
+
+
+
+#iterate over outcomes
+outcomes <- c("p_outcome_1","p_outcome_2","nr_improved", "share_plots_imp", "nr_improvedxsize", "share_area_imp" )
+b_outcomes <- c("b_p_outcome_1", "b_p_outcome_2",NA,NA,NA,NA)
+### do not include outcome 2 (adoption of bazooka) as this results in singularity - on second thought, maybe p_outcome_2 should be a key outcome and included
+## in fact, the singularity disappeared in the real data
+dta$index <- icwIndex(xmat= as.matrix(dta[outcomes]), sgroup=dta$s_ind)$index
+outcomes <- c(outcomes, "index")
+## demean indicators
+dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)
+dta$trial_P_demeaned <-  dta$trial_P - mean(dta$trial_P,na.rm = T)
+df_means_out <- array(NA,c(6,length(outcomes )))
+df_res <- array(NA,c(3,4,length(outcomes )))
+df_res_pool  <- array(NA,c(2,3,length(outcomes )))
+
+i <- 2
+formula1 <- as.formula(paste(outcomes[i],paste("het_1"),sep="~"))
+ols <- lm(formula1, data=dta[dta$trial_P == TRUE,])
+summary(ols)
+
+
+for (i in 1:length(outcomes)){
+  ##means
+  
+  df_means_out[1,i] <- mean(unlist(dta[(dta$trial_P == FALSE & dta$cont == FALSE),outcomes[i]]), na.rm=TRUE)
+  df_means_out[2,i] <- sd(unlist(dta[(dta$trial_P == FALSE & dta$cont == FALSE),outcomes[i]]), na.rm=TRUE)
+  
+  df_means_out[3,i] <- mean(unlist(dta[dta$trial_P == FALSE,outcomes[i]]), na.rm=TRUE)
+  df_means_out[4,i] <- sd(unlist(dta[dta$trial_P == FALSE,outcomes[i]]), na.rm=TRUE)
+  
+  df_means_out[5,i] <- mean(unlist(dta[dta$cont == FALSE,outcomes[i]]), na.rm=TRUE)
+  df_means_out[6,i] <- sd(unlist(dta[dta$cont == FALSE,outcomes[i]]), na.rm=TRUE)
+  
+  
+  
+  if (i %in% 3:7) {
+    formula1 <- as.formula(paste(outcomes[i],paste("trial_P*cont*het_1"),sep="~"))
+    ols <- lm(formula1, data=dta)
+    vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+    
+    df_res[1:3,1,i] <- coef_test(ols, vcov_cluster)$beta[2:4]
+    df_res[1:3,2,i] <- coef_test(ols, vcov_cluster)$SE[2:4]
+    df_res[1:3,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2:4]
+    df_res[1,4,i] <- nobs(ols) 
+  } else {
+    formula1 <- as.formula(paste(paste(outcomes[i],paste("trial_P*cont*het_1"),sep="~"), b_outcomes[i],sep="+"))
+    ols <- lm(formula1, data=dta)
+    vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+    
+    df_res[1:3,1,i] <- coef_test(ols, vcov_cluster)$beta[c(2:3,5)]
+    df_res[1:3,2,i] <- coef_test(ols, vcov_cluster)$SE[c(2:3,5)]
+    df_res[1:3,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[c(2:3,5)]
+    df_res[1,4,i] <- nobs(ols) 
+
+
+  }  
+  
+  if (i %in% 3:7) {  
+    formula2 <- as.formula(paste(outcomes[i],paste("trial_P*cont_demeaned"),sep="~"))
+  } else {
+    formula2 <- as.formula(paste(paste(outcomes[i],paste("trial_P*cont_demeaned"),sep="~"), b_outcomes[i],sep="+"))   
+  }  
+  ols <- lm(formula2, data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+  
+  df_res_pool[1,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
+  df_res_pool[1,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
+  df_res_pool[1,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
+  if (i %in% 3:7) {   
+    formula3 <- as.formula(paste(outcomes[i],paste("cont*trial_P_demeaned"),sep="~"))
+  } else {
+    formula3 <- as.formula(paste(paste(outcomes[i],paste("cont*trial_P_demeaned"),sep="~"), b_outcomes[i],sep="+"))    
+  }  
+  ols <- lm(formula3, data=dta)
+  vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+  
+  df_res_pool[2,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
+  df_res_pool[2,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
+  df_res_pool[2,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
+  
+}
+if (sharp == TRUE){
+  a_sharp <-  anderson_sharp_q(c(df_res[1,3,1:(length(outcomes)-1)],df_res[2,3,1:(length(outcomes)-1)],df_res[3,3,1:(length(outcomes)-1)]))
+  
+  df_res[1,3,1:(length(outcomes)-1)] <- a_sharp[1:(length(outcomes)-1)] 
+  df_res[2,3,1:(length(outcomes)-1)] <-  a_sharp[length(outcomes):(2*length(outcomes)-2)]  
+  df_res[3,3,1:(length(outcomes)-1)] <-  a_sharp[(2*length(outcomes)-1):(3*length(outcomes)-3)]
+  
+  a_sharp <-  anderson_sharp_q(c(df_res_pool[1,3,1:(length(outcomes)-1)],df_res_pool[2,3,1:(length(outcomes)-1)]))					       
+  df_res_pool[1,3,1:(length(outcomes)-1)] <- a_sharp[1:(length(outcomes)-1)]
+  df_res_pool[2,3,1:(length(outcomes)-1)] <- a_sharp[length(outcomes):(2*length(outcomes)-2)]  
+}
+#### this is for table 2 (impact on adoption)
+save(df_res_pool,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_res_pool_het1.Rdata",sep="/"))
+save(df_res,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_res.Rdata_het1",sep="/"))
+save(df_means_out,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_means_out_het1.Rdata",sep="/"))
+
+###interlude 2: likert plots for attributes to see if farmers that are not satisfied are more likley to recycle
+
+### are farmers not happy with seed from agro traders
+#this is for seed they used
+dta$used_yield_rate[dta$used_yield_rate == "n/a"] <- NA
+dta$used_drt_tol[dta$used_drt_tol == "n/a"] <- NA
+dta$used_drt_tol[dta$used_drt_tol == "98"] <- NA
+dta$used_dies_tol[dta$used_dies_tol == "n/a"] <- NA
+dta$used_dies_tol[dta$used_dies_tol == "98"] <- NA
+dta$used_erly_mat[dta$used_erly_mat == "n/a"] <- NA
+dta$used_erly_mat[dta$used_erly_mat == "98"] <- NA
+dta$used_germ_rate[dta$used_germ_rate == "n/a"] <- NA
+dta$used_germ_rate[dta$used_germ_rate == "98"] <- NA
+dta$used_happy[dta$used_happy == "n/a"] <- NA
+dta$used_happy[dta$used_happy == "98"] <- NA
+
+### this is for seed they received from us
+dta$Trial_group.trial_yield_rate[dta$Trial_group.trial_yield_rate == "n/a"] <- NA 
+dta$Trial_group.trial_drt_tol[dta$Trial_group.trial_drt_tol == "n/a"] <- NA
+dta$Trial_group.trial_drt_tol[dta$Trial_group.trial_drt_tol == "98"] <- NA
+dta$Trial_group.trial_dies_tol[dta$Trial_group.trial_dies_tol == "n/a"] <- NA
+dta$Trial_group.trial_dies_tol[dta$Trial_group.trial_dies_tol == "98"] <- NA
+
+dta$Trial_group.trial_erly_mat[dta$Trial_group.trial_erly_mat == "n/a"] <- NA
+dta$Trial_group.trial_erly_mat[dta$Trial_group.trial_erly_mat == "98"] <- NA
+dta$Trial_group.trial_germ_rate[dta$Trial_group.trial_germ_rate == "n/a"] <- NA
+dta$Trial_group.trial_germ_rate[dta$Trial_group.trial_germ_rate == "98"] <- NA
+dta$Trial_group.trial_happy[dta$Trial_group.trial_happy == "n/a"] <- NA
+dta$Trial_group.trial_happy[dta$Trial_group.trial_happy == "98"] <- NA
+
+
+
+
+
+########################
 ### on random plot (controlling for baseline)
 dta$rnd_num <- as.numeric(dta$plot_select)
 ## some did not plant, work on subset
@@ -394,8 +568,14 @@ dta_sub <- dta_sub %>%
   mutate(recycled_source_selected = get(paste0("plot.", rnd_num, "..recycle_source_rest")))  %>%
   as.data.frame()
 
+dta_sub <- dta_sub %>%
+  rowwise() %>%
+  mutate(recycled_source_bazooka = get(paste0("plot.", rnd_num, "..recycle_source_bazooka")))  %>%
+  as.data.frame()
+
+
 ##merge this back into dta
-dta <- merge(dta, dta_sub[c("ID","times_recycled_selected","single_source_selected","recycled_source_selected")], by.x="ID", by.y="ID", all.x=TRUE)
+dta <- merge(dta, dta_sub[c("ID","times_recycled_selected","single_source_selected","recycled_source_selected","recycled_source_bazooka")], by.x="ID", by.y="ID", all.x=TRUE)
 
 
 dta$rnd_adopt <-   (((dta$maize_var_selected %in%  
@@ -482,6 +662,11 @@ dta$trial_P_demeaned <-  dta$trial_P - mean(dta$trial_P,na.rm = T)
 df_means_out <- array(NA,c(6,length(outcomes )))
 df_res <- array(NA,c(3,4,length(outcomes )))
 df_res_pool  <- array(NA,c(2,3,length(outcomes )))
+
+
+
+
+
 for (i in 1:length(outcomes)){
   ##means
   
@@ -546,11 +731,199 @@ save(df_rnd_pool,file=paste(path,"/papers/increasing_seed_varietal_turnover/resu
 save(df_rnd,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_rnd.Rdata",sep="/"))
 save(df_means_rnd,file=paste(path,"/papers/increasing_seed_varietal_turnover/results/df_means_rnd.Rdata",sep="/"))
 ###interlude: check if fresh bazooka is adopted more in treatment group when price is high
-dta$bag_charge <- as.numeric(as.character(dta$bag_charge))
-dta$high_p <- dta$bag_charge > 62000
-ols <- lm(rnd_bazo~high_p+b_rnd_bazo, data=dta[dta$trial_P,])
-vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID[dta$trial_P],type="CR2")
+
+
+dta$bag_charge_base <- as.numeric(dta$bag_charge.y)
+dta$bag_charge_base[dta$bag_charge_base > 250000] <- NA
+dta$bag_charge_base[dta$bag_charge_base < 20000] <- NA
+dta$bag_charge_end <- as.numeric(dta$bag_charge.x)
+dta$bag_charge_end[dta$bag_charge_end<20000] <- NA
+dta$bag_charge_end[dta$bag_charge_end>200000] <- NA
+dta$bag_charge_end <- dta$bag_charge_end > 60000
+dta$bag_charge_base <- dta$bag_charge_base > 100000
+
+formula1 <- as.formula(paste("recycled_source_bazooka == 'b'",paste("bag_charge_base"),sep="~"))
+ols <- lm(formula1, data=dta[dta$trial_P == TRUE & dta$maize_var_selected =='Bazooka',])
+vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID[dta$trial_P  & dta$maize_var_selected =='Bazooka'],type="CR2")
 coef_test(ols, vcov_cluster)
+
+### distance to agro dealer  - actually suggests that those who are further away from agro dealer are less likely to recycle...
+dta <- merge(dta, bse[c("farmer_ID","dist_ag")], by.x="ID", by.y="farmer_ID")
+dta$dist_ag[dta$dist_ag>50] <- NA
+dta$het_1 <- dta$dist_ag>3
+
+formula1 <- as.formula(paste("recycled_source_bazooka == 'b'",paste("dist_ag"),sep="~"))
+ols <- lm(formula1, data=dta[dta$trial_P == TRUE & dta$maize_var_selected =='Bazooka',])
+vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID[dta$trial_P  & dta$maize_var_selected =='Bazooka'],type="CR2")
+coef_test(ols, vcov_cluster)
+
+###interlude: do farmers recycle because they do not trust agro-dealers
+
+
+###compare ratings of bazo users in control (or in general?) to recyclers
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(forcats)
+
+# Used Bazooka on farmer plots
+used_ctrl <- dta %>%
+  filter(rnd_bazo == TRUE & trial_P == FALSE) %>%
+  transmute(
+    group = "Bazooka from agro-dealer",
+    yield = used_yield_rate,
+    germ_rate = used_germ_rate,
+    drt_tol = used_drt_tol,
+    dies_tol = used_dies_tol,
+    erly_mat = used_erly_mat,
+    happy = used_happy
+  )
+
+# Used Bazooka on farmer plots
+used_treat <- dta %>%
+  filter(rnd_bazo == TRUE & trial_P == TRUE) %>%
+  transmute(
+    group = "Recycled Bazooka",
+    yield = used_yield_rate,
+    germ_rate = used_germ_rate,
+    drt_tol = used_drt_tol,
+    dies_tol = used_dies_tol,
+    erly_mat = used_erly_mat,
+    happy = used_happy
+  )
+
+# Trial seed on trial plot
+trial <- dta %>%
+  filter(recycled_source_bazooka == "b" & trial_P == TRUE) %>%  # only non-missing
+  transmute(
+    group = "Trial pack seed",
+    yield = Trial_group.trial_yield_rate,
+    germ_rate = Trial_group.trial_germ_rate,
+    drt_tol = Trial_group.trial_drt_tol,
+    dies_tol = Trial_group.trial_dies_tol,
+    erly_mat = Trial_group.trial_erly_mat,
+    happy = Trial_group.trial_happy
+  )
+
+# Step 3: Combine both sources and reshape to long format
+long_data <- bind_rows(used_treat, used_ctrl, trial) %>%
+  pivot_longer(cols = -group, names_to = "attribute", values_to = "score") %>%
+  # Recode Likert scores: 1 becomes 5, 2 → 4, 3 → 3, 4 → 2, 5 → 1
+  mutate(
+    score = case_when(
+      score == 1 ~ 5,
+      score == 2 ~ 4,
+      score == 3 ~ 3,
+      score == 4 ~ 2,
+      score == 5 ~ 1,
+      TRUE ~ NA_real_
+    )
+  ) %>%
+  filter(!is.na(score)) %>%
+  mutate(
+    score = factor(score, levels = 1:5, ordered = TRUE),
+    attribute = recode(attribute,
+                       yield = "Yield",
+                       germ_rate = "Germination rate",
+                       drt_tol = "Abiotic stress resistance",
+                       dies_tol = "Biotic stress resistance",
+                       erly_mat = "Time to maturity",
+                       happy = "Overall satisfaction (3-point scale)"
+    ),
+    attribute = fct_relevel(attribute,
+                            "Yield", "Germination rate", "Abiotic stress resistance",
+                            "Biotic stress resistance", "Time to maturity", "Overall satisfaction (3-point scale)"
+    )
+  )
+
+# Step 4: Define color palette (shades of blue, darker = better)
+blue_shades <- c(
+  "1" = "#c6dbef",  # now worst
+  "2" = "#9ecae1",
+  "3" = "#6baed6",
+  "4" = "#3182bd",
+  "5" = "#08519c"   # now best
+)
+
+# Step 5: Plot horizontal stacked bar chart
+my_plot <- ggplot(long_data, aes(y = group, fill = score)) +
+  geom_bar(position = "fill") +
+  facet_wrap(~ attribute, ncol = 1) +
+  scale_x_continuous(labels = scales::percent_format()) +
+  scale_fill_manual(values = blue_shades, name = "Perceived Quality\n(5 = best)", drop = TRUE) +
+  labs(
+    y = NULL, x = "Share of Respondents"  ) +guides(fill = guide_legend(reverse = TRUE)) +  
+  theme_minimal() +
+  theme(strip.text = element_text(face = "bold"),
+        legend.position = "bottom")
+ggsave(file=paste(path,"/papers/increasing_seed_varietal_turnover/results/percpetions.png",sep="/"), plot = my_plot, width = 8, height = 8, dpi = 300)
+
+
+## test if richer farmers are less likely to recylce
+columns_to_replace <- c(
+  "value.maize_value_sp",
+  "value.sorghum_value_sp",
+  "value.millet_value_sp",
+  "value.rice_value_sp",
+  "value.cassava_value_sp",
+  "value.sweetpotatoes_value_sp",
+  "value.beans_value_sp",
+  "value.gnuts_value_sp",
+  "value.fruits_value_sp",
+  "value.veg_value_sp",
+  "value.sugar_value_sp",
+  "value.cooking_oil_value_sp",
+  "value.soap_value_sp",
+  "value.airtime_value_sp"
+)
+
+# Replace 999 with NA for each specified column
+for (col in columns_to_replace) {
+  bse[[col]][bse[[col]] == "999"] <- NA
+}
+
+bse$cons_exp <- rowSums(cbind(as.numeric(bse$value.maize_value_sp),
+                              as.numeric(bse$value.sorghum_value_sp),
+                              as.numeric(bse$value.millet_value_sp),
+                              as.numeric(bse$value.rice_value_sp),
+                              as.numeric(bse$value.cassava_value_sp),
+                              as.numeric(bse$value.sweetpotatoes_value_sp),
+                              as.numeric(bse$value.beans_value_sp),
+                              as.numeric(bse$value.gnuts_value_sp),
+                              as.numeric(bse$value.fruits_value_sp),
+                              as.numeric(bse$value.veg_value_sp),
+                              as.numeric(bse$value.sugar_value_sp),
+                              as.numeric(bse$value.cooking_oil_value_sp),
+                              as.numeric(bse$value.soap_value_sp),
+                              as.numeric(bse$value.airtime_value_sp)), na.rm=T)
+
+bse <- trim("cons_exp",bse)
+
+bse$b_cons_exp <- bse$cons_exp/bse$hh_size
+dta <- merge(dta, bse[c("farmer_ID","b_cons_exp")], by.x="ID", by.y="farmer_ID")
+
+graph_cash <- subset(dta, trial_P == TRUE & ( recycled_source_bazooka == "b" | rnd_bazo))
+###plot distribution of
+graph_cash$recycled <-  graph_cash$recycled_source_bazooka == "b" 
+
+graph_cash <- subset(graph_cash , b_cons_exp<40000)
+
+my_plot <- ggplot(graph_cash, aes(x = b_cons_exp, fill = recycled)) +
+  geom_density(alpha = 0.7, bw=1500) +
+  labs( x = "Consumption Expenditure per capita in UGX", y = "Density") +
+  theme_minimal()
+
+ggsave(file=paste(path,"/papers/increasing_seed_varietal_turnover/results/cash_contraints.png",sep="/"), plot = my_plot, width = 8, height = 6, dpi = 300)
+
+tapply(!(graph_cash$b_rnd_adopt),as.factor(graph_cash$recycled), FUN=mean, na.rm=TRUE)
+prop.table(table(!(graph_cash$b_rnd_adopt),as.factor(graph_cash$recycled)),2)
+
+# Contingency table
+tab <- table(graph_cash$b_rnd_adopt, graph_cash$recycled)
+
+# Chi-squared test
+chisq.test(tab)
+
 ### some interesting impact pathways
 ## knowledge
 dta$nr_vars <- as.numeric(as.character(dta$nr_vars))
@@ -1395,6 +1768,8 @@ save(df_means_disposal,file=paste(path,"/papers/increasing_seed_varietal_turnove
 
 ## table with welfare and food security
 
+dta <-merge(dta, bse[c("farmer_ID","hh_size")], by.x="ID", by.y="farmer_ID", all.x=TRUE)
+
 dta$in_com[dta$in_com == "98" ] <- NA
 dta$better_off_vil <- dta$in_com == "1"
 dta$in_six[dta$in_six == "98"] <- NA
@@ -1440,6 +1815,8 @@ as.numeric(dta$soap_value_sp),
 as.numeric(dta$airtime_value_sp)), na.rm=T)
 
 dta <- trim("cons_exp",dta)
+
+dta$cons_exp <- dta$cons_exp/dta$hh_size
 
 #iterate over outcomes
 outcomes <- c("better_off_vil","better_off_six","food_secure_pref","food_secure_quant","cons_exp")
@@ -1597,6 +1974,11 @@ dta$share_plots_baz[dta$share_plots_imp>1] <- NA
 ## share of area under improved cultivation
 dta$share_area_baz <-  dta$nr_bazxsize/dta$totsize
 dta$share_area_baz[dta$no_grow] <- NA
+
+
+
+
+
 
 ##avearge varietal age of the crop being planted
 ### first merge in varietal age for the seed varieties used on the different plots
