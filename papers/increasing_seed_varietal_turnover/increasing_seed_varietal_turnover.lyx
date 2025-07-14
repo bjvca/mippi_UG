@@ -156,8 +156,8 @@ footnotemark[4]}
 
 \end_inset
 
-Production and Consumption Traits and the Adoption of Improved Maize Varieties:
- Evidence from Seed Sample Packs and Cooking Demonstrations
+Hybrid Gains and Tasty Grains:
+ The Role of Agronomic and Consumption Traits in Seed Adoption
 \end_layout
 
 \begin_layout Standard
@@ -3580,7 +3580,7 @@ placement document
 alignment document
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -4599,7 +4599,7 @@ placement document
 alignment document
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -5259,14 +5259,10 @@ scriptsize
 \begin_layout Plain Layout
 
 Note:
- Column (1) reports sample means at baseline and standard deviations below;
- columns (2)–(3) report differences between treatment and control groups estimated using the pooled model of Equation 
-\backslash
-ref{eq:pooled};
- (4)–(5) report differences between treatment and control groups estimated using the fully interacted model of Equation 
-\backslash
-ref{eq:one};
- column (6) is the interaction effect.
+ Column (1) reports control group means at baseline (and standard deviations below);
+ column (2) reports the estimate of the average treatment effect of the seed trial packs;
+ column (3) reports the estimate of the average treatment effect of the cooking and tasting demonstrations;
+ column (4) is the interaction effect.
  Standard errors are below the estimates and are clustered at the level of randomization;
  **,
  *,
@@ -5277,14 +5273,8 @@ ref{eq:one};
 % levels based on sharpened q-values 
 \backslash
 citep{benjamini2006adaptive}.
- Production and productivity are log transformed;
- means and standard deviations are in levels.
  All regressions include baseline outcome as control.
  
-\end_layout
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \begin_layout Plain Layout
@@ -9890,7 +9880,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Profits as a Function of Sales Price
+Profits as a function of sales price
 \begin_inset ERT
 status collapsed
 
