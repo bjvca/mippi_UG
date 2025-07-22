@@ -159,19 +159,23 @@ Experimental Evidence from Seed Trail Packs in Uganda and Ethiopia
 \end_layout
 
 \begin_layout Abstract
-Temporary price reductions are a common strategy for introducing new products or technologies,
- enabling users to gain experience and potentially diffuse information through social networks.
+Temporary price reductions are a widely used strategy to encourage the initial uptake of new products or technologies,
+ offering users the opportunity to gain firsthand experience and potentially facilitate diffusion through social networks.
  However,
- zero prices may reduce incentives for meaningful use.
- We explore three behavioral and economic mechanisms through which a positive price could increase uptake and use:
- (1) screening—
-only those who value the product choose to purchase;
- (2) sunk cost effects—
-paying creates a psychological commitment to use;
- and (3) quality signaling—
-a positive price may indicate higher quality.
+ concerns remain that subsidizing or giving away products may reduce their perceived value,
+ increasing the risk that recipients will underutilize,
+ repurpose,
+ or resell the product rather than use it as intended.
+ We examine three behavioral and economic mechanisms through which charging a price may increase uptake,
+ intended use and subsequent adoption of a new technologies:
+ (1) a screening effect,
+ whereby payment deters users who do not value the product and targets those more likely to use it;
+ (2) a sunk cost effect,
+ where paying a positive price induces psychological commitment to use;
+ and (3) a quality signaling effect,
+ where a positive price conveys higher product quality.
  We test the relevance of these mechanisms in the context of newly released seed varieties for staple food crops,
- using a field experiment with smallholder farmers in Uganda and Ethiopia.
+ drawing on field experiments with smallholder farmers in Uganda and Ethiopia.
  Our design allows us to isolate each mechanism’s contribution to adoption and use.
  The findings offer insights into optimal pricing strategies for promoting the uptake of beneficial technologies in low-income settings.
 \end_layout
@@ -222,6 +226,18 @@ literal "false"
 \end_inset
 
 .
+ Additionally,
+ providing an initial “starter pack” of subsidized inputs can help overcome barriers to adoption by giving households a temporary boost that enables reinvestment and sustained use over time,
+ potentially setting off a path to long-term welfare gains,
+ in a process that is reminiscent to those described in the poverty trap literature 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "10.1093/qje/qjab045"
+literal "false"
+
+\end_inset
+
+.
  The presence of positive externalities provides another strong rationale against charging the full price for socially beneficial goods 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -235,8 +251,9 @@ literal "false"
 
 \begin_layout Standard
 At the same time,
- concerns have been raised that providing goods or services for free may reduce recipients’ perceived value of the product.
- Free goods are sometimes left unused,
+ there are concerns that free or subsidized provision of goods and services may diminish their perceived value among recipients.
+ As a result,
+ these free or subsidized goods are sometimes left unused,
  repurposed,
  or even resold.
  Prominent examples include the use of free bed nets for fishing and the diversion of subsidized chlorine from water treatment to household cleaning 
@@ -251,28 +268,24 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-There are at least three mechanisms through which charging a positive price may increase usage.
+There are at least three mechanisms through which charging a positive price for a good or service may increase use of the food or service for its intended purpose.
  First,
  a 
 \emph on
 screening effect
 \emph default
  may arise:
- individuals who place higher intrinsic value on the product are more likely to purchase it.
+ individuals who place higher intrinsic value on the product or service will be more likely to purchase it.
  Second,
  psychological mechanisms such as the 
 \emph on
 sunk cost effect
 \emph default
- suggest that individuals may value and use a product more simply because they have paid for it,
+ suggest that individuals may value and use a product or service more simply because they have paid for it,
  irrespective of their initial interest.
  Third,
- prices can serve as 
-\emph on
-signals of quality
-\emph default
-,
- particularly when there is uncertainty about the product’s intrinsic value 
+ prices can serve as signals of quality,
+ particularly when there is uncertainty about the intrinsic value of the product or service 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "milgrom1986price"
@@ -304,22 +317,22 @@ literal "false"
 
 \end_inset
 
- by incorporating a third stage,
- enabling us to separately identify screening,
+ to empirically disentangle screening,
  sunk cost,
  and signaling effects.
 \end_layout
 
 \begin_layout Standard
-We apply our experimental design in the context of seed trial packs aimed at promoting a newly introduced improved maize seed variety among smallholder farmers.
- Adoption if improved seed varieties presents a policy-relevant case for several reasons.
+We apply our experimental design in the context of seed trial packs aimed at promoting a newly introduced improved seed varieties among smallholder farmers in a developing country context.
+ Adoption of improved seed varieties presents a policy-relevant case for several reasons.
  First,
  given the novelty and limited familiarity of a variety,
- free samples may be necessary to encourage experimentation among risk-averse farmers.
- Second,
- adoption of agricultural technologies often depends on social learning,
- particularly through peers,
- suggesting significant extermalities 
+ free samples may be necessary to encourage experimentation among risk-averse farmers.Second,
+ social learning,
+ especially through peer networks,
+ plays a critical role in the large-scale adoption of new agricultural technologies,
+ suggesting the existence of significant positive externalities.
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "10.1257/aer.100.1.35,https://doi.org/10.1111/j.1468-0297.2006.01115.x"
@@ -349,7 +362,9 @@ highlighting a potential signaling role for prices.
 \begin_layout Standard
 Our study was implemented in Ethiopia and Uganda.
  In Uganda,
- the crop was maize.
+ we focused on 4 districts in the east where maize is the staple food crop.
+ Here,
+ the provided maize seed trial packs to about 760 smallholder farmers.
  In Ethiopia,
  we used two crops:
  teff and wheat.
@@ -363,7 +378,7 @@ ADD MORE CONTEXT HERE.
 
 \end_inset
 
-
+ 
 \end_layout
 
 \begin_layout Standard
@@ -420,7 +435,7 @@ literal "false"
 \end_inset
 
 ,
- in a two-stage pricing experiment in Zambia,
+ in a two-stage pricing experiment of chlorine for water purification in Zambia,
  find evidence of screening effects—
 suggesting that willingness to pay reflects private information about future use—
 but no support for sunk cost effects.
@@ -438,10 +453,7 @@ literal "false"
  study demand and usage of insecticide-treated bed nets in Kenya and find that even small prices substantially reduce uptake,
  with little evidence that pricing improves targeting.
  They conclude that free distribution may yield greater health benefits by expanding coverage.
-\end_layout
-
-\begin_layout Standard
-Other work has explored whether free distribution leads to misuse or resale.
+ Other work has explored whether free distribution leads to misuse or resale.
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -455,10 +467,7 @@ literal "false"
  find little external leakage and no evidence that poor households resell freely distributed nets.
  Their findings support the viability of targeted free distribution,
  challenging the notion that zero prices necessarily erode product value or responsible use.
-\end_layout
-
-\begin_layout Standard
-More recently,
+ More recently,
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -509,11 +518,11 @@ then failure to account for this third mechanism risks conflating its influence 
 \end_layout
 
 \begin_layout Standard
-A second major contribution is the multi-country,
+A second contribution is the multi-country,
  multi-commodity context,
  which strengthens both the external validity and practical relevance of our findings.
- We implement the same experimental design in Uganda and Ethiopia—
-two countries that differ in agro-ecological conditions,
+ We implement the same experimental design in Uganda and Ethiopia;
+ two countries that differ in agro-ecological conditions,
  seed market structures,
  and policy environments.
  This allows us to assess the generalizability of price effects across institutional and agronomic settings.
@@ -1345,7 +1354,7 @@ placement document
 alignment document
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1437,7 +1446,7 @@ cline{2-6}
 
 \begin_layout Plain Layout
 
-Age of household head - years
+Age of household head (years)
 \end_layout
 
 \begin_layout Plain Layout
@@ -1541,7 +1550,7 @@ Sexpr{base_balance_bin[2,3,1]})
 
 \begin_layout Plain Layout
 
-Household head has finished primary education - 1 is yes
+Household head has finished primary education (1 is yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -1645,7 +1654,7 @@ Sexpr{base_balance_bin[2,3,2]})
 
 \begin_layout Plain Layout
 
-Gender of household head - 1 is male
+Gender of household head (1 is male)
 \end_layout
 
 \begin_layout Plain Layout
@@ -1749,7 +1758,7 @@ Sexpr{base_balance_bin[2,3,3]})
 
 \begin_layout Plain Layout
 
-Household size
+Household size (number)
 \end_layout
 
 \begin_layout Plain Layout
@@ -1853,7 +1862,7 @@ Sexpr{base_balance_bin[2,3,4]})
 
 \begin_layout Plain Layout
 
-Distance of homestead to nearest agro-input shop
+Distance of homestead to nearest agro-input shop (km)
 \end_layout
 
 \begin_layout Plain Layout
@@ -1957,7 +1966,7 @@ Sexpr{base_balance_bin[2,3,5]})
 
 \begin_layout Plain Layout
 
-Has used quality maize seed on any plot in last season
+Has used quality maize seed on any plot in last season (1 is yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -2061,7 +2070,7 @@ Sexpr{base_balance_bin[2,3,6]})
 
 \begin_layout Plain Layout
 
-Has used the promoted seed (bazooka) on a randomly chosen plot in the last season
+Has used the promoted seed (bazooka) on a randomly chosen plot in the last season (1 is yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -2165,7 +2174,7 @@ Sexpr{base_balance_bin[2,3,7]})
 
 \begin_layout Plain Layout
 
-Formal seed source 
+Seed used on randomly selected plot was obtained from a formal seed source (1 is yes) 
 \end_layout
 
 \begin_layout Plain Layout
@@ -2270,7 +2279,7 @@ Sexpr{base_balance_bin[2,3,8]})
 \begin_layout Plain Layout
 
 Seed on random plot was recycled less than 4 times?
- 
+ (1 is yes) 
 \end_layout
 
 \begin_layout Plain Layout
@@ -2374,7 +2383,7 @@ Sexpr{base_balance_bin[2,3,9]})
 
 \begin_layout Plain Layout
 
-Maize yields on a randomly chosen plot in last season
+Maize yields on a randomly chosen plot in last season (kg/acre)
 \end_layout
 
 \begin_layout Plain Layout
@@ -2750,7 +2759,7 @@ placement document
 alignment document
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -2842,7 +2851,7 @@ cline{2-6}
 
 \begin_layout Plain Layout
 
-used trail pack as seed
+Used trail pack as seed (1 is yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -2940,7 +2949,7 @@ Sexpr{res_tab_bin[2,3,1]})
 
 \begin_layout Plain Layout
 
-did not mix seed with other seed
+Used pure seed (not mixed with other seed - 1 is yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -3038,7 +3047,7 @@ Sexpr{res_tab_bin[2,3,2]})
 
 \begin_layout Plain Layout
 
-person who was involved in bargaining used seed
+Person who was involved in bargaining used seed (1 is yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -3132,7 +3141,12 @@ Sexpr{res_tab_bin[2,3,3]})
 
 \begin_layout Plain Layout
 
-field layout improved next to local seed
+\end_layout
+
+\begin_layout Plain Layout
+
+Field layout:
+ improved seed was planted next to local seed to facilitate comparison (1 is yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -3234,7 +3248,7 @@ Sexpr{res_tab_bin[2,3,4]})
 
 \begin_layout Plain Layout
 
-kept produce from improved separate from local during and post harvest
+Kept produce from improved seed separate from local during and post harvest (1 is yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -3680,7 +3694,7 @@ cline{2-6}
 
 \begin_layout Plain Layout
 
-used improved seed on random plot
+Used improved seed on random plot (1 is yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -3778,7 +3792,7 @@ Sexpr{res_tab_next_season_bin[2,3,3]})
 
 \begin_layout Plain Layout
 
-used bazooka seed on random plot
+Used fresh bazooka seed on random plot (1 is yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -3876,7 +3890,7 @@ Sexpr{res_tab_next_season_bin[2,3,4]})
 
 \begin_layout Plain Layout
 
-Quantity of improved seed used on random plot
+Quantity of improved seed used on random plot (kg)
 \end_layout
 
 \begin_layout Plain Layout
@@ -3974,7 +3988,7 @@ Sexpr{res_tab_next_season_bin[2,3,5]})
 
 \begin_layout Plain Layout
 
-Quantity of bazooka seed used on random plot
+Quantity of fresh bazooka seed used on random plot (kg)
 \end_layout
 
 \begin_layout Plain Layout
@@ -4072,7 +4086,7 @@ Sexpr{res_tab_next_season_bin[2,3,6]})
 
 \begin_layout Plain Layout
 
-Production
+Production on random plot (kg)
 \end_layout
 
 \begin_layout Plain Layout
@@ -4170,7 +4184,7 @@ Sexpr{res_tab_next_season_bin[2,3,7]})
 
 \begin_layout Plain Layout
 
-Productivity
+Productivity of random plot (kg/acre)
 \end_layout
 
 \begin_layout Plain Layout
@@ -4594,7 +4608,7 @@ cline{2-6}
 
 \begin_layout Plain Layout
 
-Remember seed type correctly at midline
+Remember seed type correctly at midline (1 is yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -4701,7 +4715,7 @@ Sexpr{res_tab_path_bin[2,3,3]})
 
 \begin_layout Plain Layout
 
-Remembers seed producer correctly at midline
+Remembers seed producer correctly at midline (1 is yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -4804,7 +4818,7 @@ Sexpr{res_tab_path_bin[2,3,4]})
 
 \begin_layout Plain Layout
 
-Remembers price of trail pack at midline
+Remembers price of trail pack at midline (1 is yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -4893,7 +4907,7 @@ textemdash
 
 \begin_layout Plain Layout
 
-difference between actually paid and what farmer remembers at midline
+Difference between actually paid and what farmer remembers at midline (UGX)
 \end_layout
 
 \begin_layout Plain Layout
@@ -4978,7 +4992,7 @@ textemdash
 
 \begin_layout Plain Layout
 
-Remembers price of trial pack at endline
+Remembers price of trial pack at endline (1 is yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -5067,7 +5081,7 @@ textemdash
 
 \begin_layout Plain Layout
 
-difference between actually paid and what farmer remembers at endline
+Difference between actually paid and what farmer remembers at endline (UGX)
 \end_layout
 
 \begin_layout Plain Layout
@@ -5147,22 +5161,6 @@ textemdash
 \backslash
 
 \backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -5325,7 +5323,7 @@ placement document
 alignment document
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -5417,7 +5415,7 @@ cline{2-6}
 
 \begin_layout Plain Layout
 
-Followed recommended seed spacing and seed rate 
+Followed recommended seed spacing and seed rate (1 is yes) 
 \end_layout
 
 \begin_layout Plain Layout
@@ -5520,7 +5518,7 @@ Sexpr{res_tab_pract_bin[2,3,1]})
 
 \begin_layout Plain Layout
 
-Used organic fertilizer 
+Used organic fertilizer (1 is yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -5627,7 +5625,7 @@ Sexpr{res_tab_pract_bin[2,3,2]})
 
 \begin_layout Plain Layout
 
-Used inorganic fertilizer (dap or urea)
+Used inorganic fertilizer (dap or urea -  1 is yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -5730,7 +5728,8 @@ Sexpr{res_tab_pract_bin[2,3,3]})
 
 \begin_layout Plain Layout
 
-Used chemicals
+Used chemicals (herbicides,
+ pesticides or fungicides - 1 is yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -5833,7 +5832,7 @@ Sexpr{res_tab_pract_bin[2,3,4]})
 
 \begin_layout Plain Layout
 
-Gap filling
+Engaged in gap filling (1 is yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -6426,7 +6425,7 @@ placement document
 alignment document
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -7213,7 +7212,7 @@ placement document
 alignment document
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -8082,7 +8081,7 @@ placement document
 alignment document
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -9989,15 +9988,23 @@ Acknowledgments
 \end_layout
 
 \begin_layout Standard
-We acknowledge support from the University of Göttingen,
+We are also indebted to Richard Ariong,
+ Marc Charles Wanume and Wilberfoce Walukano for excellent support in the field and the CGIAR Market Intelligence Work Package 3 team (Berber Kramer,
+ Julius Juma Okello,
+ Carly Trachtman,
+ Gashaw T.
+ Abate,
+ Prakashan Chellattan Veettil,
+ Vikram Patil,
+ and Catherine Ragasa) for comments and suggestions.
+ We acknowledge support from the University of Göttingen,
  Department of Agricultural Economics and Rural Development.
  Additional support was provided by the CGIAR Research Program on Policies,
  Institutions,
  and Markets (PIM),
  the CGIAR Seed Equal Research Initiative,
- and the CGIAR Market Intelligence Research Initiative which are funded by contributors to the CGIAR Fund (https://www.cgiar.org/funders/).
- We would like to thank Richard Ariong,
- Marc Charles Wanume and Wilberfoce Walukano for excellent support in the field.
+ and the CGIAR Market Intelligence Research Initiative which are funded by contributors to the CGIAR Trust Fund (https://www.cgiar.org/funders/).
+ 
 \end_layout
 
 \begin_layout Section
