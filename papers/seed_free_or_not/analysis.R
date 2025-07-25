@@ -1312,9 +1312,9 @@ names(wheat_merged)[names(wheat_merged) == "pricediff_w"] <- "price_diff_sq"
 #iterate over outcomes
 outcomes <- c("remembers_seed","remembers_paying","price_diff_sq")
 #### there is an issue with remembers seed causing a crash. Nobody remembers so I just add 10 random - this needs to be deleted if the data is corrected (as it seems very unlikely nobody remembers teff seed type) 
-set.seed(123)  # for reproducibility
-flip_indices <- sample(seq_len(nrow(teff_merged)), 10)
-teff_merged$remembers_seed[flip_indices] <- 1
+# set.seed(123)  # for reproducibility
+# flip_indices <- sample(seq_len(nrow(teff_merged)), 10)
+# teff_merged$remembers_seed[flip_indices] <- 1
 
 index_use <- icwIndex(xmat=teff_merged[outcomes]) #x
 teff_merged <- data.frame(teff_merged,index_use)
