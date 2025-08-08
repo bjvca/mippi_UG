@@ -316,9 +316,13 @@ names(wheat_merged)[names(wheat_merged) =="yield_teff"]  <- "yield_rand"
 teff_merged <- trim("yield_rand",teff_merged,trim_perc=.01)
 
 wheat_merged <- trim("yield_rand",wheat_merged,trim_perc=.01)
+wheat_merged$yield_rand[wheat_merged$yield_rand > 30] <- NA
+teff_merged$yield_rand[teff_merged$yield_rand > 30] <- NA
 
+wheat_merged$hhsize[wheat_merged$hhsize >20] <- NA
+teff_merged$hhsize[teff_merged$hhsize >20] <- NA
 
-###change names we we can iterage over outcomes
+##change names we we can iterage over outcomes
 names(teff_merged)[names(teff_merged) %in% c("age","primaryeduc","gender","hhsize","quality_teffseed","promoseed_teff","seedformal_teff" )] <- c("male_head","age_head","hh_size","prim_head","quality_use","promo_use_rand","source_rand" )
 names(wheat_merged)[names(wheat_merged) %in% c("age","primaryeduc","gender","hhsize","quality_wheatseed","promoseed_wheat","seedformal_wheat" )] <- c("male_head","age_head","hh_size","prim_head","quality_use","promo_use_rand","source_rand" )
 
