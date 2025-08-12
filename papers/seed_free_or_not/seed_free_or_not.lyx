@@ -122,8 +122,8 @@ thanks{Innovation Policy and Scaling Unit,
 thanks{Markets,
  Trade and Institutions Unit,
  International Food Policy Research Institute,
- Kampala,
- Uganda},
+ Washington DC,
+ USA},
 \backslash
 
 \backslash
@@ -146,35 +146,36 @@ thanks{International Food Policy Research Institute,
 
 \end_inset
 
-Are Free Testers Effective for Learning about a New Technology?
- 
+Screening,
+ Sunk Costs,
+ and Signaling in Agricultural Technology Adoption
 \begin_inset Newline newline
 \end_inset
 
 
 \size large
-Experimental Evidence from Seed Trail Packs in Uganda and Ethiopia
+Experimental Evidence from Seed Trial Packs in Ethiopia and Uganda
 \size default
  
 \end_layout
 
 \begin_layout Abstract
-Free samples or temporary price reductions are a widely used strategy to encourage the initial uptake of new products or technologies,
- offering users the opportunity to gain firsthand experience and potentially facilitate diffusion through social networks.
+Free samples or temporary price reductions are a widely used strategy to introduce new products or technologies,
+ offering prospective users the opportunity to gain firsthand experience and potentially facilitate diffusion through social networks.
  However,
  concerns remain that subsidizing or giving away products may reduce their perceived value,
- increasing the risk that recipients will underutilize,
- repurpose,
+ increasing the risk that recipients will under-utilize,
+ re-purpose,
  or resell the product rather than use it for its intended purpose.
- We examine three mechanisms through which charging a postive price may increase uptake,
- intended use and subsequent adoption of a new technologies:
+ We examine three mechanisms through which charging a positive price may increase uptake,
+ intended use and subsequent adoption of a new technology:
  (1) a screening effect,
  whereby payment deters users who do not value the product and targets those more likely to use it;
  (2) a sunk cost effect,
  where paying a positive price induces psychological commitment to use;
  and (3) a quality signaling effect,
  where a positive price conveys higher product quality.
- We test the relevance of these mechanisms in the context of newly released seed varieties for staple food crops,
+ We test the relevance of these mechanisms in the context of recently released seed varieties for staple food crops,
  drawing on field experiments with smallholder farmers in Uganda and Ethiopia.
  The findings offer insights into optimal pricing strategies for promoting the uptake of beneficial technologies in low-income settings.
 \end_layout
@@ -288,14 +289,22 @@ screening
 sunk cost
 \emph default
  effect refers to a psychological commitment whereby individuals are more likely to value and use a product simply because they have incurred a cost to obtain it,
- regardless of its objective utility.
+ regardless of its objective utility 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "eec14168-5714-3ca8-b073-d038266f2734,DEBONDT1988173"
+literal "false"
+
+\end_inset
+
+.
  Third,
  prices can act as 
 \emph on
 signals
 \emph default
  of quality,
- particularly in contexts of uncertainty,
+ particularly in contexts of uncertainty and asymmetric information,
  where consumers may infer higher quality from higher prices 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -337,8 +346,16 @@ literal "false"
 We apply our experiment in the context of seed trial packs aimed at promoting recently introduced improved seed varieties among smallholder farmers in a developing-country setting.
  Adoption of improved seed varieties presents a policy-relevant case for several reasons.
  First,
- given the novelty and limited familiarity of a variety,
- trial packs may be necessary to encourage experimentation among risk-averse farmers.
+ given the novelty of and limited familiarity with a new variety,
+ trial packs may be necessary to encourage experimentation among risk-averse farmers 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "doi:10.1086/601447,BRICK2015383"
+literal "false"
+
+\end_inset
+
+.
  Second,
  social learning,
  especially through peer networks,
@@ -347,7 +364,7 @@ We apply our experiment in the context of seed trial packs aimed at promoting re
  
 \begin_inset CommandInset citation
 LatexCommand citep
-key "10.1257/aer.100.1.35,https://doi.org/10.1111/j.1468-0297.2006.01115.x"
+key "10.1257/aer.100.1.35,https://doi.org/10.1111/j.1468-0297.2006.01115.x,campenhout2021role"
 literal "false"
 
 \end_inset
@@ -395,25 +412,23 @@ The study was implemented in Ethiopia and Uganda,
  In Uganda,
  we focused on 4 districts in the east where maize is the staple food crop.
  Here,
- the provided maize seed trial packs to about 760 smallholder farmers.
+ we provided maize seed trial packs to about 760 smallholder farmers.
  In Ethiopia,
  we focus on 10 districts in Amhara region and promoted two crops:
  teff and wheat.
  In particular,
- we distributed teff seed trial packs to about to 1,200 farmers and wheat seed trial packs and about 800 farmers.
+ we distributed teff seed trial packs to about to 600 farmers and wheat seed trial packs and about 400 farmers.
  
 \end_layout
 
 \begin_layout Standard
-The study finds that willingness to pay for seed trial packs is a useful predictor of whether farmers use and later adopt the promoted variety—
-evidence of a screening effect—
-but paying for the seed does not generally increase use through a sunk cost mechanism,
- and in some cases payment reduces use,
+The study finds that willingness to pay for seed trial packs is a useful predictor of whether farmers use and later adopt the promoted variety (i.e.
+ evidence of a screening effect) but paying for the seed does not generally increase use through a sunk cost mechanism.
+ In fact,
+ in some cases payment reduces use,
  likely due to liquidity constraints.
  A negative signaling effect emerges for teff in Ethiopia,
- where higher initial offer prices appear to encourage resale rather than planting,
- while wheat shows positive sunk cost effects,
- possibly due to its more commercial orientation.
+ where higher initial offer prices may have encouraged resale rather than planting.
  Screening effects are most consistent for teff,
  and to a lesser extent for maize in Uganda and wheat in Ethiopia,
  but these effects weaken further along the impact pathway,
@@ -424,7 +439,7 @@ but paying for the seed does not generally increase use through a sunk cost mech
  but payment can crowd out such investment.
  Overall,
  the results suggest that low but positive prices can improve targeting without undermining use,
- but price alone is not an effective lever for ensuring adoption or proper input use.
+ but price alone may not be an effective lever for ensuring longer run outcomes such as sustained adoption.
 \end_layout
 
 \begin_layout Standard
@@ -500,10 +515,8 @@ literal "false"
 
  employs a two-stage pricing design to study improved seed adoption in Bangladesh,
  with a distinct objective:
- to test whether prices can effectively screen farmers based on their expected returns to the technology—
-thereby preventing subsidized inputs from reaching farmers with low potential gains.
+ to test whether prices can effectively screen farmers based on their expected returns to the technology and thus preventing subsidized inputs from reaching farmers with low potential gains.
  Her findings,
- however,
  show that buyers do not systematically achieve higher returns than non-buyers,
  raising concerns about the efficiency of using price as a targeting mechanism for agricultural innovations.
  Other work has explored whether free distribution leads to misuse or resale.
@@ -523,16 +536,14 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-Our study builds on this body of work but adds a critical innovation by explicitly isolating and testing a third mechanism—
-signaling effects—
-alongside the more commonly studied screening and sunk cost effects.
+Our study builds on this body of work but adds a critical innovation by explicitly isolating and testing a third mechanism (signaling effects) alongside the more commonly studied screening and sunk cost effects.
  Existing two-stage pricing designs typically examine whether prices screen for users with higher private valuations or induce sunk cost-driven commitment,
  typically by estimating one effect while controlling for the other.
  However,
  if prices also signal quality in contexts with information asymmetries,
  then ignoring this channel may confound estimates of screening and sunk cost effects.
  To address this limitation,
- we introduce a novel three-stage pricing design that separately identifies each effect.
+ we introduce a novel three-stage pricing design that separately identifies each effect:
  In the first stage,
  a randomized initial offer price provides a potential quality signal;
  in a second stage,
@@ -628,17 +639,17 @@ literal "false"
  which,
  absent over-subscription,
  can significantly reduce the effective sample size.
- Since willingness to pay (WTP) is central to analyzing such designs,
- alternative elicitation methods like the Becker-DeGroot-Marschak (BDM) mechanism can be employed.
+ Since willingness to pay (WTP) is central to analyzing two-stage pricing designs,
+ alternative elicitation methods like the Becker-DeGroot-Marschak (BDM) mechanism can be employed to mitigate this problem to some extent.
  In its basic form,
  BDM asks participants to state a bid,
  which is then compared to a randomly drawn price.
  If the bid is lower,
- they do not receive the product;
+ participants do not receive the product;
  if it meets or exceeds the price,
- they purchase it at the drawn price.
+ participants purchase the product at the drawn price.
  A key advantage of this method is that it inherently includes a surprise discount for those whose WTP exceeds the random price—
-mimicking the second stage in two-stage designs—
+mimicking the second stage in two-stage pricimg designs—
 see appendix E in 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -671,21 +682,26 @@ literal "false"
  An initial ask price—
 randomly drawn,
  see below—
-is presented to the farmer as the price of the bag of seed.
+is presented to the farmer as the price of a bag of seed of an improved variety.
  The enumerator explains what kind of seed it is and what the advantages are.
- The farmer has the option to accept this initial offer price or not.
+ The farmer has the option to accept the bag of seed at this initial offer price or not.
 \end_layout
 
 \begin_layout Standard
 If the farmer does not accept the initial offer price,
- the farmer enters into a bargaining stage where he or she is encouraged to name his/her first bid price.
+ the farmer enters into a bargaining stage where he or she is encouraged to name his/her first counter bid price.
  A computer algorithm then determines a counter-offer that the enumerator asks in a second round of negotiation.
- This new ask price is determined as the farmer's bid price plus 80 percent of the difference between the (initial) ask price and the farmer's (last) bid price (appropriately rounded depending on the country-crop case).
- This updated (lower) ask price is then presented to the farmer and the farmer gets another opportunity to accept or not.
+ This new ask price is determined as the farmer's bid price plus 80 percent of the difference between the (initial) ask price and the farmer's (last) bid price (appropriately rounded depending on the crop).
+ This updated (lower) ask price is then compared to the last bid price of the farmer.
+ If the difference is smaller than a certain (crop specific) threshold,
+ the enumerator is instructed to accept the bid price.
+ If the difference between the updated ask price and the bid price is larger than the threshold,
+ then the updated ask price is presented to the farmer,
+ and the farmer gets a second opportunity to accept or reject.
  If the farmer does not accept,
  he or she is encouraged to make a second bid and a third ask price is determined as the farmer's last bid price plus 80 percent of the difference between the last ask price and the farmer's last bid price.
  Bargaining continues until the farmer accepts an ask price,
- or the price difference between the bid and ask price is smaller than a (country-crop case specific) threshold,
+ or the price difference between the bid and ask price is smaller than a (crop specific) threshold,
  in which case the ODK script instructs the enumerator to sell at the last price the farmer bids.
 \begin_inset Foot
 status collapsed
@@ -723,13 +739,13 @@ literal "false"
  concentrating the sample in two distinct groups (those who pay and those who receive the good for free) increases statistical power relative to designs that distribute observations across multiple price points.
  Third,
  from a practical perspective,
- our approach reflects how new agricultural technologies are often introduced in real-world settings,
- where sample packs are typically distributed at no cost to encourage trial and learning.
+ our approach reflects how new agricultural technologies are typically introduced in real-world settings,
+ where sample packs are distributed at no cost to encourage trial and learning.
 \begin_inset Foot
 status collapsed
 
 \begin_layout Plain Layout
-The possibility of non-linearities around a zero price was also suggested by a practitioner in 
+In 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "10.1257/aer.100.5.2383"
@@ -737,7 +753,8 @@ literal "false"
 
 \end_inset
 
- and tested in Panel B of their Table 4.
+,
+ the possibility of non-linearities around a zero price was also suggested by a practitioner (and tested in Panel B of their Table 4).
 \end_layout
 
 \end_inset
@@ -746,25 +763,22 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-To identify the signaling effect separately from the screening effect,
- we randomize the initial offer price.
+To identify the signaling effect,
+ we randomize the initial offer price at which the bargaining process in the first stage starts.
  For the maize seed packs in Uganda,
  initial prices ranged from 9,000 to 12,000 Uganda shillings (UGX) in increments of UGX 1,000.
  In Ethiopia,
- prices ranged from 65 to 110 Ethiopian birr (ETB) for teff (increments of ETB 5) and from ETB 50 to ETB 80 for wheat (increments of ETB 10).
+ prices ranged from 65 to 110 Ethiopian birr (ETB) for teff (with increments of ETB 5) and from ETB 50 to ETB 80 for wheat (increments of ETB 10).
  Prices were drawn from a uniform distribution.
 \end_layout
 
 \begin_layout Standard
-Taken together,
- our experimental design yields three distinct prices.
+Our experimental design yields three distinct sets of prices.
  First,
- the 
+ the randomized 
 \emph on
 initial offer price
 \emph default
-,
- which is randomized,
  may serve as a signal of quality.
  Second,
  the final price agreed upon during the bargaining process reflects the farmer’s willingness to pay and will be referred to as the 
@@ -789,11 +803,22 @@ Farmer receive a 1 to 3 kg seed trial pack of seed of an improved variety depend
  the seed we use is a recently introduced hybrid seed popularly known as Bazooka,
  produced by Naseco Seed Ltd.
  The seed is high yielding promising between 3.5 and 4 metric tons per acre and was partly chosen because it is widely available on the market.
+ The 1kg bag of maize seed is enough to plant about one-eighth of an acre.
  For the Ethiopian case,
  we promoted three recently released teff varieties (Eba,
  Bora,
  and Boset) and one widely available wheat variety (Daka).
  The seeds were selected based on suitability to the agroecological conditions of our study areas and yield potential compared to standard check.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Add how much land can be planted with this.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -802,10 +827,8 @@ In both countries,
  as we wanted to avoid that a farmer that gets a bag of seed for free lives right next to a farmer that has to pay a positive price for it.
  However,
  we did vary the initial offer price in the bargaining experiment at the individual level.
- Our study sample constitute 10 farmers per village in Uganda and 16 farmers per village in Ethiopia,
- sample sizes that were informed by weighing logistical feasibility against statistical power consideration,
- numbers chosen to balance logistical feasibility with statistical power considerations.
- 
+ Our study sample constitutes 10 farmers per village in Uganda and 16 farmers per village in Ethiopia,
+ numbers which were chosen to balance logistical feasibility with statistical power considerations.
 \end_layout
 
 \begin_layout Section
@@ -836,15 +859,15 @@ transaction price
  In such designs,
  the outcome variable of interest (for example,
  an indicator for whether the seed was used as intended) is regressed on both the WTP price and the transaction price.
- A statistically significant coefficient on the WTP price,
+ A statistically significant and positive coefficient on the WTP price,
  controlling for the transaction price,
  provides evidence of a screening effect,
- since it reflects the relationship between the participant’s valuation and the outcome of interest,
+ since it reflects the positive relationship between the participant’s valuation and the outcome of interest,
  irrespective of whether the full price was paid or not.
- A significant coefficient on the transaction price,
+ A significant and positive coefficient on the transaction price,
  controlling for the WTP price,
  indicates a sunk cost effect,
- where paying a positive price increases commitment to using the product,
+ where paying a higher price increases commitment to using the product,
  irrespective of the farmer's valuation of the product.
 \end_layout
 
@@ -892,7 +915,7 @@ where
 \end_layout
 
 \begin_layout Standard
-Evidence of a screening effect is provided by a statistically significant coefficient on the WTP price (
+Evidence of a screening effect is provided by a statistically significant and positive coefficient on the WTP price (
 \begin_inset Formula $\beta_{P}>0$
 \end_inset
 
@@ -909,7 +932,7 @@ nolink "false"
 
 ).
  Similarly,
- a statistically significant coefficient on the transaction price provides evidence of a sunk cost effect (
+ a statistically significant postivie coefficient on the transaction price provides evidence of a sunk cost effect (
 \begin_inset Formula $\beta_{D}>0$
 \end_inset
 
@@ -926,11 +949,11 @@ nolink "false"
 
 ).
  Finally,
- a statistically significant 
+ a statistically significant postive 
 \begin_inset Formula $\beta_{I}$
 \end_inset
 
-- coefficient in equation 
+ coefficient in equation 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:one-1"
@@ -1043,10 +1066,9 @@ nolink "false"
 
 .
  After the experiment ended and seed and money changed hands,
- the baseline survey was implemented asking questions about general household characteristics and more specific questions about maize farming and the use of seed of an improved variety.
- We also collected some data on consumption expenditure and more subjective questions on food security and welfare.
+ the baseline survey was implemented asking questions about general household characteristics and more specific questions about farming and seed use.
  After the survey,
- farmers that were in the 100 percent discount groups were told that they were lucky winners and got a 100 percent cash-back.
+ farmers that were in the 100 percent discount groups were told that they were lucky winners of a raffle and got a 100 percent cash-back.
 \end_layout
 
 \begin_layout Standard
@@ -1237,7 +1259,7 @@ nolink "false"
 \end_inset
 
  presents baseline characteristics for the three country samples,
- revealing striking cross-country differences.
+ revealing some interesting cross-country differences.
  Ugandan household heads tend to be older,
  averaging nearly 50 years,
  compared to about 45 years in the Ethiopian sites.
@@ -1249,7 +1271,7 @@ nolink "false"
 
 \begin_layout Standard
 Demographic patterns further highlight Uganda’s rapid population growth.
- The average household in our Ugandan sample includes over eight members,
+ The average household in the Ugandan sample is over eight members,
  compared to just five in Ethiopia.
  Ugandan farmers report living around 4 kilometers from the nearest agro-dealer,
  suggesting a relatively dense input supply network.
@@ -2023,14 +2045,14 @@ scriptsize
 \end_layout
 
 \begin_layout Standard
-While the first five characteristics are largely unaffected by our intervention,
+While the first five characteristics are expected to be unaffected by our intervention,
  we also report five variables that are more likely to change as a result of the study.
  To begin,
  we include a broad measure of technology adoption by asking whether farmers had used improved seed for the relevant crop on any plot during the season prior to the baseline.
  In Uganda,
  about 41 percent reported using improved maize seed,
  whereas adoption in Ethiopia was considerably lower,
- at just 18 percent.
+ at just 18 to 19 percent.
 \end_layout
 
 \begin_layout Standard
@@ -2039,15 +2061,12 @@ To capture uptake of the specific varieties promoted in our study,
  Farmers were asked to list all plots on which the relevant crop was grown,
  after which one plot was randomly selected for detailed follow-up using our digital survey tool (ODK).
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
-The decision to only ask detailed questions on one (randomly selected) plot was guided by the fact that outcomes at plot level (such as adoption of improved inputs and technologies,
- management practices and production) are likely to be correlated such that gains in statistical power from surveying all plots likely do not outweigh costs of longer and more tedious questionnaires.
+The decision to only ask detailed questions on one (randomly selected) plot was guided by the fact that outcomes at plot level (such as adoption of improved inputs and technologies and production outcomes) are likely to be correlated such that gains in statistical power from surveying all plots likely do not outweigh costs of longer and more tedious questionnaires.
  As the plot to be surveyed was selected randomly,
  outcomes should be unbiased and consistent.
- The validity of this approach was confirmed during the endline questionnaire where we asked detailed questions on seed use on all plots:
- average use of the promoted variety calculated using all maize plots was the same as only using the randomly selected plot.
 \begin_inset CommandInset label
 LatexCommand label
 name "fn:The-decision-to"
@@ -2076,7 +2095,7 @@ About 35 percent of farmers in Uganda used maize seed from a formal seed source 
  To maintain sufficient vigor,
  seed should not be recycled too often.
  In Uganda,
- fewer than 20 percent of maize farmers used seed that had been recycled fewer than four times,
+ fewer than 20 percent of maize farmers used seed that had been recycled fewer than five times,
  which is generally considered the upper limit for open-pollinated varieties.
  We did not collect comparable information on seed recycling in Ethiopia.
  Finally,
@@ -2112,7 +2131,7 @@ A first step in the analysis is to assess whether demand for the seed is respons
  sunk cost,
  or signaling effects that affect actual use of the seed.
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 It is important to see the subtle but crucial distinction between price elasticity on the one hand and the three effects—
@@ -2236,10 +2255,9 @@ nolink "false"
 \end_inset
 
 .
- We do this for four categories of outcomes measured at different points along the causal impact chain.
+ We do this for three categories of outcomes measured at different points along the causal impact chain.
  We present separate regressions for the crops (maize,
- teff and wheat) but also run models that pool across countries and crops,
- reported in the appendix.
+ teff and wheat) but also run models that pool across countries and crops.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2276,9 +2294,6 @@ status open
 \begin_layout Plain Layout
 To do so,
  all variables were first standardized at the crop level.
- As a result,
- the mean outcomes are zero.
- 
 \end_layout
 
 \end_inset
@@ -2294,12 +2309,8 @@ To do so,
  Finally,
  we see that a higher starting price at which the seed was initially offered actually reduces the likelihood that the seed is used for its intended purpose,
  suggesting a negative signaling effect.
- A possible explanation is that farmers who were initially offered a high price perceived the seed as more valuable and may have opted to resell it rather than plant it themselves.
- If resale opportunities exist,
- a higher initial price could increase the perceived market value,
- shifting behavior away from on-farm use.
- This would imply that price signals may distort intended use,
- particularly when products are both subsidized and tradable.
+ A plausible explanation is that farmers who were initially offered a high price saw greater resale potential and chose to sell the seed rather than plant it,
+ suggesting that price signals can divert products from their intended use when resale is feasible.
 \end_layout
 
 \begin_layout Standard
@@ -2318,17 +2329,26 @@ nolink "false"
  We find important differences between average seed trial pack use:
  For instance,
  while average seed trial pack use is close to 100 percent in the Uganda case,
- less than 70 percent of ethiopian farmers used the wheat seed trial pack [WHY???].
- Furthermore,
- there are also marked differences in the relative importance of screening,
- sunk cost and signaling effects from prices.
+ less than 70 percent of ethiopian farmers used the wheat seed trial pack
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+[WHY???]
+\end_layout
+
+\end_inset
+
+.
+ There are also marked differences in the relative importance of screening,
+ sunk cost and signaling effects between countries and crops.
  Results from the pooled regression seem to be primarily driven by teff in Ethiopia (and to a lesser extent maize in Uganda,
  where high overall seed trial pack use limits variation in the outcome,
  potentially attenuating the measured effect).
  Furthermore,
  for teff in Ethiopia,
- we also find a significant and negative sunk cost effect.
- The negative coefficient implies that paying reduces use conditional on interest.
+ we also find a significant and negative sunk cost effect,
+ implying that paying actually reduces use (conditional on valuation).
  This could be due to liquidity constraints:
  Even among farmers who value the seed similarly,
  those who had to pay for it may have less cash left over for complementary inputs or other production needs,
@@ -2343,9 +2363,8 @@ Results are quite different if we look at wheat in Ethiopia.
  Here,
  we do find a sizable and significant sunk cost effect,
  in addition to a weak negative screening effect.
- Farmers who paid a positive price for the wheat seed trial pack were more likely to plant it than those who received it for free,
- even after controlling for willingness to pay.
- This suggests that paying out-of-pocket increased their psychological commitment or effort to make use of the seed.
+ Farmers who paid a positive price for the wheat seed trial pack were more likely to plant it than those who received it for free (keeping valuation constant).
+ This suggests that paying out-of-pocket increased their psychological commitment to make use of the seed.
  This could be because in Ethiopia,
  wheat is more commercially oriented,
  with clearer market outlets and government-backed productivity programs,
@@ -2447,9 +2466,7 @@ In the teff season,
 
 \begin_layout Standard
 Another indicator of appropriate use is whether farmers kept the seed separate during planting.
- Planting the seed separately,
- rather than mixing it with local varieties,
- reflects a deliberate intention to evaluate the promoted variety on its own merits,
+ Planting the seed separately (rather than mixing it with local varieties) reflects a deliberate intention to evaluate the promoted variety on its own merits,
  which may influence adoption decisions in subsequent seasons.
  While the pooled regression in the top panel of Table 
 \begin_inset CommandInset ref
@@ -2507,7 +2524,7 @@ placement document
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -4707,7 +4724,14 @@ scriptsize
 \begin_layout Plain Layout
 
 Note:
- 
+ Variables are standardized for pooled regressions.
+  **,
+ *,
+ and + denote significance at the 1,
+ 5,
+ and 10
+\backslash
+% levels.
 \end_layout
 
 \end_inset
@@ -4726,20 +4750,20 @@ All of these patterns are summarized in the indices,
  As with the individual outcomes,
  this effect is driven primarily by teff in Ethiopia.
  However,
- the index also shows that the individually insignificant but consistently positive coefficients of the WTP price across the various dimensions of seed trial pack use combine to produce a statistically significant overall effect.
+ the index also shows that the individually insignificant but consistently positive coefficients of the WTP price across the various dimensions of maize seed trial pack use in Uganda combine to produce a statistically significant overall effect.
 \end_layout
 
 \begin_layout Standard
 Judged by the index,
  seed trial packs exhibit negative sunk cost effects:
- after controlling for willingness to pay,
+ after controlling for willingness to pay and signaling effects,
  farmers who received the pack for free made more appropriate use of it—
 across the combined dimensions in the index—
 than those who paid a positive price.
  The overall negative sunk cost effect is found for both maize in Uganda and teff in Ethiopia.
  Interestingly,
  for wheat we find the reverse:
- here sunk cost effects do seem at play.
+ here (positive) sunk cost effects do seem at play.
  The negative sunk cost effects for maize in Uganda and teff in Ethiopia likely reflect liquidity constraints that reduced farmers’ ability to invest in complementary inputs after paying for the seed,
  whereas the positive effect for wheat in Ethiopia suggests that in this more commercially oriented crop,
  the commitment induced by payment outweighed such constraints.
@@ -4766,8 +4790,8 @@ Adoption and production in subsequent season
 
 \begin_layout Standard
 Adoption of the promoted technology in the subsequent season is particularly relevant,
- as seed trial packs are designed not only to encourage initial experimentation but also to foster sustained uptake of the variety;
- measuring behavior in the following season therefore reveals whether farmers’ trial experiences translate into repeat use and longer-term impacts.
+ as seed trial packs are designed not only to encourage initial experimentation but also to foster sustained uptake of the variety.
+ Measuring behavior in the following season therefore reveals whether farmers’ trial experiences translate into repeat use and longer-term impacts.
  Further down the causal chain,
  we also examine whether production and productivity of the underlying crop varies with the prices signaled,
  negotiated,
@@ -4802,7 +4826,7 @@ literal "false"
 
 .
  The first two outcomes measure adoption,
- the second to are related to production.
+ the remaining two are related to production.
  All data is derived from a randomly selected plot in the household.
 \end_layout
 
@@ -4815,10 +4839,19 @@ status collapsed
 More specifically,
  we asked a range of questions about the seed planted on the randomly selected plot,
  including its name,
- number of times recycled,
- and source.
+ number of times the seed was recycled,
+ and source of the seed,
+ etc.
  Based on this information,
- we defined a variable indicating use of improved seed,
+ we define a variable indicating 
+\begin_inset Quotes eld
+\end_inset
+
+use of improved seed
+\begin_inset Quotes erd
+\end_inset
+
+,
  coded as true if the farmer planted a fresh hybrid or an OPV recycled no more than five times,
  obtained from a trusted source (generally an agro-input dealer or the government extension system).
 \end_layout
@@ -4826,7 +4859,8 @@ More specifically,
 \end_inset
 
  The second outcome is more specific,
- and asks if the promoted variety (ie the one from the seed trial pack) was planted on the randomly selected plot.
+ and asks if the promoted variety (ie.
+ the one from the seed trial pack) was planted on the randomly selected plot.
 \end_layout
 
 \begin_layout Standard
@@ -4872,7 +4906,7 @@ placement document
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -7052,7 +7086,14 @@ scriptsize
 \begin_layout Plain Layout
 
 Note:
- 
+ Variables are standardized for pooled regressions.
+  **,
+ *,
+ and + denote significance at the 1,
+ 5,
+ and 10
+\backslash
+% levels.
 \end_layout
 
 \end_inset
@@ -7143,7 +7184,7 @@ Turning to crop specific regressions,
  for the case of maize seed trial packs in Uganda,
  overall use of inputs is moderate (about 55 percent for fertilizer and 29 percent for chemicals).
  Screening effects are positive,
- albeit not significantly so for chemicals..
+ albeit not significantly so for chemicals.
  Sunk cost effects are negative:
  Farmers who value the seed more invest more in fertilizer,
  but payment reduces their ability to do so,
@@ -7167,7 +7208,7 @@ placement document
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -8643,7 +8684,14 @@ scriptsize
 \begin_layout Plain Layout
 
 Note:
- 
+ Variables are standardized for pooled regressions.
+  **,
+ *,
+ and + denote significance at the 1,
+ 5,
+ and 10
+\backslash
+% levels.
 \end_layout
 
 \end_inset
@@ -8683,43 +8731,35 @@ In this paper,
  Second,
  having paid for a product may foster a sense of commitment,
  since not using it would mean wasting the money spent,
- consistent with the sunk cost rationale in behavioral economics 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "eec14168-5714-3ca8-b073-d038266f2734,DEBONDT1988173"
-literal "false"
-
-\end_inset
-
-.
+ consistent with the sunk cost rationale in behavioral economics.
  Third,
  goods obtained for free or at a very low price may be perceived as lower quality,
  reducing the effort and care invested in their use.
 \end_layout
 
 \begin_layout Standard
-We identify the three mechanisms through a novel field experiment that uses a three-stage pricing design.
+We identified the three mechanisms through a novel field experiment that used a three-stage pricing design.
  In the first stage,
- a product (a seed trial pack) is offered at an initial offer price that may serve as a quality signal.
+ a product (a seed trial pack) was offered at an initial offer price that may serve as a quality signal.
  In the second stage,
- farmers participate in a bargaining game,
- which reveals their willingness to pay price for the product.
+ farmers participated in a bargaining game,
+ which revealed their willingness to pay price for the product.
  In the third stage,
- a randomly selected group of farmers receives a surprise discount,
+ a randomly selected group of farmers received a surprise discount,
  resulting in the actual transaction price.
  In a regression framework,
- these three prices allow us to separately estimate the signaling,
+ these three prices allowed us to separately estimate the signaling,
  screening,
  and sunk cost effects,
  while controlling for the other mechanisms.
 \end_layout
 
 \begin_layout Standard
-We look if prices affect if and how the seed trial packs are used,
- how prices affect adoption and production in the next season,
- and if price affect investment in complementary inputs.
+We looked if prices affect if and how the seed trial packs were used,
+ how prices affected adoption and production in the next season,
+ and if price affected investment in complementary inputs.
  Overall,
- we find that higher willingness to pay is often associated with greater use of seed trial packs,
+ we found that higher willingness to pay is often associated with greater use of seed trial packs,
  adoption of the promoted variety in the following season,
  and in some cases higher production,
  consistent with a screening effect.
@@ -8727,7 +8767,7 @@ We look if prices affect if and how the seed trial packs are used,
  paying for the seed seldom strengthened commitment to use and in some cases reduced appropriate use or complementary investments,
  pointing to liquidity constraints.
  Initial high offer prices did not reliably act as positive quality signals and in some instances discouraged planting.
- These patterns are not uniform across settings:
+ These patterns were not uniform across settings:
  for wheat in Ethiopia,
  paying a positive price appeared to increase commitment to use,
  while for teff,
@@ -8749,7 +8789,7 @@ These findings have several implications for the pricing of seed trial packs in 
 Second,
  the presence of negative sunk cost effects cautions against relying on payment to boost commitment.
  In our setting,
- paying for seed did not increase use and in some cases reduced appropriate use or investment in complementary inputs,
+ paying for seed generally did not increase use (except maybe for wheat in Ethiopia) and in some cases reduced appropriate use or investment in complementary inputs,
  likely due to liquidity constraints.
  This suggests that charging higher prices may inadvertently undermine learning and adoption by reducing farmers’ ability to manage the crop effectively.
  Where targeting is needed,
@@ -8768,18 +8808,20 @@ Third,
 
 \begin_layout Standard
 Taken together,
- the results suggest that the most effective approach is to set a modest price that enables targeting without creating financial barriers,
- while using additional targeting mechanisms beyond price—
-such as limiting distribution to active farmers,
+ the results suggested that the most effective approach was to set a modest price that enabled targeting without creating financial barriers,
+ while using additional targeting mechanisms beyond price (such as limiting distribution to active farmers,
  using extension agents’ local knowledge,
- or requiring simple expressions of interest—
-to ensure seed reaches those most likely to use it.
+ or requiring simple expressions of interest) to ensure seed reached those most likely to use it.
+ Our findings also indicated that the effects of pricing may be technology- and context-specific,
+ underscoring the need to tailor strategies to the local market,
+ crop characteristics,
+ and input supply conditions.
  To avoid the negative effects of payment on input use,
- programs should safeguard farmers’ ability to invest in complementary inputs,
+ programs should have safeguarded farmers’ ability to invest in complementary inputs,
  for instance by bundling fertilizer or chemicals with the seed trial pack,
  offering small input vouchers,
  or scheduling input credit alongside seed distribution.
- Trust in the product can be strengthened through non-price signals such as field demonstrations,
+ Trust in the product could have been strengthened through non-price signals such as field demonstrations,
  peer testimonials,
  or endorsements from credible local actors.
 \begin_inset Newpage newpage

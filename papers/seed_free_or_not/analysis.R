@@ -220,7 +220,7 @@ teff_bar$final_price_ul[teff_bar$trunc==TRUE] <-   teff_bar$ask[teff_bar$trunc==
 
 ##keep only those that participated in the bargaining experiment
 
-teff_bar <- subset(teff_bar, ( paid_pac == TRUE | discounted == TRUE))
+teff_bar <- subset(teff_bar, ( paid_pac == TRUE | discounted == TRUE) & pay_more!="No")
 
 teff_bar$paid_pac[!(teff_bar$discounted)] <- FALSE
 
@@ -301,7 +301,7 @@ wheat_bar$final_price_ul[wheat_bar$accepts=="seller"] <- wheat_bar$bid[wheat_bar
 wheat_bar$final_price_ul[wheat_bar$trunc==TRUE] <-   wheat_bar$ask[wheat_bar$trunc==TRUE]
 
 ##keep only those that participated in the bargaining experiment
-wheat_bar <- subset(wheat_bar, ( paid_pac == TRUE | discounted == TRUE))
+wheat_bar <- subset(wheat_bar, ( paid_pac == TRUE | discounted == TRUE) & pay_more!="No")
 
 wheat_bar$paid_pac[!(wheat_bar$discounted)] <- FALSE
 
