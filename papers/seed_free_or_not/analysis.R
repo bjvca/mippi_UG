@@ -881,7 +881,7 @@ save(res_tab_pooled, file=paste(path,"papers/seed_free_or_not/res_tab_pooled.Rda
 
 
 #iterate over outcomes
-outcomes <- c("cor_plant","use_fert","use_chem","gap_fill","nr_weed","timely_planting")
+outcomes <- c("use_fert","use_chem")
 
 index_use <- icwIndex(xmat=dta_reg[outcomes]) #x
 dta_reg <- data.frame(dta_reg,index_use)
@@ -1664,7 +1664,7 @@ names(wheat_merged)[names(wheat_merged) == "yieldkgha_w"] <- "productivity"
 
 
 #iterate over outcomes
-outcomes <- c("rnd_adopt", "rnd_bazo", "imp_seed_qty_rnd","production", "productivity" )
+outcomes <- c("rnd_adopt", "rnd_bazo","production", "productivity" )
 index_use <- icwIndex(xmat=dta_reg[outcomes]) #x
 dta_reg <- data.frame(dta_reg,index_use)
 
@@ -1708,7 +1708,7 @@ save(res_tab_next_season, file=paste(path,"papers/seed_free_or_not/res_tab_next_
 
 ##now for eth - teff
 #iterate over outcomes
-outcomes <- c("rnd_adopt", "rnd_bazo", "imp_seed_qty_rnd","production", "productivity" )
+outcomes <- c("rnd_adopt", "rnd_bazo", "production", "productivity" )
 index_use <- icwIndex(xmat=teff_merged[outcomes]) #x
 teff_merged <- data.frame(teff_merged,index_use)
 
@@ -1752,7 +1752,7 @@ save(res_tab_next_season_teff, file=paste(path,"papers/seed_free_or_not/res_tab_
 
 ##now for eth - wheat
 #iterate over outcomes
-outcomes <- c("rnd_adopt", "rnd_bazo", "imp_seed_qty_rnd","production", "productivity" )
+outcomes <- c("rnd_adopt", "rnd_bazo","production", "productivity" )
 index_use <- icwIndex(xmat=wheat_merged[outcomes]) #x
 wheat_merged <- data.frame(wheat_merged,index_use)
 
