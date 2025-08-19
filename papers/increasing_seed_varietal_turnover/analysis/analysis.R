@@ -123,6 +123,12 @@ dta <-merge(dta, bse[c("farmer_ID","cluster_ID")], by.x="ID", by.y="farmer_ID")
 dim(bse)[1] - dim(dta)[1]  # we lost 4 observations
 ### look at consent which is last point where enumerators are asked to abort
 table(dta$consent)
+
+### check is attrition is related to treatment
+ols <- lm((consent == "Yes")~trial_P*cont,data= dta)
+   vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
+   coef_test(ols, vcov_cluster)
+
 ##if we also consider the 4 that were lost, we get an attrition rate of 1.4 percent
 ###drop these 18 that were not interviewed
 dta <- subset(dta, consent == "Yes")
@@ -287,11 +293,12 @@ dta$share_area_imp[dta$no_grow] <- NA
 
 #iterate over outcomes
 outcomes <- c("p_outcome_1","p_outcome_2","nr_improved", "share_plots_imp", "nr_improvedxsize", "share_area_imp" )
-b_outcomes <- c("b_p_outcome_1", "b_p_outcome_2",NA,NA,NA,NA)
+b_outcomes <- c("b_p_outcome_1", "b_p_outcome_2",NA,NA,NA,NA,NA)
 ### do not include outcome 2 (adoption of bazooka) as this results in singularity - on second thought, maybe p_outcome_2 should be a key outcome and included
 ## in fact, the singularity disappeared in the real data
 dta$index <- icwIndex(xmat= as.matrix(dta[outcomes]), sgroup=dta$s_ind)$index
-outcomes <- c(outcomes, "index")
+outcomes <- c(outcomes, "index","p_outcome_2alt")
+b_outcomes <- c(b_outcomes,"b_p_outcome_2alt")
 ## demean indicators
 dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)
 dta$trial_P_demeaned <-  dta$trial_P - mean(dta$trial_P,na.rm = T)
@@ -596,6 +603,17 @@ bse$b_rnd_bazo <- ((bse$maize_var == "Bazooka") & (bse$source %in% letters[4:9])
                    
 dta <- merge(dta, bse[c("farmer_ID","b_rnd_bazo")], by.x="ID", by.y="farmer_ID")
 
+### alternative -  bazo (fresh or recycled)
+dta$rnd_bazo_alt <-  (dta$maize_var_selected == "Bazooka")
+dta$rnd_bazo_alt[dta$no_grow] <- NA 
+
+## we assume here that seed from official sources has not been recycled
+bse$b_rnd_bazo_alt <- (bse$maize_var == "Bazooka")
+
+
+
+
+
 ### seed quantity
 dta$seed_qty <- as.numeric(as.character(dta$seed_qty))
 dta$seed_qty[dta$seed_qty == 999] <- NA 
@@ -654,8 +672,8 @@ b_outcomes <- c("b_rnd_adopt", "b_rnd_bazo","b_imp_seed_qty_rnd","b_imp_seed_qty
 
 dta$index <- icwIndex(xmat= as.matrix(dta[outcomes]),sgroup=dta$s_ind)$index
 dta$b_index <- icwIndex(xmat= as.matrix(dta[b_outcomes]),sgroup=dta$s_ind)$index
-outcomes <- c(outcomes, "index")
-b_outcomes <- c(b_outcomes, "b_index")
+outcomes <- c(outcomes, "index","rnd_bazo_alt")
+b_outcomes <- c(b_outcomes, "b_index","b_rnd_bazo")
 ## demean indicators
 dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)
 dta$trial_P_demeaned <-  dta$trial_P - mean(dta$trial_P,na.rm = T)
@@ -670,8 +688,9 @@ df_res_pool  <- array(NA,c(2,3,length(outcomes )))
 for (i in 1:length(outcomes)){
   ##means
   
-  df_means_out[1,i] <- mean(unlist(dta[outcomes[i]]), na.rm=TRUE)
-  df_means_out[2,i] <- sd(unlist(dta[outcomes[i]]), na.rm=TRUE)
+
+  df_means_out[1,i] <- mean(unlist(dta[(dta$trial_P == FALSE & dta$cont == FALSE),outcomes[i]]), na.rm=TRUE)
+  df_means_out[2,i] <- sd(unlist(dta[(dta$trial_P == FALSE & dta$cont == FALSE),outcomes[i]]), na.rm=TRUE)
   
   
   df_means_out[3,i] <- mean(unlist(dta[dta$trial_P == FALSE,outcomes[i]]), na.rm=TRUE)
@@ -912,6 +931,29 @@ my_plot <- ggplot(graph_cash, aes(x = b_cons_exp, fill = recycled)) +
   geom_density(alpha = 0.7, bw=1500) +
   labs( x = "Consumption Expenditure per capita in UGX", y = "Density") +
   theme_minimal()
+
+library(dplyr)
+library(ggplot2)
+
+# Create quintiles of consumption expenditure
+graph_cash <- graph_cash %>%
+  mutate(wealth_quintile = ntile(b_cons_exp, 5))   # 5 quintiles
+
+# Compute mean recycling by quintile
+mean_recycled <- graph_cash %>%
+  group_by(wealth_quintile) %>%
+  summarise(mean_recycled = mean(recycled, na.rm = TRUE))
+
+# Plot: mean recycling rate by quintile
+my_plot <- ggplot(mean_recycled, aes(x = factor(wealth_quintile), 
+                                     y = mean_recycled)) +
+  geom_col(fill = "steelblue", alpha = 0.8) +
+  labs(x = "Wealth Quintile (by consumption expenditure)", 
+       y = "Share recycling Bazooka") +
+  scale_y_continuous(labels = scales::percent) +
+  theme_minimal(base_size = 14)
+
+my_plot
 
 ggsave(file=paste(path,"/papers/increasing_seed_varietal_turnover/results/cash_contraints.png",sep="/"), plot = my_plot, width = 8, height = 6, dpi = 300)
 

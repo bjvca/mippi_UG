@@ -177,19 +177,21 @@ literal "false"
 In many developing country contexts,
  smallholder farmers act as both producers and consumers of staple crops,
  implying that decisions to take up new agricultural technologies depend not only on agronomic performance but also on consumption qualities.
- This study investigates how emphasizing these different traits affects farmers’ willingness to try and continue using an improved maize variety.
- In eastern Uganda,
- we implemented a randomized controlled trial with two intervention arms.
- One highlighted agronomic production traits by distributing seed trial packs.
- The other emphasized consumption traits through cooking demonstrations and blind taste tests.
- Both interventions improved farmers’ perceptions of the new seed,
- but only the consumption-focused approach led to a small increase in the purchase of fresh seeds of improved varieties in the subsequent season.
+ This study examines how highlighting different traits of an improved maize variety influences adoption.
+ To do so,
+ we implemented a randomized controlled trial in eastern Uganda with two intervention arms:
+ one emphasized production traits by distributing seed trial packs,
+ while the other emphasized consumption traits through cooking demonstrations and blind taste tests.
+ Both interventions enhanced farmers’ awareness,
+ attitudes,
+ and perceptions of the new seed,
+ yet only the consumption-focused approach translated into a modest increase in the purchase of fresh improved seed varieties in the following season.
  In contrast,
  farmers who received seed trial packs tended to recycle harvested grain as seed,
  reducing demand for newly purchased seed in subsequent seasons.
- Though the hybrid variety promoted is not intended to be recycled,
- we interpret this behavior as a rational response to limited trust in input markets and uncertain output prices,
- with important implications for the design of seed promotion strategies.
+ Although the hybrid variety promoted is not intended for recycling,
+ we interpret this behavior as a rational response of liquidity constrained farmers to uncertain maize prices and low trust in agro-dealers,
+ underscoring the importance of aligning seed promotion strategies with both market realities and farmer perceptions.
 \end_layout
 
 \begin_layout Abstract
@@ -206,7 +208,7 @@ Keywords:
 JEL:
  Q16,
  O33,
- D91,
+ Q12,
  D83,
  C93 
 \end_layout
@@ -334,7 +336,7 @@ literal "false"
 
 \end_inset
 
- The goal is to reduce the cost and risk associated with learning about the production attributes of the variety,
+ The primary aim is to reduce the cost and risk associated with learning about the production attributes of the variety,
  such that farmers will purchase the seed in subsequent seasons if they find doing so beneficial.
 \end_layout
 
@@ -375,10 +377,10 @@ While seed trial packs may also enable farmers to discover consumption traits af
 \end_layout
 
 \begin_layout Standard
-This paper investigates whether highlighting agronomic and consumption-related attributes of improved maize varieties influences farmers’ decisions to adopt recently developed cultivars,
+This paper examines how highlighting agronomic and consumption-related attributes of improved maize varieties affects their adoption by smallholder farmers,
  recognizing their dual role as both producers and end-users.
  To achieve this,
- we conduct a field experiment to test the relative effectiveness of two interventions using a cluster-randomized control trial with a simple factorial design.
+ we conduct a field experiment to test the relative effectiveness of two interventions using a cluster-randomized control trial.
  The first intervention targets production traits by providing farmers with 1 kg trial packs with seed of an improved variety.
 \begin_inset Foot
 status collapsed
@@ -402,8 +404,7 @@ literal "false"
 
 \end_inset
 
- Orthogonal to this intervention,
- a second intervention was introduced that involves cooking demonstrations and blind tasting tests.
+ A second intervention involves cooking demonstrations and blind tasting tests.
  This intervention allows farmers to familiarize themselves with consumption attributes of maize flour derived from the grain grown using the promoted improved variety.
  Additionally,
  farmers in this treatment are provided with maize flour samples derived from the grain grown using the promoted improved variety to further explore consumption traits at home and potentially convince other household members of consumption related benefits.
@@ -413,7 +414,7 @@ literal "false"
 The field experiment was conducted in four districts in eastern Uganda among a representative sample of about 1,500 farmers.
  The area,
  commonly know as the Busoga Kingdom,
- is populated with smallholder farmers who produce for both home consumption and the market.
+ is populated with smallholder farmers who produce maize for both home consumption and the market.
  The study ran over two consecutive agricultural seasons in 2023,
  with endline data collected in early 2024 after the harvest of the second season.
  The variety we promoted in this study is a hybrid marketed as 
@@ -423,7 +424,7 @@ Bazooka
  (UH 5354),
  which,
  despite being widely available from agrodealers,
- was not widely adopted by farmers.
+ was not yet widely adopted by farmers.
  
 \emph on
 Bazooka
@@ -451,7 +452,7 @@ We find that farmers who received a trial pack are actually
 \shape italic
 less likely
 \shape default
- to plant fresh seed of an improved variety in the next season because they instead use recycled seed obtained from the trial pack's harvest.
+ to plant (fresh) seed of an improved variety in the next season because they instead use recycled seed obtained from the trial pack's harvest.
  Hybrid seeds are not intended to be recycled given the associated yield penalty for doing so,
  as recycled seeds from improved hybrid varieties are not genetically the same as their parent seeds.
  Indeed,
@@ -481,8 +482,7 @@ whether for own consumption,
 \end_layout
 
 \begin_layout Standard
-Finally,
- we see little evidence that receiving both treatments had additional impacts beyond those of the main treatment—
+We see little evidence that receiving both treatments had additional impacts beyond those of the main treatment—
 this may have been the case if,
  for instance,
  some household members are more sensitive to production traits and others are more sensitive to consumption traits,
@@ -500,32 +500,27 @@ Exploring some of the impact pathways,
  portion size,
  appearance,
  and ease of cooking.
- However,
+ Furthermore,
  we find that farmers who received the seed trial pack rank improved varieties higher in terms of production-related attributes such as yield,
  abiotic and biotic stress resistance,
  time to maturity,
  and germination rate,
- which is in line with the theory of change.
+ although the evidence is less convincing.
  Interestingly,
  the seed trial pack also positively affects how farmers think about consumption traits of improved varieties,
  suggesting farmers separately consume the harvest from the seed trial pack and pay close attention to consumption attributes.
 \end_layout
 
 \begin_layout Standard
-A key finding from our study is that many farmers who received the seed trial pack continued using the distributed hybrid maize variety by recycling the harvest from the trial pack rather than purchasing fresh seed.
- This behavior does not seem to be merely the result of a lack of knowledge about the drawbacks of recycling hybrid seeds or inertia;
+A key finding from our study is that the majority of farmers who received the seed trial pack continued using the distributed hybrid maize variety by recycling the harvest from the trial pack rather than purchasing fresh seed.
+ This behavior does not seem to be merely the result of a lack of knowledge about the drawbacks of recycling hybrid seeds;
  rather,
- it may represent a rational response to the conditions farmers face.
- Recycling often maximizes short-run profits given the high cost of purchasing fresh seed,
- uncertainty about output prices,
- and limited access to credit or reliable input suppliers.
+ it may represent a rational response to the conditions farmers face:
  Even when farmers are aware of potential yield penalties associated with reusing hybrid seed,
  they may still find recycling preferable in light of high cost of seed,
  liquidity constraints,
  market risk,
  and distrust in agro-dealer networks.
- Behavioral inertia may further reinforce this choice,
- especially among farmers who experienced high yields from the trial pack and saw little immediate need to switch.
  These findings suggest that exposure alone is not enough to ensure continued use of fresh improved seed,
  and that addressing the informational,
  economic,
@@ -639,6 +634,15 @@ literal "false"
 \end_inset
 
  find provision of a horticulture mini-kit to farmers in Rwanda has no significant impact on the adoption of horticulture.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "ragasa2025impact"
+literal "false"
+
+\end_inset
+
+ present results from Nigeria showing that seed trial packs substantially increase adoption of improved maize and cowpea OPVs.
  We contribute to this literature by assessing the effect of seed trial packs on subsequent adoption,
  instead of limiting observation to a single season and primarily investigating the immediate use of the seed trial pack.
  Moreover,
@@ -686,49 +690,6 @@ literal "false"
  who study the impact of the HarvestPlus' Reaching End Users project (which includes a demand creation component that focuses on consumption attributes) on the adoption of bio-fortified sweet potato in Mozambique and Uganda.
  They find that the combination of the demand creation treatment and production-focused extension activities increases adoption of vitamin A fortified orange-fleshed sweet potatoes in the subsequent season by over 60 percent in both Mozambique and Uganda.
  We contribute to this literature by developing and testing an intervention that highlights non-nutrition-related consumption traits as well as offering this both apart from and in combination with other interventions highlighting production attributes.
-\end_layout
-
-\begin_layout Standard
-This work is part of a broader set of coordinated trials testing similar interventions (seed trial packs and a consumer-focused intervention) but in different contexts across six sites 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Trachtman2023Accelerating"
-literal "false"
-
-\end_inset
-
-.
- 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "ragasa2025impact"
-literal "false"
-
-\end_inset
-
- presents the results from one of these sister studies,
- which uses similar interventions to promote improved maize and cowpeas in the Bauchi and Kaduna states in Nigeria.
- They find the seed trial pack to be highly effective,
- increasing the adoption of the targeted varieties by over 40 percentage points.
- Critically,
- the varieties promoted in that experiment were OPVs,
- which can be recycled up to three times,
- and hence recycling the harvest from the trial pack was considered as adoption.
- This may explain the discrepancy in the adoption results between the two settings.
- Additionally,
- while 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "ragasa2025impact"
-literal "false"
-
-\end_inset
-
- do not find the consumption intervention alone to spur adoption,
- there are marginal gains from receiving both the seed trial pack and consumer intervention in Kaduna state,
- as opposed to the seed trial pack alone.
- This could perhaps be explained by greater intrahousehold information frictions in the Nigerian context,
- making it more important to simultaneously convince multiple household decision-makers of the benefits of adopting a new variety.
 \end_layout
 
 \begin_layout Standard
@@ -1011,50 +972,21 @@ Bazooka
 .
  After being asked to guess which was which,
  the facilitator gathered the guesses and revealed the correct answers.
- Before the taste test,
- only 38% of participants stated that they find improved varieties to taste better than local varieties.
- Yet during the blind tasting,
- 70% of participants preferred the 
-\emph on
-posho
-\emph default
- made from 
-\emph on
-Bazooka
-\emph default
- maize over that made from local maize.
- In many sessions,
- participants were surprised to learn that the 
-\emph on
-posho
-\emph default
- they preferred was actually made from an improved maize variety.
- Hence,
- this intervention may have meaningfully changed individuals' perceptions of the consumption attributes of improved varieties.
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Participants also positively updated their beliefs on other attributes of improved varieties such as color (87% preferred improved varieties on this dimension before the taste test,
- whereas 95% preferred the color of the 
-\emph on
-posho
-\emph default
- made from 
-\emph on
-Bazooka
-\emph default
- during the blind taste testing) and aroma (with 33% preferring improved varieties ex ante,
- and 56% preferring the 
-\emph on
-Bazooka
-\emph default
- tasting sample).
-\end_layout
+ As the results in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Perceptions-of-consumer"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
 
 \end_inset
 
-
+ will demonstrate,
+ improved seed varieties are generally perceived favorably with respect to consumption traits,
+ yet these positive perceptions are far from universal,
+ leaving scope for further improvement.
 \end_layout
 
 \begin_layout Subsection
@@ -1166,7 +1098,18 @@ literal "false"
  For conciseness,
  we include results from these pooled specifications,
  which are qualitatively similar to the results from the fully interacted model,
- in the online appendix rather than the main text.
+ in Online Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Pooled-models"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ rather than the main text.
 \end_layout
 
 \begin_layout Standard
@@ -2590,7 +2533,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Baseline Balance
+Baseline balance
 \begin_inset CommandInset label
 LatexCommand label
 name "balance_table"
@@ -2744,8 +2687,7 @@ Sexpr{format(round(df_balance[3,2,1],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Household head has finished primary education?
- (1=yes)
+Household head has finished primary education (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -2887,7 +2829,7 @@ Sexpr{format(round(df_balance[3,2,3],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Household size (nr)
+Household size
 \end_layout
 
 \begin_layout Plain Layout
@@ -3029,8 +2971,7 @@ Sexpr{format(round(df_balance[3,2,5],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Has used quality maize seed on any plot in last season?
- (1=yes)
+Has used quality maize seed on any plot in last season (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -3103,8 +3044,7 @@ Sexpr{format(round(df_balance[3,2,6],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Has used the promoted seed (Bazooka) on a randomly chosen plot in the last season?
- (1=yes)
+Has used the promoted seed (Bazooka) on a randomly chosen plot in the last season (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -3177,8 +3117,7 @@ Sexpr{format(round(df_balance[3,2,7],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Seed on random plot was obtained from formal seed source?
- (1=yes)
+Seed on random plot was obtained from formal seed source (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -3247,8 +3186,7 @@ Sexpr{format(round(df_balance[3,2,8],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Used seed that is recycled more than 3 seasons on randomly selected plot?
- (1=yes)
+Used seed that is recycled more than 3 seasons on randomly selected plot (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -3613,7 +3551,7 @@ nolink "false"
 \end_inset
 
 ,
- outcomes are combined in a summary index following 
+ outcomes are combined in summary indices following 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "doi:10.1198/016214508000000841"
@@ -3622,7 +3560,7 @@ literal "false"
 \end_inset
 
 .
- The structure of the results tables is the same as the one used in Table 
+ The structure of the results tables is similar to the one used in Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "balance_table"
@@ -3635,7 +3573,7 @@ nolink "false"
 
 .
  Each table reports control group means (this time at endline;
- column 1) as well as average treatment effects from the fully interacted model in Equation 
+ column 1) as well as intent-to-treat effects from the fully interacted model in Equation 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:one"
@@ -3655,7 +3593,7 @@ placement document
 alignment document
 wide false
 sideways true
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -3836,7 +3774,7 @@ Sexpr{format(round(df_res[3,2,7],digits=2),nsmall=2)})
 
 Has used seed of an improved variety on any plot in last season?$^
 \backslash
-dag$
+dag$ (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -3911,9 +3849,11 @@ Sexpr{format(round(df_res[3,2,1],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Has used fresh Bazooka on any plot in last season in last season?$^
+Has used fresh 
 \backslash
-dag$
+textit{Bazooka} on any plot in last season?$^
+\backslash
+dag$ (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -4293,6 +4233,90 @@ Sexpr{format(round(df_res[3,2,6],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Has used 
+\backslash
+textit{Bazooka} (fresh or recycled) on any plot in last season?$^
+\backslash
+dag$ (1=yes)
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_out[1,8],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_res[1,1,8],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_res[1,3,8]<.01,"**",ifelse(df_res[1,3,8]<.05,"*",ifelse(df_res[1,3,8]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_res[2,1,8],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_res[2,3,8]<.01,"**",ifelse(df_res[2,3,8]<.05,"*",ifelse(df_res[2,3,8]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_res[3,1,8],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_res[3,3,8]<.01,"**",ifelse(df_res[3,3,8]<.05,"*",ifelse(df_res[3,3,8]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_res[1,4,8],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_out[2,8],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_res[1,2,8],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_res[2,2,8],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_res[3,2,8],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -4651,7 +4675,7 @@ placement document
 alignment document
 wide false
 sideways true
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -4897,7 +4921,9 @@ Sexpr{format(round(df_rnd[3,2,1],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Has used fresh Bazooka on randomly selected plot in last season (yes=1)
+Has used fresh 
+\backslash
+textit{Bazooka} on randomly selected plot in last season (yes=1)
 \end_layout
 
 \begin_layout Plain Layout
@@ -5268,10 +5294,6 @@ Sexpr{format(round(df_rnd[3,2,6],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
-
 
 \backslash
 
@@ -5280,6 +5302,75 @@ Sexpr{format(round(df_rnd[3,2,6],digits=2),nsmall=2)})
 \end_layout
 
 \begin_layout Plain Layout
+
+Has used 
+\backslash
+textit{Bazooka} (fresh or recycled) on randomly selected plot in last season (yes=1)
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_rnd[1,8],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[1,1,8],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[1,3,8]<.01,"**",ifelse(df_rnd[1,3,8]<.05,"*",ifelse(df_rnd[1,3,8]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[2,1,8],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[2,3,8]<.01,"**",ifelse(df_rnd[2,3,8]<.05,"*",ifelse(df_rnd[2,3,8]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[3,1,8],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[3,3,8]<.01,"**",ifelse(df_rnd[3,3,8]<.05,"*",ifelse(df_rnd[3,3,8]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_rnd[1,4,8],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_rnd[2,8],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_rnd[1,2,8],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_rnd[2,2,8],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_rnd[3,2,8],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
 
 \end_layout
 
@@ -5394,11 +5485,38 @@ Bazooka
 Bazooka
 \emph default
  seeds,
- we find that over 60 percent of farmers who received the trial pack continued growing 
+ the last row of Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "adoptiom"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ shows that almost 70 percent of farmers who received the trial pack continued growing 
 \shape italic
 Bazooka
 \shape default
- in the next season.
+ in the next season,
+ and the intent-to-treat effect of the seed trial pack in only slightly lower if we consider use of (potentially recycled) 
+\emph on
+Bazooka
+\emph default
+ on a the randomly selected plot (bottom row in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "adoptiom-1"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
@@ -5493,7 +5611,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Disposal
+Use of harvest
 \begin_inset CommandInset label
 LatexCommand label
 name "disposal"
@@ -5578,7 +5696,7 @@ hline
 
 \begin_layout Plain Layout
 
-Index
+Use Index
 \end_layout
 
 \begin_layout Plain Layout
@@ -5658,7 +5776,9 @@ Sexpr{format(round(df_disposal[3,2,4],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Share Consumed
+Share of maize consumed (
+\backslash
+%)
 \end_layout
 
 \begin_layout Plain Layout
@@ -5733,7 +5853,9 @@ Sexpr{format(round(df_disposal[3,2,1],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Share sold
+Share of maize sold (
+\backslash
+%)
 \end_layout
 
 \begin_layout Plain Layout
@@ -5808,7 +5930,9 @@ Sexpr{format(round(df_disposal[3,2,2],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Share held for seed
+Share maize kept for seed (
+\backslash
+%)
 \end_layout
 
 \begin_layout Plain Layout
@@ -6036,13 +6160,13 @@ placement document
 alignment document
 wide false
 sideways true
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Impact on women co-head involvement (random plot)
+Impact on women co-head involvement
 \begin_inset CommandInset label
 LatexCommand label
 name "decision"
@@ -6127,7 +6251,7 @@ hline
 
 \begin_layout Plain Layout
 
-Index
+Women's Empowerment Index
 \end_layout
 
 \begin_layout Plain Layout
@@ -6207,7 +6331,7 @@ Sexpr{format(round(df_decision[3,2,3],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Woman involved in decision what to plant?
+Woman involved in decision what to plant (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -6282,7 +6406,7 @@ Sexpr{format(round(df_decision[3,2,1],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Women involved in what to do with harvest?
+Women involved in what to do with harvest (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -6476,7 +6600,18 @@ Increasing the adoption of improved seed varieties is a means to an end;
  food security indicators,
  and a consumption expenditure aggregate.
  Results,
- reported in appendix XXX shows no impact.
+ reported in Online Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Welfare-Effects"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ shows no impact.
 \end_layout
 
 \begin_layout Section
@@ -6817,7 +6952,7 @@ placement document
 alignment document
 wide false
 sideways true
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -6911,7 +7046,7 @@ hline
 
 \begin_layout Plain Layout
 
-Index
+Awareness and Attitudes Index
 \end_layout
 
 \begin_layout Plain Layout
@@ -6991,7 +7126,9 @@ Sexpr{format(round(df_path[3,2,9],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Knows Bazooka (yes=1)$^
+Knows 
+\backslash
+textit{Bazooka} (yes=1)$^
 \backslash
 dag$
 \end_layout
@@ -7143,7 +7280,7 @@ Sexpr{format(round(df_path[3,2,2],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Thinks improved variety is risky
+Thinks improved varieties are risky (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -7218,7 +7355,9 @@ Sexpr{format(round(df_path[3,2,3],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Thinks Bazooka is risky
+Thinks 
+\backslash
+textit{Bazooka} is risky (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -7293,7 +7432,7 @@ Sexpr{format(round(df_path[3,2,4],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Recommended improved varieties to others
+Recommended improved varieties to others (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -7368,7 +7507,9 @@ Sexpr{format(round(df_path[3,2,5],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Recommended Bazooka to others
+Recommended 
+\backslash
+textit{Bazooka} to others (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -7443,7 +7584,7 @@ Sexpr{format(round(df_path[3,2,6],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Will use improved varieties in the future
+Will use improved varieties in the future (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -7518,7 +7659,9 @@ Sexpr{format(round(df_path[3,2,7],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Will use Bazooka in the future
+Will use 
+\backslash
+textit{Bazooka} in the future (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -7803,13 +7946,13 @@ placement document
 alignment document
 wide false
 sideways true
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Impact on Consumption traits - improved varieties compared to local
+Impact on perceptions of consumption traits of maize grain obtained from improved seed varieties versus maize grain obtained from local seed varieties
 \begin_inset CommandInset label
 LatexCommand label
 name "cons_traits_compare"
@@ -7898,7 +8041,7 @@ hline
 
 \begin_layout Plain Layout
 
-Index
+Consumption Trait Perceptions Index
 \end_layout
 
 \begin_layout Plain Layout
@@ -7978,7 +8121,7 @@ Sexpr{format(round(df_compare_cons_traits_seed[3,2,5],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Taste
+Improved variety grain tastes better (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -8053,7 +8196,7 @@ Sexpr{format(round(df_compare_cons_traits_seed[3,2,1],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Portions
+Portions obtained from improved variety grain are larger (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -8132,7 +8275,7 @@ Sexpr{format(round(df_compare_cons_traits_seed[3,2,2],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Appearance
+Improved variety grain had better appearance (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -8207,7 +8350,7 @@ Sexpr{format(round(df_compare_cons_traits_seed[3,2,3],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Ease of cooking
+Improved variety grain is easier to cook (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -8438,13 +8581,13 @@ placement document
 alignment document
 wide false
 sideways true
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Impact on Production traits - improved varieties compared to local
+Impact on perceptions of production traits of improved seed varieties versus local seed
 \begin_inset CommandInset label
 LatexCommand label
 name "prod_traits_compared"
@@ -8529,7 +8672,7 @@ hline
 
 \begin_layout Plain Layout
 
-Index
+Production Trait Perceptions Index
 \end_layout
 
 \begin_layout Plain Layout
@@ -8609,7 +8752,7 @@ Sexpr{format(round(df_compare_prod_traits_seed[3,2,6],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Yield
+Improved seed yields more (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -8684,7 +8827,7 @@ Sexpr{format(round(df_compare_prod_traits_seed[3,2,1],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Abiotic stresses
+Improved seed is more restistant to abiotic stresses (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -8759,7 +8902,7 @@ Sexpr{format(round(df_compare_prod_traits_seed[3,2,2],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Biotic stresses
+Improved seed is more restistant to biotic stresses (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -8834,7 +8977,7 @@ Sexpr{format(round(df_compare_prod_traits_seed[3,2,3],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Time to maturity
+Improve seed matures faster (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -8909,7 +9052,7 @@ Sexpr{format(round(df_compare_prod_traits_seed[3,2,4],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Germination Rate
+Improved seed has higher germination rates (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -9084,8 +9227,7 @@ Bazooka
  including limited knowledge about hybrid seed degeneration,
  perceived profitability of recycling and aversion to market price risks,
  trust and quality perceptions,
- behavioral inertia,
- and liquidity and credit constraints.
+ and liquidity constraints.
 \end_layout
 
 \begin_layout Subsection
@@ -9246,12 +9388,13 @@ placement document
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/bjvca/data/projects/OneCG/MIPP/papers/increasing_seed_varietal_turnover/profit_plot.png
+	filename analysis/profit_plot.png
+	lyxscale 10
 	scale 55
 
 \end_inset
@@ -9264,19 +9407,6 @@ status open
 
 \begin_layout Plain Layout
 Profits as a function of sales price
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-protect
-\end_layout
-
-\end_inset
-
-
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Profits-as-a"
@@ -9419,16 +9549,17 @@ Bazooka
 \begin_layout Standard
 \begin_inset Float figure
 placement document
-alignment document
+alignment center
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /home/bjvca/data/projects/OneCG/MIPP/papers/increasing_seed_varietal_turnover/percpetions.png
-	scale 50
+	filename results/percpetions.png
+	lyxscale 10
+	scale 60
 
 \end_inset
 
@@ -9436,6 +9567,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -9443,7 +9575,7 @@ Perceptions of quality of
 \emph on
 Bazooka
 \emph default
- seed from agro-dealer vs seed trial pack
+ from agro-dealer vs seed trial pack
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Perceptions-of-quality"
@@ -9461,51 +9593,6 @@ name "fig:Perceptions-of-quality"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Subsection
-Inertia
-\end_layout
-
-\begin_layout Standard
-Farmer behavior is often shaped by inertia—
-habits formed in previous seasons can influence subsequent decisions,
- even when new opportunities or information become available 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "dong1998he"
-literal "false"
-
-\end_inset
-
-.
- Farmers may recycle seeds simply because there is the least friction involved in doing this,
- as they don't have to purchase more seeds,
- or because they have already recycled seeds.
-\end_layout
-
-\begin_layout Standard
-To assess the role of such path dependence in seed recycling behavior,
- we examine whether farmers who recycled seed in the season prior to the intervention were more likely to continue doing so,
- despite being exposed to an improved variety through the seed trial pack.
- This inertia may reflect both cognitive biases (e.g.,
- status quo bias) and practical constraints (e.g.,
- lack of liquidity or confidence in new technologies).
-\end_layout
-
-\begin_layout Standard
-Indeed,
- prior recycling behavior is a strong predictor of recycling in the post-intervention season.
- In the subgroup of farmers that received a seed trial pack,
- we find that from those who recycled before the intervention,
- almost 8 out of 10 farmers recycled the seed from the seed trial pack.
- Among treatment farmers that did not recycle at baseline,
- only 5 out of 10 farmers recycled the seed from the seed trial pack.
- A chi-square test confirms that past seed recycling behavior is indeed correlated to the decision to recycle 
-\emph on
-Bazooka
-\emph default
-.
 \end_layout
 
 \begin_layout Subsection
@@ -9541,71 +9628,13 @@ We explore this by looking at the correlation between wealth (proxied by consump
 Bazooka
 \emph default
  seed) in the group that received a seed trial pack.
- Results,
- provided in Figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Consumption-expenditure-distribu"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-,
- shows weak evidence that richer farmers are indeed somewhat less likely to recycle 
-\emph on
-Bazooka
-\emph default
- seed from the seed trial pack,and liquidity constraints are one possible explanation.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement document
-alignment document
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename /home/bjvca/data/projects/OneCG/MIPP/papers/increasing_seed_varietal_turnover/cash_contraints.png
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Consumption expenditure distributions for fresh and recycled 
-\emph on
-Bazooka
-\emph default
-
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Consumption-expenditure-distribu"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+ Recycling of Bazooka seed is common across all wealth groups.
+ In the lowest quintile,
+ more than 90 percent of farmers recycled,
+ compared to roughly 84–86 percent in the middle quintiles and 77 percent in the fourth quintile.
+ Overall,
+ the data suggest only modest variation in recycling behavior by wealth,
+ with slightly lower recycling rates observed among relatively wealthier farmers.
 \end_layout
 
 \begin_layout Subsection
@@ -9614,9 +9643,9 @@ Summary
 
 \begin_layout Standard
 Taken together,
- these five explanations underscore the complexity of farmer decision-making in input markets.
+ these (non-exhaustive) explanations underscore the complexity of farmer decision-making in input markets.
  Recycling behavior reflects not only knowledge and profitability considerations,
- but also deep-rooted behavioral patterns and constraints related to access,
+ but also constraints related to access,
  trust,
  and liquidity.
  The fact that many treatment farmers chose to recycle a high-yielding hybrid variety—
@@ -9714,6 +9743,15 @@ This research received clearance form Makerere's School of Social Sciences Resea
  funding from the CGIAR Initiative on Market Intelligence and SeedEqual is greatly acknowledged.
  We want to thank Richard Ariong,
  Wilberfoce Walukano and Marc Charles Wanume for field support.
+ This work is part of a broader set of coordinated trials testing similar interventions (seed trial packs and a consumer-focused intervention) but in different contexts across six sites 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Trachtman2023Accelerating"
+literal "false"
+
+\end_inset
+
+.
  We are also indebted to the CGIAR Market Intelligence Work Package 3 team (Julius Juma Okello,
  Beliyou Haile,
  Martina Cavicchioli,
@@ -9781,6 +9819,13 @@ setcounter{figure}{0}
 
 
 \backslash
+setcounter{subsection}{0}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
 setcounter{page}{1}
 \end_layout
 
@@ -9805,6 +9850,28 @@ thefigure}{A
 \backslash
 arabic{figure}}
 \end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+thesubsection}{A
+\backslash
+arabic{subsection}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Pooled models
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Pooled-models"
 
 \end_inset
 
@@ -10032,7 +10099,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Baseline Balance (pooled)
+Baseline balance (pooled)
 \begin_inset CommandInset label
 LatexCommand label
 name "balance_table_pool"
@@ -10069,7 +10136,7 @@ begin{center}
 
 
 \backslash
-begin{tabular}{rcccc}
+begin{tabular}{lcccc}
 \end_layout
 
 \begin_layout Plain Layout
@@ -10083,11 +10150,16 @@ hline
 
 \begin_layout Plain Layout
 
+& control & ITT & control & ITT 
+\backslash
+
+\backslash
+
 \end_layout
 
 \begin_layout Plain Layout
 
-& ctrl mean & trial pack & ctrl mean & cooking demo 
+& mean & trial pack & mean & cooking demo 
 \backslash
 
 \backslash
@@ -10189,7 +10261,7 @@ Sexpr{format(round(df_balance_pool[2,2,1],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Household head has finished primary education?
+Household head has finished primary education (1-yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -10497,7 +10569,7 @@ Sexpr{format(round(df_balance_pool[2,2,5],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Has used quality maize seed on any plot in last season?
+Has used quality maize seed on any plot in last season (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -10574,7 +10646,7 @@ Sexpr{format(round(df_balance_pool[2,2,6],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Has used the promoted seed (Bazooka) on a randomly chosen plot in the last season?
+Has used the promoted seed (Bazooka) on a randomly chosen plot in the last season (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -10651,8 +10723,7 @@ Sexpr{format(round(df_balance_pool[2,2,7],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Seed on random plot was obtained from formal seed source?
- 
+Seed on random plot was obtained from formal seed source (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -10729,8 +10800,7 @@ Sexpr{format(round(df_balance_pool[2,2,8],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Used seed that is recycled more than 3 seasons on randomly selected plot?
- 
+Used seed that is recycled more than 3 seasons on randomly selected plot (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -10924,11 +10994,10 @@ scriptsize
 \begin_layout Plain Layout
 
 Note:
- Column (1) reports control means at baseline for farmers that did not receive the seed trial pack (and standard deviations below);
- columns (2) reports estimates of the average treatment effect of the seed trial pack.
- Column (1) reports control means at baseline for farmers that did not receive the seed trial pack (and standard errors below);
-  Column (3) reports control means at baseline for farmers that did not receive the cooking demonstration and tasting sessions (and standard deviations below);
- column (4) reports estimates of the average treatment effect of the cooking demonstration and tasting sessions.
+ Column (1) reports control group means at baseline (and standard deviations below);
+ column (2) reports the estimate of the intent-to-treat effect of the seed trial packs;
+ column (3) reports the estimate of the intent-to-treat effect of the cooking and tasting demonstrations;
+ column (4) is the interaction effect.
  Standard errors are below the estimates and are clustered at the level of randomization;
  **,
  *,
@@ -11005,7 +11074,7 @@ begin{center}
 
 
 \backslash
-begin{tabular}{rccccc}
+begin{tabular}{lccccc}
 \end_layout
 
 \begin_layout Plain Layout
@@ -11019,11 +11088,16 @@ hline
 
 \begin_layout Plain Layout
 
+& control & ITT & control & ITT  & 
+\backslash
+
+\backslash
+
 \end_layout
 
 \begin_layout Plain Layout
 
-& ctrl mean & trial pack & ctrl mean & cooking demo & nobs 
+& mean & trial pack & mean & cooking demo & nobs 
 \backslash
 
 \backslash
@@ -11048,9 +11122,92 @@ hline
 
 \begin_layout Plain Layout
 
-Has used seed of an improved variety on any plot in last season?$^
+Adoption Index
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
 \backslash
-dag$
+Sexpr{format(round(df_means_out[3,7],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_res_pool[1,1,7],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_res_pool[1,3,7]<.01,"**",ifelse(df_res_pool[1,3,7]<.05,"*",ifelse(df_res_pool[1,3,7]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_out[5,7],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_res_pool[2,1,7],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_res_pool[2,3,7]<.01,"**",ifelse(df_res_pool[2,3,7]<.05,"*",ifelse(df_res_pool[2,3,7]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_res[1,4,7],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_out[4,7],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_res_pool[1,2,7],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_means_out[6,7],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_res_pool[2,2,7],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Has used seed of an improved variety on any plot in last season$^
+\backslash
+dag$ (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -11128,9 +11285,9 @@ Sexpr{format(round(df_res_pool[2,2,1],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Has used fresh Bazooka on any plot in last season in last season?$^
+Has used fresh Bazooka on any plot in last season in last season$^
 \backslash
-dag$
+dag$ (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -11532,50 +11689,57 @@ Sexpr{format(round(df_res_pool[2,2,6],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
+
+\backslash
+
+\backslash
+
 \end_layout
 
 \begin_layout Plain Layout
 
-Index
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
+Has used Bazooka (fresh or recycled) on any plot in last season in last season$^
 \backslash
-Sexpr{format(round(df_means_out[3,7],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_res_pool[1,1,7],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_res_pool[1,3,7]<.01,"**",ifelse(df_res_pool[1,3,7]<.05,"*",ifelse(df_res_pool[1,3,7]<.1,"+","")))}}$
+dag$ (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{format(round(df_means_out[5,7],digits=2),nsmall=2)}
+Sexpr{format(round(df_means_out[3,8],digits=2),nsmall=2)}
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{format(round(df_res_pool[2,1,7],digits=2),nsmall=2)}$^{
+Sexpr{format(round(df_res_pool[1,1,8],digits=2),nsmall=2)}$^{
 \backslash
-Sexpr{ifelse(df_res_pool[2,3,7]<.01,"**",ifelse(df_res_pool[2,3,7]<.05,"*",ifelse(df_res_pool[2,3,7]<.1,"+","")))}}$ 
+Sexpr{ifelse(df_res_pool[1,3,8]<.01,"**",ifelse(df_res_pool[1,3,8]<.05,"*",ifelse(df_res_pool[1,3,8]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{format(round(df_res[1,4,7],digits=0),nsmall=0)} 
+Sexpr{format(round(df_means_out[5,8],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_res_pool[2,1,8],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_res_pool[2,3,8]<.01,"**",ifelse(df_res_pool[2,3,8]<.05,"*",ifelse(df_res_pool[2,3,8]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_res[1,4,8],digits=0),nsmall=0)} 
 \backslash
 
 \backslash
@@ -11590,13 +11754,13 @@ Sexpr{format(round(df_res[1,4,7],digits=0),nsmall=0)}
 
 & (
 \backslash
-Sexpr{format(round(df_means_out[4,7],digits=2),nsmall=2)}) & (
+Sexpr{format(round(df_means_out[4,8],digits=2),nsmall=2)}) & (
 \backslash
-Sexpr{format(round(df_res_pool[1,2,7],digits=2),nsmall=2)})  & (
+Sexpr{format(round(df_res_pool[1,2,8],digits=2),nsmall=2)})  & (
 \backslash
-Sexpr{format(round(df_means_out[6,7],digits=2),nsmall=2)}) & (
+Sexpr{format(round(df_means_out[6,8],digits=2),nsmall=2)}) & (
 \backslash
-Sexpr{format(round(df_res_pool[2,2,7],digits=2),nsmall=2)})
+Sexpr{format(round(df_res_pool[2,2,8],digits=2),nsmall=2)})
 \end_layout
 
 \begin_layout Plain Layout
@@ -11670,10 +11834,10 @@ scriptsize
 \begin_layout Plain Layout
 
 Note:
- Column (1) reports control means at baseline for farmers that did not receive the seed trial pack (and standard deviations below);
- column (2) reports estimates of the average treatment effect of the seed trial pack;
-  column (3) reports control means at baseline for farmers that did not receive the cooking demonstration and tasting sessions (and standard deviations below);
- column (4) reports estimates of the average treatment effect of the cooking demonstration and tasting sessions.
+ Column (1) reports control group means at baseline (and standard deviations below);
+ column (2) reports the estimate of the intent-to-treat effect of the seed trial packs;
+ column (3) reports the estimate of the intent-to-treat effect of the cooking and tasting demonstrations;
+ column (4) is the interaction effect.
  Standard errors are below the estimates and are clustered at the level of randomization;
  **,
  *,
@@ -11753,7 +11917,7 @@ begin{center}
 
 
 \backslash
-begin{tabular}{rccccc}
+begin{tabular}{lccccc}
 \end_layout
 
 \begin_layout Plain Layout
@@ -11767,11 +11931,16 @@ hline
 
 \begin_layout Plain Layout
 
+& control & ITT & control & ITT  & 
+\backslash
+
+\backslash
+
 \end_layout
 
 \begin_layout Plain Layout
 
-& ctrl mean & trial pack & ctrl mean & cooking demo & nobs 
+& mean & trial pack & mean & cooking demo & nobs 
 \backslash
 
 \backslash
@@ -11783,6 +11952,97 @@ hline
 
 \backslash
 hline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Adoption Index
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_rnd[3,7],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd_pool[1,1,7],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd_pool[1,3,7]<.01,"**",ifelse(df_rnd_pool[1,3,7]<.05,"*",ifelse(df_rnd_pool[1,3,7]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_rnd[5,7],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd_pool[2,1,7],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd_pool[2,3,7]<.01,"**",ifelse(df_rnd_pool[2,3,7]<.05,"*",ifelse(df_rnd_pool[2,3,7]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[1,4,7],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_rnd[4,7],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_rnd_pool[1,2,7],digits=2),nsmall=2)})  &
+\end_layout
+
+\begin_layout Plain Layout
+
+ (
+\backslash
+Sexpr{format(round(df_means_rnd[6,7],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_rnd_pool[2,2,7],digits=2),nsmall=2)}) &  
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -12317,46 +12577,46 @@ Sexpr{format(round(df_rnd_pool[2,2,6],digits=2),nsmall=2)}) &
 
 \begin_layout Plain Layout
 
-Index
+Has used Bazooka (fresh or recycled) on randomly selected plot in last season (yes=1)
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{format(round(df_means_rnd[3,7],digits=2),nsmall=2)}
+Sexpr{format(round(df_means_rnd[3,8],digits=2),nsmall=2)}
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{format(round(df_rnd_pool[1,1,7],digits=2),nsmall=2)}$^{
+Sexpr{format(round(df_rnd_pool[1,1,8],digits=2),nsmall=2)}$^{
 \backslash
-Sexpr{ifelse(df_rnd_pool[1,3,7]<.01,"**",ifelse(df_rnd_pool[1,3,7]<.05,"*",ifelse(df_rnd_pool[1,3,7]<.1,"+","")))}}$
+Sexpr{ifelse(df_rnd_pool[1,3,8]<.01,"**",ifelse(df_rnd_pool[1,3,8]<.05,"*",ifelse(df_rnd_pool[1,3,8]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{format(round(df_means_rnd[5,7],digits=2),nsmall=2)}
+Sexpr{format(round(df_means_rnd[5,8],digits=2),nsmall=2)}
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{format(round(df_rnd_pool[2,1,7],digits=2),nsmall=2)}$^{
+Sexpr{format(round(df_rnd_pool[2,1,8],digits=2),nsmall=2)}$^{
 \backslash
-Sexpr{ifelse(df_rnd_pool[2,3,7]<.01,"**",ifelse(df_rnd_pool[2,3,7]<.05,"*",ifelse(df_rnd_pool[2,3,7]<.1,"+","")))}}$ 
+Sexpr{ifelse(df_rnd_pool[2,3,8]<.01,"**",ifelse(df_rnd_pool[2,3,8]<.05,"*",ifelse(df_rnd_pool[2,3,8]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{format(round(df_rnd[1,4,7],digits=0),nsmall=0)} 
+Sexpr{format(round(df_rnd[1,4,8],digits=0),nsmall=0)} 
 \backslash
 
 \backslash
@@ -12375,18 +12635,27 @@ Sexpr{format(round(df_rnd[1,4,7],digits=0),nsmall=0)}
 
 & (
 \backslash
-Sexpr{format(round(df_means_rnd[4,7],digits=2),nsmall=2)}) & (
+Sexpr{format(round(df_means_rnd[4,8],digits=2),nsmall=2)}) & (
 \backslash
-Sexpr{format(round(df_rnd_pool[1,2,7],digits=2),nsmall=2)})  &
+Sexpr{format(round(df_rnd_pool[1,2,8],digits=2),nsmall=2)})  &
 \end_layout
 
 \begin_layout Plain Layout
 
  (
 \backslash
-Sexpr{format(round(df_means_rnd[6,7],digits=2),nsmall=2)}) & (
+Sexpr{format(round(df_means_rnd[6,8],digits=2),nsmall=2)}) & (
 \backslash
-Sexpr{format(round(df_rnd_pool[2,2,7],digits=2),nsmall=2)}) &  
+Sexpr{format(round(df_rnd_pool[2,2,8],digits=2),nsmall=2)}) &  
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
 \backslash
 
 \backslash
@@ -12398,11 +12667,6 @@ Sexpr{format(round(df_rnd_pool[2,2,7],digits=2),nsmall=2)}) &
 \end_layout
 
 \begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
 
 \end_layout
 
@@ -12443,10 +12707,10 @@ scriptsize
 \begin_layout Plain Layout
 
 Note:
- Column (1) reports control means at baseline for farmers that did not receive the seed trial pack (and standard deviations below);
- column (2) reports estimates of the average treatment effect of the seed trial pack;
-  column (3) reports control means at baseline for farmers that did not receive the cooking demonstration and tasting sessions (and standard deviations below);
- column (4) reports estimates of the average treatment effect of the cooking demonstration and tasting sessions.
+ Column (1) reports control group means at baseline (and standard deviations below);
+ column (2) reports the estimate of the intent-to-treat effect of the seed trial packs;
+ column (3) reports the estimate of the intent-to-treat effect of the cooking and tasting demonstrations;
+ column (4) is the interaction effect.
  Standard errors are below the estimates and are clustered at the level of randomization;
  **,
  *,
@@ -12485,435 +12749,13 @@ placement document
 alignment document
 wide false
 sideways true
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Impact on women co-head involvement (pooled)
-\begin_inset CommandInset label
-LatexCommand label
-name "decision_pooled"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-
-
-\backslash
-footnotesize
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tabular}{rccccc}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& ctrl mean & trial pack & ctrl mean & cooking demo & nobs 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Woman involved in decision what to plant?
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_decision[3,1],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_decision_pool[1,1,1],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_decision_pool[1,3,1]<.01,"**",ifelse(df_decision_pool[1,3,1]<.05,"*",ifelse(df_decision_pool[1,3,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_decision[5,1],digits=2),nsmall=2)} 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_decision_pool[2,1,1],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_decision_pool[2,3,1]<.01,"**",ifelse(df_decision_pool[2,3,1]<.05,"*",ifelse(df_decision_pool[2,3,1]<.1,"+","")))}}$  &
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-Sexpr{format(round(df_decision[1,4,1],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{format(round(df_means_decision[4,1],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_decision_pool[1,2,1],digits=2),nsmall=2)})  &
-\end_layout
-
-\begin_layout Plain Layout
-
-(
-\backslash
-Sexpr{format(round(df_means_decision[6,1],digits=2),nsmall=2)}) &(
-\backslash
-Sexpr{format(round(df_decision_pool[2,2,1],digits=2),nsmall=2)}) 
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Women involved in what to do with harvest?
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_decision[3,2],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_decision_pool[1,1,2],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_decision_pool[1,3,2]<.01,"**",ifelse(df_decision_pool[1,3,2]<.05,"*",ifelse(df_decision_pool[1,3,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_decision[5,2],digits=2),nsmall=2)} 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_decision_pool[2,1,2],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_decision_pool[2,3,2]<.01,"**",ifelse(df_decision_pool[2,3,2]<.05,"*",ifelse(df_decision_pool[2,3,2]<.1,"+","")))}}$  &
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-Sexpr{format(round(df_decision[1,4,2],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{format(round(df_means_decision[4,2],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_decision_pool[1,2,2],digits=2),nsmall=2)})  &
-\end_layout
-
-\begin_layout Plain Layout
-
-(
-\backslash
-Sexpr{format(round(df_means_decision[6,2],digits=2),nsmall=2)}) &(
-\backslash
-Sexpr{format(round(df_decision_pool[2,2,2],digits=2),nsmall=2)}) 
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Index
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_decision[3,3],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_decision_pool[1,1,3],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_decision_pool[1,3,3]<.01,"**",ifelse(df_decision_pool[1,3,3]<.05,"*",ifelse(df_decision_pool[1,3,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_decision[5,3],digits=2),nsmall=2)} 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_decision_pool[2,1,3],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_decision_pool[2,3,3]<.01,"**",ifelse(df_decision_pool[2,3,3]<.05,"*",ifelse(df_decision_pool[2,3,3]<.1,"+","")))}}$  &
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-Sexpr{format(round(df_decision[1,4,3],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{format(round(df_means_decision[4,3],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_decision_pool[1,2,3],digits=2),nsmall=2)})  &
-\end_layout
-
-\begin_layout Plain Layout
-
-(
-\backslash
-Sexpr{format(round(df_means_decision[6,3],digits=2),nsmall=2)}) &(
-\backslash
-Sexpr{format(round(df_decision_pool[2,2,3],digits=2),nsmall=2)}) 
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{tabular}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-scriptsize
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Note:
- Column (1) reports control means at baseline for farmers that did not receive the seed trial pack (and standard deviations below);
- column (2) reports estimates of the average treatment effect of the seed trial pack;
-  column (3) reports control means at baseline for farmers that did not receive the cooking demonstration and tasting sessions (and standard deviations below);
- column (4) reports estimates of the average treatment effect of the cooking demonstration and tasting sessions.
- Standard errors are below the estimates and are clustered at the level of randomization;
- **,
- *,
- and + denote significance at the 1,
- 5,
- and 10
-\backslash
-% levels based on sharpened q-values 
-\backslash
-citep{benjamini2006adaptive}.
- All regressions include baseline outcome as control.
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float table
-placement document
-alignment document
-wide false
-sideways true
-status collapsed
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Disposal (pooled)
+Use of harvest (pooled)
 \begin_inset CommandInset label
 LatexCommand label
 name "disposal_pooled"
@@ -12950,7 +12792,7 @@ begin{center}
 
 
 \backslash
-begin{tabular}{rccccc}
+begin{tabular}{lccccc}
 \end_layout
 
 \begin_layout Plain Layout
@@ -12964,11 +12806,16 @@ hline
 
 \begin_layout Plain Layout
 
+& control & ITT & control & ITT  & 
+\backslash
+
+\backslash
+
 \end_layout
 
 \begin_layout Plain Layout
 
-& ctrl mean & trial pack & ctrl mean & cooking demo & nobs 
+& mean & trial pack & mean & cooking demo & nobs 
 \backslash
 
 \backslash
@@ -12993,7 +12840,110 @@ hline
 
 \begin_layout Plain Layout
 
-Share used for own consumed (%)
+\end_layout
+
+\begin_layout Plain Layout
+
+Use Index
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_disposal[1,4],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_disposal_pool[1,1,4],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_disposal_pool[1,3,4]<.01,"**",ifelse(df_disposal_pool[1,3,4]<.05,"*",ifelse(df_disposal_pool[1,3,4]<.1,"+","")))}}$ &
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round(df_means_disposal[1,4],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_disposal_pool[2,1,4],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_disposal_pool[2,3,4]<.01,"**",ifelse(df_disposal_pool[2,3,4]<.05,"*",ifelse(df_disposal_pool[2,3,4]<.1,"+","")))}}$ &
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round(df_disposal[1,4,4],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_disposal[4,4],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_disposal_pool[1,2,4],digits=2),nsmall=2)})  &
+\end_layout
+
+\begin_layout Plain Layout
+
+(
+\backslash
+Sexpr{format(round(df_means_disposal[6,4],digits=2),nsmall=2)}) &
+\end_layout
+
+\begin_layout Plain Layout
+
+(
+\backslash
+Sexpr{format(round(df_disposal_pool[2,2,4],digits=2),nsmall=2)}) 
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Share of maize consumed (
+\backslash
+%)
 \end_layout
 
 \begin_layout Plain Layout
@@ -13081,7 +13031,9 @@ Sexpr{format(round(df_disposal_pool[2,2,1],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Share sold (%)
+Share of maize sold (
+\backslash
+%)
 \end_layout
 
 \begin_layout Plain Layout
@@ -13173,7 +13125,9 @@ Sexpr{format(round(df_disposal_pool[2,2,2],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Share kept as seed (%)
+Share of maize kept for seed (
+\backslash
+%)
 \end_layout
 
 \begin_layout Plain Layout
@@ -13265,46 +13219,221 @@ Sexpr{format(round(df_disposal_pool[2,2,3],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Index
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+scriptsize
+\end_layout
+
+\begin_layout Plain Layout
+
+Note:
+ Column (1) reports control group means at baseline (and standard deviations below);
+ column (2) reports the estimate of the intent-to-treat effect of the seed trial packs;
+ column (3) reports the estimate of the intent-to-treat effect of the cooking and tasting demonstrations;
+ column (4) is the interaction effect.
+ Standard errors are below the estimates and are clustered at the level of randomization;
+ **,
+ *,
+ and + denote significance at the 1,
+ 5,
+ and 10
+\backslash
+% levels based on sharpened q-values 
+\backslash
+citep{benjamini2006adaptive}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement document
+alignment document
+wide false
+sideways true
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Impact on women co-head involvement (pooled)
+\begin_inset CommandInset label
+LatexCommand label
+name "decision_pooled"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnotesize
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tabular}{lccccc}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+& control & ITT & control & ITT  & 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& mean & trial pack & mean & cooking demo & nobs 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Women's Empowerment Index
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{format(round(df_means_disposal[1,4],digits=2),nsmall=2)}
+Sexpr{format(round(df_means_decision[3,3],digits=2),nsmall=2)}
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{format(round(df_disposal_pool[1,1,4],digits=2),nsmall=2)}$^{
+Sexpr{format(round(df_decision_pool[1,1,3],digits=2),nsmall=2)}$^{
 \backslash
-Sexpr{ifelse(df_disposal_pool[1,3,4]<.01,"**",ifelse(df_disposal_pool[1,3,4]<.05,"*",ifelse(df_disposal_pool[1,3,4]<.1,"+","")))}}$ &
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-Sexpr{format(round(df_means_disposal[1,4],digits=2),nsmall=2)}
+Sexpr{ifelse(df_decision_pool[1,3,3]<.01,"**",ifelse(df_decision_pool[1,3,3]<.05,"*",ifelse(df_decision_pool[1,3,3]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{format(round(df_disposal_pool[2,1,4],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_disposal_pool[2,3,4]<.01,"**",ifelse(df_disposal_pool[2,3,4]<.05,"*",ifelse(df_disposal_pool[2,3,4]<.1,"+","")))}}$ &
+Sexpr{format(round(df_means_decision[5,3],digits=2),nsmall=2)} 
 \end_layout
 
 \begin_layout Plain Layout
 
-
+& 
 \backslash
-Sexpr{format(round(df_disposal[1,4,4],digits=0),nsmall=0)} 
+Sexpr{format(round(df_decision_pool[2,1,3],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_decision_pool[2,3,3]<.01,"**",ifelse(df_decision_pool[2,3,3]<.05,"*",ifelse(df_decision_pool[2,3,3]<.1,"+","")))}}$  &
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+Sexpr{format(round(df_decision[1,4,3],digits=0),nsmall=0)} 
 \backslash
 
 \backslash
@@ -13319,28 +13448,203 @@ Sexpr{format(round(df_disposal[1,4,4],digits=0),nsmall=0)}
 
 & (
 \backslash
-Sexpr{format(round(df_means_disposal[4,4],digits=2),nsmall=2)}) & (
+Sexpr{format(round(df_means_decision[4,3],digits=2),nsmall=2)}) & (
 \backslash
-Sexpr{format(round(df_disposal_pool[1,2,4],digits=2),nsmall=2)})  &
+Sexpr{format(round(df_decision_pool[1,2,3],digits=2),nsmall=2)})  &
 \end_layout
 
 \begin_layout Plain Layout
 
 (
 \backslash
-Sexpr{format(round(df_means_disposal[6,4],digits=2),nsmall=2)}) &
-\end_layout
-
-\begin_layout Plain Layout
-
-(
+Sexpr{format(round(df_means_decision[6,3],digits=2),nsmall=2)}) &(
 \backslash
-Sexpr{format(round(df_disposal_pool[2,2,4],digits=2),nsmall=2)}) 
+Sexpr{format(round(df_decision_pool[2,2,3],digits=2),nsmall=2)}) 
 \end_layout
 
 \begin_layout Plain Layout
 
  
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Woman involved in decision what to plant (1=yes)
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_decision[3,1],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_decision_pool[1,1,1],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_decision_pool[1,3,1]<.01,"**",ifelse(df_decision_pool[1,3,1]<.05,"*",ifelse(df_decision_pool[1,3,1]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_decision[5,1],digits=2),nsmall=2)} 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_decision_pool[2,1,1],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_decision_pool[2,3,1]<.01,"**",ifelse(df_decision_pool[2,3,1]<.05,"*",ifelse(df_decision_pool[2,3,1]<.1,"+","")))}}$  &
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+Sexpr{format(round(df_decision[1,4,1],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_decision[4,1],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_decision_pool[1,2,1],digits=2),nsmall=2)})  &
+\end_layout
+
+\begin_layout Plain Layout
+
+(
+\backslash
+Sexpr{format(round(df_means_decision[6,1],digits=2),nsmall=2)}) &(
+\backslash
+Sexpr{format(round(df_decision_pool[2,2,1],digits=2),nsmall=2)}) 
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Women involved in what to do with harvest (1=yes)
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_decision[3,2],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_decision_pool[1,1,2],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_decision_pool[1,3,2]<.01,"**",ifelse(df_decision_pool[1,3,2]<.05,"*",ifelse(df_decision_pool[1,3,2]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_decision[5,2],digits=2),nsmall=2)} 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_decision_pool[2,1,2],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_decision_pool[2,3,2]<.01,"**",ifelse(df_decision_pool[2,3,2]<.05,"*",ifelse(df_decision_pool[2,3,2]<.1,"+","")))}}$  &
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+Sexpr{format(round(df_decision[1,4,2],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_decision[4,2],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_decision_pool[1,2,2],digits=2),nsmall=2)})  &
+\end_layout
+
+\begin_layout Plain Layout
+
+(
+\backslash
+Sexpr{format(round(df_means_decision[6,2],digits=2),nsmall=2)}) &(
+\backslash
+Sexpr{format(round(df_decision_pool[2,2,2],digits=2),nsmall=2)}) 
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
 \backslash
 
 \backslash
@@ -13396,11 +13700,15 @@ scriptsize
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\begin_layout Plain Layout
+
 Note:
- Column (1) reports control means at baseline for farmers that did not receive the seed trial pack (and standard deviations below);
- column (2) reports estimates of the average treatment effect of the seed trial pack;
-  column (3) reports control means at baseline for farmers that did not receive the cooking demonstration and tasting sessions (and standard deviations below);
- column (4) reports estimates of the average treatment effect of the cooking demonstration and tasting sessions.
+ Column (1) reports control group means at baseline (and standard deviations below);
+ column (2) reports the estimate of the intent-to-treat effect of the seed trial packs;
+ column (3) reports the estimate of the intent-to-treat effect of the cooking and tasting demonstrations;
+ column (4) is the interaction effect.
  Standard errors are below the estimates and are clustered at the level of randomization;
  **,
  *,
@@ -13411,6 +13719,12 @@ Note:
 % levels based on sharpened q-values 
 \backslash
 citep{benjamini2006adaptive}.
+ All regressions include baseline outcome as control.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -13472,7 +13786,7 @@ begin{center}
 
 
 \backslash
-begin{tabular}{rccccc}
+begin{tabular}{lccccc}
 \end_layout
 
 \begin_layout Plain Layout
@@ -13486,11 +13800,16 @@ hline
 
 \begin_layout Plain Layout
 
+& control & ITT & control & ITT  & 
+\backslash
+
+\backslash
+
 \end_layout
 
 \begin_layout Plain Layout
 
-& ctrl mean & trial pack & ctrl mean & cooking demo & nobs 
+& mean & trial pack & mean & cooking demo & nobs 
 \backslash
 
 \backslash
@@ -13515,7 +13834,100 @@ hline
 
 \begin_layout Plain Layout
 
-Better off than average of village?
+Welfare and Food Security Index
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_welfare[1,6],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_welfare_pool[1,1,6],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_welfare_pool[1,3,6]<.01,"**",ifelse(df_welfare_pool[1,3,6]<.05,"*",ifelse(df_welfare_pool[1,3,6]<.1,"+","")))}}$ &
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round(df_means_welfare[1,6],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_welfare_pool[2,1,6],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_welfare_pool[2,3,6]<.01,"**",ifelse(df_welfare_pool[2,3,6]<.05,"*",ifelse(df_welfare_pool[2,3,6]<.1,"+","")))}}$ &
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Sexpr{format(round(df_welfare[1,4,6],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_welfare[4,6],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_welfare_pool[1,2,6],digits=2),nsmall=2)})  &
+\end_layout
+
+\begin_layout Plain Layout
+
+(
+\backslash
+Sexpr{format(round(df_means_welfare[6,6],digits=2),nsmall=2)}) &
+\end_layout
+
+\begin_layout Plain Layout
+
+(
+\backslash
+Sexpr{format(round(df_welfare_pool[2,2,6],digits=2),nsmall=2)}) 
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+HH is better off than average of village (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -13603,7 +14015,7 @@ Sexpr{format(round(df_welfare_pool[2,2,1],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Better off than 6 months ago?
+HH is better off than 6 months ago (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -13695,7 +14107,7 @@ Sexpr{format(round(df_welfare_pool[2,2,2],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Can always eat what they want?
+HH can always eat what they want (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -13787,7 +14199,7 @@ Sexpr{format(round(df_welfare_pool[2,2,3],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Can always eat quantity needed?
+HH can always eat quantity needed (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -13967,99 +14379,6 @@ Sexpr{format(round(df_welfare_pool[2,2,5],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Index
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_welfare[1,6],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_welfare_pool[1,1,6],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_welfare_pool[1,3,6]<.01,"**",ifelse(df_welfare_pool[1,3,6]<.05,"*",ifelse(df_welfare_pool[1,3,6]<.1,"+","")))}}$ &
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-Sexpr{format(round(df_means_welfare[1,6],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_welfare_pool[2,1,6],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_welfare_pool[2,3,6]<.01,"**",ifelse(df_welfare_pool[2,3,6]<.05,"*",ifelse(df_welfare_pool[2,3,6]<.1,"+","")))}}$ &
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-Sexpr{format(round(df_welfare[1,4,6],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{format(round(df_means_welfare[4,6],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_welfare_pool[1,2,6],digits=2),nsmall=2)})  &
-\end_layout
-
-\begin_layout Plain Layout
-
-(
-\backslash
-Sexpr{format(round(df_means_welfare[6,6],digits=2),nsmall=2)}) &
-\end_layout
-
-\begin_layout Plain Layout
-
-(
-\backslash
-Sexpr{format(round(df_welfare_pool[2,2,6],digits=2),nsmall=2)}) 
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \begin_layout Plain Layout
@@ -14104,10 +14423,10 @@ scriptsize
 \begin_layout Plain Layout
 
 Note:
- Column (1) reports control means at baseline for farmers that did not receive the seed trial pack (and standard deviations below);
- column (2) reports estimates of the average treatment effect of the seed trial pack;
-  column (3) reports control means at baseline for farmers that did not receive the cooking demonstration and tasting sessions (and standard deviations below);
- column (4) reports estimates of the average treatment effect of the cooking demonstration and tasting sessions.
+ Column (1) reports control group means at baseline (and standard deviations below);
+ column (2) reports the estimate of the intent-to-treat effect of the seed trial packs;
+ column (3) reports the estimate of the intent-to-treat effect of the cooking and tasting demonstrations;
+ column (4) is the interaction effect.
  Standard errors are below the estimates and are clustered at the level of randomization;
  **,
  *,
@@ -14182,7 +14501,7 @@ begin{center}
 
 
 \backslash
-begin{tabular}{rccccc}
+begin{tabular}{lccccc}
 \end_layout
 
 \begin_layout Plain Layout
@@ -14196,11 +14515,16 @@ hline
 
 \begin_layout Plain Layout
 
+& control & ITT & control & ITT  & 
+\backslash
+
+\backslash
+
 \end_layout
 
 \begin_layout Plain Layout
 
-& ctrl mean & trial pack & ctrl mean & cooking demo & nobs 
+& mean & trial pack & mean & cooking demo & nobs 
 \backslash
 
 \backslash
@@ -14212,6 +14536,94 @@ hline
 
 \backslash
 hline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Awareness and Attitudes Index
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_path[3,9],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path_pool[1,1,9],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path_pool[1,3,9]<.01,"**",ifelse(df_path_pool[1,3,9]<.05,"*",ifelse(df_path_pool[1,3,9]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_path[5,9],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_path_pool[2,1,9],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_path_pool[2,3,9]<.01,"**",ifelse(df_path_pool[2,3,9]<.05,"*",ifelse(df_path_pool[2,3,9]<.1,"+","")))}}$ &
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+Sexpr{format(round(df_path[1,4,9],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_path[4,9],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_path_pool[1,2,9],digits=2),nsmall=2)})  &
+\end_layout
+
+\begin_layout Plain Layout
+
+(
+\backslash
+Sexpr{format(round(df_means_path[6,9],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_path_pool[2,2,9],digits=2),nsmall=2)}) & 
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -14393,7 +14805,7 @@ Sexpr{format(round(df_path_pool[2,2,2],digits=2),nsmall=2)}) &
 
 \begin_layout Plain Layout
 
-Thinks improved variety is risky
+Thinks improved varieties are risky (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -14476,7 +14888,7 @@ Sexpr{format(round(df_path_pool[2,2,3],digits=2),nsmall=2)}) &
 
 \begin_layout Plain Layout
 
-Thinks Bazooka is risky
+Thinks Bazooka is risky (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -14559,7 +14971,7 @@ Sexpr{format(round(df_path_pool[2,2,4],digits=2),nsmall=2)}) &
 
 \begin_layout Plain Layout
 
-Recommended improved varieties to others
+Recommended improved varieties to others (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -14642,7 +15054,7 @@ Sexpr{format(round(df_path_pool[2,2,5],digits=2),nsmall=2)}) &
 
 \begin_layout Plain Layout
 
-Recommended Bazooka to others
+Recommended Bazooka to others (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -14725,7 +15137,7 @@ Sexpr{format(round(df_path_pool[2,2,6],digits=2),nsmall=2)}) &
 
 \begin_layout Plain Layout
 
-Will use improved varieties in the future
+Will use improved varieties in the future (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -14808,7 +15220,7 @@ Sexpr{format(round(df_path_pool[2,2,7],digits=2),nsmall=2)}) &
 
 \begin_layout Plain Layout
 
-Will use Bazooka in the future
+Will use Bazooka in the future (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -14900,81 +15312,6 @@ Sexpr{format(round(df_path_pool[2,2,8],digits=2),nsmall=2)}) &
 
 \begin_layout Plain Layout
 
-Index
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_path[3,9],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_path_pool[1,1,9],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_path_pool[1,3,9]<.01,"**",ifelse(df_path_pool[1,3,9]<.05,"*",ifelse(df_path_pool[1,3,9]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_path[5,9],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_path_pool[2,1,9],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_path_pool[2,3,9]<.01,"**",ifelse(df_path_pool[2,3,9]<.05,"*",ifelse(df_path_pool[2,3,9]<.1,"+","")))}}$ &
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-Sexpr{format(round(df_path[1,4,9],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{format(round(df_means_path[4,9],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_path_pool[1,2,9],digits=2),nsmall=2)})  &
-\end_layout
-
-\begin_layout Plain Layout
-
-(
-\backslash
-Sexpr{format(round(df_means_path[6,9],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_path_pool[2,2,9],digits=2),nsmall=2)}) & 
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
 \end_layout
 
 \begin_layout Plain Layout
@@ -15019,10 +15356,10 @@ scriptsize
 \begin_layout Plain Layout
 
 Note:
- Column (1) reports control means at baseline for farmers that did not receive the seed trial pack (and standard deviations below);
- column (2) reports estimates of the average treatment effect of the seed trial pack;
-  column (3) reports control means at baseline for farmers that did not receive the cooking demonstration and tasting sessions (and standard deviations below);
- column (4) reports estimates of the average treatment effect of the cooking demonstration and tasting sessions.
+ Column (1) reports control group means at baseline (and standard deviations below);
+ column (2) reports the estimate of the intent-to-treat effect of the seed trial packs;
+ column (3) reports the estimate of the intent-to-treat effect of the cooking and tasting demonstrations;
+ column (4) is the interaction effect.
  Standard errors are below the estimates and are clustered at the level of randomization;
  **,
  *,
@@ -15063,13 +15400,13 @@ placement document
 alignment document
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Impact on Consumption traits - improved varieties compared to local (pooled)
+Impact on perceptions of consumption traits of maize grain obtained from improved seed varieties versus maize grain obtained from local seed varieties (pooled)
 \begin_inset CommandInset label
 LatexCommand label
 name "cons_traits_compare_pooled"
@@ -15106,7 +15443,7 @@ begin{center}
 
 
 \backslash
-begin{tabular}{rccccc}
+begin{tabular}{lccccc}
 \end_layout
 
 \begin_layout Plain Layout
@@ -15120,11 +15457,16 @@ hline
 
 \begin_layout Plain Layout
 
+& control & ITT & control & ITT  & 
+\backslash
+
+\backslash
+
 \end_layout
 
 \begin_layout Plain Layout
 
-& ctrl mean & trial pack & ctrl mean & cooking demo & nobs 
+& mean & trial pack & mean & cooking demo & nobs 
 \backslash
 
 \backslash
@@ -15149,344 +15491,7 @@ hline
 
 \begin_layout Plain Layout
 
-Taste
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_compare_cons_traits_seed[3,1],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_cons_traits_seed_pool[1,1,1],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_cons_traits_seed_pool[1,3,1]<.01,"**",ifelse(df_compare_cons_traits_seed_pool[1,3,1]<.05,"*",ifelse(df_compare_cons_traits_seed_pool[1,3,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_compare_cons_traits_seed[5,1],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_cons_traits_seed_pool[2,1,1],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_cons_traits_seed_pool[2,3,1]<.01,"**",ifelse(df_compare_cons_traits_seed_pool[2,3,1]<.05,"*",ifelse(df_compare_cons_traits_seed_pool[2,3,1]<.1,"+","")))}}$ &
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-Sexpr{format(round(df_compare_cons_traits_seed[1,4,1],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{format(round(df_means_compare_cons_traits_seed[4,1],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_compare_cons_traits_seed_pool[1,2,1],digits=2),nsmall=2)})  &
-\end_layout
-
-\begin_layout Plain Layout
-
-(
-\backslash
-Sexpr{format(round(df_means_compare_cons_traits_seed[6,1],digits=2),nsmall=2)}) &(
-\backslash
-Sexpr{format(round(df_compare_cons_traits_seed_pool[2,2,1],digits=2),nsmall=2)}) & 
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Portions
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_compare_cons_traits_seed[3,2],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_cons_traits_seed_pool[1,1,2],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_cons_traits_seed_pool[1,3,2]<.01,"**",ifelse(df_compare_cons_traits_seed_pool[1,3,2]<.05,"*",ifelse(df_compare_cons_traits_seed_pool[1,3,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_compare_cons_traits_seed[5,2],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_cons_traits_seed_pool[2,1,2],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_cons_traits_seed_pool[2,3,2]<.01,"**",ifelse(df_compare_cons_traits_seed_pool[2,3,2]<.05,"*",ifelse(df_compare_cons_traits_seed_pool[2,3,2]<.1,"+","")))}}$ &
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-Sexpr{format(round(df_compare_cons_traits_seed[1,4,2],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{format(round(df_means_compare_cons_traits_seed[4,2],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_compare_cons_traits_seed_pool[1,2,2],digits=2),nsmall=2)})  &
-\end_layout
-
-\begin_layout Plain Layout
-
-(
-\backslash
-Sexpr{format(round(df_means_compare_cons_traits_seed[6,2],digits=2),nsmall=2)}) &(
-\backslash
-Sexpr{format(round(df_compare_cons_traits_seed_pool[2,2,2],digits=2),nsmall=2)}) & 
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Appearance
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_compare_cons_traits_seed[3,3],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_cons_traits_seed_pool[1,1,3],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_cons_traits_seed_pool[1,3,3]<.01,"**",ifelse(df_compare_cons_traits_seed_pool[1,3,3]<.05,"*",ifelse(df_compare_cons_traits_seed_pool[1,3,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_compare_cons_traits_seed[5,3],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_cons_traits_seed_pool[2,1,3],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_cons_traits_seed_pool[2,3,3]<.01,"**",ifelse(df_compare_cons_traits_seed_pool[2,3,3]<.05,"*",ifelse(df_compare_cons_traits_seed_pool[2,3,3]<.1,"+","")))}}$ &
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-Sexpr{format(round(df_compare_cons_traits_seed[1,4,3],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{format(round(df_means_compare_cons_traits_seed[4,3],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_compare_cons_traits_seed_pool[1,2,3],digits=2),nsmall=2)})  &
-\end_layout
-
-\begin_layout Plain Layout
-
-(
-\backslash
-Sexpr{format(round(df_means_compare_cons_traits_seed[6,3],digits=2),nsmall=2)}) &(
-\backslash
-Sexpr{format(round(df_compare_cons_traits_seed_pool[2,2,3],digits=2),nsmall=2)}) & 
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Ease of cooking
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_compare_cons_traits_seed[3,4],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_cons_traits_seed_pool[1,1,4],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_cons_traits_seed_pool[1,3,4]<.01,"**",ifelse(df_compare_cons_traits_seed_pool[1,3,4]<.05,"*",ifelse(df_compare_cons_traits_seed_pool[1,3,4]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_compare_cons_traits_seed[5,4],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_cons_traits_seed_pool[2,1,4],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_cons_traits_seed_pool[2,3,4]<.01,"**",ifelse(df_compare_cons_traits_seed_pool[2,3,4]<.05,"*",ifelse(df_compare_cons_traits_seed_pool[2,3,4]<.1,"+","")))}}$ &
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-Sexpr{format(round(df_compare_cons_traits_seed[1,4,4],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{format(round(df_means_compare_cons_traits_seed[4,4],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_compare_cons_traits_seed_pool[1,2,4],digits=2),nsmall=2)})  &
-\end_layout
-
-\begin_layout Plain Layout
-
-(
-\backslash
-Sexpr{format(round(df_means_compare_cons_traits_seed[6,4],digits=2),nsmall=2)}) &(
-\backslash
-Sexpr{format(round(df_compare_cons_traits_seed_pool[2,2,4],digits=2),nsmall=2)}) & 
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Index
+Consumption Trait Perception Index
 \end_layout
 
 \begin_layout Plain Layout
@@ -15574,6 +15579,356 @@ Sexpr{format(round(df_compare_cons_traits_seed_pool[2,2,5],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
+Improved variety grain tastes better (1=yes)
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_compare_cons_traits_seed[3,1],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_compare_cons_traits_seed_pool[1,1,1],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_compare_cons_traits_seed_pool[1,3,1]<.01,"**",ifelse(df_compare_cons_traits_seed_pool[1,3,1]<.05,"*",ifelse(df_compare_cons_traits_seed_pool[1,3,1]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_compare_cons_traits_seed[5,1],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_compare_cons_traits_seed_pool[2,1,1],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_compare_cons_traits_seed_pool[2,3,1]<.01,"**",ifelse(df_compare_cons_traits_seed_pool[2,3,1]<.05,"*",ifelse(df_compare_cons_traits_seed_pool[2,3,1]<.1,"+","")))}}$ &
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+Sexpr{format(round(df_compare_cons_traits_seed[1,4,1],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_compare_cons_traits_seed[4,1],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_compare_cons_traits_seed_pool[1,2,1],digits=2),nsmall=2)})  &
+\end_layout
+
+\begin_layout Plain Layout
+
+(
+\backslash
+Sexpr{format(round(df_means_compare_cons_traits_seed[6,1],digits=2),nsmall=2)}) &(
+\backslash
+Sexpr{format(round(df_compare_cons_traits_seed_pool[2,2,1],digits=2),nsmall=2)}) & 
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Portions obtained from improved variety grain are larger (1=yes)
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_compare_cons_traits_seed[3,2],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_compare_cons_traits_seed_pool[1,1,2],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_compare_cons_traits_seed_pool[1,3,2]<.01,"**",ifelse(df_compare_cons_traits_seed_pool[1,3,2]<.05,"*",ifelse(df_compare_cons_traits_seed_pool[1,3,2]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_compare_cons_traits_seed[5,2],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_compare_cons_traits_seed_pool[2,1,2],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_compare_cons_traits_seed_pool[2,3,2]<.01,"**",ifelse(df_compare_cons_traits_seed_pool[2,3,2]<.05,"*",ifelse(df_compare_cons_traits_seed_pool[2,3,2]<.1,"+","")))}}$ &
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+Sexpr{format(round(df_compare_cons_traits_seed[1,4,2],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_compare_cons_traits_seed[4,2],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_compare_cons_traits_seed_pool[1,2,2],digits=2),nsmall=2)})  &
+\end_layout
+
+\begin_layout Plain Layout
+
+(
+\backslash
+Sexpr{format(round(df_means_compare_cons_traits_seed[6,2],digits=2),nsmall=2)}) &(
+\backslash
+Sexpr{format(round(df_compare_cons_traits_seed_pool[2,2,2],digits=2),nsmall=2)}) & 
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Improved variety grain had better appearance (1=yes)
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_compare_cons_traits_seed[3,3],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_compare_cons_traits_seed_pool[1,1,3],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_compare_cons_traits_seed_pool[1,3,3]<.01,"**",ifelse(df_compare_cons_traits_seed_pool[1,3,3]<.05,"*",ifelse(df_compare_cons_traits_seed_pool[1,3,3]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_compare_cons_traits_seed[5,3],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_compare_cons_traits_seed_pool[2,1,3],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_compare_cons_traits_seed_pool[2,3,3]<.01,"**",ifelse(df_compare_cons_traits_seed_pool[2,3,3]<.05,"*",ifelse(df_compare_cons_traits_seed_pool[2,3,3]<.1,"+","")))}}$ &
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+Sexpr{format(round(df_compare_cons_traits_seed[1,4,3],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_compare_cons_traits_seed[4,3],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_compare_cons_traits_seed_pool[1,2,3],digits=2),nsmall=2)})  &
+\end_layout
+
+\begin_layout Plain Layout
+
+(
+\backslash
+Sexpr{format(round(df_means_compare_cons_traits_seed[6,3],digits=2),nsmall=2)}) &(
+\backslash
+Sexpr{format(round(df_compare_cons_traits_seed_pool[2,2,3],digits=2),nsmall=2)}) & 
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Improved variety grain is easier to cook (1=yes)
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_compare_cons_traits_seed[3,4],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_compare_cons_traits_seed_pool[1,1,4],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_compare_cons_traits_seed_pool[1,3,4]<.01,"**",ifelse(df_compare_cons_traits_seed_pool[1,3,4]<.05,"*",ifelse(df_compare_cons_traits_seed_pool[1,3,4]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_compare_cons_traits_seed[5,4],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_compare_cons_traits_seed_pool[2,1,4],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_compare_cons_traits_seed_pool[2,3,4]<.01,"**",ifelse(df_compare_cons_traits_seed_pool[2,3,4]<.05,"*",ifelse(df_compare_cons_traits_seed_pool[2,3,4]<.1,"+","")))}}$ &
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+Sexpr{format(round(df_compare_cons_traits_seed[1,4,4],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_compare_cons_traits_seed[4,4],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_compare_cons_traits_seed_pool[1,2,4],digits=2),nsmall=2)})  &
+\end_layout
+
+\begin_layout Plain Layout
+
+(
+\backslash
+Sexpr{format(round(df_means_compare_cons_traits_seed[6,4],digits=2),nsmall=2)}) &(
+\backslash
+Sexpr{format(round(df_compare_cons_traits_seed_pool[2,2,4],digits=2),nsmall=2)}) & 
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -15609,10 +15964,10 @@ scriptsize
 \begin_layout Plain Layout
 
 Note:
- Column (1) reports control means at baseline for farmers that did not receive the seed trial pack (and standard deviations below);
- column (2) reports estimates of the average treatment effect of the seed trial pack;
-  column (3) reports control means at baseline for farmers that did not receive the cooking demonstration and tasting sessions (and standard deviations below);
- column (4) reports estimates of the average treatment effect of the cooking demonstration and tasting sessions.
+ Column (1) reports control group means at baseline (and standard deviations below);
+ column (2) reports the estimate of the intent-to-treat effect of the seed trial packs;
+ column (3) reports the estimate of the intent-to-treat effect of the cooking and tasting demonstrations;
+ column (4) is the interaction effect.
  Standard errors are below the estimates and are clustered at the level of randomization;
  **,
  *,
@@ -15650,13 +16005,13 @@ placement document
 alignment document
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Impact on Production traits - improved varieties compared to local (pooled)
+Impact on perceptions of production traits of improved seed varieties versus local seed (pooled)
 \begin_inset CommandInset label
 LatexCommand label
 name "prod_traits_compared_pooled"
@@ -15693,7 +16048,7 @@ begin{center}
 
 
 \backslash
-begin{tabular}{rccccc}
+begin{tabular}{lccccc}
 \end_layout
 
 \begin_layout Plain Layout
@@ -15707,11 +16062,16 @@ hline
 
 \begin_layout Plain Layout
 
+& control & ITT & control & ITT  & 
+\backslash
+
+\backslash
+
 \end_layout
 
 \begin_layout Plain Layout
 
-& ctrl mean & trial pack & ctrl mean & cooking demo & nobs 
+& mean & trial pack & mean & cooking demo & nobs 
 \backslash
 
 \backslash
@@ -15736,452 +16096,7 @@ hline
 
 \begin_layout Plain Layout
 
-Yield
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_compare_prod_traits_seed[3,1],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_prod_traits_seed_pool[1,1,1],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_prod_traits_seed_pool[1,3,1]<.01,"**",ifelse(df_compare_prod_traits_seed_pool[1,3,1]<.05,"*",ifelse(df_compare_prod_traits_seed_pool[1,3,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_compare_prod_traits_seed[5,1],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_prod_traits_seed_pool[2,1,1],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_prod_traits_seed_pool[2,3,1]<.01,"**",ifelse(df_compare_prod_traits_seed_pool[2,3,1]<.05,"*",ifelse(df_compare_prod_traits_seed_pool[2,3,1]<.1,"+","")))}}$ &
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-Sexpr{format(round(df_compare_prod_traits_seed[1,4,1],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{format(round(df_means_compare_prod_traits_seed[4,1],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_compare_prod_traits_seed_pool[1,2,1],digits=2),nsmall=2)})  &
-\end_layout
-
-\begin_layout Plain Layout
-
- (
-\backslash
-Sexpr{format(round(df_means_compare_prod_traits_seed[6,1],digits=2),nsmall=2)}) &
-\end_layout
-
-\begin_layout Plain Layout
-
-(
-\backslash
-Sexpr{format(round(df_compare_prod_traits_seed_pool[2,2,1],digits=2),nsmall=2)}) & 
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Abiotic stresses
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_compare_prod_traits_seed[3,2],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_prod_traits_seed_pool[1,1,2],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_prod_traits_seed_pool[1,3,2]<.01,"**",ifelse(df_compare_prod_traits_seed_pool[1,3,2]<.05,"*",ifelse(df_compare_prod_traits_seed_pool[1,3,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_compare_prod_traits_seed[5,2],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_prod_traits_seed_pool[2,1,2],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_prod_traits_seed_pool[2,3,2]<.01,"**",ifelse(df_compare_prod_traits_seed_pool[2,3,2]<.05,"*",ifelse(df_compare_prod_traits_seed_pool[2,3,2]<.1,"+","")))}}$ &
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-Sexpr{format(round(df_compare_prod_traits_seed[1,4,2],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{format(round(df_means_compare_prod_traits_seed[4,2],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_compare_prod_traits_seed_pool[1,2,2],digits=2),nsmall=2)})  &
-\end_layout
-
-\begin_layout Plain Layout
-
- (
-\backslash
-Sexpr{format(round(df_means_compare_prod_traits_seed[6,2],digits=2),nsmall=2)}) &
-\end_layout
-
-\begin_layout Plain Layout
-
-(
-\backslash
-Sexpr{format(round(df_compare_prod_traits_seed_pool[2,2,2],digits=2),nsmall=2)}) & 
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Biotic stresses
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_compare_prod_traits_seed[3,3],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_prod_traits_seed_pool[1,1,3],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_prod_traits_seed_pool[1,3,3]<.01,"**",ifelse(df_compare_prod_traits_seed_pool[1,3,3]<.05,"*",ifelse(df_compare_prod_traits_seed_pool[1,3,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_compare_prod_traits_seed[5,3],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_prod_traits_seed_pool[2,1,3],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_prod_traits_seed_pool[2,3,3]<.01,"**",ifelse(df_compare_prod_traits_seed_pool[2,3,3]<.05,"*",ifelse(df_compare_prod_traits_seed_pool[2,3,3]<.1,"+","")))}}$ &
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-Sexpr{format(round(df_compare_prod_traits_seed[1,4,3],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{format(round(df_means_compare_prod_traits_seed[4,3],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_compare_prod_traits_seed_pool[1,2,3],digits=2),nsmall=2)})  &
-\end_layout
-
-\begin_layout Plain Layout
-
- (
-\backslash
-Sexpr{format(round(df_means_compare_prod_traits_seed[6,3],digits=2),nsmall=2)}) &
-\end_layout
-
-\begin_layout Plain Layout
-
-(
-\backslash
-Sexpr{format(round(df_compare_prod_traits_seed_pool[2,2,3],digits=2),nsmall=2)}) & 
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Time to maturity
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_compare_prod_traits_seed[3,4],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_prod_traits_seed_pool[1,1,4],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_prod_traits_seed_pool[1,3,4]<.01,"**",ifelse(df_compare_prod_traits_seed_pool[1,3,4]<.05,"*",ifelse(df_compare_prod_traits_seed_pool[1,3,4]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_compare_prod_traits_seed[5,4],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_prod_traits_seed_pool[2,1,4],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_prod_traits_seed_pool[2,3,4]<.01,"**",ifelse(df_compare_prod_traits_seed_pool[2,3,4]<.05,"*",ifelse(df_compare_prod_traits_seed_pool[2,3,4]<.1,"+","")))}}$ &
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-Sexpr{format(round(df_compare_prod_traits_seed[1,4,4],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{format(round(df_means_compare_prod_traits_seed[4,4],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_compare_prod_traits_seed_pool[1,2,4],digits=2),nsmall=2)})  &
-\end_layout
-
-\begin_layout Plain Layout
-
- (
-\backslash
-Sexpr{format(round(df_means_compare_prod_traits_seed[6,4],digits=2),nsmall=2)}) &
-\end_layout
-
-\begin_layout Plain Layout
-
-(
-\backslash
-Sexpr{format(round(df_compare_prod_traits_seed_pool[2,2,4],digits=2),nsmall=2)}) & 
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Germination Rate
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_compare_prod_traits_seed[3,5],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_prod_traits_seed_pool[1,1,5],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_prod_traits_seed_pool[1,3,5]<.01,"**",ifelse(df_compare_prod_traits_seed_pool[1,3,5]<.05,"*",ifelse(df_compare_prod_traits_seed_pool[1,3,5]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_compare_prod_traits_seed[5,5],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_compare_prod_traits_seed_pool[2,1,5],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_compare_prod_traits_seed_pool[2,3,5]<.01,"**",ifelse(df_compare_prod_traits_seed_pool[2,3,5]<.05,"*",ifelse(df_compare_prod_traits_seed_pool[2,3,5]<.1,"+","")))}}$ &
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-Sexpr{format(round(df_compare_prod_traits_seed[1,4,5],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{format(round(df_means_compare_prod_traits_seed[4,5],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_compare_prod_traits_seed_pool[1,2,5],digits=2),nsmall=2)})  &
-\end_layout
-
-\begin_layout Plain Layout
-
- (
-\backslash
-Sexpr{format(round(df_means_compare_prod_traits_seed[6,5],digits=2),nsmall=2)}) &
-\end_layout
-
-\begin_layout Plain Layout
-
-(
-\backslash
-Sexpr{format(round(df_compare_prod_traits_seed_pool[2,2,5],digits=2),nsmall=2)}) & 
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Index
+Production Trait Perceptions Index
 \end_layout
 
 \begin_layout Plain Layout
@@ -16274,6 +16189,464 @@ Sexpr{format(round(df_compare_prod_traits_seed_pool[2,2,6],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
+Improved seed yields more (1=yes)
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_compare_prod_traits_seed[3,1],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_compare_prod_traits_seed_pool[1,1,1],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_compare_prod_traits_seed_pool[1,3,1]<.01,"**",ifelse(df_compare_prod_traits_seed_pool[1,3,1]<.05,"*",ifelse(df_compare_prod_traits_seed_pool[1,3,1]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_compare_prod_traits_seed[5,1],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_compare_prod_traits_seed_pool[2,1,1],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_compare_prod_traits_seed_pool[2,3,1]<.01,"**",ifelse(df_compare_prod_traits_seed_pool[2,3,1]<.05,"*",ifelse(df_compare_prod_traits_seed_pool[2,3,1]<.1,"+","")))}}$ &
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+Sexpr{format(round(df_compare_prod_traits_seed[1,4,1],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_compare_prod_traits_seed[4,1],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_compare_prod_traits_seed_pool[1,2,1],digits=2),nsmall=2)})  &
+\end_layout
+
+\begin_layout Plain Layout
+
+ (
+\backslash
+Sexpr{format(round(df_means_compare_prod_traits_seed[6,1],digits=2),nsmall=2)}) &
+\end_layout
+
+\begin_layout Plain Layout
+
+(
+\backslash
+Sexpr{format(round(df_compare_prod_traits_seed_pool[2,2,1],digits=2),nsmall=2)}) & 
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Improved seed is more restistant to abiotic stresses (1=yes)
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_compare_prod_traits_seed[3,2],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_compare_prod_traits_seed_pool[1,1,2],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_compare_prod_traits_seed_pool[1,3,2]<.01,"**",ifelse(df_compare_prod_traits_seed_pool[1,3,2]<.05,"*",ifelse(df_compare_prod_traits_seed_pool[1,3,2]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_compare_prod_traits_seed[5,2],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_compare_prod_traits_seed_pool[2,1,2],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_compare_prod_traits_seed_pool[2,3,2]<.01,"**",ifelse(df_compare_prod_traits_seed_pool[2,3,2]<.05,"*",ifelse(df_compare_prod_traits_seed_pool[2,3,2]<.1,"+","")))}}$ &
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+Sexpr{format(round(df_compare_prod_traits_seed[1,4,2],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_compare_prod_traits_seed[4,2],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_compare_prod_traits_seed_pool[1,2,2],digits=2),nsmall=2)})  &
+\end_layout
+
+\begin_layout Plain Layout
+
+ (
+\backslash
+Sexpr{format(round(df_means_compare_prod_traits_seed[6,2],digits=2),nsmall=2)}) &
+\end_layout
+
+\begin_layout Plain Layout
+
+(
+\backslash
+Sexpr{format(round(df_compare_prod_traits_seed_pool[2,2,2],digits=2),nsmall=2)}) & 
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Improved seed is more restistant to biotic stresses (1=yes)
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_compare_prod_traits_seed[3,3],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_compare_prod_traits_seed_pool[1,1,3],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_compare_prod_traits_seed_pool[1,3,3]<.01,"**",ifelse(df_compare_prod_traits_seed_pool[1,3,3]<.05,"*",ifelse(df_compare_prod_traits_seed_pool[1,3,3]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_compare_prod_traits_seed[5,3],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_compare_prod_traits_seed_pool[2,1,3],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_compare_prod_traits_seed_pool[2,3,3]<.01,"**",ifelse(df_compare_prod_traits_seed_pool[2,3,3]<.05,"*",ifelse(df_compare_prod_traits_seed_pool[2,3,3]<.1,"+","")))}}$ &
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+Sexpr{format(round(df_compare_prod_traits_seed[1,4,3],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_compare_prod_traits_seed[4,3],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_compare_prod_traits_seed_pool[1,2,3],digits=2),nsmall=2)})  &
+\end_layout
+
+\begin_layout Plain Layout
+
+ (
+\backslash
+Sexpr{format(round(df_means_compare_prod_traits_seed[6,3],digits=2),nsmall=2)}) &
+\end_layout
+
+\begin_layout Plain Layout
+
+(
+\backslash
+Sexpr{format(round(df_compare_prod_traits_seed_pool[2,2,3],digits=2),nsmall=2)}) & 
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Improve seed matures faster (1=yes)
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_compare_prod_traits_seed[3,4],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_compare_prod_traits_seed_pool[1,1,4],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_compare_prod_traits_seed_pool[1,3,4]<.01,"**",ifelse(df_compare_prod_traits_seed_pool[1,3,4]<.05,"*",ifelse(df_compare_prod_traits_seed_pool[1,3,4]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_compare_prod_traits_seed[5,4],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_compare_prod_traits_seed_pool[2,1,4],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_compare_prod_traits_seed_pool[2,3,4]<.01,"**",ifelse(df_compare_prod_traits_seed_pool[2,3,4]<.05,"*",ifelse(df_compare_prod_traits_seed_pool[2,3,4]<.1,"+","")))}}$ &
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+Sexpr{format(round(df_compare_prod_traits_seed[1,4,4],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_compare_prod_traits_seed[4,4],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_compare_prod_traits_seed_pool[1,2,4],digits=2),nsmall=2)})  &
+\end_layout
+
+\begin_layout Plain Layout
+
+ (
+\backslash
+Sexpr{format(round(df_means_compare_prod_traits_seed[6,4],digits=2),nsmall=2)}) &
+\end_layout
+
+\begin_layout Plain Layout
+
+(
+\backslash
+Sexpr{format(round(df_compare_prod_traits_seed_pool[2,2,4],digits=2),nsmall=2)}) & 
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Improved seed has higher germination rates (1=yes)
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_compare_prod_traits_seed[3,5],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_compare_prod_traits_seed_pool[1,1,5],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_compare_prod_traits_seed_pool[1,3,5]<.01,"**",ifelse(df_compare_prod_traits_seed_pool[1,3,5]<.05,"*",ifelse(df_compare_prod_traits_seed_pool[1,3,5]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_compare_prod_traits_seed[5,5],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_compare_prod_traits_seed_pool[2,1,5],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_compare_prod_traits_seed_pool[2,3,5]<.01,"**",ifelse(df_compare_prod_traits_seed_pool[2,3,5]<.05,"*",ifelse(df_compare_prod_traits_seed_pool[2,3,5]<.1,"+","")))}}$ &
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+Sexpr{format(round(df_compare_prod_traits_seed[1,4,5],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_compare_prod_traits_seed[4,5],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_compare_prod_traits_seed_pool[1,2,5],digits=2),nsmall=2)})  &
+\end_layout
+
+\begin_layout Plain Layout
+
+ (
+\backslash
+Sexpr{format(round(df_means_compare_prod_traits_seed[6,5],digits=2),nsmall=2)}) &
+\end_layout
+
+\begin_layout Plain Layout
+
+(
+\backslash
+Sexpr{format(round(df_compare_prod_traits_seed_pool[2,2,5],digits=2),nsmall=2)}) & 
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -16309,10 +16682,10 @@ scriptsize
 \begin_layout Plain Layout
 
 Note:
- Column (1) reports control means at baseline for farmers that did not receive the seed trial pack (and standard deviations below);
- column (2) reports estimates of the average treatment effect of the seed trial pack;
-  column (3) reports control means at baseline for farmers that did not receive the cooking demonstration and tasting sessions (and standard deviations below);
- column (4) reports estimates of the average treatment effect of the cooking demonstration and tasting sessions.
+ Column (1) reports control group means at baseline (and standard deviations below);
+ column (2) reports the estimate of the intent-to-treat effect of the seed trial packs;
+ column (3) reports the estimate of the intent-to-treat effect of the cooking and tasting demonstrations;
+ column (4) is the interaction effect.
  Standard errors are below the estimates and are clustered at the level of randomization;
  **,
  *,
@@ -16340,8 +16713,22 @@ citep{benjamini2006adaptive}.
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Welfare Effects
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Welfare-Effects"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -16468,7 +16855,7 @@ placement document
 alignment document
 wide false
 sideways true
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -16559,7 +16946,7 @@ hline
 
 \begin_layout Plain Layout
 
-Index
+Welfare and Food Security Index
 \end_layout
 
 \begin_layout Plain Layout
@@ -16639,7 +17026,8 @@ Sexpr{format(round(df_welfare[3,2,6],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Better off than average of village?
+HH is better off than average of village?
+ (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -16714,7 +17102,8 @@ Sexpr{format(round(df_welfare[3,2,1],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Better off than 6 months ago?
+HH is better off than 6 months ago?
+ (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -16789,7 +17178,7 @@ Sexpr{format(round(df_welfare[3,2,2],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Can always eat what they want?
+HH always eat what they want (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -16864,7 +17253,7 @@ Sexpr{format(round(df_welfare[3,2,3],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Can always eat quantity needed?
+HH can always eat quantity needed (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
