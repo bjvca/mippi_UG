@@ -134,7 +134,9 @@ thanks{Department of Agricultural Economics and Rural Development,
  Germany},
  Berber Kramer
 \backslash
-thanks{International Food Policy Research Institute,
+thanks{Markets,
+ Trade and Institutions Unit,
+ International Food Policy Research Institute,
  Nairobi,
  Kenya}}
 \end_layout
@@ -172,12 +174,17 @@ Free samples or temporary price reductions are a widely used strategy to introdu
  (1) a screening effect,
  whereby payment deters users who do not value the product and targets those more likely to use it;
  (2) a sunk cost effect,
- where paying a positive price induces psychological commitment to use;
+ where paying a positive price induces a psychological commitment to use;
  and (3) a quality signaling effect,
  where a positive price conveys higher product quality.
- We test the relevance of these mechanisms in the context of recently released seed varieties for staple food crops,
- drawing on field experiments with smallholder farmers in Uganda and Ethiopia.
- The findings offer insights into optimal pricing strategies for promoting the uptake of beneficial technologies in low-income settings.
+ We test the relevance of these mechanisms in explaining demand for seed of recently released varieties of staple food crops,
+ drawing on a field experiment with smallholder farmers in Uganda and Ethiopia.
+ We find that willingness to pay is a reliable predictor of subsequent use of seed trial packs,
+ pointing to the value of modest prices for targeting likely adopters.
+ At the same time,
+ sunk cost effects are largely absent or even negative,
+ suggesting that charging farmers can tighten liquidity and reduce their ability or willingness to experiment.
+ These findings carry important implications for how pricing strategies can be designed to promote technology adoption in low-income settings.
 \end_layout
 
 \begin_layout Abstract
@@ -203,52 +210,72 @@ Introduction
 
 \begin_layout Standard
 Prices are ubiquitous in economic transactions.
- They are central to the efficient allocation of scare resources within a society and provide an important incentive for producers.
+ They are central to the efficient allocation of scarce resources within a society and provide important supply-side incentives.
  But charging the (full) price may not always be optimal.
  For instance,
  if a product or technology is new,
- providing it for free or at a discount for a short period of time may be necessary to encourage potential consumers to try it and learn from it 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "bawa2004effects"
-literal "false"
+ providing it for free or at a discount for a short period of time may be necessary to encourage potential users to try it and learn from it 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{bawa2004effects}
+\end_layout
 
 \end_inset
 
 .
  From a social welfare point of view,
  subsidies may be justified to ensure access to essential goods and services for poor or disadvantaged communities that may benefit most 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "duflo2011poor"
-literal "false"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{duflo2011poor}
+\end_layout
 
 \end_inset
 
 .
  Additionally,
- providing an initial “starter pack” of subsidized inputs can help overcome barriers to adoption by giving households a temporary boost that enables reinvestment and sustained use over time,
+ providing an initial initial bundle of subsidized goods or services can help overcome barriers to adoption by giving a temporary boost that enables reinvestment and sustained use over time,
  potentially setting off a path to long-term welfare gains,
- in a process that is reminiscent to those described in the poverty trap literature 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "10.1093/qje/qjab045"
-literal "false"
+ in a process reminiscent of the dynamics described in the poverty trap literature 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{10.1093/qje/qjab045}
+\end_layout
 
 \end_inset
 
 .
- But also more broadly,
+ More broadly,
  from a policy perspective,
  in the early stages of market development,
- public subsidies can play a catalytic role by stimulating initial demand for promising technologies,
+ public subsidies can play a catalytic role by stimulating initial demand for promising technologies or services,
  helping them reach a critical mass of users that enables economies of scale and attracts sustained private sector engagement.
  Finally,
- the presence of positive externalities provides another strong rationale against charging the full price for socially beneficial goods 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "miguel2004worms"
-literal "false"
+ the presence of positive externalities provides another strong rationale against charging the full price for socially beneficial goods and services 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{miguel2004worms}
+\end_layout
 
 \end_inset
 
@@ -263,10 +290,15 @@ At the same time,
  repurposed,
  or even resold.
  Prominent examples include the use of free bed nets for fishing and the diversion of subsidized chlorine from water treatment to household cleaning 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "10.1162/qjec.2010.125.1.1,10.1257/aer.100.5.2383"
-literal "false"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{10.1162/qjec.2010.125.1.1,10.1257/aer.100.5.2383}
+\end_layout
 
 \end_inset
 
@@ -277,39 +309,77 @@ literal "false"
 There are at least three mechanisms through which charging a positive price for a good or service may increase its uptake and use.
  First,
  a 
-\emph on
-screening
-\emph default
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+emph{screening}
+\end_layout
+
+\end_inset
+
  effect may arise:
  individuals who place a higher intrinsic value on the product are more likely to be willing to pay for it,
  leading to better targeting of actual users.
  Second,
  a 
-\emph on
-sunk cost
-\emph default
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+emph{sunk cost}
+\end_layout
+
+\end_inset
+
  effect refers to a psychological commitment whereby individuals are more likely to value and use a product simply because they have incurred a cost to obtain it,
  regardless of its objective utility 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "eec14168-5714-3ca8-b073-d038266f2734,DEBONDT1988173"
-literal "false"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{eec14168-5714-3ca8-b073-d038266f2734,DEBONDT1988173}
+\end_layout
 
 \end_inset
 
 .
  Third,
  prices can act as 
-\emph on
-signals
-\emph default
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+emph{signals}
+\end_layout
+
+\end_inset
+
  of quality,
  particularly in contexts of uncertainty and asymmetric information,
- where consumers may infer higher quality from higher prices 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "milgrom1986price"
-literal "false"
+ where consumers may infer higher quality from higher prices,
+ increasing the extent to which they value and use the product 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{milgrom1986price}
+\end_layout
 
 \end_inset
 
@@ -320,38 +390,56 @@ literal "false"
 A key challenge is that these mechanisms are typically conflated in observational data,
  as each mechanism implies a positive correlation between price and use.
  Building on 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "10.1257/aer.100.5.2383"
-literal "false"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citet{10.1257/aer.100.5.2383}
+\end_layout
 
 \end_inset
 
-,
- this paper employs a field experiment specifically designed to disentangle the three effects.
- We extend the two-stage randomized pricing design introduced by 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "arkes1985psychology"
-literal "false"
-
-\end_inset
-
- to empirically disentangle screening,
- sunk cost,
- and signaling effects.
+ who employ a two-stage pricing design in which commodities are first offered at randomized prices and then subject to a surprise discount to disentangle screening and sunk cost effects,
+ we extend the design with a third stage to also isolate signaling effects.
+ Specifically,
+ in the first stage,
+ farmers receive an initial randomized offer price that provides a potential quality signal.
+ In the second stage,
+ a bargaining game elicits willingness to pay,
+ which allows us to identify screening effects.
+ In the third stage,
+ a surprise discount is introduced,
+ enabling us to measure sunk cost effects.
+ The contribution of each mechanism can then be estimated through regression analysis:
+ To identify the screening effect,
+ we focus on the marginal effect of willingness to pay while controlling for the initial randomized offer price and the transaction price (that is,
+ the price that was actually paid for the good or service,
+ after the surprise discount was applied).
+ To test for sunk cost effects,
+ we examine the effect of the transaction price while controlling for willingness to pay and the initial offer price.
+ Finally,
+ to capture signaling effects,
+ we assess the impact of the initial randomized offer price while holding constant both willingness to pay and the transaction price.
 \end_layout
 
 \begin_layout Standard
-We apply our experiment in the context of seed trial packs aimed at promoting recently introduced improved seed varieties among smallholder farmers in a developing-country setting.
- Adoption of improved seed varieties presents a policy-relevant case for several reasons.
+We apply our experiment in the context of seed trial packs distributed to smallholder farmers in a developing-country setting with the aim of promoting the use of recently introduced improved seed varieties.
+ Studying how pricing may affect adoption and use of such agricultural technologies presents a policy-relevant case for several reasons.
  First,
  given the novelty of and limited familiarity with a new variety,
  trial packs may be necessary to encourage experimentation among risk-averse farmers 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "doi:10.1086/601447,BRICK2015383"
-literal "false"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{doi:10.1086/601447,BRICK2015383}
+\end_layout
 
 \end_inset
 
@@ -360,12 +448,16 @@ literal "false"
  social learning,
  especially through peer networks,
  plays a critical role in the large-scale adoption of new agricultural technologies,
- suggesting the existence of significant positive externalities.
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "10.1257/aer.100.1.35,https://doi.org/10.1111/j.1468-0297.2006.01115.x,campenhout2021role"
-literal "false"
+ suggesting the existence of significant positive externalities 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{10.1257/aer.100.1.35,https://doi.org/10.1111/j.1468-0297.2006.01115.x,campenhout2021role}
+\end_layout
 
 \end_inset
 
@@ -374,72 +466,100 @@ literal "false"
  seed purchases involve non-trivial upfront costs,
  making them susceptible to sunk cost effects.
  Finally,
- markets for improved seed are often plagued by significant information asymmetries regarding product quality 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "bold2017lemon"
-literal "false"
+ seed markets are often plagued by significant information asymmetries regarding product quality,
+ which adds an additional layer of risk to farmer investment decisions 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{bold2017lemon,
+ AHMAD2022176}
+\end_layout
+
+\end_inset
+
+.
+ For instance,
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citet{10.1162/rest_a_01285}
+\end_layout
+
+\end_inset
+
+ show that uncertainty about seed quality reduces labor investment,
+ and argue that the presence of low-quality (‘lemon’) inputs undermines learning about profitability,
+ while bundling quality seeds with crop insurance to reduce uncertainty,
+ has been found to increase farmer effort and learning 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citep{BULTE2020744}
+\end_layout
 
 \end_inset
 
 .
  
-\begin_inset CommandInset citation
-LatexCommand citet
-key "10.1162/rest_a_01285"
-literal "false"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citet{miehe2023perceived}
+\end_layout
 
 \end_inset
 
- show that uncertainty about seed quality reduces labor investment,
- and argue that the presence of low-quality (‘lemon’) inputs undermines learning about profitability.
- 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "miehe2023perceived"
-literal "false"
-
-\end_inset
-
- provide evidence that agro-input dealers actively use quality signals to counter these asymmetries and build trust with buyers.
+ provide evidence that agro-input dealers actively use signaling to counter these asymmetries and build trust with buyers.
 \end_layout
 
 \begin_layout Standard
-The study was implemented in Ethiopia and Uganda,
- and the crops involved were maize,
- teff,
- and wheat.
- In Uganda,
- we focused on 4 districts in the east where maize is the staple food crop.
- Here,
- we provided maize seed trial packs to about 760 smallholder farmers.
- In Ethiopia,
- we focus on 10 districts in Amhara region and promoted two crops:
- teff and wheat.
- In particular,
- we distributed teff seed trial packs to about to 600 farmers and wheat seed trial packs and about 400 farmers.
- 
+The experiment was implemented for teff and wheat in Ethiopia (about 650 and 430 smallholder farmers,
+ respectively),
+ and maize in Uganda (about 760 smallholder farmers).
+ To assess how pricing of improved seed varieties affects outcomes along the adoption pathway,
+ we collected detailed data in two rounds:
+ in the short run (the first season after distribution) we tracked whether the seed trial pack was planted,
+ whether seed and harvest were kept separate,
+ and who in the household used it;
+ in the longer run (the subsequent season) we measured adoption of improved and promoted varieties,
+ plot-level production and productivity,
+ and use of complementary inputs such as fertilizer and chemicals.
+ This dual focus enables us to go beyond the immediate use of the trial pack,
+ which most studies stop at,
+ and examine subsequent adoption and complementary investment decisions that are rarely captured in this literature.
 \end_layout
 
 \begin_layout Standard
-The study finds that willingness to pay for seed trial packs is a useful predictor of whether farmers use and later adopt the promoted variety (i.e.
- evidence of a screening effect) but paying for the seed does not generally increase use through a sunk cost mechanism.
- In fact,
- in some cases payment reduces use,
- likely due to liquidity constraints.
- A negative signaling effect emerges for teff in Ethiopia,
- where higher initial offer prices may have encouraged resale rather than planting.
- Screening effects are most consistent for teff,
- and to a lesser extent for maize in Uganda and wheat in Ethiopia,
- but these effects weaken further along the impact pathway,
- with limited evidence for sustained adoption or higher yields.
- Complementary input use mirrors this pattern:
- where input use is not already universal,
- higher willingness to pay correlates with greater investment,
- but payment can crowd out such investment.
- Overall,
- the results suggest that low but positive prices can improve targeting without undermining use,
- but price alone may not be an effective lever for ensuring longer run outcomes such as sustained adoption.
+We find that willingness to pay for seed trial packs is a strong predictor of whether farmers use and later adopt the promoted variety,
+ indicating a clear screening effect.
+ By contrast,
+ paying for the seed does not generally increase use through sunk cost mechanisms;
+ in some cases,
+ payment even reduces use.
+ The fact that this negative effect extends to complementary input use points to liquidity constraints limiting farmers’ ability to experiment.
+ We also find no consistent evidence of a signaling effect.
+ Taken together,
+ these results suggest that modest positive prices can help target likely adopters without discouraging use,
+ provided they remain low enough to avoid negative sunk cost (and in some markets negative signaling effects).
+ However,
+ pricing alone is unlikely to secure longer-term outcomes such as sustained technology adoption.
 \end_layout
 
 \begin_layout Standard
@@ -457,43 +577,61 @@ Our study contributes to a growing literature that examines how pricing affects 
 
 \begin_layout Standard
 Seminal studies by 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "10.1257/aer.100.5.2383"
-literal "false"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citet{10.1257/aer.100.5.2383}
+\end_layout
 
 \end_inset
 
  and 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "10.1162/qjec.2010.125.1.1"
-literal "false"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citet{10.1162/qjec.2010.125.1.1}
+\end_layout
 
 \end_inset
 
  offer contrasting insights.
  
-\begin_inset CommandInset citation
-LatexCommand citet
-key "10.1257/aer.100.5.2383"
-literal "false"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citet{10.1257/aer.100.5.2383}
+\end_layout
 
 \end_inset
 
 ,
  in a two-stage pricing experiment of chlorine for water purification in Zambia,
- find evidence of screening effects—
-suggesting that willingness to pay reflects private information about future use—
-but no support for sunk cost effects.
+ find evidence of screening effects---suggesting that willingness to pay reflects private information about future use---but no support for sunk cost effects.
  Their results imply that pricing may improve targeting efficiency,
  potentially justifying lower subsidy levels.
  In contrast,
  
-\begin_inset CommandInset citation
-LatexCommand citet
-key "10.1162/qjec.2010.125.1.1"
-literal "false"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citet{10.1162/qjec.2010.125.1.1}
+\end_layout
 
 \end_inset
 
@@ -506,25 +644,23 @@ literal "false"
 \begin_layout Standard
 More recently,
  
-\begin_inset CommandInset citation
-LatexCommand citet
-key "mai"
-literal "false"
-
-\end_inset
-
- employs a two-stage pricing design to study improved seed adoption in Bangladesh,
+\backslash
+citet{mai} employs a two-stage pricing design to study improved agricultural technology adoption in Bangladesh,
  with a distinct objective:
  to test whether prices can effectively screen farmers based on their expected returns to the technology and thus preventing subsidized inputs from reaching farmers with low potential gains.
- Her findings,
- show that buyers do not systematically achieve higher returns than non-buyers,
+ She finds that buyers do not systematically achieve higher returns than non-buyers,
  raising concerns about the efficiency of using price as a targeting mechanism for agricultural innovations.
  Other work has explored whether free distribution leads to misuse or resale.
  
-\begin_inset CommandInset citation
-LatexCommand citet
-key "HOFFMANN2009607"
-literal "false"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+citet{HOFFMANN2009607}
+\end_layout
 
 \end_inset
 
@@ -536,20 +672,34 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-Our study builds on this body of work but adds a critical innovation by explicitly isolating and testing a third mechanism (signaling effects) alongside the more commonly studied screening and sunk cost effects.
+Our study builds on this body of work but adds a critical innovation by explicitly isolating and testing signaling effects as a third mechanism alongside the more commonly studied screening and sunk cost effects.
  Existing two-stage pricing designs typically examine whether prices screen for users with higher private valuations or induce sunk cost-driven commitment,
  typically by estimating one effect while controlling for the other.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnote{Both 
+\backslash
+citet{10.1257/aer.100.5.2383} and 
+\backslash
+citet{10.1162/qjec.2010.125.1.1} discuss signaling as a theoretical possibility,
+ but their design primarily focuses on disentangling screening from sunk cost effects.}
+\end_layout
+
+\end_inset
+
  However,
  if prices also signal quality in contexts with information asymmetries,
- then ignoring this channel may confound estimates of screening and sunk cost effects.
+ then ignoring this channel may confound estimates of screening effects.
  To address this limitation,
- we introduce a novel three-stage pricing design that separately identifies each effect:
- In the first stage,
- a randomized initial offer price provides a potential quality signal;
- in a second stage,
- a bargaining game elicits willingness to pay that can be used to isolate the screening effect;
- and in a third stage,
- a surprise discount allows us to assess sunk cost effects.
+ we introduce our novel three-stage pricing design,
+ allowing us to separately identify the three effects by randomizing initial offer price (signaling),
+ using a bargaining game to elicit willingness to pay (screening),
+ and assigning a surprise discount to a randomly selected subsample of participants (to assess sunk cost effects).
 \end_layout
 
 \begin_layout Standard
@@ -559,17 +709,31 @@ A second contribution is the multi-country,
  We implement the same experimental design in Uganda and Ethiopia,
  two countries that differ in agro-ecological conditions,
  seed market structures,
- and policy environments.
- This allows us to assess the generalizability of price effects across institutional and agronomic settings.
- In Uganda,
- the study focuses on improved maize seed,
- while in Ethiopia it includes both teff and wheat seed varieties.
- By spanning three distinct crops with varying degrees of commercialization,
- input requirements,
- and farmer familiarity,
- we are able to explore how the relative strength of signaling,
- screening,
- and sunk cost effects may depend on baseline knowledge,
+ and policy environments,
+ allowing us to assess the generalizability of price effects across institutional and agronomic settings.
+ Importantly,
+ these contextual differences also speak to the relative importance of the three mechanisms.
+ For instance,
+ signaling effects may be particularly relevant in Uganda,
+ where persistent concerns about counterfeit and low-quality seed in the supply chain undermine farmers’ trust in new varieties 
+\backslash
+citep{BARRIGA2020104928}.
+ Heterogeneity across crops provides a plausible rationale for the differential importance of screening and sunk cost effects as well.
+ For teff in Ethiopia,
+ a traditional staple characterized by wide variation in farmer familiarity and preferences for local seed,
+ screening mechanisms are likely to be particularly relevant:
+ willingness to pay may effectively sort farmers according to expected returns and willingness to experiment.
+ By contrast,
+ for wheat,
+ which is more commercialized and closely linked to market-oriented production decisions,
+ sunk cost effects may play a larger role,
+ as expenditures on seed are perceived as an investment that reinforces the commitment to plant and manage the crop.
+ By spanning three distinct crops—
+maize in Uganda,
+ teff and wheat in Ethiopia—
+we are thus able to explore how the strength of screening,
+ sunk cost,
+ and signaling effects varies with baseline knowledge,
  perceived quality uncertainty,
  and crop-specific value propositions.
  This cross-context approach provides nuanced insights into how pricing strategies should be tailored to different markets and technologies.
@@ -581,7 +745,7 @@ The remainder of this article is organized as follows.
  followed by the estimation strategy.
  We then turn to sampling and provide descriptive statistics of our study population.
  The analysis consists of two parts.
- We first look at the price elasticity of demand for the seed trial packs using willingness-to-pay data.
+ We first look at the price elasticity of demand for the seed trial packs using willingness-to-pay data to analyze the overall effects of charging positive prices for a new technology.
  We then provide estimates for screening,
  sunk cost,
  and signaling effects.
