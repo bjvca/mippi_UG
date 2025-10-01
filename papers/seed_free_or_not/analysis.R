@@ -667,8 +667,8 @@ wheat_merged$signaling <- (as.numeric(as.character(wheat_merged$p1_pric)))/10
 #as we did a full discount to it is zero for those that got a discount, and the price paid for those that did not get the discount
 dta_reg$sunk <- as.numeric(!dta_reg$discounted)*dta_reg$screening ## this would be the transaction price in ahsraf et al
 #dta_reg$sunk <- as.numeric(!dta_reg$discounted) ## this would be the transaction price in ahsraf et al
-teff_merged$sunk <- as.numeric(teff_merged$discounted*teff_merged$screening) 
-wheat_merged$sunk <- as.numeric(wheat_merged$discounted*wheat_merged$screening) 
+teff_merged$sunk <- as.numeric(!(teff_merged$discounted)*teff_merged$screening) 
+wheat_merged$sunk <- as.numeric(!(wheat_merged$discounted)*wheat_merged$screening) 
 
 dta_reg$d_screening <- dta_reg$screening - mean(dta_reg$screening, na.rm=TRUE)
 dta_reg$d_signaling <- dta_reg$signaling - mean(dta_reg$signaling, na.rm=TRUE)
