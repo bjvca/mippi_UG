@@ -1571,20 +1571,25 @@ Sample and Descriptive Statistics
 \end_layout
 
 \begin_layout Standard
-For the Uganda case study,
- the total sample consists of a representative sample of about 760 maize farming households,
- drawn from 4 districts in Eastern Uganda (Mayuge,
+For the maize seed case in Uganda,
+ the sample includes approximately 760 maize-growing households,
+ selected to be representative of farmers across four districts in Eastern Uganda:
+ Mayuge,
  Kamuli,
  Iganga,
- and Bugiri).
- These districts were chosen because maize is an important crop for both food and cash.
- In these 4 districts,
- 76 villages were randomly selected from a list of all villages with the likelihood of a village being selected proportional to the number of households that live in the village.
- Within each village,
- 10 households were randomly selected.
- In Ethiopia,
- we sampled 1,000 farming households from 70 kebeles across 10 districts in the Amhara region:
- Borena/Debresina,
+ and Bugiri.
+ These districts were selected because maize serves as an important crop for both food and income.
+ In these four districts,
+ 76 villages were randomly chosen from a complete list of villages,
+ with the probability of selection proportional to village population size.
+ From each selected village,
+ 10 households were then randomly sampled.
+\end_layout
+
+\begin_layout Standard
+In Ethiopia,
+ the sample consists of 1,000 farming households drawn from 70 kebeles across 10 districts in the Amhara region—
+Borena/Debresina,
  Ebinat,
  Enbese Sar Midir,
  Jama,
@@ -1593,7 +1598,8 @@ For the Uganda case study,
  Sayint,
  Shebel Berenta,
  Tenta,
- and Werellu.
+ and Werellu—
+applying the same self-weighting approach with sampling probabilities proportional to population size.
  Within each kebele,
  16 households were randomly selected.
  
@@ -1601,76 +1607,19 @@ For the Uganda case study,
 
 \begin_layout Standard
 In Uganda,
- in February and March 2023,
- well before the first agricultural season,
- trained enumerators visited all sampled households and collected baseline data.
- At that time,
- farmers were also provided with the seed trial pack.
- A few days before enumerators would visit the villages to collect baseline data and implement the bargaining exercise,
- farmers were notified that we would visit them,
- and they were told that there may be an opportunity to buy something so they should make sure they had a little bit of money by the time we visited them.
- Baseline data in Ethiopia was collected in August 2022 by trained enumerators with a minimum of three years of field experience.
- In May 2023,
- a subset of these enumerators received two days of training to implement the experiment,
- following a standardized protocol consisting of introduction,
- informed consent,
- the bargaining exercise,
- and treatment delivery.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Berber:
- Should we streamline information on Uganda and Ethiopia?
- For instance in Ethiopia,
- we provide more detail on enumerators,
- but in Uganda,
- we provide detail on the experimental design and how farmers were informed to save some money.
-\end_layout
-
-\end_inset
-
+ baseline data collection and experimental implementation took place at the same time in February and March 2023,
+ shortly before the start of the first agricultural season.
+ In Ethiopia,
+ baseline data were collected earlier,
+ in August 2022,
+ and the experimental activities were implemented in May 2023 by a subset of the same trained enumerators who received an additional two-day refresher training.
  In both countries,
  the baseline survey asked questions about general household characteristics and more specific questions about farming and seed use.
-\end_layout
-
-\begin_layout Standard
-In both countries,
- after a short introduction and obtaining consent,
- enumerators started with the bargaining as explained in detail in Section 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-ref{sec:Methods-and-experimental}
-\end_layout
-
-\end_inset
-
-.
- The full sample completed the bargaining game,
- but in only half of all villages,
- farmers were asked to pay the price they agreed upon.
- The remaining half of villages was randomly assigned to received a 100% discount.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-footnote{In Uganda,
- the baseline survey was implemented after the experiment ended and seed and money changed hands.
- After the survey,
- farmers that were in the 100 percent discount groups were told that they were lucky winners of a raffle and got a 100 percent cash-back,
- to avoid influencing farmers' responses to the baseline survey.}
-\end_layout
-
-\end_inset
-
+ The data was collected by trained enumerators with at least three years of field experience,
+ using standardized protocols that included an introduction and informed consent.
+ Prior to the enumerators’ visit for the bargaining experiment,
+ farmers were informed that a team would visit their village and that there might be an opportunity to purchase a product,
+ so they were encouraged to have a small amount of cash available.
  Endline surveys were conducted in February 2024 in Uganda and in November 2024 in Ethiopia to capture use of the seed trial pack,
  seed use,
  and more general agronomic practices such as use of inputs,
@@ -1836,26 +1785,25 @@ ref{tab:descriptives}
 
 \end_inset
 
- presents baseline characteristics for the three samples (Uganda maize,
- Ethiopia teff and Ethiopia wheat),
- revealing some interesting cross-country differences.
- Ugandan household heads tend to be older,
- averaging nearly 50 years,
- compared to about 45 years in the Ethiopian sites.
- Educational attainment also differs sharply:
- while nearly half of Ugandan household heads have completed primary school,
- this is true for only about 20 percent of their Ethiopian counterparts.
- Households in Ethiopia are more likely to be male-headed than those in Uganda.
+ summarizes baseline characteristics across the three crop–country combinations (Uganda maize,
+ Ethiopia teff,
+ and Ethiopia wheat),
+ highlighting notable cross-country differences.
+ Household heads in Uganda are older on average—
+nearly 50 years compared to about 45 years in Ethiopia—
+and substantially more likely to have completed primary education (about 50 percent versus 20 percent).
+ Male-headed households are also more prevalent in Ethiopia than in Uganda.
 \end_layout
 
 \begin_layout Standard
-Demographic patterns further highlight Uganda’s rapid population growth.
- The average household in the Ugandan sample is over eight members,
- compared to just five in Ethiopia.
- Ugandan farmers report living around 4 kilometers from the nearest agro-dealer,
- suggesting a relatively dense input supply network.
- Unfortunately,
- comparable data on input access were not collected in Ethiopia.
+Demographic patterns further reflect Uganda’s faster population growth,
+ with average household size exceeding eight members,
+ compared to about five in Ethiopia.
+ Ugandan farmers live,
+ on average,
+ roughly 4 kilometers from the nearest agro-dealer,
+ indicating a relatively dense input supply network,
+ though comparable data on input access were not collected in Ethiopia.
 \end_layout
 
 \begin_layout Standard
@@ -2270,7 +2218,7 @@ Sexpr{base_balance[2,1,5]})
 
 \begin_layout Plain Layout
 
-Used quality seed on at least one plot?
+Used improved seed variety on at least one plot (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -2333,7 +2281,7 @@ Sexpr{base_balance[2,3,6]})
 
 \begin_layout Plain Layout
 
-Used promoted seed on randomly selected plot
+Used promoted seed on randomly selected plot (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -2396,7 +2344,7 @@ Sexpr{base_balance[2,3,7]})
 
 \begin_layout Plain Layout
 
-Seed obtained from trusted source
+Seed obtained from formal source (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -2459,7 +2407,8 @@ Sexpr{base_balance[2,3,8]})
 
 \begin_layout Plain Layout
 
-How often was seed recycled?
+Seed recycled less than 5 times?
+ (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -2514,7 +2463,7 @@ Sexpr{base_balance[2,1,9]})
 
 \begin_layout Plain Layout
 
-Yield on randomly selected plot
+Yield on randomly selected plot (kg/acre)
 \end_layout
 
 \begin_layout Plain Layout
@@ -2528,14 +2477,14 @@ Sexpr{base_balance[1,1,10]}
 
 & 
 \backslash
-Sexpr{base_balance[1,2,10]}
+Sexpr{base_balance[1,2,10]*100}
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{base_balance[1,3,10]}
+Sexpr{base_balance[1,3,10]*100}
 \backslash
 
 \backslash
@@ -2557,14 +2506,14 @@ Sexpr{base_balance[2,1,10]})
 
 & (
 \backslash
-Sexpr{base_balance[2,2,10]})
+Sexpr{base_balance[2,2,10]*100})
 \end_layout
 
 \begin_layout Plain Layout
 
 & (
 \backslash
-Sexpr{base_balance[2,3,10]})
+Sexpr{base_balance[2,3,10]*100})
 \backslash
 
 \backslash
@@ -2627,26 +2576,11 @@ scriptsize
 While the first five characteristics are expected to be unaffected by our intervention,
  we also report five baseline variables that are more likely to change as a result of the study.
  To begin,
- we include a broad measure of technology adoption by asking whether farmers had used seed of an improved variety for the relevant crop on any plot during the season prior to the baseline.
+ we include a broad measure of technology adoption by asking whether farmers had used seed of any improved variety (hybrid seed or open pollinating variety) for the relevant crop on any plot during the season prior to the baseline.
  In Uganda,
- about 41 percent reported using improved maize varieties
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Liesbeth:
- Should we make description consistent with table.
- 'Quality seed' in table is a bit vague?
- Coudl we say "Used improved seed on at least one plot" and "Used promoted (or distributed) improved seed variety on the randomly selected plat" --> that might make clear that in both cases this is about improved seeds,
- but second question is about the specific variety used in the experiment,
- on the specific plot.
-\end_layout
-
-\end_inset
-
-,
- whereas improved seed adoption in Ethiopia was considerably lower,
- at just 18 to 19 percent.
+ about 41 percent reported using improved maize varieties,
+ whereas improved seed variety adoption in Ethiopia was considerably lower,
+ at just 18 percent for teff and 19 percent for wheat.
 \end_layout
 
 \begin_layout Standard
@@ -2661,7 +2595,7 @@ status open
 
 
 \backslash
-footnote{The decision to only ask detailed questions on one (randomly selected) plot was guided by the fact that outcomes at plot level (such as adoption of improved inputs and technologies and production outcomes) are likely to be correlated such that gains in statistical power from surveying all plots likely do not outweigh costs of longer and more tedious questionnaires.
+footnote{The decision to only ask detailed questions on one (randomly selected) plot was guided by the fact that outcomes at plot level (such as adoption of improved inputs and technologies and production outcomes) are likely to be correlated within farm households such that gains in statistical power from surveying all plots likely do not outweigh costs of longer and more tedious questionnaires.
  As the plot to be surveyed was selected randomly,
  outcomes should be unbiased and consistent.
 \backslash
@@ -2681,31 +2615,20 @@ label{fn:The-decision-to}}
 \end_layout
 
 \begin_layout Standard
-About 35 percent of farmers in Uganda used maize seed from a formal seed source in the season preceding the baseline (for instance
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Liesbeth:
- Here also consistency with table:
- either formal or trusted,
- as they might not mean the same?
-\end_layout
-
-\end_inset
-
-,
- from an agro-input dealer or the government extension system).
+About 35 percent of farmers in Uganda used maize seed from a formal seed source (for instance,
+ from an agro-input dealer or the government extension system as opposed to own saved or shared between farmers) in the season preceding the baseline.
  This share is substantially lower in the Ethiopian sample.
  To maintain sufficient vigor,
- seed should not be recycled too often.
+ seed,
+ especially hybrid seed,
+ should not be recycled too often.
  In Uganda,
  fewer than 20 percent of maize farmers used seed that had been recycled fewer than five times,
  which is generally considered the upper limit for open-pollinated varieties.
  We did not collect comparable information on seed recycling in Ethiopia.
  Finally,
  average maize yields on the randomly selected plot in the season preceding the intervention were around 400 kilograms per acre in Uganda.
- 
+ Yields for teff and wheat in Ethiopia are around 900 kg per acre.
 \end_layout
 
 \begin_layout Section
@@ -2718,40 +2641,16 @@ Price elasticity of demand
 
 \begin_layout Standard
 A first step in the analysis is to assess whether demand for the seed is responsive to price,
- as some degree of price sensitivity is needed for screening,
- sunk cost and signaling effects to manifest in subsequent use of the good or service.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Berber:
- I think it's also the opening motivation that is of policy interest.
-\end_layout
-
-\end_inset
-
+ since some degree of price sensitivity is required for screening,
+ sunk-cost,
+ and signaling effects to manifest in subsequent use of the good or service.
  From a policy perspective,
- price elasticity of demand also affects how an increase in prices might limit seed purchases
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Liesbeth:
- ?
- Note sure,
- but negative price elasticity does not necessarily mean a problem of access?
- And adoption of seed might also not be the right term,
- as that might hint to the actual use of the seed.
- (see footnote point).
- But maybe I did not get what you meant here.
-\end_layout
-
-\end_inset
-
-,
- even in the absence of mechanisms such as screening,
- sunk cost,
- or signaling effects that affect actual use of the seed.
+ the magnitude of the price elasticity of demand indicates how sensitive farmers’ purchasing decisions are to price changes and,
+ therefore,
+ how higher prices might constrain initial seed uptake—
+even in the absence of behavioral mechanisms such as screening,
+ sunk-cost,
+ or signaling effects that influence actual use (and subsequent adoption).
 \begin_inset ERT
 status open
 
@@ -2777,7 +2676,7 @@ footnote{It is important to see the subtle but crucial distinction between price
  In settings where farmers face cash or credit constraints,
  this may disproportionately exclude those who could potentially benefit most from the technology.
  In that sense,
- high price elasticity is often cited as a key justification for providing subsidies.
+ high price elasticity is often cited as a key justification for offering subsidies.
 \end_layout
 
 \begin_layout Standard
@@ -2797,37 +2696,8 @@ ref{fig:Distribution-of-prices}
  shows the distribution of prices at which farmers agreed to purchase the seed trial pack during the bargaining experiment for maize,
  teff,
  and wheat seed.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Berber:
- 1 September,
- 8:00 pm
-\end_layout
-
-\begin_layout Plain Layout
-Can we add confidence intervals?
- And perhaps state the price as a % of the market value of the seed?
-\end_layout
-
-\begin_layout Plain Layout
-liesbeth colen
-\end_layout
-
-\begin_layout Plain Layout
-8 September,
- 4:55 pm
-\end_layout
-
-\begin_layout Plain Layout
-And add country in figure?
-\end_layout
-
-\end_inset
-
  In all three panels,
- we observe a clear negative relationship between price and the share of farmers who agree to purchase the seed,
+ we observe a negative relationship between price and the share of farmers who agree to purchase the seed,
  consistent with downward-sloping demand curves.
  For both maize and teff seed,
  uptake declines steadily as the price increases,
@@ -2836,9 +2706,7 @@ And add country in figure?
  where demand remains flat between 40 and 50 birr before dropping off at higher price points,
  but the overall trend is still downward.
  These patterns confirm that farmers respond to price variation in a way that is consistent with economic theory,
- and that demand for seed is indeed price-sensitive---a necessary condition for mechanisms like screening,
- sunk cost,
- and signaling effects to operate.
+ and that demand for seed is indeed price-sensitive.
 \end_layout
 
 \begin_layout Standard
@@ -2923,41 +2791,39 @@ Trial pack use
 \begin_layout Standard
 We start by testing if,
  and how,
- farmers used the seed trial pack
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Berber:
- Given the lack of variation in this outcome in Uganda,
- I'd propose focusing on the index instead.
-\end_layout
-
-\begin_layout Plain Layout
-b.kramer
-\end_layout
-
-\begin_layout Plain Layout
-1 September,
- 8:18 pm
-\end_layout
-
-\begin_layout Plain Layout
-Or describe outcomes in terms of just this variable,
- and then the index,
- but not discuss results individually for keeping seeds/harvest separate and buyer using seed him/herself.
- We could explain that these variables are part of the index,
- and leave them in the table,
- but not devote too much attention to them in the text.
-\end_layout
-
-\end_inset
-
-.
+ farmers used the seed trial pack.
  Indeed,
  the primary outcome in studies that look at the relative importance of screening and sunk cost effects is whether the product that was subsidized or provided for free was used for its intended purpose and not wasted,
  diverted or sold.
- Our first outcome variable is thus whether the seed trial pack was planted in the season that immediately followed the distribution of the seed trial packs.
+ Our first family of outcome variables—
+summarized in a Trial Seed Use Index following 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "anderson2008multiple"
+literal "false"
+
+\end_inset
+
+—
+is thus comprised of four outcomes.
+ First,
+ we simply check if the seed trial pack was used (that is,
+ farmers reported they planted the seed on one for their fields).
+ A second indicator of appropriate use is whether farmers kept the seed separate during planting.
+ Planting the seed separately (rather than mixing it with local varieties) reflects a deliberate intention to evaluate the promoted variety on its own merits,
+ which may influence adoption decisions in subsequent seasons.
+ Similar to the case of planting,
+ we also examine whether farmers kept the harvest from the seed trial pack separate.
+ Doing so indicates that the variety’s identity was maintained throughout the season,
+ enabling an accurate assessment of its yield and other performance characteristics,
+ and thus serves as an additional measure of appropriate use.
+ A final indicator of appropriate use concerns who actually planted the seed trial pack.
+ The premise is that screening,
+ sunk cost,
+ and signaling effects may also influence whether the recipient plants the seed personally rather than passing it to someone else.
+ Paying for the pack,
+ for instance,
+ may strengthen the motivation to plant it oneself instead of delegating it to a household member whose farming skills or practices are less certain.
  
 \end_layout
 
@@ -2975,297 +2841,94 @@ ref{tab:Effects-on-Use-sep}
 
 \end_inset
 
- shows results from a regression that pools across countries and crops.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-footnote{To do so,
- all variables were first standardized at the crop level.}
-\end_layout
-
-\end_inset
-
- Doing so,
- we find evidence of a significant screening effect:
- farmers with higher valuations of the seed,
- as proxied by the final price agreed upon during the bargaining game,
- are also more likely to have planted it.
- Results further show no evidence of a sunk cost effect on seed trial pack use:
- farmers who paid a positive price were no more likely to plant the seed than those with a surprise offer who received it for free
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Liesbeth:
- Here you seem to interpret it as if it were a dummy.
- Did I get correctly that it is not a dummy,
- but transaction price?
- If so,
- also within half the sample there is variation in transaction prices that may be captured (a linear sunk cost effect) but attenuate the (largely larger) effect of the random (0/1) surprise?
-\end_layout
-
-\end_inset
-
-,
- suggesting that paying for the technology does not increase farmers' psychological commitment to use it.
+ shows results for maize in Uganda.
+ Overall,
+ judged by the Trial Seed Use Index,
+ we do not find evidence of signaling effects of prices,
+ as the initial offer price is unrelated to trial pack use.
+ Similarly,
+ we do not find evidence of screening effects,
+ as willingness to pay is not correlated to appropriate use.
  Finally,
- a higher starting price at which the seed was initially offered reduces the likelihood that the seed is used for its intended purpose,
- suggesting a negative signaling effect.
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Liesbeth:
- Do we have insights on how consistent this effect is across price levels?
- I guess sample may not allow for it,
- but in case:
- if you see what farmers actually paid as compared to initial ask prices,
- then the highest ask prices are considerably above the highest WTP,
- so it might not have been a credible quality signal and rather have created distrust (hence negative coefficient)?
- On the other hand,
- for prices within the more plausible range,
- there could still have been a quality signal.
- I.e.
- are results on the signaling different for the upper/mid/lower ranges of initial prices?
-\end_layout
-
-\end_inset
-
- A plausible explanation for this unanticipated effect is that farmers who were initially offered a high price saw greater resale potential and chose to sell the seed rather than plant it,
- suggesting that price signals can divert products from their intended use when resale is feasible.
-\end_layout
-
-\begin_layout Standard
-The next three panels below the pooled results in Table 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-ref{tab:Effects-on-Use-sep}
-\end_layout
-
-\end_inset
-
- shows results for regressions at the county-crop level.
- We find important differences between average seed trial pack use.
- For instance,
- while average seed trial pack use is close to 100 percent in the Uganda case,
- less than 70 percent of Ethiopian farmers used the wheat seed trial pack.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Bjorn:
- @gashaw:
- we need to provide a reason why this is so much lower in Ethiopia
-\end_layout
-
-\end_inset
-
- There are also marked differences in the relative importance of screening,
- sunk cost and signaling effects between countries and crops.
- In Uganda,
- high overall seed trial pack use limits variation in the outcome,
- potentially attenuating the measured effects.
- Results from the pooled regression seem to be primarily driven by teff in Ethiopia,
- for which we also find a significant and negative sunk cost effect,
- implying that paying actually reduces use (conditional on valuation).
- This could be due to liquidity constraints:
- Even among farmers who value the seed similarly,
- those who had to pay for it may have less cash left over for complementary inputs or other production needs,
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Liesbeth:
- How large are the cost of this seed trial pack as compared to other costs that would be needed?
- Is there any reason why this cost/friction caused by the higher price of the seed would be there for teff,
- but not equally well for wheat?
- Just wondering how convincing this argument is.
- Alternatively:
- farmers felt they had paid too much (for teff) and resold to get back the money?
-\end_layout
-
-\end_inset
-
- reducing their ability to plant.
- Rather than reinforcing commitment,
- payment appears to create friction---a finding that challenges conventional wisdom on pricing as a behavioral tool.
-\end_layout
-
-\begin_layout Standard
-Results are quite different if we look at wheat in Ethiopia.
- Here,
- we do find a sizable and significant sunk cost effect,
- in addition to a weak negative screening effect.
- Farmers who paid a positive price for the wheat seed trial pack were more likely to plant it than those who received it for free (keeping their valuation constant).
- This suggests that paying out-of-pocket for the seed increased their psychological commitment to make use of the technology.
- This could be because in Ethiopia,
- wheat is more commercially oriented,
- with clearer market outlets and government-backed productivity programs,
- so paying for seed is more likely to translate into planting.
- Teff markets,
- while important,
- are less tied to formal seed systems,
- and farmers often prefer their own saved seed,
- so purchasing a trial pack does not necessarily increase the likelihood of use.
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Bjorn:
- @gashaw:
- is this a good reason?
- Here are some potential reasons for the observed pattern:
- what do you think best reflects reality?
- 
-\end_layout
-
-\begin_layout Plain Layout
-1.
- Agronomic and market context differ.
-\end_layout
-
-\begin_layout Plain Layout
-Wheat in Ethiopia often benefits from strong market demand,
- established value chains,
- and government support (e.g.,
- price incentives,
- extension programs),
- making it a crop where investing even a small amount can pay off quickly.
- Paying for the seed may reinforce the intention to plant,
- hence the positive sunk cost effect.
-\end_layout
-
-\begin_layout Plain Layout
-Teff,
- while culturally important,
- has more entrenched traditional seed systems.
- Farmers may already have access to acceptable local seed at low cost,
- so paying for the trial pack may not increase commitment to use it.
-\end_layout
-
-\begin_layout Plain Layout
-2.
- Farmer familiarity with the variety.
-\end_layout
-
-\begin_layout Plain Layout
-If the improved wheat variety was perceived as newer or riskier,
- paying for it could signal personal commitment to test it out properly.
-\end_layout
-
-\begin_layout Plain Layout
-For teff,
- familiarity or skepticism about the promoted variety might have led to purchase for reasons other than planting (e.g.,
- curiosity,
- social pressure),
- which could result in lower use despite having paid for it.
-\end_layout
-
-\begin_layout Plain Layout
-3.
- Input complementarities.
-\end_layout
-
-\begin_layout Plain Layout
-Wheat may require complementary inputs (fertilizer,
- land preparation) that farmers who pay for seed are more likely to invest in,
- boosting the sunk cost effect.
-\end_layout
-
-\begin_layout Plain Layout
-For teff,
- if complementary inputs are costly or less available,
- even those who pay for the seed might decide not to plant,
- flipping the effect negative.
-\end_layout
-
-\begin_layout Plain Layout
-4.
- Season-specific shocks or constraints.
-\end_layout
-
-\begin_layout Plain Layout
-In the wheat season,
- good rainfall or favorable market prices may have made planting more attractive for those who had paid.
-\end_layout
-
-\begin_layout Plain Layout
-In the teff season,
- unexpected labor shortages,
- price drops,
- or other constraints could have disproportionately affected those who paid for the seed,
- leading to non-use.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Another indicator of appropriate use is whether farmers kept the seed separate during planting.
- Planting the seed separately (rather than mixing it with local varieties) reflects a deliberate intention to evaluate the promoted variety on its own merits,
- which may influence adoption decisions in subsequent seasons.
- While the pooled regression in the top panel of Table 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-ref{tab:Effects-on-Use-sep}
-\end_layout
-
-\end_inset
-
- shows no strong effects on this outcome,
- the crop-specific results reveal patterns consistent with those for general seed use:
- a positive sunk cost effect for wheat,
- along with negative sunk cost and signaling effects and some evidence of a positive screening effect for teff.
- For maize in Uganda,
- none of the coefficients are statistically significant,
- likely because overall,
- 94% of farmers kept the seed separate,
- leaving little room for variation from screening,
- sunk cost or signaling effects.
+ we find a 
+\emph on
+negative
+\emph default
+ sunk cost effect:
+ farmers who paid the full WFP price (i.e.,
+ who did not receive the surprise discount) were actually 
+\emph on
+less
+\emph default
+ likely to use the seed trial pack as intended.
+ This result runs counter to the usual prediction that paying for a product increases follow-through,
+ suggesting that liquidity constraints or other factors may outweigh behavioral commitment effects in this context.
  
 \end_layout
 
 \begin_layout Standard
-Similar to the case of planting,
- we also examine whether farmers kept the harvest from the seed trial pack separate.
- Doing so indicates that the variety’s identity was maintained throughout the season,
- enabling an accurate assessment of its yield and other performance characteristics,
- and thus serves as an additional measure of appropriate use.
- The pooled regressions reveal a significant screening effect,
- driven entirely by teff in Ethiopia.
- For maize in Uganda and teff in Ethiopia,
- we observe negative sunk cost effects,
- whereas for wheat the sunk cost effect is positive.
- As with all use-related outcomes for teff in Ethiopia,
- we also find a negative signaling effect on this measure.
+Examining the individual components of the index reveals that seed trial pack use is already near universal in the Uganda maize sample,
+ with over 97 percent of farmers reporting use of the trial pack,
+ 94 percent indicating they keep the seed separate and almost 92 percent of farmers indicating that they used the seed themselves.
+ This high baseline implies a ceiling effect that limits the scope for detecting positive treatment effects,
+ which may partly explain the absence of significant relationships in this case.
+ We further find that the negative sunk cost effect is mainly driven by reductions in the likelihood that the harvest was kept separate and that the buyer personally used the seed.
+ This suggests that farmers who paid the full price were less likely to monitor or evaluate the performance of the new variety—
+possibly because the higher cost made them more cautious about experimenting or more inclined to treat the seed as a regular input rather than something to learn from.
+ As a result,
+ they may have mixed the harvest with other varieties or sold it directly,
+ reducing opportunities for experiential learning.
 \end_layout
 
 \begin_layout Standard
-A final indicator of appropriate use concerns who actually planted the seed trial pack.
- The premise is that screening,
- sunk cost,
- and signaling effects may also influence whether the recipient plants the seed personally rather than passing it to someone else.
- Paying for the pack,
- for instance,
- may strengthen the motivation to plant it oneself instead of delegating it to a household member whose farming skills or practices are less certain.
- The results align closely with those for overall seed trial pack use,
- showing a positive screening effect and a negative signaling effect for the pooled regressions---both largely driven by teff in Ethiopia---and a positive sunk cost effect for wheat in Ethiopia.
+In the second panel,
+ we present results for teff in Ethiopia,
+ which differ markedly from the maize findings in Uganda.
+ Based on the Trial Seed Use Index,
+ we find—
+somewhat unexpectedly—
+a negative signaling effect:
+ farmers who were presented with a higher initial offer price were less likely to use the teff seed as intended.
+ This pattern may reflect both behavioral and contextual factors:
+ higher prices could have increased perceived risk or loss aversion,
+ discouraging experimentation with an unfamiliar variety,
+ while also tightening liquidity and raising the opportunity cost of use—
+potentially making farmers more inclined to resell the seed rather than plant it.
+\end_layout
+
+\begin_layout Standard
+For teff in Ethiopia,
+ the screening and sunk cost effects are consistent with theoretical predictions:
+ both the screening and sunk cost effects are positive when judged by the Trial Seed Use Index.
+ Farmers with higher willingness to pay were more likely to use the seed trial pack appropriately,
+ suggesting that willingness to pay indeed captures genuine differences in motivation or ability to experiment with new technologies.
+ Similarly,
+ farmers who paid the full price (i.e.,
+ those not receiving the discount) scored higher on the use index,
+ indicating a positive sunk cost effect:
+ having incurred a financial cost,
+ they appeared more committed to proper use and follow-through.
+ These patterns imply that modest prices can help target more motivated adopters and reinforce learning behavior,
+ at least in the teff context where liquidity constraints may be less binding and perceived quality differences more salient.
+\end_layout
+
+\begin_layout Standard
+Turning to wheat in Ethiopia,
+ the results contrast sharply with those for teff and are in fact much more in line with maize in Uganda.
+ Judged by the Trial Seed Use Index,
+ we find no evidence of signaling or screening effects;
+ the sunk cost effect is 
+\emph on
+negative
+\emph default
+ and statistically significant.
+ Farmers who paid the full price were substantially less likely to use the seed as intended,
+ keep the harvest separate,
+ or personally plant the trial pack.
+ Also for wheat in Ethiopia,
+ paying for the seed may have discouraged experimentation rather than reinforced commitment.
+ As in the Uganda maize case,
+ the wheat results point to a context where higher prices may hinder learning about new varieties rather than promote it.
 \end_layout
 
 \begin_layout Standard
@@ -3274,7 +2937,7 @@ placement document
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -3339,457 +3002,6 @@ hline
 \end_layout
 
 \begin_layout Plain Layout
-
-& 
-\backslash
-multicolumn{5}{c}{
-\backslash
-textit{Pooled}} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-cline{2-6}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Used trial pack as seed (1=yes)
-\end_layout
-
-\begin_layout Plain Layout
-
-&
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,4,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pooled[3,4,1]<.01,"**",ifelse(res_tab_pooled[3,4,1]<.05,"*",ifelse(res_tab_pooled[3,4,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,2,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pooled[3,2,1]<.01,"**",ifelse(res_tab_pooled[3,2,1]<.05,"*",ifelse(res_tab_pooled[3,2,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,3,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pooled[3,3,1]<.01,"**",ifelse(res_tab_pooled[3,3,1]<.05,"*",ifelse(res_tab_pooled[3,3,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,5,1]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-&
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pooled[2,4,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pooled[2,2,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pooled[2,3,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Kept seed separate (1=yes)
-\end_layout
-
-\begin_layout Plain Layout
-
-&
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,4,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pooled[3,4,2]<.01,"**",ifelse(res_tab_pooled[3,4,2]<.05,"*",ifelse(res_tab_pooled[3,4,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,2,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pooled[3,2,2]<.01,"**",ifelse(res_tab_pooled[3,2,2]<.05,"*",ifelse(res_tab_pooled[3,2,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,3,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pooled[3,3,2]<.01,"**",ifelse(res_tab_pooled[3,3,2]<.05,"*",ifelse(res_tab_pooled[3,3,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,5,2]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-&
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pooled[2,4,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pooled[2,2,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pooled[2,3,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Kept harvest separate (1=yes)
-\end_layout
-
-\begin_layout Plain Layout
-
-&
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,4,4]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pooled[3,4,4]<.01,"**",ifelse(res_tab_pooled[3,4,4]<.05,"*",ifelse(res_tab_pooled[3,4,4]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,2,4]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pooled[3,2,4]<.01,"**",ifelse(res_tab_pooled[3,2,4]<.05,"*",ifelse(res_tab_pooled[3,2,4]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,3,4]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pooled[3,3,4]<.01,"**",ifelse(res_tab_pooled[3,3,4]<.05,"*",ifelse(res_tab_pooled[3,3,4]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,5,4]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-&
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pooled[2,4,4]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pooled[2,2,4]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pooled[2,3,4]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Buyer used seed him/herself (1=yes)
-\end_layout
-
-\begin_layout Plain Layout
-
-&
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,4,3]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pooled[3,4,3]<.01,"**",ifelse(res_tab_pooled[3,4,3]<.05,"*",ifelse(res_tab_pooled[3,4,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,2,3]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pooled[3,2,3]<.01,"**",ifelse(res_tab_pooled[3,2,3]<.05,"*",ifelse(res_tab_pooled[3,2,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,3,3]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pooled[3,3,3]<.01,"**",ifelse(res_tab_pooled[3,3,3]<.05,"*",ifelse(res_tab_pooled[3,3,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,5,3]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-&
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pooled[2,4,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pooled[2,2,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pooled[2,3,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Index
-\end_layout
-
-\begin_layout Plain Layout
-
-&
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,4,5]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pooled[3,4,5]<.01,"**",ifelse(res_tab_pooled[3,4,5]<.05,"*",ifelse(res_tab_pooled[3,4,5]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,2,5]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pooled[3,2,5]<.01,"**",ifelse(res_tab_pooled[3,2,5]<.05,"*",ifelse(res_tab_pooled[3,2,5]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,3,5]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pooled[3,3,5]<.01,"**",ifelse(res_tab_pooled[3,3,5]<.05,"*",ifelse(res_tab_pooled[3,3,5]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,5,5]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-&
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pooled[2,4,5]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pooled[2,2,5]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pooled[2,3,5]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
 
 \end_layout
 
@@ -4187,7 +3399,7 @@ Sexpr{res_tab[2,3,3]})
 
 \begin_layout Plain Layout
 
-Index
+Trial Seed Use Index
 \end_layout
 
 \begin_layout Plain Layout
@@ -5145,7 +4357,7 @@ Sexpr{res_tab_wheat[2,3,3]})
 
 \begin_layout Plain Layout
 
-Index
+Trial Seed Use Index
 \end_layout
 
 \begin_layout Plain Layout
@@ -5288,41 +4500,176 @@ Note:
 \end_layout
 
 \begin_layout Standard
-All of these patterns are summarized in the indices,
- which reveal a strong and significant screening effect of prices on overall seed trial pack use.
- As with the individual outcomes,
- this effect is driven primarily by teff in Ethiopia.
- However,
- the index also shows that the individually insignificant but consistently positive coefficients of the WTP price across the various dimensions of maize seed trial pack use in Uganda combine to produce a statistically significant overall screening effect.
+Appendix Table A1 present an alternative specification in which the sunk cost effect is estimated using the transaction price—
+equal to the farmer’s WTP price or zero if a full discount was received—
+instead of the binary indicator distinguishing payers from non-payers.
+ The overall patterns are very similar to those reported in the main text,
+ confirming the robustness of our findings.
+ For maize in Uganda,
+ results remain largely null,
+ with no significant signaling or screening effects and a modest negative sunk cost effect.
+ For teff in Ethiopia,
+ both the screening and sunk cost effects continue to be positive and significant,
+ consistent with theory.
+ For wheat,
+ the sunk cost effect remains negative and significant,
+ again suggesting that paying reduces rather than increases proper use.
+ The close correspondence between the binary and continuous specifications indicates that our main results are not driven by the discrete jump at zero price but reflect genuine differences in behavior associated with paying versus receiving the seed for free.
 \end_layout
 
 \begin_layout Standard
-Judged by the index,
- seed trial packs exhibit negative sunk cost effects:
- after controlling for willingness to pay and signaling effects,
- farmers who received the pack for free made more appropriate use of it---across the combined dimensions in the index---than those who paid a positive price.
- The overall negative sunk cost effect is found for both maize in Uganda and teff in Ethiopia.
- Interestingly,
- for wheat we find the reverse:
- here (positive) sunk cost effects do seem at play.
- The negative sunk cost effects for maize in Uganda and teff in Ethiopia likely reflect liquidity constraints that reduced farmers’ ability to invest in complementary inputs after paying for the seed,
- whereas the positive effect for wheat in Ethiopia suggests that in this more commercially oriented crop,
- the commitment induced by payment outweighed such constraints.
+Taken together,
+ the results reveal substantial heterogeneity across crops and contexts.
+ Signaling effects are weak or even negative,
+ suggesting that higher prices did not convey positive quality signals and may,
+ in some cases,
+ have discouraged experimentation.
+ Screening effects,
+ by contrast,
+ are generally positive or neutral,
+ indicating that willingness to pay captures meaningful differences in motivation or ability to learn.
+ The sunk cost effect,
+ however,
+ varies in sign:
+ positive for teff but negative for wheat and maize.
+ This pattern suggests that paying can strengthen commitment when liquidity constraints are mild—
+as in the teff case—
+but may discourage experimentation when liquidity pressures or risk aversion dominate,
+ as appears to be the case for maize and wheat.
+ Economically,
+ wheat farmers may resemble maize farmers more closely,
+ facing tighter budgets and lower expected returns to experimentation,
+ while teff farmers may operate in slightly less constrained,
+ higher-value environments where modest prices reinforce engagement rather than crowd it out.
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Liesbeth:
+ Do we have insights on how consistent this effect is across price levels?
+ I guess sample may not allow for it,
+ but in case:
+ if you see what farmers actually paid as compared to initial ask prices,
+ then the highest ask prices are considerably above the highest WTP,
+ so it might not have been a credible quality signal and rather have created distrust (hence negative coefficient)?
+ On the other hand,
+ for prices within the more plausible range,
+ there could still have been a quality signal.
+ I.e.
+ are results on the signaling different for the upper/mid/lower ranges of initial prices?
 \end_layout
 
-\begin_layout Standard
-Finally,
- the coefficient on the initial offer price on the index is only weakly significant in the pooled model.
- Only for teff in Ethiopia,
- a clear negative signaling effect is found for the seed trial pack index.
- The stronger negative signaling effect for teff in Ethiopia may reflect farmers’ preference for their own local seed for this traditional staple crop.
- When the initial offer price is high,
- it may also increase the perceived resale value of the trial pack,
- prompting farmers to sell rather than plant it.
- In contrast,
- wheat is more commercially oriented,
- with stronger market linkages and institutional support,
- so even at high initial offer prices farmers are more likely to interpret the price as a quality signal and plant the seed rather than sell it.
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Liesbeth:
+ How large are the cost of this seed trial pack as compared to other costs that would be needed?
+ Is there any reason why this cost/friction caused by the higher price of the seed would be there for teff,
+ but not equally well for wheat?
+ Just wondering how convincing this argument is.
+ Alternatively:
+ farmers felt they had paid too much (for teff) and resold to get back the money?
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Bjorn:
+ @gashaw:
+ is this a good reason?
+ Here are some potential reasons for the observed pattern:
+ what do you think best reflects reality?
+\end_layout
+
+\begin_layout Plain Layout
+1.
+ Agronomic and market context differ.
+\end_layout
+
+\begin_layout Plain Layout
+Wheat in Ethiopia often benefits from strong market demand,
+ established value chains,
+ and government support (e.g.,
+ price incentives,
+ extension programs),
+ making it a crop where investing even a small amount can pay off quickly.
+ Paying for the seed may reinforce the intention to plant,
+ hence the positive sunk cost effect.
+\end_layout
+
+\begin_layout Plain Layout
+Teff,
+ while culturally important,
+ has more entrenched traditional seed systems.
+ Farmers may already have access to acceptable local seed at low cost,
+ so paying for the trial pack may not increase commitment to use it.
+\end_layout
+
+\begin_layout Plain Layout
+2.
+ Farmer familiarity with the variety.
+\end_layout
+
+\begin_layout Plain Layout
+If the improved wheat variety was perceived as newer or riskier,
+ paying for it could signal personal commitment to test it out properly.
+\end_layout
+
+\begin_layout Plain Layout
+For teff,
+ familiarity or skepticism about the promoted variety might have led to purchase for reasons other than planting (e.g.,
+ curiosity,
+ social pressure),
+ which could result in lower use despite having paid for it.
+\end_layout
+
+\begin_layout Plain Layout
+3.
+ Input complementarities.
+\end_layout
+
+\begin_layout Plain Layout
+Wheat may require complementary inputs (fertilizer,
+ land preparation) that farmers who pay for seed are more likely to invest in,
+ boosting the sunk cost effect.
+\end_layout
+
+\begin_layout Plain Layout
+For teff,
+ if complementary inputs are costly or less available,
+ even those who pay for the seed might decide not to plant,
+ flipping the effect negative.
+\end_layout
+
+\begin_layout Plain Layout
+4.
+ Season-specific shocks or constraints.
+\end_layout
+
+\begin_layout Plain Layout
+In the wheat season,
+ good rainfall or favorable market prices may have made planting more attractive for those who had paid.
+\end_layout
+
+\begin_layout Plain Layout
+In the teff season,
+ unexpected labor shortages,
+ price drops,
+ or other constraints could have disproportionately affected those who paid for the seed,
+ leading to non-use.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -5331,7 +4678,7 @@ Adoption and production in subsequent season
 
 \begin_layout Standard
 Adoption of the promoted technology in the subsequent season is particularly relevant,
- as seed trial packs are designed not only to encourage initial experimentation but also to foster sustained uptake of the variety.
+ as seed trial packs are designed not only to encourage initial experimentation but ultimately to foster sustained uptake of the variety.
  Measuring behavior in the following season therefore reveals whether farmers’ trial experiences translate into repeated use and longer-term impacts.
  Further down the causal chain,
  we also examine whether production and productivity of the underlying crop varies with the prices signaled,
@@ -5353,33 +4700,9 @@ ref{tab:Effects-on-Adoption}
 
 \end_inset
 
- again has the top panel showing the pooled regression results,
- while the three lower panels show results of maize in Uganda,
- teff in Ethiopia,
- and wheat in Ethiopia,
- respectively.
- The table shows results for 4 different outcomes,
- which are again aggregated into an index following 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-citet{anderson2008multiple}
-\end_layout
-
-\end_inset
-
-.
- The first two outcomes measure adoption,
- whilst the remaining two are related to production.
- All data is derived from a randomly selected plot cultivated by the household.
-\end_layout
-
-\begin_layout Standard
-The first outcome determines if seed of an improved variety was used on the randomly selected plot.
+ summarizes results for price effects on adoption and production.
+ We focus on two sets of adoption measures:
+ The first outcome determines if seed of an improved variety was used on the randomly selected plot.
 \begin_inset ERT
 status open
 
@@ -5390,99 +4713,103 @@ status open
 footnote{More specifically,
  we asked a range of questions about the seed planted on the randomly selected plot,
  including its name,
- number of timesthe seed was recycled,
- and source of the seed,
+ number of times the seed was recycled,
+ source of the seed,
  etc.
  Based on this information,
- we define a variable indicating ``used improved seed'',
+ we define a variable indicating ``used improved variety'',
  coded as true if the farmer planted a fresh hybrid or an OPV recycled no more than five times,
- obtained from a trusted source (generally an agro-input dealer or the government extension system).}
+ obtained from a formal source (generally an agro-input dealer or the government extension system).}
 \end_layout
 
 \end_inset
 
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Liesbeth:
- I suggest to this keep this in line with how it is phrased in the table
-\end_layout
-
-\end_inset
-
-The second outcome is more specific,
+ The second outcome is more specific,
  and asks if the promoted variety (ie.
  the one from the seed trial pack) was planted on the randomly selected plot.
- 
-\end_layout
-
-\begin_layout Standard
-We find that about 22 percent of Ugandan maize farmers used quality seed of improved varieties on the randomly selected plot.
- Focusing specifically on the variety promoted in the study,
- roughly 11 percent planted Bazooka.
- In Ethiopia,
- these shares are substantially higher:
- about 60 percent and 70 percent of farmers reported using improved varieties of teff and wheat
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Liesbeth:
- I was surprised about these numbers,as the baseline descriptives in table 1 indicate that only 19% of Ethiopian farmers in Aug 2022 reported using improved seeds on at least one plot.
- While now (Nov 2024) we see very high shares having planted improved seed on the raondmly seleted plot.
- Has there been a massive roll-out in the meantime?
-\end_layout
-
-\end_inset
-
-,
- respectively.
- These differences are mirrored in adoption of the promoted variety,
- with 34 percent for teff and 31 percent for wheat.
-\end_layout
-
-\begin_layout Standard
-Looking at the pooled regressions,
- we do not find any significant screening,
- sunk cost,
- or signaling effects on adopting any improved variety.
- However,
- when considering adoption of the promoted variety,
- we do find that farmers with a higher willingness to pay are also more likely to have adopted it in the subsequent season,
- an effect driven primarily by teff in Ethiopia.
- This aligns with the earlier findings on seed trial pack use,
- where screening effects for teff also played a central role.
-\end_layout
-
-\begin_layout Standard
-Turning to production (measured in kilogram produced on the randomly selected plot) and productivity (production divided by the area of the randomly selected plot),
- the pooled regression provides suggestive evidence of a screening effect.
- However,
- this time the results seem to be driven by maize in Uganda:
- For each 1000 UGX increase in the valuation of the seed trial pack,
- production in the subsequent year increased by almost 20 kilograms,
- which corresponds to about 5 % over the mean.
- The significant screening effect disappears at the intensive margin (productivity),
- suggesting that farmers with a higher valuation also expand plot size
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Liesbeth:
- Not entirely clear to me how they would do that.
- Did you fix the plots?
- they could have planted on more plots,
- but you were asking about a specific one?
- You are only looking at levels at endline,
- not at differences as compared to baseline,
- right?
-\end_layout
+ We also look at production (measured in kilogram produced on the randomly selected plot) and productivity (production divided by the area of the randomly selected plot).
+ As before,
+ we also aggregate outcomes into an Adoption Index following 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "anderson2008multiple"
+literal "false"
 
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+Results for maize in Uganda (top panel of Table 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{tab:Effects-on-Adoption}
+\end_layout
+
+\end_inset
+
+) show little evidence that prices influenced subsequent adoption or productivity outcomes.
+ Neither the initial offer price (signaling) nor willingness to pay (screening) is significantly associated with the likelihood of using improved or promoted seed in the following season.
+ The sunk cost effect is similarly small and statistically insignificant across most outcomes.
+ The only notable exception is a positive screening effect on total production,
+ suggesting that farmers with higher willingness to pay achieved somewhat larger harvests—
+possibly reflecting greater ability or motivation rather than treatment effects per se.
+ Overall,
+ however,
+ productivity does not differ across groups,
+ and the Adoption Index remains unaffected.
+ These findings indicate that the pricing interventions did not meaningfully alter learning or adoption behavior for maize,
+ consistent with earlier evidence that most Ugandan farmers used the trial pack but faced liquidity or scale constraints limiting subsequent uptake.
+\end_layout
+
+\begin_layout Standard
+For teff in Ethiopia,
+ we again find no evidence of signaling effects,
+ but we do find a role for prices in screening.
+ Farmers with higher willingness to pay were significantly more likely to replant the promoted variety in the following season,
+ confirming that willingness to pay effectively predicts later adoption and performance.
+ In contrast to the earlier results on trial pack use—
+where both screening and sunk cost effects were positive—
+only the screening effect persists at the adoption stage.
+ This suggests that while payment initially reinforced proper use and learning,
+ its behavioral effect did not translate into sustained differences in subsequent adoption once farmers had experienced the new variety.
+ 
+\end_layout
+
+\begin_layout Standard
+For wheat in Ethiopia,
+ the results reveal a different pattern from teff,
+ with both a negative signaling effect and a positive screening effect.
+ Farmers who were presented with higher initial offer prices were significantly less likely to use improved seed on their plots in the following season,
+ suggesting that higher prices may have discouraged experimentation or reinforced perceptions of risk—
+similar to the negative signaling pattern observed earlier for teff at the seed trial stage.
+ At the same time,
+ willingness to pay is now a stronger and statistically significant predictor of subsequent adoption and productivity.
+ This suggests that the screening effect—
+though already positive but insignificant in earlier stages—
+intensifies further along the impact pathway,
+ with higher willingness to pay capturing real differences in ability,
+ motivation,
+ or resources that translate into adoption.
+ The sunk cost effect,
+ by contrast,
+ becomes insignificant,
+ indicating that payment itself did not sustain behavioral commitment.
+ Taken together,
+ the wheat results point to a context where higher prices signal risk rather than quality,
+ while willingness to pay remains an informative predictor of who ultimately adopts and benefits from the technology.
+\end_layout
+
+\begin_layout Standard
+Appendix Table A2 shows that these patterns remain robust when using transaction prices instead of the binary payment indicator.
+ The direction and significance of the coefficients are consistent across specifications,
+ indicating that results are not driven by the binary distinction between paying and receiving the seed for free.
 \end_layout
 
 \begin_layout Standard
@@ -5557,457 +4884,6 @@ hline
 
 \begin_layout Plain Layout
 
-& 
-\backslash
-multicolumn{5}{c}{
-\backslash
-textit{Pooled}} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-cline{2-6}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Used improved seed on random plot (1=yes)
-\end_layout
-
-\begin_layout Plain Layout
-
-&
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,4,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season_pooled[3,4,1]<.01,"**",ifelse(res_tab_next_season_pooled[3,4,1]<.05,"*",ifelse(res_tab_next_season_pooled[3,4,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,2,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season_pooled[3,2,1]<.01,"**",ifelse(res_tab_next_season_pooled[3,2,1]<.05,"*",ifelse(res_tab_next_season_pooled[3,2,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,3,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season_pooled[3,3,1]<.01,"**",ifelse(res_tab_next_season_pooled[3,3,1]<.05,"*",ifelse(res_tab_next_season_pooled[3,3,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,5,1]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-&
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season_pooled[2,4,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season_pooled[2,2,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season_pooled[2,3,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Used promoted seed on random plot (1=yes)
-\end_layout
-
-\begin_layout Plain Layout
-
-&
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,4,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season_pooled[3,4,2]<.01,"**",ifelse(res_tab_next_season_pooled[3,4,2]<.05,"*",ifelse(res_tab_next_season_pooled[3,4,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,2,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season_pooled[3,2,2]<.01,"**",ifelse(res_tab_next_season_pooled[3,2,2]<.05,"*",ifelse(res_tab_next_season_pooled[3,2,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,3,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season_pooled[3,3,2]<.01,"**",ifelse(res_tab_next_season_pooled[3,3,2]<.05,"*",ifelse(res_tab_next_season_pooled[3,3,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,5,2]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-&
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season_pooled[2,4,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season_pooled[2,2,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season_pooled[2,3,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Production (kg)
-\end_layout
-
-\begin_layout Plain Layout
-
-&
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,4,3]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season_pooled[3,4,3]<.01,"**",ifelse(res_tab_next_season_pooled[3,4,3]<.05,"*",ifelse(res_tab_next_season_pooled[3,4,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,2,3]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season_pooled[3,2,3]<.01,"**",ifelse(res_tab_next_season_pooled[3,2,3]<.05,"*",ifelse(res_tab_next_season_pooled[3,2,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,3,3]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season_pooled[3,3,3]<.01,"**",ifelse(res_tab_next_season_pooled[3,3,3]<.05,"*",ifelse(res_tab_next_season_pooled[3,3,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,5,3]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-&
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season_pooled[2,4,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season_pooled[2,2,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season_pooled[2,3,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Productivity (kg/acre)
-\end_layout
-
-\begin_layout Plain Layout
-
-&
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,4,4]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season_pooled[3,4,4]<.01,"**",ifelse(res_tab_next_season_pooled[3,4,4]<.05,"*",ifelse(res_tab_next_season_pooled[3,4,4]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,2,4]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season_pooled[3,2,4]<.01,"**",ifelse(res_tab_next_season_pooled[3,2,4]<.05,"*",ifelse(res_tab_next_season_pooled[3,2,4]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,3,4]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season_pooled[3,3,4]<.01,"**",ifelse(res_tab_next_season_pooled[3,3,4]<.05,"*",ifelse(res_tab_next_season_pooled[3,3,4]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,5,4]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-&
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season_pooled[2,4,4]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season_pooled[2,2,4]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season_pooled[2,3,4]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Index
-\end_layout
-
-\begin_layout Plain Layout
-
-&
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,4,5]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season_pooled[3,4,5]<.01,"**",ifelse(res_tab_next_season_pooled[3,4,5]<.05,"*",ifelse(res_tab_next_season_pooled[3,4,5]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,2,5]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season_pooled[3,2,5]<.01,"**",ifelse(res_tab_next_season_pooled[3,2,5]<.05,"*",ifelse(res_tab_next_season_pooled[3,2,5]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,3,5]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season_pooled[3,3,5]<.01,"**",ifelse(res_tab_next_season_pooled[3,3,5]<.05,"*",ifelse(res_tab_next_season_pooled[3,3,5]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,5,5]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-&
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season_pooled[2,4,5]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season_pooled[2,2,5]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season_pooled[2,3,5]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
 \end_layout
 
 \begin_layout Plain Layout
@@ -6040,7 +4916,7 @@ cline{2-6}
 
 \begin_layout Plain Layout
 
-Used improved seed on random plot (1=yes)
+Used improved variety on random plot (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -6404,7 +5280,7 @@ Sexpr{res_tab_next_season[2,3,4]})
 
 \begin_layout Plain Layout
 
-Index
+Adoption Index
 \end_layout
 
 \begin_layout Plain Layout
@@ -6519,7 +5395,7 @@ cline{2-6}
 
 \begin_layout Plain Layout
 
-Used improved seed on random plot (1=yes)
+Used improved variety on random plot (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -6883,7 +5759,7 @@ Sexpr{res_tab_next_season_teff[2,3,4]})
 
 \begin_layout Plain Layout
 
-Index
+Adoption Index
 \end_layout
 
 \begin_layout Plain Layout
@@ -6998,7 +5874,7 @@ cline{2-6}
 
 \begin_layout Plain Layout
 
-Used improved seed on random plot (1=yes)
+Used improved variety on random plot (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -7362,7 +6238,7 @@ Sexpr{res_tab_next_season_wheat[2,3,4]})
 
 \begin_layout Plain Layout
 
-Index
+Adoption Index
 \end_layout
 
 \begin_layout Plain Layout
@@ -7455,6 +6331,15 @@ Sexpr{res_tab_next_season_wheat[2,3,5]})
 
 
 \backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
 hline
 \backslash
 hline
@@ -7505,16 +6390,35 @@ Note:
 \end_layout
 
 \begin_layout Standard
-To summarize these results,
- the index results point to the presence of screening effects in longer-run adoption and production outcomes,
- with the strongest patterns observed for teff in Ethiopia,
- particularly for adoption of the promoted variety.
- Compared to the results for seed trial pack use,
- these effects are less pronounced and statistically less robust,
- which is to be expected given that these outcomes are realized further along the impact pathway,
- where initial price-related mechanisms are likely to weaken as other factors such as seasonal conditions,
- market dynamics,
- and farmers’ evolving situation and preferences play a greater role.
+Overall,
+ the adoption and production results echo the heterogeneity observed for trial pack use.
+ Signaling effects remain weak or negative across crops,
+ suggesting that higher prices rarely conveyed positive quality information and may at times have discouraged experimentation.
+ Screening effects,
+ by contrast,
+ are consistently positive and,
+ for some commodities,
+ become stronger further down the impact pathway,
+ indicating that willingness to pay is a reliable predictor of who ultimately adopts and benefits from the promoted technology.
+ The negative sunk cost effects observed for maize and wheat in the initial trial use stage largely disappear when looking at subsequent adoption,
+ implying that any discouraging liquidity or risk effects of paying were short-lived and did not persist once farmers gained experience with the technology.
+ Taken together,
+ these findings suggest that prices primarily serve a screening rather than a commitment or signaling role in this context:
+ they help identify motivated and capable farmers,
+ but paying for the seed does not necessarily strengthen long-term behavioral engagement.
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Liesbeth:
+ I was surprised about these numbers,as the baseline descriptives in table 1 indicate that only 19% of Ethiopian farmers in Aug 2022 reported using improved seeds on at least one plot.
+ While now (Nov 2024) we see very high shares having planted improved seed on the raondmly seleted plot.
+ Has there been a massive roll-out in the meantime?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -7546,28 +6450,9 @@ citep{doi:10.1086/735822}
 \end_inset
 
 .
- 
-\end_layout
-
-\begin_layout Standard
-Examining complements may thus help in clarifying mechanisms:
+ Examining complements may thus help in clarifying mechanisms:
  screening may operate because farmers with a higher WTP are those prepared to deploy the necessary inputs;
- sunk cost may raise or lower complementary investment depending on whether payment increases commitment or tightens liquidity
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Berber:
- It could also be "I've already invested so much in the seed,
- let me know make sure that it does well and invest in inputs." Liesbeth:
- We dont'have (own) labour input,
- do we?
- There the liquidity argument would not hold?
-\end_layout
-
-\end_inset
-
-;
+ sunk cost may raise or lower complementary investment depending on whether payment increases commitment or tightens liquidity;
  and price signals may shift expectations about quality and therefore the optimal intensity of complementary use.
  By tracking complements,
  we can interpret adoption and yield results more accurately and speak to policy design,
@@ -7575,8 +6460,7 @@ Berber:
 \end_layout
 
 \begin_layout Standard
-In the pooled results,
- reported in the top panel in Table 
+Table 
 \begin_inset ERT
 status open
 
@@ -7589,38 +6473,35 @@ ref{tab:Effects-on-Inputs}
 
 \end_inset
 
-,
- higher willingness to pay is associated with greater use of complementary inputs,
- with a positive screening coefficient the input index.
- This effect seems to be mainly driven by fertilizer use.
- By contrast,
- sunk cost effects are negative for complementary input use:
- Paying for the seed appears to tighten cash and crowd out complementary investment.
- We do not find signaling effects in the pooled model.
- 
-\end_layout
-
-\begin_layout Standard
-Turning to crop specific regressions,
- for the case of maize seed trial packs in Uganda,
- overall use of inputs is moderate (about 55 percent for fertilizer and 29 percent for chemicals).
- Screening effects are positive,
- albeit not significantly so for chemicals.
- Sunk cost effects are negative:
- Farmers who value the seed more invest more in fertilizer,
- but payment reduces their ability to do so,
- consistent with liquidity constraints.
-\end_layout
-
-\begin_layout Standard
-For both teff and wheat in Ethiopia,
- complementary input use is already near universal for fertilizer and high for chemicals,
- reflecting Ethiopia’s strong government-led input supply system,
- coordinated through centralized procurement and distribution via cooperatives and extension agents.
- Coefficients are small and not statistically significant across mechanisms.
- Only for chemical use for wheat,
- screening effects are positive,
- and sunk cost effects and signaling effects are negative.
+ presents results for the use of complementary inputs.
+ For maize in Uganda,
+ we find a modest positive screening effect but a negative sunk cost effect:
+ farmers with higher willingness to pay were slightly more likely to use fertilizer,
+ while those who paid the full price were less likely to apply fertilizer or chemicals overall.
+ This pattern suggests that paying for the seed may have tightened liquidity,
+ crowding out investment in complementary inputs needed to realize the seed’s full potential.
+ For teff in Ethiopia,
+ input use is nearly universal,
+ leaving little variation to explain.
+ Coefficients are small and mostly insignificant,
+ indicating that neither willingness to pay nor payment status meaningfully affected fertilizer or chemical use in this setting.
+ For wheat in Ethiopia,
+ by contrast,
+ sunk cost effects are positive and significant,
+ implying that actual payment is associated with greater use of complementary inputs—
+especially chemicals.
+ This finding stands in contrast to maize and may reflect differences in context:
+ for wheat farmers,
+ paying for the seed may have reinforced commitment and input investment rather than constrained it.
+ Taken together,
+ these results mirror the heterogeneity observed in earlier outcomes:
+ screening effects are generally positive,
+ while sunk cost effects vary in sign,
+ strengthening input use where liquidity constraints are less binding but dampening it where budgets are tight.
+ Appendix Table A3,
+ which uses the continuous transaction price rather than the binary payment indicator to identify sunk cost effects,
+ yields very similar results,
+ confirming that these patterns are not driven by the specific functional form of the price treatment.
 \end_layout
 
 \begin_layout Standard
@@ -7686,23 +6567,6 @@ hline
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-multicolumn{5}{c}{
-\backslash
-textit{Pooled}} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
 & mean & signaling & screening & sunk cost & nobs 
 \backslash
 
@@ -7711,270 +6575,6 @@ textit{Pooled}}
 \end_layout
 
 \begin_layout Plain Layout
-
-
-\backslash
-cline{2-6}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Used fertilizer
-\end_layout
-
-\begin_layout Plain Layout
-
-&
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pract_pooled[1,4,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pract_pooled[3,4,1]<.01,"**",ifelse(res_tab_pract_pooled[3,4,1]<.05,"*",ifelse(res_tab_pract_pooled[3,4,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pract_pooled[1,2,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pract_pooled[3,2,1]<.01,"**",ifelse(res_tab_pract_pooled[3,2,1]<.05,"*",ifelse(res_tab_pract_pooled[3,2,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pract_pooled[1,3,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pract_pooled[3,3,1]<.01,"**",ifelse(res_tab_pract_pooled[3,3,1]<.05,"*",ifelse(res_tab_pract_pooled[3,3,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pract_pooled[1,5,1]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-&
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pract_pooled[2,4,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pract_pooled[2,2,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pract_pooled[2,3,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Used chemicals 
-\end_layout
-
-\begin_layout Plain Layout
-
-&
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pract_pooled[1,4,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pract_pooled[3,4,2]<.01,"**",ifelse(res_tab_pract_pooled[3,4,2]<.05,"*",ifelse(res_tab_pract_pooled[3,4,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pract_pooled[1,2,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pract_pooled[3,2,2]<.01,"**",ifelse(res_tab_pract_pooled[3,2,2]<.05,"*",ifelse(res_tab_pract_pooled[3,2,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pract_pooled[1,3,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pract_pooled[3,3,2]<.01,"**",ifelse(res_tab_pract_pooled[3,3,2]<.05,"*",ifelse(res_tab_pract_pooled[3,3,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pract_pooled[1,5,2]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-&
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pract_pooled[2,4,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pract_pooled[2,2,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pract_pooled[2,3,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Index
-\end_layout
-
-\begin_layout Plain Layout
-
-&
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pract_pooled[1,4,3]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pract_pooled[3,4,3]<.01,"**",ifelse(res_tab_pract_pooled[3,4,3]<.05,"*",ifelse(res_tab_pract_pooled[3,4,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pract_pooled[1,2,3]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pract_pooled[3,2,3]<.01,"**",ifelse(res_tab_pract_pooled[3,2,3]<.05,"*",ifelse(res_tab_pract_pooled[3,2,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pract_pooled[1,3,3]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pract_pooled[3,3,3]<.01,"**",ifelse(res_tab_pract_pooled[3,3,3]<.05,"*",ifelse(res_tab_pract_pooled[3,3,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pract_pooled[1,5,3]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-&
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pract_pooled[2,4,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pract_pooled[2,2,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pract_pooled[2,3,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
 
 \end_layout
 
@@ -8190,7 +6790,7 @@ Sexpr{res_tab_pract[2,3,2]})
 
 \begin_layout Plain Layout
 
-Index
+Complementary Inputs Index
 \end_layout
 
 \begin_layout Plain Layout
@@ -8487,7 +7087,7 @@ Sexpr{res_tab_pract_teff[2,3,2]})
 
 \begin_layout Plain Layout
 
-Index
+Complementary Inputs Index
 \end_layout
 
 \begin_layout Plain Layout
@@ -8784,7 +7384,7 @@ Sexpr{res_tab_pract_wheat[2,3,2]})
 
 \begin_layout Plain Layout
 
-Index
+Complementary Inputs Index
 \end_layout
 
 \begin_layout Plain Layout
@@ -8926,17 +7526,6 @@ Note:
 
 \end_layout
 
-\begin_layout Standard
-Taken together,
- complementary inputs echo the seed-use story.
- Where there is room to vary management,
- we see positive screening effects and negative sunk cost effects,
- that is,
- selection on willingness to pay and crowd-out from payment;
- where input use is saturated,
- these effects are muted.
-\end_layout
-
 \begin_layout Section
 Conclusion
 \end_layout
@@ -8950,15 +7539,15 @@ In this paper,
  critics argue that free provision can lead to waste or misuse.
  We tested whether charging a positive price affects use and adoption through three distinct mechanisms.
  First,
+ goods obtained for free or at a very low price may be perceived as lower quality,
+ reducing the effort and care invested in their use.
+ Second,
  prices may serve as a screening device,
  ensuring that products are allocated to those who value them most.
- Second,
+ Third,
  having paid for a product may foster a sense of commitment,
  since not using it would mean wasting the money spent,
  consistent with the sunk cost rationale in behavioral economics.
- Third,
- goods obtained for free or at a very low price may be perceived as lower quality,
- reducing the effort and care invested in their use.
 \end_layout
 
 \begin_layout Standard
@@ -8979,37 +7568,22 @@ We identified the three mechanisms through a novel field experiment that used a 
 \end_layout
 
 \begin_layout Standard
-We test whether each of these three prices affect if and how the seed trial packs were used,
+We test whether each of these three prices affect if,
+ and how,
+ the seed trial packs were used,
  how prices affected adoption and production in the next season,
  and if price affected investment in complementary inputs.
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Berber:
- I'm wondering if we could show how the final offer price influences each of the three outcome variables,
- without controlling for screening and signaling effects,
- as a policy relevant outcome.
- Maybe something we can discuss.
-\end_layout
-
-\end_inset
-
  Overall,
  we found that higher willingness to pay is often associated with greater use of seed trial packs,
  adoption of the promoted variety in the following season,
  and in some cases higher production,
  consistent with a screening effect.
- By contrast,
- paying for the seed seldom strengthened commitment to use and in some cases reduced appropriate use or complementary investments,
- potentially due to liquidity constraints.
  Initial high offer prices did not reliably act as positive quality signals and in some instances discouraged planting.
- These patterns were not uniform across settings:
- for wheat in Ethiopia,
+ Results with respect to sunk cost effects were not uniform across settings:
+ for teff in Ethiopia,
  paying a positive price appeared to increase commitment to use,
- while for teff,
- screening effects were more pronounced but high initial prices reduced use,
- likely due to strong preferences for local seed or resale incentives.
+ while for both teff in Ethiopia and maize in Uganda,
+ we actually find negative sunk cost effects.
  This heterogeneity highlights that the influence of price depends on both crop characteristics and the surrounding market and input supply context.
 \end_layout
 
@@ -9027,7 +7601,8 @@ These findings have several implications for the pricing of seed trial packs in 
 Second,
  the presence of negative sunk cost effects cautions against relying on payment to boost commitment.
  In our setting,
- paying for seed generally did not increase use (except maybe for wheat in Ethiopia) and in some cases reduced appropriate use or investment in complementary inputs,
+ paying for seed generally did not increase use (except maybe for teff in Ethiopia);
+ it actually reduced appropriate use,
  likely due to liquidity constraints.
  This suggests that charging higher prices may inadvertently undermine learning and adoption by reducing farmers’ ability to manage the crop effectively.
  Where targeting is needed,
@@ -9047,7 +7622,7 @@ Third,
 \begin_layout Standard
 Taken together,
  the results suggested that the most effective approach was to set a modest price that enabled targeting without creating financial barriers,
- while using additional targeting mechanisms beyond price (such as limiting distribution to active farmers,
+ while using additional targeting mechanisms beyond price (such as limited distribution to active farmers,
  using extension agents’ local knowledge,
  or requiring simple expressions of interest) to ensure seed reached those most likely to use it.
  Our findings also indicated that the effects of pricing may be technology- and context-specific,
@@ -9079,16 +7654,6 @@ This research received clearance form Makerere's School of Social Sciences Resea
 
 \begin_layout Section
 Acknowledgments
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Berber:to be updated
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -9370,7 +7935,7 @@ placement document
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -9432,461 +7997,6 @@ hline
 \begin_layout Plain Layout
 
 & mean & signaling & screening & sunk cost & nobs 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-multicolumn{5}{c}{
-\backslash
-textit{Pooled}} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-cline{2-6}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Used trial pack as seed (1=yes)
-\end_layout
-
-\begin_layout Plain Layout
-
-&
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,4,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pooled[3,4,1]<.01,"**",ifelse(res_tab_pooled[3,4,1]<.05,"*",ifelse(res_tab_pooled[3,4,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,2,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pooled[3,2,1]<.01,"**",ifelse(res_tab_pooled[3,2,1]<.05,"*",ifelse(res_tab_pooled[3,2,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,3,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pooled[3,3,1]<.01,"**",ifelse(res_tab_pooled[3,3,1]<.05,"*",ifelse(res_tab_pooled[3,3,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,5,1]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-&
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pooled[2,4,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pooled[2,2,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pooled[2,3,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Kept seed separate (1=yes)
-\end_layout
-
-\begin_layout Plain Layout
-
-&
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,4,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pooled[3,4,2]<.01,"**",ifelse(res_tab_pooled[3,4,2]<.05,"*",ifelse(res_tab_pooled[3,4,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,2,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pooled[3,2,2]<.01,"**",ifelse(res_tab_pooled[3,2,2]<.05,"*",ifelse(res_tab_pooled[3,2,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,3,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pooled[3,3,2]<.01,"**",ifelse(res_tab_pooled[3,3,2]<.05,"*",ifelse(res_tab_pooled[3,3,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,5,2]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-&
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pooled[2,4,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pooled[2,2,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pooled[2,3,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Kept harvest separate (1=yes)
-\end_layout
-
-\begin_layout Plain Layout
-
-&
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,4,4]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pooled[3,4,4]<.01,"**",ifelse(res_tab_pooled[3,4,4]<.05,"*",ifelse(res_tab_pooled[3,4,4]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,2,4]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pooled[3,2,4]<.01,"**",ifelse(res_tab_pooled[3,2,4]<.05,"*",ifelse(res_tab_pooled[3,2,4]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,3,4]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pooled[3,3,4]<.01,"**",ifelse(res_tab_pooled[3,3,4]<.05,"*",ifelse(res_tab_pooled[3,3,4]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,5,4]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-&
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pooled[2,4,4]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pooled[2,2,4]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pooled[2,3,4]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Buyer used seed him/herself (1=yes)
-\end_layout
-
-\begin_layout Plain Layout
-
-&
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,4,3]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pooled[3,4,3]<.01,"**",ifelse(res_tab_pooled[3,4,3]<.05,"*",ifelse(res_tab_pooled[3,4,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,2,3]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pooled[3,2,3]<.01,"**",ifelse(res_tab_pooled[3,2,3]<.05,"*",ifelse(res_tab_pooled[3,2,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,3,3]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pooled[3,3,3]<.01,"**",ifelse(res_tab_pooled[3,3,3]<.05,"*",ifelse(res_tab_pooled[3,3,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,5,3]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-&
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pooled[2,4,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pooled[2,2,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pooled[2,3,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Index
-\end_layout
-
-\begin_layout Plain Layout
-
-&
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,4,5]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pooled[3,4,5]<.01,"**",ifelse(res_tab_pooled[3,4,5]<.05,"*",ifelse(res_tab_pooled[3,4,5]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,2,5]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pooled[3,2,5]<.01,"**",ifelse(res_tab_pooled[3,2,5]<.05,"*",ifelse(res_tab_pooled[3,2,5]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,3,5]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pooled[3,3,5]<.01,"**",ifelse(res_tab_pooled[3,3,5]<.05,"*",ifelse(res_tab_pooled[3,3,5]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pooled[1,5,5]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-&
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pooled[2,4,5]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pooled[2,2,5]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pooled[2,3,5]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
 \backslash
 
 \backslash
@@ -10287,7 +8397,7 @@ Sexpr{res_tab[2,3,3]})
 
 \begin_layout Plain Layout
 
-Index
+Trial Seed Use Index
 \end_layout
 
 \begin_layout Plain Layout
@@ -10766,7 +8876,7 @@ Sexpr{res_tab_teff[2,3,3]})
 
 \begin_layout Plain Layout
 
-Index
+Trial Seed Use Index
 \end_layout
 
 \begin_layout Plain Layout
@@ -11336,6 +9446,10 @@ Sexpr{res_tab_wheat[2,3,5]})
 
 \begin_layout Plain Layout
 
+\end_layout
+
+\begin_layout Plain Layout
+
 
 \backslash
 hline
@@ -11393,7 +9507,7 @@ placement document
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -11459,457 +9573,6 @@ hline
 
 \begin_layout Plain Layout
 
-& 
-\backslash
-multicolumn{5}{c}{
-\backslash
-textit{Pooled}} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-cline{2-6}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Used improved seed on random plot (1=yes)
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,4,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season_pooled[3,4,1]<.01,"**",ifelse(res_tab_next_season_pooled[3,4,1]<.05,"*",ifelse(res_tab_next_season_pooled[3,4,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,2,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season_pooled[3,2,1]<.01,"**",ifelse(res_tab_next_season_pooled[3,2,1]<.05,"*",ifelse(res_tab_next_season_pooled[3,2,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,3,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season_pooled[3,3,1]<.01,"**",ifelse(res_tab_next_season_pooled[3,3,1]<.05,"*",ifelse(res_tab_next_season_pooled[3,3,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,5,1]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season_pooled[2,4,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season_pooled[2,2,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season_pooled[2,3,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Used promoted seed on random plot (1=yes)
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,4,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season_pooled[3,4,2]<.01,"**",ifelse(res_tab_next_season_pooled[3,4,2]<.05,"*",ifelse(res_tab_next_season_pooled[3,4,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,2,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season_pooled[3,2,2]<.01,"**",ifelse(res_tab_next_season_pooled[3,2,2]<.05,"*",ifelse(res_tab_next_season_pooled[3,2,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,3,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season_pooled[3,3,2]<.01,"**",ifelse(res_tab_next_season_pooled[3,3,2]<.05,"*",ifelse(res_tab_next_season_pooled[3,3,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,5,2]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season_pooled[2,4,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season_pooled[2,2,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season_pooled[2,3,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Production (kg)
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,4,3]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season_pooled[3,4,3]<.01,"**",ifelse(res_tab_next_season_pooled[3,4,3]<.05,"*",ifelse(res_tab_next_season_pooled[3,4,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,2,3]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season_pooled[3,2,3]<.01,"**",ifelse(res_tab_next_season_pooled[3,2,3]<.05,"*",ifelse(res_tab_next_season_pooled[3,2,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,3,3]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season_pooled[3,3,3]<.01,"**",ifelse(res_tab_next_season_pooled[3,3,3]<.05,"*",ifelse(res_tab_next_season_pooled[3,3,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,5,3]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season_pooled[2,4,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season_pooled[2,2,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season_pooled[2,3,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Productivity (kg/acre)
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,4,4]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season_pooled[3,4,4]<.01,"**",ifelse(res_tab_next_season_pooled[3,4,4]<.05,"*",ifelse(res_tab_next_season_pooled[3,4,4]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,2,4]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season_pooled[3,2,4]<.01,"**",ifelse(res_tab_next_season_pooled[3,2,4]<.05,"*",ifelse(res_tab_next_season_pooled[3,2,4]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,3,4]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season_pooled[3,3,4]<.01,"**",ifelse(res_tab_next_season_pooled[3,3,4]<.05,"*",ifelse(res_tab_next_season_pooled[3,3,4]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,5,4]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season_pooled[2,4,4]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season_pooled[2,2,4]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season_pooled[2,3,4]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Index
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,4,5]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season_pooled[3,4,5]<.01,"**",ifelse(res_tab_next_season_pooled[3,4,5]<.05,"*",ifelse(res_tab_next_season_pooled[3,4,5]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,2,5]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season_pooled[3,2,5]<.01,"**",ifelse(res_tab_next_season_pooled[3,2,5]<.05,"*",ifelse(res_tab_next_season_pooled[3,2,5]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,3,5]}$^{
-\backslash
-Sexpr{ifelse(res_tab_next_season_pooled[3,3,5]<.01,"**",ifelse(res_tab_next_season_pooled[3,3,5]<.05,"*",ifelse(res_tab_next_season_pooled[3,3,5]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_next_season_pooled[1,5,5]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season_pooled[2,4,5]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season_pooled[2,2,5]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_next_season_pooled[2,3,5]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
 \end_layout
 
 \begin_layout Plain Layout
@@ -11942,7 +9605,7 @@ cline{2-6}
 
 \begin_layout Plain Layout
 
-Used improved seed on random plot (1=yes)
+Used improved variety on random plot (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -12306,7 +9969,7 @@ Sexpr{res_tab_next_season[2,3,4]})
 
 \begin_layout Plain Layout
 
-Index
+Adoption Index
 \end_layout
 
 \begin_layout Plain Layout
@@ -12421,7 +10084,7 @@ cline{2-6}
 
 \begin_layout Plain Layout
 
-Used improved seed on random plot (1=yes)
+Used improved variety on random plot (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -12785,7 +10448,7 @@ Sexpr{res_tab_next_season_teff[2,3,4]})
 
 \begin_layout Plain Layout
 
-Index
+Adoption Index
 \end_layout
 
 \begin_layout Plain Layout
@@ -12900,7 +10563,7 @@ cline{2-6}
 
 \begin_layout Plain Layout
 
-Used improved seed on random plot (1=yes)
+Used improved variety on random plot (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -13264,7 +10927,7 @@ Sexpr{res_tab_next_season_wheat[2,3,4]})
 
 \begin_layout Plain Layout
 
-Index
+Adoption Index
 \end_layout
 
 \begin_layout Plain Layout
@@ -13346,6 +11009,10 @@ Sexpr{res_tab_next_season_wheat[2,3,5]})
 \backslash
 
 \backslash
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -13469,23 +11136,6 @@ hline
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-multicolumn{5}{c}{
-\backslash
-textit{Pooled}} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
 & mean & signaling & screening & sunk cost & nobs 
 \backslash
 
@@ -13494,270 +11144,6 @@ textit{Pooled}}
 \end_layout
 
 \begin_layout Plain Layout
-
-
-\backslash
-cline{2-6}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Used fertilizer
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pract_pooled[1,4,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pract_pooled[3,4,1]<.01,"**",ifelse(res_tab_pract_pooled[3,4,1]<.05,"*",ifelse(res_tab_pract_pooled[3,4,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pract_pooled[1,2,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pract_pooled[3,2,1]<.01,"**",ifelse(res_tab_pract_pooled[3,2,1]<.05,"*",ifelse(res_tab_pract_pooled[3,2,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pract_pooled[1,3,1]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pract_pooled[3,3,1]<.01,"**",ifelse(res_tab_pract_pooled[3,3,1]<.05,"*",ifelse(res_tab_pract_pooled[3,3,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pract_pooled[1,5,1]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pract_pooled[2,4,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pract_pooled[2,2,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pract_pooled[2,3,1]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Used chemicals 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pract_pooled[1,4,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pract_pooled[3,4,2]<.01,"**",ifelse(res_tab_pract_pooled[3,4,2]<.05,"*",ifelse(res_tab_pract_pooled[3,4,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pract_pooled[1,2,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pract_pooled[3,2,2]<.01,"**",ifelse(res_tab_pract_pooled[3,2,2]<.05,"*",ifelse(res_tab_pract_pooled[3,2,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pract_pooled[1,3,2]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pract_pooled[3,3,2]<.01,"**",ifelse(res_tab_pract_pooled[3,3,2]<.05,"*",ifelse(res_tab_pract_pooled[3,3,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pract_pooled[1,5,2]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pract_pooled[2,4,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pract_pooled[2,2,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pract_pooled[2,3,2]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Index
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pract_pooled[1,4,3]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pract_pooled[3,4,3]<.01,"**",ifelse(res_tab_pract_pooled[3,4,3]<.05,"*",ifelse(res_tab_pract_pooled[3,4,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pract_pooled[1,2,3]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pract_pooled[3,2,3]<.01,"**",ifelse(res_tab_pract_pooled[3,2,3]<.05,"*",ifelse(res_tab_pract_pooled[3,2,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pract_pooled[1,3,3]}$^{
-\backslash
-Sexpr{ifelse(res_tab_pract_pooled[3,3,3]<.01,"**",ifelse(res_tab_pract_pooled[3,3,3]<.05,"*",ifelse(res_tab_pract_pooled[3,3,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{res_tab_pract_pooled[1,5,3]} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pract_pooled[2,4,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pract_pooled[2,2,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{res_tab_pract_pooled[2,3,3]})
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
 
 \end_layout
 
@@ -13973,7 +11359,7 @@ Sexpr{res_tab_pract[2,3,2]})
 
 \begin_layout Plain Layout
 
-Index
+Complementary Inputs Index
 \end_layout
 
 \begin_layout Plain Layout
@@ -14270,7 +11656,7 @@ Sexpr{res_tab_pract_teff[2,3,2]})
 
 \begin_layout Plain Layout
 
-Index
+Complementary Inputs Index
 \end_layout
 
 \begin_layout Plain Layout
@@ -14567,7 +11953,7 @@ Sexpr{res_tab_pract_wheat[2,3,2]})
 
 \begin_layout Plain Layout
 
-Index
+Complementary Inputs Index
 \end_layout
 
 \begin_layout Plain Layout

@@ -401,24 +401,42 @@ bse_graph$final_price <- as.numeric(as.character(bse_graph$final_price))
 bse_graph$final_price[bse_graph$final_price < 5000] <- NA
 bse_graph <- subset(bse_graph, !is.na(final_price) )
 
-library(ggplot2)
+# Create a data frame of counts and proportions
+price_prop <- as.data.frame(table(bse_graph$final_price))
+colnames(price_prop) <- c("Price", "Count")
 
-# Create a data frame of proportions
-price_prop <- as.data.frame(prop.table(table(bse_graph$final_price)))
-colnames(price_prop) <- c("Price", "Density")
-
-# If Price is numeric, convert it (for better ordering in the plot)
+# Convert to numeric for sorting/plotting
 price_prop$Price <- as.numeric(as.character(price_prop$Price))
 
-# Plot with ggplot2
+# Total sample size
+n_total <- sum(price_prop$Count)
+
+# Compute proportions and 95% confidence intervals
+price_prop <- price_prop |>
+  mutate(
+    Density = Count / n_total,
+    se = sqrt(Density * (1 - Density) / n_total),
+    lower = pmax(0, Density - 1.96 * se),  # avoid negative lower bound
+    upper = pmin(1, Density + 1.96 * se)
+  )
+
+# Plot with confidence intervals
 plot_maize <- ggplot(price_prop, aes(x = Price, y = Density)) +
-  geom_bar(stat = "identity", fill = "steelblue") +
+  geom_bar(stat = "identity", fill = "steelblue", alpha = 0.8) +
+  geom_errorbar(aes(ymin = lower, ymax = upper), width = 100, linewidth = 0.5) +
   labs(
-    title = "Demand for Maize Seed",
+    title = "Demand for Maize Seed (Uganda)",
     x = "Price",
-    y = "Density"
+    y = "Proportion of farmers purchasing"
   ) +
-  theme_minimal()
+  theme_minimal(base_size = 13) +
+  theme(
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank()
+  )
+
+# Print plot
+plot_maize
 
 ###WTP graph for teff
 
@@ -432,22 +450,42 @@ bse_graph$final_price <- as.numeric(as.character(bse_graph$final_price))
 bse_graph <- subset(bse_graph, !is.na(final_price) )
 
 
-# Create a data frame of proportions
-price_prop <- as.data.frame(prop.table(table(bse_graph$final_price)))
-colnames(price_prop) <- c("Price", "Density")
+# Create a data frame of counts and proportions
+price_prop <- as.data.frame(table(bse_graph$final_price))
+colnames(price_prop) <- c("Price", "Count")
 
-# If Price is numeric, convert it (for better ordering in the plot)
+# Convert to numeric for sorting/plotting
 price_prop$Price <- as.numeric(as.character(price_prop$Price))
 
-# Plot with ggplot2
+# Total sample size
+n_total <- sum(price_prop$Count)
+
+# Compute proportions and 95% confidence intervals
+price_prop <- price_prop |>
+  mutate(
+    Density = Count / n_total,
+    se = sqrt(Density * (1 - Density) / n_total),
+    lower = pmax(0, Density - 1.96 * se),  # avoid negative lower bound
+    upper = pmin(1, Density + 1.96 * se)
+  )
+
+# Plot with confidence intervals
 plot_teff <- ggplot(price_prop, aes(x = Price, y = Density)) +
-  geom_bar(stat = "identity", fill = "steelblue") +
+  geom_bar(stat = "identity", fill = "steelblue", alpha = 0.8) +
+  geom_errorbar(aes(ymin = lower, ymax = upper), width = 1, linewidth = 0.5) +
   labs(
-    title = "Demand for Teff Seed",
+    title = "Demand for Teff Seed (Ethiopia)",
     x = "Price",
-    y = "Density"
+    y = "Proportion of farmers purchasing"
   ) +
-  theme_minimal()
+  theme_minimal(base_size = 13) +
+  theme(
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank()
+  )
+
+# Print plot
+plot_teff
 
 ##WTP graph for teff - lee bounds for truncation
 
@@ -480,23 +518,42 @@ breaks <- seq(from = 30, to= 80, by =10)
 bse_graph$final_price <- cut(bse_graph$final_price, breaks = breaks,labels = c("30","40","50","60","70"),right = FALSE)
 bse_graph$final_price <- as.numeric(as.character(bse_graph$final_price))
 bse_graph <- subset(bse_graph, !is.na(final_price) )
+# Create a data frame of counts and proportions
+price_prop <- as.data.frame(table(bse_graph$final_price))
+colnames(price_prop) <- c("Price", "Count")
 
-# Create a data frame of proportions
-price_prop <- as.data.frame(prop.table(table(bse_graph$final_price)))
-colnames(price_prop) <- c("Price", "Density")
-
-# If Price is numeric, convert it (for better ordering in the plot)
+# Convert to numeric for sorting/plotting
 price_prop$Price <- as.numeric(as.character(price_prop$Price))
 
-# Plot with ggplot2
+# Total sample size
+n_total <- sum(price_prop$Count)
+
+# Compute proportions and 95% confidence intervals
+price_prop <- price_prop |>
+  mutate(
+    Density = Count / n_total,
+    se = sqrt(Density * (1 - Density) / n_total),
+    lower = pmax(0, Density - 1.96 * se),  # avoid negative lower bound
+    upper = pmin(1, Density + 1.96 * se)
+  )
+
+# Plot with confidence intervals
 plot_wheat <- ggplot(price_prop, aes(x = Price, y = Density)) +
-  geom_bar(stat = "identity", fill = "steelblue") +
+  geom_bar(stat = "identity", fill = "steelblue", alpha = 0.8) +
+  geom_errorbar(aes(ymin = lower, ymax = upper), width = 1, linewidth = 0.5) +
   labs(
-    title = "Demand for Wheat Seed",
+    title = "Demand for Wheat Seed (Ethiopia)",
     x = "Price",
-    y = "Density"
+    y = "Proportion of farmers purchasing"
   ) +
-  theme_minimal()
+  theme_minimal(base_size = 13) +
+  theme(
+    panel.grid.minor = element_blank(),
+    panel.grid.major.x = element_blank()
+  )
+
+# Print plot
+plot_wheat
 
 library(patchwork)
 combined_plot <- plot_maize /plot_teff / plot_wheat   # "/" stacks vertically
@@ -1651,7 +1708,7 @@ dta_reg$screening <- (as.numeric(as.character(dta_reg$final_price)))/1000
 dta_reg$signaling <- (as.numeric(as.character(dta_reg$P1_pric)))/1000
 #to measure sunk cost effect, the transaction price is used, that is the amount that is paid after the discount
 #as we did a full discount to it is zero for those that got a discount, and the price paid for those that did not get the discount
-dta_reg$sunk <- as.numeric(!dta_reg$discounted)
+dta_reg$sunk <- as.numeric(!dta_reg$discounted)*dta_reg$screening
 
 dta_reg$d_screening <- dta_reg$screening - mean(dta_reg$screening, na.rm=TRUE)
 dta_reg$d_signaling <- dta_reg$signaling - mean(dta_reg$signaling, na.rm=TRUE)
