@@ -174,20 +174,30 @@ literal "false"
 \end_layout
 
 \begin_layout Abstract
-The dual role of farm households as both producers and consumers implies that adoption decisions for improved crop technologies are shaped not only by agronomic performance but also by consumption attributes.
- We study how emphasizing different traits of an improved maize variety affects adoption behavior.
+The dual role of farm households as both producers and consumers implies that adoption decisions for improved crop technologies are shaped not only by agronomic performance attributes such as yield or drought tolerance,
+ but also by consumption attributes such as taste and ease of cooking.
+ We study how emphasizing different traits of an improved maize variety affects adoption behavior among smallholder farmers.
  In a randomized controlled trial in eastern Uganda,
  we implemented two interventions:
  one highlighted production traits via seed trial packs,
- the other emphasized consumption traits through cooking demonstrations.
- Both interventions improved farmers’ knowledge and perceptions of the variety,
- but only the consumption-focused approach led to a modest increase in the adoption of the promoted variety in the subsequent season.
- In contrast,
- trial pack recipients often reused harvested grain from the trial pack as seed,
- lowering demand for improved seed varieties.
- Although the promoted hybrid is not intended for recycling as seed,
- farmers’ behavior appears to be a rational response to informational,
+ the other emphasized consumption traits through cooking demonstrations and tasting sessions.
+ Both interventions significantly improve farmers’ knowledge and perceptions of the promoted variety and lead to a significant increase in subsequent use.
+ Examining adoption more closely,
+ however,
+ we find that the increase following seed trial packs is driven largely by recycling grain harvested from the trial as planting material.
+ If we take into account that,
+ from an agronomic perspective,
+ hybrid seed such as the variety used in the trial pack should not be recycled due to productivity losses,
+ the seed trial pack actually crowds out improved crop technology adoption:
+ farmers who received a trial pack are less likely to purchase fresh hybrid seed in the subsequent season and instead rely on recycled grain.
+ We show that this behavior is consistent with farmers’ rational responses to informational,
  economic and structural barriers.
+ Taken together,
+ the findings show that both seed trial packs and cooking demonstrations are effective at improving knowledge and learning about the promoted variety.
+ Cooking demonstrations increase adoption without distorting seed market behavior,
+ while trial packs convey both production and consumption attributes but,
+ for non-reproducible technologies such as hybrid seed,
+ may crowd out purchases of certified seed through recycling.
 \end_layout
 
 \begin_layout Abstract
