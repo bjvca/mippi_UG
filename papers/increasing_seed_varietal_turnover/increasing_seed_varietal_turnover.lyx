@@ -283,7 +283,8 @@ literal "false"
 \begin_layout Standard
 Because the production and consumption attributes of new varieties are not directly observable to farmers upon seed purchase,
  widespread adoption also may require raising farmers' awareness of their beneficial attributes.
- A common strategy to encourage farmers to learn about a new variety is through the distribution of seed sample packs (often referred to as 
+ A common strategy to encourage farmers to learn about a new variety is through the distribution of seed sample packs,
+ often referred to as 
 \begin_inset Quotes eld
 \end_inset
 
@@ -309,7 +310,7 @@ mini-kits
 \begin_inset Quotes erd
 \end_inset
 
-) 
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "blackie2005origin,cromwell1990seed"
@@ -360,7 +361,7 @@ literal "false"
  Moreover,
  interventions that familiarize farmers with consumption traits,
  such as cooking demonstrations and tasting events,
- are often primarily concerned with nutrition-related outcomes and rarely consider actual adoption of the crop 
+ are often primarily concerned with nutrition-related outcomes and rarely consider actual adoption of the crop or variety that was used during the demonstration 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "REICKS2014259"
@@ -411,7 +412,7 @@ literal "false"
 \end_inset
 
  A second intervention involves cooking demonstrations and blind tasting tests.
- This intervention allows farmers to familiarize themselves with consumption attributes of maize flour derived from the grain grown using the promoted improved variety.
+ This intervention allows farmers to familiarize themselves with consumption attributes of maize flour derived from the grain grown using the same improved variety that was promoted in the seed trial pack intervention.
  Additionally,
  farmers in this treatment arm are provided with maize flour samples derived from the grain grown using the promoted improved variety to further explore consumption traits at home and potentially convince other household members of consumption related benefits.
 \end_layout
@@ -442,25 +443,69 @@ literal "false"
 
 \end_inset
 
-,
- but in terms of consumption attributes,
+.
+ However,
+ it also offers important consumption attributes:
  
 \emph on
 Bazooka
 \emph default
- also combines a high starch content with mild sweetness.
+ combines high starch content with mild sweetness and produces a very white porridge.
 \end_layout
 
 \begin_layout Standard
-We find that farmers who received a trial pack are actually 
-\shape italic
-less likely
-\shape default
- to plant (fresh) seed of an improved variety in the next season because they instead use recycled seed obtained from the trial pack's harvest.
- Hybrid seeds are not intended to be recycled given the associated yield penalty for doing so,
- as recycled seeds from improved hybrid varieties are not genetically the same as their parent seeds.
- However,
- we find suggestive evidence that the cooking demonstration and tasting session increased the adoption of fresh 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+I am here 
+\end_layout
+
+\end_inset
+
+We find that farmers who received a trial pack are substantially more likely to plant 
+\emph on
+Bazooka
+\emph default
+ in the subsequent season.
+ This increase,
+ however,
+ is driven almost entirely by the reuse of grain harvested from the trial pack rather than by purchases of fresh 
+\emph on
+Bazooka
+\emph default
+ seed.
+ When we restrict attention to the use of fresh 
+\emph on
+Bazooka
+\emph default
+ seed,
+ adoption rates are statistically indistinguishable between treatment and control farmers.
+ Moreover,
+ when we apply a broader but agronomically valid definition of seed of improved varieties that includes fresh hybrids and fresh ore appropriately recycled OPVs (but excludes recycled hybrid grain),
+ we find that the trial pack intervention actually 
+\emph on
+reduces
+\emph default
+ overall improved seed use.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Contrary to hybrid seed,
+ OPVs can be rcycled
+\end_layout
+
+\end_inset
+
+ This crowding-out effect appears to arise because treated farmers,
+ having access to Bazooka grain at no monetary cost,
+ are less likely to use fresh hybrid or use fresh or appropriately recycled OPV seed in the following season.
+\end_layout
+
+\begin_layout Standard
+For the cooking demonstration and tasting intervention,
+ we find suggestive evidence of an increase in the adoption of fresh 
 \emph on
 Bazooka
 \emph default
@@ -3611,7 +3656,7 @@ placement document
 alignment document
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -3709,36 +3754,36 @@ Adoption Index
 
 & 
 \backslash
-Sexpr{format(round(df_means_out[1,7],digits=2),nsmall=2)}
+Sexpr{format(round(df_means_out[1,8],digits=2),nsmall=2)}
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{format(round(df_res[1,1,7],digits=2),nsmall=2)}$^{
+Sexpr{format(round(df_res[1,1,8],digits=2),nsmall=2)}$^{
 \backslash
-Sexpr{ifelse(df_res[1,3,7]<.01,"**",ifelse(df_res[1,3,7]<.05,"*",ifelse(df_res[1,3,7]<.1,"+","")))}}$ 
+Sexpr{ifelse(df_res[1,3,8]<.01,"**",ifelse(df_res[1,3,8]<.05,"*",ifelse(df_res[1,3,8]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{format(round(df_res[2,1,7],digits=2),nsmall=2)}$^{
+Sexpr{format(round(df_res[2,1,8],digits=2),nsmall=2)}$^{
 \backslash
-Sexpr{ifelse(df_res[2,3,7]<.01,"**",ifelse(df_res[2,3,7]<.05,"*",ifelse(df_res[2,3,7]<.1,"+","")))}}$
+Sexpr{ifelse(df_res[2,3,8]<.01,"**",ifelse(df_res[2,3,8]<.05,"*",ifelse(df_res[2,3,8]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{format(round(df_res[3,1,7],digits=2),nsmall=2)}$^{
+Sexpr{format(round(df_res[3,1,8],digits=2),nsmall=2)}$^{
 \backslash
-Sexpr{ifelse(df_res[3,3,7]<.01,"**",ifelse(df_res[3,3,7]<.05,"*",ifelse(df_res[3,3,7]<.1,"+","")))}}$ & 
+Sexpr{ifelse(df_res[3,3,8]<.01,"**",ifelse(df_res[3,3,8]<.05,"*",ifelse(df_res[3,3,8]<.1,"+","")))}}$ & 
 \backslash
-Sexpr{format(round(df_res[1,4,7],digits=0),nsmall=0)} 
+Sexpr{format(round(df_res[1,4,8],digits=0),nsmall=0)} 
 \backslash
 
 \backslash
@@ -3753,13 +3798,30 @@ Sexpr{format(round(df_res[1,4,7],digits=0),nsmall=0)}
 
 & (
 \backslash
-Sexpr{format(round(df_means_out[2,7],digits=2),nsmall=2)}) & (
+Sexpr{format(round(df_means_out[2,8],digits=2),nsmall=2)}) & (
 \backslash
-Sexpr{format(round(df_res[1,2,7],digits=2),nsmall=2)})  & (
+Sexpr{format(round(df_res[1,2,8],digits=2),nsmall=2)})  & (
 \backslash
-Sexpr{format(round(df_res[2,2,7],digits=2),nsmall=2)})  & (
+Sexpr{format(round(df_res[2,2,8],digits=2),nsmall=2)})  & (
 \backslash
-Sexpr{format(round(df_res[3,2,7],digits=2),nsmall=2)})
+Sexpr{format(round(df_res[3,2,8],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -3790,7 +3852,9 @@ Sexpr{format(round(df_res[3,2,7],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Has used seed of an improved variety on any plot in last season?$^
+Has used 
+\backslash
+textit{Bazooka} on any plot in last season?$^
 \backslash
 dag$ (1=yes)
 \end_layout
@@ -3867,50 +3931,13 @@ Sexpr{format(round(df_res[3,2,1],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Has used fresh 
-\backslash
-textit{Bazooka} on any plot in last season?$^
-\backslash
-dag$ (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
 
-& 
-\backslash
-Sexpr{format(round(df_means_out[1,2],digits=2),nsmall=2)}
 \end_layout
 
 \begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_res[1,1,2],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_res[1,3,2]<.01,"**",ifelse(df_res[1,3,2]<.05,"*",ifelse(df_res[1,3,2]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_res[2,1,2],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_res[2,3,2]<.01,"**",ifelse(df_res[2,3,2]<.05,"*",ifelse(df_res[2,3,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_res[3,1,2],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_res[3,3,2]<.01,"**",ifelse(df_res[3,3,2]<.05,"*",ifelse(df_res[3,3,2]<.1,"+","")))}}$ & 
-\backslash
-Sexpr{format(round(df_res[1,4,2],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
 
 \end_layout
 
@@ -3920,108 +3947,7 @@ Sexpr{format(round(df_res[1,4,2],digits=0),nsmall=0)}
 
 \begin_layout Plain Layout
 
-& (
-\backslash
-Sexpr{format(round(df_means_out[2,2],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_res[1,2,2],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_res[2,2,2],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_res[3,2,2],digits=2),nsmall=2)})
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Number of plots planted with improved varieties
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_out[1,3],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_res[1,1,3],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_res[1,3,3]<.01,"**",ifelse(df_res[1,3,3]<.05,"*",ifelse(df_res[1,3,3]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_res[2,1,3],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_res[2,3,3]<.01,"**",ifelse(df_res[2,3,3]<.05,"*",ifelse(df_res[2,3,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_res[3,1,3],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_res[3,3,3]<.01,"**",ifelse(df_res[3,3,3]<.05,"*",ifelse(df_res[3,3,3]<.1,"+","")))}}$ & 
-\backslash
-Sexpr{format(round(df_res[1,4,3],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{format(round(df_means_out[2,3],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_res[1,2,3],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_res[2,2,3],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_res[3,2,3],digits=2),nsmall=2)})
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Number of plots with improved varieties as share of total number of plots
+Number of plot planted with Bazooka
 \end_layout
 
 \begin_layout Plain Layout
@@ -4100,7 +4026,11 @@ Sexpr{format(round(df_res[3,2,4],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Area planted with improved varieties (acres)
+Number of plots with improved varieties as share of total number of plots 
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -4151,7 +4081,7 @@ Sexpr{format(round(df_res[1,4,5],digits=0),nsmall=0)}
 
 & (
 \backslash
-Sexpr{format(round(df_means_out[2,5],digits=2),nsmall=2)})  & (
+Sexpr{format(round(df_means_out[2,5],digits=2),nsmall=2)}) & (
 \backslash
 Sexpr{format(round(df_res[1,2,5],digits=2),nsmall=2)})  & (
 \backslash
@@ -4171,7 +4101,11 @@ Sexpr{format(round(df_res[3,2,5],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Area planted with improved varieties as a share of total maize cultivation area
+\end_layout
+
+\begin_layout Plain Layout
+
+Area planted with improved varieties (acres) 
 \end_layout
 
 \begin_layout Plain Layout
@@ -4233,15 +4167,6 @@ Sexpr{format(round(df_res[3,2,6],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
 
 \backslash
 
@@ -4251,56 +4176,55 @@ Sexpr{format(round(df_res[3,2,6],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
+\end_layout
 
-\backslash
-
-\backslash
+\begin_layout Plain Layout
 
 \end_layout
 
 \begin_layout Plain Layout
 
-Has used 
-\backslash
-textit{Bazooka} (fresh or recycled) on any plot in last season?$^
-\backslash
-dag$ (1=yes)
+Area planted with improved varieties as a share of total maize cultivation area
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{format(round(df_means_out[1,8],digits=2),nsmall=2)}
+Sexpr{format(round(df_means_out[1,7],digits=2),nsmall=2)}
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{format(round(df_res[1,1,8],digits=2),nsmall=2)}$^{
+Sexpr{format(round(df_res[1,1,7],digits=2),nsmall=2)}$^{
 \backslash
-Sexpr{ifelse(df_res[1,3,8]<.01,"**",ifelse(df_res[1,3,8]<.05,"*",ifelse(df_res[1,3,8]<.1,"+","")))}}$ 
+Sexpr{ifelse(df_res[1,3,7]<.01,"**",ifelse(df_res[1,3,7]<.05,"*",ifelse(df_res[1,3,7]<.1,"+","")))}}$ 
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{format(round(df_res[2,1,8],digits=2),nsmall=2)}$^{
+Sexpr{format(round(df_res[2,1,7],digits=2),nsmall=2)}$^{
 \backslash
-Sexpr{ifelse(df_res[2,3,8]<.01,"**",ifelse(df_res[2,3,8]<.05,"*",ifelse(df_res[2,3,8]<.1,"+","")))}}$
+Sexpr{ifelse(df_res[2,3,7]<.01,"**",ifelse(df_res[2,3,7]<.05,"*",ifelse(df_res[2,3,7]<.1,"+","")))}}$
 \end_layout
 
 \begin_layout Plain Layout
 
 & 
 \backslash
-Sexpr{format(round(df_res[3,1,8],digits=2),nsmall=2)}$^{
+Sexpr{format(round(df_res[3,1,7],digits=2),nsmall=2)}$^{
 \backslash
-Sexpr{ifelse(df_res[3,3,8]<.01,"**",ifelse(df_res[3,3,8]<.05,"*",ifelse(df_res[3,3,8]<.1,"+","")))}}$ & 
+Sexpr{ifelse(df_res[3,3,7]<.01,"**",ifelse(df_res[3,3,7]<.05,"*",ifelse(df_res[3,3,7]<.1,"+","")))}}$ & 
 \backslash
-Sexpr{format(round(df_res[1,4,8],digits=0),nsmall=0)} 
+Sexpr{format(round(df_res[1,4,7],digits=0),nsmall=0)} 
 \backslash
 
 \backslash
@@ -4315,35 +4239,185 @@ Sexpr{format(round(df_res[1,4,8],digits=0),nsmall=0)}
 
 & (
 \backslash
-Sexpr{format(round(df_means_out[2,8],digits=2),nsmall=2)}) & (
+Sexpr{format(round(df_means_out[2,7],digits=2),nsmall=2)}) & (
 \backslash
-Sexpr{format(round(df_res[1,2,8],digits=2),nsmall=2)})  & (
+Sexpr{format(round(df_res[1,2,7],digits=2),nsmall=2)})  & (
 \backslash
-Sexpr{format(round(df_res[2,2,8],digits=2),nsmall=2)})  & (
+Sexpr{format(round(df_res[2,2,7],digits=2),nsmall=2)})  & (
 \backslash
-Sexpr{format(round(df_res[3,2,8],digits=2),nsmall=2)})
+Sexpr{format(round(df_res[3,2,7],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Has used fresh 
+\backslash
+textit{Bazooka} on any plot in last season?$^
+\backslash
+dag$ (1=yes)
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_out[1,2],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_res[1,1,2],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_res[1,3,2]<.01,"**",ifelse(df_res[1,3,2]<.05,"*",ifelse(df_res[1,3,2]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_res[2,1,2],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_res[2,3,2]<.01,"**",ifelse(df_res[2,3,2]<.05,"*",ifelse(df_res[2,3,2]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_res[3,1,2],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_res[3,3,2]<.01,"**",ifelse(df_res[3,3,2]<.05,"*",ifelse(df_res[3,3,2]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_res[1,4,2],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_out[2,2],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_res[1,2,2],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_res[2,2,2],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_res[3,2,2],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Number of plots with improved varieties as share of total number of plots
+\end_layout
+
+\begin_layout Plain Layout
+
+Has use fresh hybrid or OPV (1=yes)
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_out[1,3],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_res[1,1,3],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_res[1,3,3]<.01,"**",ifelse(df_res[1,3,3]<.05,"*",ifelse(df_res[1,3,3]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_res[2,1,3],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_res[2,3,3]<.01,"**",ifelse(df_res[2,3,3]<.05,"*",ifelse(df_res[2,3,3]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_res[3,1,3],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_res[3,3,3]<.01,"**",ifelse(df_res[3,3,3]<.05,"*",ifelse(df_res[3,3,3]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_res[1,4,3],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_out[2,3],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_res[1,2,3],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_res[2,2,3],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_res[3,2,3],digits=2),nsmall=2)})
 \end_layout
 
 \begin_layout Plain Layout
 
  
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
 \backslash
 
 \backslash

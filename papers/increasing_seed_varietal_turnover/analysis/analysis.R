@@ -6,7 +6,7 @@ library(dplyr)
 library(clubSandwich)
 library(moments)
 library(andersonTools)
-# set to true if you want to use the Anderson lues
+# set to true if you want to use the Anderson q-values
 sharp <- TRUE
 
 ########################################################################################################################################
@@ -248,9 +248,8 @@ logical_result <- logical(nrow(dta))
 
 for (i in 1:num_plots) {
 	  ### definition of improved seed: fresh hybrid from trusted source or OPV recycled max 3 times from trusted source
-	  condition <- (((dta[[paste0("plot.", i, "..plot_imp_type")]] %in%  
-			                      c("Longe_10H", "Longe_10R", "Longe_7H", "Longe_7R_Kayongo-go", "Bazooka", "DK", "Longe_6H", "Panner", "UH5051", "Wema", "KH_series", "other_hybrid")) & (dta[[paste0("plot.", i, "..plot_times_rec")]] %in% 1) & (dta[[paste0("plot.", i, "..single_source")]]%in% letters[4:9])  ) |
-			                  ((dta[[paste0("plot.", i, "..plot_imp_type")]] %in%  c("Longe_5", "Longe_5D", "Longe_4", "MM3","other_opv")) & (dta[[paste0("plot.", i, "..plot_times_rec")]] %in% 1:4) &  ((dta[[paste0("plot.", i, "..recycle_source_rest")]] %in% letters[4:9]) | (dta[[paste0("plot.", i, "..single_source")]]%in% letters[4:9])))) 
+  condition <- (((dta[[paste0("plot.", i, "..plot_imp_type")]] %in%  
+                    c("Bazooka")) )  )
   # Combine the condition with the logical OR operator
   logical_result <- logical_result + condition
 }     
@@ -271,12 +270,13 @@ tot_area <- matrix(NA,nrow(dta),num_plots)
 for (i in 1:num_plots) {
 #create a matrix if size of plots with adoption
   areas[,i] <- (((dta[[paste0("plot.", i, "..plot_imp_type")]] %in%  
-                    c("Longe_10H", "Longe_10R", "Longe_7H", "Longe_7R_Kayongo-go", "Bazooka", "DK", "Longe_6H", "Panner", "UH5051", "Wema", "KH_series", "other_hybrid")) & (dta[[paste0("plot.", i, "..plot_times_rec")]] %in% 1) & (dta[[paste0("plot.", i, "..single_source")]]%in% letters[4:9])  ) |
-                  ((dta[[paste0("plot.", i, "..plot_imp_type")]] %in%  c("Longe_5", "Longe_5D", "Longe_4", "MM3","other_opv")) & (dta[[paste0("plot.", i, "..plot_times_rec")]] %in% 1:4) &  ((dta[[paste0("plot.", i, "..recycle_source_rest")]] %in% letters[4:9]) | (dta[[paste0("plot.", i, "..single_source")]]%in% letters[4:9]))))*as.numeric(as.character(dta[[paste0("plot.", i, "..plot_size")]] ))
+                    c("Bazooka")) )  )
   tot_area[,i] <- as.numeric(as.character(dta[[paste0("plot.", i, "..plot_size")]] ))
 }
 
-dta$nr_improvedxsize <- rowSums( areas, na.rm=TRUE)
+
+dta$nr_improvedxsize <- rowSums(areas * tot_area, na.rm = TRUE)
+
 dta$nr_improvedxsize[dta$no_grow] <- NA
 dta$totsize <- rowSums( tot_area, na.rm=TRUE)
 dta$totsize[dta$no_grow] <- NA
@@ -292,13 +292,13 @@ dta$share_area_imp[dta$no_grow] <- NA
 
 
 #iterate over outcomes
-outcomes <- c("p_outcome_1","p_outcome_2","nr_improved", "share_plots_imp", "nr_improvedxsize", "share_area_imp" )
-b_outcomes <- c("b_p_outcome_1", "b_p_outcome_2",NA,NA,NA,NA,NA)
+outcomes <- c("p_outcome_2alt", "p_outcome_2","p_outcome_1","nr_improved", "share_plots_imp", "nr_improvedxsize", "share_area_imp")
+b_outcomes <- c("b_p_outcome_2alt","b_p_outcome_2","b_p_outcome_1",NA,NA,NA,NA)
 ### do not include outcome 2 (adoption of bazooka) as this results in singularity - on second thought, maybe p_outcome_2 should be a key outcome and included
 ## in fact, the singularity disappeared in the real data
 dta$index <- icwIndex(xmat= as.matrix(dta[outcomes]), sgroup=dta$s_ind)$index
-outcomes <- c(outcomes, "index","p_outcome_2alt")
-b_outcomes <- c(b_outcomes,"b_p_outcome_2alt")
+outcomes <- c(outcomes, "index")
+b_outcomes <- c(b_outcomes,NA)
 ## demean indicators
 dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)
 dta$trial_P_demeaned <-  dta$trial_P - mean(dta$trial_P,na.rm = T)
@@ -319,7 +319,7 @@ for (i in 1:length(outcomes)){
   
   
   
-  if (i %in% 3:7) {
+  if (i %in% 4:8) {
   formula1 <- as.formula(paste(outcomes[i],paste("trial_P*cont"),sep="~"))
   ols <- lm(formula1, data=dta)
   vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
@@ -339,7 +339,7 @@ for (i in 1:length(outcomes)){
   df_res[1,4,i] <- nobs(ols) 
   }  
 
-  if (i %in% 3:7) {  
+  if (i %in% 4:8) {  
   formula2 <- as.formula(paste(outcomes[i],paste("trial_P*cont_demeaned"),sep="~"))
   } else {
   formula2 <- as.formula(paste(paste(outcomes[i],paste("trial_P*cont_demeaned"),sep="~"), b_outcomes[i],sep="+"))   
@@ -350,7 +350,7 @@ for (i in 1:length(outcomes)){
   df_res_pool[1,1,i] <- coef_test(ols, vcov_cluster)$beta[2]
   df_res_pool[1,2,i] <- coef_test(ols, vcov_cluster)$SE[2]
   df_res_pool[1,3,i] <- coef_test(ols, vcov_cluster)$p_Satt[2]
-  if (i %in% 3:7) {   
+  if (i %in% 4:8) {   
   formula3 <- as.formula(paste(outcomes[i],paste("cont*trial_P_demeaned"),sep="~"))
   } else {
   formula3 <- as.formula(paste(paste(outcomes[i],paste("cont*trial_P_demeaned"),sep="~"), b_outcomes[i],sep="+"))    
