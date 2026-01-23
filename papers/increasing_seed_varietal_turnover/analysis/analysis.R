@@ -163,6 +163,17 @@ ols <- lm(no_grow~cont*trial_P_demeaned,data= dta)
 vcov_cluster <- vcovCR(ols,cluster=dta$cluster_ID,type="CR2")
 coef_test(ols, vcov_cluster)
 
+#### interlude: 
+
+midline_cons <- read.csv(paste(path,"midline/consumption_treatment/data/public/cons_intervention_merged2.csv",sep="/"))
+midline_cons$grDetails.attend[midline_cons$grDetails.attend == "n/a"] <- NA
+midline_cons$grDetails.sp_att[midline_cons$grDetails.sp_att == "n/a"] <- NA
+### attendance at demo sessions
+prop.table(table(midline_cons$grDetails.attend))
+prop.table(table(midline_cons$grDetails.sp_att))
+
+
+
 ##ANALYSIS STARTS HERE
 
 ## primary outcome 1: uses improved seed on at least one plot

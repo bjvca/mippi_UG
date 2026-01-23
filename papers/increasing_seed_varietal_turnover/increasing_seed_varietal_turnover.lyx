@@ -181,7 +181,9 @@ The dual role of farm households as both producers and consumers implies that ad
  we implemented two interventions:
  one highlighted production traits via seed trial packs,
  the other emphasized consumption traits through cooking demonstrations and tasting sessions.
- Both interventions significantly improve farmers’ knowledge and perceptions of the promoted variety and lead to a significant increase in subsequent use.
+ Both interventions,
+ but the seed trial pack in particular,
+ significantly improve farmers’ knowledge and perceptions of the promoted variety and lead to a significant increase in subsequent use.
  Examining adoption more closely,
  however,
  we find that the increase following seed trial packs is driven largely by recycling grain harvested from the trial as planting material.
@@ -454,15 +456,6 @@ Bazooka
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-I am here 
-\end_layout
-
-\end_inset
-
 We find that farmers who received a trial pack are substantially more likely to plant 
 \emph on
 Bazooka
@@ -482,18 +475,18 @@ Bazooka
  seed,
  adoption rates are statistically indistinguishable between treatment and control farmers.
  Moreover,
- when we apply a broader but agronomically valid definition of seed of improved varieties that includes fresh hybrids and fresh ore appropriately recycled OPVs (but excludes recycled hybrid grain),
+ when we apply a broader but agronomically valid definition of seed of improved varieties that includes fresh hybrids and fresh or appropriately recycled OPVs (but exclude recycled hybrid grain),
  we find that the trial pack intervention actually 
 \emph on
 reduces
 \emph default
- overall improved seed use.
+ adoption of improved cropt technologies.
 \begin_inset Foot
 status open
 
 \begin_layout Plain Layout
 Contrary to hybrid seed,
- OPVs can be rcycled
+ OPVs can be recycled a limited number of times without significant yield loss.
 \end_layout
 
 \end_inset
@@ -509,8 +502,7 @@ For the cooking demonstration and tasting intervention,
 \emph on
 Bazooka
 \emph default
- specifically,
- and there is some indication that this treatment led to modest yield gains.
+ specifically.
 \begin_inset Foot
 status collapsed
 
@@ -768,7 +760,7 @@ Experimental Design
 We use a cluster randomized control trial (RCT) to evaluate the effectiveness of two interventions,
  using a 2x2 factorial design,
  with treatments assigned at the village level to mitigate potential concerns about spillover effects.
- The first factor in the factorial design is the seed trial pack treatment;
+ The first factor in the factorial design is the seed trial pack treatment:
  sampled farmers in the treatment villages received a complimentary sample of a hybrid maize variety (
 \emph on
 Bazooka
@@ -790,7 +782,7 @@ Bazooka
 -derived maize flour to try at home.
  No such activities were conducted in control villages.
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Farmers in pure control villages under both factors received a 
@@ -814,7 +806,16 @@ Treatments
 \end_layout
 
 \begin_layout Standard
-The first intervention involves providing a seed trial pack to the household member responsible for most maize cultivation decisions.
+The first intervention involves providing a seed trial pack to the household member responsible for most maize cultivation decisions,
+ who in the study context is typically the male co-head 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "van2023hiding"
+literal "false"
+
+\end_inset
+
+.
  This trial pack contains 
 \emph on
 Bazooka
@@ -874,7 +875,7 @@ literal "false"
 
 .
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 The primary production trait of 
@@ -923,8 +924,14 @@ Bazooka
 
 \begin_layout Standard
 The second intervention consists of a cooking demonstration and tasting event.
- Here,
- both male and female co-heads of sampled households in the treatment villages were invited to a central place for a facilitated meeting.
+ These sessions were organized once per treatment village,
+ and all sampled households in that village,
+ regardless of assignment to the seed trial pack treatment,
+ were invited to attend a facilitated meeting in a central place within the village.
+ As for the cooking demonstration and tasting intervention,
+ invitations were addressed to the household member responsible for maize production decisions.
+ Invitees were explicitly encouraged to attend together with another household member involved in food preparation,
+ in order to ensure that both production and consumption perspectives were represented during the session.
  The facilitator started by asking the group to mention the most commonly grown maize varieties by farmers in their village.
  These varieties are grouped into 
 \begin_inset Quotes eld
@@ -1036,8 +1043,7 @@ right.
 \end_layout
 
 \begin_layout Standard
-Finally,
- the rating results were discussed within the group and participants were informed that one sample was made from flour obtained from local maize while the other was made from an improved maize variety called 
+The rating results were then discussed within the group and participants were informed that one sample was made from flour obtained from local maize while the other was made from an improved maize variety called 
 \emph on
 Bazooka
 \emph default
@@ -1059,6 +1065,45 @@ nolink "false"
  improved seed varieties are generally perceived favorably with respect to consumption traits,
  yet these positive perceptions are far from universal,
  leaving scope for further improvement.
+ At the end of the session,
+ participating households received a 2 kg take-home sample of maize flour produced from the Bazooka variety,
+ sufficient for preparing at least one family meal,
+ to facilitate post-session experimentation at home.
+\end_layout
+
+\begin_layout Standard
+Facilitators followed a standardized script and were instructed to avoid promotional language,
+ focusing instead on eliciting participants’ own assessments and facilitating discussion rather than advocating for a specific variety.
+ The objective of both interventions was to study learning about improved crop technologies in general,
+ rather than to promote adoption of a particular seed.
+ Accordingly,
+ discussions in both treatments were kept deliberately broad,
+ emphasizing generic attributes of improved maize varieties,
+ such as yield potential and consumption traits,
+ rather than the merits of Bazooka per se.
+\end_layout
+
+\begin_layout Standard
+At the same time,
+ the underlying technology used to illustrate these attributes was held constant across interventions.
+ In the seed trial pack treatment,
+ the distributed seed was clearly labeled as Bazooka,
+ while in the cooking demonstration,
+ the maize flour used for preparation was explicitly identified as being derived from Bazooka seed.
+ By maintaining transparency about the source technology while keeping the framing comparable across treatments,
+ we aimed to ensure that differences in outcomes across interventions cannot be attributed to differences in the underlying technology itself,
+ but rather to the mode of learning emphasized by each intervention.
+\end_layout
+
+\begin_layout Standard
+The two interventions deliberately differ in how exposure within the household was structured.
+ The seed trial pack intervention targets the household member responsible for maize production decisions,
+ while the cooking demonstration and tasting intervention was designed to involve both production- and consumption-relevant decision-makers by encouraging joint attendance.
+ This design aligns each intervention with the margin it is intended to affect—
+production-oriented learning through agronomic experimentation on the one hand,
+ and consumption-oriented learning through sensory experience on the other.
+ By structuring exposure in this way,
+ the design leverages existing household decision-making roles rather than confounding treatment effects with arbitrary differences in which household members were exposed.
 \end_layout
 
 \begin_layout Subsection
@@ -1225,15 +1270,19 @@ Timeline
 \end_layout
 
 \begin_layout Standard
-Our experiment runs over two consecutive agricultural seasons.
- This is because the main outcome of interest for the trial pack treatment is not whether farmers plant the trial pack,
- but whether the experimentation facilitated by the trial pack in one season leads to the variety's continued use in the subsequent season.
- As such,
- outcomes must be measured after the second season.
- Conversely,
- the cooking demonstration and tasting session intervention does not require an entire planting season to implement.
- Hence,
- this intervention is administered at the beginning of the second experimental season so as to measure the outcomes of both interventions at the same time.
+The experiment spans two consecutive agricultural seasons in order to accommodate the inherently different durations of the two interventions while measuring outcomes at a common point in time.
+ For the seed trial pack treatment,
+ the outcome of interest is not (the first stage result) whether farmers plant the trial pack itself,
+ but whether the experimentation enabled by planting the trial pack in one season leads to continued use of the variety in the subsequent season.
+ This necessarily requires observing outcomes after an additional planting cycle.
+\end_layout
+
+\begin_layout Standard
+In contrast,
+ the cooking demonstration and tasting session is a one-time informational intervention that does not require a full growing season to implement.
+ To ensure comparability,
+ this intervention was therefore administered at the beginning of the second experimental season,
+ such that outcomes for both interventions are measured after the same agricultural season.
 \end_layout
 
 \begin_layout Standard
@@ -1280,27 +1329,15 @@ name "fig:Timeline"
 \end_layout
 
 \begin_layout Standard
-The study area experiences two maize growing seasons each calendar year.
+The study area experiences two maize growing seasons per calendar year.
  The first season,
- locally known as 
-\emph on
-Entoigo
-\emph default
-,
+ locally known as Entoigo,
  runs from March/April to June/July,
  while the second season,
- referred to as 
-\emph on
-Nsambya
-\emph default
-,
+ Nsambya,
  extends from August/September to November/December.
- 
-\emph on
-Bazooka
-\emph default
- can be grown in either season.
- As the study timeline in Figure 
+ Bazooka can be cultivated in either season.
+ As illustrated in Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Timeline"
@@ -1311,29 +1348,20 @@ nolink "false"
 
 \end_inset
 
- shows,
- we distributed the seed trial packs along with baseline data collection a few months before planting commenced for 
-\emph on
-Entoigo
-\emph default
- 2023,
- such that farmers could plant their trial packs during this season.
- After 
-\emph on
-Entoigo
-\emph default
- and before the start of 
-\emph on
-Nsambya
-\emph default
 ,
- the cooking demonstrations and tasting sessions were held.
- Endline data was collected in February 2024,
- after the conclusion of 
-\emph on
-Nsambya
-\emph default
-.
+ seed trial packs were distributed alongside baseline data collection prior to the start of Entoigo 2023,
+ allowing farmers to plant the trial pack during that season.
+ Cooking demonstrations and tasting sessions were conducted after the completion of Entoigo and before the onset of Nsambya.
+ Endline data were collected in February 2024,
+ following the conclusion of Nsambya.
+\end_layout
+
+\begin_layout Standard
+Importantly,
+ while the two interventions differ in their duration of exposure—
+season-long agronomic experimentation versus a short informational session—
+all outcomes are evaluated at the same point in the agricultural cycle,
+ ensuring that estimated treatment effects are not driven by differences in outcome measurement timing.
 \end_layout
 
 \begin_layout Section
@@ -1373,11 +1401,19 @@ literal "false"
 
 \begin_layout Standard
 The simulations resulted in a sample design of 148 villages,
- with 10 households in each village.
- In this setup,
- 74 villages (740 households) would receive a free trial pack,
- and 74 villages (740 households) would be exposed to the cooking demonstration and blind tasting treatment.
- Approximately half of the villages in each treatment group (or around 37 villages comprising 370 households) would receive both treatments.
+ with 10 households sampled per village,
+ assigned evenly across the four cells of the 2×2 factorial design.
+ Specifically,
+ 37 villages were assigned to each of the following groups:
+ pure control,
+ seed trial pack only,
+ cooking demonstration only,
+ and both interventions.
+ This implies that,
+ in total,
+ 74 villages received the seed trial pack (those assigned to the seed-only and both-treatment groups),
+ and 74 villages were exposed to the cooking demonstration and tasting sessions (those assigned to the demo-only and both-treatment groups).
+ The resulting sample therefore comprises 1,480 households across 148 villages.
  To counteract potential attrition which would decrease power,
  we increased the sample size by adding 2 additional villages in each treatment cell.
  This leads to a total sample size of 1,560 households located in 156 villages.
@@ -3521,7 +3557,7 @@ nolink "false"
 \end_layout
 
 \begin_layout Subsection
-Attrition and Treatment Recall
+Attrition
 \end_layout
 
 \begin_layout Standard
@@ -3536,8 +3572,273 @@ Attrition was minimal:
  Attrition was balance across treatment arms.
 \end_layout
 
+\begin_layout Section
+Results
+\end_layout
+
 \begin_layout Standard
-One of the first questions we asked was whether farmers recalled receiving the interventions,
+We now turn to the main results,
+ with subsections for first stage results,
+ adoption of improved seed varieties,
+ use of harvest,
+ women's empowerment,
+ and welfare and food security.
+\end_layout
+
+\begin_layout Subsection
+Compliance and Treatment Recall
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+First Stage results for Cooking Demonstration and Tasting session
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:first_stage"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnotesize
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tabular}{lcc}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+ & Crtl & Seed trial pack
+\backslash
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+At endline,
+ household recalls being given seed trial pack (
+\backslash
+%) & 8.6 & 98 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Household received seed trial pack   (
+\backslash
+%) & -- & 100 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Trial pack planted in Entoigo 2023 (
+\backslash
+%) & -- & 99 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Median rea planted with trial pack (acres) & -- & 0.25 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ & Crtl & Cooking demo 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+At endline,
+ household recalls being invited for cooking demo (
+\backslash
+%) & 4 & 92 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Household attended cooking demo and tasting session (
+\backslash
+%)  & -- &  89 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Both male and female co-heads attended  (
+\backslash
+%)  & -- &  48 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Used maize flour (1=yes)   (
+\backslash
+%)  & -- &  99 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Self-reported recall of treatment assignment was also high for both interventions (Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:first_stage"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+).
+ One of the first questions we asked was whether farmers recalled receiving the interventions,
  regardless of their assigned group.
  This serves as a useful proxy for treatment fidelity and salience.
  For the trial pack treatment,
@@ -3552,16 +3853,25 @@ One of the first questions we asked was whether farmers recalled receiving the i
  supporting our choice to estimate intent-to-treat effects.
 \end_layout
 
-\begin_layout Section
-Results
+\begin_layout Standard
+Administrative records from the seed trial pack distribution,
+ which happened concurrently with baseline data collection,
+ show that no households refused the seed.
+ Consistent with this,
+ nearly all households who recalled receiving the trial pack reported planting it during the first experimental season (Entoigo 2023).
+ Among households that planted the trial pack,
+ the median area planted was 0.25 acres,
+ approximately twice the nominal one-eighth acre coverage implied by the size of the trial pack,
+ suggesting that most farmers used the trial seed for small-scale experimentation while allowing for some expansion beyond the minimal trial size.
 \end_layout
 
 \begin_layout Standard
-We now turn to the main results,
- with subsections of adoption of improved seed varieties,
- use of harvest,
- women's empowerment,
- and welfare and food security.
+Attendance at the cooking demonstrations was voluntary.
+ Administrative attendance records indicate that just under 90 percent of households assigned to the cooking demonstration intervention attended at least one session.
+ Among attendees,
+ approximately half participated jointly as male and female co-heads.
+ Endline survey responses further indicate that nearly all households who reported attending the demonstration also reported using the maize flour provided at the end of the session to prepare a meal at home,
+ rather than selling or otherwise disposing of it.
 \end_layout
 
 \begin_layout Subsection
@@ -3931,23 +4241,9 @@ Sexpr{format(round(df_res[3,2,1],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Number of plot planted with Bazooka
+Number of plots planted with 
+\backslash
+textit{Bazooka}
 \end_layout
 
 \begin_layout Plain Layout
@@ -4026,7 +4322,9 @@ Sexpr{format(round(df_res[3,2,4],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Number of plots with improved varieties as share of total number of plots 
+Number of plots planted with 
+\backslash
+textit{Bazooka} as share of total number of maize plots 
 \end_layout
 
 \begin_layout Plain Layout
@@ -4105,7 +4403,9 @@ Sexpr{format(round(df_res[3,2,5],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Area planted with improved varieties (acres) 
+Area planted with 
+\backslash
+textit{Bazooka} (acres) 
 \end_layout
 
 \begin_layout Plain Layout
@@ -4184,7 +4484,9 @@ Sexpr{format(round(df_res[3,2,6],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Area planted with improved varieties as a share of total maize cultivation area
+Area planted with 
+\backslash
+textit{Bazooka} as a share of total maize cultivation area
 \end_layout
 
 \begin_layout Plain Layout
@@ -4350,12 +4652,13 @@ Sexpr{format(round(df_res[3,2,2],digits=2),nsmall=2)})
 
 \begin_layout Plain Layout
 
-Number of plots with improved varieties as share of total number of plots
 \end_layout
 
 \begin_layout Plain Layout
 
-Has use fresh hybrid or OPV (1=yes)
+Has use fresh hybrid or OPV?$^
+\backslash
+dag$ (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -9876,6 +10179,7 @@ LatexCommand bibtex
 btprint "btPrintCited"
 bibfiles "MIPPI_PAP"
 options "../../study_design/IFPRI_Style"
+encoding "default"
 
 \end_inset
 
