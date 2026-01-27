@@ -171,7 +171,14 @@ midline_cons$grDetails.sp_att[midline_cons$grDetails.sp_att == "n/a"] <- NA
 ### attendance at demo sessions
 prop.table(table(midline_cons$grDetails.attend))
 prop.table(table(midline_cons$grDetails.sp_att))
+table(midline_cons$grDetails.who[midline_cons$grDetails.sp_att == "Yes"] %in% c("b","q"))
 
+table(dta$groupcook.cons_used)
+table(dta$Trial_group.used_TP)
+dta$Trial_group.TP_plot_size <- as.numeric(dta$Trial_group.TP_plot_size)
+dta$Trial_group.TP_plot_size[dta$Trial_group.TP_plot_size == 999] <- NA
+dta$Trial_group.TP_plot_size[dta$Trial_group.TP_plot_size >5] <- NA
+summary(dta$Trial_group.TP_plot_size)
 
 
 ##ANALYSIS STARTS HERE
@@ -565,6 +572,7 @@ dta$Trial_group.trial_happy[dta$Trial_group.trial_happy == "98"] <- NA
 
 ########################
 ### on random plot (controlling for baseline)
+#############################################
 dta$rnd_num <- as.numeric(dta$plot_select)
 ## some did not plant, work on subset
 dta_sub <- subset(dta,!is.na(rnd_num))
@@ -620,7 +628,7 @@ dta$rnd_bazo_alt[dta$no_grow] <- NA
 
 ## we assume here that seed from official sources has not been recycled
 bse$b_rnd_bazo_alt <- (bse$maize_var == "Bazooka")
-
+dta <- merge(dta, bse[c("farmer_ID","b_rnd_bazo_alt")], by.x="ID", by.y="farmer_ID")
 
 
 
@@ -629,9 +637,9 @@ bse$b_rnd_bazo_alt <- (bse$maize_var == "Bazooka")
 dta$seed_qty <- as.numeric(as.character(dta$seed_qty))
 dta$seed_qty[dta$seed_qty == 999] <- NA 
 
-dta$imp_seed_qty_rnd <- dta$rnd_adopt*dta$seed_qty
+dta$imp_seed_qty_rnd <- dta$rnd_bazo_alt*dta$seed_qty
 #dta$imp_seed_qty_rnd[is.na(dta$imp_seed_qty_rnd)] <- 0
-bse$b_imp_seed_qty_rnd <- bse$b_rnd_adopt*bse$seed_qty
+bse$b_imp_seed_qty_rnd <- bse$b_rnd_bazo_alt*bse$seed_qty
 #bse$b_imp_seed_qty_rnd[is.na(bse$b_imp_seed_qty_rnd)] <- 0
 
 
@@ -677,14 +685,14 @@ dta$b_production[dta$b_production=="-Inf"] <- NA
 dta$productivity[dta$productivity=="-Inf"] <- NA
 dta$b_productivity[dta$b_productivity=="-Inf"] <- NA
 #iterate over outcomes
-outcomes <- c("rnd_adopt", "rnd_bazo", "imp_seed_qty_rnd", "imp_seed_qty_rnd_acre","production", "productivity" )
-b_outcomes <- c("b_rnd_adopt", "b_rnd_bazo","b_imp_seed_qty_rnd","b_imp_seed_qty_rnd_acre", "b_production", "b_productivity")
+outcomes <- c("rnd_bazo_alt",  "imp_seed_qty_rnd", "imp_seed_qty_rnd_acre","production", "productivity","rnd_bazo","rnd_adopt" )
+b_outcomes <- c("b_rnd_bazo_alt" ,"b_imp_seed_qty_rnd","b_imp_seed_qty_rnd_acre", "b_production", "b_productivity", "b_rnd_bazo","b_rnd_adopt")
 
 
 dta$index <- icwIndex(xmat= as.matrix(dta[outcomes]),sgroup=dta$s_ind)$index
 dta$b_index <- icwIndex(xmat= as.matrix(dta[b_outcomes]),sgroup=dta$s_ind)$index
-outcomes <- c(outcomes, "index","rnd_bazo_alt")
-b_outcomes <- c(b_outcomes, "b_index","b_rnd_bazo")
+outcomes <- c(outcomes, "index")
+b_outcomes <- c(b_outcomes, "b_index")
 ## demean indicators
 dta$cont_demeaned <-  dta$cont - mean(dta$cont,na.rm = T)
 dta$trial_P_demeaned <-  dta$trial_P - mean(dta$trial_P,na.rm = T)

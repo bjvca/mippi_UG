@@ -75,6 +75,9 @@ evaluate_skewness(baseline_dta$ihs_dist_ag)
 baseline_dta$quality_use_any <-  (baseline_dta$quality_use=="Yes")
 baseline_dta$quality_use_any[baseline_dta$quality_use=="98"] <- NA 
 
+baseline_dta$bazo_use <-  (baseline_dta$bazo_use=="Yes")
+baseline_dta$bazo_use[baseline_dta$bazo_use=="98"] <- NA 
+
 baseline_dta$baz_rand <- baseline_dta$maize_var=="Bazooka"
 baseline_dta$baz_rand[baseline_dta$maize_var=="98"] <- NA
 
@@ -102,7 +105,7 @@ baseline_dta <- trim("hh_size",baseline_dta,trim_perc=.02)
 baseline_dta$ihs_hh_size <-  ihs(baseline_dta$hh_size)
 evaluate_skewness(baseline_dta$ihs_hh_size)
 
-bal_vars <- c("age","prim_ed","HH_male", "hh_size", "dist_ag", "quality_use_any","baz_rand","source_rand", "recycler", "yield_level" )
+bal_vars <- c("age","prim_ed","HH_male", "hh_size", "dist_ag","bazo_use" ,"quality_use_any","source_rand", "recycler", "yield_level" )
 df_means <- array(NA,c(6,length(bal_vars )))
 for (i in 1:length(bal_vars)){
   ##means
@@ -119,7 +122,7 @@ for (i in 1:length(bal_vars)){
 }
 
 
-bal_vars <- c("age","prim_ed","HH_male", "ihs_hh_size", "ihs_dist_ag", "quality_use_any","baz_rand","source_rand", "recycler", "ihs_yield" )
+bal_vars <- c("age","prim_ed","HH_male", "ihs_hh_size", "ihs_dist_ag", "bazo_use","quality_use_any","source_rand", "recycler", "ihs_yield" )
 
 
 ## demean indicators
