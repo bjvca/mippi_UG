@@ -169,6 +169,15 @@ bse <- trim("yield_rand",bse,trim_perc=.01)
 
 bse_reg <- subset(bse, !trial_P)
 
+## Drop right-censored farmers (accepted first offer — true WTP unknown)
+## These farmers accepted the seller's first ask price without negotiation (rounds==1
+## and buyer accepted), so their observed transaction price is a lower bound on true WTP.
+n_before <- nrow(bse_reg)
+bse_reg <- subset(bse_reg, !(accepts == "buyer" & rounds == 1))
+n_after <- nrow(bse_reg)
+cat(sprintf("Dropped %d right-censored farmers (accepted first offer). N: %d -> %d\n",
+            n_before - n_after, n_before, n_after))
+
 
 bse_reg$screening <- (as.numeric(as.character(bse_reg$final_price)))/1000
 bse_reg$signaling <- (as.numeric(as.character(bse_reg$P1_pric)))/1000
@@ -184,30 +193,21 @@ bse_reg$d_sunk <- bse_reg$sunk - mean(bse_reg$sunk, na.rm=TRUE)
 outcomes_bal <- c("age_head","prim_head","male_head","hh_size","dist_ag","quality_use","promo_use_rand","source_rand","often_rand","acre_rand","yield_rand")
 
 ## Uganda balance table
-# dim 1: estimate, SE, p-value; dim 2: overall, non-discounted, discounted, difference, N; dim 3: outcomes
-bal_tab_uga <- array(NA, dim=c(3, 5, length(outcomes_bal)))
+# dim 1: estimate, SE, p-value; dim 2: non-discounted mean, discounted mean, difference, N; dim 3: outcomes
+bal_tab_uga <- array(NA, dim=c(3, 4, length(outcomes_bal)))
 for (i in 1:length(outcomes_bal)) {
-  bal_tab_uga[1,1,i] <- mean(bse_reg[, outcomes_bal[i]], na.rm=T)
-  bal_tab_uga[2,1,i] <- sd(bse_reg[, outcomes_bal[i]], na.rm=T)
-  bal_tab_uga[1,2,i] <- mean(bse_reg[!bse_reg$discounted, outcomes_bal[i]], na.rm=T)
-  bal_tab_uga[2,2,i] <- sd(bse_reg[!bse_reg$discounted, outcomes_bal[i]], na.rm=T)
-  bal_tab_uga[1,3,i] <- mean(bse_reg[bse_reg$discounted==TRUE, outcomes_bal[i]], na.rm=T)
-  bal_tab_uga[2,3,i] <- sd(bse_reg[bse_reg$discounted==TRUE, outcomes_bal[i]], na.rm=T)
+  bal_tab_uga[1,1,i] <- mean(bse_reg[!bse_reg$discounted, outcomes_bal[i]], na.rm=T)
+  bal_tab_uga[2,1,i] <- sd(bse_reg[!bse_reg$discounted, outcomes_bal[i]], na.rm=T)
+  bal_tab_uga[1,2,i] <- mean(bse_reg[bse_reg$discounted==TRUE, outcomes_bal[i]], na.rm=T)
+  bal_tab_uga[2,2,i] <- sd(bse_reg[bse_reg$discounted==TRUE, outcomes_bal[i]], na.rm=T)
   ols <- lm(as.formula(paste(outcomes_bal[i], "discounted", sep="~")), data=bse_reg)
-  cr <- coeftest(ols, vcov=vcovCL(ols, cluster=bse_reg$cluster_ID, type="HC0"))
-  bal_tab_uga[1,4,i] <- cr[2,1]
-  bal_tab_uga[2,4,i] <- cr[2,2]
-  bal_tab_uga[3,4,i] <- cr[2,4]
-  bal_tab_uga[1,5,i] <- nobs(ols)
+  bal_tab_uga[1,3,i] <- summary(ols)$coefficients[2,1]
+  bal_tab_uga[2,3,i] <- summary(ols)$coefficients[2,2]
+  bal_tab_uga[3,3,i] <- summary(ols)$coefficients[2,4]
+  bal_tab_uga[1,4,i] <- nobs(ols)
 }
 bal_tab_uga <- round(bal_tab_uga, digits=3)
-bal_diff_uga <- character(length(outcomes_bal))
-for (i in 1:length(outcomes_bal)) {
-  p <- bal_tab_uga[3,4,i]
-  s <- ifelse(p<0.01,"$^{**}$",ifelse(p<0.05,"$^{*}$",ifelse(p<0.1,"$^{+}$","")))
-  bal_diff_uga[i] <- paste0(bal_tab_uga[1,4,i], s)
-}
-save(bal_tab_uga, bal_diff_uga, file=paste(path,"bal_tab_uga.Rdata",sep="/"))
+save(bal_tab_uga, file=paste(path,"bal_tab_uga_nocens.Rdata",sep="/"))
 
 ###WTP graph
 library(ggplot2)
@@ -263,7 +263,7 @@ plot_maize <- ggplot(price_prop, aes(x = Price, y = Density)) +
 plot_maize
 
 # Save as PNG
-ggsave(paste(path,"demand.png",sep="/"), plot_maize, width = 8, height = 5, dpi = 300)
+ggsave(paste(path,"demand_nocens.png",sep="/"), plot_maize, width = 8, height = 5, dpi = 300)
 
 ###this is where midline data analysis starts
 dta <- read.csv(paste(datapath,"midline.csv", sep="/"))
@@ -368,6 +368,9 @@ dta$who_used <- dta$who_used == "1"
 
 dta_reg <- subset(dta,!trial_P)
 
+## Merge baseline covariates for ANCOVA
+dta_reg <- merge(dta_reg, bse_reg[c("farmer_ID", "age_head", "prim_head", "male_head", "hh_size", "acre_rand", "quality_use")], by.x="ID", by.y="farmer_ID", all.x=TRUE)
+
 dta_reg$screening <- (as.numeric(as.character(dta_reg$final_price)))/1000  ###this is the offer price in ashraf et al
 dta_reg$signaling <- (as.numeric(as.character(dta_reg$P1_pric)))/1000
 
@@ -400,7 +403,7 @@ dta_reg$d_sunk <- dta_reg$sunk - mean(dta_reg$sunk, na.rm=TRUE)
 
 ###table 1 - impact on use
 #iterate over outcomes - start with Uganda maize seed
-outcomes <- c("used_TP","TP_separate","who_used","sep_post_harvest","cor_plant","use_fert","use_chem")
+outcomes <- c("used_TP","TP_separate","who_used","sep_post_harvest","cor_plant","use_fert","use_chem" )
 
 dta_reg$index_use <- icwIndex(xmat=dta_reg[outcomes])$index
 
@@ -442,7 +445,7 @@ for (i in 1:length(outcomes)) {
 }
 
 res_tab <- round(res_tab,digits=3)
-save(res_tab, file=paste0(path,"/res_tab",file_suffix,".Rdata"))
+save(res_tab, file=paste0(path,"/res_tab_nocens",file_suffix,".Rdata"))
 
 
 #table 2: impact on characteristics
@@ -491,7 +494,7 @@ for (i in 1:length(outcomes)) {
 
 }
 res_tab_char <- round(res_tab,digits=3)
-save(res_tab_char, file=paste0(path,"/res_tab_char",file_suffix,".Rdata"))
+save(res_tab_char, file=paste0(path,"/res_tab_char_nocens",file_suffix,".Rdata"))
 
 #table 4: impact on yield
 
@@ -542,9 +545,10 @@ for (i in 1:length(outcomes)) {
 
 }
 res_tab_yield <- round(res_tab,digits=3)
-save(res_tab_yield, file=paste0(path,"/res_tab_yield",file_suffix,".Rdata"))
+save(res_tab_yield, file=paste0(path,"/res_tab_yield_nocens",file_suffix,".Rdata"))
 
 #table 4: intentions
+## NOTE: additive spec (no interactions) for intentions — cross-channel
 ## interactions are not hypothesized for planning outcomes
 
 #iterate over outcomes
@@ -592,9 +596,12 @@ for (i in 1:length(outcomes)) {
 
 }
 res_tab_plan <- round(res_tab,digits=3)
-save(res_tab_plan, file=paste0(path,"/res_tab_plan",file_suffix,".Rdata"))
+save(res_tab_plan, file=paste0(path,"/res_tab_plan_nocens",file_suffix,".Rdata"))
 
 ###impact on recall/pathway
+## NOTE: additive spec (no interactions) used for pathway outcomes — these are
+## mechanism/recall measures where cross-channel interactions are not hypothesized
+
 #iterate over outcomes
 outcomes <- c("remembers_seed","remembers_paying","price_diff_abs")
 
@@ -638,7 +645,7 @@ for (i in 1:length(outcomes)) {
 }
 
 res_tab_path <- round(res_tab,digits=3)
-save(res_tab_path, file=paste0(path,"/res_tab_path",file_suffix,".Rdata"))
+save(res_tab_path, file=paste0(path,"/res_tab_path_nocens",file_suffix,".Rdata"))
 
 ####analysis of actual behavior in subsequent season
 ### read in endline data (anonymized version)
@@ -784,6 +791,9 @@ dta$price_diff_abs[dta$trial_P] <- NA
 
 dta_reg <- subset(dta,!trial_P)
 
+## Merge baseline covariates for ANCOVA
+dta_reg <- merge(dta_reg, bse_reg[c("farmer_ID", "age_head", "prim_head", "male_head", "hh_size", "acre_rand", "quality_use")], by.x="ID", by.y="farmer_ID", all.x=TRUE)
+
 dta_reg$screening <- (as.numeric(as.character(dta_reg$final_price)))/1000
 dta_reg$signaling <- (as.numeric(as.character(dta_reg$P1_pric)))/1000
 #to measure sunk cost effect, the transaction price is used, that is the amount that is paid after the discount
@@ -849,9 +859,10 @@ for (i in 1:length(outcomes)) {
 
 }
 res_tab_next_season <- round(res_tab,digits=3)
-save(res_tab_next_season, file=paste0(path,"/res_tab_next_season",file_suffix,".Rdata"))
+save(res_tab_next_season, file=paste0(path,"/res_tab_next_season_nocens",file_suffix,".Rdata"))
 
 
+## NOTE: additive spec (no interactions) for pathway/recall outcomes
 outcomes <- c("remembers_seed","remembers_paying","price_diff_abs"              )
 
 dta_reg$index_path_end <- icwIndex(xmat=dta_reg[outcomes])$index
@@ -894,7 +905,7 @@ for (i in 1:length(outcomes)) {
 }
 
 res_tab_path_next_season <- round(res_tab,digits=3)
-save(res_tab_path_next_season, file=paste0(path,"/res_tab_path_next_season",file_suffix,".Rdata"))
+save(res_tab_path_next_season, file=paste0(path,"/res_tab_path_next_season_nocens",file_suffix,".Rdata"))
 
 } # end sunk_binary loop
 
