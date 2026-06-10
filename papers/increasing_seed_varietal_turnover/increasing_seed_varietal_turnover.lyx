@@ -8736,7 +8736,7 @@ Cost-effectiveness and Scaling
 \end_layout
 
 \begin_layout Standard
-The preceding sections establish that both instruments raise use of the promoted variety, but through different channels and with different consequences for productivity. For a policymaker choosing between them, what matters is not only whether each works but what each costs to deliver. We therefore combine the experimental effects with the actual intervention budgets to compare the two instruments on a cost-effectiveness basis. Because the seed trial packs in our study were distributed during the baseline visit, their realized marginal delivery cost was close to zero. To keep the comparison fair to the cooking demonstration, which was a stand-alone field operation that carries its full delivery cost, we instead cost a stand-alone seed-pack distribution program, using the same unit costs for transport, per diems, and mobilization drawn from the consumption-intervention budget.
+The preceding sections establish that both instruments raise use of the promoted variety, but through different channels and with different consequences for productivity. For a policymaker choosing between them, what matters is not only whether each works but what each costs to deliver. Because the two instruments show no detectable complementarity (the interaction terms in our results tables are small and imprecisely estimated), little is gained by deploying both, so the choice is genuinely which single instrument to use; this separability is also what lets us cost the two instruments independently. We therefore combine the experimental effects with the actual intervention budgets to compare the two instruments on a cost-effectiveness basis. Because the seed trial packs in our study were distributed during the baseline visit, their realized marginal delivery cost was close to zero. To keep the comparison fair to the cooking demonstration, which was a stand-alone field operation that carries its full delivery cost, we instead cost a stand-alone seed-pack distribution program, using the same unit costs for transport, per diems, and mobilization drawn from the consumption-intervention budget.
 \end_layout
 
 \begin_layout Standard
@@ -8862,6 +8862,9 @@ For policymakers, the practical message is that the right instrument depends on 
  they are roughly an order of magnitude cheaper per additional adopter than cooking demonstrations.
  If instead the aim is to build a self-sustaining commercial seed market, trial packs are the wrong tool, because the turnover they generate runs through recycling and leaves purchases of fresh certified seed unchanged;
  here, demand-side instruments such as cooking demonstrations, together with measures that ease the seed-market frictions documented above, are the more promising route.
+ Combining the two instruments adds little:
+ we find no complementarity between them,
+ so a budget is better spent on the single best-matched instrument than split across both.
  And because the cost of a cooking demonstration is largely fixed per session and shared across those who attend, its cost-effectiveness improves markedly when it is delivered to large groups rather than the small sessions we study.
 \end_layout
 
