@@ -156,7 +156,7 @@ footnotemark[4]}
 \end_inset
 
 Hybrid Gains and Tasty Grains:
- The Role of Agronomic and Consumption Traits in Technology Adoption
+ Comparing Production- and Consumption-Focused Extension to Accelerate Maize Varietal Turnover in Uganda
 \end_layout
 
 \begin_layout Standard
@@ -173,25 +173,7 @@ literal "false"
 \end_layout
 
 \begin_layout Abstract
-The dual role of farm households as both producers and consumers implies that adoption decisions for improved crop technologies depend not only on agronomic performance attributes such as yield or drought tolerance,
- but also on consumption attributes such as taste and ease of cooking.
- We examine how emphasizing different traits of an improved maize variety affects adoption behavior among smallholder farmers.
- In a randomized controlled trial in eastern Uganda,
- we implement two interventions:
- one highlighting production attributes through seed trial packs,
- and another emphasizing consumption attributes through cooking demonstrations and tasting sessions.
- Both interventions significantly improve farmers’ knowledge and perceptions of the promoted variety and increase its subsequent use.
- However,
- closer examination reveals that the adoption response to seed trial packs is driven largely by the recycling of grain harvested from the trial as planting material.
- When adoption is defined using agronomic criteria that exclude recycled hybrid seed due to associated productivity losses,
- the seed trial pack intervention reduces the use of improved crop technologies,
- consistent with a crowding-out effect.
- We interpret these patterns as rational responses to informational,
- economic,
- and structural constraints faced by farmers.
- Overall,
- the results indicate that while both trial packs and cooking demonstrations facilitate learning about new technologies,
- trial packs may distort adoption incentives for non-reproducible technologies such as hybrid seed by crowding out purchases of certified seed through recycling.
+Accelerating varietal turnover, that is, replacing older crop varieties with newer ones that embody gains in yield, disease resistance, and climate resilience, is a central goal of seed-system policy in sub-Saharan Africa, yet how best to promote it remains unclear. Because smallholders are both producers and consumers, agricultural extension can emphasize either a variety's agronomic performance or its consumption qualities. We compare two such instruments in a cluster-randomized 2x2 factorial trial with 1,560 maize-growing households in eastern Uganda: seed trial packs, which let farmers experience production traits on their own plots, and cooking demonstrations with blind tasting, which expose them to consumption traits. Both instruments raise farmers' knowledge, shift their perceptions, and increase subsequent use of the promoted hybrid. Trial packs generate the larger increase in use, but the response runs almost entirely through farmers recycling grain saved from the trial rather than purchasing fresh seed, a privately rational choice given high seed prices, uncertain seed quality, and liquidity constraints. As a result, trial packs raise varietal turnover at the farm level while substituting for, rather than stimulating, demand in the commercial seed market. Cooking demonstrations produce a smaller increase in use that runs through purchases of fresh seed and is accompanied by suggestive yield gains. Setting the measured effects against the actual delivery costs, we find that trial packs are far more cost-effective at raising turnover, whereas cooking demonstrations become competitive only when delivered to large groups or when the objective is to stimulate fresh-seed purchases. The most effective instrument therefore depends on the policy objective: trial packs deliver turnover quickly and at low cost, whereas consumption-side instruments and measures that reduce seed-market frictions are needed to build a self-sustaining market for certified seed.
 \end_layout
 
 \begin_layout Abstract
@@ -468,18 +450,15 @@ Bazooka
  adoption rates are statistically indistinguishable between treatment and control farmers.
  Moreover,
  when we apply a broader but agronomically valid definition of seed of improved varieties that includes fresh hybrids and fresh or appropriately recycled OPVs (but exclude recycled hybrid grain),
- we find that the trial pack intervention actually 
-\emph on
-reduces
-\emph default
- adoption of improved cropt technologies.
- This crowding-out effect appears to arise because treated farmers,
- having access to 
+ we find that the trial pack intervention reduces the use of seed sourced from the commercial market.
+ This reflects substitution rather than a net loss of improved-variety use:
+ treated farmers,
+ having access to
 \emph on
 Bazooka
 \emph default
  grain at no monetary cost,
- are less likely to use fresh hybrid or use fresh or appropriately recycled OPV seed in the following season.
+ become less likely to purchase fresh hybrid seed or fresh or appropriately recycled OPV seed in the following season.
 \end_layout
 
 \begin_layout Standard
@@ -5006,13 +4985,10 @@ Bazooka
  we also consider a broader,
  agronomically valid definition of adoption of seed of improved varieties that includes the use of fresh hybrid seed and fresh or appropriately recycled OPVs (but excluding recycled hybrid grain).
  Under this broader definition,
- we find that the trial pack intervention actually 
-\emph on
-reduces
-\emph default
- adoption of improved crop technologies.
- This pattern is consistent with a crowding-out effect whereby treated framers become less likely to use fresh hybrid seed or fresh or appropriately recycled OPV seed,
- most likely because Bazooka is considered a free and strong contender for fresh hybrids and fresh or recycled OPVs.
+ we find that the trial pack intervention reduces the use of seed sourced from the commercial market.
+ This reflects substitution rather than a net loss of improved-variety use:
+ treated farmers become less likely to use fresh hybrid seed or fresh or appropriately recycled OPV seed,
+ most likely because freely available recycled Bazooka grain is a strong substitute for purchased fresh hybrids and fresh or recycled OPVs.
 \end_layout
 
 \begin_layout Standard
@@ -5926,7 +5902,7 @@ Bazooka
 \emph on
 Bazooka
 \emph default
-) hybrid varieties were likely crowded out.
+) hybrid varieties were substituted by the freely available recycled grain from the trial pack.
  This is probably because farmers,
  encouraged by the high yields from the trial pack,
  opted to continue using recycled 
@@ -9498,8 +9474,8 @@ Bazooka
 ),
  but mostly did so by reusing seed rather than purchasing fresh seed as recommended.
  In fact,
- the intervention appears to have partially crowded out the use improved seed varieties (defined as fresh hybrids or appropriately recycled OPVs):
- some farmers who might have otherwise used improved seed opted to recycle the seed obtained through the trial pack.
+ the turnover it generated ran through recycling rather than the commercial seed market:
+ some farmers who might otherwise have purchased fresh hybrids or fresh or appropriately recycled OPVs instead reused the grain obtained through the trial pack.
  In this section,
  we explore possible explanations for this behavior,
  including limited knowledge about hybrid seed degeneration,
@@ -9544,7 +9520,7 @@ We deliberately chose not to inform farmers about the non-recyclability of the s
  by contrast,
  are more likely using lower-vigor local varieties,
  making them more inclined to purchase fresh seed when aiming to improve yields.
- This mechanism implies that the crowding-out effect of the intervention is likely stronger in contexts where baseline knowledge about hybrid seed non-recyclability is low.
+ This mechanism implies that the substitution toward recycling is likely stronger in contexts where baseline knowledge about hybrid seed non-recyclability is low.
 \end_layout
 
 \begin_layout Standard
@@ -10082,10 +10058,13 @@ The seed trial pack substantially increased farmers’ awareness and appreciatio
 Taken together,
  these findings highlight the importance of aligning extension strategies with the technological characteristics of the promoted seed.
  Trial-based extension appears well suited to technologies that are compatible with farmer-led reproduction,
- such as open-pollinated varieties,
- but may generate unintended consequences when applied to non-reproducible technologies like hybrids.
- In such settings,
- trial packs can crowd out purchases of certified seed by encouraging recycling,
+ such as open-pollinated varieties.
+ For non-reproducible technologies like hybrids,
+ it remains an effective and low-cost way to raise varietal turnover,
+ but the turnover it delivers runs through recycling:
+ trial packs substitute for,
+ rather than stimulate,
+ purchases of certified seed,
  even when farmers recognize the agronomic superiority of the variety.
 \end_layout
 
