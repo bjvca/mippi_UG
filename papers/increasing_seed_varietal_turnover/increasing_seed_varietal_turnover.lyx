@@ -9968,6 +9968,89 @@ name "fig:Wealth-and-Recycling"
 \end_layout
 
 \begin_layout Section
+Cost-effectiveness and Scaling
+\end_layout
+
+\begin_layout Standard
+The preceding sections establish that both instruments raise use of the promoted variety, but through different channels and with different consequences for productivity. For a policymaker choosing between them, what matters is not only whether each works but what each costs to deliver. We therefore combine the experimental effects with the actual intervention budgets to compare the two instruments on a cost-effectiveness basis. Because the seed trial packs in our study were distributed during the baseline visit, their realized marginal delivery cost was close to zero. To keep the comparison fair to the cooking demonstration, which was a stand-alone field operation that carries its full delivery cost, we instead cost a stand-alone seed-pack distribution program, using the same unit costs for transport, per diems, and mobilization drawn from the consumption-intervention budget.
+\end_layout
+
+\begin_layout Standard
+Delivering a seed trial pack costs approximately UGX 27,000 per farmer: UGX 12,000 for one kilogram of seed, plus about UGX 15,000 for stand-alone distribution. A cooking demonstration costs substantially more, at about UGX 75,000 per farmer at full economic cost, or roughly UGX 64,000 once research-specific overhead such as study supervision and enumerator insurance is removed. The difference reflects the demonstration's heavier logistics: each session requires a team to travel to the village, cook, and run a blind tasting, and each attendee receives a two-kilogram flour sample to take home.
+\end_layout
+
+\begin_layout Standard
+Combining these costs with the intent-to-treat effects on adoption reported in Table 3 shows that the most cost-effective instrument depends on the policy objective. If the objective is varietal turnover, that is, getting an improved variety into the ground regardless of seed source, the seed trial pack costs about UGX 40,000 per additional adopter (UGX 27,000 divided by a 0.67 effect on use of the promoted variety), against roughly UGX 715,000 for the cooking demonstration (UGX 64,000 divided by a 0.09 effect). The trial pack is more than an order of magnitude more cost-effective, and the ranking is robust to how distribution is costed: even if the pack were charged the demonstration's entire stand-alone delivery cost, it would still cost about UGX 112,000 per additional adopter, roughly six times less than the demonstration. If, instead, the objective is to build demand in the commercial seed market, that is, purchases of fresh certified seed, the ranking reverses. The trial pack has no detectable effect on fresh-seed purchases, because the turnover it generates runs through recycling, so its cost per additional fresh-seed adopter is effectively unbounded. The cooking demonstration, despite its expense, is the only instrument that raises fresh-seed purchases at a finite cost, about UGX 1.3 million per additional fresh adopter, and it does so alongside suggestive yield gains.
+\end_layout
+
+\begin_layout Standard
+The two instruments also have very different cost structures, with implications for scaling. The seed trial pack is almost entirely variable cost: the seed is a fixed quantity per farmer that cannot be shared across recipients. The cooking demonstration, by contrast, combines modest fixed costs, namely reusable equipment and one-off training together amounting to about UGX 10 million, with a large per-session cost for transport, staff, and cooking that is shared across everyone who attends. As a result, the per-farmer cost of the two instruments responds differently to scale. Spreading the program across more villages does not change their relative ranking, because the demonstration's per-village transport and staff costs are variable rather than fixed and do not fall as the number of villages rises. What does shift the ranking is the number of farmers reached per session: because the demonstration's dominant costs are shared across attendees while the pack's dominant cost is borne per farmer, inviting more farmers to each demonstration lowers its per-farmer cost while leaving the pack's essentially unchanged.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename analysis/cost_scaling.png
+	lyxscale 10
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cost per farmer reached, by number of farmers per session
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cost-scaling"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:cost-scaling"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ illustrates this, plotting the cost per farmer reached against the number of farmers per session. In our study, each session reached about ten farmers, and at that scale the trial pack is cheaper. But the demonstration's cost per farmer falls steeply with attendance, crossing below the trial pack at about twenty-two farmers per session for a stripped-down demonstration without an individual take-home sample, and at about sixty-eight farmers if the two-kilogram take-home flour is retained. A village-wide demonstration of thirty to fifty farmers, without per-head take-home flour, would therefore reach farmers more cheaply than distributing trial packs.
+\end_layout
+
+\begin_layout Standard
+Two caveats temper this conclusion. First, the crossover is expressed in cost per farmer reached, not cost per adopter. Our adoption effect for the demonstration was estimated at roughly ten attendees per session; concentrating fifty farmers in a single demonstration may dilute its effectiveness, as attendees further from the cooking and tasting learn less. The cost-effectiveness crossover therefore requires the demonstration's per-attendee effect to survive larger audiences, which we cannot observe in our data. Second, the demonstration's effect on adoption is itself imprecisely estimated, so the cost-per-adopter figures for that instrument carry wide confidence intervals. With these qualifications, the practical implication is clear: trial packs are the cheaper instrument for raising varietal turnover at the scale at which extension is typically delivered, while cooking demonstrations become cost-competitive only when delivered to large groups, and are valuable mainly where the objective is to stimulate fresh-seed purchases rather than turnover alone.
+\end_layout
+
+\begin_layout Section
 Conclusion
 \end_layout
 
