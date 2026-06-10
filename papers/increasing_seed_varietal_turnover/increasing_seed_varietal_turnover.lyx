@@ -5131,7 +5131,8 @@ Bazooka
 \end_layout
 
 \begin_layout Standard
-Turning to Table 
+Results on a randomly selected plot,
+ reported in Appendix Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "adoptiom-1"
@@ -5142,45 +5143,20 @@ nolink "false"
 
 \end_inset
 
- on outcomes related to adoption on a randomly selected plot,
- we see similar results.
- Judged by the adoption index,
- we find a large and positive effect from the seed trial pack.
- We now also see a positive effect from the cooking demo and tasting sessions,
- albeit only at the 10 percent significance level.
- There are again no signs of interaction effects.
+,
+ are very similar:
+ the seed trial pack produces a large increase in both the use and the intensity of cultivation of the promoted variety,
+ the cooking demonstration a smaller positive effect (significant only at the 10 percent level),
+ and there are again no interaction effects.
 \end_layout
 
 \begin_layout Standard
-Looking into the components of the index,
- we find that about 10 percent of farmers in the control group used the promoted seed variety on the randomly sampled plot.
- Adoption is substantially higher among farmers who received the seed trial pack,
- with an increase of about 64 percentage points relative to the control group.
- Similar to what we found for adoption on any plot,
- for farmers invited to the cooking demonstration and tasting session,
- the estimated effect is positive (p=0.049),
- but it is not statistically significant after adjusting for multiple hypothesis testing using false discovery rate corrections (q=0.150).
-\end_layout
-
-\begin_layout Standard
-We next examine the intensive margin,
- and find that the seed trial pack leads to substantial increases in the quantity of Bazooka seed used on the randomly selected plot,
- both in absolute terms and per acre.
- These effects suggest that treated farmers not only adopt the promoted variety but also allocate larger quantities of seed to its cultivation.
- We find no comparable effects for the cooking demonstration and tasting session,
- nor evidence of complementarities between the two interventions.
-\end_layout
-
-\begin_layout Standard
-Despite these sizable effects of the seed trial pack intervemtion on adoption and the intensity of use,
- we do not detect corresponding impacts on maize production or productivity on the randomly selected plot in the fully interacted specification.
- Estimated effects on log production and log productivity are small and statistically indistinguishable from zero across treatment arms.
- There is,
- however,
- some evidence that the cooking demonstration and tasting session increases maize yields.
- This effect is not precisely estimated in the fully interacted model,
- but becomes statistically significant when pooling across the orthogonal treatment assignment,
- suggesting that limited statistical power rather than the absence of an effect may explain the null result in the main specification (see Appendix Table 
+The plot-level data add one result not visible at the household level.
+ Despite the trial pack's large effect on use,
+ we detect no impact on maize production or yield on the randomly selected plot,
+ whereas the cooking demonstration shows suggestive yield gains:
+ imprecise in the fully interacted model,
+ but statistically significant when pooled across the orthogonal treatment assignment (Appendix Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "adoption_random_pooled"
@@ -5192,83 +5168,10 @@ nolink "false"
 \end_inset
 
 ).
-\end_layout
-
-\begin_layout Standard
-As in Table 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "adoptiom"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-,
- we also examine impacts on alternative measures of adoption that are grounded in agronomic principles.
- Consistent with the broader adoption results,
- we find no effect of the seed trial pack on the use of fresh Bazooka seed;
- increased use of the promoted variety in this treatment arm appears to be driven primarily by recycling grain harvested from the trial pack.
- In contrast,
- for farmers invited to the cooking demonstration and tasting session,
- increases in Bazooka use,
- though imprecisely estimated,
- are driven by purchases of fresh seed.
- This distinction is also reflected in productivity outcomes:
- households that recycle seed in the trial pack treatment do not experience yield gains,
- whereas farmers who adopt through the purchase of fresh seed in the cooking demonstration and tasting treatment exhibit higher maize productivity.
-\end_layout
-
-
-\begin_layout Standard
-Finally,
- and again as in Table 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "adoptiom"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-,
- we find a decline in the use of seed of improved varieties,
- which,
- along with the insignificant effect of the trial pack on fresh 
-\shape italic
-Bazooka
-\shape default
- purchases,
- suggests that (appropriately recycled) OPVs and other (fresh,
- non-
-\emph on
-Bazooka
-\emph default
-) hybrid varieties were substituted by the freely available recycled grain from the trial pack.
- This is probably because farmers,
- encouraged by the high yields from the trial pack,
- opted to continue using recycled 
-\shape italic
-Bazooka
-\shape default
- rather than investing in fresh hybrids or fresh or recent OPVs.
- Meanwhile,
- farmers in the control group,
- potentially dissatisfied with their local seeds,
- were more likely to seek out fresh hybrids or use recent OPVs.
- However,
- they tended to opt for cheaper alternatives rather than purchasing fresh 
-\shape italic
-Bazooka
-\shape default
- seed,
- which is more expensive than OPVs,
- which are more popular but lower yielding compared to hybrid varieties.
- We come back to this in Section 
+ This mirrors the source-of-seed split:
+ households that recycle grain from the trial pack obtain no yield gain,
+ whereas those who adopt through the purchase of fresh seed in the cooking demonstration arm show higher maize productivity.
+ We return to why trial-pack farmers continue through recycling rather than purchasing fresh seed in Section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Explanations-for-Seed"
@@ -5825,64 +5728,18 @@ Women's Empowerment
 \end_layout
 
 \begin_layout Standard
-In addition to our main hypotheses about the effects of the interventions on the adoption of improved varieties,
- we also hypothesized that highlighting the consumption traits of improved seed varieties may increase women's influence in decisions concerning seed selection and the use of harvested maize,
- as it is more culturally acceptable for women to make decisions in the household food preparation and consumption domains 
+We also pre-registered the hypothesis that emphasizing consumption traits would raise women's influence over seed selection and the use of harvested maize,
+ since in this setting men typically handle production and marketing decisions while women are more engaged in the consumption and cooking domain 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "kramer2024gender"
+key "kramer2024gender,van2023hiding"
 literal "false"
 
 \end_inset
 
 .
- In Uganda,
- as in many agriculture-based economies with norms around gendered division of labor,
- men typically handle production and marketing decisions,
- while women are more often involved in domestic responsibilities such as cooking 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "van2023hiding"
-literal "false"
-
-\end_inset
-
-.
- The cooking demonstration and tasting session might increase men's awareness that factors beyond yield,
- such as consumption attributes,
- may be important in choosing which variates to produce,
- potentially creating opportunities for women,
- who often make decisions in the consumption/cooking domain,
- to participate more in production related decision-making processes.
-\end_layout
-
-\begin_layout Standard
-To explore this,
- we asked about who participates in household decision-making processes.
- Specifically,
- we inquired about who decided which maize variety to use on the randomly selected plot,
- as well as who decided what to do with the harvest from that plot.
- We consider a woman to be involved in a decision if the decision was made solely by the woman,
- jointly by the woman and her husband,
- or if her husband made the decision after consulting the woman (as opposed to her husband deciding unilaterally).
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-We also tested stricter definitions of women’s involvement in decision-making,
- such as requiring that the decision was made solely by the woman or jointly with her husband,
- or even only unilaterally by the woman.
- These alternative definitions yielded similar (null) results.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-
-\begin_layout Standard
-Table 
+ We find no such effect.
+ As Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "decision"
@@ -5893,9 +5750,9 @@ nolink "false"
 
 \end_inset
 
- indicates that women are already highly engaged in decision-making regarding seed use and harvest management.
- Contrary to our expectations,
- the consumption intervention does not increase women's involvement in agricultural decisions.
+ (Appendix) shows,
+ women are already highly involved in these decisions at baseline,
+ and neither intervention changes their involvement.
 \end_layout
 
 \begin_layout Subsection
