@@ -231,7 +231,7 @@ literal "false"
  In much of sub-Saharan Africa,
  turnover is slow,
  and many farmers continue to grow varieties released decades ago,
- so that recent genetic gains are not reflected in the seed actually planted
+ so that recent genetic gains are not reflected in the seed actually planted 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Colen_2024"
@@ -473,7 +473,7 @@ Bazooka
  we find that the trial pack intervention reduces the use of seed sourced from the commercial market.
  This reflects substitution rather than a net loss of improved-variety use:
  treated farmers,
- having access to
+ having access to 
 \emph on
 Bazooka
 \emph default
@@ -1216,7 +1216,7 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-The coefficients in equation
+The coefficients in equation 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:one"
@@ -1229,11 +1229,11 @@ nolink "false"
 
  map directly onto our hypotheses.
  The central hypothesis is that each instrument raises subsequent use of the promoted variety,
- so we expect
+ so we expect 
 \begin_inset Formula $\beta_{S}>0$
 \end_inset
 
- for the seed trial pack and
+ for the seed trial pack and 
 \begin_inset Formula $\beta_{D}>0$
 \end_inset
 
@@ -1241,16 +1241,16 @@ nolink "false"
  Because the two instruments target different margins of the same decision,
  the trial pack the production side and the demonstration the consumption side,
  we have no strong prior on which effect is larger,
- and comparing
+ and comparing 
 \begin_inset Formula $\beta_{S}$
 \end_inset
 
- with
+ with 
 \begin_inset Formula $\beta_{D}$
 \end_inset
 
  is itself one aim of the study.
- The interaction
+ The interaction 
 \begin_inset Formula $\beta_{I}$
 \end_inset
 
@@ -1260,7 +1260,7 @@ nolink "false"
  and close to zero if they are redundant.
  Finally,
  we expect the trial pack to raise use of the promoted variety mainly through recycling rather than fresh purchases,
- so that
+ so that 
 \begin_inset Formula $\beta_{S}$
 \end_inset
 
@@ -1380,8 +1380,8 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Timeline.jpg
-	scale 70
+	filename timeline.png
+	width 90text%
 
 \end_inset
 
@@ -3706,7 +3706,7 @@ All endline outcomes are self-reported,
  which raises two measurement concerns.
  First,
  farmers may misreport which variety they grow:
- validation studies comparing self-reported varietal identity against DNA fingerprinting document substantial misclassification in smallholder settings
+ validation studies comparing self-reported varietal identity against DNA fingerprinting document substantial misclassification in smallholder settings 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "kosmowski2019varietal"
@@ -7601,7 +7601,7 @@ yield,
 Results are summarized in Table 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "cons_traits_compare"
+reference "prod_traits_compared"
 plural "false"
 caps "false"
 noprefix "false"
@@ -8854,6 +8854,15 @@ Taken together,
  rather than stimulate,
  purchases of certified seed,
  even when farmers recognize the agronomic superiority of the variety.
+\end_layout
+
+\begin_layout Standard
+For policymakers, the practical message is that the right instrument depends on the objective.
+ If the aim is to raise varietal turnover quickly and at low cost, seed trial packs dominate:
+ they are roughly an order of magnitude cheaper per additional adopter than cooking demonstrations.
+ If instead the aim is to build a self-sustaining commercial seed market, trial packs are the wrong tool, because the turnover they generate runs through recycling and leaves purchases of fresh certified seed unchanged;
+ here, demand-side instruments such as cooking demonstrations, together with measures that ease the seed-market frictions documented above, are the more promising route.
+ And because the cost of a cooking demonstration is largely fixed per session and shared across those who attend, its cost-effectiveness improves markedly when it is delivered to large groups rather than the small sessions we study.
 \end_layout
 
 \begin_layout Standard
