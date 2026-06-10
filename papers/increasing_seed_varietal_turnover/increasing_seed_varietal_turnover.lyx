@@ -224,6 +224,23 @@ literal "false"
 \end_inset
 
 .
+ Realizing these gains in farmers' fields,
+ however,
+ requires varietal turnover:
+ the replacement of older varieties with newer ones that embody recent genetic improvements.
+ In much of sub-Saharan Africa,
+ turnover is slow,
+ and many farmers continue to grow varieties released decades ago,
+ so that recent genetic gains are not reflected in the seed actually planted
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Colen_2024"
+literal "false"
+
+\end_inset
+
+.
+ How to accelerate varietal turnover is therefore a central question for seed-system policy.
  Traditionally,
  crop improvement efforts in breeding programs which serve smallholder farmers have focused on improving production-related agronomic traits,
  such as yield,
@@ -360,10 +377,13 @@ While seed trial packs may also enable farmers to discover consumption traits af
 \end_layout
 
 \begin_layout Standard
-This paper examines how highlighting agronomic and consumption-related attributes of improved maize varieties affects their adoption by smallholder farmers,
- recognizing their dual role as both producers and end-users.
- To achieve this,
- we conduct a field experiment to test the relative effectiveness of two interventions using a cluster-randomized control trial.
+This paper asks which of two contrasting extension instruments most cost-effectively accelerates varietal turnover among smallholder farmers,
+ recognizing their dual role as both producers and end-users:
+ one targeting the production side of variety choice,
+ the other the consumption side.
+ We test their relative effectiveness,
+ and their cost per additional adopter,
+ in a cluster-randomized control trial.
  The first intervention targets production traits by providing farmers with 1 kg trial packs of seed of an improved variety.
 \begin_inset Foot
 status collapsed
@@ -534,6 +554,20 @@ A key finding from our study is that the majority of farmers who received the se
 \end_layout
 
 \begin_layout Standard
+Setting these effects against the actual cost of delivering each instrument,
+ we find that the most cost-effective instrument depends on the policy objective.
+ If the goal is varietal turnover,
+ seed trial packs are far cheaper per additional adopter than cooking demonstrations.
+ If the goal is to build demand in the commercial seed market,
+ the ranking reverses:
+ trial packs generate turnover through recycling and leave fresh-seed purchases unchanged,
+ whereas cooking demonstrations are the only instrument that raises them,
+ alongside suggestive yield gains.
+ Because trial packs are almost entirely variable cost while demonstrations carry a large per-session cost shared across attendees,
+ this ranking is sensitive to how many farmers each demonstration reaches.
+\end_layout
+
+\begin_layout Standard
 Our work contributes to several strands of the literature on agricultural technology adoption.
  First,
  we add to the literature examining whether short-term input subsidies—
@@ -692,18 +726,31 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+Finally,
+ we contribute by comparing production- and consumption-oriented extension instruments not only on their effectiveness but on their cost.
+ To our knowledge,
+ this is the first study to price two such instruments against each other using their actual delivery budgets,
+ and to show that the most cost-effective choice depends on whether the objective is varietal turnover or the development of a commercial seed market.
+ This shifts the question from whether a given instrument works to which instrument a budget-constrained program should choose,
+ and at what scale.
+\end_layout
+
+\begin_layout Standard
 The remainder of the paper is organized as follows.
  Section 2 outlines the research methodology,
  including the experimental design and empirical strategy.
  Section 3 describes the study context and data sources.
- Section 4 presents the main findings,
- focusing on the primary outcome of improved seed variety use and production outcomes as well as secondary outcomes related to use of harvest output,
+ Section 4 presents the main findings on use of the promoted variety,
+ the source of the seed used,
+ and production outcomes,
+ along with secondary outcomes related to use of harvest output,
  intra-household decision-making,
  food security,
  and overall well-being.
- Section 5 investigates potential mechanisms underlying the observed effects.
- Section 6 discusses possible explanations for some of the less intuitive findings from Section 4.
- Section 7 concludes.
+ Section 5 investigates the mechanisms through which each instrument shifts adoption.
+ Section 6 examines why farmers who receive a trial pack continue through recycling rather than purchasing fresh seed.
+ Section 7 compares the two instruments on cost-effectiveness and scaling.
+ Section 8 concludes.
 \end_layout
 
 \begin_layout Section
@@ -1166,6 +1213,61 @@ literal "false"
 
 ,
  with standard errors clustered at the level of randomization (village level).
+\end_layout
+
+\begin_layout Standard
+The coefficients in equation
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:one"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ map directly onto our hypotheses.
+ The central hypothesis is that each instrument raises subsequent use of the promoted variety,
+ so we expect
+\begin_inset Formula $\beta_{S}>0$
+\end_inset
+
+ for the seed trial pack and
+\begin_inset Formula $\beta_{D}>0$
+\end_inset
+
+ for the cooking demonstration.
+ Because the two instruments target different margins of the same decision,
+ the trial pack the production side and the demonstration the consumption side,
+ we have no strong prior on which effect is larger,
+ and comparing
+\begin_inset Formula $\beta_{S}$
+\end_inset
+
+ with
+\begin_inset Formula $\beta_{D}$
+\end_inset
+
+ is itself one aim of the study.
+ The interaction
+\begin_inset Formula $\beta_{I}$
+\end_inset
+
+ tests whether receiving both instruments adds to the sum of their separate effects:
+ it would be positive if production- and consumption-side learning are complements,
+ for example if different household members respond to each,
+ and close to zero if they are redundant.
+ Finally,
+ we expect the trial pack to raise use of the promoted variety mainly through recycling rather than fresh purchases,
+ so that
+\begin_inset Formula $\beta_{S}$
+\end_inset
+
+ is positive for use of the variety overall but close to zero for use of fresh seed,
+ whereas the demonstration,
+ which distributes no seed,
+ can raise use only through fresh purchases.
 \end_layout
 
 \begin_layout Standard
