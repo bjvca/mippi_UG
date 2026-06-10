@@ -1344,6 +1344,9 @@ literal "false"
 \end_inset
 
 .
+ In each results table,
+ the summary index reported in the top row aggregates the individual outcomes listed in the rows beneath it,
+ so the composition of each family can be read directly from the corresponding table.
 \end_layout
 
 \begin_layout Subsection
@@ -3692,6 +3695,40 @@ Attrition was minimal:
  reducing the effective sample size at endline to 1,538,
  or 98.6% of the baseline sample.
  Attrition was balanced across treatment arms.
+\end_layout
+
+\begin_layout Subsection
+Measurement
+\end_layout
+
+\begin_layout Standard
+All endline outcomes are self-reported,
+ which raises two measurement concerns.
+ First,
+ farmers may misreport which variety they grow:
+ validation studies comparing self-reported varietal identity against DNA fingerprinting document substantial misclassification in smallholder settings
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kosmowski2019varietal"
+literal "false"
+
+\end_inset
+
+.
+ This concern is limited for the trial-pack arm,
+ where the variety planted is the one we distributed and recall of receipt is near-universal,
+ but it remains for the control group and for the broader improved-seed measures.
+ Because non-differential misclassification of the outcome generally attenuates estimated effects toward zero,
+ we regard our adoption estimates as conservative.
+ Second,
+ self-reports may be subject to experimenter demand effects,
+ with treated farmers over-reporting use of the promoted variety.
+ Two features limit this concern:
+ our first-stage measures are corroborated by administrative distribution and attendance records rather than recall alone,
+ and the overall pattern of results is hard to reconcile with simple demand bias,
+ since treated farmers report recycling rather than the fresh-seed purchases the intervention encouraged,
+ and we find no effects on outcomes such as food security or women's involvement where such bias would also be expected.
+ We nonetheless interpret the self-reported magnitudes with appropriate caution.
 \end_layout
 
 \begin_layout Section
