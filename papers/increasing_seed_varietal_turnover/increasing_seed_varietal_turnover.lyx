@@ -5221,799 +5221,6 @@ nolink "false"
  whereas farmers who adopt through the purchase of fresh seed in the cooking demonstration and tasting treatment exhibit higher maize productivity.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Float table
-placement document
-alignment document
-wide false
-sideways true
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Adoption on random plot
-\begin_inset CommandInset label
-LatexCommand label
-name "adoptiom-1"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-footnotesize
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tabular}{lccccc}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-& control & ITT & ITT & ITT 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& mean & trial pack & cooking demo & interaction & nobs 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Adoption Index
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_rnd[1,8],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_rnd[1,1,8],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_rnd[1,3,8]<.01,"**",ifelse(df_rnd[1,3,8]<.05,"*",ifelse(df_rnd[1,3,8]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_rnd[2,1,8],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_rnd[2,3,8]<.01,"**",ifelse(df_rnd[2,3,8]<.05,"*",ifelse(df_rnd[2,3,8]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_rnd[3,1,8],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_rnd[3,3,8]<.01,"**",ifelse(df_rnd[3,3,8]<.05,"*",ifelse(df_rnd[3,3,8]<.1,"+","")))}}$ & 
-\backslash
-Sexpr{format(round(df_rnd[1,4,8],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{format(round(df_means_rnd[2,8],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_rnd[1,2,8],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_rnd[2,2,8],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_rnd[3,2,8],digits=2),nsmall=2)})
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Has used 
-\backslash
-textit{Bazooka} on randomly selected plot in last season (yes=1)
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_rnd[1,1],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_rnd[1,1,1],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_rnd[1,3,1]<.01,"**",ifelse(df_rnd[1,3,1]<.05,"*",ifelse(df_rnd[1,3,1]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_rnd[2,1,1],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_rnd[2,3,1]<.01,"**",ifelse(df_rnd[2,3,1]<.05,"*",ifelse(df_rnd[2,3,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_rnd[3,1,1],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_rnd[3,3,1]<.01,"**",ifelse(df_rnd[3,3,1]<.05,"*",ifelse(df_rnd[3,3,1]<.1,"+","")))}}$ & 
-\backslash
-Sexpr{format(round(df_rnd[1,4,1],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{format(round(df_means_rnd[2,1],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_rnd[1,2,1],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_rnd[2,2,1],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_rnd[3,2,1],digits=2),nsmall=2)})
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Quantity of 
-\backslash
-textit{Bazooka} used on randomly selected plot (kg)
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_rnd[1,2],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_rnd[1,1,2],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_rnd[1,3,2]<.01,"**",ifelse(df_rnd[1,3,2]<.05,"*",ifelse(df_rnd[1,3,2]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_rnd[2,1,2],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_rnd[2,3,2]<.01,"**",ifelse(df_rnd[2,3,2]<.05,"*",ifelse(df_rnd[2,3,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_rnd[3,1,2],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_rnd[3,3,2]<.01,"**",ifelse(df_rnd[3,3,2]<.05,"*",ifelse(df_rnd[3,3,2]<.1,"+","")))}}$ & 
-\backslash
-Sexpr{format(round(df_rnd[1,4,2],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{format(round(df_means_rnd[2,2],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_rnd[1,2,2],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_rnd[2,2,2],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_rnd[3,2,2],digits=2),nsmall=2)})
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Quantity of 
-\backslash
-textit{Bazooka} used on randomly selected plot (kg/acre)
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_rnd[1,3],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_rnd[1,1,3],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_rnd[1,3,3]<.01,"**",ifelse(df_rnd[1,3,3]<.05,"*",ifelse(df_rnd[1,3,3]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_rnd[2,1,3],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_rnd[2,3,3]<.01,"**",ifelse(df_rnd[2,3,3]<.05,"*",ifelse(df_rnd[2,3,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_rnd[3,1,3],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_rnd[3,3,3]<.01,"**",ifelse(df_rnd[3,3,3]<.05,"*",ifelse(df_rnd[3,3,3]<.1,"+","")))}}$ & 
-\backslash
-Sexpr{format(round(df_rnd[1,4,3],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{format(round(df_means_rnd[2,3],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_rnd[1,2,3],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_rnd[2,2,3],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_rnd[3,2,3],digits=2),nsmall=2)})
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Maize production (log)
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_rnd[1,4],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_rnd[1,1,4],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_rnd[1,3,4]<.01,"**",ifelse(df_rnd[1,3,4]<.05,"*",ifelse(df_rnd[1,3,4]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_rnd[2,1,4],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_rnd[2,3,4]<.01,"**",ifelse(df_rnd[2,3,4]<.05,"*",ifelse(df_rnd[2,3,4]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_rnd[3,1,4],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_rnd[3,3,4]<.01,"**",ifelse(df_rnd[3,3,4]<.05,"*",ifelse(df_rnd[3,3,4]<.1,"+","")))}}$ & 
-\backslash
-Sexpr{format(round(df_rnd[1,4,4],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{format(round(df_means_rnd[2,4],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_rnd[1,2,4],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_rnd[2,2,4],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_rnd[3,2,4],digits=2),nsmall=2)})
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Maize productivity (log)
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_rnd[1,5],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_rnd[1,1,5],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_rnd[1,3,5]<.01,"**",ifelse(df_rnd[1,3,5]<.05,"*",ifelse(df_rnd[1,3,5]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_rnd[2,1,5],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_rnd[2,3,5]<.01,"**",ifelse(df_rnd[2,3,5]<.05,"*",ifelse(df_rnd[2,3,5]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_rnd[3,1,5],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_rnd[3,3,5]<.01,"**",ifelse(df_rnd[3,3,5]<.05,"*",ifelse(df_rnd[3,3,5]<.1,"+","")))}}$ & 
-\backslash
-Sexpr{format(round(df_rnd[1,4,5],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{format(round(df_means_rnd[2,5],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_rnd[1,2,5],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_rnd[2,2,5],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_rnd[3,2,5],digits=2),nsmall=2)})
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Has used fresh 
-\backslash
-textit{Bazooka} on randomly selected plot in last season (yes=1)
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_rnd[1,6],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_rnd[1,1,6],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_rnd[1,3,6]<.01,"**",ifelse(df_rnd[1,3,6]<.05,"*",ifelse(df_rnd[1,3,6]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_rnd[2,1,6],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_rnd[2,3,6]<.01,"**",ifelse(df_rnd[2,3,6]<.05,"*",ifelse(df_rnd[2,3,6]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_rnd[3,1,6],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_rnd[3,3,6]<.01,"**",ifelse(df_rnd[3,3,6]<.05,"*",ifelse(df_rnd[3,3,6]<.1,"+","")))}}$ & 
-\backslash
-Sexpr{format(round(df_rnd[1,4,6],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{format(round(df_means_rnd[2,6],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_rnd[1,2,6],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_rnd[2,2,6],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_rnd[3,2,6],digits=2),nsmall=2)})
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Has used fresh hybrid or OPV on randomly selected plot in last season (yes=1)
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_rnd[1,7],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_rnd[1,1,7],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_rnd[1,3,7]<.01,"**",ifelse(df_rnd[1,3,7]<.05,"*",ifelse(df_rnd[1,3,7]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_rnd[2,1,7],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_rnd[2,3,7]<.01,"**",ifelse(df_rnd[2,3,7]<.05,"*",ifelse(df_rnd[2,3,7]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_rnd[3,1,7],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_rnd[3,3,7]<.01,"**",ifelse(df_rnd[3,3,7]<.05,"*",ifelse(df_rnd[3,3,7]<.1,"+","")))}}$ & 
-\backslash
-Sexpr{format(round(df_rnd[1,4,7],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{format(round(df_means_rnd[2,7],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_rnd[1,2,7],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_rnd[2,2,7],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_rnd[3,2,7],digits=2),nsmall=2)})
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{tabular}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-scriptsize
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Note:
- Column (1) reports control group means at baseline (and standard deviations below);
- column (2) reports the estimate of the intent-to-treat effect of the seed trial packs;
- column (3) reports the estimate of the intent-to-treat effect of the cooking and tasting demonstrations;
- column (4) is the interaction effect.
- Standard errors are below the estimates and are clustered at the level of randomization;
- **,
- *,
- and + denote significance at the 1,
- 5,
- and 10
-\backslash
-% levels based on sharpened q-values 
-\backslash
-citep{benjamini2006adaptive}.
- All regressions include baseline outcome as control.
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
 
 \begin_layout Standard
 Finally,
@@ -6673,421 +5880,6 @@ We also tested stricter definitions of women’s involvement in decision-making,
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Float table
-placement document
-alignment document
-wide false
-sideways true
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Impact on women co-head involvement
-\begin_inset CommandInset label
-LatexCommand label
-name "decision"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-footnotesize
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{tabular}{lccccc}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-& control & ITT & ITT & ITT 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& mean & trial pack & cooking demo & interaction & nobs 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Women's Empowerment Index
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_decision[1,3],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_decision[1,1,3],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_decision[1,3,3]<.01,"**",ifelse(df_decision[1,3,3]<.05,"*",ifelse(df_decision[1,3,3]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_decision[2,1,3],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_decision[2,3,3]<.01,"**",ifelse(df_decision[2,3,3]<.05,"*",ifelse(df_decision[2,3,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_decision[3,1,3],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_decision[3,3,3]<.01,"**",ifelse(df_decision[3,3,3]<.05,"*",ifelse(df_decision[3,3,3]<.1,"+","")))}}$ & 
-\backslash
-Sexpr{format(round(df_decision[1,4,3],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{format(round(df_means_decision[2,3],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_decision[1,2,3],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_decision[2,2,3],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_decision[3,2,3],digits=2),nsmall=2)})
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Woman involved in decision what to plant (1=yes)
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_decision[1,1],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_decision[1,1,1],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_decision[1,3,1]<.01,"**",ifelse(df_decision[1,3,1]<.05,"*",ifelse(df_decision[1,3,1]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_decision[2,1,1],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_decision[2,3,1]<.01,"**",ifelse(df_decision[2,3,1]<.05,"*",ifelse(df_decision[2,3,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_decision[3,1,1],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_decision[3,3,1]<.01,"**",ifelse(df_decision[3,3,1]<.05,"*",ifelse(df_decision[3,3,1]<.1,"+","")))}}$ & 
-\backslash
-Sexpr{format(round(df_decision[1,4,1],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{format(round(df_means_decision[2,1],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_decision[1,2,1],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_decision[2,2,1],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_decision[3,2,1],digits=2),nsmall=2)})
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Women involved in what to do with harvest (1=yes)
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_means_decision[1,2],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_decision[1,1,2],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_decision[1,3,2]<.01,"**",ifelse(df_decision[1,3,2]<.05,"*",ifelse(df_decision[1,3,2]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_decision[2,1,2],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_decision[2,3,2]<.01,"**",ifelse(df_decision[2,3,2]<.05,"*",ifelse(df_decision[2,3,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-
-& 
-\backslash
-Sexpr{format(round(df_decision[3,1,2],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_decision[3,3,2]<.01,"**",ifelse(df_decision[3,3,2]<.05,"*",ifelse(df_decision[3,3,2]<.1,"+","")))}}$ & 
-\backslash
-Sexpr{format(round(df_decision[1,4,2],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-& (
-\backslash
-Sexpr{format(round(df_means_decision[2,2],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_decision[1,2,2],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_decision[2,2,2],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_decision[3,2,2],digits=2),nsmall=2)})
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{tabular}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-scriptsize
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Note:
- Column (1) reports control group means at baseline (and standard deviations below);
- column (2) reports the estimate of the intent-to-treat effect of the seed trial packs;
- column (3) reports the estimate of the intent-to-treat effect of the cooking and tasting demonstrations;
- column (4) is the interaction effect.
- Standard errors are below the estimates and are clustered at the level of randomization;
- **,
- *,
- and + denote significance at the 1,
- 5,
- and 10
-\backslash
-% levels based on sharpened q-values 
-\backslash
-citep{benjamini2006adaptive}.
- All regressions include baseline outcome as control.
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
 
 \begin_layout Standard
 Table 
@@ -18051,6 +16843,1227 @@ Note:
 % levels based on sharpened q-values 
 \backslash
 citep{benjamini2006adaptive}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Additional Tables
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement document
+alignment document
+wide false
+sideways true
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Adoption on random plot
+\begin_inset CommandInset label
+LatexCommand label
+name "adoptiom-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnotesize
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tabular}{lccccc}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+& control & ITT & ITT & ITT 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& mean & trial pack & cooking demo & interaction & nobs 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Adoption Index
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_rnd[1,8],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[1,1,8],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[1,3,8]<.01,"**",ifelse(df_rnd[1,3,8]<.05,"*",ifelse(df_rnd[1,3,8]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[2,1,8],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[2,3,8]<.01,"**",ifelse(df_rnd[2,3,8]<.05,"*",ifelse(df_rnd[2,3,8]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[3,1,8],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[3,3,8]<.01,"**",ifelse(df_rnd[3,3,8]<.05,"*",ifelse(df_rnd[3,3,8]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_rnd[1,4,8],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_rnd[2,8],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_rnd[1,2,8],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_rnd[2,2,8],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_rnd[3,2,8],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Has used 
+\backslash
+textit{Bazooka} on randomly selected plot in last season (yes=1)
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_rnd[1,1],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[1,1,1],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[1,3,1]<.01,"**",ifelse(df_rnd[1,3,1]<.05,"*",ifelse(df_rnd[1,3,1]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[2,1,1],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[2,3,1]<.01,"**",ifelse(df_rnd[2,3,1]<.05,"*",ifelse(df_rnd[2,3,1]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[3,1,1],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[3,3,1]<.01,"**",ifelse(df_rnd[3,3,1]<.05,"*",ifelse(df_rnd[3,3,1]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_rnd[1,4,1],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_rnd[2,1],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_rnd[1,2,1],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_rnd[2,2,1],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_rnd[3,2,1],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Quantity of 
+\backslash
+textit{Bazooka} used on randomly selected plot (kg)
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_rnd[1,2],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[1,1,2],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[1,3,2]<.01,"**",ifelse(df_rnd[1,3,2]<.05,"*",ifelse(df_rnd[1,3,2]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[2,1,2],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[2,3,2]<.01,"**",ifelse(df_rnd[2,3,2]<.05,"*",ifelse(df_rnd[2,3,2]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[3,1,2],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[3,3,2]<.01,"**",ifelse(df_rnd[3,3,2]<.05,"*",ifelse(df_rnd[3,3,2]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_rnd[1,4,2],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_rnd[2,2],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_rnd[1,2,2],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_rnd[2,2,2],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_rnd[3,2,2],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Quantity of 
+\backslash
+textit{Bazooka} used on randomly selected plot (kg/acre)
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_rnd[1,3],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[1,1,3],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[1,3,3]<.01,"**",ifelse(df_rnd[1,3,3]<.05,"*",ifelse(df_rnd[1,3,3]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[2,1,3],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[2,3,3]<.01,"**",ifelse(df_rnd[2,3,3]<.05,"*",ifelse(df_rnd[2,3,3]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[3,1,3],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[3,3,3]<.01,"**",ifelse(df_rnd[3,3,3]<.05,"*",ifelse(df_rnd[3,3,3]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_rnd[1,4,3],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_rnd[2,3],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_rnd[1,2,3],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_rnd[2,2,3],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_rnd[3,2,3],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Maize production (log)
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_rnd[1,4],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[1,1,4],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[1,3,4]<.01,"**",ifelse(df_rnd[1,3,4]<.05,"*",ifelse(df_rnd[1,3,4]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[2,1,4],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[2,3,4]<.01,"**",ifelse(df_rnd[2,3,4]<.05,"*",ifelse(df_rnd[2,3,4]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[3,1,4],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[3,3,4]<.01,"**",ifelse(df_rnd[3,3,4]<.05,"*",ifelse(df_rnd[3,3,4]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_rnd[1,4,4],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_rnd[2,4],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_rnd[1,2,4],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_rnd[2,2,4],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_rnd[3,2,4],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Maize productivity (log)
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_rnd[1,5],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[1,1,5],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[1,3,5]<.01,"**",ifelse(df_rnd[1,3,5]<.05,"*",ifelse(df_rnd[1,3,5]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[2,1,5],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[2,3,5]<.01,"**",ifelse(df_rnd[2,3,5]<.05,"*",ifelse(df_rnd[2,3,5]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[3,1,5],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[3,3,5]<.01,"**",ifelse(df_rnd[3,3,5]<.05,"*",ifelse(df_rnd[3,3,5]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_rnd[1,4,5],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_rnd[2,5],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_rnd[1,2,5],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_rnd[2,2,5],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_rnd[3,2,5],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Has used fresh 
+\backslash
+textit{Bazooka} on randomly selected plot in last season (yes=1)
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_rnd[1,6],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[1,1,6],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[1,3,6]<.01,"**",ifelse(df_rnd[1,3,6]<.05,"*",ifelse(df_rnd[1,3,6]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[2,1,6],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[2,3,6]<.01,"**",ifelse(df_rnd[2,3,6]<.05,"*",ifelse(df_rnd[2,3,6]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[3,1,6],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[3,3,6]<.01,"**",ifelse(df_rnd[3,3,6]<.05,"*",ifelse(df_rnd[3,3,6]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_rnd[1,4,6],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_rnd[2,6],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_rnd[1,2,6],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_rnd[2,2,6],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_rnd[3,2,6],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Has used fresh hybrid or OPV on randomly selected plot in last season (yes=1)
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_rnd[1,7],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[1,1,7],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[1,3,7]<.01,"**",ifelse(df_rnd[1,3,7]<.05,"*",ifelse(df_rnd[1,3,7]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[2,1,7],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[2,3,7]<.01,"**",ifelse(df_rnd[2,3,7]<.05,"*",ifelse(df_rnd[2,3,7]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_rnd[3,1,7],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_rnd[3,3,7]<.01,"**",ifelse(df_rnd[3,3,7]<.05,"*",ifelse(df_rnd[3,3,7]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_rnd[1,4,7],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_rnd[2,7],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_rnd[1,2,7],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_rnd[2,2,7],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_rnd[3,2,7],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+scriptsize
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Note:
+ Column (1) reports control group means at baseline (and standard deviations below);
+ column (2) reports the estimate of the intent-to-treat effect of the seed trial packs;
+ column (3) reports the estimate of the intent-to-treat effect of the cooking and tasting demonstrations;
+ column (4) is the interaction effect.
+ Standard errors are below the estimates and are clustered at the level of randomization;
+ **,
+ *,
+ and + denote significance at the 1,
+ 5,
+ and 10
+\backslash
+% levels based on sharpened q-values 
+\backslash
+citep{benjamini2006adaptive}.
+ All regressions include baseline outcome as control.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement document
+alignment document
+wide false
+sideways true
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Impact on women co-head involvement
+\begin_inset CommandInset label
+LatexCommand label
+name "decision"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnotesize
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tabular}{lccccc}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+& control & ITT & ITT & ITT 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& mean & trial pack & cooking demo & interaction & nobs 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Women's Empowerment Index
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_decision[1,3],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_decision[1,1,3],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_decision[1,3,3]<.01,"**",ifelse(df_decision[1,3,3]<.05,"*",ifelse(df_decision[1,3,3]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_decision[2,1,3],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_decision[2,3,3]<.01,"**",ifelse(df_decision[2,3,3]<.05,"*",ifelse(df_decision[2,3,3]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_decision[3,1,3],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_decision[3,3,3]<.01,"**",ifelse(df_decision[3,3,3]<.05,"*",ifelse(df_decision[3,3,3]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_decision[1,4,3],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_decision[2,3],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_decision[1,2,3],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_decision[2,2,3],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_decision[3,2,3],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Woman involved in decision what to plant (1=yes)
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_decision[1,1],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_decision[1,1,1],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_decision[1,3,1]<.01,"**",ifelse(df_decision[1,3,1]<.05,"*",ifelse(df_decision[1,3,1]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_decision[2,1,1],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_decision[2,3,1]<.01,"**",ifelse(df_decision[2,3,1]<.05,"*",ifelse(df_decision[2,3,1]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_decision[3,1,1],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_decision[3,3,1]<.01,"**",ifelse(df_decision[3,3,1]<.05,"*",ifelse(df_decision[3,3,1]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_decision[1,4,1],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_decision[2,1],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_decision[1,2,1],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_decision[2,2,1],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_decision[3,2,1],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Women involved in what to do with harvest (1=yes)
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_means_decision[1,2],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_decision[1,1,2],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_decision[1,3,2]<.01,"**",ifelse(df_decision[1,3,2]<.05,"*",ifelse(df_decision[1,3,2]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_decision[2,1,2],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_decision[2,3,2]<.01,"**",ifelse(df_decision[2,3,2]<.05,"*",ifelse(df_decision[2,3,2]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+
+& 
+\backslash
+Sexpr{format(round(df_decision[3,1,2],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_decision[3,3,2]<.01,"**",ifelse(df_decision[3,3,2]<.05,"*",ifelse(df_decision[3,3,2]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_decision[1,4,2],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+& (
+\backslash
+Sexpr{format(round(df_means_decision[2,2],digits=2),nsmall=2)}) & (
+\backslash
+Sexpr{format(round(df_decision[1,2,2],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_decision[2,2,2],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_decision[3,2,2],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tabular}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+scriptsize
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Note:
+ Column (1) reports control group means at baseline (and standard deviations below);
+ column (2) reports the estimate of the intent-to-treat effect of the seed trial packs;
+ column (3) reports the estimate of the intent-to-treat effect of the cooking and tasting demonstrations;
+ column (4) is the interaction effect.
+ Standard errors are below the estimates and are clustered at the level of randomization;
+ **,
+ *,
+ and + denote significance at the 1,
+ 5,
+ and 10
+\backslash
+% levels based on sharpened q-values 
+\backslash
+citep{benjamini2006adaptive}.
+ All regressions include baseline outcome as control.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
