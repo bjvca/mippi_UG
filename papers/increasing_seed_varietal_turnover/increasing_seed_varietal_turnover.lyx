@@ -173,7 +173,7 @@ literal "false"
 \end_layout
 
 \begin_layout Abstract
-Accelerating varietal turnover, replacing older crop varieties with newer, higher-yielding and more resilient ones, is a central goal of seed-system policy in sub-Saharan Africa, yet how best to promote it remains unclear. Because smallholders are both producers and consumers, extension can emphasize a variety's agronomic performance or its consumption qualities. We compare two such instruments in a cluster-randomized 2x2 trial with 1,560 maize-growing households in eastern Uganda: seed trial packs, which let farmers experience production traits on their own plots, and cooking demonstrations with blind tasting, which expose them to consumption traits. Both raise farmers' knowledge and use of the promoted hybrid. Trial packs generate the larger increase, but it runs almost entirely through farmers recycling grain saved from the trial rather than buying fresh seed, a privately rational choice given high seed prices, uncertain quality, and liquidity constraints. Trial packs thus raise turnover at the farm level while substituting for, rather than stimulating, commercial seed demand. Cooking demonstrations produce a smaller increase that runs through fresh-seed purchases and is accompanied by suggestive yield gains. Setting effects against delivery costs, trial packs are far more cost-effective at raising turnover, whereas demonstrations become competitive only at large group sizes or when the goal is fresh-seed purchases. The best instrument therefore depends on the objective: trial packs deliver turnover cheaply, while consumption-side instruments and measures that ease seed-market frictions are needed to build a self-sustaining market for certified seed.
+Accelerating varietal turnover, replacing older crop varieties with newer, higher-yielding and more resilient ones, is a central goal of seed-system policy in sub-Saharan Africa, yet how best to promote it remains unclear. Because smallholders are both producers and consumers, extension can emphasize a variety's agronomic performance or its consumption qualities. We compare two such instruments in a cluster-randomized 2x2 trial with 1,560 maize-growing households in eastern Uganda: seed trial packs, which let farmers experience production traits on their own plots, and cooking demonstrations with blind tasting, which expose them to consumption traits. Both raise farmers' knowledge and use of the promoted hybrid. Trial packs generate the larger increase, but it runs almost entirely through farmers recycling grain saved from the trial rather than buying fresh seed, a privately rational choice given high seed prices, uncertain quality, and liquidity constraints. Trial packs thus raise turnover at the farm level while substituting for, rather than stimulating, commercial seed demand. Cooking demonstrations produce a smaller increase that runs through fresh-seed purchases and is accompanied by suggestive yield gains. Setting effects against delivery costs, trial packs are far more cost-effective at raising turnover, whereas demonstrations become competitive only at large group sizes or when the goal is fresh-seed purchases. The best instrument therefore depends on the objective: trial packs deliver turnover cheaply, demonstrations move farmers to a first purchase of certified seed, and a self-sustaining commercial market ultimately rests on easing the frictions that make recycling rational.
 \end_layout
 
 \begin_layout Abstract
@@ -561,8 +561,8 @@ Setting these effects against the actual cost of delivering each instrument,
  If the goal is to build demand in the commercial seed market,
  the ranking reverses:
  trial packs generate turnover through recycling and leave fresh-seed purchases unchanged,
- whereas cooking demonstrations are the only instrument that raises them,
- alongside suggestive yield gains.
+ whereas cooking demonstrations are the only instrument that moves this margin, alongside suggestive yield gains—
+though within our one-season window such purchases reflect market entry rather than established repeat demand.
  Because trial packs are almost entirely variable cost while demonstrations carry a large per-session cost shared across attendees,
  this ranking is sensitive to how many farmers each demonstration reaches.
 \end_layout
@@ -8796,6 +8796,26 @@ Combining these costs with the intent-to-treat effects on adoption reported in T
 \end_layout
 
 \begin_layout Standard
+An important qualification concerns the time horizon.
+ We observe one planting decision after each instrument, and the fresh-seed purchases induced by the demonstration are first acquisitions, made by farmers who hold no grain of the promoted variety to replant.
+ Once these farmers harvest, they face the same recycling incentives documented in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Explanations-for-Seed"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+, and may recycle rather than buy again.
+ On the evidence we have, the demonstration therefore shifts the entry margin into the certified-seed market; its effect on repeat purchases lies outside our observation window.
+ The same horizon logic applies in reverse to the trial pack: because the yield advantage of recycled hybrid grain erodes with each cycle of reuse, the large cohort of recycling farmers the pack creates may itself convert into fresh-seed demand in later seasons.
+ Within the window we observe, however, the pack substitutes for commercial purchases while the demonstration adds to them.
+\end_layout
+
+\begin_layout Standard
 The two instruments also have very different cost structures, with implications for scaling. The seed trial pack is almost entirely variable cost: the seed is a fixed quantity per farmer that cannot be shared across recipients. The cooking demonstration, by contrast, combines modest fixed costs, namely reusable equipment and one-off training together amounting to about UGX 10 million, with a large per-session cost for transport, staff, and cooking that is shared across everyone who attends. As a result, the per-farmer cost of the two instruments responds differently to scale. Spreading the program across more villages does not change their relative ranking, because the demonstration's per-village transport and staff costs are variable rather than fixed and do not fall as the number of villages rises. What does shift the ranking is the number of farmers reached per session: because the demonstration's dominant costs are shared across attendees while the pack's dominant cost is borne per farmer, inviting more farmers to each demonstration lowers its per-farmer cost while leaving the pack's essentially unchanged.
 \end_layout
 
@@ -8870,7 +8890,7 @@ The breakeven equates per-farmer costs, S/n + v = c + D/n, where S (about UGX 39
 \end_layout
 
 \begin_layout Standard
-Two caveats temper this conclusion. First, the crossover is expressed in cost per farmer reached, not cost per adopter. Our adoption effect for the demonstration was estimated at roughly 10 attendees per session; concentrating fifty farmers in a single demonstration may dilute its effectiveness, as attendees further from the cooking and tasting learn less. The cost-effectiveness crossover therefore requires the demonstration's per-attendee effect to survive larger audiences, which we cannot observe in our data. Second, the demonstration's effect on adoption is itself imprecisely estimated, so the cost-per-adopter figures for that instrument carry wide confidence intervals. With these qualifications, the practical implication is clear: trial packs are the cheaper instrument for raising varietal turnover at the scale at which extension is typically delivered, while cooking demonstrations become cost-competitive only when delivered to large groups, and are valuable mainly where the objective is to stimulate fresh-seed purchases rather than turnover alone.
+Two caveats temper this conclusion. First, the crossover is expressed in cost per farmer reached, not cost per adopter. Our adoption effect for the demonstration was estimated at roughly 10 attendees per session; concentrating fifty farmers in a single demonstration may dilute its effectiveness, as attendees further from the cooking and tasting learn less. The cost-effectiveness crossover therefore requires the demonstration's per-attendee effect to survive larger audiences, which we cannot observe in our data. Second, the demonstration's effect on adoption is itself imprecisely estimated, so the cost-per-adopter figures for that instrument carry wide confidence intervals. With these qualifications, the practical implication is clear: trial packs are the cheaper instrument for raising varietal turnover at the scale at which extension is typically delivered, while cooking demonstrations become cost-competitive only when delivered to large groups, and are valuable mainly where the objective is to stimulate initial fresh-seed purchases rather than turnover alone.
 \end_layout
 
 \begin_layout Section
@@ -8919,8 +8939,11 @@ Taken together,
 For policymakers, the practical message is that the right instrument depends on the objective.
  If the aim is to raise varietal turnover quickly and at low cost, seed trial packs dominate:
  they are roughly an order of magnitude cheaper per additional adopter than cooking demonstrations.
- If instead the aim is to build a self-sustaining commercial seed market, trial packs are the wrong tool, because the turnover they generate runs through recycling and leaves purchases of fresh certified seed unchanged;
- here, demand-side instruments such as cooking demonstrations, together with measures that ease the seed-market frictions documented above, are the more promising route.
+ If instead the aim is to build a self-sustaining commercial seed market, trial packs are the wrong tool, because the turnover they generate runs through recycling and leaves purchases of fresh certified seed unchanged.
+ Cooking demonstrations are the only instrument we find to move that margin, but the effect is suggestive, costly per adopter, and—
+because attendees buy fresh seed partly for lack of anything to recycle—
+likely confined to first purchases.
+ Sustained commercial demand will therefore depend less on either extension instrument than on easing the frictions that make recycling the rational choice: seed prices relative to grain prices, unreliable input quality, and limited liquidity.
  Combining the two instruments adds little:
  we find no evidence of complementarity between them,
  so a budget is better spent on the single best-matched instrument than split across both.
@@ -8949,7 +8972,7 @@ Finally,
  farmers who received only a trial pack updated their perceptions of consumption traits about as much as demonstration attendees,
  presumably by cooking and tasting their own harvest.
  The distinctive value of cooking demonstrations lies elsewhere—
-in moving farmers to purchase fresh seed,
+in moving farmers to a first purchase of fresh seed,
  the margin that trial packs leave untouched.
  Future research should further explore how different modes of experiential learning interact with technology characteristics and market conditions to shape adoption dynamics.
  Understanding these interactions is crucial for designing extension strategies that promote not only uptake,
