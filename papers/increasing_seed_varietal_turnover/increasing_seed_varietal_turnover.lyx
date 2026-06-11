@@ -8343,6 +8343,12 @@ Bazooka
  seed source is not randomly assigned,
  and farmers who purchase fresh seed may differ from those who recycle.
  We use them only to gauge the approximate magnitude of the yield penalty from recycling that farmers face.
+ Read together with the experimental estimates,
+ these magnitudes also account for why the trial pack raised use of the promoted variety by 67 percentage points without raising average yields:
+ most of that use consists of recycled grain,
+ which yields roughly what the seed it displaced—
+recycled local varieties and the fresh hybrid or OPV seed that treated farmers no longer purchased—
+would have produced.
 \end_layout
 
 \begin_layout Subsection
@@ -8767,6 +8773,22 @@ All costs are in 2023 Ugandan shillings (UGX).
 \end_inset
 
  A cooking demonstration costs substantially more, at about UGX 75,000 per farmer at full economic cost, or roughly UGX 64,000 once research-specific overhead such as study supervision and enumerator insurance is removed. The difference reflects the demonstration's heavier logistics: each session requires a team to travel to the village, cook, and run a blind tasting, and each attendee receives a two-kilogram flour sample to take home.
+\end_layout
+
+\begin_layout Standard
+These figures capture costs to the implementer;
+ the two instruments also place very different demands on farmers themselves.
+ Attending a cooking demonstration costs a household roughly half a day of time,
+ often for two members,
+ and delivers its information immediately.
+ The trial pack instead requires the farmer to commit a plot and a full season of land and labor before any information is realized.
+ Because the farmer keeps the harvest,
+ the net monetary cost of participating is likely negative—
+the pack is a transfer as much as a message—
+so the relevant farmer-side costs are the delay and the land and labor commitment rather than cash outlays.
+ This asymmetry also means the demonstration can reach farmers for whom on-farm experimentation is not feasible,
+ for instance because land is scarce,
+ whereas the trial pack presupposes the capacity and willingness to experiment.
 \end_layout
 
 \begin_layout Standard
