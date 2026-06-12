@@ -7846,6 +7846,269 @@ Bazooka
  and liquidity constraints.
 \end_layout
 
+\begin_layout Standard
+Before turning to these explanations,
+ we first document what the recycled seed displaces.
+ Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:recycling-decomp"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ decomposes seed recycling on the randomly selected plot.
+ The trial pack raises the use of recycled Bazooka by 62 percentage points.
+ Part of this redirects an existing recycling habit:
+ the use of recycled seed of other improved varieties falls by 13 percentage points.
+ The largest part displaces local varieties,
+ whose use falls by 38 percentage points.
+ The remainder is recycling induced at the margin:
+ the probability of planting farmer-saved seed of any kind rises by 11 percentage points,
+ the mirror image of the decline in fresh seed purchases documented in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "adoptiom-1"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+.
+ The cooking demonstration moves none of these margins.
+ The trial pack thus mostly redirects the use of farmer-saved seed toward the promoted variety:
+ roughly five sixths of the increase in recycled Bazooka replaces other farmer-saved seed,
+ and about one sixth comes at the expense of purchases in the commercial seed market.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Recycling on the randomly selected plot:
+ what the trial pack displaces
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:recycling-decomp"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+footnotesize
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+begin{tabular}{lcccc}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+ & control & ITT & ITT & ITT 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ & mean & trial pack & cooking demo & interaction 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+Used recycled Bazooka & 0.05 & 0.62** & 0.02 & -0.07 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ &  & (0.04) & (0.02) & (0.06) 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Used recycled seed of another improved variety & 0.16 & -0.13** & 0.01 & 0.02 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ &  & (0.03) & (0.03) & (0.04) 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Used any recycled improved seed & 0.21 & 0.49** & 0.03 & -0.06 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ &  & (0.04) & (0.04) & (0.06) 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Used a local variety & 0.54 & -0.38** & -0.05 & 0.06 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ &  & (0.04) & (0.04) & (0.06) 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Used farmer-saved seed (incl. local varieties) & 0.74 & 0.11** & -0.02 & -0.00 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ &  & (0.03) & (0.04) & (0.05) 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+end{tabular}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+normalsize
+\end_layout
+
+\end_inset
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Note:
+ All outcomes refer to the randomly selected maize plot and equal one if the condition holds (N=1,495).
+ Column (1) reports pure-control means;
+ columns (2) to (4) report intent-to-treat estimates from the fully interacted specification in Equation 1,
+ estimated without baseline controls.
+ Standard errors clustered at the level of randomization (CR2) in parentheses.
+ Seed is classified as recycled when used for more than one season;
+ the recycling module was administered only for improved varieties,
+ so seed of local varieties is farmer-saved by construction.
+ ** denotes significance at the 1 percent level.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+
 \begin_layout Subsection
 Limited Knowledge
 \end_layout
@@ -8618,6 +8881,13 @@ Taken together,
  rather than stimulate,
  purchases of certified seed,
  even when farmers recognize the agronomic superiority of the variety.
+ Most of the recycling the pack induces,
+ however,
+ displaces other farmer-saved seed rather than market purchases:
+ of the 62 percentage point increase in recycled Bazooka use,
+ 38 points come out of local varieties,
+ 13 out of recycled seed of other improved varieties,
+ and only 11 out of fresh purchases.
 \end_layout
 
 \begin_layout Standard
