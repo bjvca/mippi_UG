@@ -7868,7 +7868,8 @@ nolink "false"
  whose use falls by 38 percentage points.
  The remainder is recycling induced at the margin:
  the probability of planting farmer-saved seed of any kind rises by 11 percentage points,
- the mirror image of the decline in fresh seed purchases documented in Table 
+ or, equivalently, the probability of a fresh purchase on the plot falls by the same amount.
+ This is consistent with the crowd-out of fresh hybrid and OPV seed reported in Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "adoptiom-1"
@@ -7879,7 +7880,7 @@ nolink "false"
 
 \end_inset
 
-.
+, estimated there at a slightly larger 13 percentage points under a stricter definition that counts only fresh seed from a trusted source.
  The cooking demonstration moves none of these margins.
  The trial pack thus mostly redirects the use of farmer-saved seed toward the promoted variety:
  roughly five sixths of the increase in recycled Bazooka replaces other farmer-saved seed,
