@@ -201,10 +201,9 @@ Accelerating varietal turnover,
  a privately rational choice given high seed prices,
  uncertain quality,
  and liquidity constraints.
- Because the variety is a hybrid, however, recycled seed loses vigor over successive seasons, and the pack prompts no repeat purchases to refresh it, so the turnover it creates is transient rather than sustained.
+ Because the variety is a hybrid, recycled seed loses vigor over successive seasons; whether the pack sustains turnover then hinges on farmers returning to the market once their stock degrades, plausible given the durable gains in awareness and intent we document, but unobserved here.
  Cooking demonstrations produce a smaller increase that runs through fresh-seed purchases, with suggestive yield gains.
- Trial packs are cheaper per adopter, but the lesson is to match instrument to technology: trial packs suit varieties that tolerate recycling, such as open-pollinated varieties, whereas sustaining hybrid turnover requires repeat purchases the pack does not generate.
- A self-sustaining market for hybrid seed therefore depends less on extension than on easing the frictions that make recycling rational.
+ Trial packs are cheaper per adopter, and the lesson is to match instrument to technology: packs deliver turnover directly for recyclable open-pollinated varieties, while for hybrids their long-run payoff runs through repeat re-purchase and so depends on an accessible seed market.
 \end_layout
 
 \begin_layout Abstract
@@ -597,7 +596,7 @@ Setting these effects against the actual cost of delivering each instrument,
 though within our one-season window such purchases reflect market entry rather than established repeat demand.
  Because trial packs are almost entirely variable cost while demonstrations carry a large per-session cost shared across attendees,
  this ranking is sensitive to how many farmers each demonstration reaches.
- More fundamentally, because the promoted variety is a hybrid that loses vigor when recycled, the turnover trial packs create is transient unless refreshed by purchases they do not generate, so the deeper lesson is to match the instrument to the technology.
+ More fundamentally, because the promoted variety is a hybrid that loses vigor when recycled, whether the pack sustains turnover depends on farmers re-buying once their recycled stock degrades; the durable gains in awareness and intent it produces make this plausible, but our one-season design cannot observe it.
 \end_layout
 
 \begin_layout Standard
@@ -7901,7 +7900,7 @@ nolink "false"
  and about one sixth comes at the expense of purchases in the commercial seed market.
  Displacing old landraces with a once-recycled hybrid is a real but modest upgrade in the first season:
  recycled Bazooka out-yields local seed (375 versus 323 kilograms per acre).
- But because a hybrid loses vigor as it segregates over successive cycles, this advantage is expected to erode toward local-seed levels, so the trial pack's contribution to turnover is better read as a transient pulse than a durable replacement.
+ Because a hybrid loses vigor as it segregates over successive cycles, this first-season advantage is expected to erode toward local-seed levels. Whether the pack raises turnover beyond the first season then depends on whether farmers return to the market once their recycled stock degrades, a dynamic we take up in Section 6.2.
 \end_layout
 
 \begin_layout Standard
@@ -8350,6 +8349,21 @@ nolink "false"
  As the yield advantage diminishes,
  the profitability of recycling declines,
  making the purchase of fresh hybrid seed increasingly attractive.
+ This has an important, if unobservable, implication for the trial pack.
+ When recycled stock degrades and re-purchase becomes attractive, trial-pack farmers re-enter the market having already learned, trusted, and formed an intention to use the promoted variety (Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pathways"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+), so they are plausibly more likely than control farmers to return with improved rather than local seed.
+ If so, the trial pack would raise turnover not as a single pulse but as a recurring cycle of purchase and recycling, lowering the average varietal age over the long run even though the yield gain ebbs between purchases.
+ Our single-season design cannot trace this path, and the magnitude depends on how readily farmers can re-enter the market, which returns us to the frictions discussed below.
 \end_layout
 
 \begin_layout Standard
@@ -8893,9 +8907,9 @@ Taken together,
  Trial-based extension appears well suited to technologies that are compatible with farmer-led reproduction,
  such as open-pollinated varieties.
  Applied to a hybrid, however, the trial pack induces the very behavior that erodes the variety's advantage: recycling.
- The gain over the displaced seed is real in the first season, but it decays as the hybrid segregates over successive cycles, and the pack generates no repeat purchases to refresh it, so the turnover it delivers is a transient pulse rather than a durable replacement.
+ The gain over the displaced seed is real in the first season, but it decays as the hybrid segregates over successive cycles. Because the pack also durably raises awareness of, trust in, and intention to use the variety (Table 5), trial-pack farmers may re-enter the market with improved seed once their recycled stock degrades, so the turnover it sets in motion is plausibly recurring rather than one-off, though our single-season design cannot trace its path.
  This holds even though most of the recycling displaces farmer-saved local seed rather than market purchases: of the 62 percentage point increase in recycled Bazooka use, 38 points come out of local varieties, 13 out of recycled seed of other improved varieties, and only 11 out of fresh purchases.
- The pack moves farmers off old landraces, but onto a variety that will not stay improved without re-purchase.
+ The pack moves farmers off old landraces and onto a recent hybrid; keeping that gain improved over time, however, requires periodic re-purchase, and thus a seed market farmers can return to.
 \end_layout
 
 \begin_layout Standard
