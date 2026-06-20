@@ -166,7 +166,7 @@ footnotemark[4]}
 \end_inset
 
 Hybrid Gains and Tasty Grains:
- Comparing Production- and Consumption-Focused Extension to Accelerate Maize Varietal Turnover in Uganda
+ Comparing Production- and Consumption-Focused Seed Promotion Strategies to Accelerate Varietal Turnover
 \end_layout
 
 \begin_layout Standard
@@ -183,27 +183,36 @@ literal "false"
 \end_layout
 
 \begin_layout Abstract
-Accelerating varietal turnover,
- replacing older crop varieties with newer,
- higher-yielding and more resilient ones,
- is a central goal of seed-system policy in sub-Saharan Africa,
+Accelerating varietal turnover—
+replacing older crop varieties with newer,
+ higher-yielding and more resilient ones—
+is a central goal of seed-system policy in sub-Saharan Africa,
  yet how best to promote it remains unclear.
- Because smallholders are both producers and consumers,
- extension can emphasize a variety's agronomic performance or its consumption qualities.
- We compare two instruments in a cluster-randomized 2x2 trial with 1,560 maize-growing households in eastern Uganda:
+ The fact that smallholders are generally both producers and consumers suggest that seed promotion strategies should emphasize both agronomic performance as well as consumption related traits.
+ In a cluster-randomized trial,
+ we compare two seed promotion strategies among maize-growing households in eastern Uganda:
  seed trial packs,
- which let farmers experience production traits on their plots,
+ which are intended to emphasize farmers' learning about production traits through on-farm experimentation,
  and cooking demonstrations with blind tasting,
- which expose them to consumption traits.
+ which are intended to emphasize learning about consumption traits through direct experience.
  Both raise farmers' knowledge and use of the promoted hybrid.
  Trial packs generate the larger increase,
  but it runs almost entirely through farmers recycling grain saved from the trial rather than buying fresh seed,
- a privately rational choice given high seed prices,
+ a privately rational choice given low grain prices,
+ high seed prices,
  uncertain quality,
  and liquidity constraints.
- Because the variety is a hybrid, recycled seed loses vigor over successive seasons; whether the pack sustains turnover then hinges on farmers returning to the market once their stock degrades, plausible given the durable gains in awareness and intent we document, but unobserved here.
- Cooking demonstrations produce a smaller increase that runs through fresh-seed purchases, with suggestive yield gains.
- Trial packs are cheaper per adopter, and the lesson is to match instrument to technology: packs deliver turnover directly for recyclable open-pollinated varieties, while for hybrids their long-run payoff runs through repeat re-purchase and so depends on an accessible seed market.
+ Cooking demonstrations produce a smaller increase that runs through fresh-seed purchases,
+ with suggestive yield gains.
+ Trial packs are more cost-effective at the scale studied,
+ but their relative advantage depends both on the technology and the delivery context.
+ For recyclable OPVs,
+ they directly accelerate varietal turnover.
+ For hybrids,
+ their long-run impact depends on farmers returning to the seed market for fresh seed.
+ Moreover,
+ because cooking demonstrations have largely fixed delivery costs,
+ they become increasingly competitive when they can be delivered to larger groups.
 \end_layout
 
 \begin_layout Abstract
@@ -596,7 +605,11 @@ Setting these effects against the actual cost of delivering each instrument,
 though within our one-season window such purchases reflect market entry rather than established repeat demand.
  Because trial packs are almost entirely variable cost while demonstrations carry a large per-session cost shared across attendees,
  this ranking is sensitive to how many farmers each demonstration reaches.
- More fundamentally, because the promoted variety is a hybrid that loses vigor when recycled, whether the pack sustains turnover depends on farmers re-buying once their recycled stock degrades; the durable gains in awareness and intent it produces make this plausible, but our one-season design cannot observe it.
+ More fundamentally,
+ because the promoted variety is a hybrid that loses vigor when recycled,
+ whether the pack sustains turnover depends on farmers re-buying once their recycled stock degrades;
+ the durable gains in awareness and intent it produces make this plausible,
+ but our one-season design cannot observe it.
 \end_layout
 
 \begin_layout Standard
@@ -4999,7 +5012,9 @@ nolink "false"
 \end_inset
 
 ) shows that the trial pack raises use of the promoted variety by 72 percentage points among farmers who had not previously used improved seed,
- against 50 points among those who had, a difference significant at the 1 percent level, with a similar gradient for the adoption index.
+ against 50 points among those who had,
+ a difference significant at the 1 percent level,
+ with a similar gradient for the adoption index.
  The trial pack thus expands adoption among the previously unreached rather than merely intensifying it among the already-initiated.
  We find no comparable heterogeneity for the cooking demonstration.
 \end_layout
@@ -5532,7 +5547,8 @@ nolink "false"
  Among demonstration attendees,
  adoption is no higher in households where both co-heads attended than where only one did,
  and if anything slightly lower;
- but this comparison is descriptive, since who attends is not randomly assigned.
+ but this comparison is descriptive,
+ since who attends is not randomly assigned.
 \end_layout
 
 \begin_layout Subsection
@@ -7853,7 +7869,8 @@ Bazooka
  but mostly did so by reusing seed rather than purchasing fresh seed as recommended.
  In fact,
  the turnover it generated ran through recycling rather than purchases of fresh seed.
- Below we first document what this recycled seed displaced, and then explore possible explanations for the behavior,
+ Below we first document what this recycled seed displaced,
+ and then explore possible explanations for the behavior,
  including limited knowledge about hybrid seed degeneration,
  perceived profitability of recycling and aversion to market price risks,
  trust and quality perceptions,
@@ -7879,9 +7896,14 @@ nolink "false"
  The largest part displaces local varieties,
  whose use falls by 38 percentage points.
  The remainder is recycling induced at the margin:
- measured across all varieties, the probability that a farmer plants saved seed rather than buying fresh rises by 11 percentage points,
- or, equivalently, the probability of a fresh purchase on the plot falls by the same amount.
- The much larger increase in recycled improved seed (49 percentage points) is therefore mostly a recomposition of seed farmers were already saving, away from local landraces and toward the promoted hybrid, rather than a net rise in saving.
+ measured across all varieties,
+ the probability that a farmer plants saved seed rather than buying fresh rises by 11 percentage points,
+ or,
+ equivalently,
+ the probability of a fresh purchase on the plot falls by the same amount.
+ The much larger increase in recycled improved seed (49 percentage points) is therefore mostly a recomposition of seed farmers were already saving,
+ away from local landraces and toward the promoted hybrid,
+ rather than a net rise in saving.
  This is consistent with the crowd-out of fresh hybrid and OPV seed reported in Table 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -7893,14 +7915,18 @@ nolink "false"
 
 \end_inset
 
-, estimated there at a slightly larger 13 percentage points under a stricter definition that counts only fresh seed from a trusted source.
+,
+ estimated there at a slightly larger 13 percentage points under a stricter definition that counts only fresh seed from a trusted source.
  The cooking demonstration moves none of these margins.
  The trial pack thus mostly redirects the use of farmer-saved seed toward the promoted variety:
  roughly five sixths of the increase in recycled Bazooka replaces other farmer-saved seed,
  and about one sixth comes at the expense of purchases in the commercial seed market.
  Displacing old landraces with a once-recycled hybrid is a real but modest upgrade in the first season:
  recycled Bazooka out-yields local seed (375 versus 323 kilograms per acre).
- Because a hybrid loses vigor as it segregates over successive cycles, this first-season advantage is expected to erode toward local-seed levels. Whether the pack raises turnover beyond the first season then depends on whether farmers return to the market once their recycled stock degrades, a dynamic we take up in Section 6.2.
+ Because a hybrid loses vigor as it segregates over successive cycles,
+ this first-season advantage is expected to erode toward local-seed levels.
+ Whether the pack raises turnover beyond the first season then depends on whether farmers return to the market once their recycled stock degrades,
+ a dynamic we take up in Section 6.2.
 \end_layout
 
 \begin_layout Standard
@@ -7962,7 +7988,6 @@ hline
 \end_layout
 
 \begin_layout Plain Layout
-
  & control & ITT & ITT & ITT 
 \backslash
 
@@ -7971,7 +7996,6 @@ hline
 \end_layout
 
 \begin_layout Plain Layout
-
  & mean & trial pack & cooking demo & interaction 
 \backslash
 
@@ -7986,7 +8010,6 @@ hline
 \end_layout
 
 \begin_layout Plain Layout
-
 Used recycled Bazooka & 0.05 & 0.62** & 0.02 & -0.07 
 \backslash
 
@@ -7995,7 +8018,6 @@ Used recycled Bazooka & 0.05 & 0.62** & 0.02 & -0.07
 \end_layout
 
 \begin_layout Plain Layout
-
  &  & (0.04) & (0.02) & (0.06) 
 \backslash
 
@@ -8004,7 +8026,6 @@ Used recycled Bazooka & 0.05 & 0.62** & 0.02 & -0.07
 \end_layout
 
 \begin_layout Plain Layout
-
 Used recycled seed of another improved variety & 0.16 & -0.13** & 0.01 & 0.02 
 \backslash
 
@@ -8013,7 +8034,6 @@ Used recycled seed of another improved variety & 0.16 & -0.13** & 0.01 & 0.02
 \end_layout
 
 \begin_layout Plain Layout
-
  &  & (0.03) & (0.03) & (0.04) 
 \backslash
 
@@ -8022,7 +8042,6 @@ Used recycled seed of another improved variety & 0.16 & -0.13** & 0.01 & 0.02
 \end_layout
 
 \begin_layout Plain Layout
-
 Used any recycled improved seed & 0.21 & 0.49** & 0.03 & -0.06 
 \backslash
 
@@ -8031,7 +8050,6 @@ Used any recycled improved seed & 0.21 & 0.49** & 0.03 & -0.06
 \end_layout
 
 \begin_layout Plain Layout
-
  &  & (0.04) & (0.04) & (0.06) 
 \backslash
 
@@ -8040,7 +8058,6 @@ Used any recycled improved seed & 0.21 & 0.49** & 0.03 & -0.06
 \end_layout
 
 \begin_layout Plain Layout
-
 Used a local variety & 0.54 & -0.38** & -0.05 & 0.06 
 \backslash
 
@@ -8049,7 +8066,6 @@ Used a local variety & 0.54 & -0.38** & -0.05 & 0.06
 \end_layout
 
 \begin_layout Plain Layout
-
  &  & (0.04) & (0.04) & (0.06) 
 \backslash
 
@@ -8058,8 +8074,8 @@ Used a local variety & 0.54 & -0.38** & -0.05 & 0.06
 \end_layout
 
 \begin_layout Plain Layout
-
-Used farmer-saved seed (incl. local varieties) & 0.74 & 0.11** & -0.02 & -0.00 
+Used farmer-saved seed (incl.
+ local varieties) & 0.74 & 0.11** & -0.02 & -0.00 
 \backslash
 
 \backslash
@@ -8067,7 +8083,6 @@ Used farmer-saved seed (incl. local varieties) & 0.74 & 0.11** & -0.02 & -0.00
 \end_layout
 
 \begin_layout Plain Layout
-
  &  & (0.03) & (0.04) & (0.05) 
 \backslash
 
@@ -8103,6 +8118,7 @@ normalsize
 
 \end_inset
 
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -8124,7 +8140,6 @@ Note:
 
 
 \end_layout
-
 
 \begin_layout Subsection
 Limited Knowledge
@@ -8349,8 +8364,13 @@ nolink "false"
  As the yield advantage diminishes,
  the profitability of recycling declines,
  making the purchase of fresh hybrid seed increasingly attractive.
- This has an important, if unobservable, implication for the trial pack.
- When recycled stock degrades and re-purchase becomes attractive, trial-pack farmers re-enter the market having already learned, trusted, and formed an intention to use the promoted variety (Table 
+ This has an important,
+ if unobservable,
+ implication for the trial pack.
+ When recycled stock degrades and re-purchase becomes attractive,
+ trial-pack farmers re-enter the market having already learned,
+ trusted,
+ and formed an intention to use the promoted variety (Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "pathways"
@@ -8361,9 +8381,14 @@ nolink "false"
 
 \end_inset
 
-), so they are plausibly more likely than control farmers to return with improved rather than local seed.
- If so, the trial pack would raise turnover not as a single pulse but as a recurring cycle of purchase and recycling, lowering the average varietal age over the long run even though the yield gain ebbs between purchases.
- Our single-season design cannot trace this path, and the magnitude depends on how readily farmers can re-enter the market, which returns us to the frictions discussed below.
+),
+ so they are plausibly more likely than control farmers to return with improved rather than local seed.
+ If so,
+ the trial pack would raise turnover not as a single pulse but as a recurring cycle of purchase and recycling,
+ lowering the average varietal age over the long run even though the yield gain ebbs between purchases.
+ Our single-season design cannot trace this path,
+ and the magnitude depends on how readily farmers can re-enter the market,
+ which returns us to the frictions discussed below.
 \end_layout
 
 \begin_layout Standard
@@ -8906,16 +8931,35 @@ Taken together,
  these findings highlight the importance of aligning extension strategies with the technological characteristics of the promoted seed.
  Trial-based extension appears well suited to technologies that are compatible with farmer-led reproduction,
  such as open-pollinated varieties.
- Applied to a hybrid, however, the trial pack induces the very behavior that erodes the variety's advantage: recycling.
- The gain over the displaced seed is real in the first season, but it decays as the hybrid segregates over successive cycles. Because the pack also durably raises awareness of, trust in, and intention to use the variety (Table 5), trial-pack farmers may re-enter the market with improved seed once their recycled stock degrades, so the turnover it sets in motion is plausibly recurring rather than one-off, though our single-season design cannot trace its path.
- This holds even though most of the recycling displaces farmer-saved local seed rather than market purchases: of the 62 percentage point increase in recycled Bazooka use, 38 points come out of local varieties, 13 out of recycled seed of other improved varieties, and only 11 out of fresh purchases.
- The pack moves farmers off old landraces and onto a recent hybrid; keeping that gain improved over time, however, requires periodic re-purchase, and thus a seed market farmers can return to.
+ Applied to a hybrid,
+ however,
+ the trial pack induces the very behavior that erodes the variety's advantage:
+ recycling.
+ The gain over the displaced seed is real in the first season,
+ but it decays as the hybrid segregates over successive cycles.
+ Because the pack also durably raises awareness of,
+ trust in,
+ and intention to use the variety (Table 5),
+ trial-pack farmers may re-enter the market with improved seed once their recycled stock degrades,
+ so the turnover it sets in motion is plausibly recurring rather than one-off,
+ though our single-season design cannot trace its path.
+ This holds even though most of the recycling displaces farmer-saved local seed rather than market purchases:
+ of the 62 percentage point increase in recycled Bazooka use,
+ 38 points come out of local varieties,
+ 13 out of recycled seed of other improved varieties,
+ and only 11 out of fresh purchases.
+ The pack moves farmers off old landraces and onto a recent hybrid;
+ keeping that gain improved over time,
+ however,
+ requires periodic re-purchase,
+ and thus a seed market farmers can return to.
 \end_layout
 
 \begin_layout Standard
 For policymakers,
  the practical message is that the right instrument depends on the objective.
- If the aim is a quick, low-cost rise in the share of fields under an improved variety,
+ If the aim is a quick,
+ low-cost rise in the share of fields under an improved variety,
  seed trial packs dominate:
  they are roughly an order of magnitude cheaper per additional adopter than cooking demonstrations.
  If instead the aim is to build a self-sustaining commercial seed market,
@@ -17261,7 +17305,6 @@ hline
 \end_layout
 
 \begin_layout Plain Layout
-
 Instrument & Outcome & No prior use & Prior use & Difference 
 \backslash
 
@@ -17276,7 +17319,6 @@ hline
 \end_layout
 
 \begin_layout Plain Layout
-
 Trial pack & Adoption index & 0.48** & 0.13+ & -0.35** 
 \backslash
 
@@ -17285,7 +17327,6 @@ Trial pack & Adoption index & 0.48** & 0.13+ & -0.35**
 \end_layout
 
 \begin_layout Plain Layout
-
  &  & (0.05) & (0.07) & (0.09) 
 \backslash
 
@@ -17294,7 +17335,6 @@ Trial pack & Adoption index & 0.48** & 0.13+ & -0.35**
 \end_layout
 
 \begin_layout Plain Layout
-
 Trial pack & Used any Bazooka & 0.72** & 0.50** & -0.22** 
 \backslash
 
@@ -17303,7 +17343,6 @@ Trial pack & Used any Bazooka & 0.72** & 0.50** & -0.22**
 \end_layout
 
 \begin_layout Plain Layout
-
  &  & (0.03) & (0.05) & (0.05) 
 \backslash
 
@@ -17312,7 +17351,6 @@ Trial pack & Used any Bazooka & 0.72** & 0.50** & -0.22**
 \end_layout
 
 \begin_layout Plain Layout
-
 Trial pack & Used fresh Bazooka & 0.02 & 0.01 & -0.02 
 \backslash
 
@@ -17321,7 +17359,6 @@ Trial pack & Used fresh Bazooka & 0.02 & 0.01 & -0.02
 \end_layout
 
 \begin_layout Plain Layout
-
  &  & (0.02) & (0.03) & (0.03) 
 \backslash
 
@@ -17336,7 +17373,6 @@ hline
 \end_layout
 
 \begin_layout Plain Layout
-
 Cooking demo & Adoption index & 0.05 & 0.08 & 0.03 
 \backslash
 
@@ -17345,7 +17381,6 @@ Cooking demo & Adoption index & 0.05 & 0.08 & 0.03
 \end_layout
 
 \begin_layout Plain Layout
-
  &  & (0.06) & (0.08) & (0.09) 
 \backslash
 
@@ -17354,7 +17389,6 @@ Cooking demo & Adoption index & 0.05 & 0.08 & 0.03
 \end_layout
 
 \begin_layout Plain Layout
-
 Cooking demo & Used any Bazooka & 0.03 & 0.04 & 0.02 
 \backslash
 
@@ -17363,7 +17397,6 @@ Cooking demo & Used any Bazooka & 0.03 & 0.04 & 0.02
 \end_layout
 
 \begin_layout Plain Layout
-
  &  & (0.03) & (0.05) & (0.05) 
 \backslash
 
@@ -17372,7 +17405,6 @@ Cooking demo & Used any Bazooka & 0.03 & 0.04 & 0.02
 \end_layout
 
 \begin_layout Plain Layout
-
 Cooking demo & Used fresh Bazooka & 0.03* & 0.07* & 0.04 
 \backslash
 
@@ -17381,7 +17413,6 @@ Cooking demo & Used fresh Bazooka & 0.03* & 0.07* & 0.04
 \end_layout
 
 \begin_layout Plain Layout
-
  &  & (0.02) & (0.03) & (0.03) 
 \backslash
 
@@ -17417,25 +17448,28 @@ normalsize
 
 \end_inset
 
+
 \end_layout
 
 \begin_layout Plain Layout
 
 \size scriptsize
 Note:
- Intent-to-treat effects from the pooled specification, each treatment interacted with an indicator for baseline use of an improved variety (about 40 percent of the sample).
+ Intent-to-treat effects from the pooled specification,
+ each treatment interacted with an indicator for baseline use of an improved variety (about 40 percent of the sample).
  The first two columns give the implied effect for farmers without and with prior use;
  Difference is the interaction term.
  Standard errors clustered at the village level (CR2) in parentheses.
  Subgroup analyses are exploratory and were not pre-specified.
- ** p<0.01, * p<0.05, + p<0.10.
+ ** p<0.01,
+ * p<0.05,
+ + p<0.10.
 \end_layout
 
 \end_inset
 
 
 \end_layout
-
 
 \end_body
 \end_document
