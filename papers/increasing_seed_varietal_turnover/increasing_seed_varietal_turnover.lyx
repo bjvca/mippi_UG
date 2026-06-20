@@ -190,9 +190,9 @@ Accelerating varietal turnover,
  yet how best to promote it remains unclear.
  Because smallholders are both producers and consumers,
  extension can emphasize a variety's agronomic performance or its consumption qualities.
- We compare two such instruments in a cluster-randomized 2x2 trial with 1,560 maize-growing households in eastern Uganda:
+ We compare two instruments in a cluster-randomized 2x2 trial with 1,560 maize-growing households in eastern Uganda:
  seed trial packs,
- which let farmers experience production traits on their own plots,
+ which let farmers experience production traits on their plots,
  and cooking demonstrations with blind tasting,
  which expose them to consumption traits.
  Both raise farmers' knowledge and use of the promoted hybrid.
@@ -201,17 +201,10 @@ Accelerating varietal turnover,
  a privately rational choice given high seed prices,
  uncertain quality,
  and liquidity constraints.
- Trial packs thus raise turnover at the farm level while substituting for,
- rather than stimulating,
- commercial seed demand.
- Cooking demonstrations produce a smaller increase that runs through fresh-seed purchases and is accompanied by suggestive yield gains.
- Setting effects against delivery costs,
- trial packs are far more cost-effective at raising turnover,
- whereas demonstrations become competitive only at large group sizes or when the goal is fresh-seed purchases.
- The best instrument therefore depends on the objective:
- trial packs deliver turnover cheaply,
- demonstrations move farmers to a first purchase of certified seed,
- and a self-sustaining commercial market ultimately rests on easing the frictions that make recycling rational.
+ Because the variety is a hybrid, however, recycled seed loses vigor over successive seasons, and the pack prompts no repeat purchases to refresh it, so the turnover it creates is transient rather than sustained.
+ Cooking demonstrations produce a smaller increase that runs through fresh-seed purchases, with suggestive yield gains.
+ Trial packs are cheaper per adopter, but the lesson is to match instrument to technology: trial packs suit varieties that tolerate recycling, such as open-pollinated varieties, whereas sustaining hybrid turnover requires repeat purchases the pack does not generate.
+ A self-sustaining market for hybrid seed therefore depends less on extension than on easing the frictions that make recycling rational.
 \end_layout
 
 \begin_layout Abstract
@@ -604,6 +597,7 @@ Setting these effects against the actual cost of delivering each instrument,
 though within our one-season window such purchases reflect market entry rather than established repeat demand.
  Because trial packs are almost entirely variable cost while demonstrations carry a large per-session cost shared across attendees,
  this ranking is sensitive to how many farmers each demonstration reaches.
+ More fundamentally, because the promoted variety is a hybrid that loses vigor when recycled, the turnover trial packs create is transient unless refreshed by purchases they do not generate, so the deeper lesson is to match the instrument to the technology.
 \end_layout
 
 \begin_layout Standard
@@ -7905,6 +7899,9 @@ nolink "false"
  The trial pack thus mostly redirects the use of farmer-saved seed toward the promoted variety:
  roughly five sixths of the increase in recycled Bazooka replaces other farmer-saved seed,
  and about one sixth comes at the expense of purchases in the commercial seed market.
+ Displacing old landraces with a once-recycled hybrid is a real but modest upgrade in the first season:
+ recycled Bazooka out-yields local seed (375 versus 323 kilograms per acre).
+ But because a hybrid loses vigor as it segregates over successive cycles, this advantage is expected to erode toward local-seed levels, so the trial pack's contribution to turnover is better read as a transient pulse than a durable replacement.
 \end_layout
 
 \begin_layout Standard
@@ -8895,26 +8892,16 @@ Taken together,
  these findings highlight the importance of aligning extension strategies with the technological characteristics of the promoted seed.
  Trial-based extension appears well suited to technologies that are compatible with farmer-led reproduction,
  such as open-pollinated varieties.
- For non-reproducible technologies like hybrids,
- it remains an effective and low-cost way to raise varietal turnover,
- but the turnover it delivers runs through recycling:
- trial packs substitute for,
- rather than stimulate,
- purchases of certified seed,
- even when farmers recognize the agronomic superiority of the variety.
- Most of the recycling the pack induces,
- however,
- displaces other farmer-saved seed rather than market purchases:
- of the 62 percentage point increase in recycled Bazooka use,
- 38 points come out of local varieties,
- 13 out of recycled seed of other improved varieties,
- and only 11 out of fresh purchases.
+ Applied to a hybrid, however, the trial pack induces the very behavior that erodes the variety's advantage: recycling.
+ The gain over the displaced seed is real in the first season, but it decays as the hybrid segregates over successive cycles, and the pack generates no repeat purchases to refresh it, so the turnover it delivers is a transient pulse rather than a durable replacement.
+ This holds even though most of the recycling displaces farmer-saved local seed rather than market purchases: of the 62 percentage point increase in recycled Bazooka use, 38 points come out of local varieties, 13 out of recycled seed of other improved varieties, and only 11 out of fresh purchases.
+ The pack moves farmers off old landraces, but onto a variety that will not stay improved without re-purchase.
 \end_layout
 
 \begin_layout Standard
 For policymakers,
  the practical message is that the right instrument depends on the objective.
- If the aim is to raise varietal turnover quickly and at low cost,
+ If the aim is a quick, low-cost rise in the share of fields under an improved variety,
  seed trial packs dominate:
  they are roughly an order of magnitude cheaper per additional adopter than cooking demonstrations.
  If instead the aim is to build a self-sustaining commercial seed market,
