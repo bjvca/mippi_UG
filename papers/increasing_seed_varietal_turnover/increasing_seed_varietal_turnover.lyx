@@ -4992,6 +4992,25 @@ nolink "false"
 .
 \end_layout
 
+\begin_layout Standard
+The effect of the trial pack is concentrated among farmers with no prior experience of improved seed.
+ Interacting the treatments with an indicator for baseline use of an improved variety (Appendix Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:het-prior"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+) shows that the trial pack raises use of the promoted variety by 72 percentage points among farmers who had not previously used improved seed,
+ against 50 points among those who had, a difference significant at the 1 percent level, with a similar gradient for the adoption index.
+ The trial pack thus expands adoption among the previously unreached rather than merely intensifying it among the already-initiated.
+ We find no comparable heterogeneity for the cooking demonstration.
+\end_layout
+
 \begin_layout Subsection
 Use of Harvest
 \end_layout
@@ -5517,6 +5536,10 @@ nolink "false"
  (Appendix) shows,
  women are already highly involved in these decisions at baseline,
  and neither intervention changes their involvement.
+ Among demonstration attendees,
+ adoption is no higher in households where both co-heads attended than where only one did,
+ and if anything slightly lower;
+ but this comparison is descriptive, since who attends is not randomly assigned.
 \end_layout
 
 \begin_layout Subsection
@@ -17157,6 +17180,265 @@ citep{benjamini2006adaptive}.
 
 
 \end_layout
+
+\begin_layout Subsection
+Heterogeneity by Prior Exposure to Improved Seed
+\end_layout
+
+\begin_layout Standard
+Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:het-prior"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ reports treatment effects separately for farmers who had and had not used an improved maize variety,
+ a fresh or recycled OPV or hybrid,
+ in the season before the intervention (about 40 percent of the sample).
+ Estimates come from the pooled specification in which each treatment is interacted with the baseline-use indicator,
+ with standard errors clustered at the village level.
+ These subgroup analyses were not pre-specified and the study is powered for average effects,
+ so they should be read as exploratory.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Treatment effects by prior use of improved seed
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:het-prior"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+footnotesize
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+begin{tabular}{llccc}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+Instrument & Outcome & No prior use & Prior use & Difference 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+Trial pack & Adoption index & 0.48** & 0.13+ & -0.35** 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ &  & (0.05) & (0.07) & (0.09) 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Trial pack & Used any Bazooka & 0.72** & 0.50** & -0.22** 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ &  & (0.03) & (0.05) & (0.05) 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Trial pack & Used fresh Bazooka & 0.02 & 0.01 & -0.02 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ &  & (0.02) & (0.03) & (0.03) 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+Cooking demo & Adoption index & 0.05 & 0.08 & 0.03 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ &  & (0.06) & (0.08) & (0.09) 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Cooking demo & Used any Bazooka & 0.03 & 0.04 & 0.02 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ &  & (0.03) & (0.05) & (0.05) 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Cooking demo & Used fresh Bazooka & 0.03* & 0.07* & 0.04 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+ &  & (0.02) & (0.03) & (0.03) 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+end{tabular}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+normalsize
+\end_layout
+
+\end_inset
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Note:
+ Intent-to-treat effects from the pooled specification, each treatment interacted with an indicator for baseline use of an improved variety (about 40 percent of the sample).
+ The first two columns give the implied effect for farmers without and with prior use;
+ Difference is the interaction term.
+ Standard errors clustered at the village level (CR2) in parentheses.
+ Subgroup analyses are exploratory and were not pre-specified.
+ ** p<0.01, * p<0.05, + p<0.10.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 
 \end_body
 \end_document
