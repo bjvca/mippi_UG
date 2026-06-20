@@ -593,23 +593,9 @@ A key finding from our study is that the majority of farmers who received the se
 \end_layout
 
 \begin_layout Standard
-Setting these effects against the actual cost of delivering each instrument,
- we find that the most cost-effective instrument depends on the policy objective.
- If the goal is varietal turnover,
- seed trial packs are far cheaper per additional adopter than cooking demonstrations.
- If the goal is to build demand in the commercial seed market,
- the ranking reverses:
- trial packs generate turnover through recycling and leave fresh-seed purchases unchanged,
- whereas cooking demonstrations are the only instrument that moves this margin,
- alongside suggestive yield gains—
-though within our one-season window such purchases reflect market entry rather than established repeat demand.
- Because trial packs are almost entirely variable cost while demonstrations carry a large per-session cost shared across attendees,
- this ranking is sensitive to how many farmers each demonstration reaches.
- More fundamentally,
- because the promoted variety is a hybrid that loses vigor when recycled,
- whether the pack sustains turnover depends on farmers re-buying once their recycled stock degrades;
- the durable gains in awareness and intent it produces make this plausible,
- but our one-season design cannot observe it.
+Setting these effects against delivery costs, trial packs are more cost-effective at the scale we study, but their relative advantage turns on two factors.
+ The first is the technology: trial packs translate directly into turnover for recyclable open-pollinated varieties, whereas for a hybrid like the one we study their long-run impact depends on farmers returning to the market for fresh seed once recycled stock degrades, something the durable gains in awareness and intent we document make plausible but our one-season design cannot observe.
+ The second is delivery scale: because a demonstration's costs are largely fixed per session and shared across attendees, while a pack's seed cost is borne per farmer, demonstrations become increasingly competitive when delivered to larger groups.
 \end_layout
 
 \begin_layout Standard
@@ -8957,29 +8943,13 @@ Taken together,
 
 \begin_layout Standard
 For policymakers,
- the practical message is that the right instrument depends on the objective.
- If the aim is a quick,
- low-cost rise in the share of fields under an improved variety,
- seed trial packs dominate:
- they are roughly an order of magnitude cheaper per additional adopter than cooking demonstrations.
- If instead the aim is to build a self-sustaining commercial seed market,
- trial packs are the wrong tool,
- because the turnover they generate runs through recycling and leaves purchases of fresh certified seed unchanged.
- Cooking demonstrations are the only instrument we find to move that margin,
- but the effect is suggestive,
- costly per adopter,
- and—
-because attendees buy fresh seed partly for lack of anything to recycle—
-likely confined to first purchases.
- Sustained commercial demand will therefore depend less on either extension instrument than on easing the frictions that make recycling the rational choice:
- seed prices relative to grain prices,
- unreliable input quality,
- and limited liquidity.
- Combining the two instruments adds little:
- we find no evidence of complementarity between them,
- so a budget is better spent on the single best-matched instrument than split across both.
- And because the cost of a cooking demonstration is largely incurred per session and shared across those who attend,
- its cost-effectiveness improves markedly when it is delivered to large groups rather than the small sessions we study.
+ our results translate into design principles rather than a single ranking, organized around two questions.
+ The first is what kind of seed is being promoted.
+ For open-pollinated varieties, which farmers can recycle for several seasons without much loss, trial packs translate directly and cheaply into varietal turnover.
+ For hybrids, recycling erodes the variety's advantage, so a trial pack's long-run contribution depends on farmers returning to the market for fresh seed once their recycled stock degrades, and therefore on a seed market that is affordable, reliable, and within reach; where those conditions fail, the gains from a hybrid trial pack are short-lived, and instruments that build fresh-seed demand, such as cooking demonstrations, become more important.
+ The second question is the scale at which extension can be delivered.
+ A trial pack's dominant cost is the seed, borne per farmer, whereas a cooking demonstration's costs are largely fixed per session and shared across everyone who attends; so although trial packs are far cheaper per adopter at the small sessions we study, a demonstration delivered to a large, village-wide audience can close or even reverse that gap.
+ Because we find no evidence of complementarity between the two, a budget is best spent on the single instrument matched to the technology and the feasible scale, rather than split across both.
 \end_layout
 
 \begin_layout Standard
