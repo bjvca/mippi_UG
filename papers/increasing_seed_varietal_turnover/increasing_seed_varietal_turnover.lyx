@@ -197,8 +197,8 @@ is a central goal of seed-system policy in sub-Saharan Africa,
  which are intended to emphasize learning about consumption traits through direct experience.
  Both raise farmers' knowledge and use of the promoted hybrid.
  Trial packs generate the larger increase,
- but it runs almost entirely through farmers recycling grain saved from the trial rather than buying fresh seed,
- a privately rational choice given low grain prices,
+ but it runs almost entirely through farmers recycling grain saved from the trial pack rather than buying fresh seed,
+ a rational choice in a context of low grain prices,
  high seed prices,
  uncertain quality,
  and liquidity constraints.
@@ -206,7 +206,7 @@ is a central goal of seed-system policy in sub-Saharan Africa,
  with suggestive yield gains.
  Trial packs are more cost-effective at the scale studied,
  but their relative advantage depends both on the technology and the delivery context.
- For recyclable OPVs,
+ For recyclable varieties such as Open Pollinated Varieties (OPVs),
  they directly accelerate varietal turnover.
  For hybrids,
  their long-run impact depends on farmers returning to the seed market for fresh seed.
@@ -273,14 +273,18 @@ literal "false"
  so that recent genetic gains are not reflected in the seed actually planted 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Colen_2024"
+key "mcguire2016seed"
 literal "false"
 
 \end_inset
 
 .
  How to accelerate varietal turnover is therefore a central question for seed-system policy.
- Traditionally,
+ 
+\end_layout
+
+\begin_layout Standard
+Traditionally,
  crop improvement efforts in breeding programs which serve smallholder farmers have focused on improving production-related agronomic traits,
  such as yield,
  drought tolerance,
@@ -593,9 +597,17 @@ A key finding from our study is that the majority of farmers who received the se
 \end_layout
 
 \begin_layout Standard
-Setting these effects against delivery costs, trial packs are more cost-effective at the scale we study, but their relative advantage turns on two factors.
- The first is the technology: trial packs translate directly into turnover for recyclable open-pollinated varieties, whereas for a hybrid like the one we study their long-run impact depends on farmers returning to the market for fresh seed once recycled stock degrades, something the durable gains in awareness and intent we document make plausible but our one-season design cannot observe.
- The second is delivery scale: because a demonstration's costs are largely fixed per session and shared across attendees, while a pack's seed cost is borne per farmer, demonstrations become increasingly competitive when delivered to larger groups.
+Setting these effects against delivery costs,
+ trial packs are more cost-effective at the scale we study,
+ but their relative advantage turns on two factors.
+ The first is the technology:
+ trial packs translate directly into turnover for recyclable open-pollinated varieties,
+ whereas for a hybrid like the one we study their long-run impact depends on farmers returning to the market for fresh seed once recycled stock degrades,
+ something the durable gains in awareness and intent we document make plausible but our one-season design cannot observe.
+ The second is delivery scale:
+ because a demonstration's costs are largely fixed per session and shared across attendees,
+ while a pack's seed cost is borne per farmer,
+ demonstrations become increasingly competitive when delivered to larger groups.
 \end_layout
 
 \begin_layout Standard
@@ -8943,13 +8955,33 @@ Taken together,
 
 \begin_layout Standard
 For policymakers,
- our results translate into design principles rather than a single ranking, organized around two questions.
+ our results translate into design principles rather than a single ranking,
+ organized around two questions.
  The first is what kind of seed is being promoted.
- For open-pollinated varieties, which farmers can recycle for several seasons without much loss, trial packs translate directly and cheaply into varietal turnover.
- For hybrids, recycling erodes the variety's advantage, so a trial pack's long-run contribution depends on farmers returning to the market for fresh seed once their recycled stock degrades, and therefore on a seed market that is affordable, reliable, and within reach; where those conditions fail, the gains from a hybrid trial pack are short-lived, and instruments that build fresh-seed demand, such as cooking demonstrations, become more important.
+ For open-pollinated varieties,
+ which farmers can recycle for several seasons without much loss,
+ trial packs translate directly and cheaply into varietal turnover.
+ For hybrids,
+ recycling erodes the variety's advantage,
+ so a trial pack's long-run contribution depends on farmers returning to the market for fresh seed once their recycled stock degrades,
+ and therefore on a seed market that is affordable,
+ reliable,
+ and within reach;
+ where those conditions fail,
+ the gains from a hybrid trial pack are short-lived,
+ and instruments that build fresh-seed demand,
+ such as cooking demonstrations,
+ become more important.
  The second question is the scale at which extension can be delivered.
- A trial pack's dominant cost is the seed, borne per farmer, whereas a cooking demonstration's costs are largely fixed per session and shared across everyone who attends; so although trial packs are far cheaper per adopter at the small sessions we study, a demonstration delivered to a large, village-wide audience can close or even reverse that gap.
- Because we find no evidence of complementarity between the two, a budget is best spent on the single instrument matched to the technology and the feasible scale, rather than split across both.
+ A trial pack's dominant cost is the seed,
+ borne per farmer,
+ whereas a cooking demonstration's costs are largely fixed per session and shared across everyone who attends;
+ so although trial packs are far cheaper per adopter at the small sessions we study,
+ a demonstration delivered to a large,
+ village-wide audience can close or even reverse that gap.
+ Because we find no evidence of complementarity between the two,
+ a budget is best spent on the single instrument matched to the technology and the feasible scale,
+ rather than split across both.
 \end_layout
 
 \begin_layout Standard
