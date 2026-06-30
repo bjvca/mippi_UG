@@ -1343,17 +1343,27 @@ Timeline
 \end_layout
 
 \begin_layout Standard
-The two interventions take very different lengths of time to deliver, and we design the timeline so that this difference does not become a difference in when outcomes are measured.
+The two interventions take very different lengths of time to deliver,
+ and we design the timeline so that this difference does not become a difference in when outcomes are measured.
  The trial pack can only work over a full growing season:
- the outcome of interest is not whether farmers plant the pack itself (the first-stage result), but whether the experience of growing the variety leads them to use it again the following season.
- There is no faster way to deliver this content, since it is the act of cultivating the variety that conveys its production traits.
+ the outcome of interest is not whether farmers plant the pack itself (the first-stage result),
+ but whether the experience of growing the variety leads them to use it again the following season.
+ There is no faster way to deliver this content,
+ since it is the act of cultivating the variety that conveys its production traits.
 \end_layout
 
 \begin_layout Standard
-The cooking demonstration, by contrast, delivers its content in a single session and needs no growing season.
- We therefore administered the two instruments at different points, the trial pack before the first season and the demonstration just before the second, so that for both the relevant decision is the same: which variety to plant in the second season.
+The cooking demonstration,
+ by contrast,
+ delivers its content in a single session and needs no growing season.
+ We therefore administered the two instruments at different points,
+ the trial pack before the first season and the demonstration just before the second,
+ so that for both the relevant decision is the same:
+ which variety to plant in the second season.
  Outcomes are then measured at a single endline after that season.
- The instruments are thus staggered in when they are delivered, but aligned on the decision they are meant to affect and on the point at which we observe it; the trial-pack group is not observed any later than the demonstration group.
+ The instruments are thus staggered in when they are delivered,
+ but aligned on the decision they are meant to affect and on the point at which we observe it;
+ the trial-pack group is not observed any later than the demonstration group.
 \end_layout
 
 \begin_layout Standard
@@ -1457,8 +1467,14 @@ Nsambya
 
 \begin_layout Standard
 It is worth being explicit about what does and does not differ across the two arms.
- The instruments are genuinely different in kind, one a season-long, hands-on engagement with the variety and the other a brief informational event; this is intrinsic to what each instrument is, not a feature of how we timed the study.
- What the arms share is the point at which their effects are measured, after the same season and at the same endline, so the estimates cannot be an artifact of observing one arm earlier than the other.
+ The instruments are genuinely different in kind,
+ one a season-long,
+ hands-on engagement with the variety and the other a brief informational event;
+ this is intrinsic to what each instrument is,
+ not a feature of how we timed the study.
+ What the arms share is the point at which their effects are measured,
+ after the same season and at the same endline,
+ so the estimates cannot be an artifact of observing one arm earlier than the other.
 \end_layout
 
 \begin_layout Section
@@ -1479,7 +1495,7 @@ literal "false"
 \end_inset
 
 .
- The primary outcome used in these simulations is a binary indicator for the type of seed used by the farmer (1 if the farmer used the prompted seed variety,
+ The primary outcome used in these simulations is a binary indicator for the type of seed used by the farmer (1 if the farmer used seed of an improved variety,
  0 otherwise).
  Data from a previous project,
  which included 3,450 smallholder maize farmers across 345 villages,
