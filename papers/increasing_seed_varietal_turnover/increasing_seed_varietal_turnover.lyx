@@ -2635,14 +2635,10 @@ During both baseline and endline,
  price,
  etc.) were collected for a single,
  randomly selected plot per household to limit respondent burden.
- If trial pack seed is systematically planted on particular plots (for example,
- smaller plots),
- random plot selection leads to misclassification of plot-level treatment status for some treated households.
- This attenuates estimated effects toward zero relative to the effect on the plot that actually received the trial pack.
- We therefore interpret plot-level results as conservative lower bounds on effects at the plot that actually receives the trial seed.
- However,
- because both treatment assignment and plot selection are randomized,
- the estimate remains unbiased for the intent-to-treat effect on a randomly selected plot.
+ Because the plot is drawn by the same random procedure in treatment and control villages and independently of treatment assignment, the resulting estimates are unbiased for the intent-to-treat effect on a randomly selected plot, which is the estimand we report.
+ Note that this estimand differs from, and is smaller in magnitude than, the effect on the specific plot that received the trial seed:
+ since most plots did not receive it, a randomly selected plot dilutes that per-plot effect.
+ For use of the promoted variety, then, our plot-level estimates are best read as conservative proxies for the impact on the plot that actually received the trial pack rather than as biased estimates of it.
  
 \end_layout
 
