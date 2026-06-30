@@ -552,7 +552,7 @@ whether for own consumption,
 
 \begin_layout Standard
 We see little evidence that receiving both treatments had additional impacts beyond the sum of their separate effects.
- Since household members often decide together about what crops to plant and seed to use 
+ Since household members often consult each other when deciding about what crops to plant and seed to use 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "lecoutere2023empowering"
@@ -816,14 +816,14 @@ Experimental Design
 We use a cluster randomized control trial (RCT) to evaluate the effectiveness of two interventions,
  using a 2x2 factorial design,
  with treatments assigned at the village level to mitigate potential concerns about spillover effects.
- The first factor in the factorial design is the seed trial pack treatment:
+ The first factor in the design is the seed trial pack treatment:
  sampled farmers in the treatment villages received a free sample of a hybrid maize variety (
 \emph on
 Bazooka
 \emph default
 ),
  whereas those in the control villages did not.
- The second factor involved a cooking demonstration and tasting session;
+ The second factor placed orthogonally on the first factor involved a cooking demonstration and tasting session;
  in treatment villages,
  sampled farmers were invited to a session where they observed the preparation of maize flour made from the 
 \emph on
@@ -837,6 +837,11 @@ Bazooka
 \emph default
 -derived maize flour to try at home.
  No such activities were conducted in control villages.
+ This design thus results in 4 treatment cells:
+ 1) pure control;
+ 2) trial pack only;
+ 3) cooking demonstration and tasting session only;
+ and 4) trial pack plus cooking demonstration and tasting session.
 \begin_inset Foot
 status collapsed
 
@@ -862,16 +867,7 @@ Treatments
 \end_layout
 
 \begin_layout Standard
-The first intervention involves providing a seed trial pack to the household member responsible for most maize cultivation decisions,
- who in the study context is typically the male co-head 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "van2023hiding"
-literal "false"
-
-\end_inset
-
-.
+The first intervention involves providing a seed trial pack to the household member responsible for most maize cultivation decisions.
  This trial pack contains 
 \emph on
 Bazooka
@@ -879,7 +875,7 @@ Bazooka
  maize,
  which was released by the National Agricultural Research Organization (NARO) in Uganda in 2013 and is currently available in the market but not yet widely adopted by farmers.
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 At baseline,
@@ -931,7 +927,7 @@ literal "false"
 
 .
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 The primary production trait of 
@@ -941,26 +937,14 @@ Bazooka
  is its high yield,
  underscored by the package slogan,
  
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-"
-\end_layout
-
+\begin_inset Quotes eld
 \end_inset
 
-yield explosion.
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-"
-\end_layout
-
+yield explosion
+\begin_inset Quotes erd
 \end_inset
 
-
+.
 \end_layout
 
 \end_inset
@@ -980,12 +964,11 @@ Bazooka
 The second intervention consists of a cooking demonstration and tasting event,
  organized once in each village assigned to the cooking demonstration treatment.
  Within these villages,
- all sampled households were invited to attend a facilitated meeting at a central location (half of whom were cross-randomized to receive a seed trial pack under the factorial design).
- As for the cooking demonstration and tasting intervention,
+ all sampled households were invited to attend a facilitated meeting at a central location.
+ As for seed trial pack intervention,
  invitations were addressed to the household member responsible for maize production decisions.
- Invitees were explicitly encouraged to attend together with another household member involved in food preparation,
- in order to ensure that both production and consumption perspectives were represented during the session.
- 
+ However,
+ invitees were explicitly encouraged to attend together with another household member involved in food preparation.
 \end_layout
 
 \begin_layout Standard
@@ -1038,7 +1021,7 @@ Dhuuma Omusoga
 
  for local seed.
  The latter is derived from the name of the region,
- Busoga.
+ Busoga.The terminology seemed well established among the smallholder maize farmers in our sample.
 \end_layout
 
 \end_inset
@@ -1056,7 +1039,7 @@ Dhuuma Omusoga
 
 \begin_layout Standard
 After the rating exercise,
- sessions proceeded with the cooking demonstration and blind taste testing.
+ sessions proceeded with the cooking demonstration and blind tasting.
  The facilitator asked a volunteer participant to prepare 
 \emph on
 posho
@@ -1079,29 +1062,13 @@ Bazooka
  We ensured that the two dishes differed only in terms of the flour used by employing the same cook and starting with identical amounts of flour,
  measured on a weighing scale.
  The resulting dishes were displayed on a table,
- and participants were invited to taste the two varieties,
- simply labeled by their position as the variety on the 
-\begin_inset Quotes eld
-\end_inset
-
-left
-\begin_inset Quotes erd
-\end_inset
-
- and the variety on the 
-\begin_inset Quotes eld
-\end_inset
-
-right.
-\begin_inset Quotes erd
-\end_inset
-
+ and participants were invited to taste the two varieties.
  The participants then rated the two varieties on the various consumption attributes again,
  voting on which of the two samples is superior for each attribute by a show of hands.
 \end_layout
 
 \begin_layout Standard
-The rating results were then discussed within the group and participants were informed that one sample was made from flour obtained from local maize while the other was made from an improved maize variety called 
+The rating results were then discussed within the group and it was announced that one sample was made from flour obtained from local maize while the other was made from an improved maize variety called 
 \emph on
 Bazooka
 \emph default
@@ -1170,17 +1137,6 @@ Bazooka
  but rather to the mode of learning emphasized by each intervention.
 \end_layout
 
-\begin_layout Standard
-The two interventions deliberately differ in how exposure within the household was structured.
- The seed trial pack intervention targets the household member responsible for maize production decisions,
- while the cooking demonstration and tasting intervention was designed to involve both production- and consumption-relevant decision-makers by encouraging joint attendance.
- This design aligns each intervention with the margin it is intended to affect:
- production-oriented learning through agronomic experimentation on the one hand,
- and consumption-oriented learning through sensory experience on the other.
- By structuring exposure in this way,
- the design leverages existing household decision-making roles rather than confounding treatment effects with arbitrary differences in which household members were exposed.
-\end_layout
-
 \begin_layout Subsection
 Estimation and Inference
 \begin_inset ERT
@@ -1207,7 +1163,7 @@ name "subsec:Estimation-and-inference"
 \begin_layout Standard
 We estimate intent-to-treat (ITT) effects using linear regression models that compare mean outcomes across treatment and control groups.
  Given that randomization was conducted at the village level,
- we will estimate ITTs using the following equation:
+ we will estimate ITTs using the following fully saturated model:
 \end_layout
 
 \begin_layout Standard
@@ -1240,12 +1196,16 @@ j
 j
 \emph default
  was randomly assigned to the cooking demonstration and blind tasting intervention (and zero otherwise).
- Outcomes are measured at the individual level 
+ Outcomes are measured at the household level 
 \begin_inset Formula $\left(Y_{ij}\right)$
 \end_inset
 
 .
- We allow for an interaction effect between the two interventions,
+ We allow for an interaction effect between the two interventions 
+\begin_inset Formula $\left(T^{S}_{j}T^{D}_{j}\right)$
+\end_inset
+
+,
  and we control for baseline outcomes 
 \begin_inset Formula $\left(Y^{B}_{ij}\right)$
 \end_inset
@@ -1288,34 +1248,13 @@ nolink "false"
  for the cooking demonstration.
  Because the two instruments target different margins of the same decision,
  the trial pack the production side and the demonstration the consumption side,
- we have no strong prior on which effect is larger,
- and comparing 
-\begin_inset Formula $\beta_{S}$
-\end_inset
-
- with 
-\begin_inset Formula $\beta_{D}$
-\end_inset
-
- is itself one aim of the study.
+ we have no strong prior on which effect is larger.
  The interaction 
 \begin_inset Formula $\beta_{I}$
 \end_inset
 
  tests whether receiving both instruments adds to the sum of their separate effects:
- it would be positive if production- and consumption-side learning are complements,
- for example if different household members respond to each,
- and close to zero if they are redundant.
- Finally,
- we expect the trial pack to raise use of the promoted variety mainly through recycling rather than fresh purchases,
- so that 
-\begin_inset Formula $\beta_{S}$
-\end_inset
-
- is positive for use of the variety overall but close to zero for use of fresh seed,
- whereas the demonstration,
- which distributes no seed,
- can raise use only through fresh purchases.
+ it would be positive if production- and consumption-side learning are complements.
 \end_layout
 
 \begin_layout Standard
@@ -1396,7 +1335,7 @@ literal "false"
  the summary index reported in the top row aggregates the individual outcomes listed in the rows beneath it,
  so the composition of each family can be read directly from the corresponding table.
  Because outcomes are demeaned and scaled using control-group moments before aggregation,
- the indices have mean zero in the control group by construction (up to rounding).
+ the indices have mean zero in the control group by construction (up to rounding and depending on the extent of missingness).
 \end_layout
 
 \begin_layout Subsection
