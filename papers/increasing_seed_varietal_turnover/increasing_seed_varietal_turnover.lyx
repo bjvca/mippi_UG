@@ -576,7 +576,16 @@ We see little evidence that receiving both treatments had additional impacts bey
  and men may be more attuned to production traits and women to consumption traits,
  reaching both through the two instruments might have produced an effect larger than the sum of its parts.
  We find no clear sign of such complementarity,
- though the interaction estimates are imprecise.
+ though the interaction estimates are imprecise;
+ trait priorities may in any case be less cleanly split along gender lines than this intuition assumes 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bacud2024looking"
+literal "false"
+
+\end_inset
+
+.
  Contrary to our expectations,
  highlighting consumption traits also did not increase women’s involvement in seed-related decision-making.
  Finally,
