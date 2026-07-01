@@ -1531,6 +1531,11 @@ To obtain a representative random sample of farmers in the Busoga Kingdom,
 \end_layout
 
 \begin_layout Standard
+The study protocol was approved by the relevant university research ethics committee and by the institutional review board of the authors' research institute (institution names and approval numbers are provided on the separate title page and are withheld here for anonymous review).
+ The study was nationally registered and pre-registered at a public randomized controlled trial registry.
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -8553,11 +8558,12 @@ Acknowledgments
 \end_layout
 
 \begin_layout Standard
-Author affiliations,
+Ethics approval for this study was obtained from the relevant university research ethics committee and from the institutional review board of the authors' research institute.
+ Institution names,
+ approval numbers,
+ author affiliations,
  funding,
- trial registration,
- ethics approvals,
- and personal acknowledgments are provided on the separate title page and are omitted here for anonymous review.
+ and personal acknowledgments are provided on the separate title page and are withheld here for anonymous review.
  During the preparation of this work the authors used OpenAI and Anthropic models to obtain editorial suggestions to improve clarity and readability and explore alternative phrasing for technical terms.
  After using these tools,
  the authors reviewed and edited the content as needed and take full responsibility for the content of the article.
