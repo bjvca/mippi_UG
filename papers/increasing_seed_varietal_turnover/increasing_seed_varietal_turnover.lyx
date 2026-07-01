@@ -4981,13 +4981,22 @@ Other pre-registered outcomes
 \end_layout
 
 \begin_layout Standard
-Beyond the adoption results above, we pre-registered several secondary outcomes; none is affected by either intervention.
+Beyond the adoption results above,
+ we pre-registered several secondary outcomes;
+ none is affected by either intervention.
 \end_layout
 
 \begin_layout Standard
-First, we examine whether the interventions shifted how the harvest was allocated across own consumption, sale, and seed.
- On average, households consumed the bulk of their maize (about three-quarters), sold roughly a fifth, and kept under 5 percent for seed.
- Neither intervention produced meaningful shifts in this allocation; full results are reported in Appendix Table 
+First,
+ we examine whether the interventions shifted how the harvest was allocated across own consumption,
+ sale,
+ and seed.
+ On average,
+ households consumed the bulk of their maize (about three-quarters),
+ sold roughly a fifth,
+ and kept under 5 percent for seed.
+ Neither intervention produced meaningful shifts in this allocation;
+ full results are reported in Appendix Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "disposal"
@@ -5002,7 +5011,8 @@ nolink "false"
 \end_layout
 
 \begin_layout Standard
-Second, we pre-registered the hypothesis that emphasizing consumption traits would raise women's influence over seed selection and the use of harvested maize,
+Second,
+ we pre-registered the hypothesis that emphasizing consumption traits would raise women's influence over seed selection and the use of harvested maize,
  since in this setting men typically handle production and marketing decisions while women are more engaged in the consumption and cooking domain 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -5013,7 +5023,7 @@ literal "false"
 
 .
  We find no such effect.
- As Table 
+ As Appendix Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "decision"
@@ -5024,7 +5034,7 @@ nolink "false"
 
 \end_inset
 
- (Appendix) shows,
+ shows,
  women are already highly involved in these decisions at baseline,
  and neither intervention changes their involvement.
  Among demonstration attendees,
@@ -5035,7 +5045,8 @@ nolink "false"
 \end_layout
 
 \begin_layout Standard
-Third, turning to ultimate outcomes,
+Third,
+ turning to ultimate outcomes,
  farmers aim to improve their households' food security and overall well-being.
  While it is unlikely that the small changes in yield that we observe for the cooking demonstration and tasting sessions would lead to meaningful changes in short-term welfare,
  we still evaluate the interventions' effects on key welfare indicators,
@@ -16056,7 +16067,6 @@ citep{benjamini2006adaptive}.
 
 
 \end_layout
-
 
 \begin_layout Standard
 \begin_inset Float table
