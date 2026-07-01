@@ -552,15 +552,7 @@ whether for own consumption,
 
 \begin_layout Standard
 We see little evidence that receiving both treatments had additional impacts beyond the sum of their separate effects.
- Since household members often consult each other when deciding about what crops to plant and seed to use 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "lecoutere2023empowering"
-literal "false"
-
-\end_inset
-
-,
+ Since household members often consult each other when deciding about what crops to plant and seed to use,
  and men may be more attuned to production traits and women to consumption traits,
  reaching both through the two instruments might have produced an effect larger than the sum of its parts.
  We find no clear sign of such complementarity,
@@ -5037,6 +5029,15 @@ nolink "false"
 \end_inset
 
  shows,
+ consistent with 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "lecoutere2023empowering"
+literal "false"
+
+\end_inset
+
+,
  women are already highly involved in these decisions at baseline,
  and neither intervention changes their involvement.
  Among demonstration attendees,
