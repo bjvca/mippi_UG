@@ -2651,10 +2651,17 @@ During both baseline and endline,
  price,
  etc.) were collected for a single,
  randomly selected plot per household to limit respondent burden.
- Because the plot is drawn by the same random procedure in treatment and control villages and independently of treatment assignment, the resulting estimates are unbiased for the intent-to-treat effect on a randomly selected plot, which is the estimand we report.
- Note that this estimand differs from, and is smaller in magnitude than, the effect on the specific plot that received the trial seed:
- since most plots did not receive it, a randomly selected plot dilutes that per-plot effect.
- For use of the promoted variety, then, our plot-level estimates are best read as conservative proxies for the impact on the plot that actually received the trial pack rather than as biased estimates of it.
+ Because the plot is drawn by the same random procedure in treatment and control villages and independently of treatment assignment,
+ the resulting estimates are unbiased for the intent-to-treat effect on a randomly selected plot,
+ which is the estimand we report.
+ Note that this estimand differs from,
+ and is smaller in magnitude than,
+ the effect on the specific plot that received the trial seed:
+ since most plots did not receive it,
+ a randomly selected plot dilutes that per-plot effect.
+ For use of the promoted variety,
+ then,
+ our plot-level estimates are best read as conservative proxies for the impact on the plot that actually received the trial pack rather than as biased estimates of it.
  
 \end_layout
 
@@ -3584,7 +3591,7 @@ literal "false"
  Two features limit this concern:
  our first-stage measures are corroborated by administrative distribution and attendance records rather than recall alone,
  and the overall pattern of results is hard to reconcile with simple demand bias,
- since treated farmers report recycling rather than the fresh-seed purchases the intervention encouraged,
+ since treated farmers report recycling rather than the fresh-seed purchases we expected that the intervention would encourage,
  and we find no effects on outcomes such as food security or women's involvement where such bias would also be expected.
  We nonetheless interpret the self-reported magnitudes with appropriate caution.
 \end_layout
@@ -3841,7 +3848,7 @@ nolink "false"
  During the endline survey,
  we asked all farmers whether they recalled receiving the interventions,
  regardless of assignment.
- This provides useful information on failure to reach intended beneficiaries and on spillovers or exposure among non-targeted households.
+ This provides useful information on failure to reach intended beneficiaries and exposure among non-targeted households.
  For the trial pack treatment,
  98 percent of farmers in the treatment group indicated that they received a seed trial pack from us in March 2023.
  Furthermore,
@@ -3876,8 +3883,7 @@ Households that were assigned to the cooking demonstration and tasting sessions 
  Endline survey responses further indicate that nearly all households who reported attending the demonstration also reported using the maize flour provided at the end of the session to prepare a meal at home,
  rather than selling or otherwise disposing of it.
  Together,
- these figures indicate high intervention fidelity and substantial treatment uptake,
- supporting an intent-to-treat interpretation of the estimated effects.
+ these figures indicate high intervention fidelity and substantial treatment uptake.
 \end_layout
 
 \begin_layout Subsection
@@ -4952,7 +4958,7 @@ nolink "false"
 \end_layout
 
 \begin_layout Standard
-The effect of the trial pack is concentrated among farmers with no prior experience of improved seed.
+The effect of the trial pack may be concentrated among farmers with no prior experience of improved seed.
  Interacting the treatments with an indicator for baseline use of an improved variety (Appendix Table 
 \begin_inset CommandInset ref
 LatexCommand ref
