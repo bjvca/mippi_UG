@@ -273,7 +273,7 @@ literal "false"
  so that recent genetic gains are not reflected in the seed actually planted 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "mcguire2016seed"
+key "mcguire2016seed,okello2023social"
 literal "false"
 
 \end_inset
@@ -5240,7 +5240,7 @@ A complementary indicator of positive sentiment toward a variety is whether farm
  Peer recommendations are of particular interest given evidence that social learning plays an important role in the diffusion of agricultural technologies and motivates policies that subsidize or temporarily provide seed at no cost 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "campenhout2021role,10.1257/aer.100.1.35,bandiera2006social"
+key "campenhout2021role,10.1257/aer.100.1.35,bandiera2006social,okello2023social"
 literal "false"
 
 \end_inset
@@ -8234,7 +8234,15 @@ Combining these costs with the intent-to-treat effects on adoption reported in T
  The trial pack is more than an order of magnitude more cost-effective.
  If,
  instead,
- the objective is to build demand in the commercial seed market,
+ the objective is to build demand in the commercial seed market 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "okello2023social"
+literal "false"
+
+\end_inset
+
+,
  that is,
  purchases of fresh certified seed,
  the ranking reverses.
