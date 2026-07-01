@@ -273,7 +273,7 @@ literal "false"
  so that recent genetic gains are not reflected in the seed actually planted 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "mcguire2016seed"
+key "mcguire2016seed,okello2023social"
 literal "false"
 
 \end_inset
@@ -576,7 +576,16 @@ We see little evidence that receiving both treatments had additional impacts bey
  and men may be more attuned to production traits and women to consumption traits,
  reaching both through the two instruments might have produced an effect larger than the sum of its parts.
  We find no clear sign of such complementarity,
- though the interaction estimates are imprecise.
+ though the interaction estimates are imprecise;
+ trait priorities may in any case be less cleanly split along gender lines than this intuition assumes 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bacud2024looking"
+literal "false"
+
+\end_inset
+
+.
  Contrary to our expectations,
  highlighting consumption traits also did not increase women’s involvement in seed-related decision-making.
  Finally,
@@ -5240,7 +5249,7 @@ A complementary indicator of positive sentiment toward a variety is whether farm
  Peer recommendations are of particular interest given evidence that social learning plays an important role in the diffusion of agricultural technologies and motivates policies that subsidize or temporarily provide seed at no cost 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "campenhout2021role,10.1257/aer.100.1.35,bandiera2006social"
+key "campenhout2021role,10.1257/aer.100.1.35,bandiera2006social,okello2023social"
 literal "false"
 
 \end_inset
@@ -8234,7 +8243,15 @@ Combining these costs with the intent-to-treat effects on adoption reported in T
  The trial pack is more than an order of magnitude more cost-effective.
  If,
  instead,
- the objective is to build demand in the commercial seed market,
+ the objective is to build demand in the commercial seed market 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "okello2023social"
+literal "false"
+
+\end_inset
+
+,
  that is,
  purchases of fresh certified seed,
  the ranking reverses.
