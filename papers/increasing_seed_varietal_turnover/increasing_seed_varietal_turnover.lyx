@@ -4983,9 +4983,15 @@ Use of Harvest
 \end_layout
 
 \begin_layout Standard
-We also examine whether the interventions shifted how the harvest was allocated across own consumption, sale, and seed.
- On average, households consumed the bulk of their maize (about three-quarters), sold roughly a fifth, and kept under 5 percent for seed.
- Neither intervention produced meaningful shifts in this allocation; full results are reported in Appendix Table 
+We also examine whether the interventions shifted how the harvest was allocated across own consumption,
+ sale,
+ and seed.
+ On average,
+ households consumed the bulk of their maize (about three-quarters),
+ sold roughly a fifth,
+ and kept under 5 percent for seed.
+ Neither intervention produced meaningful shifts in this allocation;
+ full results are reported in Appendix Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "disposal"
@@ -5015,7 +5021,7 @@ literal "false"
 
 .
  We find no such effect.
- As Table 
+ As Appendix Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "decision"
@@ -5026,7 +5032,7 @@ nolink "false"
 
 \end_inset
 
- (Appendix) shows,
+ shows,
  women are already highly involved in these decisions at baseline,
  and neither intervention changes their involvement.
  Among demonstration attendees,
@@ -16062,7 +16068,6 @@ citep{benjamini2006adaptive}.
 
 
 \end_layout
-
 
 \begin_layout Standard
 \begin_inset Float table
