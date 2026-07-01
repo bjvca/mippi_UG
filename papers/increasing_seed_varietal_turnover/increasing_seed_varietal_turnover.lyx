@@ -279,6 +279,16 @@ literal "false"
 \end_inset
 
 .
+ This gap is costly:
+ maize varieties on the market for more than two decades yield several hundred kilograms per hectare less than recently released ones 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ndegwa2026newer"
+literal "false"
+
+\end_inset
+
+.
  How to accelerate varietal turnover is therefore a central question for seed-system policy.
  
 \end_layout
@@ -319,6 +329,16 @@ literal "false"
 \begin_layout Standard
 Because the production and consumption attributes of new varieties are not directly observable to farmers upon seed purchase,
  widespread adoption also may require raising farmers' awareness of their beneficial attributes.
+ Observational evidence points to on-farm experimentation and locally relevant performance information as levers for shifting farmer perceptions and accelerating adoption 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ndegwa2026newer"
+literal "false"
+
+\end_inset
+
+;
+ the interventions we study are designed to provide exactly this kind of direct experience.
  A common strategy to encourage farmers to learn about a new variety is through the distribution of seed sample packs,
  often referred to as 
 \begin_inset Quotes eld
@@ -8411,6 +8431,17 @@ The seed trial pack substantially increased farmers’ awareness and appreciatio
  such recycling entails a yield penalty,
  and consistent with this,
  we find no evidence of yield gains despite increased use.
+ This distinction matters:
+ because on-farm maize yield falls steeply with varietal age 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ndegwa2026newer"
+literal "false"
+
+\end_inset
+
+,
+ turnover achieved through recycled hybrid grain captures little of the genetic gain that makes accelerating turnover worthwhile in the first place.
  In contrast,
  cooking demonstrations and tasting sessions primarily influenced perceptions of consumption attributes.
  While their effects on adoption were more modest,
