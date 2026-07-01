@@ -4893,7 +4893,7 @@ Bazooka
 
 \begin_layout Standard
 Results on a randomly selected plot,
- reported in Appendix Table 
+ reported in Online Appendix Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "adoptiom-1"
@@ -4917,7 +4917,7 @@ The plot-level data add one result not visible at the household level.
  we detect no impact on maize production or yield on the randomly selected plot,
  whereas the cooking demonstration shows suggestive yield gains:
  imprecise in the fully interacted model,
- but statistically significant when pooled across the orthogonal treatment assignment (Appendix Table 
+ but statistically significant when pooled across the orthogonal treatment assignment (Online Appendix Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "adoptiom-1"
@@ -4949,7 +4949,7 @@ nolink "false"
 
 \begin_layout Standard
 The effect of the trial pack may be concentrated among farmers with no prior experience of improved seed.
- Interacting the treatments with an indicator for baseline use of an improved variety (Appendix Table 
+ Interacting the treatments with an indicator for baseline use of an improved variety (Online Appendix Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:het-prior"
@@ -4988,7 +4988,7 @@ First,
  sold roughly a fifth,
  and kept under 5 percent for seed.
  Neither intervention produced meaningful shifts in this allocation;
- full results are reported in Appendix Table 
+ full results are reported in Online Appendix Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "disposal"
@@ -5015,7 +5015,7 @@ literal "false"
 
 .
  We find no such effect.
- As Appendix Table 
+ As Online Appendix Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "decision"
