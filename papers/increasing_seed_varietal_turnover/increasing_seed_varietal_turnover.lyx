@@ -6187,9 +6187,6 @@ nolink "false"
  the results show that the seed trial pack is equally,
  if not more,
  effective in changing perceptions in favor of improved seed varieties.
- This suggests that trial pack interventions may,
- in some cases,
- be sufficient to encourage farmers to learn about the consumption traits of new varieties.
 \end_layout
 
 \begin_layout Standard
@@ -6737,15 +6734,7 @@ literal "false"
 
 .
  Providing free seed trial packs can be an effective way to alter these perceptions,
- as it allows farmers to directly experience the production traits of the new technology on their own fields 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "doi:10.1086/601447"
-literal "false"
-
-\end_inset
-
-.
+ as it allows farmers to directly experience the production traits of the new technology on their own fields.
 \end_layout
 
 \begin_layout Standard
@@ -7365,7 +7354,7 @@ Bazooka
 \emph default
 ),
  but mostly did so by reusing seed rather than purchasing fresh seed as recommended.
- In fact,
+ As such,
  the turnover it generated ran through recycling rather than purchases of fresh seed.
  Below we first document what this recycled seed displaced,
  and then explore possible explanations for the behavior,
@@ -7399,7 +7388,11 @@ nolink "false"
  or,
  equivalently,
  the probability of a fresh purchase on the plot falls by the same amount.
- The much larger increase in recycled improved seed (49 percentage points) is therefore mostly a recomposition of seed farmers were already saving,
+ 
+\end_layout
+
+\begin_layout Standard
+The much larger increase in recycled improved seed (49 percentage points) is therefore mostly a recomposition of seed farmers were already saving,
  away from local landraces and toward the promoted hybrid,
  rather than a net rise in saving.
  This is consistent with the crowd-out of fresh hybrid and OPV seed reported in Table 
@@ -7416,15 +7409,31 @@ nolink "false"
 ,
  estimated there at a slightly larger 13 percentage points under a stricter definition that counts only fresh seed from a trusted source.
  The cooking demonstration moves none of these margins.
- The trial pack thus mostly redirects the use of farmer-saved seed toward the promoted variety:
+ 
+\end_layout
+
+\begin_layout Standard
+The trial pack thus mostly redirects the use of farmer-saved seed toward the promoted variety:
  roughly five sixths of the increase in recycled Bazooka replaces other farmer-saved seed,
  and about one sixth comes at the expense of purchases in the commercial seed market.
  Displacing old landraces with a once-recycled hybrid is a real but modest upgrade in the first season:
- recycled Bazooka out-yields local seed (375 versus 323 kilograms per acre).
+ recycled Bazooka out-yields local seed (375 versus 323 kilograms per acre—
+see Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Limited-Knowledge"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+ below).
  Because a hybrid loses vigor as it segregates over successive cycles,
  this first-season advantage is expected to erode toward local-seed levels.
- Whether the pack raises turnover beyond the first season then depends on whether farmers return to the market once their recycled stock degrades,
- a dynamic we take up in Section 6.2.
+ Whether the pack raises turnover beyond the first season then depends on whether farmers return to the market once their recycled stock degrades.
 \end_layout
 
 \begin_layout Standard
@@ -7641,6 +7650,13 @@ Note:
 
 \begin_layout Subsection
 Limited Knowledge
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Limited-Knowledge"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -7704,12 +7720,7 @@ Bazooka
 Bazooka
 \emph default
  seed just once from the seed trial pack obtained intermediate yields of around 375 kilograms per acre.
- These comparisons are descriptive rather than causal:
- seed source is not randomly assigned,
- and farmers who purchase fresh seed may differ from those who recycle.
- We use them only to gauge the approximate magnitude of the yield penalty from recycling that farmers face.
- Read together with the experimental estimates,
- these magnitudes also account for why the trial pack raised use of the promoted variety by 67 percentage points without raising average yields:
+ Reading these descriptive comparisons together with the experimental estimates provides an explanation why the trial pack raised use of the promoted variety by 67 percentage points without raising average yields:
  most of that use consists of recycled grain,
  which yields roughly what the seed it displaced—
 recycled local varieties and the fresh hybrid or OPV seed that treated farmers no longer purchased—
@@ -7718,6 +7729,13 @@ would have produced.
 
 \begin_layout Subsection
 Profitability and Aversion to Market Price Risk
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Profitability-and-Aversion"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -7914,32 +7932,19 @@ Another possible explanation for the observed differences in recycling rates acr
  This interpretation is consistent with existing evidence documenting low levels of trust in Uganda’s agricultural input market 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "bold2017lemon,barriga2020supply,miehe2023perceived"
+key "miehe2023perceived,barriga2020supply,bold2017lemon"
 literal "false"
 
 \end_inset
 
 .
  To explore this hypothesis,
- we compare farmer ratings of 
+ we asked farmers to rate the actual seed used on their plots with respect to specific traits,
+ as well as to provide an overall satisfaction score and compare these ratings of 
 \emph on
 Bazooka
 \emph default
  seed across different sourcing channels.
- In addition to eliciting comparative assessments of improved versus local seed varieties on a range of production traits (see Section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "subsec:Perceptions-of-Production"
-plural "false"
-caps "false"
-noprefix "false"
-nolink "false"
-
-\end_inset
-
-),
- we asked farmers to rate the actual seed used on their plots with respect to specific traits,
- as well as to provide an overall satisfaction score.
 \end_layout
 
 \begin_layout Standard
@@ -8152,26 +8157,19 @@ The preceding sections establish that both instruments raise use of the promoted
  but through different channels and with different consequences for productivity.
  For a policymaker choosing between them,
  what matters is not only whether each works but what each costs to deliver.
- Because we find no evidence that the two instruments are complements (the interaction terms in our results tables are small and imprecisely estimated,
- although the trial was powered to detect only large interaction effects),
+ Because we find no evidence that the two instruments are complements,
  little appears to be gained by deploying both,
  and we treat the choice as one between single instruments;
  treating the instruments as separable is also what lets us cost them independently.
  We therefore combine the experimental effects with the actual intervention budgets to compare the two instruments on a cost-effectiveness basis.
- Because the seed trial packs in our study were distributed during the baseline visit,
- their realized marginal delivery cost was close to zero.
- To keep the comparison fair to the cooking demonstration,
- which was a stand-alone field operation that carries its full delivery cost,
- we instead cost a stand-alone seed-pack distribution program,
- using the same unit costs for transport,
- per diems,
- and mobilization drawn from the consumption-intervention budget.
 \end_layout
 
 \begin_layout Standard
 Delivering a seed trial pack costs approximately UGX 27,000 per farmer:
  UGX 12,000 for one kilogram of seed,
  plus about UGX 15,000 for stand-alone distribution.
+ A cooking demonstration costs substantially more,
+ at about UGX 64,000 per farmer at full economic cost.
 \begin_inset Foot
 status collapsed
 
@@ -8183,9 +8181,6 @@ All costs are in 2023 Ugandan shillings (UGX).
 
 \end_inset
 
- A cooking demonstration costs substantially more,
- at about UGX 75,000 per farmer at full economic cost,
- or roughly UGX 64,000 once research-specific overhead such as study supervision and enumerator insurance is removed.
  The difference reflects the demonstration's heavier logistics:
  each session requires a team to travel to the village,
  cook,
@@ -8216,11 +8211,7 @@ Combining these costs with the intent-to-treat effects on adoption reported in T
  getting an improved variety into the ground regardless of seed source,
  the seed trial pack costs about UGX 40,000 per additional adopter (UGX 27,000 divided by a 0.67 effect on use of the promoted variety),
  against roughly UGX 715,000 for the cooking demonstration (UGX 64,000 divided by a 0.09 effect).
- The trial pack is more than an order of magnitude more cost-effective,
- and the ranking is robust to how distribution is costed:
- even if the pack were charged the demonstration's entire stand-alone delivery cost,
- it would still cost about UGX 112,000 per additional adopter,
- roughly six times less than the demonstration.
+ The trial pack is more than an order of magnitude more cost-effective.
  If,
  instead,
  the objective is to build demand in the commercial seed market,
