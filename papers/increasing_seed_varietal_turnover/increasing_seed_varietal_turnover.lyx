@@ -5203,7 +5203,11 @@ To capture more general attitudes toward improved varieties,
  farmers were asked to assess how likely they believed it was that improved varieties would yield less than local varieties,
  a margin that is directly relevant for policies that distribute seed trial packs to lower perceived adoption risk.
  Responses were recorded on a four-point Likert scale ranging from “very likely” to “very unlikely.” An analogous question was asked for the promoted variety,
- Bazooka,
+ 
+\emph on
+Bazooka
+\emph default
+,
  among farmers who reported familiarity with it.
  We construct an indicator for perceived downside risk that equals one if respondents selected either “very likely” or “somewhat likely.” Overall,
  perceived downside risk is low,
@@ -5216,7 +5220,7 @@ A complementary indicator of positive sentiment toward a variety is whether farm
  Peer recommendations are of particular interest given evidence that social learning plays an important role in the diffusion of agricultural technologies and motivates policies that subsidize or temporarily provide seed at no cost 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "10.1257/aer.100.1.35,campenhout2021role"
+key "campenhout2021role,10.1257/aer.100.1.35,bandiera2006social"
 literal "false"
 
 \end_inset
