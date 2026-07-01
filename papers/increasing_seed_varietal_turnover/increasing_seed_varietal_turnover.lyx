@@ -4983,25 +4983,9 @@ Use of Harvest
 \end_layout
 
 \begin_layout Standard
-If the interventions affect how farmers perceive and use the promoted variety,
- they may also influence how harvested maize is allocated across competing uses.
- In particular,
- a focus on the use of commercial seed instead of replanting grain may affect how much of the harvest is retained for seed,
- while exposure to consumption attributes may increase the share allocated to own consumption or sale.
- We thus asked what farmers did with the maize that was harvested.
- To do so,
- we again focus on the randomly selected plot and ask how much was sold (or still planned to be sold),
- how much will be kept for seed and how much would be used for own consumption.
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Note that the endline survey was implemented immediately after the harvest and so in many cases farmers did not sell yet.
-\end_layout
-
-\end_inset
-
- Table 
+We also examine whether the interventions shifted how the harvest was allocated across own consumption, sale, and seed.
+ On average, households consumed the bulk of their maize (about three-quarters), sold roughly a fifth, and kept under 5 percent for seed.
+ Neither intervention produced meaningful shifts in this allocation; full results are reported in Appendix Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "disposal"
@@ -5012,465 +4996,7 @@ nolink "false"
 
 \end_inset
 
- summarizes treatment effects on these three outcomes (shares of maize consumed,
- sold,
- or held for seed) and an index thereof.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float table
-placement document
-alignment document
-wide false
-sideways true
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Use of harvest
-\begin_inset CommandInset label
-LatexCommand label
-name "disposal"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-footnotesize
-\end_layout
-
-\begin_layout Plain Layout
-
-\backslash
-begin{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-\backslash
-begin{tabular}{lccccc}
-\end_layout
-
-\begin_layout Plain Layout
-
-\backslash
-hline
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-& control & ITT & ITT & ITT 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-& mean & trial pack & cooking demo & interaction & nobs 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-Use Index
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_means_disposal[1,4],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_disposal[1,1,4],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_disposal[1,3,4]<.01,"**",ifelse(df_disposal[1,3,4]<.05,"*",ifelse(df_disposal[1,3,4]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_disposal[2,1,4],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_disposal[2,3,4]<.01,"**",ifelse(df_disposal[2,3,4]<.05,"*",ifelse(df_disposal[2,3,4]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_disposal[3,1,4],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_disposal[3,3,4]<.01,"**",ifelse(df_disposal[3,3,4]<.05,"*",ifelse(df_disposal[3,3,4]<.1,"+","")))}}$ & 
-\backslash
-Sexpr{format(round(df_disposal[1,4,4],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-& (
-\backslash
-Sexpr{format(round(df_means_disposal[2,4],digits=2),nsmall=2)}) &  (
-\backslash
-Sexpr{format(round(df_disposal[1,2,4],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_disposal[2,2,4],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_disposal[3,2,4],digits=2),nsmall=2)})
-\end_layout
-
-\begin_layout Plain Layout
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-Share of maize consumed (
-\backslash
-%)
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_means_disposal[1,1],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_disposal[1,1,1],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_disposal[1,3,1]<.01,"**",ifelse(df_disposal[1,3,1]<.05,"*",ifelse(df_disposal[1,3,1]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_disposal[2,1,1],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_disposal[2,3,1]<.01,"**",ifelse(df_disposal[2,3,1]<.05,"*",ifelse(df_disposal[2,3,1]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_disposal[3,1,1],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_disposal[3,3,1]<.01,"**",ifelse(df_disposal[3,3,1]<.05,"*",ifelse(df_disposal[3,3,1]<.1,"+","")))}}$ & 
-\backslash
-Sexpr{format(round(df_disposal[1,4,1],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-& (
-\backslash
-Sexpr{format(round(df_means_disposal[2,1],digits=2),nsmall=2)}) &  (
-\backslash
-Sexpr{format(round(df_disposal[1,2,1],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_disposal[2,2,1],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_disposal[3,2,1],digits=2),nsmall=2)})
-\end_layout
-
-\begin_layout Plain Layout
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-Share of maize sold (
-\backslash
-%)
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_means_disposal[1,2],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_disposal[1,1,2],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_disposal[1,3,2]<.01,"**",ifelse(df_disposal[1,3,2]<.05,"*",ifelse(df_disposal[1,3,2]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_disposal[2,1,2],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_disposal[2,3,2]<.01,"**",ifelse(df_disposal[2,3,2]<.05,"*",ifelse(df_disposal[2,3,2]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_disposal[3,1,2],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_disposal[3,3,2]<.01,"**",ifelse(df_disposal[3,3,2]<.05,"*",ifelse(df_disposal[3,3,2]<.1,"+","")))}}$ & 
-\backslash
-Sexpr{format(round(df_disposal[1,4,2],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-& (
-\backslash
-Sexpr{format(round(df_means_disposal[2,2],digits=2),nsmall=2)}) &  (
-\backslash
-Sexpr{format(round(df_disposal[1,2,2],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_disposal[2,2,2],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_disposal[3,2,2],digits=2),nsmall=2)})
-\end_layout
-
-\begin_layout Plain Layout
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-Share maize kept for seed (
-\backslash
-%)
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_means_disposal[1,3],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_disposal[1,1,3],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_disposal[1,3,3]<.01,"**",ifelse(df_disposal[1,3,3]<.05,"*",ifelse(df_disposal[1,3,3]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_disposal[2,1,3],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_disposal[2,3,3]<.01,"**",ifelse(df_disposal[2,3,3]<.05,"*",ifelse(df_disposal[2,3,3]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_disposal[3,1,3],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_disposal[3,3,3]<.01,"**",ifelse(df_disposal[3,3,3]<.05,"*",ifelse(df_disposal[3,3,3]<.1,"+","")))}}$ & 
-\backslash
-Sexpr{format(round(df_disposal[1,4,3],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-& (
-\backslash
-Sexpr{format(round(df_means_disposal[2,3],digits=2),nsmall=2)}) &  (
-\backslash
-Sexpr{format(round(df_disposal[1,2,3],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_disposal[2,2,3],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_disposal[3,2,3],digits=2),nsmall=2)})
-\end_layout
-
-\begin_layout Plain Layout
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\backslash
-hline
-\backslash
-hline
-\end_layout
-
-\begin_layout Plain Layout
-
-\backslash
-end{tabular}
-\end_layout
-
-\begin_layout Plain Layout
-
-\backslash
-end{center}
-\end_layout
-
-\begin_layout Plain Layout
-
-\backslash
-scriptsize
-\end_layout
-
-\begin_layout Plain Layout
-Note:
- Column (1) reports control group means at baseline (and standard deviations below);
- column (2) reports the estimate of the intent-to-treat effect of the seed trial packs;
- column (3) reports the estimate of the intent-to-treat effect of the cooking and tasting demonstrations;
- column (4) is the interaction effect.
- Standard errors are below the estimates and are clustered at the level of randomization;
- **,
- *,
- and + denote significance at the 1,
- 5,
- and 10
-\backslash
-% levels based on sharpened q-values 
-\backslash
-citep{benjamini2006adaptive}.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-On average,
- households consumed the bulk of their maize harvest—
-about 75 percent—
-underscoring its central role in food security.
- Roughly 21 percent of maize was sold.
- Finally,
- a small portion of maize—
-just under 5 percent—
-was held for seed.
- Results show no meaningful shifts in post-harvest behavior attributable to the interventions.
+.
 \end_layout
 
 \begin_layout Subsection
@@ -8898,7 +8424,18 @@ Taken together,
  but it decays as the hybrid segregates over successive cycles.
  Because the pack also durably raises awareness of,
  trust in,
- and intention to use the variety (Table 5),
+ and intention to use the variety (Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "pathways"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+),
  trial-pack farmers may re-enter the market with improved seed once their recycled stock degrades,
  so the turnover it sets in motion is plausibly recurring rather than one-off,
  though our single-season design cannot trace its path.
@@ -16082,6 +15619,450 @@ citep{benjamini2006adaptive}.
 \begin_layout Subsection
 Additional Tables
 \end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement document
+alignment document
+wide false
+sideways true
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Use of harvest
+\begin_inset CommandInset label
+LatexCommand label
+name "disposal"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+footnotesize
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+begin{tabular}{lccccc}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+& control & ITT & ITT & ITT 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+& mean & trial pack & cooking demo & interaction & nobs 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Use Index
+\end_layout
+
+\begin_layout Plain Layout
+& 
+\backslash
+Sexpr{format(round(df_means_disposal[1,4],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+& 
+\backslash
+Sexpr{format(round(df_disposal[1,1,4],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_disposal[1,3,4]<.01,"**",ifelse(df_disposal[1,3,4]<.05,"*",ifelse(df_disposal[1,3,4]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+& 
+\backslash
+Sexpr{format(round(df_disposal[2,1,4],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_disposal[2,3,4]<.01,"**",ifelse(df_disposal[2,3,4]<.05,"*",ifelse(df_disposal[2,3,4]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+& 
+\backslash
+Sexpr{format(round(df_disposal[3,1,4],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_disposal[3,3,4]<.01,"**",ifelse(df_disposal[3,3,4]<.05,"*",ifelse(df_disposal[3,3,4]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_disposal[1,4,4],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{format(round(df_means_disposal[2,4],digits=2),nsmall=2)}) &  (
+\backslash
+Sexpr{format(round(df_disposal[1,2,4],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_disposal[2,2,4],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_disposal[3,2,4],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Share of maize consumed (
+\backslash
+%)
+\end_layout
+
+\begin_layout Plain Layout
+& 
+\backslash
+Sexpr{format(round(df_means_disposal[1,1],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+& 
+\backslash
+Sexpr{format(round(df_disposal[1,1,1],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_disposal[1,3,1]<.01,"**",ifelse(df_disposal[1,3,1]<.05,"*",ifelse(df_disposal[1,3,1]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+& 
+\backslash
+Sexpr{format(round(df_disposal[2,1,1],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_disposal[2,3,1]<.01,"**",ifelse(df_disposal[2,3,1]<.05,"*",ifelse(df_disposal[2,3,1]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+& 
+\backslash
+Sexpr{format(round(df_disposal[3,1,1],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_disposal[3,3,1]<.01,"**",ifelse(df_disposal[3,3,1]<.05,"*",ifelse(df_disposal[3,3,1]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_disposal[1,4,1],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{format(round(df_means_disposal[2,1],digits=2),nsmall=2)}) &  (
+\backslash
+Sexpr{format(round(df_disposal[1,2,1],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_disposal[2,2,1],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_disposal[3,2,1],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+Share of maize sold (
+\backslash
+%)
+\end_layout
+
+\begin_layout Plain Layout
+& 
+\backslash
+Sexpr{format(round(df_means_disposal[1,2],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+& 
+\backslash
+Sexpr{format(round(df_disposal[1,1,2],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_disposal[1,3,2]<.01,"**",ifelse(df_disposal[1,3,2]<.05,"*",ifelse(df_disposal[1,3,2]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+& 
+\backslash
+Sexpr{format(round(df_disposal[2,1,2],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_disposal[2,3,2]<.01,"**",ifelse(df_disposal[2,3,2]<.05,"*",ifelse(df_disposal[2,3,2]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+& 
+\backslash
+Sexpr{format(round(df_disposal[3,1,2],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_disposal[3,3,2]<.01,"**",ifelse(df_disposal[3,3,2]<.05,"*",ifelse(df_disposal[3,3,2]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_disposal[1,4,2],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{format(round(df_means_disposal[2,2],digits=2),nsmall=2)}) &  (
+\backslash
+Sexpr{format(round(df_disposal[1,2,2],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_disposal[2,2,2],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_disposal[3,2,2],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+Share maize kept for seed (
+\backslash
+%)
+\end_layout
+
+\begin_layout Plain Layout
+& 
+\backslash
+Sexpr{format(round(df_means_disposal[1,3],digits=2),nsmall=2)}
+\end_layout
+
+\begin_layout Plain Layout
+& 
+\backslash
+Sexpr{format(round(df_disposal[1,1,3],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_disposal[1,3,3]<.01,"**",ifelse(df_disposal[1,3,3]<.05,"*",ifelse(df_disposal[1,3,3]<.1,"+","")))}}$ 
+\end_layout
+
+\begin_layout Plain Layout
+& 
+\backslash
+Sexpr{format(round(df_disposal[2,1,3],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_disposal[2,3,3]<.01,"**",ifelse(df_disposal[2,3,3]<.05,"*",ifelse(df_disposal[2,3,3]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+& 
+\backslash
+Sexpr{format(round(df_disposal[3,1,3],digits=2),nsmall=2)}$^{
+\backslash
+Sexpr{ifelse(df_disposal[3,3,3]<.01,"**",ifelse(df_disposal[3,3,3]<.05,"*",ifelse(df_disposal[3,3,3]<.1,"+","")))}}$ & 
+\backslash
+Sexpr{format(round(df_disposal[1,4,3],digits=0),nsmall=0)} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{format(round(df_means_disposal[2,3],digits=2),nsmall=2)}) &  (
+\backslash
+Sexpr{format(round(df_disposal[1,2,3],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_disposal[2,2,3],digits=2),nsmall=2)})  & (
+\backslash
+Sexpr{format(round(df_disposal[3,2,3],digits=2),nsmall=2)})
+\end_layout
+
+\begin_layout Plain Layout
+ 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+end{tabular}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+scriptsize
+\end_layout
+
+\begin_layout Plain Layout
+Note:
+ Column (1) reports control group means at baseline (and standard deviations below);
+ column (2) reports the estimate of the intent-to-treat effect of the seed trial packs;
+ column (3) reports the estimate of the intent-to-treat effect of the cooking and tasting demonstrations;
+ column (4) is the interaction effect.
+ Standard errors are below the estimates and are clustered at the level of randomization;
+ **,
+ *,
+ and + denote significance at the 1,
+ 5,
+ and 10
+\backslash
+% levels based on sharpened q-values 
+\backslash
+citep{benjamini2006adaptive}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 
 \begin_layout Standard
 \begin_inset Float table
