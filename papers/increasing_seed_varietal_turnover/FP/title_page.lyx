@@ -1,0 +1,578 @@
+#LyX file created by tex2lyx 2.5
+\lyxformat 643
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin /Users/B.VanCampenhout/data/projects/OneCG/MIPP/papers/increasing_seed_varietal_turnover/FP/
+\textclass article
+\begin_preamble
+\usepackage{authblk}
+\renewcommand{\Affilfont}{\itshape\small}
+
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children no
+\language english
+\language_package none
+\inputencoding utf8
+\fontencoding default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_bookmarks 0
+\pdf_bookmarksnumbered 0
+\pdf_bookmarksopen 0
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks 0
+\pdf_pdfborder 0
+\pdf_colorlinks 0
+\pdf_backref false
+\pdf_pdfusetitle 0
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\crossref_package prettyref
+\use_minted 0
+\use_lineno false
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\docbook_mathml_version 0
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% ============================================================
+\end_layout
+
+\begin_layout Plain Layout
+% TITLE PAGE (submitted separately; NOT part of the anonymized manuscript)
+\end_layout
+
+\begin_layout Plain Layout
+% Journal: Food Policy
+\end_layout
+
+\begin_layout Plain Layout
+% ============================================================
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+
+\series bold
+Hybrid Gains and Tasty Grains: Comparing Production- and Consumption-Focused Seed Promotion Strategies to Accelerate Varietal Turnover
+\series default
+
+\end_layout
+
+\begin_layout Author
+[
+\end_layout
+
+\begin_layout Standard
+1]
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Bjorn Van Campenhout
+\begin_inset Flex Foot:InTitle
+status collapsed
+
+\begin_layout Plain Layout
+Corresponding author. Email: 
+\family typewriter
+b.vancampenhout@cgiar.org
+\family default
+.
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Author
+[
+\end_layout
+
+\begin_layout Standard
+2]
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Leocardia Nabwire
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Author
+[
+\end_layout
+
+\begin_layout Standard
+3]
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Berber Kramer
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Author
+[
+\end_layout
+
+\begin_layout Standard
+4]
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Carly Trachtman
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Author
+[
+\end_layout
+
+\begin_layout Standard
+4]
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Gashaw T. Abate
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+affil
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+[
+\end_layout
+
+\end_inset
+
+1
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Innovation Policy and Scaling Unit, International Food Policy Research Institute (IFPRI), Leuven, Belgium
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+affil
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+[
+\end_layout
+
+\end_inset
+
+2
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+One Acre Fund, Jinja, Uganda
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+affil
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+[
+\end_layout
+
+\end_inset
+
+3
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Markets, Trade and Institutions Unit, International Food Policy Research Institute (IFPRI), Nairobi, Kenya
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+affil
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+[
+\end_layout
+
+\end_inset
+
+4
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+Markets, Trade and Institutions Unit, International Food Policy Research Institute (IFPRI), Washington, DC, USA
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ 
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Acknowledgments
+\end_layout
+
+\begin_layout Standard
+This research received clearance from Makerere's School of Social Sciences Research Ethics Committee (MAKSSREC 01.23.627/PR1) as well as from the IFPRI Institutional Review Board (DSGD-23-0108). The research was registered with the Ugandan National Council for Science and Technology (SS1657ES) and at the American Economic Association (AEA) RCT Registry (AEARCTR-0010666).
+\end_layout
+
+\begin_layout Standard
+We thank Richard Ariong, Wilberforce Walukano, and Marc Charles Wanume for field support. This work is part of a broader set of coordinated trials testing similar interventions (seed trial packs and a consumer-focused intervention) in different contexts across six sites (Trachtman et al., 2023). We are also indebted to the CGIAR Market Intelligence Work Package 3 team—Julius Juma Okello, Beliyou Haile, Martina Cavicchioli, Prakashan Chellattan Veettil, Vikram Patil, Maya Moore, and Catherine Ragasa—for comments and suggestions.
+\end_layout
+
+\begin_layout Section*
+Funding
+\end_layout
+
+\begin_layout Standard
+We thank all funders who support this research through their contributions to the CGIAR Trust Fund (
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+https://www.cgiar.org/funders/
+\end_layout
+
+\end_inset
+
+). In particular, funding from the CGIAR Initiative on Market Intelligence and the CGIAR Initiative on SeedEqual is gratefully acknowledged.
+\end_layout
+
+\begin_layout Section*
+Declaration of generative AI in the writing process
+\end_layout
+
+\begin_layout Standard
+During the preparation of this work the authors used OpenAI and Anthropic models to obtain editorial suggestions to improve clarity and readability and to explore alternative phrasing for technical terms. After using these tools, the authors reviewed and edited the content as needed and take full responsibility for the content of the article.
+\end_layout
+
+\begin_layout Section*
+Declaration of competing interest
+\end_layout
+
+\begin_layout Standard
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+\end_layout
+
+\begin_layout Section*
+Data and code availability
+\end_layout
+
+\begin_layout Standard
+Data and replication code are available at 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+https://github.com/bjvca/mippi_UG
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

@@ -127,10 +127,14 @@ status open
 \backslash
 author{Bjorn Van Campenhout
 \backslash
-thanks{Innovation Policy and Scaling Unit,
+thanks{Markets,
+ Trade,
+ and Institutions Unit,
  International Food Policy Research Institute,
  Leuven,
- Belgium},
+ Belgium,
+ corresponding author:
+ b.vancampenhout@cgiar.org},
  Leocardia Nabwire
 \backslash
 thanks{One Acre Fund,
@@ -138,7 +142,9 @@ thanks{One Acre Fund,
  Uganda},
  Berber Kramer
 \backslash
-thanks{Markets Trade and Institutions Division,
+thanks{Markets,
+ Trade,
+ and Institutions Unit,
  International Food Policy Research Institute,
  Nairobi,
  Kenya},
@@ -148,7 +154,9 @@ thanks{Markets Trade and Institutions Division,
 \backslash
  Carly Trachtman
 \backslash
-thanks{Markets Trade and Institutions Division,
+thanks{Markets,
+ Trade,
+ and Institutions Unit,
  International Food Policy Research Institute,
  Washington DC,
  USA},
@@ -8420,7 +8428,8 @@ Two caveats temper this conclusion.
 \end_layout
 
 \begin_layout Standard
-Our cost-effectiveness ranking differs from the closest prior randomized evidence on the cost-effectiveness of trial packs. 
+Our cost-effectiveness ranking differs from the closest prior randomized evidence on the cost-effectiveness of trial packs.
+ 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "maredia2025does"
