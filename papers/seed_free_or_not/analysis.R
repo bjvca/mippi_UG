@@ -180,6 +180,43 @@ bse_reg$d_screening <- bse_reg$screening - mean(bse_reg$screening, na.rm=TRUE)
 bse_reg$d_signaling <- bse_reg$signaling - mean(bse_reg$signaling, na.rm=TRUE)
 bse_reg$d_sunk <- bse_reg$sunk - mean(bse_reg$sunk, na.rm=TRUE)
 
+### anchoring robustness (referee concern): does the random initial offer price
+### (P1_pric / signaling) anchor elicited WTP, and is it orthogonal to the
+### discount (sunk-cost) assignment so it cannot confound the sunk-cost estimate?
+m_wtp <- lm(final_price ~ P1_pric, data=bse_reg)   # WTP on random offer
+m_bid <- lm(bid ~ P1_pric, data=bse_reg)           # opening bid on random offer
+m_bal <- lm(P1_pric ~ sunk, data=bse_reg)          # orthogonality: offer on sunk arm
+cr_wtp <- coeftest(m_wtp, vcov=vcovCL(m_wtp, cluster=bse_reg$cluster_ID, type="HC0"))
+cr_bid <- coeftest(m_bid, vcov=vcovCL(m_bid, cluster=bse_reg$cluster_ID, type="HC0"))
+cr_bal <- coeftest(m_bal, vcov=vcovCL(m_bal, cluster=bse_reg$cluster_ID, type="HC0"))
+anchor <- list(
+  wtp_coef  = formatC(cr_wtp[2,1], format="f", digits=3),
+  wtp_se    = formatC(cr_wtp[2,2], format="f", digits=3),
+  wtp_p     = formatC(cr_wtp[2,4], format="f", digits=3),
+  bid_coef  = formatC(cr_bid[2,1], format="f", digits=3),
+  bid_se    = formatC(cr_bid[2,2], format="f", digits=3),
+  bid_p     = formatC(cr_bid[2,4], format="f", digits=3),
+  bal_coef  = formatC(cr_bal[2,1], format="f", digits=1),
+  bal_se    = formatC(cr_bal[2,2], format="f", digits=1),
+  bal_p     = formatC(cr_bal[2,4], format="f", digits=2),
+  mean_wtp  = formatC(mean(bse_reg$final_price, na.rm=TRUE), format="f", digits=0),
+  offer_lo  = formatC(min(bse_reg$P1_pric, na.rm=TRUE), format="d", big.mark=","),
+  offer_hi  = formatC(max(bse_reg$P1_pric, na.rm=TRUE), format="d", big.mark=","),
+  mean_off0 = formatC(mean(bse_reg$P1_pric[bse_reg$sunk==0], na.rm=TRUE), format="f", digits=0),
+  mean_off1 = formatC(mean(bse_reg$P1_pric[bse_reg$sunk==1], na.rm=TRUE), format="f", digits=0),
+  N         = sum(!is.na(bse_reg$final_price) & !is.na(bse_reg$P1_pric))
+)
+## pass-through of full offer range as share of mean WTP, in percent
+anchor$pass_pct <- formatC(100 * cr_wtp[2,1] * (max(bse_reg$P1_pric, na.rm=TRUE) -
+              min(bse_reg$P1_pric, na.rm=TRUE)) / mean(bse_reg$final_price, na.rm=TRUE),
+              format="f", digits=1)
+## math-ready p-value strings for inline use ("p<0.001" / "p=0.47")
+pmath <- function(p) ifelse(p < 0.001, "p<0.001", paste0("p=", formatC(p, format="f", digits=2)))
+anchor$wtp_pmath <- pmath(cr_wtp[2,4])
+anchor$bid_pmath <- pmath(cr_bid[2,4])
+anchor$bal_pmath <- pmath(cr_bal[2,4])
+save(anchor, file=paste(path, "res_tab_anchor.Rdata", sep="/"))
+
 ###balance tables (appendix) - comparing discounted vs non-discounted
 outcomes_bal <- c("age_head","prim_head","male_head","hh_size","dist_ag","quality_use","promo_use_rand","source_rand","often_rand","acre_rand","yield_rand")
 
@@ -443,6 +480,23 @@ for (i in 1:length(outcomes)) {
 
 res_tab <- round(res_tab,digits=3)
 save(res_tab, file=paste0(path,"/res_tab",file_suffix,".Rdata"))
+
+### anchoring robustness (continued): is the screening estimate sensitive to
+### whether the offer is controlled, and does the offer modulate the sunk cost?
+### (uses the ICW use index; dta_reg here is the midline sample)
+### only the binary-sunk pass, to match the main results table
+if (exists("anchor") && sunk_binary) {
+  aw <- lm(index_use ~ screening*d_sunk*d_signaling, data=dta_reg)
+  ao <- lm(index_use ~ screening*d_sunk, data=dta_reg)
+  cw <- coeftest(aw, vcov=vcovCL(aw, cluster=dta_reg$cluster_ID, type="HC0"))
+  co <- coeftest(ao, vcov=vcovCL(ao, cluster=dta_reg$cluster_ID, type="HC0"))
+  anchor$scr_with <- formatC(cw["screening",1], format="f", digits=3)  # with offer control
+  anchor$scr_wout <- formatC(co["screening",1], format="f", digits=3)  # without offer control
+  ai <- lm(sep_post_harvest ~ sunk*d_screening*d_signaling, data=dta_reg)
+  ci <- coeftest(ai, vcov=vcovCL(ai, cluster=dta_reg$cluster_ID, type="HC0"))
+  anchor$sunkint_pmath <- pmath(ci["sunk:d_signaling",4])   # sunk x offer, separation outcome
+  save(anchor, file=paste(path, "res_tab_anchor.Rdata", sep="/"))
+}
 
 
 #table 2: impact on characteristics
@@ -850,6 +904,30 @@ for (i in 1:length(outcomes)) {
 }
 res_tab_next_season <- round(res_tab,digits=3)
 save(res_tab_next_season, file=paste0(path,"/res_tab_next_season",file_suffix,".Rdata"))
+
+### interpretable magnitudes for the subsequent-season production/productivity
+### results (used in-text via \Sexpr). production_ihs and productivity_ihs are
+### inverse-hyperbolic-sine outcomes; for the plot-level means here (~230 kg),
+### IHS ~ log, so a coefficient b implies a semi-elasticity of exp(b)-1 per unit
+### of the (thousand-shilling) willingness-to-pay regressor, or per paid-vs-free
+### contrast for the binary sunk-cost indicator.
+if (sunk_binary) {
+  mag <- list()
+  frame_mag <- dta_reg[!is.na(dta_reg$production_ihs), ]
+  wtp_sd_k  <- sd(frame_mag$screening, na.rm = TRUE)                 # SD of WTP (000 UGX)
+  wtp_q     <- as.numeric(quantile(frame_mag$screening, c(.25, .75), na.rm = TRUE))
+  wtp_iqr_k <- as.numeric(diff(wtp_q))
+  b_prod    <- res_tab_next_season[1, 2, 5]   # screening -> production_ihs
+  b_prodv   <- res_tab_next_season[1, 3, 6]   # sunk (paid vs free) -> productivity_ihs
+  mag$prod_per_1k  <- formatC(100 * (exp(b_prod) - 1),           format = "f", digits = 0)
+  mag$prod_per_sd  <- formatC(100 * (exp(b_prod * wtp_sd_k) - 1), format = "f", digits = 0)
+  mag$prod_per_iqr <- formatC(100 * (exp(b_prod * wtp_iqr_k) - 1), format = "f", digits = 0)
+  mag$prodv_sunk   <- formatC(abs(100 * (exp(b_prodv) - 1)),      format = "f", digits = 0)  # magnitude of the (negative) effect
+  mag$wtp_sd       <- formatC(1000 * wtp_sd_k, format = "d", big.mark = ",")
+  mag$wtp_p25      <- formatC(1000 * wtp_q[1], format = "d", big.mark = ",")
+  mag$wtp_p75      <- formatC(1000 * wtp_q[2], format = "d", big.mark = ",")
+  save(mag, file = paste0(path, "/res_tab_mag.Rdata"))
+}
 
 
 outcomes <- c("remembers_seed","remembers_paying","price_diff_abs"              )
