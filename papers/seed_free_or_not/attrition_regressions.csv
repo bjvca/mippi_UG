@@ -1,0 +1,13 @@
+"spec","coef","estimate","se","p","N"
+"midline ~ discounted","discountedTRUE",0.0026,0.0092,0.7779,759
+"midline ~ P1000","P1000",-3e-04,0.0047,0.9421,759
+"midline ~ final1000","final1000",6e-04,0.0019,0.7374,758
+"midline ~ discounted+P1000+final1000 (discounted)","discountedTRUE",0.0026,0.0092,0.7779,758
+"midline ~ discounted+P1000+final1000 (P1000)","P1000",-5e-04,0.0048,0.9232,758
+"midline ~ discounted+P1000+final1000 (final1000)","final1000",7e-04,0.0019,0.7281,758
+"endline ~ discounted","discountedTRUE",0.0026,0.0094,0.7837,759
+"endline ~ P1000","P1000",0.0051,0.0048,0.2858,759
+"endline ~ final1000","final1000",-0.0027,0.0023,0.2277,758
+"endline ~ discounted+P1000+final1000 (discounted)","discountedTRUE",0.0022,0.0094,0.8122,758
+"endline ~ discounted+P1000+final1000 (P1000)","P1000",0.0057,0.0049,0.241,758
+"endline ~ discounted+P1000+final1000 (final1000)","final1000",-0.0031,0.0023,0.1807,758

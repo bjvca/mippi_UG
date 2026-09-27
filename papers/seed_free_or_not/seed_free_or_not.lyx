@@ -211,7 +211,7 @@ Free distribution of new agricultural inputs,
  suggesting that it can help identify farmers most likely to benefit.
  Charging a positive price,
  however,
- neither increases adoption in the following season nor signals product quality.
+ neither increases adoption in the following season nor do we find evidence that it signals product quality.
  Instead,
  farmers who received seed for free managed the trial more carefully.
  Although charging a positive price does not increase adoption,
@@ -563,20 +563,22 @@ The experiment was implemented in eastern Uganda with about 760 smallholder farm
 \end_layout
 
 \begin_layout Standard
-We find that paying for the seed 
+We find no evidence that the initial offer price served as a signal for unobserved product attributes.
+ Willingness to pay,
+ in contrast,
+ is positively associated with more appropriate use of the trial seed,
+ greater investment in complementary inputs,
+ and stronger intentions to adopt improved varieties (including the promoted seed),
+ suggesting that prices may screen for farmers who are better positioned to benefit from new technology.
+ However,
+ paying for the seed 
 \emph on
 reduces
 \emph default
  rather than reinforces appropriate use,
- contrary to the sunk cost hypothesis.
- Farmers who received the seed for free were more likely to keep the harvest separate,
+ contrary to the sunk cost hypothesis:
+ farmers who received the seed for free were more likely to keep the harvest separate,
  a behavior that facilitates learning and evaluation.
- At the same time,
- willingness to pay is positively associated with more appropriate use of the trial seed,
- greater investment in complementary inputs,
- and stronger intentions to adopt improved varieties (including the promoted seed),
- suggesting that prices may screen for farmers who are better positioned to benefit from new technology.
- We find no evidence that the initial offer price served as a signal for unobserved product attributes.
  While adoption rates in the subsequent season do not differ across treatment arms,
  screening effects on production persist:
  since most farmers recycle seed from their trial harvest,
@@ -958,7 +960,9 @@ status collapsed
 
 \begin_layout Plain Layout
 In our Uganda sample,
- 118 out of 758 farmers in the seed arm (15.6 percent) accepted the initial offer without bargaining.
+ the negotiated price equals the initial offer price for 118 out of 758 farmers in the seed arm (15.6 percent);
+ 111 of these accepted the initial offer outright,
+ while the remaining 7 returned to it after bargaining.
  For these farmers,
  willingness to pay is right-censored at the offer price:
  we know their WTP is at least as high as the initial offer,
@@ -1031,6 +1035,10 @@ href{https://github.com/bjvca/mippi_UG/commit/3c9702aacf2b58c925795b759877c0b0ed
 
 \end_inset
 
+ We made this change during piloting,
+ before any study participant was enrolled,
+ and updated the pre-analysis plan accordingly in February 2023;
+ the original plan had specified a BDM elicitation.
  This raises a natural question,
  however:
  does the bargaining game elicit true willingness to pay in the same way a BDM mechanism would?
@@ -1057,6 +1065,26 @@ literal "false"
  this introduces classical measurement error that attenuates our estimates toward zero but does not bias the identification of screening,
  signaling,
  or sunk-cost channels.
+\end_layout
+
+\begin_layout Standard
+A related concern is that farmers bid with their own money,
+ so the negotiated price may partly reflect liquidity constraints or resource availability rather than valuation alone.
+ This concern is not specific to our elicitation method:
+ under a BDM mechanism,
+ farmers would equally pay out of pocket,
+ so replacing bargaining with BDM would neither create nor resolve it.
+ We return to this issue in the analysis,
+ where we assess the robustness of our estimates to controlling for baseline proxies of wealth and liquidity (Appendix
+\begin_inset space ~
+\end_inset
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Appendix-controls"
+
+\end_inset
+).
 \end_layout
 
 \begin_layout Standard
@@ -1149,7 +1177,7 @@ citet{10.1257/aer.100.5.2383}
 
 ,
  we also express this variable as the transaction price—
-equal to zero under the full discount and equal to the WTP price otherwise.
+equal to zero under the full discount and equal to the negotiated price otherwise.
  Supplementary regressions using this specification are reported in the appendix for robustness.
 \end_layout
 
@@ -1165,6 +1193,35 @@ Seed trial packs used in this study contain 1 kilogram of improved maize variety
  The seed is high yielding.
  It promises between 3.5 and 4 metric tons per acre and was partly chosen because it is widely available on the market.
  The 1 kg bag of maize seed is enough to plant about one-eighth of an acre.
+\end_layout
+
+\begin_layout Standard
+At the time of the study,
+ a 1 kilogram bag of Bazooka retailed for about UGX 12,000 at agro-input dealers.
+ The randomized initial offer prices in the bargaining game,
+ which ranged from UGX 9,000 to UGX 12,000 (see below),
+ were therefore never above the prevailing retail price,
+ and the median negotiated price (UGX 7,000) lay well below it.
+ Knowledge of the retail price thus does not mechanically cap the prices we elicit:
+ no farmer was asked to pay more than the seed would cost in the market.
+ Familiarity with the variety and its price,
+ moreover,
+ does not imply certainty about quality:
+ counterfeit and adulterated inputs are widespread in Ugandan seed markets 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+citep{bold2017lemon}
+\end_layout
+
+\end_inset
+
+,
+ so quality uncertainty attaches to the individual bag rather than to the variety,
+ leaving scope for the offer price to serve as a signal about the quality of the specific bag on offer.
 \end_layout
 
 \begin_layout Standard
@@ -1218,14 +1275,14 @@ citet{10.1257/aer.100.5.2383}
  study participants are given the opportunity to buy a commodity at different price points and in a second stage are given a surprise discount (leading to a proxy for the price the farmer is willing to pay and transaction price at which the farmer obtained the seed after the rebate).
  In such designs,
  the outcome variable of interest (for example,
- an indicator for whether the seed was used as intended) is regressed on both WTP price and the transaction price.
- A statistically significant and positive coefficient on WTP price,
+ an indicator for whether the seed was used as intended) is regressed on both the negotiated price and the transaction price.
+ A statistically significant and positive coefficient on the negotiated price,
  controlling for the transaction price,
  provides evidence of a screening effect,
  since it reflects the positive relationship between the participant’s valuation and the outcome of interest,
  irrespective of whether the full price was paid or not.
  A significant and positive coefficient on the transaction price,
- controlling for the WTP price,
+ controlling for the negotiated price,
  indicates a sunk cost effect,
  where paying a higher price increases commitment to using the product,
  irrespective of the farmer's valuation of the product.
@@ -1358,7 +1415,7 @@ $P_{i}$
 
 \end_inset
 
- is WTP price,
+ is the negotiated price (our proxy for willingness to pay),
  and 
 \begin_inset ERT
 status open
@@ -1657,7 +1714,7 @@ $T_{i}$
  being a dummy variable,
  we now include the actual transaction price,
  which is zero if the discount was obtained,
- and equal to the WTP price if no discount was obtained.
+ and equal to the negotiated price if no discount was obtained.
  Note though that models using the actual transaction price in the context of an all-or-nothing discount are,
  after controlling for WTP and the randomized offer,
  effectively reparameterizations with the continuous coefficient mostly rescaling the paid-vs-free contrast by the conditional mean paid price.
@@ -1692,7 +1749,7 @@ Sample and Descriptive Statistics
 \end_layout
 
 \begin_layout Standard
-The sample includes approximately 760 maize-growing households,
+The sample includes 759 maize-growing households that completed the bargaining experiment,
  selected to be representative of farmers across four districts in Eastern Uganda:
  Mayuge,
  Kamuli,
@@ -1845,6 +1902,38 @@ ref{tab:descriptives}
 The two groups are well balanced on most covariates.
  Household size and the share of male-headed households show statistically significant differences,
  which is not unexpected given the number of covariates tested.
+ A joint test that regresses the discount assignment on all covariates in Table 1 does not reject orthogonality (F(11,693)=1.33,
+ p=0.21).
+ Balance also holds for the second,
+ individual-level randomization of the initial offer price:
+ none of the covariates in Table 1 predicts the offer price at the 5 percent level,
+ and the corresponding joint test does not reject orthogonality either (F(11,693)=1.51,
+ p=0.13).
+ As the surprise discount identifies the sunk-cost effect,
+ we verify that the sunk-cost estimates are robust to controlling for the two imbalanced covariates,
+ as well as to wild cluster bootstrap and randomization inference (Appendix
+\begin_inset space ~
+\end_inset
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Appendix-inference"
+
+\end_inset
+).
+\end_layout
+
+\begin_layout Standard
+Attrition is minimal.
+ Of the 759 households in the bargaining sample,
+ 98.0 percent were re-interviewed at midline and 98.3 percent at endline.
+ Response rates do not differ by discount assignment,
+ initial offer price,
+ or negotiated price (all p-values above 0.18),
+ and joint tests interacting treatment status with baseline covariates show no evidence of differential attrition.
+ The variation in the number of observations across outcomes in the tables that follow therefore reflects item non-response rather than attrition;
+ one household has a missing negotiated price,
+ so figures based on the bargaining outcome use 758 households.
 \end_layout
 
 \begin_layout Standard
@@ -2550,6 +2639,10 @@ ref{fig:Distribution-of-prices}
  consistent with a downward-sloping demand curve.
  Uptake declines steadily as the price increases,
  indicating relatively high price sensitivity.
+ Using the empirical demand curve,
+ we estimate a point elasticity of demand at the median negotiated price of UGX 7,000 of -2.79 (95 percent confidence interval -3.28 to -2.37,
+ based on a cluster bootstrap over villages):
+ a 1 percent increase in price reduces the share of farmers willing to buy by about 2.8 percent.
  This pattern confirms that farmers respond to price variation in a way that is consistent with economic theory,
  and that demand for seed is indeed price-sensitive.
 \end_layout
@@ -2578,7 +2671,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Distribution of WTP prices.
+Distribution of negotiated prices.
  The figure shows the share of smallholder maize farmers (N=758) in Uganda who agreed to purchase the seed trial pack at each final negotiated price during the bargaining experiment.
  Prices are final agreed prices after bargaining,
  in Uganda Shillings (UGX).
@@ -2741,15 +2834,38 @@ ref{tab:Effects-on-Use-sep}
 
 \begin_layout Standard
 Comparing treatment groups using the Trial Seed Use Index allows us to distinguish the three potential price mechanisms.
- We find evidence of screening:
+ We find no evidence of signaling effects.
+ We do find evidence of screening:
  farmers with higher willingness to pay used the trial pack more appropriately,
  particularly by following recommended planting practices and applying fertilizer.
- We find no evidence of signaling effects.
  In contrast,
  we find a negative sunk cost effect:
  farmers who paid the full price (i.e.,
  who did not receive the surprise discount) were less likely to use the trial pack in ways that facilitate learning,
  primarily because they were less likely to keep the harvest separate for evaluation.
+ These estimates are robust to adding baseline wealth and liquidity controls (Appendix
+\begin_inset space ~
+\end_inset
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Appendix-controls"
+
+\end_inset
+),
+ and inference on the sunk-cost effect is unchanged under a wild cluster bootstrap,
+ randomization inference,
+ and controls for the two imbalanced baseline covariates (Appendix
+\begin_inset space ~
+\end_inset
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Appendix-inference"
+
+\end_inset
+);
+ the effect on keeping the harvest separate also survives a Romano-Wolf familywise correction across the outcomes in this family.
 \end_layout
 
 \begin_layout Standard
@@ -3564,7 +3680,7 @@ nolink "false"
 \end_inset
 
  presents an alternative specification in which the sunk cost effect is estimated using the transaction price—
-equal to the farmer’s WTP price or zero if a full discount was received—
+equal to the farmer’s negotiated price or zero if a full discount was received—
 instead of the binary indicator distinguishing payers from non-payers.
  The overall patterns are very similar to those reported in the main text,
  confirming the robustness of our findings:
@@ -4340,6 +4456,37 @@ Sexpr{mag$prodv_sunk}
 \end_inset
 
 % less per unit of land than those who received it for free.
+ This productivity effect is robust to wild cluster bootstrap and randomization inference,
+ although it does not survive a familywise correction across the outcomes in this family (Appendix
+\begin_inset space ~
+\end_inset
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Appendix-inference"
+
+\end_inset
+).
+\end_layout
+
+\begin_layout Standard
+The production association should nonetheless be interpreted with care.
+ When we add baseline wealth and liquidity proxies to the specification (Appendix
+\begin_inset space ~
+\end_inset
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Appendix-controls"
+
+\end_inset
+),
+ the screening coefficient on trial-pack management is essentially unchanged,
+ but the coefficient on subsequent production attenuates from 0.060 to 0.037 (p=0.055).
+ Part of the association between willingness to pay and later production may thus reflect the resources of high-valuation farmers rather than private information about returns alone.
+ Screening on resources and screening on returns are both relevant for targeting,
+ but they carry different policy implications.
+ The sunk-cost estimates are unaffected by these controls.
 \end_layout
 
 \begin_layout Standard
@@ -5146,12 +5293,15 @@ In this paper,
 \begin_layout Standard
 Our results show that these mechanisms point in different directions.
  First,
+ we find no evidence that higher prices signal superior product quality or otherwise strengthen farmers' beliefs about the technology.
+ It should be noted that all experimental prices were at or below the prevailing retail price and were offered through a credible project channel,
+ so this null does not rule out price-quality inference in anonymous market transactions,
+ where concerns about counterfeit inputs are most salient.
+ Second,
  willingness to pay consistently predicts careful use of the trial pack,
  investment in complementary inputs,
  and subsequent production,
  indicating that prices screen for farmers who are better positioned to benefit from a new technology.
- Second,
- we find no evidence that higher prices signal superior product quality or otherwise strengthen farmers' beliefs about the technology.
  Third,
  sunk-cost effects run counter to conventional expectations:
  farmers who received the seed free of charge managed the trial more carefully than those who paid for it.
@@ -5198,6 +5348,12 @@ literal "false"
  These proposals rely on the premise that willingness to pay identifies farmers with the highest expected returns to a technology.
  Our results provide revealed-preference evidence supporting this premise:
  farmers with higher willingness to pay not only express stronger demand but also manage the technology more carefully and ultimately achieve higher production.
+ That said,
+ willingness to pay elicited from farmers bidding with their own money partly reflects wealth and liquidity rather than expected returns alone:
+ controlling for baseline wealth and liquidity proxies leaves the screening effect on trial management essentially unchanged,
+ but attenuates the association with subsequent production.
+ Screening on resources and screening on returns have different policy implications,
+ and our design cannot fully separate the two.
 \end_layout
 
 \begin_layout Standard
@@ -7724,8 +7880,9 @@ name "sec:Appendix-B:-Excluding"
 \begin_layout Standard
 As a robustness check,
  we re-estimate all main specifications after excluding farmers whose willingness to pay was right-censored---that is,
- those who accepted the initial offer price without negotiation.
- For these 111 farmers,
+ the 118 farmers whose negotiated price equals the randomly assigned initial offer (111 accepted the initial offer outright,
+ while 7 returned to it after bargaining).
+ For these farmers,
  the observed transaction price represents a lower bound on their true willingness to pay,
  potentially attenuating the screening estimates.
  Tables
@@ -7748,8 +7905,11 @@ reference "tab:Effects-on-Adoption-nocens"
 
  report the results.
  The main findings are qualitatively unchanged.
- Screening effects on trial seed use remain significant.
- The pattern of null adoption and input use results combined with significant production effects in the subsequent season is confirmed.
+ Screening effects on trial seed use remain significant,
+ and the pattern of null adoption and input use results combined with significant production effects in the subsequent season is confirmed.
+ Some individual coefficients lose precision,
+ as expected given the roughly 16 percent smaller sample,
+ but point estimates are stable throughout.
 \end_layout
 
 \begin_layout Standard
@@ -8594,7 +8754,7 @@ Note:
  and 10
 \backslash
 % levels.
- Sample excludes 118 farmers whose willingness to pay was right-censored (accepted initial offer without negotiation).
+ Sample excludes 118 farmers whose willingness to pay was right-censored (negotiated price equal to the randomly assigned initial offer).
 \end_layout
 
 \end_inset
@@ -9146,7 +9306,7 @@ Note:
  and 10
 \backslash
 % levels.
- Sample excludes 118 farmers whose willingness to pay was right-censored (accepted initial offer without negotiation).
+ Sample excludes 118 farmers whose willingness to pay was right-censored (negotiated price equal to the randomly assigned initial offer).
 \end_layout
 
 \end_inset
@@ -9864,7 +10024,2225 @@ Note:
  and 10
 \backslash
 % levels.
- Sample excludes 118 farmers whose willingness to pay was right-censored (accepted initial offer without negotiation).
+ Sample excludes 118 farmers whose willingness to pay was right-censored (negotiated price equal to the randomly assigned initial offer).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Appendix:
+ Balance of the Initial Offer Price Randomization
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Appendix-offer-balance"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+<<code_robust,
+  echo=FALSE,
+ warning = FALSE,
+ message=FALSE>>=
+\end_layout
+
+\begin_layout Plain Layout
+load(paste(path,"bal_tab_offer.Rdata",
+ sep="/"))
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+load(paste(path,"res_tab_controls.Rdata",
+ sep="/"))
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+bo <- bal_tab_offer
+\end_layout
+
+\begin_layout Plain Layout
+u0 <- res_tab_controls$nocontrols
+\end_layout
+
+\begin_layout Plain Layout
+u1 <- res_tab_controls$controls
+\end_layout
+
+\begin_layout Plain Layout
+p0 <- res_tab_plan_controls$nocontrols
+\end_layout
+
+\begin_layout Plain Layout
+p1 <- res_tab_plan_controls$controls
+\end_layout
+
+\begin_layout Plain Layout
+n0 <- res_tab_next_season_controls$nocontrols
+\end_layout
+
+\begin_layout Plain Layout
+n1 <- res_tab_next_season_controls$controls
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Table 1 in the main text reports balance for the village-level discount randomization.
+ This appendix reports the corresponding checks for the second randomization:
+ the initial offer price presented at the start of the bargaining game,
+ which was randomized at the individual level.
+ Table
+\begin_inset space ~
+\end_inset
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:offer-balance"
+
+\end_inset
+ reports,
+ for each baseline covariate in Table 1,
+ the coefficient from a regression of the covariate on the randomly assigned offer price.
+ None of the covariates is related to the offer price at the 5 percent level.
+ A joint test that regresses the offer price on all covariates does not reject orthogonality (F(11,693)=1.51,
+ p=0.13);
+ the corresponding joint test for the discount randomization is also insignificant (F(11,693)=1.33,
+ p=0.21).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Balance of the Initial Offer Price Randomization
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:offer-balance"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+footnotesize
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+begin{tabular}{rcccc}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+& coefficient & (SE) & p-value & N
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+Age household head (years)
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{bo[1,1,1]}$^{
+\backslash
+Sexpr{ifelse(bo[3,1,1]<.01,"**",ifelse(bo[3,1,1]<.05,"*",ifelse(bo[3,1,1]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{bo[2,1,1]})
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{bo[3,1,1]}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{bo[1,2,1]}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Head finished primary education
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{bo[1,1,2]}$^{
+\backslash
+Sexpr{ifelse(bo[3,1,2]<.01,"**",ifelse(bo[3,1,2]<.05,"*",ifelse(bo[3,1,2]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{bo[2,1,2]})
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{bo[3,1,2]}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{bo[1,2,2]}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Male household head
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{bo[1,1,3]}$^{
+\backslash
+Sexpr{ifelse(bo[3,1,3]<.01,"**",ifelse(bo[3,1,3]<.05,"*",ifelse(bo[3,1,3]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{bo[2,1,3]})
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{bo[3,1,3]}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{bo[1,2,3]}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Household size
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{bo[1,1,4]}$^{
+\backslash
+Sexpr{ifelse(bo[3,1,4]<.01,"**",ifelse(bo[3,1,4]<.05,"*",ifelse(bo[3,1,4]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{bo[2,1,4]})
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{bo[3,1,4]}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{bo[1,2,4]}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Distance to agro-dealer (km)
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{bo[1,1,5]}$^{
+\backslash
+Sexpr{ifelse(bo[3,1,5]<.01,"**",ifelse(bo[3,1,5]<.05,"*",ifelse(bo[3,1,5]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{bo[2,1,5]})
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{bo[3,1,5]}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{bo[1,2,5]}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Perceives seed quality as important
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{bo[1,1,6]}$^{
+\backslash
+Sexpr{ifelse(bo[3,1,6]<.01,"**",ifelse(bo[3,1,6]<.05,"*",ifelse(bo[3,1,6]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{bo[2,1,6]})
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{bo[3,1,6]}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{bo[1,2,6]}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Uses promoted variety
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{bo[1,1,7]}$^{
+\backslash
+Sexpr{ifelse(bo[3,1,7]<.01,"**",ifelse(bo[3,1,7]<.05,"*",ifelse(bo[3,1,7]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{bo[2,1,7]})
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{bo[3,1,7]}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{bo[1,2,7]}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Seed from formal source
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{bo[1,1,8]}$^{
+\backslash
+Sexpr{ifelse(bo[3,1,8]<.01,"**",ifelse(bo[3,1,8]<.05,"*",ifelse(bo[3,1,8]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{bo[2,1,8]})
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{bo[3,1,8]}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{bo[1,2,8]}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Buys seed often
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{bo[1,1,9]}$^{
+\backslash
+Sexpr{ifelse(bo[3,1,9]<.01,"**",ifelse(bo[3,1,9]<.05,"*",ifelse(bo[3,1,9]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{bo[2,1,9]})
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{bo[3,1,9]}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{bo[1,2,9]}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Plot size (acres)
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{bo[1,1,10]}$^{
+\backslash
+Sexpr{ifelse(bo[3,1,10]<.01,"**",ifelse(bo[3,1,10]<.05,"*",ifelse(bo[3,1,10]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{bo[2,1,10]})
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{bo[3,1,10]}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{bo[1,2,10]}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Yield (kg/acre)
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{bo[1,1,11]}$^{
+\backslash
+Sexpr{ifelse(bo[3,1,11]<.01,"**",ifelse(bo[3,1,11]<.05,"*",ifelse(bo[3,1,11]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{bo[2,1,11]})
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{bo[3,1,11]}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{bo[1,2,11]}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+end{tabular}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+scriptsize
+\end_layout
+
+\begin_layout Plain Layout
+Note:
+ Each row reports the coefficient from a regression of the baseline covariate on the randomly assigned initial offer price (in UGX 1,000),
+ with village-clustered standard errors in parentheses.
+ **,
+ *,
+ and + denote significance at the 1,
+ 5,
+ and 10
+\backslash
+% levels.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Appendix:
+ Robustness to Baseline Wealth and Liquidity Controls
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Appendix-controls"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Because farmers bid with their own money,
+ the negotiated price may partly reflect wealth,
+ liquidity,
+ or bargaining ability rather than valuation.
+ To assess whether this drives the screening estimates,
+ we re-estimate the main specifications adding a vector of baseline wealth and liquidity proxies.
+ Table
+\begin_inset space ~
+\end_inset
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:controls-robustness"
+
+\end_inset
+ compares the estimates with and without these controls for the three family indices and the individual outcomes emphasized in the main text.
+ The screening effect on the Trial Seed Use Index is essentially unchanged,
+ as are all sunk-cost coefficients.
+ The screening coefficients on adoption intentions and on subsequent production attenuate but retain their sign and order of magnitude,
+ suggesting that part of the association between willingness to pay and later outcomes reflects the resources of high-valuation farmers.
+ We interpret this pattern in the main text.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Robustness to Baseline Wealth and Liquidity Controls
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:controls-robustness"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+scriptsize
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+begin{tabular}{rccccccc}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+multicolumn{2}{c}{signaling} &
+\backslash
+multicolumn{2}{c}{screening} &
+\backslash
+multicolumn{2}{c}{sunk cost} & nobs
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+& base & +controls & base & +controls & base & +controls &
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+Trial Seed Use Index
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{u0[1,4,8]}$^{
+\backslash
+Sexpr{ifelse(u0[3,4,8]<.01,"**",ifelse(u0[3,4,8]<.05,"*",ifelse(u0[3,4,8]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{u1[1,4,8]}$^{
+\backslash
+Sexpr{ifelse(u1[3,4,8]<.01,"**",ifelse(u1[3,4,8]<.05,"*",ifelse(u1[3,4,8]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{u0[1,2,8]}$^{
+\backslash
+Sexpr{ifelse(u0[3,2,8]<.01,"**",ifelse(u0[3,2,8]<.05,"*",ifelse(u0[3,2,8]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{u1[1,2,8]}$^{
+\backslash
+Sexpr{ifelse(u1[3,2,8]<.01,"**",ifelse(u1[3,2,8]<.05,"*",ifelse(u1[3,2,8]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{u0[1,3,8]}$^{
+\backslash
+Sexpr{ifelse(u0[3,3,8]<.01,"**",ifelse(u0[3,3,8]<.05,"*",ifelse(u0[3,3,8]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{u1[1,3,8]}$^{
+\backslash
+Sexpr{ifelse(u1[3,3,8]<.01,"**",ifelse(u1[3,3,8]<.05,"*",ifelse(u1[3,3,8]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{u0[1,5,8]}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{u0[2,4,8]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{u1[2,4,8]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{u0[2,2,8]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{u1[2,2,8]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{u0[2,3,8]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{u1[2,3,8]})
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Kept harvest separate (1=yes)
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{u0[1,4,4]}$^{
+\backslash
+Sexpr{ifelse(u0[3,4,4]<.01,"**",ifelse(u0[3,4,4]<.05,"*",ifelse(u0[3,4,4]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{u1[1,4,4]}$^{
+\backslash
+Sexpr{ifelse(u1[3,4,4]<.01,"**",ifelse(u1[3,4,4]<.05,"*",ifelse(u1[3,4,4]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{u0[1,2,4]}$^{
+\backslash
+Sexpr{ifelse(u0[3,2,4]<.01,"**",ifelse(u0[3,2,4]<.05,"*",ifelse(u0[3,2,4]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{u1[1,2,4]}$^{
+\backslash
+Sexpr{ifelse(u1[3,2,4]<.01,"**",ifelse(u1[3,2,4]<.05,"*",ifelse(u1[3,2,4]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{u0[1,3,4]}$^{
+\backslash
+Sexpr{ifelse(u0[3,3,4]<.01,"**",ifelse(u0[3,3,4]<.05,"*",ifelse(u0[3,3,4]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{u1[1,3,4]}$^{
+\backslash
+Sexpr{ifelse(u1[3,3,4]<.01,"**",ifelse(u1[3,3,4]<.05,"*",ifelse(u1[3,3,4]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{u0[1,5,4]}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{u0[2,4,4]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{u1[2,4,4]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{u0[2,2,4]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{u1[2,2,4]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{u0[2,3,4]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{u1[2,3,4]})
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Plans to use improved variety (1=yes)
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{p0[1,4,1]}$^{
+\backslash
+Sexpr{ifelse(p0[3,4,1]<.01,"**",ifelse(p0[3,4,1]<.05,"*",ifelse(p0[3,4,1]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{p1[1,4,1]}$^{
+\backslash
+Sexpr{ifelse(p1[3,4,1]<.01,"**",ifelse(p1[3,4,1]<.05,"*",ifelse(p1[3,4,1]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{p0[1,2,1]}$^{
+\backslash
+Sexpr{ifelse(p0[3,2,1]<.01,"**",ifelse(p0[3,2,1]<.05,"*",ifelse(p0[3,2,1]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{p1[1,2,1]}$^{
+\backslash
+Sexpr{ifelse(p1[3,2,1]<.01,"**",ifelse(p1[3,2,1]<.05,"*",ifelse(p1[3,2,1]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{p0[1,3,1]}$^{
+\backslash
+Sexpr{ifelse(p0[3,3,1]<.01,"**",ifelse(p0[3,3,1]<.05,"*",ifelse(p0[3,3,1]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{p1[1,3,1]}$^{
+\backslash
+Sexpr{ifelse(p1[3,3,1]<.01,"**",ifelse(p1[3,3,1]<.05,"*",ifelse(p1[3,3,1]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{p0[1,5,1]}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{p0[2,4,1]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{p1[2,4,1]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{p0[2,2,1]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{p1[2,2,1]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{p0[2,3,1]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{p1[2,3,1]})
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Plans to use Bazooka (1=yes)
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{p0[1,4,2]}$^{
+\backslash
+Sexpr{ifelse(p0[3,4,2]<.01,"**",ifelse(p0[3,4,2]<.05,"*",ifelse(p0[3,4,2]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{p1[1,4,2]}$^{
+\backslash
+Sexpr{ifelse(p1[3,4,2]<.01,"**",ifelse(p1[3,4,2]<.05,"*",ifelse(p1[3,4,2]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{p0[1,2,2]}$^{
+\backslash
+Sexpr{ifelse(p0[3,2,2]<.01,"**",ifelse(p0[3,2,2]<.05,"*",ifelse(p0[3,2,2]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{p1[1,2,2]}$^{
+\backslash
+Sexpr{ifelse(p1[3,2,2]<.01,"**",ifelse(p1[3,2,2]<.05,"*",ifelse(p1[3,2,2]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{p0[1,3,2]}$^{
+\backslash
+Sexpr{ifelse(p0[3,3,2]<.01,"**",ifelse(p0[3,3,2]<.05,"*",ifelse(p0[3,3,2]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{p1[1,3,2]}$^{
+\backslash
+Sexpr{ifelse(p1[3,3,2]<.01,"**",ifelse(p1[3,3,2]<.05,"*",ifelse(p1[3,3,2]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{p0[1,5,2]}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{p0[2,4,2]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{p1[2,4,2]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{p0[2,2,2]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{p1[2,2,2]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{p0[2,3,2]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{p1[2,3,2]})
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Adoption Intentions Index
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{p0[1,4,5]}$^{
+\backslash
+Sexpr{ifelse(p0[3,4,5]<.01,"**",ifelse(p0[3,4,5]<.05,"*",ifelse(p0[3,4,5]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{p1[1,4,5]}$^{
+\backslash
+Sexpr{ifelse(p1[3,4,5]<.01,"**",ifelse(p1[3,4,5]<.05,"*",ifelse(p1[3,4,5]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{p0[1,2,5]}$^{
+\backslash
+Sexpr{ifelse(p0[3,2,5]<.01,"**",ifelse(p0[3,2,5]<.05,"*",ifelse(p0[3,2,5]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{p1[1,2,5]}$^{
+\backslash
+Sexpr{ifelse(p1[3,2,5]<.01,"**",ifelse(p1[3,2,5]<.05,"*",ifelse(p1[3,2,5]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{p0[1,3,5]}$^{
+\backslash
+Sexpr{ifelse(p0[3,3,5]<.01,"**",ifelse(p0[3,3,5]<.05,"*",ifelse(p0[3,3,5]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{p1[1,3,5]}$^{
+\backslash
+Sexpr{ifelse(p1[3,3,5]<.01,"**",ifelse(p1[3,3,5]<.05,"*",ifelse(p1[3,3,5]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{p0[1,5,5]}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{p0[2,4,5]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{p1[2,4,5]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{p0[2,2,5]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{p1[2,2,5]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{p0[2,3,5]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{p1[2,3,5]})
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Production (IHS)
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{n0[1,4,5]}$^{
+\backslash
+Sexpr{ifelse(n0[3,4,5]<.01,"**",ifelse(n0[3,4,5]<.05,"*",ifelse(n0[3,4,5]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{n1[1,4,5]}$^{
+\backslash
+Sexpr{ifelse(n1[3,4,5]<.01,"**",ifelse(n1[3,4,5]<.05,"*",ifelse(n1[3,4,5]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{n0[1,2,5]}$^{
+\backslash
+Sexpr{ifelse(n0[3,2,5]<.01,"**",ifelse(n0[3,2,5]<.05,"*",ifelse(n0[3,2,5]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{n1[1,2,5]}$^{
+\backslash
+Sexpr{ifelse(n1[3,2,5]<.01,"**",ifelse(n1[3,2,5]<.05,"*",ifelse(n1[3,2,5]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{n0[1,3,5]}$^{
+\backslash
+Sexpr{ifelse(n0[3,3,5]<.01,"**",ifelse(n0[3,3,5]<.05,"*",ifelse(n0[3,3,5]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{n1[1,3,5]}$^{
+\backslash
+Sexpr{ifelse(n1[3,3,5]<.01,"**",ifelse(n1[3,3,5]<.05,"*",ifelse(n1[3,3,5]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{n0[1,5,5]}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{n0[2,4,5]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{n1[2,4,5]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{n0[2,2,5]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{n1[2,2,5]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{n0[2,3,5]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{n1[2,3,5]})
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Productivity (IHS)
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{n0[1,4,6]}$^{
+\backslash
+Sexpr{ifelse(n0[3,4,6]<.01,"**",ifelse(n0[3,4,6]<.05,"*",ifelse(n0[3,4,6]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{n1[1,4,6]}$^{
+\backslash
+Sexpr{ifelse(n1[3,4,6]<.01,"**",ifelse(n1[3,4,6]<.05,"*",ifelse(n1[3,4,6]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{n0[1,2,6]}$^{
+\backslash
+Sexpr{ifelse(n0[3,2,6]<.01,"**",ifelse(n0[3,2,6]<.05,"*",ifelse(n0[3,2,6]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{n1[1,2,6]}$^{
+\backslash
+Sexpr{ifelse(n1[3,2,6]<.01,"**",ifelse(n1[3,2,6]<.05,"*",ifelse(n1[3,2,6]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{n0[1,3,6]}$^{
+\backslash
+Sexpr{ifelse(n0[3,3,6]<.01,"**",ifelse(n0[3,3,6]<.05,"*",ifelse(n0[3,3,6]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{n1[1,3,6]}$^{
+\backslash
+Sexpr{ifelse(n1[3,3,6]<.01,"**",ifelse(n1[3,3,6]<.05,"*",ifelse(n1[3,3,6]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{n0[1,5,6]}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{n0[2,4,6]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{n1[2,4,6]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{n0[2,2,6]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{n1[2,2,6]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{n0[2,3,6]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{n1[2,3,6]})
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Subsequent Season Index
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{n0[1,4,7]}$^{
+\backslash
+Sexpr{ifelse(n0[3,4,7]<.01,"**",ifelse(n0[3,4,7]<.05,"*",ifelse(n0[3,4,7]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{n1[1,4,7]}$^{
+\backslash
+Sexpr{ifelse(n1[3,4,7]<.01,"**",ifelse(n1[3,4,7]<.05,"*",ifelse(n1[3,4,7]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{n0[1,2,7]}$^{
+\backslash
+Sexpr{ifelse(n0[3,2,7]<.01,"**",ifelse(n0[3,2,7]<.05,"*",ifelse(n0[3,2,7]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{n1[1,2,7]}$^{
+\backslash
+Sexpr{ifelse(n1[3,2,7]<.01,"**",ifelse(n1[3,2,7]<.05,"*",ifelse(n1[3,2,7]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{n0[1,3,7]}$^{
+\backslash
+Sexpr{ifelse(n0[3,3,7]<.01,"**",ifelse(n0[3,3,7]<.05,"*",ifelse(n0[3,3,7]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{n1[1,3,7]}$^{
+\backslash
+Sexpr{ifelse(n1[3,3,7]<.01,"**",ifelse(n1[3,3,7]<.05,"*",ifelse(n1[3,3,7]<.1,"+","")))}}$
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{n0[1,5,7]}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{n0[2,4,7]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{n1[2,4,7]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{n0[2,2,7]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{n1[2,2,7]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{n0[2,3,7]})
+\end_layout
+
+\begin_layout Plain Layout
+& (
+\backslash
+Sexpr{n1[2,3,7]})
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+end{tabular}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+scriptsize
+\end_layout
+
+\begin_layout Plain Layout
+Note:
+ Each pair of columns reports the coefficient from the main specification (base) and from the same specification adding baseline wealth and liquidity proxies:
+ household size,
+ distance to agro-dealer,
+ plot size,
+ total land,
+ number of rooms,
+ an indicator for holding food reserves,
+ group membership,
+ and a weekly consumption expenditure aggregate;
+ continuous controls are mean-imputed with companion missing-value indicators,
+ so sample sizes are identical across specifications.
+ Village-clustered standard errors in parentheses.
+ **,
+ *,
+ and + denote significance at the 1,
+ 5,
+ and 10
+\backslash
+% levels.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Appendix:
+ Inference Robustness for the Sunk-Cost Effects
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Appendix-inference"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+<<code_inference,
+  echo=FALSE,
+ warning = FALSE,
+ message=FALSE>>=
+\end_layout
+
+\begin_layout Plain Layout
+load(paste(path,"inference_mht.Rdata",
+ sep="/"))
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+gi <- function(o,c) {{
+ v <- rows_df[rows_df$outcome==o & rows_df$margin=="sunk", c]
+ ifelse(is.na(v), "--", format(round(v,3)))
+}}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The surprise discount that identifies the sunk-cost effect is randomized at the village level,
+ with 38 discounted and 38 non-discounted villages.
+ With this number of clusters,
+ standard cluster-robust inference can understate uncertainty,
+ and Table 1 shows two covariates (household size and male headship) that differ across discount arms.
+ This appendix therefore re-examines inference on the sunk-cost coefficients using a restricted wild cluster bootstrap,
+ randomization inference that permutes the discount assignment across villages,
+ and specifications that control for the imbalanced covariates.
+ Table
+\begin_inset space ~
+\end_inset
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:inference-robustness"
+
+\end_inset
+ reports the results.
+ The three sunk-cost results that are significant under cluster-robust standard errors (the Trial Seed Use Index,
+ keeping the harvest separate,
+ and productivity in the subsequent season) remain significant under all alternative procedures,
+ with p-values between 0.009 and 0.018.
+ All other sunk-cost coefficients are far from significance under every method.
+ We also compute Romano-Wolf familywise-adjusted p-values across the individual outcomes within each family:
+ the effect on keeping the harvest separate survives at the 10 percent level (p=0.078),
+ while the productivity effect,
+ though robust in isolation,
+ does not clear the familywise bar against the other five outcomes in its family (p=0.111).
+ For completeness,
+ the same familywise correction applied to the screening margin leaves the effects on plans to use an improved variety (p=0.030) and on subsequent production (p=0.023) significant.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Inference Robustness for the Sunk-Cost Coefficients
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:inference-robustness"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+footnotesize
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+begin{tabular}{rcccccc}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+& coef.
+ & cluster p & WCB p & RI p & WCB p (ctrl.) & RW p
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+Trial Seed Use Index
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{gi("index_use","coef")}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{gi("index_use","cluster_se_p")}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{gi("index_use","wcb_p")}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{gi("index_use","ri_p")}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{gi("index_use","with_controls_wcb_p")}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{gi("index_use","rw_p")}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Kept harvest separate (1=yes)
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{gi("sep_post_harvest","coef")}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{gi("sep_post_harvest","cluster_se_p")}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{gi("sep_post_harvest","wcb_p")}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{gi("sep_post_harvest","ri_p")}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{gi("sep_post_harvest","with_controls_wcb_p")}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{gi("sep_post_harvest","rw_p")}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Adoption Intentions Index
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{gi("index_plan","coef")}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{gi("index_plan","cluster_se_p")}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{gi("index_plan","wcb_p")}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{gi("index_plan","ri_p")}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{gi("index_plan","with_controls_wcb_p")}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{gi("index_plan","rw_p")}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Production (IHS)
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{gi("production_ihs","coef")}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{gi("production_ihs","cluster_se_p")}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{gi("production_ihs","wcb_p")}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{gi("production_ihs","ri_p")}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{gi("production_ihs","with_controls_wcb_p")}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{gi("production_ihs","rw_p")}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Productivity (IHS)
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{gi("productivity_ihs","coef")}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{gi("productivity_ihs","cluster_se_p")}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{gi("productivity_ihs","wcb_p")}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{gi("productivity_ihs","ri_p")}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{gi("productivity_ihs","with_controls_wcb_p")}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{gi("productivity_ihs","rw_p")}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Subsequent Season Index
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{gi("index_next_season","coef")}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{gi("index_next_season","cluster_se_p")}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{gi("index_next_season","wcb_p")}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{gi("index_next_season","ri_p")}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{gi("index_next_season","with_controls_wcb_p")}
+\end_layout
+
+\begin_layout Plain Layout
+&
+\backslash
+Sexpr{gi("index_next_season","rw_p")}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+end{tabular}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+scriptsize
+\end_layout
+
+\begin_layout Plain Layout
+Note:
+ Sunk-cost (paid versus free) coefficients from the main specifications.
+ Columns report p-values from village-clustered standard errors (cluster p),
+ a restricted wild cluster bootstrap with Rademacher weights at the village level (WCB,
+ 999 replications),
+ randomization inference permuting the discount assignment across the 76 villages (RI,
+ 2,000 permutations),
+ the wild cluster bootstrap adding the two baseline covariates that are imbalanced across discount arms as controls (household size and male household head),
+ and Romano-Wolf familywise-adjusted p-values computed across the individual outcomes within each family (RW;
+ not defined for the summary indices).
 \end_layout
 
 \end_inset

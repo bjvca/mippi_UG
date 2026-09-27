@@ -169,13 +169,16 @@ bse <- trim("yield_rand",bse,trim_perc=.01)
 
 bse_reg <- subset(bse, !trial_P)
 
-## Drop right-censored farmers (accepted first offer — true WTP unknown)
-## These farmers accepted the seller's first ask price without negotiation (rounds==1
-## and buyer accepted), so their observed transaction price is a lower bound on true WTP.
+## Drop right-censored farmers (paid the initial offer price — true WTP unknown)
+## For these farmers the negotiated price equals the randomized initial offer (111
+## accepted the first ask outright, 7 more bargained but settled at the offer), so the
+## observed transaction price is a lower bound on true WTP.
 n_before <- nrow(bse_reg)
-bse_reg <- subset(bse_reg, !(accepts == "buyer" & rounds == 1))
+censored <- !is.na(bse_reg$final_price) & !is.na(bse_reg$P1_pric) &
+  as.numeric(as.character(bse_reg$final_price)) == as.numeric(as.character(bse_reg$P1_pric))
+bse_reg <- bse_reg[!censored, ]
 n_after <- nrow(bse_reg)
-cat(sprintf("Dropped %d right-censored farmers (accepted first offer). N: %d -> %d\n",
+cat(sprintf("Dropped %d right-censored farmers (settled at the initial offer). N: %d -> %d\n",
             n_before - n_after, n_before, n_after))
 
 
@@ -268,9 +271,12 @@ ggsave(paste(path,"demand_nocens.png",sep="/"), plot_maize, width = 8, height = 
 ###this is where midline data analysis starts
 dta <- read.csv(paste(datapath,"midline.csv", sep="/"))
 ## merge in randomized staring price
-dta <- merge(dta, bse[c("farmer_ID","P1_pric","final_price")], by.x="ID", by.y="farmer_ID", all.x=TRUE)
-##create unique village level identifier for clustering of standard errors
-dta$cluster_ID <- as.factor(paste(paste(dta$dist_ID,dta$sub_ID, sep="_"), dta$vil_ID, sep="_"))
+## merge from bse_reg (not bse) so the right-censored farmers dropped above get NA
+## price variables and fall out of the regression samples
+dta <- merge(dta, bse_reg[c("farmer_ID","P1_pric","final_price")], by.x="ID", by.y="farmer_ID", all.x=TRUE)
+## village identifier for clustering comes from baseline (the randomization unit),
+## not recomputed from midline ID strings (spelling drift splits villages)
+dta <- merge(dta, bse[c("farmer_ID","cluster_ID")], by.x="ID", by.y="farmer_ID", all.x=TRUE)
 dta$used_TP[dta$used_TP=="n/a"] <- NA
 dta$used_TP <- dta$used_TP == "Yes"
 dta$remembers <- dta$Rec_TP == "Yes" |  dta$Buy_TP  == "Yes"
@@ -659,9 +665,11 @@ dta <- subset(dta, cont == FALSE & (trial_P== TRUE | paid_pac == TRUE | discount
 ## build cluster_ID lookup from full baseline (so trial_P farmers also get cluster_ID)
 bse_full_tmp <- read.csv(paste(datapath,"baseline.csv",sep="/"))
 bse_full_tmp$cluster_ID <- as.factor(paste(paste(bse_full_tmp$distID,bse_full_tmp$subID, sep="_"), bse_full_tmp$vilID, sep="_"))
-## merge cluster_ID from full baseline, plus P1_pric/final_price from bargaining subset (bse)
+## merge cluster_ID from full baseline, plus P1_pric/final_price from the
+## censoring-restricted bargaining subset (bse_reg) so right-censored farmers
+## fall out of the regression samples
 dta <- merge(dta, bse_full_tmp[c("farmer_ID","cluster_ID")], by.x="ID", by.y="farmer_ID", all.x=TRUE)
-dta <- merge(dta, bse[c("farmer_ID","P1_pric","final_price")], by.x="ID", by.y="farmer_ID", all.x=TRUE)
+dta <- merge(dta, bse_reg[c("farmer_ID","P1_pric","final_price")], by.x="ID", by.y="farmer_ID", all.x=TRUE)
 rm(bse_full_tmp)
 dta <- subset(dta, !is.na(cluster_ID))
 

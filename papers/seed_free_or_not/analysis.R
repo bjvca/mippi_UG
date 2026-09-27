@@ -305,9 +305,10 @@ ggsave(paste(path,"demand.png",sep="/"), plot_maize, width = 8, height = 5, dpi 
 ###this is where midline data analysis starts
 dta <- read.csv(paste(datapath,"midline.csv", sep="/"))
 ## merge in randomized staring price
-dta <- merge(dta, bse[c("farmer_ID","P1_pric","final_price")], by.x="ID", by.y="farmer_ID", all.x=TRUE)
-##create unique village level identifier for clustering of standard errors
-dta$cluster_ID <- as.factor(paste(paste(dta$dist_ID,dta$sub_ID, sep="_"), dta$vil_ID, sep="_"))
+dta <- merge(dta, bse[c("farmer_ID","P1_pric","final_price","cluster_ID")], by.x="ID", by.y="farmer_ID", all.x=TRUE)
+## village identifier for clustering of standard errors comes from baseline (the
+## randomization unit); recomputing it from midline dist/sub/vil ID strings splits
+## some villages through spelling drift and mixes discount status within clusters
 dta$used_TP[dta$used_TP=="n/a"] <- NA
 dta$used_TP <- dta$used_TP == "Yes"
 dta$remembers <- dta$Rec_TP == "Yes" |  dta$Buy_TP  == "Yes"
