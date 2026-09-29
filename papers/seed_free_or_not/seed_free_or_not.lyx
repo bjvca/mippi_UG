@@ -1057,14 +1057,25 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-A related concern is that farmers bid with their own money,
- so the negotiated price may partly reflect liquidity constraints or resource availability rather than valuation alone.
- This concern is not specific to our elicitation method:
+Because farmers bid with their own money,
+ the negotiated price reflects not only how much a farmer values the seed but also their ability to pay.
+ We consider this a feature of the design rather than a limitation.
+ What a program can elicit in the field is effective willingness to pay:
+ demand expressed under real-world budget constraints.
+ Wealth,
+ liquidity,
+ and complementary resources raise both what a farmer is able to bid and what the farmer stands to gain from adoption,
+ and are therefore part of what a screening mechanism is meant to capture.
+ Eliciting valuations that are purged of budget constraints,
+ for instance by providing participation fees,
+ would introduce hypothetical bias of its own.
+ Paying out of pocket is,
+ moreover,
+ not specific to bargaining:
  under a BDM mechanism,
- farmers would equally pay out of pocket,
- so replacing bargaining with BDM would neither create nor resolve it.
- We return to this issue in the analysis,
- where we assess the robustness of our estimates to controlling for baseline proxies of wealth and liquidity (Appendix
+ farmers would equally pay with their own money.
+ In the analysis,
+ we complement the main estimates with specifications that control for baseline proxies of wealth and liquidity (Appendix
 \begin_inset space ~
 \end_inset
 
@@ -1076,6 +1087,9 @@ reference "sec:Appendix-controls"
 \end_inset
 
 ).
+ These controls do not purge the estimate of a confound;
+ rather,
+ they indicate how much of the screening effect operates through observable resources and how much through the additional information contained in the negotiated price.
 \end_layout
 
 \begin_layout Standard
@@ -4460,7 +4474,9 @@ reference "sec:Appendix-inference"
 \end_layout
 
 \begin_layout Standard
-The production association should nonetheless be interpreted with care.
+The interpretation of this association follows from the nature of the negotiated price:
+ it measures effective willingness to pay,
+ in which valuation and resources are bundled by design.
  When we add baseline wealth and liquidity proxies to the specification (Appendix
 \begin_inset space ~
 \end_inset
@@ -4474,10 +4490,13 @@ reference "sec:Appendix-controls"
 
 ),
  the screening coefficient on trial-pack management is essentially unchanged,
- but the coefficient on subsequent production attenuates from 0.060 to 0.037 (p=0.055).
- Part of the association between willingness to pay and later production may thus reflect the resources of high-valuation farmers rather than private information about returns alone.
- Screening on resources and screening on returns are both relevant for targeting,
- but they carry different policy implications.
+ indicating that the negotiated price carries information beyond observable resources.
+ The coefficient on subsequent production attenuates from 0.060 to 0.037 (p=0.055),
+ suggesting that for production,
+ part of the screening effect operates through the resources of high-valuation farmers.
+ For a program that uses elicited willingness to pay as a targeting device,
+ both components are relevant:
+ the instrument selects farmers who are both able and motivated to put the technology to productive use.
  The sunk-cost estimates are unaffected by these controls.
 \end_layout
 
@@ -5320,12 +5339,15 @@ literal "false"
  These proposals rely on the premise that willingness to pay identifies farmers with the highest expected returns to a technology.
  Our results provide revealed-preference evidence supporting this premise:
  farmers with higher willingness to pay not only express stronger demand but also manage the technology more carefully and ultimately achieve higher production.
- That said,
- willingness to pay elicited from farmers bidding with their own money partly reflects wealth and liquidity rather than expected returns alone:
- controlling for baseline wealth and liquidity proxies leaves the screening effect on trial management essentially unchanged,
- but attenuates the association with subsequent production.
- Screening on resources and screening on returns have different policy implications,
- and our design cannot fully separate the two.
+ Willingness to pay elicited from farmers bidding with their own money is effective willingness to pay:
+ it bundles valuation with wealth and liquidity.
+ For a self-targeting mechanism this is arguably the relevant object,
+ as it is effective demand that a program can elicit and act upon in the field.
+ Controlling for baseline wealth and liquidity proxies leaves the screening effect on trial management essentially unchanged,
+ while the association with subsequent production attenuates,
+ so the elicited price carries information beyond observable resources for some outcomes but not all.
+ A corollary is that targeting on effective demand favors farmers with the means to act on their valuations;
+ programs with an explicit equity objective may therefore wish to combine price-based screening with other targeting criteria.
 \end_layout
 
 \begin_layout Standard
@@ -10521,11 +10543,15 @@ name "sec:Appendix-controls"
 
 \begin_layout Standard
 Because farmers bid with their own money,
- the negotiated price may partly reflect wealth,
+ the negotiated price measures effective willingness to pay:
+ valuation bundled with wealth,
  liquidity,
- or bargaining ability rather than valuation.
- To assess whether this drives the screening estimates,
- we re-estimate the main specifications adding a vector of baseline wealth and liquidity proxies.
+ and possibly bargaining ability.
+ The uncontrolled estimates in the main text are therefore our preferred estimates of the screening effect.
+ The specifications in this appendix,
+ which add a vector of baseline wealth and liquidity proxies,
+ serve a complementary purpose:
+ they indicate how much of the screening effect operates through observable resources and how much through information in the negotiated price beyond those observables.
  Table
 \begin_inset space ~
 \end_inset
