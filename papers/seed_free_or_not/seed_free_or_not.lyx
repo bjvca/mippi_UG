@@ -963,20 +963,9 @@ In our Uganda sample,
  the negotiated price equals the initial offer price for 118 out of 758 farmers in the seed arm (15.6 percent);
  111 of these accepted the initial offer outright,
  while the remaining 7 returned to it after bargaining.
- For these farmers,
- willingness to pay is right-censored at the offer price:
- we know their WTP is at least as high as the initial offer,
- but not how much higher.
- This also means that,
- for this subgroup,
- the screening and signaling channels are collinear,
- as the negotiated price equals the randomly assigned initial price.
- These observations are retained in the analysis with their WTP set to the accepted offer price,
- which attenuates the screening coefficient toward zero and makes our screening estimates conservative.
- In an online appendix,
- as a robustness check,
- we re-estimate all main specifications after excluding farmers whose willingness to pay was right-censored.
- Results are similar to those reported here.
+ We discuss the implications of this right-censoring,
+ and the corresponding robustness check,
+ below.
 \end_layout
 
 \end_inset
@@ -1087,6 +1076,33 @@ reference "sec:Appendix-controls"
 \end_inset
 
 ).
+\end_layout
+
+\begin_layout Standard
+A final concern is right-censoring.
+ For the 118 farmers whose negotiated price equals the randomly assigned initial offer,
+ willingness to pay is only known to be at least as high as that offer,
+ and the screening and signaling channels are collinear.
+ We retain these farmers in the main analysis with their willingness to pay set to the offer price,
+ which attenuates the screening coefficient toward zero and thus makes our screening estimates conservative.
+ As a robustness check,
+ we re-estimate all main specifications excluding them (Appendix
+\begin_inset space ~
+\end_inset
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Appendix-B:-Excluding"
+
+\end_inset
+).
+ If anything,
+ the screening effect on trial pack use strengthens when the sample is restricted to farmers whose willingness to pay is point-identified (0.023 against 0.017 in the full sample,
+ p=0.006),
+ while the sunk-cost effects on the use index (-0.094,
+ p=0.028) and on keeping the harvest separate (-0.125,
+ p=0.010) and the screening effect on subsequent production (0.079,
+ p=0.008) are essentially unchanged.
 \end_layout
 
 \begin_layout Standard
