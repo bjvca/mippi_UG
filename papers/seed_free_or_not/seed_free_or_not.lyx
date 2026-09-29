@@ -11782,10 +11782,19 @@ load(paste(path,"inference_mht.Rdata",
 \end_layout
 
 \begin_layout Plain Layout
-gi <- function(o,c) {{
+gi <- function(o,c) {
+\end_layout
+
+\begin_layout Plain Layout
  v <- rows_df[rows_df$outcome==o & rows_df$margin=="sunk", c]
+\end_layout
+
+\begin_layout Plain Layout
  ifelse(is.na(v), "--", format(round(v,3)))
-}}
+\end_layout
+
+\begin_layout Plain Layout
+}
 \end_layout
 
 \begin_layout Plain Layout
