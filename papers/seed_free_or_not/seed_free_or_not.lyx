@@ -1079,11 +1079,13 @@ A related concern is that farmers bid with their own money,
 \begin_inset space ~
 \end_inset
 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Appendix-controls"
 
 \end_inset
+
 ).
 \end_layout
 
@@ -1915,11 +1917,13 @@ The two groups are well balanced on most covariates.
 \begin_inset space ~
 \end_inset
 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Appendix-inference"
 
 \end_inset
+
 ).
 \end_layout
 
@@ -1942,7 +1946,7 @@ placement document
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -2009,6 +2013,14 @@ hline
 
 \backslash
 cline{2-6}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -2487,6 +2499,10 @@ Sexpr{bal_tab_uga[2,4,11]}) &
 
 \begin_layout Plain Layout
 
+\backslash
+
+\backslash
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -2653,14 +2669,14 @@ placement document
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename demand.png
 	lyxscale 25
-	scale 15
+	scale 50
 
 \end_inset
 
@@ -2847,11 +2863,13 @@ Comparing treatment groups using the Trial Seed Use Index allows us to distingui
 \begin_inset space ~
 \end_inset
 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Appendix-controls"
 
 \end_inset
+
 ),
  and inference on the sunk-cost effect is unchanged under a wild cluster bootstrap,
  randomization inference,
@@ -2859,11 +2877,13 @@ reference "sec:Appendix-controls"
 \begin_inset space ~
 \end_inset
 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Appendix-inference"
 
 \end_inset
+
 );
  the effect on keeping the harvest separate also survives a Romano-Wolf familywise correction across the outcomes in this family.
 \end_layout
@@ -2927,30 +2947,6 @@ hline
 
 \begin_layout Plain Layout
 & sample mean & signaling & screening & sunk cost & nobs 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-multicolumn{5}{c}{
-\backslash
-textit{Uganda - maize}} 
 \backslash
 
 \backslash
@@ -3742,7 +3738,7 @@ placement document
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -3795,30 +3791,6 @@ hline
 
 \begin_layout Plain Layout
 & sample mean & signaling & screening & sunk cost & nobs
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-&
-\backslash
-multicolumn{5}{c}{
-\backslash
-textit{Uganda - maize}}
 \backslash
 
 \backslash
@@ -4461,11 +4433,13 @@ Sexpr{mag$prodv_sunk}
 \begin_inset space ~
 \end_inset
 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Appendix-inference"
 
 \end_inset
+
 ).
 \end_layout
 
@@ -4475,11 +4449,13 @@ The production association should nonetheless be interpreted with care.
 \begin_inset space ~
 \end_inset
 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Appendix-controls"
 
 \end_inset
+
 ),
  the screening coefficient on trial-pack management is essentially unchanged,
  but the coefficient on subsequent production attenuates from 0.060 to 0.037 (p=0.055).
@@ -4570,7 +4546,7 @@ placement document
 alignment document
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -4632,26 +4608,6 @@ hline
 \end_layout
 
 \begin_layout Plain Layout
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-multicolumn{5}{c}{
-\backslash
-textit{Uganda - maize}} 
-\backslash
-
-\backslash
 
 \end_layout
 
@@ -5793,7 +5749,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -5850,26 +5806,6 @@ hline
 
 \begin_layout Plain Layout
 & sample mean & signaling & screening & sunk cost & nobs 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-multicolumn{5}{c}{
-\backslash
-textit{Uganda - maize}} 
 \backslash
 
 \backslash
@@ -6657,26 +6593,6 @@ hline
 
 \begin_layout Plain Layout
 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-&
-\backslash
-multicolumn{5}{c}{
-\backslash
-textit{Uganda - maize}}
-\backslash
-
-\backslash
-
 \end_layout
 
 \begin_layout Plain Layout
@@ -7209,26 +7125,6 @@ hline
 \end_layout
 
 \begin_layout Plain Layout
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-multicolumn{5}{c}{
-\backslash
-textit{Uganda - maize}} 
-\backslash
-
-\backslash
 
 \end_layout
 
@@ -7973,7 +7869,7 @@ placement H
 alignment document
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -8037,22 +7933,6 @@ hline
 \end_layout
 
 \begin_layout Plain Layout
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-&
-\backslash
-multicolumn{5}{c}{
-\backslash
-textit{Uganda - maize}}
-\backslash
-
-\backslash
 
 \end_layout
 
@@ -8834,26 +8714,6 @@ hline
 
 \begin_layout Plain Layout
 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-&
-\backslash
-multicolumn{5}{c}{
-\backslash
-textit{Uganda - maize}}
-\backslash
-
-\backslash
-
 \end_layout
 
 \begin_layout Plain Layout
@@ -9387,26 +9247,6 @@ hline
 \end_layout
 
 \begin_layout Plain Layout
-
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-&
-\backslash
-multicolumn{5}{c}{
-\backslash
-textit{Uganda - maize}}
-\backslash
-
-\backslash
 
 \end_layout
 
@@ -10132,11 +9972,13 @@ Table 1 in the main text reports balance for the village-level discount randomiz
 \begin_inset space ~
 \end_inset
 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:offer-balance"
 
 \end_inset
+
  reports,
  for each baseline covariate in Table 1,
  the coefficient from a regression of the covariate on the randomly assigned offer price.
@@ -10672,11 +10514,13 @@ Because farmers bid with their own money,
 \begin_inset space ~
 \end_inset
 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:controls-robustness"
 
 \end_inset
+
  compares the estimates with and without these controls for the three family indices and the individual outcomes emphasized in the main text.
  The screening effect on the Trial Seed Use Index is essentially unchanged,
  as are all sunk-cost coefficients.
@@ -11786,11 +11630,14 @@ gi <- function(o,c) {
 \end_layout
 
 \begin_layout Plain Layout
- v <- rows_df[rows_df$outcome==o & rows_df$margin=="sunk", c]
+ v <- rows_df[rows_df$outcome==o & rows_df$margin=="sunk",
+ c]
 \end_layout
 
 \begin_layout Plain Layout
- ifelse(is.na(v), "--", format(round(v,3)))
+ ifelse(is.na(v),
+ "--",
+ format(round(v,3)))
 \end_layout
 
 \begin_layout Plain Layout
@@ -11827,11 +11674,13 @@ The surprise discount that identifies the sunk-cost effect is randomized at the 
 \begin_inset space ~
 \end_inset
 
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:inference-robustness"
 
 \end_inset
+
  reports the results.
  The three sunk-cost results that are significant under cluster-robust standard errors (the Trial Seed Use Index,
  keeping the harvest separate,
