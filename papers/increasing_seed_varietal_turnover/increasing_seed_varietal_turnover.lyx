@@ -174,7 +174,9 @@ footnotemark[4]}
 \end_inset
 
 Hybrid Gains and Tasty Grains:
- Comparing Production- and Consumption-Focused Seed Promotion Strategies to Accelerate Varietal Turnover
+ Seed Trial Packs,
+ Cooking Demonstrations,
+ and Maize Varietal Turnover in Uganda
 \end_layout
 
 \begin_layout Standard
@@ -198,11 +200,11 @@ is a central goal of seed-system policy in sub-Saharan Africa,
  yet how best to promote it remains unclear.
  The fact that smallholders are generally both producers and consumers suggest that seed promotion strategies should emphasize both agronomic performance as well as consumption related traits.
  In a cluster-randomized trial,
- we compare two seed promotion strategies among maize-growing households in eastern Uganda:
+ we compare two seed-promotion packages among maize-growing households in eastern Uganda:
  seed trial packs,
- which are intended to emphasize farmers' learning about production traits through on-farm experimentation,
+ which transfer seed and create a season of on-farm experience,
  and cooking demonstrations with blind tasting,
- which are intended to emphasize learning about consumption traits through direct experience.
+ which convey a variety's consumption traits through direct experience without transferring seed.
  Both raise farmers' knowledge and use of the promoted hybrid.
  Trial packs generate the larger increase,
  but it runs almost entirely through farmers recycling grain saved from the trial pack rather than buying fresh seed,
@@ -335,8 +337,9 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-Because the production and consumption attributes of new varieties are not directly observable to farmers upon seed purchase,
- widespread adoption also may require raising farmers' awareness of their beneficial attributes.
+Adoption barriers are not only informational.
+ Because the production and consumption attributes of new varieties are not directly observable to farmers upon seed purchase,
+ widespread adoption may require raising farmers' awareness of their beneficial attributes.
  Observational evidence points to on-farm experimentation and locally relevant performance information as levers for shifting farmer perceptions and accelerating adoption 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -345,36 +348,28 @@ literal "false"
 
 \end_inset
 
-;
- the interventions we study are designed to provide exactly this kind of direct experience.
- A common strategy to encourage farmers to learn about a new variety is through the distribution of seed sample packs,
- often referred to as 
-\begin_inset Quotes eld
-\end_inset
+.
+ At the same time,
+ seed is costly relative to grain,
+ cash is scarce at planting,
+ input quality may be uncertain,
+ and seed is a reproducible input:
+ farmers who obtain grain of a variety may continue with it by recycling seed rather than returning immediately to the market.
+ These economic and biological features matter for whether promotion accelerates varietal turnover,
+ stimulates fresh-seed purchases,
+ or both.
+\end_layout
 
-trial packs
-\begin_inset Quotes erd
-\end_inset
-
-,
- 
-\begin_inset Quotes eld
-\end_inset
-
-starter packs
-\begin_inset Quotes erd
-\end_inset
-
-,
- or 
-\begin_inset Quotes eld
-\end_inset
-
-mini-kits
-\begin_inset Quotes erd
-\end_inset
-
- 
+\begin_layout Standard
+This paper asks how two seed-promotion instruments affect varietal turnover among smallholder farmers,
+ recognizing that they are both producers and end-users and that seed adoption decisions combine information,
+ liquidity,
+ seed quality,
+ and the possibility of recycling.
+ We test their relative effectiveness,
+ and their cost per additional adopter,
+ in a cluster-randomized control trial.
+ The first intervention provides farmers with 1 kg trial packs of seed of an improved variety 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "blackie2005origin,cromwell1990seed"
@@ -383,79 +378,6 @@ literal "false"
 \end_inset
 
 .
- These seed trial packs typically contain small quantities of seed (e.g.,
- 1 kg) and are provided for free,
- allowing farmers to test them on a small portion of their plot.
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Some trials may also include small quantities of other relevant inputs such as fertilizer,
- pesticide,
- and/or herbicide.
- For instance,
- Malawi's starter pack program provided both seeds and fertilizer 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "blackie2005origin"
-literal "false"
-
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
- The primary aim is to reduce the cost and risk associated with learning about the production attributes of the variety,
- such that farmers will purchase the seed in subsequent seasons if they find doing so beneficial.
-\end_layout
-
-\begin_layout Standard
-Strategies that explicitly seek to raise farmers’ awareness of the consumption-related attributes of improved varieties are less common.
- This is perhaps surprising given the theoretical and empirical literature showing that in smallholder agriculture settings consumption and production decisions are intricately related 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "singh1986survey,lafave2016farms"
-literal "false"
-
-\end_inset
-
-.
- Moreover,
- interventions that familiarize farmers with consumption traits,
- such as cooking demonstrations and tasting events,
- are often primarily concerned with nutrition-related outcomes and rarely consider actual adoption of the crop or variety that was used during the demonstration 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "REICKS2014259"
-literal "false"
-
-\end_inset
-
-.
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-While seed trial packs may also enable farmers to discover consumption traits after they harvest the grain obtained from the seed trial pack,
- such learning is often not the primary focus of trial packs and may occur only if farmers taste the harvest from the trial pack before mixing it with other varieties and/or selling it.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-This paper asks which of two contrasting extension instruments most cost-effectively accelerates varietal turnover among smallholder farmers,
- recognizing their dual role as both producers and end-users:
- one targeting the production side of variety choice,
- the other the consumption side.
- We test their relative effectiveness,
- and their cost per additional adopter,
- in a cluster-randomized control trial.
- The first intervention targets production traits by providing farmers with 1 kg trial packs of seed of an improved variety.
 \begin_inset Foot
 status collapsed
 
@@ -478,10 +400,38 @@ literal "false"
 
 \end_inset
 
- A second intervention involves cooking demonstrations and blind tasting tests.
- This intervention allows farmers to familiarize themselves with consumption attributes of maize flour derived from the grain grown using the same improved variety that was promoted in the seed trial pack intervention.
+ A second intervention involves cooking demonstrations and blind tasting tests from the grain grown using the same improved variety that was promoted in the seed trial pack intervention.
  Additionally,
  farmers in this treatment arm are provided with maize flour samples derived from the grain grown using the promoted improved variety to further explore consumption traits at home and potentially convince other household members of consumption related benefits.
+\end_layout
+
+\begin_layout Standard
+The two interventions are commonly understood to emphasize different attributes of the underlying commodity.
+ Trial packs primarily allow farmers to assess agronomic performance under their own growing conditions,
+ while cooking demonstrations draw attention to consumption attributes such as taste,
+ texture,
+ and cooking quality.
+ Both types of attributes may influence farmers’ willingness to adopt a new variety.
+ However,
+ the interventions differ along several other dimensions.
+ Trial packs provide farmers with a productive asset that generates a harvest,
+ offers opportunities for learning through an entire production cycle,
+ and potentially supplies seed for subsequent planting.
+ Cooking demonstrations,
+ by contrast,
+ are short,
+ collective events that involve tasting,
+ social interaction,
+ and the provision of flour for home consumption.
+ Moreover,
+ these learning channels are not mutually exclusive:
+ farmers receiving trial packs can also learn about consumption attributes through their harvest.
+ Consequently,
+ while the interventions place different emphasis on production and consumption traits,
+ differences in their effects on adoption cannot be attributed to the relative importance of these attributes alone.
+ We therefore evaluate the interventions as two distinct,
+ policy-relevant approaches to promoting varietal turnover,
+ rather than as isolated tests of production versus consumption learning.
 \end_layout
 
 \begin_layout Standard
@@ -583,8 +533,8 @@ We see little evidence that receiving both treatments had additional impacts bey
  Since household members often consult each other when deciding about what crops to plant and seed to use,
  and men may be more attuned to production traits and women to consumption traits,
  reaching both through the two instruments might have produced an effect larger than the sum of its parts.
- We find no clear sign of such complementarity,
- though the interaction estimates are imprecise;
+ We find no evidence of a large complementarity along these lines,
+ though the interaction estimate is imprecise and a smaller complementarity cannot be ruled out;
  trait priorities may in any case be less cleanly split along gender lines than this intuition assumes 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -671,8 +621,9 @@ literal "false"
 \end_inset
 
 ,
- we add to a relatively limited set of experimental impact evaluations testing the effectiveness of trial packs in accelerating technology adoption,
- which finds mixed results.
+ we add to a relatively limited set of experimental impact evaluations testing the effectiveness of trial packs in accelerating technology adoption.
+ A pattern across these studies is that trial packs appear most favorable where trialing reveals a clear advantage under farmers' conditions and continued use is feasible,
+ while effects are weaker where packs add little to existing exposure or where continued adoption requires complementary inputs or market access.
 \begin_inset Foot
 status collapsed
 
@@ -797,7 +748,7 @@ literal "false"
 
 \begin_layout Standard
 Finally,
- we contribute by comparing production- and consumption-oriented extension instruments not only on their effectiveness but on their cost.
+ we contribute by comparing two seed-promotion instruments not only on their effectiveness but on their cost.
  To our knowledge,
  this is the first study to price two such instruments against each other using their actual delivery budgets,
  and to show that the most cost-effective choice depends on whether the objective is varietal turnover or the development of a commercial seed market.
@@ -817,7 +768,7 @@ The remainder of the paper is organized as follows.
  intra-household decision-making,
  food security,
  and overall well-being.
- Section 5 investigates the mechanisms through which each instrument shifts adoption.
+ Section 5 reports intermediate outcomes that help interpret the adoption results.
  Section 6 examines why farmers who receive a trial pack continue through recycling rather than purchasing fresh seed.
  Section 7 compares the two instruments on cost-effectiveness and scaling.
  Section 8 concludes.
@@ -825,6 +776,97 @@ The remainder of the paper is organized as follows.
 
 \begin_layout Section
 Methods
+\end_layout
+
+\begin_layout Subsection
+Seed Types and Recycling
+\end_layout
+
+\begin_layout Standard
+Because seed can be reproduced,
+ the source of seed used after an intervention is central to interpreting varietal turnover.
+ We use 
+\begin_inset Quotes eld
+\end_inset
+
+fresh seed
+\begin_inset Quotes erd
+\end_inset
+
+ to denote seed newly obtained from a formal or trusted source,
+ such as an agro-input dealer,
+ government program,
+ or non-governmental organization.
+ We use 
+\begin_inset Quotes eld
+\end_inset
+
+recycled seed
+\begin_inset Quotes erd
+\end_inset
+
+ to denote grain saved from a previous harvest and replanted as seed.
+ A 
+\begin_inset Quotes eld
+\end_inset
+
+seed trial pack
+\begin_inset Quotes erd
+\end_inset
+
+ is the one-kilogram package of fresh seed distributed by the project.
+ A 
+\begin_inset Quotes eld
+\end_inset
+
+local variety
+\begin_inset Quotes erd
+\end_inset
+
+ or landrace is farmer-maintained seed already circulating locally.
+\end_layout
+
+\begin_layout Standard
+The distinction between hybrids and open-pollinated varieties (OPVs) matters because they differ in how well they tolerate recycling.
+ OPVs can often be saved and replanted for several seasons with limited loss if seed is selected and handled properly.
+ Hybrids,
+ by contrast,
+ are designed to express their full advantage in the first generation;
+ when grain from a hybrid harvest is replanted,
+ segregation and seed handling can reduce the yield advantage over successive cycles.
+ In this paper,
+ 
+\begin_inset Quotes eld
+\end_inset
+
+improved seed
+\begin_inset Quotes erd
+\end_inset
+
+ therefore refers to fresh hybrid seed and to fresh or appropriately recycled OPV seed.
+ Recycled hybrid grain is reported separately because it can represent use of a newer variety but not continued use of fresh hybrid seed.
+\end_layout
+
+\begin_layout Standard
+We did not formally map a separate market for recycled seed before the intervention.
+ What was clear at baseline is that seed saving and reuse were common practices:
+ many farmers recycled seed from previous seasons even though fresh seed was generally available through agro-input shops.
+ This makes recycling an ordinary part of farmers' seed decision environment rather than a behavior created by the study.
+\end_layout
+
+\begin_layout Standard
+This distinction also creates an asymmetry between the two interventions.
+ Trial-pack recipients receive seed and,
+ if they plant it,
+ later hold grain of the promoted hybrid that can be consumed,
+ sold,
+ or replanted.
+ Cooking-demonstration recipients receive information and flour to taste,
+ but no seed;
+ if they want to grow the variety,
+ they must obtain seed from the market or another source.
+ Recycling was therefore not just a downstream agronomic detail,
+ but a possible response to the different resources each package placed in farmers' hands.
 \end_layout
 
 \begin_layout Subsection
@@ -946,7 +988,7 @@ literal "false"
 
 .
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 The primary production trait of 
@@ -964,12 +1006,28 @@ yield explosion
 \end_inset
 
 .
+ While we did not find precise field-trial yield figures specific to 
+\emph on
+Bazooka
+\emph default
+,
+ NARO reports its newer hybrids broadly as yielding 7–9 MT/ha versus under 4 MT/ha for older varieties 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "naro2022"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \end_inset
 
- Specifically,
- we provided 1 kg bags of 
+ In addition to these production attributes,
+ Bazooka is also reported to be sweeter than other varieties and the flour is more white,
+ both attributes that are appreciated in the Ugandan context.
+ We provided 1 kg bags of 
 \emph on
 Bazooka
 \emph default
@@ -977,6 +1035,201 @@ Bazooka
  which is enough to plant about one-eighth of an acre.
  Given that the average farmer in our sample cultivates 1.24 acres of maize,
  this seed covers approximately 10 percent of their total cultivated area.
+ Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:bazooka-profile"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+ summarizes information on the promoted variety.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Profile of the promoted variety,
+ 
+\emph on
+Bazooka
+\emph default
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:bazooka-profile"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+small
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+begin{tabular}{lp{0.66
+\backslash
+textwidth}}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+Item & Description 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+Variety & 
+\backslash
+textit{Bazooka} (UH 5354),
+ a hybrid maize variety released by NARO in 2013 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Market status & Available from agro-dealers in the study districts,
+ but grown by only about 8 percent of control households at baseline 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Production traits & High yield potential,
+ drought resistance,
+ and resistance to maize lethal necrosis 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Consumption traits & High starch content,
+ mild sweetness,
+ and a very white porridge in local preparation 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Seed price in the study & UGX 12,000 per kilogram;
+ approximately 8 kilograms are needed per acre 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Observed yields in our data & Fresh 
+\backslash
+textit{Bazooka}:
+ about 535 kg/acre;
+ once-recycled 
+\backslash
+textit{Bazooka}:
+ about 375 kg/acre;
+ local seed:
+ about 323 kg/acre 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+end{tabular}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Note:
+ NARO = National Agricultural Research Organization.
+ Observed yields are descriptive comparisons by seed source taken from our data which may differ from field trial data.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -984,6 +1237,12 @@ The second intervention consists of a cooking demonstration and tasting event,
  organized once in each village assigned to the cooking demonstration treatment.
  Within these villages,
  all sampled households were invited to attend a facilitated meeting at a central location.
+ Non-sampled households were not invited:
+ study villages are large,
+ and an open invitation would likely have drawn many additional attendees seeking the free take-home flour sample,
+ requiring us to distribute several hundred additional bags of maize flour per village at a cost the study could not accommodate.
+ The events were organized in secluded locations after consultation with local leaders,
+ who helped explain the activity to avoid conflict or confusion among non-invited villagers.
  As for seed trial pack intervention,
  invitations were addressed to the household member responsible for maize production decisions.
  However,
@@ -1254,8 +1513,8 @@ nolink "false"
 
 \end_inset
 
- map directly onto our hypotheses.
- The central hypothesis is that each instrument raises subsequent use of the promoted variety,
+ map onto the package effects of the two interventions.
+ The central hypothesis is that each package raises subsequent use of the promoted variety,
  so we expect 
 \begin_inset Formula $\beta_{S}>0$
 \end_inset
@@ -1265,15 +1524,17 @@ nolink "false"
 \end_inset
 
  for the cooking demonstration.
- Because the two instruments target different margins of the same decision,
- the trial pack the production side and the demonstration the consumption side,
- we have no strong prior on which effect is larger.
+ Because the two packages relax different barriers to adoption,
+ the trial pack reduces the cost and risk of acquiring and growing the seed while also creating harvest output,
+ whereas the demonstration provides direct experience with the variety's consumption traits without transferring seed.
+ We therefore have no strong prior on which effect is larger.
  The interaction 
 \begin_inset Formula $\beta_{I}$
 \end_inset
 
- tests whether receiving both instruments adds to the sum of their separate effects:
- it would be positive if production- and consumption-side learning are complements.
+ tests whether receiving both packages adds to the sum of their separate effects.
+ A positive interaction would indicate that the two packages are complementary in shifting adoption,
+ but the interaction should not be read as a clean test of complementarity between isolated learning channels.
 \end_layout
 
 \begin_layout Standard
@@ -1334,14 +1595,13 @@ literal "false"
 \end_inset
 
  and aggregate various outcome measures within a given family into summary indices.
- Each index is calculated as a weighted average of the standardized (z-score) values of the individual outcomes.
- The weights are derived from the inverse of the covariance matrix of the outcomes within the family,
- such that outcomes that are more highly correlated with others receive less weight.
- This efficient generalized least squares (EGLS) estimator maximizes the statistical power of the index by down-weighting redundant information and emphasizing variation that is orthogonal across outcomes.
+ Each index summarizes a family of related outcomes after putting them on a common scale.
+ Outcomes that overlap more with the rest of the family receive less weight,
+ so the index gives less influence to redundant information.
  However,
  because it may also be useful to understand changes in specific outcomes within a given family rather than just changes in index values,
  we also present the coefficients on each outcome,
- controlling the false discovery rate (FDR) by using sharpened two-stage q-values proposed by 
+ adjusting for multiple testing using sharpened two-stage q-values proposed by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "benjamini2006adaptive"
@@ -1430,6 +1690,8 @@ name "fig:Timeline"
 
 \begin_layout Standard
 The study area experiences two maize growing seasons per calendar year.
+ Both are rainy-season maize cycles,
+ though the first is shorter.
  The first season,
  locally known as 
 \emph on
@@ -1527,7 +1789,7 @@ literal "false"
 \end_inset
 
 .
- We assumed a 13.5–percentage point increase for both the seed sample treatment and the cooking demonstration treatment,
+ We assumed a 13.5–percentage point increase for both the seed trial pack treatment and the cooking demonstration treatment,
  and a 23.5–percentage point increase for the interaction effect as minimal detectable effect size.
 \end_layout
 
@@ -3612,6 +3874,7 @@ literal "false"
  Second,
  self-reports may be subject to experimenter demand effects,
  with treated farmers over-reporting use of the promoted variety.
+ This concern is relevant because the implementation and survey teams overlapped in the field.
  Two features limit this concern:
  our first-stage measures are corroborated by administrative distribution and attendance records rather than recall alone,
  and the overall pattern of results is hard to reconcile with simple demand bias,
@@ -4637,7 +4900,7 @@ Sexpr{format(round(df_res[3,2,2],digits=2),nsmall=2)})
 \end_layout
 
 \begin_layout Plain Layout
-Has use fresh hybrid or OPV?$^
+Has used fresh hybrid or OPV?$^
 \backslash
 dag$ (1=yes)
 \end_layout
@@ -4742,7 +5005,7 @@ scriptsize
 
 \begin_layout Plain Layout
 Note:
- Column (1) reports control group means at baseline (and standard deviations below);
+ Column (1) reports endline means for the pure control group (and standard deviations below);
  column (2) reports the estimate of the intent-to-treat effect of the seed trial packs;
  column (3) reports the estimate of the intent-to-treat effect of the cooking and tasting demonstrations;
  column (4) is the interaction effect.
@@ -4793,7 +5056,37 @@ nolink "false"
  In contrast,
  the tasting session intervention has no detectable effect on the index.
  We also find no evidence of an interaction effect between the two treatments,
- suggesting that their combined provision does not generate additional adoption beyond the effect of the trial pack alone.
+ but the estimate is imprecise:
+ the 95 percent confidence interval for the interaction on the index ranges from -0.27 to 0.11 standard deviations,
+ and the realized minimum detectable interaction is about 0.27 standard deviations.
+ Online Appendix Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:appendix-interaction-robustness"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ reports the corresponding confidence intervals and tests of economically meaningful positive interactions.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Even an interaction within the range these tests cannot rule out would not change which instrument we recommend.
+ As Section 7 shows,
+ the trial pack is already substantially cheaper per additional adopter than the cooking demonstration at the scale we study;
+ making joint delivery cost-competitive with the trial pack alone would require a complementarity far larger than is plausible given these estimates.
+ The remaining statistical imprecision around the interaction is real,
+ but it does not translate into uncertainty about which instrument,
+ or combination of instruments,
+ a policymaker should prefer.
+\end_layout
+
+\end_inset
+
 \end_layout
 
 \begin_layout Standard
@@ -4839,7 +5132,13 @@ Sexpr{format(round(df_res[1,1,1]*100,digits=0),nsmall=0)}
  corresponding to an adoption rate of roughly four out of five farmers in the treatment group.
  The point estimate for the cooking demonstration and tasting session is also positive (p=0.051),
  but it is not statistically significant after adjusting for multiple hypothesis testing using false discovery rate corrections (q=0.110).
- We likewise find no evidence of interaction effects between the two interventions.
+ We likewise find no evidence of a positive interaction effect between the two interventions for any 
+\emph on
+Bazooka
+\emph default
+ use:
+ the interaction estimate is -7.6 percentage points,
+ with a 95 percent confidence interval from -19.1 to 3.9 percentage points and a realized minimum detectable interaction of 16.4 percentage points.
 \end_layout
 
 \begin_layout Standard
@@ -4861,7 +5160,20 @@ Bazooka
  For the orthogonal treatment,
  coefficient estimates are also positive,
  but they again do not survive adjustment for multiple outcomes.
- Interaction effects are absent.
+ Interaction estimates are not statistically distinguishable from zero,
+ and the confidence intervals imply that smaller complementarities cannot be ruled out even though large positive complementarities are not supported.
+ Online Appendix Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:appendix-interaction-robustness"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ reports the formal checks.
 \end_layout
 
 \begin_layout Standard
@@ -4940,7 +5252,59 @@ nolink "false"
  are very similar:
  the seed trial pack produces a large increase in both the use and the intensity of cultivation of the promoted variety,
  the cooking demonstration a smaller positive effect (significant only at the 10 percent level),
- and there are again no interaction effects.
+ and interaction estimates are again not statistically distinguishable from zero,
+ mirroring the imprecision already noted for the household-level estimates above:
+ a moderate complementarity cannot be ruled out.
+\end_layout
+
+\begin_layout Standard
+Farmers were asked to list their maize plots,
+ and one maize plot per household was then selected at random for detailed plot-level data collection (seed source,
+ input use,
+ harvest quantity).
+ Collecting this level of detail for every maize plot would have made the survey unreasonably long and burdened respondents with repeating the same battery of questions for each plot in turn;
+ adoption itself is instead measured with a few simpler household-level questions covering maize cultivation as a whole.
+ In practice,
+ it does not substantially change the adoption interpretation:
+ at endline,
+ 68 percent of households had one maize plot,
+ 24 percent had two,
+ and the mean was 1.32.
+ The trial-pack effect on any 
+\emph on
+Bazooka
+\emph default
+ use is 67.5 percentage points at the household level and 64.7 percentage points on the randomly selected plot;
+ for fresh 
+\emph on
+Bazooka
+\emph default
+ use,
+ the corresponding estimates are 2.9 and 2.8 percentage points.
+ The gap between the household-level and random-plot estimates reflects dilution that runs symmetrically across arms:
+ for a treated household the randomly drawn plot may happen to be one on which 
+\emph on
+Bazooka
+\emph default
+ was not planted,
+ while for a control household the draw may instead land on a plot growing 
+\emph on
+Bazooka
+\emph default
+ independently of treatment.
+ Because the plot is drawn by the same procedure regardless of treatment assignment,
+ this does not bias the comparison,
+ but it does shrink its magnitude relative to the household-level measure.
+ The yield estimates,
+ however,
+ remain intent-to-treat effects on a randomly selected plot:
+ if the sampled plot did not contain 
+\emph on
+Bazooka
+\emph default
+,
+ it cannot reveal the yield experience from the plot where the promoted variety was grown,
+ and this same dilution is the most likely reason the yield estimates are imprecise.
 \end_layout
 
 \begin_layout Standard
@@ -4998,6 +5362,35 @@ nolink "false"
  with a similar gradient for the adoption index.
  The trial pack thus expands adoption among the previously unreached rather than merely intensifying it among the already-initiated.
  We find no comparable heterogeneity for the cooking demonstration.
+ Baseline use of 
+\emph on
+Bazooka
+\emph default
+ was somewhat lower in the joint-treatment cell (7.8 percent) than in the other cells (8.0 to 12.6 percent),
+ so we also checked whether this imbalance drives the interaction estimates.
+ Adding a prior-use control or allowing effects to vary by prior-use status leaves the interaction estimates on the adoption index,
+ any 
+\emph on
+Bazooka
+\emph default
+ use,
+ and fresh 
+\emph on
+Bazooka
+\emph default
+ use small and not statistically distinguishable from zero.
+ Online Appendix Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:appendix-interaction-robustness"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ reports these checks.
 \end_layout
 
 \begin_layout Subsection
@@ -5047,6 +5440,17 @@ literal "false"
 
 .
  We find no such effect.
+ The baseline picture helps explain why.
+ About 20 percent of households are female-headed,
+ and women are already involved in seed-variety decisions in 80 percent of households and harvest-use decisions in 85 percent of households.
+ Trial-pack receipt is similarly shared across genders:
+ approximating gender from whether the pack was received by the respondent or by their spouse,
+ about 54 percent of pack recipients are proxied as female (N=742).
+ The survey did not ask a general household-level question about who normally cooks,
+ but the cooking-demonstration records show that attendance often included women:
+ among households attending the demonstration,
+ a spouse or co-head also attended in 62 percent of cases,
+ and the female co-head cooked the take-home flour sample in 91 percent of households with this information.
  As Online Appendix Table 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -5075,6 +5479,10 @@ literal "false"
  and if anything slightly lower;
  but this comparison is descriptive,
  since who attends is not randomly assigned.
+ Finally,
+ the perception and belief outcomes in Section 5 are reported by the endline survey respondent,
+ who was female in 55 percent of households,
+ and not necessarily by the person who prepared food in the household or cooked the take-home sample.
 \end_layout
 
 \begin_layout Standard
@@ -5102,12 +5510,35 @@ nolink "false"
 \end_layout
 
 \begin_layout Section
-Mechanisms
+Intermediate Outcomes
 \end_layout
 
 \begin_layout Standard
 In this section,
- we examine intermediary outcomes that help connect the interventions to the adoption effects documented above.
+ we examine intermediate outcomes that help interpret the adoption effects documented above.
+ These estimates describe how treatment groups differed after exposure to the interventions;
+ they do not identify mediated causal pathways from perceptions or knowledge to adoption.
+ Two Bazooka-specific outcomes asked only of farmers familiar with the variety — whether farmers recommend 
+\emph on
+Bazooka
+\emph default
+ specifically and whether they perceive 
+\emph on
+Bazooka
+\emph default
+ as risky — condition on treatment-induced familiarity and are therefore omitted from the main tables;
+ Online Appendix Table
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:appendix-unconditional-recodes"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ reports them using unconditional recodes and bounds instead.
  Specifically,
  we document changes in awareness of,
  and general attitudes toward,
@@ -5120,10 +5551,10 @@ Awareness About and General Attitudes Toward Improved Varieties
 \end_layout
 
 \begin_layout Standard
-One reason farmers may have altered their planting decisions is that the interventions affected their awareness of,
+We first describe awareness of,
  and general attitudes toward,
- the promoted seed.
- We explore this hypothesis using the family of outcomes presented in Table 
+ the promoted seed after the interventions.
+ We use the family of outcomes presented in Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "pathways"
@@ -5143,7 +5574,7 @@ nolink "false"
  In contrast,
  the effect of the cooking demonstration and tasting session,
  while positive,
- is much smaller and statistically insignificant.
+ is much smaller and not statistically distinguishable from zero.
 \end_layout
 
 \begin_layout Standard
@@ -5173,7 +5604,7 @@ nolink "false"
 
 \end_inset
 
- suggest an impact on varietal knowledge resulting from both interventions.
+ suggests an impact on varietal knowledge resulting from both interventions.
  On average,
  control group farmers are aware of approximately 
 \begin_inset ERT
@@ -5225,7 +5656,8 @@ Bazooka
 \emph default
  by about 30 percentage points compared to non-trial pack group farmers.
  In contrast,
- the cooking and tasting demonstration shows a much smaller and insignificant 8 percentage point effect.
+ the cooking and tasting demonstration shows a much smaller,
+ not statistically distinguishable 8 percentage point effect.
 \end_layout
 
 \begin_layout Standard
@@ -5234,17 +5666,7 @@ To capture more general attitudes toward improved varieties,
  Specifically,
  farmers were asked to assess how likely they believed it was that improved varieties would yield less than local varieties,
  a margin that is directly relevant for policies that distribute seed trial packs to lower perceived adoption risk.
- Responses were recorded on a four-point Likert scale ranging from “very likely” to “very unlikely.” An analogous question was asked for the promoted variety,
- 
-\emph on
-Bazooka
-\emph default
-,
- among farmers who reported familiarity with it.
- We construct an indicator for perceived downside risk that equals one if respondents selected either “very likely” or “somewhat likely.” Overall,
- perceived downside risk is low,
- and we find no statistically significant effects of either intervention on risk perceptions,
- either for improved varieties in general or for the promoted variety specifically.
+ Responses were recorded on a four-point Likert scale ranging from “very likely” to “very unlikely.” 
 \end_layout
 
 \begin_layout Standard
@@ -5259,42 +5681,11 @@ literal "false"
 
 .
  To assess whether the interventions affected peer learning,
- we asked farmers whether they recommended any improved varieties to others,
- and,
- among those familiar with 
-\emph on
-Bazooka
-\emph default
-,
- whether they recommended 
-\emph on
-Bazooka
-\emph default
- specifically.
+ we asked farmers whether they recommended any improved varieties to others.
  A substantial share of farmers in the control group (43 percent) reported recommending improved varieties.
  Receipt of a seed trial pack increased the likelihood of recommending improved varieties by 29 percentage points.
- Focusing specifically on 
-\emph on
-Bazooka
-\emph default
-,
- the effect is even larger:
- farmers who received a seed trial pack were 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-Sexpr{format(round(df_path[1,1,6]*100,digits=0),nsmall=0)}
-\end_layout
-
-\end_inset
-
- percentage points more likely to recommend the promoted variety.
- Taken together,
- these patterns suggest that the hands-on experience of growing the variety turns recipients into active promoters,
- opening a social-learning channel through which the trial pack’s effects may extend beyond the households that received one directly.
+ This result suggests trial-pack recipients are more likely to report recommending the promoted variety,
+ a descriptive pattern consistent with social learning extending beyond the households that received a pack directly.
 \end_layout
 
 \begin_layout Standard
@@ -5316,7 +5707,7 @@ placement document
 alignment document
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -5681,68 +6072,6 @@ Sexpr{format(round(df_path[3,2,3],digits=2),nsmall=2)})
 \end_layout
 
 \begin_layout Plain Layout
-Thinks 
-\backslash
-textit{Bazooka} is risky (1=yes)
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_means_path[1,4],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_path[1,1,4],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_path[1,3,4]<.01,"**",ifelse(df_path[1,3,4]<.05,"*",ifelse(df_path[1,3,4]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_path[2,1,4],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_path[2,3,4]<.01,"**",ifelse(df_path[2,3,4]<.05,"*",ifelse(df_path[2,3,4]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_path[3,1,4],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_path[3,3,4]<.01,"**",ifelse(df_path[3,3,4]<.05,"*",ifelse(df_path[3,3,4]<.1,"+","")))}}$ & 
-\backslash
-Sexpr{format(round(df_path[1,4,4],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-& (
-\backslash
-Sexpr{format(round(df_means_path[2,4],digits=2),nsmall=2)}) &  (
-\backslash
-Sexpr{format(round(df_path[1,2,4],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_path[2,2,4],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_path[3,2,4],digits=2),nsmall=2)})
-\end_layout
-
-\begin_layout Plain Layout
- 
-\backslash
-
-\backslash
 
 \end_layout
 
@@ -5819,68 +6148,6 @@ Sexpr{format(round(df_path[3,2,5],digits=2),nsmall=2)})
 \end_layout
 
 \begin_layout Plain Layout
-Recommended 
-\backslash
-textit{Bazooka} to others (1=yes)
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_means_path[1,6],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_path[1,1,6],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_path[1,3,6]<.01,"**",ifelse(df_path[1,3,6]<.05,"*",ifelse(df_path[1,3,6]<.1,"+","")))}}$ 
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_path[2,1,6],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_path[2,3,6]<.01,"**",ifelse(df_path[2,3,6]<.05,"*",ifelse(df_path[2,3,6]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_path[3,1,6],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_path[3,3,6]<.01,"**",ifelse(df_path[3,3,6]<.05,"*",ifelse(df_path[3,3,6]<.1,"+","")))}}$ & 
-\backslash
-Sexpr{format(round(df_path[1,4,6],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-& (
-\backslash
-Sexpr{format(round(df_means_path[2,6],digits=2),nsmall=2)}) &  (
-\backslash
-Sexpr{format(round(df_path[1,2,6],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_path[2,2,6],digits=2),nsmall=2)})  & (
-\backslash
-Sexpr{format(round(df_path[3,2,6],digits=2),nsmall=2)})
-\end_layout
-
-\begin_layout Plain Layout
- 
-\backslash
-
-\backslash
 
 \end_layout
 
@@ -6074,7 +6341,7 @@ scriptsize
 
 \begin_layout Plain Layout
 Note:
- Column (1) reports control group means at baseline (and standard deviations below);
+ Column (1) reports endline means for the pure control group (and standard deviations below);
  column (2) reports the estimate of the intent-to-treat effect of the seed trial packs;
  column (3) reports the estimate of the intent-to-treat effect of the cooking and tasting demonstrations;
  column (4) is the interaction effect.
@@ -6700,7 +6967,7 @@ scriptsize
 
 \begin_layout Plain Layout
 Note:
- Column (1) reports control group means at baseline (and standard deviations below);
+ Column (1) reports endline means for the pure control group (and standard deviations below);
  column (2) reports the estimate of the intent-to-treat effect of the seed trial packs;
  column (3) reports the estimate of the intent-to-treat effect of the cooking and tasting demonstrations;
  column (4) is the interaction effect.
@@ -6714,6 +6981,8 @@ Note:
 % levels based on sharpened q-values 
 \backslash
 citep{benjamini2006adaptive}.
+ Outcomes compare improved varieties and local seed as general survey categories,
+ not an average over five specific local seeds or the seed on the farmer's selected plot.
 \end_layout
 
 \begin_layout Plain Layout
@@ -7163,7 +7432,7 @@ Sexpr{format(round(df_compare_prod_traits_seed[3,2,3],digits=2),nsmall=2)})
 \end_layout
 
 \begin_layout Plain Layout
-Improve seed matures faster (1=yes)
+Improved seed matures faster (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -7338,7 +7607,7 @@ scriptsize
 
 \begin_layout Plain Layout
 Note:
- Column (1) reports control group means at baseline (and standard deviations below);
+ Column (1) reports endline means for the pure control group (and standard deviations below);
  column (2) reports the estimate of the intent-to-treat effect of the seed trial packs;
  column (3) reports the estimate of the intent-to-treat effect of the cooking and tasting demonstrations;
  column (4) is the interaction effect.
@@ -7352,6 +7621,8 @@ Note:
 % levels based on sharpened q-values 
 \backslash
 citep{benjamini2006adaptive}.
+ Outcomes compare improved varieties and local seed as general survey categories,
+ not an average over five specific local seeds or the seed on the farmer's selected plot.
 \end_layout
 
 \begin_layout Plain Layout
@@ -7797,53 +8068,63 @@ nolink "false"
 
 \end_inset
 
- illustrates estimated profits per acre of maize as a function of the sales price per 100 kg bag,
- computed by combining the yield estimates reported above with observed price and cost parameters,
- for three seed types:
- fresh Bazooka hybrid (535 kg/acre),
- recycled Bazooka (375 kg/acre),
- and local seed (323 kg/acre).
- The calculation assumes that planting one acre with 
+ compares net returns from purchasing fresh 
 \emph on
 Bazooka
 \emph default
- requires approximately 8 kilograms of seed.
- At the time of the study,
- the retail price of 
+ seed,
+ recycling grain from a previous 
 \emph on
 Bazooka
 \emph default
- seed was UGX 12,000 per kilogram,
- resulting in a total seed cost of UGX 96,000 per acre.
- In contrast,
- we assume that both local seed and recycled 
+ harvest,
+ and using local seed,
+ as a function of the grain sale price.
+ The three lines apply the same accounting throughout the paper:
+ fresh 
 \emph on
 Bazooka
 \emph default
- seed are acquired at negligible cost.
+ yields 535 kilograms per acre at a seed cost of UGX 12,000 per kilogram (about 8 kilograms per acre),
+ once-recycled 
+\emph on
+Bazooka
+\emph default
+ yields 375 kilograms per acre at no additional seed cost,
+ and local seed yields 323 kilograms per acre,
+ also at no seed cost.
+ Overlaid on these lines are the actual price-profit combinations realized by farmers in our sample who planted each seed type on their randomly selected plot,
+ together with the empirical distribution of grain sale prices reported at endline,
+ shown along the top margin.
+ Because seed source is chosen by farmers and therefore endogenous,
+ both the lines and the points should be read as descriptive accounting rather than causal evidence on why farmers recycle.
 \end_layout
 
 \begin_layout Standard
-The figure reveals that,
- across most selling price points,
+The three assumed-yield lines cross at a grain sale price of about UGX 60,000 per 100 kilograms,
+ close to the median price farmers in our sample reported.
+ Below this price,
  recycling 
 \emph on
 Bazooka
 \emph default
- once yields higher profits than both purchasing fresh 
-\emph on
-Bazooka
-\emph default
- or using local seed.
- Purchasing fresh 
-\emph on
-Bazooka
-\emph default
- only becomes more profitable than recycling when prices at which maize can be sold exceed approximately UGX 62,000 per 100 kg bag.
- Given that the median reported sales price at endline in our sample was UGX 60,000 per bag,
- recycling the harvest from the trial pack for a single season appears to be a profit-maximizing response for the majority of farmers.
- With its low upfront investment,
- recycling would also maximize expected utility for a risk averse farmer concerned about any production or price risk that may exist.
+ or using local seed both match or exceed the net return from purchasing fresh seed;
+ above it,
+ fresh seed's higher yield increasingly outweighs its upfront cost.
+ The scatter of actual farmer outcomes,
+ however,
+ is far wider than the gap between the three lines:
+ at any given price,
+ farmers using fresh,
+ recycled,
+ and local seed realize a broad and overlapping range of profits,
+ reflecting the many other factors—
+management,
+ plot quality,
+ and the price actually realized at sale—
+that the assumed-yield lines hold fixed.
+ This underscores that the figure describes an average accounting comparison,
+ not a prediction for any individual farmer's outcome.
 \end_layout
 
 \begin_layout Standard
@@ -7857,8 +8138,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename analysis/profit_plot.png
-	lyxscale 10
+	filename results/fig2_profit_margin.png
+	lyxscale 40
 	scale 55
 
 \end_inset
@@ -7870,7 +8151,17 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Profits as a function of sales price
+Profit per acre by grain sale price and seed source.
+ The three lines show profit under the paper's fixed-yield assumptions for fresh,
+ recycled,
+ and local seed (535,
+ 375,
+ and 323 kilograms per acre,
+ respectively),
+ traced across the range of observed grain sale prices;
+ each marker shows the actual price-profit combination realized by a sampled farmer using that seed source on their randomly selected plot.
+ The density along the top margin shows the empirical distribution of grain sale prices reported at endline,
+ separately by seed source.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Profits-as-a"
@@ -7897,7 +8188,8 @@ Over time,
 Bazooka
 \emph default
  seed across multiple seasons,
- the associated yield (and thus the profit (long-dash blue) line in Figure 
+ the associated yield advantage can be expected to decline,
+ which shifts the comparison shown in Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Profits-as-a"
@@ -7908,7 +8200,7 @@ nolink "false"
 
 \end_inset
 
-) can be expected to converge toward that of local seed (the short-dash green line).
+.
  As the yield advantage diminishes,
  the profitability of recycling declines,
  making the purchase of fresh hybrid seed increasingly attractive.
@@ -7932,7 +8224,7 @@ nolink "false"
 ),
  so they are plausibly more likely than control farmers to return with improved rather than local seed.
  If so,
- the trial pack would raise turnover not as a single pulse but as a recurring cycle of purchase and recycling,
+ the trial pack could affect turnover through repeated cycles of purchase and recycling,
  lowering the average varietal age over the long run even though the yield gain ebbs between purchases.
  Our single-season design cannot trace this path,
  and the magnitude depends on how readily farmers can re-enter the market,
@@ -7940,19 +8232,16 @@ nolink "false"
 \end_layout
 
 \begin_layout Standard
-It is also important to recognize that the observed high rates of recycling may be season-specific.
+The observed high rates of recycling may also be season-specific.
  For example,
  during the baseline period,
  maize prices ranged from UGX 100,000 to UGX 120,000 per 100 kg bag—
-well above the threshold at which purchasing fresh 
-\emph on
-Bazooka
-\emph default
- becomes the dominant strategy.
+well above the price range in which recycling is most attractive under the scenario calculation.
  However,
  since farmers must make input decisions before prices are known,
  risk-averse farmers may prefer to avoid the upfront investment cost of fresh seed and opt to recycle instead.
- This also implies that risk aversion is an important cross-cutting factor that amplifies the attractiveness of recycling.
+ For sufficiently risk-averse or liquidity-constrained farmers,
+ the lower upfront cost of recycling can make it preferable even when fresh seed has higher expected returns under some price states.
 \end_layout
 
 \begin_layout Subsection
@@ -7993,7 +8282,9 @@ nolink "false"
 \end_inset
 
 ,
- support the hypothesis that seed quality uncertainty also plays a role.
+ are descriptive because seed source is selected by farmers after treatment.
+ They are consistent with seed quality uncertainty playing a role,
+ but they do not identify the causal effect of trust or quality perceptions on recycling.
  On most production traits,
  
 \emph on
@@ -8051,7 +8342,8 @@ Bazooka
 \emph on
 Bazooka
 \emph default
- on the randomly selected plot
+ on the randomly selected plot (descriptive comparison;
+ seed source is post-treatment)
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Perceptions-of-quality"
@@ -8122,10 +8414,37 @@ Bazooka
  seed is common across all wealth groups.
  In the lowest quintile,
  more than 90 percent of farmers recycled,
- compared to roughly 84–86 percent in the middle quintiles and 77 percent in the fourth quintile.
- Overall,
- the data suggest only modest variation in recycling behavior by wealth,
+ compared to roughly 84–86 percent in the middle quintiles and 77 percent in the fourth quintile.Overall,
+ this descriptive comparison suggests only modest variation in recycling behavior by wealth,
  with slightly lower recycling rates observed among relatively wealthier farmers.
+ Because recycling is observed only among households that both received the trial pack and grew 
+\emph on
+Bazooka
+\emph default
+,
+ the figure should not be read as a causal estimate of the effect of liquidity on recycling.
+\end_layout
+
+\begin_layout Standard
+We also examined who purchased fresh 
+\emph on
+Bazooka
+\emph default
+ seed in the cooking-demonstration-only arm,
+ where adoption required obtaining seed rather than recycling grain from the intervention.
+ Forty-one of 377 households in that arm purchased fresh 
+\emph on
+Bazooka
+\emph default
+ seed.
+ Baseline consumption per capita,
+ land,
+ household size,
+ rooms,
+ and livestock do not meaningfully distinguish these buyers from other cooking-demonstration households.
+ Subjective welfare measures are somewhat higher among buyers,
+ but this comparison is descriptive and based on a small selected group.
+ We therefore read it as only partial evidence for a liquidity gradient among fresh-seed purchasers.
 \end_layout
 
 \begin_layout Standard
@@ -8156,7 +8475,8 @@ Share of trial-pack recipients growing
 Bazooka
 \emph default
  who recycled rather than purchased fresh seed,
- by quintile of baseline consumption expenditure (extreme expenditure values trimmed)
+ by quintile of baseline consumption expenditure (extreme expenditure values trimmed;
+ descriptive comparison among post-treatment growers)
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Wealth-and-Recycling"
@@ -8185,15 +8505,14 @@ Cost-effectiveness and Scaling
 \end_layout
 
 \begin_layout Standard
-The preceding sections establish that both instruments raise use of the promoted variety,
- but through different channels and with different consequences for productivity.
- For a policymaker choosing between them,
- what matters is not only whether each works but what each costs to deliver.
- Because we find no evidence that the two instruments are complements,
- little appears to be gained by deploying both,
- and we treat the choice as one between single instruments;
- treating the instruments as separable is also what lets us cost them independently.
- We therefore combine the experimental effects with the actual intervention budgets to compare the two instruments on a cost-effectiveness basis.
+The preceding sections establish that both packages raise use of the promoted variety,
+ but through different channels and with different consequences for productivity.For a policymaker choosing between them,
+ policy choice also depends on delivery cost.
+ The interaction estimates reported above provide no evidence of economically large positive complementarity,
+ although smaller complementarities cannot be ruled out.
+ We therefore report cost-effectiveness for each package separately,
+ while interpreting this comparison as conditional on the policy objective and time horizon.
+ We therefore combine the experimental effects with the actual intervention budgets to compare the two packages on a cost-effectiveness basis.
 \end_layout
 
 \begin_layout Standard
@@ -8201,7 +8520,7 @@ Delivering a seed trial pack costs approximately UGX 27,000 per farmer:
  UGX 12,000 for one kilogram of seed,
  plus about UGX 15,000 for stand-alone distribution.
  A cooking demonstration costs substantially more,
- at about UGX 64,000 per farmer at full economic cost.
+ at about UGX 64,400 per farmer under the scalable delivery-cost definition used for this comparison.
 \begin_inset Foot
 status collapsed
 
@@ -8222,7 +8541,7 @@ All costs are in 2023 Ugandan shillings (UGX).
 
 \begin_layout Standard
 These figures capture costs to the implementer;
- the two instruments also place very different demands on farmers themselves.
+ the two packages also place very different demands on farmers themselves.
  Attending a cooking demonstration costs a household roughly half a day of time,
  often for two members,
  and delivers its information immediately.
@@ -8237,13 +8556,15 @@ so the relevant farmer-side costs are the delay and the land and labor commitmen
 \end_layout
 
 \begin_layout Standard
-Combining these costs with the intent-to-treat effects on adoption reported in Table 3 shows that the most cost-effective instrument depends on the policy objective.
+Combining these costs with the intent-to-treat effects on adoption reported in Table 3 shows that the most cost-effective package depends on the policy objective.
  If the objective is varietal turnover,
  that is,
  getting an improved variety into the ground regardless of seed source,
  the seed trial pack costs about UGX 40,000 per additional adopter (UGX 27,000 divided by a 0.67 effect on use of the promoted variety),
- against roughly UGX 715,000 for the cooking demonstration (UGX 64,000 divided by a 0.09 effect).
- The trial pack is more than an order of magnitude more cost-effective.
+ against roughly UGX 900,000 for the cooking demonstration (UGX 64,400 divided by a 0.07 effect).
+ The demonstration ratio is imprecise because the adoption effect is small and does not survive the paper's multiple-testing adjustment for the adoption family,
+ so the comparison is best read as evidence that the pack is reliably cheaper for one-season turnover under this objective,
+ rather than as a precisely estimated ranking for every setting.
  If,
  instead,
  the objective is to build demand in the commercial seed market 
@@ -8256,21 +8577,21 @@ literal "false"
 
 ,
  that is,
- purchases of fresh certified seed,
+ purchases of fresh seed,
  the ranking reverses.
  The trial pack's estimated effect on fresh-seed purchases is indistinguishable from zero,
  because the turnover it generates runs through recycling,
  so spending on trial packs does not buy fresh-seed adoption through this channel and no meaningful cost per fresh-seed adopter can be computed.
- The cooking demonstration is the only instrument for which we find evidence,
+ The cooking demonstration is the only package for which we find evidence,
  albeit suggestive,
  of increased fresh-seed purchases;
- the implied figure of about UGX 1.3 million per additional fresh adopter inherits the imprecision of that estimate and is best read as an order of magnitude,
+ the implied figure of about UGX 1.2 million per additional fresh adopter inherits the imprecision of that estimate and is best read as an order of magnitude,
  though it comes alongside suggestive yield gains.
 \end_layout
 
 \begin_layout Standard
 An important qualification concerns the time horizon.
- We observe one planting decision after each instrument,
+ We observe one planting decision after each package,
  and the fresh-seed purchases induced by the demonstration are first acquisitions,
  made by farmers who hold no grain of the promoted variety to replant.
  Once these farmers harvest,
@@ -8288,7 +8609,7 @@ nolink "false"
 ,
  and may recycle rather than buy again.
  On the evidence we have,
- the demonstration therefore shifts the entry margin into the certified-seed market;
+ the demonstration therefore shifts the entry margin into the fresh-seed market;
  its effect on repeat purchases lies outside our observation window.
  The same horizon logic applies in reverse to the trial pack:
  because the yield advantage of recycled hybrid grain erodes with each cycle of reuse,
@@ -8299,7 +8620,7 @@ nolink "false"
 \end_layout
 
 \begin_layout Standard
-The two instruments also have very different cost structures,
+The two packages also have very different cost structures,
  with implications for scaling.
  The seed trial pack is almost entirely variable cost:
  the seed is a fixed quantity per farmer that cannot be shared across recipients.
@@ -8311,7 +8632,7 @@ The two instruments also have very different cost structures,
  staff,
  and cooking that is shared across everyone who attends.
  As a result,
- the per-farmer cost of the two instruments responds differently to scale.
+ the per-farmer cost of the two packages responds differently to scale.
  Spreading the program across more villages does not change their relative ranking,
  because the demonstration's per-village transport and staff costs are variable rather than fixed and do not fall as the number of villages rises.
  What does shift the ranking is the number of farmers reached per session:
@@ -8419,12 +8740,205 @@ Two caveats temper this conclusion.
  which we cannot observe in our data.
  Second,
  the demonstration's effect on adoption is itself imprecisely estimated,
- so the cost-per-adopter figures for that instrument carry wide confidence intervals.
+ so the cost-per-adopter figures for that package carry wide confidence intervals.
  With these qualifications,
- the practical implication is clear:
- trial packs are the cheaper instrument for raising varietal turnover at the scale at which extension is typically delivered,
- while cooking demonstrations become cost-competitive only when delivered to large groups,
- and are valuable mainly where the objective is to stimulate initial fresh-seed purchases rather than turnover alone.
+ trial packs are cheaper for turnover at the observed scale,
+ while demonstrations require larger groups to become cost-competitive and are most relevant where the objective is to stimulate initial fresh-seed purchases rather than turnover alone.
+\end_layout
+
+\begin_layout Standard
+Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:ce-scenarios"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ summarizes the corresponding cost-effectiveness calculations by policy objective.
+ Ratios are reported only where the treatment effect is bounded away from zero in the relevant direction.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement document
+alignment document
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cost-effectiveness under alternative policy objectives
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:ce-scenarios"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+scriptsize
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+begin{tabular}{llccc}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+Objective & Arm & ITT (95
+\backslash
+% CI) & Cost/farmer & Cost/additional adopter 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+Any 
+\backslash
+textit{Bazooka} use & Pack & 0.667 [0.592,
+ 0.741] & 27,100 & 40,656 [36,525,
+ 45,793] 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Any 
+\backslash
+textit{Bazooka} use & Demo & 0.071 [-0.002,
+ 0.145] & 64,361 & unbounded 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Fresh 
+\backslash
+textit{Bazooka} use & Pack & 0.019 [-0.015,
+ 0.054] & 27,100 & unbounded 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Fresh 
+\backslash
+textit{Bazooka} use & Demo & 0.052 [0.012,
+ 0.093] & 64,361 & 1,228,073 [692,276,
+ 4,735,599] 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Fresh improved seed use & Pack & -0.136 [-0.201,
+ -0.071] & 27,100 & n/a (wrong sign) 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+Fresh improved seed use & Demo & 0.034 [-0.032,
+ 0.101] & 64,361 & unbounded 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+hline
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+end{tabular}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Note:
+ Costs are 2023 UGX per farmer reached.
+ The pack cost is UGX 27,100.
+ The demonstration cost is UGX 64,361 under the scalable delivery-cost definition used in this section.
+ Cost-per-adopter ratios are unbounded where the 95 percent confidence interval for the effect includes zero.
+ Fresh improved seed includes fresh hybrid seed and fresh or appropriately recycled OPV seed,
+ excluding recycled hybrid grain.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -8445,7 +8959,7 @@ literal "false"
  and most importantly,
  their design contrasts a demonstration plot with a demonstration plot plus trial packs,
  so it estimates the value a pack adds on top of a demonstration;
- our factorial design instead identifies the effect of each instrument on its own,
+ our factorial design instead identifies the effect of each package on its own,
  which is the quantity a policymaker choosing between them needs.
  Second,
  their technology is a self-pollinated bean,
@@ -8459,7 +8973,7 @@ literal "false"
  Rather than contradicting their conclusion,
  our results delimit it:
  trial packs may add little where a demonstration is already in place and the crop is self-pollinated,
- yet be the more cost-effective standalone instrument for accelerating turnover of a hybrid.
+ yet be the more cost-effective standalone package for accelerating turnover of a hybrid.
 \end_layout
 
 \begin_layout Section
@@ -8468,18 +8982,18 @@ Conclusion
 
 \begin_layout Standard
 In this study,
- we evaluate two commonly used extension strategies aimed at promoting the adoption of an improved maize variety among smallholder farmers in eastern Uganda:
+ we evaluate two seed-promotion packages aimed at promoting the adoption of an improved maize variety among smallholder farmers in eastern Uganda:
  seed trial packs,
- which primarily target production attributes (but also let farmers experience consumption attributes once the grain is harvested),
+ which transfer seed and create a season of on-farm experience,
  and cooking demonstrations,
- which target consumption attributes.
+ which provide direct experience with consumption traits but no seed.
  Using a cluster-randomized field experiment with a 2×2 factorial design,
  we show that both interventions shape farmers’ perceptions and use of the promoted variety,
- but through distinct pathways and with different implications for productivity.
+ but through distinct margins and with different implications for productivity.
 \end_layout
 
 \begin_layout Standard
-The seed trial pack substantially increased farmers’ awareness and appreciation of both production- and consumption-related attributes and led to a marked increase in subsequent use of the promoted variety.
+The seed trial pack substantially increased farmers’ awareness and appreciation of both agronomic and food-quality attributes and led to a marked increase in subsequent use of the promoted variety.
  However,
  this adoption response was driven primarily by the recycling of harvested grain as seed.
  For hybrid varieties like the variety we used in the study,
@@ -8552,7 +9066,7 @@ For policymakers,
  and within reach;
  where those conditions fail,
  the gains from a hybrid trial pack are short-lived,
- and instruments that build fresh-seed demand,
+ and packages that build fresh-seed demand,
  such as cooking demonstrations,
  become more important.
  The second question is the scale at which extension can be delivered.
@@ -8562,9 +9076,12 @@ For policymakers,
  so although trial packs are far cheaper per adopter at the small sessions we study,
  a demonstration delivered to a large,
  village-wide audience can close or even reverse that gap.
- Because we find no evidence of complementarity between the two,
- a budget is best spent on the single instrument matched to the technology and the feasible scale,
- rather than split across both.
+ Because we find no evidence of economically large positive complementarity between the two,
+ a budget may often be better spent on the package matched to the technology and feasible delivery scale,
+ rather than automatically split across both;
+ smaller complementarities,
+ however,
+ cannot be ruled out by our design.
 \end_layout
 
 \begin_layout Standard
@@ -8576,33 +9093,57 @@ More broadly,
  unreliable input quality,
  and limited liquidity.
  These findings suggest that efforts to promote hybrid seed adoption may need to be complemented by interventions that relax liquidity constraints,
- improve access to affordable high-quality seed,
+ improve access to affordable quality-assured seed,
  or strengthen output market incentives that reward productivity gains.
 \end_layout
 
 \begin_layout Standard
 Finally,
  while consumption traits clearly matter for varietal choice,
- our results point to a division of labor between the two instruments.
- For learning about consumption attributes,
- demand-creation events are not strictly necessary:
+ our results point to different margins for the two packages.
+ Trial packs also shifted consumption-trait perceptions,
+ likely because recipients cooked and tasted their own harvest:
  farmers who received only a trial pack updated their perceptions of consumption traits about as much as demonstration attendees,
- presumably by cooking and tasting their own harvest.
- The distinctive value of cooking demonstrations lies elsewhere—
-in moving farmers to a first purchase of fresh seed,
+ while demonstrations mainly affected first purchases of fresh seed,
  the margin that trial packs leave untouched.
- This division of labor,
+ This distinction,
  however,
  describes what we observe within a single season.
  Over a longer horizon it may narrow:
  the demonstration's first-time buyers face the same recycling incentives once they harvest,
  while the large cohort of recyclers the trial pack creates may itself turn to the market as the yield advantage of reused hybrid grain decays.
- Which instrument does more to accelerate turnover in the long run is therefore an open empirical question that our one-season window cannot resolve—
+ Which package does more to accelerate turnover in the long run is therefore an open empirical question that our one-season window cannot resolve—
 and one that bears directly on the choice between them.
- Future research should further explore how different modes of experiential learning interact with technology characteristics and market conditions to shape adoption dynamics.
- Understanding these interactions is crucial for designing extension strategies that promote not only uptake,
- but also sustained,
- productivity-enhancing use of improved crop technologies.
+\end_layout
+
+\begin_layout Standard
+Read together with 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "de2018biofortification"
+literal "false"
+
+\end_inset
+
+,
+ these results suggest that consumption-focused promotion is most likely to translate into sustained varietal change when the promoted technology is compatible with farmer-led reproduction or when seed systems make repeated fresh purchases feasible.
+ In vegetatively propagated or otherwise easily reproduced crops,
+ demand creation can generate continued use through farmers' own multiplication.
+ For hybrids,
+ the same demand response must eventually connect farmers back to a reliable fresh-seed market if productivity gains are to persist.
+\end_layout
+
+\begin_layout Standard
+The study also points to design lessons for future research.
+ Where recycling is possible,
+ seed source should be measured from baseline onward,
+ and follow-up should ideally span multiple seasons so that researchers can observe both first adoption and later replacement decisions.
+ Factorial designs should be powered for the interaction effects that would matter for policy,
+ not only for main effects.
+ Finally,
+ interventions with different delivery clocks can still be compared if they are aligned on the same planting decision and a common endline,
+ as in this study.
+ Future work should measure how promotion packages interact with seed technology and market conditions over multiple seasons.
 \end_layout
 
 \begin_layout Section
@@ -8732,6 +9273,37 @@ renewcommand{
 thesubsection}{A
 \backslash
 arabic{subsection}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Additional robustness checks
+\end_layout
+
+\begin_layout Standard
+This subsection reports additional robustness and sensitivity checks added in response to reviewer comments on post-treatment conditioning,
+ interaction precision,
+ and baseline imbalance in prior use of the promoted variety.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+input{appendix_interaction_robustness.tex}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+input{appendix_unconditional_recodes.tex}
 \end_layout
 
 \end_inset
@@ -10546,7 +11118,7 @@ scriptsize
 
 \begin_layout Plain Layout
 Note:
- Column (1) reports control group means at baseline (and standard deviations below);
+ Column (1) reports endline means for the pure control group (and standard deviations below);
  column (2) reports the estimate of the intent-to-treat effect of the seed trial packs;
  column (3) reports the estimate of the intent-to-treat effect of the cooking and tasting demonstrations;
  column (4) is the interaction effect.
@@ -11359,7 +11931,7 @@ scriptsize
 
 \begin_layout Plain Layout
 Note:
- Column (1) reports control group means at baseline (and standard deviations below);
+ Column (1) reports endline means for the pure control group (and standard deviations below);
  column (2) reports the estimate of the intent-to-treat effect of the seed trial packs;
  column (3) reports the estimate of the intent-to-treat effect of the cooking and tasting demonstrations;
  column (4) is the interaction effect.
@@ -11868,7 +12440,7 @@ scriptsize
 
 \begin_layout Plain Layout
 Note:
- Column (1) reports control group means at baseline (and standard deviations below);
+ Column (1) reports endline means for the pure control group (and standard deviations below);
  column (2) reports the estimate of the intent-to-treat effect of the seed trial packs;
  column (3) reports the estimate of the intent-to-treat effect of the cooking and tasting demonstrations;
  column (4) is the interaction effect.
@@ -12259,7 +12831,7 @@ scriptsize
 
 \begin_layout Plain Layout
 Note:
- Column (1) reports control group means at baseline (and standard deviations below);
+ Column (1) reports endline means for the pure control group (and standard deviations below);
  column (2) reports the estimate of the intent-to-treat effect of the seed trial packs;
  column (3) reports the estimate of the intent-to-treat effect of the cooking and tasting demonstrations;
  column (4) is the interaction effect.
@@ -12686,82 +13258,6 @@ Sexpr{format(round(df_path_pool[2,2,3],digits=2),nsmall=2)}) &
 \end_layout
 
 \begin_layout Plain Layout
-Thinks 
-\backslash
-textit{Bazooka} is risky (1=yes)
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_means_path[3,4],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_path_pool[1,1,4],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_path_pool[1,3,4]<.01,"**",ifelse(df_path_pool[1,3,4]<.05,"*",ifelse(df_path_pool[1,3,4]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_means_path[5,4],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_path_pool[2,1,4],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_path_pool[2,3,4]<.01,"**",ifelse(df_path_pool[2,3,4]<.05,"*",ifelse(df_path_pool[2,3,4]<.1,"+","")))}}$ &
-\end_layout
-
-\begin_layout Plain Layout
- 
-\backslash
-Sexpr{format(round(df_path[1,4,4],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-& (
-\backslash
-Sexpr{format(round(df_means_path[4,4],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_path_pool[1,2,4],digits=2),nsmall=2)})  &
-\end_layout
-
-\begin_layout Plain Layout
-(
-\backslash
-Sexpr{format(round(df_means_path[6,4],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_path_pool[2,2,4],digits=2),nsmall=2)}) & 
-\end_layout
-
-\begin_layout Plain Layout
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 Recommended improved varieties to others (1=yes)
 \end_layout
 
@@ -12821,82 +13317,6 @@ Sexpr{format(round(df_path_pool[1,2,5],digits=2),nsmall=2)})  &
 Sexpr{format(round(df_means_path[6,5],digits=2),nsmall=2)}) & (
 \backslash
 Sexpr{format(round(df_path_pool[2,2,5],digits=2),nsmall=2)}) & 
-\end_layout
-
-\begin_layout Plain Layout
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-Recommended 
-\backslash
-textit{Bazooka} to others (1=yes)
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_means_path[3,6],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_path_pool[1,1,6],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_path_pool[1,3,6]<.01,"**",ifelse(df_path_pool[1,3,6]<.05,"*",ifelse(df_path_pool[1,3,6]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_means_path[5,6],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_path_pool[2,1,6],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_path_pool[2,3,6]<.01,"**",ifelse(df_path_pool[2,3,6]<.05,"*",ifelse(df_path_pool[2,3,6]<.1,"+","")))}}$ &
-\end_layout
-
-\begin_layout Plain Layout
- 
-\backslash
-Sexpr{format(round(df_path[1,4,6],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-& (
-\backslash
-Sexpr{format(round(df_means_path[4,6],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_path_pool[1,2,6],digits=2),nsmall=2)})  &
-\end_layout
-
-\begin_layout Plain Layout
-(
-\backslash
-Sexpr{format(round(df_means_path[6,6],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_path_pool[2,2,6],digits=2),nsmall=2)}) & 
 \end_layout
 
 \begin_layout Plain Layout
@@ -13109,7 +13529,7 @@ scriptsize
 
 \begin_layout Plain Layout
 Note:
- Column (1) reports control group means at baseline (and standard deviations below);
+ Column (1) reports endline means for the pure control group (and standard deviations below);
  column (2) reports the estimate of the intent-to-treat effect of the seed trial packs;
  column (3) reports the estimate of the intent-to-treat effect of the cooking and tasting demonstrations;
  column (4) is the interaction effect.
@@ -13656,7 +14076,7 @@ scriptsize
 
 \begin_layout Plain Layout
 Note:
- Column (1) reports control group means at baseline (and standard deviations below);
+ Column (1) reports endline means for the pure control group (and standard deviations below);
  column (2) reports the estimate of the intent-to-treat effect of the seed trial packs;
  column (3) reports the estimate of the intent-to-treat effect of the cooking and tasting demonstrations;
  column (4) is the interaction effect.
@@ -14095,7 +14515,7 @@ Sexpr{format(round(df_compare_prod_traits_seed_pool[2,2,3],digits=2),nsmall=2)})
 \end_layout
 
 \begin_layout Plain Layout
-Improve seed matures faster (1=yes)
+Improved seed matures faster (1=yes)
 \end_layout
 
 \begin_layout Plain Layout
@@ -14298,7 +14718,7 @@ scriptsize
 
 \begin_layout Plain Layout
 Note:
- Column (1) reports control group means at baseline (and standard deviations below);
+ Column (1) reports endline means for the pure control group (and standard deviations below);
  column (2) reports the estimate of the intent-to-treat effect of the seed trial packs;
  column (3) reports the estimate of the intent-to-treat effect of the cooking and tasting demonstrations;
  column (4) is the interaction effect.
@@ -15039,7 +15459,7 @@ scriptsize
 
 \begin_layout Plain Layout
 Note:
- Column (1) reports control group means at baseline (and standard deviations below);
+ Column (1) reports endline means for the pure control group (and standard deviations below);
  column (2) reports the estimate of the intent-to-treat effect of the seed trial packs;
  column (3) reports the estimate of the intent-to-treat effect of the cooking and tasting demonstrations;
  column (4) is the interaction effect.
@@ -15676,7 +16096,7 @@ scriptsize
 
 \begin_layout Plain Layout
 Note:
- Column (1) reports control group means at baseline (and standard deviations below);
+ Column (1) reports endline means for the pure control group (and standard deviations below);
  column (2) reports the estimate of the intent-to-treat effect of the seed trial packs;
  column (3) reports the estimate of the intent-to-treat effect of the cooking and tasting demonstrations;
  column (4) is the interaction effect.
@@ -16130,7 +16550,7 @@ scriptsize
 
 \begin_layout Plain Layout
 Note:
- Column (1) reports control group means at baseline (and standard deviations below);
+ Column (1) reports endline means for the pure control group (and standard deviations below);
  column (2) reports the estimate of the intent-to-treat effect of the seed trial packs;
  column (3) reports the estimate of the intent-to-treat effect of the cooking and tasting demonstrations;
  column (4) is the interaction effect.
@@ -16847,7 +17267,7 @@ scriptsize
 
 \begin_layout Plain Layout
 Note:
- Column (1) reports control group means at baseline (and standard deviations below);
+ Column (1) reports endline means for the pure control group (and standard deviations below);
  column (2) reports the estimate of the intent-to-treat effect of the seed trial packs;
  column (3) reports the estimate of the intent-to-treat effect of the cooking and tasting demonstrations;
  column (4) is the interaction effect.
@@ -17226,7 +17646,7 @@ scriptsize
 
 \begin_layout Plain Layout
 Note:
- Column (1) reports control group means at baseline (and standard deviations below);
+ Column (1) reports endline means for the pure control group (and standard deviations below);
  column (2) reports the estimate of the intent-to-treat effect of the seed trial packs;
  column (3) reports the estimate of the intent-to-treat effect of the cooking and tasting demonstrations;
  column (4) is the interaction effect.
