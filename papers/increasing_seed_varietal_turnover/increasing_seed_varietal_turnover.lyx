@@ -5071,6 +5071,22 @@ nolink "false"
 \end_inset
 
  reports the corresponding confidence intervals and tests of economically meaningful positive interactions.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Even an interaction within the range these tests cannot rule out would not change which instrument we recommend.
+ As Section 7 shows,
+ the trial pack is already substantially cheaper per additional adopter than the cooking demonstration at the scale we study;
+ making joint delivery cost-competitive with the trial pack alone would require a complementarity far larger than is plausible given these estimates.
+ The remaining statistical imprecision around the interaction is real,
+ but it does not translate into uncertainty about which instrument,
+ or combination of instruments,
+ a policymaker should prefer.
+\end_layout
+
+\end_inset
+
 \end_layout
 
 \begin_layout Standard
@@ -5502,6 +5518,27 @@ In this section,
  we examine intermediate outcomes that help interpret the adoption effects documented above.
  These estimates describe how treatment groups differed after exposure to the interventions;
  they do not identify mediated causal pathways from perceptions or knowledge to adoption.
+ Two Bazooka-specific outcomes asked only of farmers familiar with the variety — whether farmers recommend
+\emph on
+Bazooka
+\emph default
+ specifically and whether they perceive
+\emph on
+Bazooka
+\emph default
+ as risky — condition on treatment-induced familiarity and are therefore omitted from the main tables;
+ Online Appendix Table
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:appendix-unconditional-recodes"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+
+\end_inset
+
+ reports them using unconditional recodes and bounds instead.
  Specifically,
  we document changes in awareness of,
  and general attitudes toward,
@@ -7584,6 +7621,8 @@ Note:
 % levels based on sharpened q-values 
 \backslash
 citep{benjamini2006adaptive}.
+ Outcomes compare improved varieties and local seed as general survey categories,
+ not an average over five specific local seeds or the seed on the farmer's selected plot.
 \end_layout
 
 \begin_layout Plain Layout
@@ -8498,14 +8537,14 @@ Cost-effectiveness and Scaling
 \end_layout
 
 \begin_layout Standard
-The preceding sections establish that both instruments raise use of the promoted variety,
+The preceding sections establish that both packages raise use of the promoted variety,
  but through different channels and with different consequences for productivity.For a policymaker choosing between them,
  policy choice also depends on delivery cost.
  The interaction estimates reported above provide no evidence of economically large positive complementarity,
  although smaller complementarities cannot be ruled out.
- We therefore report cost-effectiveness for each instrument separately,
+ We therefore report cost-effectiveness for each package separately,
  while interpreting this comparison as conditional on the policy objective and time horizon.
- We therefore combine the experimental effects with the actual intervention budgets to compare the two instruments on a cost-effectiveness basis.
+ We therefore combine the experimental effects with the actual intervention budgets to compare the two packages on a cost-effectiveness basis.
 \end_layout
 
 \begin_layout Standard
@@ -8534,7 +8573,7 @@ All costs are in 2023 Ugandan shillings (UGX).
 
 \begin_layout Standard
 These figures capture costs to the implementer;
- the two instruments also place very different demands on farmers themselves.
+ the two packages also place very different demands on farmers themselves.
  Attending a cooking demonstration costs a household roughly half a day of time,
  often for two members,
  and delivers its information immediately.
@@ -8549,7 +8588,7 @@ so the relevant farmer-side costs are the delay and the land and labor commitmen
 \end_layout
 
 \begin_layout Standard
-Combining these costs with the intent-to-treat effects on adoption reported in Table 3 shows that the most cost-effective instrument depends on the policy objective.
+Combining these costs with the intent-to-treat effects on adoption reported in Table 3 shows that the most cost-effective package depends on the policy objective.
  If the objective is varietal turnover,
  that is,
  getting an improved variety into the ground regardless of seed source,
@@ -8575,7 +8614,7 @@ literal "false"
  The trial pack's estimated effect on fresh-seed purchases is indistinguishable from zero,
  because the turnover it generates runs through recycling,
  so spending on trial packs does not buy fresh-seed adoption through this channel and no meaningful cost per fresh-seed adopter can be computed.
- The cooking demonstration is the only instrument for which we find evidence,
+ The cooking demonstration is the only package for which we find evidence,
  albeit suggestive,
  of increased fresh-seed purchases;
  the implied figure of about UGX 1.2 million per additional fresh adopter inherits the imprecision of that estimate and is best read as an order of magnitude,
@@ -8584,7 +8623,7 @@ literal "false"
 
 \begin_layout Standard
 An important qualification concerns the time horizon.
- We observe one planting decision after each instrument,
+ We observe one planting decision after each package,
  and the fresh-seed purchases induced by the demonstration are first acquisitions,
  made by farmers who hold no grain of the promoted variety to replant.
  Once these farmers harvest,
@@ -8613,7 +8652,7 @@ nolink "false"
 \end_layout
 
 \begin_layout Standard
-The two instruments also have very different cost structures,
+The two packages also have very different cost structures,
  with implications for scaling.
  The seed trial pack is almost entirely variable cost:
  the seed is a fixed quantity per farmer that cannot be shared across recipients.
@@ -8625,7 +8664,7 @@ The two instruments also have very different cost structures,
  staff,
  and cooking that is shared across everyone who attends.
  As a result,
- the per-farmer cost of the two instruments responds differently to scale.
+ the per-farmer cost of the two packages responds differently to scale.
  Spreading the program across more villages does not change their relative ranking,
  because the demonstration's per-village transport and staff costs are variable rather than fixed and do not fall as the number of villages rises.
  What does shift the ranking is the number of farmers reached per session:
@@ -8733,7 +8772,7 @@ Two caveats temper this conclusion.
  which we cannot observe in our data.
  Second,
  the demonstration's effect on adoption is itself imprecisely estimated,
- so the cost-per-adopter figures for that instrument carry wide confidence intervals.
+ so the cost-per-adopter figures for that package carry wide confidence intervals.
  With these qualifications,
  trial packs are cheaper for turnover at the observed scale,
  while demonstrations require larger groups to become cost-competitive and are most relevant where the objective is to stimulate initial fresh-seed purchases rather than turnover alone.
@@ -8952,7 +8991,7 @@ literal "false"
  and most importantly,
  their design contrasts a demonstration plot with a demonstration plot plus trial packs,
  so it estimates the value a pack adds on top of a demonstration;
- our factorial design instead identifies the effect of each instrument on its own,
+ our factorial design instead identifies the effect of each package on its own,
  which is the quantity a policymaker choosing between them needs.
  Second,
  their technology is a self-pollinated bean,
@@ -8966,7 +9005,7 @@ literal "false"
  Rather than contradicting their conclusion,
  our results delimit it:
  trial packs may add little where a demonstration is already in place and the crop is self-pollinated,
- yet be the more cost-effective standalone instrument for accelerating turnover of a hybrid.
+ yet be the more cost-effective standalone package for accelerating turnover of a hybrid.
 \end_layout
 
 \begin_layout Section
@@ -9059,7 +9098,7 @@ For policymakers,
  and within reach;
  where those conditions fail,
  the gains from a hybrid trial pack are short-lived,
- and instruments that build fresh-seed demand,
+ and packages that build fresh-seed demand,
  such as cooking demonstrations,
  become more important.
  The second question is the scale at which extension can be delivered.
@@ -9070,7 +9109,7 @@ For policymakers,
  a demonstration delivered to a large,
  village-wide audience can close or even reverse that gap.
  Because we find no evidence of economically large positive complementarity between the two,
- a budget may often be better spent on the instrument matched to the technology and feasible delivery scale,
+ a budget may often be better spent on the approach matched to the technology and feasible delivery scale,
  rather than automatically split across both;
  smaller complementarities,
  however,
@@ -9093,7 +9132,7 @@ More broadly,
 \begin_layout Standard
 Finally,
  while consumption traits clearly matter for varietal choice,
- our results point to different margins for the two instruments.
+ our results point to different margins for the two approaches.
  Trial packs also shifted consumption-trait perceptions,
  likely because recipients cooked and tasted their own harvest:
  farmers who received only a trial pack updated their perceptions of consumption traits about as much as demonstration attendees,
@@ -9105,7 +9144,7 @@ Finally,
  Over a longer horizon it may narrow:
  the demonstration's first-time buyers face the same recycling incentives once they harvest,
  while the large cohort of recyclers the trial pack creates may itself turn to the market as the yield advantage of reused hybrid grain decays.
- Which instrument does more to accelerate turnover in the long run is therefore an open empirical question that our one-season window cannot resolve—
+ Which package does more to accelerate turnover in the long run is therefore an open empirical question that our one-season window cannot resolve—
 and one that bears directly on the choice between them.
 \end_layout
 
@@ -13251,82 +13290,6 @@ Sexpr{format(round(df_path_pool[2,2,3],digits=2),nsmall=2)}) &
 \end_layout
 
 \begin_layout Plain Layout
-Thinks 
-\backslash
-textit{Bazooka} is risky (1=yes)
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_means_path[3,4],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_path_pool[1,1,4],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_path_pool[1,3,4]<.01,"**",ifelse(df_path_pool[1,3,4]<.05,"*",ifelse(df_path_pool[1,3,4]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_means_path[5,4],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_path_pool[2,1,4],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_path_pool[2,3,4]<.01,"**",ifelse(df_path_pool[2,3,4]<.05,"*",ifelse(df_path_pool[2,3,4]<.1,"+","")))}}$ &
-\end_layout
-
-\begin_layout Plain Layout
- 
-\backslash
-Sexpr{format(round(df_path[1,4,4],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-& (
-\backslash
-Sexpr{format(round(df_means_path[4,4],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_path_pool[1,2,4],digits=2),nsmall=2)})  &
-\end_layout
-
-\begin_layout Plain Layout
-(
-\backslash
-Sexpr{format(round(df_means_path[6,4],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_path_pool[2,2,4],digits=2),nsmall=2)}) & 
-\end_layout
-
-\begin_layout Plain Layout
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 Recommended improved varieties to others (1=yes)
 \end_layout
 
@@ -13386,82 +13349,6 @@ Sexpr{format(round(df_path_pool[1,2,5],digits=2),nsmall=2)})  &
 Sexpr{format(round(df_means_path[6,5],digits=2),nsmall=2)}) & (
 \backslash
 Sexpr{format(round(df_path_pool[2,2,5],digits=2),nsmall=2)}) & 
-\end_layout
-
-\begin_layout Plain Layout
- 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-Recommended 
-\backslash
-textit{Bazooka} to others (1=yes)
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_means_path[3,6],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_path_pool[1,1,6],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_path_pool[1,3,6]<.01,"**",ifelse(df_path_pool[1,3,6]<.05,"*",ifelse(df_path_pool[1,3,6]<.1,"+","")))}}$
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_means_path[5,6],digits=2),nsmall=2)}
-\end_layout
-
-\begin_layout Plain Layout
-& 
-\backslash
-Sexpr{format(round(df_path_pool[2,1,6],digits=2),nsmall=2)}$^{
-\backslash
-Sexpr{ifelse(df_path_pool[2,3,6]<.01,"**",ifelse(df_path_pool[2,3,6]<.05,"*",ifelse(df_path_pool[2,3,6]<.1,"+","")))}}$ &
-\end_layout
-
-\begin_layout Plain Layout
- 
-\backslash
-Sexpr{format(round(df_path[1,4,6],digits=0),nsmall=0)} 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-& (
-\backslash
-Sexpr{format(round(df_means_path[4,6],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_path_pool[1,2,6],digits=2),nsmall=2)})  &
-\end_layout
-
-\begin_layout Plain Layout
-(
-\backslash
-Sexpr{format(round(df_means_path[6,6],digits=2),nsmall=2)}) & (
-\backslash
-Sexpr{format(round(df_path_pool[2,2,6],digits=2),nsmall=2)}) & 
 \end_layout
 
 \begin_layout Plain Layout
