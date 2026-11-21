@@ -198,15 +198,15 @@ replacing older crop varieties with newer,
  higher-yielding and more resilient ones—
 is a central goal of seed-system policy in sub-Saharan Africa,
  yet how best to promote it remains unclear.
- The fact that smallholders are generally both producers and consumers suggest that seed promotion strategies should emphasize both agronomic performance as well as consumption related traits.
  In a cluster-randomized trial,
- we compare two seed-promotion packages among maize-growing households in eastern Uganda:
+ we compare two approaches of promoting new varieties among maize-growing households in eastern Uganda:
  seed trial packs,
- which transfer seed and create a season of on-farm experience,
- and cooking demonstrations with blind tasting,
- which convey a variety's consumption traits through direct experience without transferring seed.
+ which provide seed of a new variety and enable a season of on-farm experience,
+ and cooking demonstrations,
+ which expose households to a variety's consumption traits through direct tasting experience and the provision of flour packs,
+ without transferring seed.
  Both raise farmers' knowledge and use of the promoted hybrid.
- Trial packs generate the larger increase,
+ Seed trial packs generate the larger increase,
  but it runs almost entirely through farmers recycling grain saved from the trial pack rather than buying fresh seed,
  a rational choice in a context of low grain prices,
  high seed prices,
@@ -214,15 +214,15 @@ is a central goal of seed-system policy in sub-Saharan Africa,
  and liquidity constraints.
  Cooking demonstrations produce a smaller increase that runs through fresh-seed purchases,
  with suggestive yield gains.
- Trial packs are more cost-effective at the scale studied,
+ Seed trial packs are more cost-effective at the scale studied,
  but their relative advantage depends both on the technology and the delivery context.
  For recyclable varieties such as Open Pollinated Varieties (OPVs),
  they directly accelerate varietal turnover.
  For hybrids,
  their long-run impact depends on farmers returning to the seed market for fresh seed.
  Moreover,
- because cooking demonstrations have largely fixed delivery costs,
- they become increasingly competitive when they can be delivered to larger groups.
+ because cooking demonstrations involve mainly fixed delivery costs,
+ they become increasingly cost-competitive when delivered to larger groups of farmers.
 \end_layout
 
 \begin_layout Abstract
@@ -361,7 +361,7 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-This paper asks how two seed-promotion instruments affect varietal turnover among smallholder farmers,
+This paper asks how two seed-promotion approaches affect varietal turnover among smallholder farmers,
  recognizing that they are both producers and end-users and that seed adoption decisions combine information,
  liquidity,
  seed quality,
@@ -406,18 +406,18 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-The two interventions are commonly understood to emphasize different attributes of the underlying commodity.
- Trial packs primarily allow farmers to assess agronomic performance under their own growing conditions,
- while cooking demonstrations draw attention to consumption attributes such as taste,
+The two interventions are commonly understood to emphasize different attributes of improved varieties.
+ Seed trial packs primarily allow farmers to assess agronomic performance under their own growing conditions,
+ while cooking demonstrations and flour packs draw attention to consumption attributes such as taste,
  texture,
  and cooking quality.
  Both types of attributes may influence farmers’ willingness to adopt a new variety.
  However,
  the interventions differ along several other dimensions.
- Trial packs provide farmers with a productive asset that generates a harvest,
+ Seed trial packs provide farmers with a productive asset that generates a harvest,
  offers opportunities for learning through an entire production cycle,
  and potentially supplies seed for subsequent planting.
- Cooking demonstrations,
+ Cooking demonstrations and flour packs,
  by contrast,
  are short,
  collective events that involve tasting,
@@ -425,13 +425,13 @@ The two interventions are commonly understood to emphasize different attributes 
  and the provision of flour for home consumption.
  Moreover,
  these learning channels are not mutually exclusive:
- farmers receiving trial packs can also learn about consumption attributes through their harvest.
+ farmers receiving seed trial packs can also learn about consumption attributes through their harvest.
  Consequently,
  while the interventions place different emphasis on production and consumption traits,
  differences in their effects on adoption cannot be attributed to the relative importance of these attributes alone.
  We therefore evaluate the interventions as two distinct,
  policy-relevant approaches to promoting varietal turnover,
- rather than as isolated tests of production versus consumption learning.
+ rather than as isolated tests of production versus consumption learning channels.
 \end_layout
 
 \begin_layout Standard
@@ -532,7 +532,7 @@ whether for own consumption,
 We see little evidence that receiving both treatments had additional impacts beyond the sum of their separate effects.
  Since household members often consult each other when deciding about what crops to plant and seed to use,
  and men may be more attuned to production traits and women to consumption traits,
- reaching both through the two instruments might have produced an effect larger than the sum of its parts.
+ reaching both through the two approaches might have produced an effect larger than the sum of its parts.
  We find no evidence of a large complementarity along these lines,
  though the interaction estimate is imprecise and a smaller complementarity cannot be ruled out;
  trait priorities may in any case be less cleanly split along gender lines than this intuition assumes 
@@ -748,11 +748,11 @@ literal "false"
 
 \begin_layout Standard
 Finally,
- we contribute by comparing two seed-promotion instruments not only on their effectiveness but on their cost.
+ we contribute by comparing two seed-promotion approaches not only on their effectiveness but on their cost.
  To our knowledge,
- this is the first study to price two such instruments against each other using their actual delivery budgets,
+ this is the first study to price two such approaches against each other using their actual delivery budgets,
  and to show that the most cost-effective choice depends on whether the objective is varietal turnover or the development of a commercial seed market.
- This shifts the question from whether a given instrument works to which instrument a budget-constrained program should choose,
+ This shifts the question from whether a given approach works to which approach a budget-constrained program should choose,
  and at what scale.
 \end_layout
 
@@ -770,7 +770,7 @@ The remainder of the paper is organized as follows.
  and overall well-being.
  Section 5 reports intermediate outcomes that help interpret the adoption results.
  Section 6 examines why farmers who receive a trial pack continue through recycling rather than purchasing fresh seed.
- Section 7 compares the two instruments on cost-effectiveness and scaling.
+ Section 7 compares the two approaches on cost-effectiveness and scaling.
  Section 8 concludes.
 \end_layout
 
@@ -866,7 +866,7 @@ This distinction also creates an asymmetry between the two interventions.
  if they want to grow the variety,
  they must obtain seed from the market or another source.
  Recycling was therefore not just a downstream agronomic detail,
- but a possible response to the different resources each package placed in farmers' hands.
+ but a possible response to the different resources each approach placed in farmers' hands.
 \end_layout
 
 \begin_layout Subsection
@@ -1513,8 +1513,8 @@ nolink "false"
 
 \end_inset
 
- map onto the package effects of the two interventions.
- The central hypothesis is that each package raises subsequent use of the promoted variety,
+ map onto the approach effects of the two interventions.
+ The central hypothesis is that each approach raises subsequent use of the promoted variety,
  so we expect 
 \begin_inset Formula $\beta_{S}>0$
 \end_inset
@@ -1524,7 +1524,7 @@ nolink "false"
 \end_inset
 
  for the cooking demonstration.
- Because the two packages relax different barriers to adoption,
+ Because the two approaches relax different barriers to adoption,
  the trial pack reduces the cost and risk of acquiring and growing the seed while also creating harvest output,
  whereas the demonstration provides direct experience with the variety's consumption traits without transferring seed.
  We therefore have no strong prior on which effect is larger.
@@ -1532,8 +1532,8 @@ nolink "false"
 \begin_inset Formula $\beta_{I}$
 \end_inset
 
- tests whether receiving both packages adds to the sum of their separate effects.
- A positive interaction would indicate that the two packages are complementary in shifting adoption,
+ tests whether receiving both approaches adds to the sum of their separate effects.
+ A positive interaction would indicate that the two approaches are complementary in shifting adoption,
  but the interaction should not be read as a clean test of complementarity between isolated learning channels.
 \end_layout
 
@@ -1635,12 +1635,12 @@ The two interventions take very different lengths of time to deliver,
 The cooking demonstration,
  by contrast,
  delivers its content in a single session and needs no growing season.
- We therefore administered the two instruments at different points,
+ We therefore administered the two approaches at different points,
  the trial pack before the first season and the demonstration just before the second,
  so that for both the relevant decision is the same:
  which variety to plant in the second season.
  Outcomes are then measured at a single endline after that season.
- The instruments are thus staggered in when they are delivered,
+ The approaches are thus staggered in when they are delivered,
  but aligned on the decision they are meant to affect and on the point at which we observe it;
  the trial-pack group is not observed any later than the demonstration group.
 \end_layout
@@ -1748,10 +1748,10 @@ Nsambya
 
 \begin_layout Standard
 It is worth being explicit about what does and does not differ across the two arms.
- The instruments are genuinely different in kind,
+ The approaches are genuinely different in kind,
  one a season-long,
  hands-on engagement with the variety and the other a brief informational event;
- this is intrinsic to what each instrument is,
+ this is intrinsic to what each approach is,
  not a feature of how we timed the study.
  What the arms share is the point at which their effects are measured,
  after the same season and at the same endline,
@@ -5075,13 +5075,13 @@ nolink "false"
 status collapsed
 
 \begin_layout Plain Layout
-Even an interaction within the range these tests cannot rule out would not change which instrument we recommend.
+Even an interaction within the range these tests cannot rule out would not change which approach we recommend.
  As Section 7 shows,
  the trial pack is already substantially cheaper per additional adopter than the cooking demonstration at the scale we study;
  making joint delivery cost-competitive with the trial pack alone would require a complementarity far larger than is plausible given these estimates.
  The remaining statistical imprecision around the interaction is real,
- but it does not translate into uncertainty about which instrument,
- or combination of instruments,
+ but it does not translate into uncertainty about which approach,
+ or combination of approaches,
  a policymaker should prefer.
 \end_layout
 
@@ -8537,14 +8537,14 @@ Cost-effectiveness and Scaling
 \end_layout
 
 \begin_layout Standard
-The preceding sections establish that both packages raise use of the promoted variety,
+The preceding sections establish that both approaches raise use of the promoted variety,
  but through different channels and with different consequences for productivity.For a policymaker choosing between them,
  policy choice also depends on delivery cost.
  The interaction estimates reported above provide no evidence of economically large positive complementarity,
  although smaller complementarities cannot be ruled out.
- We therefore report cost-effectiveness for each package separately,
+ We therefore report cost-effectiveness for each approach separately,
  while interpreting this comparison as conditional on the policy objective and time horizon.
- We therefore combine the experimental effects with the actual intervention budgets to compare the two packages on a cost-effectiveness basis.
+ We therefore combine the experimental effects with the actual intervention budgets to compare the two approaches on a cost-effectiveness basis.
 \end_layout
 
 \begin_layout Standard
@@ -8573,7 +8573,7 @@ All costs are in 2023 Ugandan shillings (UGX).
 
 \begin_layout Standard
 These figures capture costs to the implementer;
- the two packages also place very different demands on farmers themselves.
+ the two approaches also place very different demands on farmers themselves.
  Attending a cooking demonstration costs a household roughly half a day of time,
  often for two members,
  and delivers its information immediately.
@@ -8588,7 +8588,7 @@ so the relevant farmer-side costs are the delay and the land and labor commitmen
 \end_layout
 
 \begin_layout Standard
-Combining these costs with the intent-to-treat effects on adoption reported in Table 3 shows that the most cost-effective package depends on the policy objective.
+Combining these costs with the intent-to-treat effects on adoption reported in Table 3 shows that the most cost-effective approach depends on the policy objective.
  If the objective is varietal turnover,
  that is,
  getting an improved variety into the ground regardless of seed source,
@@ -8614,7 +8614,7 @@ literal "false"
  The trial pack's estimated effect on fresh-seed purchases is indistinguishable from zero,
  because the turnover it generates runs through recycling,
  so spending on trial packs does not buy fresh-seed adoption through this channel and no meaningful cost per fresh-seed adopter can be computed.
- The cooking demonstration is the only package for which we find evidence,
+ The cooking demonstration is the only approach for which we find evidence,
  albeit suggestive,
  of increased fresh-seed purchases;
  the implied figure of about UGX 1.2 million per additional fresh adopter inherits the imprecision of that estimate and is best read as an order of magnitude,
@@ -8623,7 +8623,7 @@ literal "false"
 
 \begin_layout Standard
 An important qualification concerns the time horizon.
- We observe one planting decision after each package,
+ We observe one planting decision after each approach,
  and the fresh-seed purchases induced by the demonstration are first acquisitions,
  made by farmers who hold no grain of the promoted variety to replant.
  Once these farmers harvest,
@@ -8652,7 +8652,7 @@ nolink "false"
 \end_layout
 
 \begin_layout Standard
-The two packages also have very different cost structures,
+The two approaches also have very different cost structures,
  with implications for scaling.
  The seed trial pack is almost entirely variable cost:
  the seed is a fixed quantity per farmer that cannot be shared across recipients.
@@ -8664,7 +8664,7 @@ The two packages also have very different cost structures,
  staff,
  and cooking that is shared across everyone who attends.
  As a result,
- the per-farmer cost of the two packages responds differently to scale.
+ the per-farmer cost of the two approaches responds differently to scale.
  Spreading the program across more villages does not change their relative ranking,
  because the demonstration's per-village transport and staff costs are variable rather than fixed and do not fall as the number of villages rises.
  What does shift the ranking is the number of farmers reached per session:
@@ -8772,7 +8772,7 @@ Two caveats temper this conclusion.
  which we cannot observe in our data.
  Second,
  the demonstration's effect on adoption is itself imprecisely estimated,
- so the cost-per-adopter figures for that package carry wide confidence intervals.
+ so the cost-per-adopter figures for that approach carry wide confidence intervals.
  With these qualifications,
  trial packs are cheaper for turnover at the observed scale,
  while demonstrations require larger groups to become cost-competitive and are most relevant where the objective is to stimulate initial fresh-seed purchases rather than turnover alone.
@@ -8991,7 +8991,7 @@ literal "false"
  and most importantly,
  their design contrasts a demonstration plot with a demonstration plot plus trial packs,
  so it estimates the value a pack adds on top of a demonstration;
- our factorial design instead identifies the effect of each package on its own,
+ our factorial design instead identifies the effect of each approach on its own,
  which is the quantity a policymaker choosing between them needs.
  Second,
  their technology is a self-pollinated bean,
@@ -9005,7 +9005,7 @@ literal "false"
  Rather than contradicting their conclusion,
  our results delimit it:
  trial packs may add little where a demonstration is already in place and the crop is self-pollinated,
- yet be the more cost-effective standalone package for accelerating turnover of a hybrid.
+ yet be the more cost-effective standalone approach for accelerating turnover of a hybrid.
 \end_layout
 
 \begin_layout Section
@@ -9013,11 +9013,10 @@ Conclusion
 \end_layout
 
 \begin_layout Standard
-In this study,
- we evaluate two seed-promotion packages aimed at promoting the adoption of an improved maize variety among smallholder farmers in eastern Uganda:
+We evaluate two interventions aimed at promoting the adoption of an improved maize variety among smallholder farmers in eastern Uganda:
  seed trial packs,
- which transfer seed and create a season of on-farm experience,
- and cooking demonstrations,
+ which transfer seed of the new variety and create a season of on-farm experience,
+ and cooking demonstrations and flour packs,
  which provide direct experience with consumption traits but no seed.
  Using a cluster-randomized field experiment with a 2×2 factorial design,
  we show that both interventions shape farmers’ perceptions and use of the promoted variety,
@@ -9098,7 +9097,7 @@ For policymakers,
  and within reach;
  where those conditions fail,
  the gains from a hybrid trial pack are short-lived,
- and packages that build fresh-seed demand,
+ and approaches that build fresh-seed demand,
  such as cooking demonstrations,
  become more important.
  The second question is the scale at which extension can be delivered.
@@ -9144,7 +9143,7 @@ Finally,
  Over a longer horizon it may narrow:
  the demonstration's first-time buyers face the same recycling incentives once they harvest,
  while the large cohort of recyclers the trial pack creates may itself turn to the market as the yield advantage of reused hybrid grain decays.
- Which package does more to accelerate turnover in the long run is therefore an open empirical question that our one-season window cannot resolve—
+ Which approach does more to accelerate turnover in the long run is therefore an open empirical question that our one-season window cannot resolve—
 and one that bears directly on the choice between them.
 \end_layout
 
